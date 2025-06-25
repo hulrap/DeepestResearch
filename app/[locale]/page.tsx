@@ -10,7 +10,7 @@ import { InteractiveProcessIcon } from "@/components/InteractiveProcessIcon";
 import { ResearchChat } from "@/components/chat/ResearchChat";
 import { getTranslations } from "next-intl/server";
 import type { User } from "@supabase/supabase-js";
-import type { UserProfile, ParticipationRole } from "@/lib/settings/types";
+import type { UserProfile } from "@/lib/settings/types";
 
 // Force dynamic rendering to ensure fresh data on every request
 export const dynamic = 'force-dynamic';
@@ -34,7 +34,6 @@ export default async function Home() {
   // Get all translations needed for this page
   const tNav = await getTranslations('navigation');
   const tHome = await getTranslations('home');
-  const tSettings = await getTranslations('settings');
 
   return (
     <div className="min-h-screen-mobile lg:min-h-0 bg-slate-900 flex flex-col mobile-scroll">
@@ -45,7 +44,7 @@ export default async function Home() {
       <main className="flex-1 flex flex-col items-center justify-center lg:justify-start lg:pt-16 px-4 py-8 md:py-12 min-h-0 pb-safe">
         <div className="text-center space-y-8 sm:space-y-10 md:space-y-12 lg:space-y-16 i18n-container">
           {user ? (
-            <LoggedInContent user={user} userProfile={userProfile} tHome={tHome} tSettings={tSettings} />
+            <LoggedInContent user={user} userProfile={userProfile} tHome={tHome} />
           ) : (
             <GuestContent tHome={tHome} />
           )}
@@ -192,11 +191,10 @@ function GuestHeader({ tNav }: {
   );
 }
 
-function LoggedInContent({ user, userProfile, tHome, tSettings }: { 
+function LoggedInContent({ user, userProfile, tHome }: { 
   user: User;
   userProfile: UserProfile | null;
   tHome: (key: string) => string;
-  tSettings: (key: string) => string;
 }) {
   // Extract user info for personalization
   const displayName = userProfile?.username || user.email?.split('@')[0] || 'User';
