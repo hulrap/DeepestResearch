@@ -24,6 +24,7 @@
     "clsx": "^2.1.1",
     "country-state-city": "^3.2.1",
     "dotenv": "^16.5.0",
+    "github": "^14.0.0",
     "lucide-react": "^0.511.0",
     "next": "^15.3.2",
     "next-intl": "^4.1.0",
