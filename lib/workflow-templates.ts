@@ -112,6 +112,51 @@ export class WorkflowTemplateManager {
     return newTemplate.id;
   }
 
+  // Create workflow session from template
+  async createWorkflowFromTemplate(
+    templateId: string,
+    userId: string,
+    title: string,
+    variables?: Record<string, unknown>
+  ): Promise<string> {
+    // Create a workflow session
+    const { data: session, error } = await this.supabase
+      .from('workflow_sessions')
+      .insert({
+        user_id: userId,
+        template_id: templateId,
+        title: title,
+        status: 'pending',
+        current_step: 0,
+        total_steps: 3, // Default for research workflow
+        progress_percentage: 0,
+        execution_state: variables || {},
+        estimated_total_cost: 0.05 // Default estimate
+      })
+      .select()
+      .single();
+
+    if (error) {
+      throw new Error(`Failed to create workflow session: ${error.message}`);
+    }
+
+         // Increment template usage (simplified approach)
+     const { data: template } = await this.supabase
+       .from('workflow_templates')
+       .select('usage_count')
+       .eq('id', templateId)
+       .single();
+     
+     if (template) {
+       await this.supabase
+         .from('workflow_templates')
+         .update({ usage_count: (template.usage_count || 0) + 1 })
+         .eq('id', templateId);
+     }
+
+    return session.id;
+  }
+
   // Get featured templates
   async getFeaturedTemplates(): Promise<WorkflowTemplate[]> {
     const { data, error } = await this.supabase

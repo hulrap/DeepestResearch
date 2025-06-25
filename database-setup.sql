@@ -28,8 +28,8 @@ CREATE TABLE public.profiles (
     first_name TEXT,
     last_name TEXT,
     avatar_url TEXT,
-    created_at TIMESTAMP WITH TIME ZONE DEFAULT TIMEZONE('utc'::text, NOW()) NOT NULL,
-    updated_at TIMESTAMP WITH TIME ZONE DEFAULT TIMEZONE('utc'::text, NOW()) NOT NULL
+    created_at TIMESTAMP WITH TIME ZONE DEFAULT NOW() NOT NULL,
+    updated_at TIMESTAMP WITH TIME ZONE DEFAULT NOW() NOT NULL
 );
 
 -- =============================================
@@ -45,7 +45,7 @@ CREATE TABLE public.ai_providers (
     auth_type TEXT NOT NULL DEFAULT 'api_key',
     is_active BOOLEAN DEFAULT true,
     rate_limits JSONB, -- {requests_per_minute: 60, tokens_per_minute: 90000}
-    created_at TIMESTAMP WITH TIME ZONE DEFAULT TIMEZONE('utc'::text, NOW()) NOT NULL
+    created_at TIMESTAMP WITH TIME ZONE DEFAULT NOW() NOT NULL
 );
 
 -- Available AI models with enhanced metadata
@@ -64,7 +64,7 @@ CREATE TABLE public.ai_models (
     speed_score DECIMAL(3,2) DEFAULT 0.8, -- Speed rating 0-1
     cost_efficiency DECIMAL(3,2) DEFAULT 0.8, -- Cost efficiency 0-1
     best_use_cases TEXT[], -- ['research', 'analysis', 'writing', 'coding', 'reasoning']
-    created_at TIMESTAMP WITH TIME ZONE DEFAULT TIMEZONE('utc'::text, NOW()) NOT NULL,
+    created_at TIMESTAMP WITH TIME ZONE DEFAULT NOW() NOT NULL,
     UNIQUE(provider_id, model_id)
 );
 
@@ -76,8 +76,8 @@ CREATE TABLE public.user_api_keys (
     encrypted_api_key TEXT NOT NULL,
     key_name TEXT,
     is_active BOOLEAN DEFAULT true,
-    created_at TIMESTAMP WITH TIME ZONE DEFAULT TIMEZONE('utc'::text, NOW()) NOT NULL,
-    updated_at TIMESTAMP WITH TIME ZONE DEFAULT TIMEZONE('utc'::text, NOW()) NOT NULL,
+    created_at TIMESTAMP WITH TIME ZONE DEFAULT NOW() NOT NULL,
+    updated_at TIMESTAMP WITH TIME ZONE DEFAULT NOW() NOT NULL,
     UNIQUE(user_id, provider_id, key_name)
 );
 
@@ -90,8 +90,8 @@ CREATE TABLE public.workflow_templates (
     id UUID DEFAULT uuid_generate_v4() PRIMARY KEY,
     name TEXT NOT NULL,
     description TEXT,
-    category TEXT, -- 'research', 'analysis', 'writing', 'coding', 'business'
-    difficulty_level TEXT DEFAULT 'intermediate', -- 'beginner', 'intermediate', 'advanced'
+    category TEXT, -- research, analysis, writing, coding, business
+    difficulty_level TEXT DEFAULT 'intermediate', -- beginner, intermediate, advanced
     estimated_duration_minutes INTEGER,
     estimated_cost_range JSONB, -- {min: 0.01, max: 0.1}
     is_public BOOLEAN DEFAULT false,
@@ -100,8 +100,8 @@ CREATE TABLE public.workflow_templates (
     tags TEXT[],
     usage_count INTEGER DEFAULT 0,
     rating DECIMAL(3,2) DEFAULT 0,
-    created_at TIMESTAMP WITH TIME ZONE DEFAULT TIMEZONE('utc'::text, NOW()) NOT NULL,
-    updated_at TIMESTAMP WITH TIME ZONE DEFAULT TIMEZONE('utc'::text, NOW()) NOT NULL
+    created_at TIMESTAMP WITH TIME ZONE DEFAULT NOW() NOT NULL,
+    updated_at TIMESTAMP WITH TIME ZONE DEFAULT NOW() NOT NULL
 );
 
 -- =============================================
@@ -114,7 +114,7 @@ CREATE TABLE public.workflow_sessions (
     user_id UUID REFERENCES public.profiles(id) ON DELETE CASCADE,
     template_id UUID REFERENCES public.workflow_templates(id),
     title TEXT,
-    status TEXT DEFAULT 'pending', -- 'pending', 'running', 'paused', 'completed', 'failed', 'cancelled'
+    status TEXT DEFAULT 'pending', -- pending, running, paused, completed, failed, cancelled
     current_step INTEGER DEFAULT 0,
     total_steps INTEGER,
     progress_percentage DECIMAL(5,2) DEFAULT 0,
@@ -136,8 +136,8 @@ CREATE TABLE public.workflow_sessions (
     -- Metadata
     metadata JSONB, -- User preferences, custom settings
     
-    created_at TIMESTAMP WITH TIME ZONE DEFAULT TIMEZONE('utc'::text, NOW()) NOT NULL,
-    updated_at TIMESTAMP WITH TIME ZONE DEFAULT TIMEZONE('utc'::text, NOW()) NOT NULL
+    created_at TIMESTAMP WITH TIME ZONE DEFAULT NOW() NOT NULL,
+    updated_at TIMESTAMP WITH TIME ZONE DEFAULT NOW() NOT NULL
 );
 
 -- Individual step executions within workflows
@@ -146,12 +146,12 @@ CREATE TABLE public.workflow_step_executions (
     session_id UUID REFERENCES public.workflow_sessions(id) ON DELETE CASCADE,
     step_number INTEGER NOT NULL,
     step_name TEXT NOT NULL,
-    agent_type TEXT, -- 'researcher', 'analyzer', 'writer', 'critic'
+    agent_type TEXT, -- researcher, analyzer, writer, critic
     model_used TEXT,
     provider_used TEXT,
     
     -- Execution details
-    status TEXT DEFAULT 'pending', -- 'pending', 'running', 'completed', 'failed', 'skipped'
+    status TEXT DEFAULT 'pending', -- pending, running, completed, failed, skipped
     input_data JSONB,
     output_data JSONB,
     error_message TEXT,
@@ -169,7 +169,7 @@ CREATE TABLE public.workflow_step_executions (
     
     started_at TIMESTAMP WITH TIME ZONE,
     completed_at TIMESTAMP WITH TIME ZONE,
-    created_at TIMESTAMP WITH TIME ZONE DEFAULT TIMEZONE('utc'::text, NOW()) NOT NULL
+    created_at TIMESTAMP WITH TIME ZONE DEFAULT NOW() NOT NULL
 );
 
 -- =============================================
@@ -180,14 +180,14 @@ CREATE TABLE public.workflow_step_executions (
 CREATE TABLE public.user_memory (
     id UUID DEFAULT uuid_generate_v4() PRIMARY KEY,
     user_id UUID REFERENCES public.profiles(id) ON DELETE CASCADE,
-    memory_type TEXT NOT NULL, -- 'conversation', 'preference', 'fact', 'pattern'
+    memory_type TEXT NOT NULL, -- conversation, preference, fact, pattern
     content TEXT NOT NULL,
     embedding VECTOR(1536), -- OpenAI embedding dimension
     importance_score DECIMAL(3,2) DEFAULT 0.5, -- How important this memory is
     context_tags TEXT[], -- Tags for categorization
     source_session_id UUID REFERENCES public.workflow_sessions(id),
     expires_at TIMESTAMP WITH TIME ZONE, -- Optional expiration
-    created_at TIMESTAMP WITH TIME ZONE DEFAULT TIMEZONE('utc'::text, NOW()) NOT NULL,
+    created_at TIMESTAMP WITH TIME ZONE DEFAULT NOW() NOT NULL,
     last_accessed_at TIMESTAMP WITH TIME ZONE DEFAULT NOW()
 );
 
@@ -196,10 +196,10 @@ CREATE TABLE public.user_documents (
     id UUID DEFAULT uuid_generate_v4() PRIMARY KEY,
     user_id UUID REFERENCES public.profiles(id) ON DELETE CASCADE,
     filename TEXT NOT NULL,
-    file_type TEXT NOT NULL, -- 'pdf', 'docx', 'txt', 'image', 'url'
+    file_type TEXT NOT NULL, -- pdf, docx, txt, image, url
     file_size INTEGER,
     storage_path TEXT, -- Path to file in storage
-    processing_status TEXT DEFAULT 'pending', -- 'pending', 'processing', 'completed', 'failed'
+    processing_status TEXT DEFAULT 'pending', -- pending, processing, completed, failed
     
     -- Extracted content
     extracted_text TEXT,
@@ -211,8 +211,8 @@ CREATE TABLE public.user_documents (
     key_points TEXT[],
     citations JSONB,
     
-    created_at TIMESTAMP WITH TIME ZONE DEFAULT TIMEZONE('utc'::text, NOW()) NOT NULL,
-    updated_at TIMESTAMP WITH TIME ZONE DEFAULT TIMEZONE('utc'::text, NOW()) NOT NULL
+    created_at TIMESTAMP WITH TIME ZONE DEFAULT NOW() NOT NULL,
+    updated_at TIMESTAMP WITH TIME ZONE DEFAULT NOW() NOT NULL
 );
 
 -- =============================================
@@ -226,8 +226,8 @@ CREATE TABLE public.workspaces (
     description TEXT,
     owner_id UUID REFERENCES public.profiles(id) ON DELETE CASCADE,
     settings JSONB, -- Workspace preferences
-    created_at TIMESTAMP WITH TIME ZONE DEFAULT TIMEZONE('utc'::text, NOW()) NOT NULL,
-    updated_at TIMESTAMP WITH TIME ZONE DEFAULT TIMEZONE('utc'::text, NOW()) NOT NULL
+    created_at TIMESTAMP WITH TIME ZONE DEFAULT NOW() NOT NULL,
+    updated_at TIMESTAMP WITH TIME ZONE DEFAULT NOW() NOT NULL
 );
 
 -- Workspace members
@@ -235,9 +235,9 @@ CREATE TABLE public.workspace_members (
     id UUID DEFAULT uuid_generate_v4() PRIMARY KEY,
     workspace_id UUID REFERENCES public.workspaces(id) ON DELETE CASCADE,
     user_id UUID REFERENCES public.profiles(id) ON DELETE CASCADE,
-    role TEXT DEFAULT 'member', -- 'owner', 'admin', 'member', 'viewer'
+    role TEXT DEFAULT 'member', -- owner, admin, member, viewer
     permissions JSONB, -- Specific permissions
-    joined_at TIMESTAMP WITH TIME ZONE DEFAULT TIMEZONE('utc'::text, NOW()) NOT NULL,
+    joined_at TIMESTAMP WITH TIME ZONE DEFAULT NOW() NOT NULL,
     UNIQUE(workspace_id, user_id)
 );
 
@@ -247,10 +247,10 @@ CREATE TABLE public.shared_workflows (
     session_id UUID REFERENCES public.workflow_sessions(id) ON DELETE CASCADE,
     shared_by UUID REFERENCES public.profiles(id),
     workspace_id UUID REFERENCES public.workspaces(id),
-    share_type TEXT DEFAULT 'view', -- 'view', 'edit', 'comment'
-    access_level TEXT DEFAULT 'workspace', -- 'public', 'workspace', 'specific_users'
+    share_type TEXT DEFAULT 'view', -- view, edit, comment
+    access_level TEXT DEFAULT 'workspace', -- public, workspace, specific_users
     expires_at TIMESTAMP WITH TIME ZONE,
-    created_at TIMESTAMP WITH TIME ZONE DEFAULT TIMEZONE('utc'::text, NOW()) NOT NULL
+    created_at TIMESTAMP WITH TIME ZONE DEFAULT NOW() NOT NULL
 );
 
 -- =============================================
@@ -266,8 +266,8 @@ CREATE TABLE public.user_usage_limits (
     hard_stop_enabled BOOLEAN DEFAULT true,
     warning_threshold DECIMAL(3,2) DEFAULT 0.80,
     reset_day INTEGER DEFAULT 1,
-    created_at TIMESTAMP WITH TIME ZONE DEFAULT TIMEZONE('utc'::text, NOW()) NOT NULL,
-    updated_at TIMESTAMP WITH TIME ZONE DEFAULT TIMEZONE('utc'::text, NOW()) NOT NULL
+    created_at TIMESTAMP WITH TIME ZONE DEFAULT NOW() NOT NULL,
+    updated_at TIMESTAMP WITH TIME ZONE DEFAULT NOW() NOT NULL
 );
 
 -- Enhanced API usage tracking
@@ -298,7 +298,7 @@ CREATE TABLE public.api_usage_logs (
     request_data JSONB,
     response_data JSONB,
     
-    created_at TIMESTAMP WITH TIME ZONE DEFAULT TIMEZONE('utc'::text, NOW()) NOT NULL
+    created_at TIMESTAMP WITH TIME ZONE DEFAULT NOW() NOT NULL
 );
 
 -- Daily usage summaries
@@ -311,8 +311,8 @@ CREATE TABLE public.daily_usage_summaries (
     total_cost_usd DECIMAL(10,8) DEFAULT 0,
     provider_breakdown JSONB,
     model_breakdown JSONB,
-    created_at TIMESTAMP WITH TIME ZONE DEFAULT TIMEZONE('utc'::text, NOW()) NOT NULL,
-    updated_at TIMESTAMP WITH TIME ZONE DEFAULT TIMEZONE('utc'::text, NOW()) NOT NULL,
+    created_at TIMESTAMP WITH TIME ZONE DEFAULT NOW() NOT NULL,
+    updated_at TIMESTAMP WITH TIME ZONE DEFAULT NOW() NOT NULL,
     UNIQUE(user_id, date)
 );
 
@@ -325,9 +325,9 @@ CREATE TABLE public.session_activities (
     id UUID DEFAULT uuid_generate_v4() PRIMARY KEY,
     session_id UUID REFERENCES public.workflow_sessions(id) ON DELETE CASCADE,
     user_id UUID REFERENCES public.profiles(id),
-    activity_type TEXT NOT NULL, -- 'join', 'leave', 'edit', 'comment', 'step_complete'
+    activity_type TEXT NOT NULL, -- join, leave, edit, comment, step_complete
     activity_data JSONB,
-    created_at TIMESTAMP WITH TIME ZONE DEFAULT TIMEZONE('utc'::text, NOW()) NOT NULL
+    created_at TIMESTAMP WITH TIME ZONE DEFAULT NOW() NOT NULL
 );
 
 -- Comments and annotations
@@ -337,10 +337,10 @@ CREATE TABLE public.session_comments (
     step_execution_id UUID REFERENCES public.workflow_step_executions(id),
     user_id UUID REFERENCES public.profiles(id),
     content TEXT NOT NULL,
-    comment_type TEXT DEFAULT 'general', -- 'general', 'feedback', 'suggestion', 'issue'
+    comment_type TEXT DEFAULT 'general', -- general, feedback, suggestion, issue
     parent_comment_id UUID REFERENCES public.session_comments(id),
-    created_at TIMESTAMP WITH TIME ZONE DEFAULT TIMEZONE('utc'::text, NOW()) NOT NULL,
-    updated_at TIMESTAMP WITH TIME ZONE DEFAULT TIMEZONE('utc'::text, NOW') NOT NULL
+    created_at TIMESTAMP WITH TIME ZONE DEFAULT NOW() NOT NULL,
+    updated_at TIMESTAMP WITH TIME ZONE DEFAULT NOW() NOT NULL
 );
 
 -- =============================================
@@ -351,11 +351,11 @@ CREATE TABLE public.session_comments (
 CREATE TABLE public.user_integrations (
     id UUID DEFAULT uuid_generate_v4() PRIMARY KEY,
     user_id UUID REFERENCES public.profiles(id) ON DELETE CASCADE,
-    integration_type TEXT NOT NULL, -- 'notion', 'google_docs', 'slack', 'zapier'
+    integration_type TEXT NOT NULL, -- notion, google_docs, slack, zapier
     configuration JSONB NOT NULL, -- Integration-specific config
     is_active BOOLEAN DEFAULT true,
-    created_at TIMESTAMP WITH TIME ZONE DEFAULT TIMEZONE('utc'::text, NOW()) NOT NULL,
-    updated_at TIMESTAMP WITH TIME ZONE DEFAULT TIMEZONE('utc'::text, NOW') NOT NULL
+    created_at TIMESTAMP WITH TIME ZONE DEFAULT NOW() NOT NULL,
+    updated_at TIMESTAMP WITH TIME ZONE DEFAULT NOW() NOT NULL
 );
 
 -- Export history
@@ -363,13 +363,13 @@ CREATE TABLE public.export_history (
     id UUID DEFAULT uuid_generate_v4() PRIMARY KEY,
     user_id UUID REFERENCES public.profiles(id) ON DELETE CASCADE,
     session_id UUID REFERENCES public.workflow_sessions(id),
-    export_type TEXT NOT NULL, -- 'pdf', 'docx', 'markdown', 'html', 'json'
-    export_status TEXT DEFAULT 'processing', -- 'processing', 'completed', 'failed'
+    export_type TEXT NOT NULL, -- pdf, docx, markdown, html, json
+    export_status TEXT DEFAULT 'processing', -- processing, completed, failed
     file_path TEXT,
     file_size INTEGER,
     download_count INTEGER DEFAULT 0,
     expires_at TIMESTAMP WITH TIME ZONE,
-    created_at TIMESTAMP WITH TIME ZONE DEFAULT TIMEZONE('utc'::text, NOW()) NOT NULL
+    created_at TIMESTAMP WITH TIME ZONE DEFAULT NOW() NOT NULL
 );
 
 -- =============================================
@@ -381,8 +381,8 @@ CREATE TABLE public.stripe_customers (
     user_id UUID REFERENCES public.profiles(id) ON DELETE CASCADE UNIQUE,
     stripe_customer_id TEXT UNIQUE NOT NULL,
     email TEXT,
-    created_at TIMESTAMP WITH TIME ZONE DEFAULT TIMEZONE('utc'::text, NOW()) NOT NULL,
-    updated_at TIMESTAMP WITH TIME ZONE DEFAULT TIMEZONE('utc'::text, NOW()) NOT NULL
+    created_at TIMESTAMP WITH TIME ZONE DEFAULT NOW() NOT NULL,
+    updated_at TIMESTAMP WITH TIME ZONE DEFAULT NOW() NOT NULL
 );
 
 CREATE TABLE public.stripe_products (
@@ -390,8 +390,8 @@ CREATE TABLE public.stripe_products (
     name TEXT NOT NULL,
     description TEXT,
     active BOOLEAN DEFAULT true,
-    created_at TIMESTAMP WITH TIME ZONE DEFAULT TIMEZONE('utc'::text, NOW()) NOT NULL,
-    updated_at TIMESTAMP WITH TIME ZONE DEFAULT TIMEZONE('utc'::text, NOW()) NOT NULL
+    created_at TIMESTAMP WITH TIME ZONE DEFAULT NOW() NOT NULL,
+    updated_at TIMESTAMP WITH TIME ZONE DEFAULT NOW() NOT NULL
 );
 
 CREATE TABLE public.stripe_prices (
@@ -402,8 +402,8 @@ CREATE TABLE public.stripe_prices (
     recurring_interval TEXT,
     type TEXT DEFAULT 'recurring',
     active BOOLEAN DEFAULT true,
-    created_at TIMESTAMP WITH TIME ZONE DEFAULT TIMEZONE('utc'::text, NOW()) NOT NULL,
-    updated_at TIMESTAMP WITH TIME ZONE DEFAULT TIMEZONE('utc'::text, NOW') NOT NULL
+    created_at TIMESTAMP WITH TIME ZONE DEFAULT NOW() NOT NULL,
+    updated_at TIMESTAMP WITH TIME ZONE DEFAULT NOW() NOT NULL
 );
 
 CREATE TABLE public.stripe_subscriptions (
@@ -414,8 +414,8 @@ CREATE TABLE public.stripe_subscriptions (
     status TEXT NOT NULL,
     current_period_start TIMESTAMP WITH TIME ZONE,
     current_period_end TIMESTAMP WITH TIME ZONE,
-    created_at TIMESTAMP WITH TIME ZONE DEFAULT TIMEZONE('utc'::text, NOW()) NOT NULL,
-    updated_at TIMESTAMP WITH TIME ZONE DEFAULT TIMEZONE('utc'::text, NOW()) NOT NULL
+    created_at TIMESTAMP WITH TIME ZONE DEFAULT NOW() NOT NULL,
+    updated_at TIMESTAMP WITH TIME ZONE DEFAULT NOW() NOT NULL
 );
 
 CREATE TABLE public.stripe_payments (
@@ -424,8 +424,8 @@ CREATE TABLE public.stripe_payments (
     amount INTEGER NOT NULL,
     currency TEXT DEFAULT 'usd',
     status TEXT NOT NULL,
-    created_at TIMESTAMP WITH TIME ZONE DEFAULT TIMEZONE('utc'::text, NOW()) NOT NULL,
-    updated_at TIMESTAMP WITH TIME ZONE DEFAULT TIMEZONE('utc'::text, NOW()) NOT NULL
+    created_at TIMESTAMP WITH TIME ZONE DEFAULT NOW() NOT NULL,
+    updated_at TIMESTAMP WITH TIME ZONE DEFAULT NOW() NOT NULL
 );
 
 -- =============================================
@@ -619,18 +619,18 @@ INSERT INTO public.ai_providers (name, display_name, base_url, auth_type, rate_l
 -- Insert AI models with enhanced metadata
 INSERT INTO public.ai_models (provider_id, model_id, display_name, pricing, context_window, capabilities, performance_score, speed_score, cost_efficiency, best_use_cases) VALUES
 -- OpenAI models
-((SELECT id FROM public.ai_providers WHERE name = 'openai'), 'gpt-4-turbo', 'GPT-4 Turbo', '{"input_cost_per_1k": 0.01, "output_cost_per_1k": 0.03}', 128000, '["text", "vision", "function_calling", "json_mode"]', 0.95, 0.8, 0.7, '["analysis", "reasoning", "writing", "coding"]'),
-((SELECT id FROM public.ai_providers WHERE name = 'openai'), 'gpt-4o', 'GPT-4o', '{"input_cost_per_1k": 0.005, "output_cost_per_1k": 0.015}', 128000, '["text", "vision", "function_calling", "json_mode"]', 0.9, 0.9, 0.85, '["research", "analysis", "vision", "general"]'),
-((SELECT id FROM public.ai_providers WHERE name = 'openai'), 'gpt-3.5-turbo', 'GPT-3.5 Turbo', '{"input_cost_per_1k": 0.0015, "output_cost_per_1k": 0.002}', 16385, '["text", "function_calling", "json_mode"]', 0.8, 0.95, 0.95, '["writing", "summarization", "simple_tasks"]'),
+((SELECT id FROM public.ai_providers WHERE name = 'openai'), 'gpt-4-turbo', 'GPT-4 Turbo', '{"input_cost_per_1k": 0.01, "output_cost_per_1k": 0.03}', 128000, '["text", "vision", "function_calling", "json_mode"]', 0.95, 0.8, 0.7, ARRAY['analysis', 'reasoning', 'writing', 'coding']),
+((SELECT id FROM public.ai_providers WHERE name = 'openai'), 'gpt-4o', 'GPT-4o', '{"input_cost_per_1k": 0.005, "output_cost_per_1k": 0.015}', 128000, '["text", "vision", "function_calling", "json_mode"]', 0.9, 0.9, 0.85, ARRAY['research', 'analysis', 'vision', 'general']),
+((SELECT id FROM public.ai_providers WHERE name = 'openai'), 'gpt-3.5-turbo', 'GPT-3.5 Turbo', '{"input_cost_per_1k": 0.0015, "output_cost_per_1k": 0.002}', 16385, '["text", "function_calling", "json_mode"]', 0.8, 0.95, 0.95, ARRAY['writing', 'summarization', 'simple_tasks']),
 
 -- Anthropic models
-((SELECT id FROM public.ai_providers WHERE name = 'anthropic'), 'claude-3-opus-20240229', 'Claude 3 Opus', '{"input_cost_per_1k": 0.015, "output_cost_per_1k": 0.075}', 200000, '["text", "vision", "analysis"]', 0.98, 0.7, 0.6, '["analysis", "reasoning", "research", "writing"]'),
-((SELECT id FROM public.ai_providers WHERE name = 'anthropic'), 'claude-3-sonnet-20240229', 'Claude 3 Sonnet', '{"input_cost_per_1k": 0.003, "output_cost_per_1k": 0.015}', 200000, '["text", "vision", "analysis"]', 0.9, 0.85, 0.8, '["research", "analysis", "writing"]'),
-((SELECT id FROM public.ai_providers WHERE name = 'anthropic'), 'claude-3-haiku-20240307', 'Claude 3 Haiku', '{"input_cost_per_1k": 0.00025, "output_cost_per_1k": 0.00125}', 200000, '["text", "vision"]', 0.85, 0.95, 0.9, '["writing", "summarization", "quick_tasks"]'),
+((SELECT id FROM public.ai_providers WHERE name = 'anthropic'), 'claude-3-opus-20240229', 'Claude 3 Opus', '{"input_cost_per_1k": 0.015, "output_cost_per_1k": 0.075}', 200000, '["text", "vision", "analysis"]', 0.98, 0.7, 0.6, ARRAY['analysis', 'reasoning', 'research', 'writing']),
+((SELECT id FROM public.ai_providers WHERE name = 'anthropic'), 'claude-3-sonnet-20240229', 'Claude 3 Sonnet', '{"input_cost_per_1k": 0.003, "output_cost_per_1k": 0.015}', 200000, '["text", "vision", "analysis"]', 0.9, 0.85, 0.8, ARRAY['research', 'analysis', 'writing']),
+((SELECT id FROM public.ai_providers WHERE name = 'anthropic'), 'claude-3-haiku-20240307', 'Claude 3 Haiku', '{"input_cost_per_1k": 0.00025, "output_cost_per_1k": 0.00125}', 200000, '["text", "vision"]', 0.85, 0.95, 0.9, ARRAY['writing', 'summarization', 'quick_tasks']),
 
 -- Google models
-((SELECT id FROM public.ai_providers WHERE name = 'google'), 'gemini-1.5-pro', 'Gemini 1.5 Pro', '{"input_cost_per_1k": 0.0035, "output_cost_per_1k": 0.0105}', 1000000, '["text", "vision", "code", "analysis"]', 0.9, 0.8, 0.8, '["research", "analysis", "large_context"]'),
-((SELECT id FROM public.ai_providers WHERE name = 'google'), 'gemini-1.5-flash', 'Gemini 1.5 Flash', '{"input_cost_per_1k": 0.00035, "output_cost_per_1k": 0.00105}', 1000000, '["text", "vision", "code"]', 0.85, 0.9, 0.95, '["research", "summarization", "quick_analysis"]');
+((SELECT id FROM public.ai_providers WHERE name = 'google'), 'gemini-1.5-pro', 'Gemini 1.5 Pro', '{"input_cost_per_1k": 0.0035, "output_cost_per_1k": 0.0105}', 1000000, '["text", "vision", "code", "analysis"]', 0.9, 0.8, 0.8, ARRAY['research', 'analysis', 'large_context']),
+((SELECT id FROM public.ai_providers WHERE name = 'google'), 'gemini-1.5-flash', 'Gemini 1.5 Flash', '{"input_cost_per_1k": 0.00035, "output_cost_per_1k": 0.00105}', 1000000, '["text", "vision", "code"]', 0.85, 0.9, 0.95, ARRAY['research', 'summarization', 'quick_analysis']);
 
 -- Sample workflow templates
 INSERT INTO public.workflow_templates (name, description, category, difficulty_level, estimated_duration_minutes, estimated_cost_range, is_public, template_data, tags) VALUES
@@ -640,11 +640,11 @@ INSERT INTO public.workflow_templates (name, description, category, difficulty_l
   {"id": "analysis", "name": "Critical Analysis", "agent_type": "analyzer", "model_preference": "claude-3-opus-20240229", "prompt_template": "Analyze {{research.content}} critically"},
   {"id": "synthesis", "name": "Synthesis", "agent_type": "synthesizer", "model_preference": "gpt-4-turbo", "prompt_template": "Synthesize findings from {{research.content}} and {{analysis.content}}"}
 ]}', 
-'["research", "analysis", "multi-agent"]'),
+ARRAY['research', 'analysis', 'multi-agent']),
 
 ('Quick Content Generation', 'Fast content creation workflow', 'writing', 'beginner', 2, '{"min": 0.005, "max": 0.02}', true,
 '{"steps": [
   {"id": "outline", "name": "Create Outline", "agent_type": "writer", "model_preference": "gpt-3.5-turbo", "prompt_template": "Create an outline for {{topic}}"},
   {"id": "content", "name": "Generate Content", "agent_type": "writer", "model_preference": "claude-3-haiku-20240307", "prompt_template": "Write content based on {{outline.content}}"}
 ]}',
-'["writing", "content", "quick"]'); 
+ARRAY['writing', 'content', 'quick']); 

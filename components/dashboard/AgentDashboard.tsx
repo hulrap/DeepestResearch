@@ -27,6 +27,7 @@ import { WorkflowTemplateManager, WorkflowTemplate } from '@/lib/workflow-templa
 // import { ModelSelector } from '@/lib/model-selector';
 import { MemorySystem, Memory } from '@/lib/memory';
 import { UsageMonitor } from '@/lib/cost-management';
+import ResearchInterface from '@/components/ResearchInterface';
 
 interface AgentDashboardProps {
   userId: string;
@@ -63,6 +64,8 @@ export default function AgentDashboard({ userId }: AgentDashboardProps) {
   const [usageStats, setUsageStats] = useState<UsageStats | null>(null);
   const [recentMemories, setRecentMemories] = useState<Memory[]>([]);
   const [isLoading, setIsLoading] = useState(true);
+  const [showResearchInterface, setShowResearchInterface] = useState(false);
+  const [currentSessionId, setCurrentSessionId] = useState<string | null>(null);
 
   // System instances
   const [templateManager] = useState(() => new WorkflowTemplateManager());
@@ -113,12 +116,30 @@ export default function AgentDashboard({ userId }: AgentDashboardProps) {
 
   const startWorkflowFromTemplate = async (templateId: string) => {
     try {
-      // This would create and start a new workflow
-      console.log(`Starting workflow from template ${templateId}`);
+      setIsLoading(true);
+      
+      // Create workflow session from template
+      const workflowManager = new WorkflowTemplateManager();
+      const sessionId = await workflowManager.createWorkflowFromTemplate(
+        templateId,
+        userId,
+        `Research Session ${new Date().toLocaleString()}`
+      );
+      
+      // Start the workflow execution
+      console.log(`Created workflow session: ${sessionId}`);
+      
+      // Show the research interface
+      setCurrentSessionId(sessionId);
+      setShowResearchInterface(true);
+      
       // Refresh active workflows
       await loadDashboardData();
     } catch (error) {
       console.error('Failed to start workflow:', error);
+      alert(`Failed to start workflow: ${error instanceof Error ? error.message : 'Unknown error'}`);
+    } finally {
+      setIsLoading(false);
     }
   };
 
@@ -135,12 +156,22 @@ export default function AgentDashboard({ userId }: AgentDashboardProps) {
   if (isLoading) {
     return (
       <div className="flex items-center justify-center h-96">
-        <div className="animate-spin rounded-full h-32 w-32 border-b-2 border-blue-600"></div>
+        <div className="animate-spin rounded-full h-32 w-32 border-b-2 border-blue-600">        </div>
       </div>
     );
   }
 
   return (
+    <>
+      {showResearchInterface && currentSessionId && (
+        <ResearchInterface
+          sessionId={currentSessionId}
+          onClose={() => {
+            setShowResearchInterface(false);
+            setCurrentSessionId(null);
+          }}
+        />
+      )}
     <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 dark:from-gray-900 dark:to-gray-800">
       {/* Header */}
       <div className="bg-white/80 dark:bg-gray-900/80 backdrop-blur-sm border-b sticky top-0 z-10">
@@ -458,5 +489,6 @@ export default function AgentDashboard({ userId }: AgentDashboardProps) {
         )}
       </div>
     </div>
+    </>
   );
 } 
