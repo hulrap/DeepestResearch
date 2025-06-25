@@ -1,0 +1,1517 @@
+{
+  "navigation": {
+    "home": "ホーム",
+    "manifest": "マニフェスト",
+    "partners": "パートナー",
+    "settings": "設定",
+    "dashboard": "プロフィール",
+    "signIn": "サインイン",
+    "signUp": "登録",
+    "signOut": "サインアウト",
+    "protected": "プロフィール",
+    "loading": "読み込み中..."
+  },
+  "home": {
+    "title": "クィア・アライアンス",
+    "welcomeBackPrefix": "クィア・アライアンスへようこそ",
+    "joinPrefix": "私たちのクィア・アライアンスに参加しよう",
+    "welcomeBack": "{email}さん、おかえりなさい",
+    "subtitle": "あなたはすでにクィア・アライアンスの一員です！ダッシュボードにアクセスして、あなたの旅を続けましょう。",
+    "guestSubtitle": "登録して私たちのコミュニティの一員になりましょう",
+    "goToDashboard": "ダッシュボードへ",
+    "register": "登録",
+    "userGreeting": "{email}さん、こんにちは！",
+    "joinOurDeep Resirch": "私たちのクィア・アライアンスに参加しよう",
+    "welcomeBackShort": "おかえりなさい！",
+    "loginButton": "ログイン",
+    "currentLanguage": "日本語",
+    "memberSince": "メンバー登録日",
+    "accountStatus": "アカウント状況",
+    "accountVerified": "認証済み",
+    "accountPending": "保留中",
+    "profileStatus": "プロフィール",
+    "profileActive": "有効",
+    "roles": "役割",
+    "undecided": "未定",
+    "metaTitle": "クィア・アライアンス - 私たちの同盟に参加",
+    "metaDescription": "クィア・アライアンスに参加しよう",
+    "genericUser": "ユーザー",
+    "profileExplainer": {
+      "title": "レインボーラビットを追いかけてきてくれて素晴らしいです。",
+      "content": "<h2>あなたのようなヒーローが今求められています。</h2><p>私たちの権利が世界中で危機に瀕している今、団結する時が来ました。クィアアライアンスでは、コミュニティ内でのコミュニケーション、情報共有、ネットワーキングを促進し、既存のプロジェクトを相互にサポートするとともに、新しいプロジェクトも共同で立ち上げていきたいと考えています。私たちは話し合いから行動へと移りたいのです。</p><p>アイデアは、ブラチスラヴァプライドの支援、コミュニティ情報デー、請願、アクション、デモのための大規模なメーリングリストなど多岐にわたります。あなたも新しいアイデアや希望を提案することができます。私たちはお互いに実現をサポートします。</p><h3>情報を受け取りたい、または参加したいですか？</h3><p>現在、4つの異なる役割で参加することができます：</p><ol><li>サポーターおよびニュースレター購読者として</li><li>個別のアクションのためのアクティビストとして</li><li>専門的な質問のためのエキスパートとして</li><li>そして積極的な参加と月例ミーティングのためのメンバーとして。</li></ol><p>もっと知りたい場合は、プロフィール情報を記入してください。プライド月間後にご連絡します。</p><h3>時間はないけど寄付したいですか？</h3><p>私たちのすべてのサービスは無料です。</p><p>しかし、政府の助成金や企業スポンサーシップに依存するべきではありません。</p><p>そのため、中期的にはコミュニティが自己資金調達をすべきです。</p>"
+    },
+    "fillOutProfile": "プロフィールを記入する",
+    "rainbowRabbitAlt": "虹色のウサギ",
+    "footer": {
+      "copyright": "© 2025 Deep Resirch. All rights reserved.",
+      "imprint": "インプリント",
+      "cookiePolicy": "クッキーポリシー",
+      "privacyPolicy": "プライバシーポリシー",
+      "contact": "お問い合わせ",
+      "partners": "パートナー"
+    }
+  },
+  "auth": {
+    "login": {
+      "title": "おかえりなさい",
+      "subtitle": "クィア・アライアンスアカウントにサインイン",
+      "email": "メールアドレス",
+      "emailPlaceholder": "your.email@example.com",
+      "password": "パスワード",
+      "forgotPassword": "パスワードをお忘れですか？",
+      "signInButton": "サインイン",
+      "signingIn": "サインイン中...",
+      "noAccount": "アカウントをお持ちでないですか？"
+    },
+    "signUp": {
+      "title": "クィア・アライアンスに参加",
+      "subtitle": "アカウントを作成してクィア・アライアンスの一員になりましょう",
+      "email": "メールアドレス",
+      "emailPlaceholder": "your.email@example.com",
+      "password": "パスワード",
+      "passwordPlaceholder": "強力なパスワードを作成",
+      "confirmPassword": "パスワードを確認",
+      "confirmPasswordPlaceholder": "パスワードを再入力",
+      "joinButton": "アライアンスに参加",
+      "creatingAccount": "アカウント作成中...",
+      "passwordsDoNotMatch": "パスワードが一致しません",
+      "emailAlreadyRegistered": "このメールアドレスは既にクィア・アライアンスに登録されています。",
+      "registrationFailed": "登録に失敗しました。もう一度お試しください。",
+      "alreadyHaveAccount": "すでにアカウントをお持ちですか？",
+      "signInHere": "こちらからサインイン"
+    },
+    "signUpSuccess": {
+      "readyToSignIn": "サインインの準備はできましたか？",
+      "journeyBegins": "あなたの旅が今、始まります",
+      "registrationSuccessful": "登録が完了しました！",
+      "confirmationInstructions": "クィア・アライアンスへの登録が成功しました。サインインする前に、メールを確認してアカウントを認証してください。",
+      "whatsNext": "次は何をしますか？",
+      "checkEmail": "メールの受信トレイを確認",
+      "clickConfirmation": "確認リンクをクリック",
+      "returnToSignIn": "ここに戻ってサインイン",
+      "startJourney": "クィア・アライアンスの旅を始めましょう",
+      "noEmailReceived": "メールが届きませんか？迷惑メールフォルダを確認するか、",
+      "tryAgain": "もう一度試す"
+    },
+    "forgotPassword": {
+      "title": "パスワードをリセット",
+      "description": "メールアドレスを入力してください。パスワードをリセットするための安全なリンクをお送りします。",
+      "successTitle": "メールをご確認ください",
+      "successDescription": "パスワードリセットリンクを送信しました",
+      "successMessage": "パスワードをリセットするための安全なリンクを送信しました。リンクをクリックして新しいパスワードを設定してください。",
+      "successInstructions": "次の手順：",
+      "step1": "メールの受信トレイ（と迷惑メールフォルダ）を確認してください",
+      "step2": "メール内の「パスワードをリセット」リンクをクリックしてください",
+      "step3": "安全なリセットページで新しいパスワードを入力してください",
+      "noEmail": "メールが届きませんか？",
+      "resendLink": "別のリセットメールを送信",
+      "sending": "送信中...",
+      "sendResetEmail": "リセットメールを送信",
+      "alreadyHaveAccount": "すでにアカウントをお持ちですか？"
+    },
+    "updatePassword": {
+      "title": "パスワードをリセット",
+      "description": "以下に新しいパスワードを入力してください。",
+      "newPassword": "新しいパスワード",
+      "newPasswordPlaceholder": "新しいパスワード",
+      "confirmNewPassword": "新しいパスワードを確認",
+      "confirmNewPasswordPlaceholder": "新しいパスワードを確認してください",
+      "saving": "保存中...",
+      "saveNewPassword": "新しいパスワードを保存",
+      "verifyingLink": "リセットリンクを検証中...",
+      "authenticationRequired": "認証が必要です",
+      "passwordUpdated": "パスワードが更新されました！",
+      "passwordUpdatedSuccess": "パスワードが正常に更新されました。ダッシュボードにリダイレクトされます。",
+      "redirectingMoment": "しばらくしてリダイレクトします..."
+    },
+    "signOut": {
+      "signingOut": "サインアウト中...",
+      "signOutError": "サインアウトに失敗しました。もう一度お試しください。",
+      "signOutSuccess": "正常にサインアウトしました"
+    },
+    "errors": {
+      "genericError": "エラーが発生しました",
+      "invalidCredentials": "メールアドレスまたはパスワードが無効です",
+      "emailRequired": "メールアドレスは必須です",
+      "passwordRequired": "パスワードは必須です",
+      "codeError": "コードエラー: {code}",
+      "codeErrorPrefix": "コードエラー:",
+      "unspecifiedError": "不明なエラーが発生しました。"
+    }
+  },
+  "settings": {
+    "title": "プロフィール",
+    "subtitle": "プロフィール情報と設定を管理します",
+    "loading": "設定を読み込み中...",
+    "error": "設定の読み込みに失敗しました",
+    "tryAgain": "再試行",
+    "edit": "編集",
+    "save": "保存",
+    "saving": "保存中...",
+    "cancel": "キャンセル",
+    "notSet": "未設定",
+    "menu": {
+      "profile": "プロフィール",
+      "contact": "連絡先",
+      "professional": "職務経歴",
+      "participation": "役割",
+      "location": "場所",
+      "finance": "寄付",
+      "settings": "設定"
+    },
+    "categories": {
+      "personal": {
+        "title": "個人情報"
+      },
+      "professional": {
+        "title": "職務経歴情報",
+        "description": "あなたの仕事とスキル"
+      },
+      "location": {
+        "title": "場所",
+        "description": "あなたの所在地"
+      },
+      "contact": {
+        "title": "連絡先情報",
+        "description": "連絡方法"
+      },
+      "participation": {
+        "title": "アライアンスの役割",
+        "description": "クィア・アライアンスでの参加方法を選択してください"
+      },
+      "account": {
+        "title": "アカウント設定",
+        "description": "セキュリティとアカウント管理"
+      },
+      "profile": {
+        "title": "プロフィール情報",
+        "description": "あなたの基本プロフィール詳細"
+      },
+      "finance": {
+        "title": "寄付",
+        "description": "サブスクリプションと請求を管理"
+      }
+    },
+    "fields": {
+      "username": {
+        "label": "ユーザー名",
+        "placeholder": "ユニークなユーザー名を選択",
+        "description": "1日1回のみ変更可能です。",
+        "autoGeneratedDescription": "このユーザー名はメールアドレスから自動生成されました。1度だけ変更できます。",
+        "rateLimitError": "ユーザー名は1日に1回しか変更できません。",
+        "formatError": "ユーザー名は6～30文字で、文字、数字、アンダースコア、ドットのみ使用できます"
+      },
+      "firstName": {
+        "label": "名",
+        "placeholder": "あなたの名",
+        "description": "任意",
+        "rateLimitError": "名は3回までしか変更できません。"
+      },
+      "lastName": {
+        "label": "姓",
+        "placeholder": "あなたの姓",
+        "description": "任意",
+        "rateLimitError": "姓は3回までしか変更できません。"
+      },
+      "language": {
+        "label": "言語"
+      },
+      "bio": {
+        "label": "自己紹介",
+        "placeholder": "短い自己紹介を書いてください...",
+        "description": "",
+        "rateLimitError": "自己紹介は1日に10回までしか変更できません"
+      },
+      "website": {
+        "label": "ウェブサイト",
+        "placeholder": "https://your-website.com",
+        "description": "",
+        "rateLimitError": "ウェブサイトは1日に5回までしか変更できません",
+        "formatError": "形式が間違っています。例: https://your-website.com"
+      },
+      "phone": {
+        "label": "電話番号",
+        "placeholder": "あなたの電話番号",
+        "description": "任意項目、初回入力後2回まで変更可能。",
+        "rateLimitError": "電話番号は初回入力後2回までしか変更できません",
+        "formatError": "形式が間違っています。例: +819012345678"
+      },
+      "contactComment": {
+        "label": "ブラチスラバ・プライド＆コンタクトコメント",
+        "placeholder": "ブラチスラバ・プライドに関する詳細情報が必要な場合は、このコメント欄にご記入ください。それ以外の場合は、連絡先のご希望についてコメントを残してください。",
+        "description": "連絡目的の追加情報"
+      },
+      "professionalComment": {
+        "label": "職務経歴コメント",
+        "placeholder": "あなたの職業に関する追加コメント...",
+        "description": "あなたの職務経験に関する自由記述コメント"
+      },
+      "profession": {
+        "label": "職業",
+        "placeholder": "職業を検索..."
+      },
+      "organization": {
+        "label": "組織",
+        "placeholder": "あなたの組織名（雇用主、事業名など）"
+      },
+      "experienceLevel": {
+        "label": "経験レベル"
+      },
+      "skills": {
+        "label": "スキルと能力",
+        "description": "技術的なスキルから趣味やライフスキルまで、持っているスキルを追加してください",
+        "placeholder": "例：料理、JavaScript、ガーデニング、文献調査..."
+      },
+      "country": {
+        "label": "国",
+        "description": "居住国を選択してください"
+      },
+      "region": {
+        "label": "地域/都道府県",
+        "description": "あなたの地域または都道府県を選択してください",
+        "placeholder": "地域/都道府県を選択"
+      },
+      "city": {
+        "label": "市区町村",
+        "placeholder": "あなたの市区町村"
+      },
+      "email": {
+        "label": "メールアドレス",
+        "description": "メールアドレスを変更する",
+        "confirmationRequired": "新しいメールアドレスを確認する必要があります",
+        "placeholder": "your.email@example.com",
+        "emailRequired": "メールアドレスは必須です"
+      },
+      "password": {
+        "label": "パスワード",
+        "description": "パスワードを変更する",
+        "currentPassword": "現在のパスワード",
+        "newPassword": "新しいパスワード",
+        "newPasswordRequired": "新しいパスワードは必須です",
+        "confirmNewPassword": "新しいパスワードを確認",
+        "confirmNewPasswordPlaceholder": "新しいパスワードを確認してください",
+        "newPasswordPlaceholder": "新しいパスワードを入力してください"
+      }
+    },
+    "consent": {
+      "title": "連絡許可",
+      "directContact": {
+        "label": "直接の連絡を許可する",
+        "description": "クィア・アライアンス内での機会について連絡を受けることに同意します"
+      },
+      "newsletter": {
+        "label": "メールニュースレター",
+        "description": "ニュースレターや情報を受け取ることに同意します"
+      },
+      "privacyNotice": "これらの許可はいつでも変更できます。私たちはあなたのプライバシーを尊重し、GDPRガイドラインに従います。",
+      "consentTimestamp": "同意日: {timestamp}",
+      "lastUpdated": "最終更新日: {timestamp}"
+    },
+    "participation": {
+      "title": "参加役割を選択",
+      "description": "参加のための役割を1つ以上選択してください（拘束力なし）。利用可能性、スキル、ネットワーク、時間、または目標に応じて複数の役割を選択できます<strong>いつでも変更できます</strong>。",
+      "roles": {
+        "member": {
+          "title": "メンバー",
+          "description": "メンバーとして様々な方法で参加したい"
+        },
+        "expert": {
+          "title": "専門家",
+          "description": "専門的な問題でアライアンスに助言したい"
+        },
+        "activist": {
+          "title": "活動家",
+          "description": "アライアンスが可視性と影響力を生み出すのを手伝いたい"
+        },
+        "supporter": {
+          "title": "サポーター",
+          "description": "クィア・アライアンスを財政的に支援したい"
+        }
+      }
+    },
+    "account": {
+      "changeEmail": {
+        "title": "メールアドレスの変更",
+        "button": "メールアドレスを変更",
+        "success": "メールアドレスの変更が開始されました。メールを確認して認証してください。"
+      },
+      "changePassword": {
+        "title": "パスワードの変更",
+        "button": "パスワードを変更",
+        "success": "パスワードが正常に更新されました"
+      },
+      "deleteAccount": {
+        "title": "アカウントの削除",
+        "description": "プロフィールと関連するすべてのデータを永久に削除します",
+        "button": "アカウントを削除",
+        "confirmText": "DELETE",
+        "confirmPlaceholder": "確認のために「DELETE」と入力してください",
+        "warning": "この操作は元に戻せません。すべてのデータが永久に削除されます。",
+        "subscriptionWarning": "重要：アカウントを削除する前に、すべてのアクティブなサブスクリプションをキャンセルしてください。サブスクリプションをキャンセルせずにアカウントを削除した場合、管理者に連絡して手動でキャンセルしてもらう必要があります。",
+        "success": "アカウントが正常に削除されました"
+      }
+    },
+    "options": {
+      "experienceLevel": {
+        "intern": "インターン",
+        "entry": "エントリーレベル（0～2年）",
+        "mid": "中間レベル（3～5年）",
+        "senior": "シニアレベル（6～10年）",
+        "lead": "リード/プリンシパル（10年以上）",
+        "executive": "エグゼクティブ/Cレベル"
+      }
+    },
+    "profile": {
+      "title": "プロフィール情報",
+      "description": "あなたの基本アカウント情報",
+      "email": "メールアドレス",
+      "memberSince": "メンバー登録日",
+      "lastUpdated": "最終更新日",
+      "profileCompletion": "プロフィールの完成度"
+    },
+    "loadingStates": {
+      "saving": "保存中...",
+      "updatingSettings": "設定を更新中",
+      "deletingAccount": "アカウントを削除中...",
+      "deletingWarning": "この操作は元に戻せません",
+      "autoNavigating": "自動ナビゲーション中...",
+      "nextSection": "次のセクション",
+      "loadingCountries": "国を読み込み中...",
+      "loadingRegions": "地域を読み込み中...",
+      "loadingCities": "市区町村を読み込み中...",
+      "loadingSupportStatus": "サポート状況を読み込み中...",
+      "loadingPlans": "プランを読み込み中..."
+    },
+    "errors": {
+      "rateLimitExceeded": "このフィールドのレート制限を超えました",
+      "changeLimitExceeded": "このフィールドの変更制限を超えました",
+      "invalidInput": "無効な入力です",
+      "saveFailed": "変更の保存に失敗しました",
+      "loadFailed": "データの読み込みに失敗しました",
+      "failedToChangeEmail": "メールアドレスの変更に失敗しました",
+      "failedToChangePassword": "パスワードの変更に失敗しました",
+      "maximumCharacters": "最大{maxLength}文字までです",
+      "validation": {
+        "invalidLanguageCode": "無効な言語コードです",
+        "invalidExperienceLevel": "無効な経験レベルです",
+        "skillsMustBeArray": "スキルは配列である必要があります",
+        "bioTooLong": "自己紹介が長すぎます（最大500文字）",
+        "invalidWebsite": "ウェブサイトはhttp://またはhttps://で始まり、有効なドメイン（例：https://a.co）を持っている必要があります",
+        "invalidPreferencesStructure": "無効な設定構造です"
+      }
+    },
+    "professional": {
+      "organizationRepresentative": {
+        "label": "私は組織を代表しています",
+        "description": "組織の代表として直接連絡を受けることに同意します"
+      }
+    },
+    "finance": {
+      "title": "寄付と請求",
+      "description": "サブスクリプションと請求の設定を管理します",
+      "current": "現在のサブスクリプション",
+      "loading": "サブスクリプションを読み込み中...",
+      "manage": "サブスクリプションを管理",
+      "upgrade": "プランをアップグレード",
+      "billing": "請求履歴",
+      "thankYouSupport": "アライアンスを支援していただきありがとうございます！",
+      "considerSupporting": "活動への支援をご検討ください",
+      "premiumFeatures": "プレミアム機能とサポート",
+      "processing": "処理中...",
+      "contributeNow": "今すぐ貢献する",
+      "changeSupportLevel": "サポートレベルを変更",
+      "startSupporting": "支援を開始する",
+      "noPlansAvailable": "利用可能なプランはありません",
+      "manageSubscriptionDescription": "サブスクリプションの管理、請求書の表示、請求情報の更新",
+      "accessAccountDescription": "アカウント設定、支払い方法、請求情報にアクセス",
+      "manageSubscriptionBilling": "サブスクリプションと請求の管理",
+      "accessBillingPortal": "請求ポータルにアクセス",
+      "stripePortalDescription": "Stripeの安全な請求ポータルを利用：支払い方法の管理、請求書の表示、請求先住所の更新など",
+      "currentSupportStatus": "現在のサポート状況",
+      "activeSubscription": "✓ アクティブなサブスクリプション",
+      "statusLabel": "状況:",
+      "nextBilling": "次回請求日:",
+      "oneTimeContributionMade": "✓ 一時的な貢献が行われました",
+      "successfulContribution": "あなたは活動に成功裏に貢献しました",
+      "noActiveSupport": "⚠ アクティブなサポートはありません",
+      "chooseSupportOption": "クィア・アライアンスを支援するために、以下のサポートオプションを選択してください",
+      "waysToSupport": "活動を支援する方法",
+      "chooseAmountStripe": "Stripeの安全なチェックアウトで金額を選択します",
+      "perInterval": "/ {interval}",
+      "plansAvailableOnce": "プランはStripeで作成されるとここに表示されます",
+      "billingAccountManagement": "請求とアカウント管理",
+      "payAsYouWish": "好きなだけ支払う",
+      "oneTime": "一回限り",
+      "plans": {
+        "basic": {
+          "name": "ベーシック",
+          "description": "開始するための基本機能",
+          "price": "月額 ¥1,500"
+        },
+        "pro": {
+          "name": "プロフェッショナル",
+          "description": "アクティブなメンバーのための高度な機能",
+          "price": "月額 ¥3,000"
+        },
+        "expert": {
+          "name": "エキスパート",
+          "description": "優先サポート付きのフルアクセス",
+          "price": "月額 ¥6,000"
+        },
+        "lifetime": {
+          "name": "ライフタイムアクセス",
+          "description": "永久アクセスのための一括払い",
+          "price": "¥45,000"
+        }
+      },
+      "error": "サブスクリプション情報の読み込みに失敗しました",
+      "messages": {
+        "paymentSuccessSyncing": "支払いが成功しました！データを同期しています...",
+        "paymentSuccessActivated": "支払いが成功しました！サブスクリプションが有効になりました。",
+        "paymentCanceled": "支払いがキャンセルされました。いつでも再試行できます。",
+        "welcomeBackSyncing": "おかえりなさい！請求データを同期しています...",
+        "welcomeBackUpdated": "おかえりなさい！請求情報が更新されました。"
+      }
+    }
+  },
+  "languageSwitcher": {
+    "selectLanguage": "言語を選択",
+    "updating": "言語を更新中..."
+  },
+  "theme": {
+    "light": "ライト",
+    "dark": "ダーク",
+    "system": "システム"
+  },
+  "languages": {
+    "en": "英語",
+    "de": "ドイツ語",
+    "fr": "フランス語",
+    "es": "スペイン語",
+    "it": "イタリア語",
+    "pt": "ポルトガル語",
+    "nl": "オランダ語",
+    "pl": "ポーランド語",
+    "ru": "ロシア語",
+    "ja": "日本語",
+    "ko": "韓国語",
+    "zh": "中国語",
+    "ar": "アラビア語",
+    "hi": "ヒンディー語"
+  },
+  "professions": {
+    "chief-executive": "最高経営責任者",
+    "administration-and-planning-manager": "管理・企画マネージャー",
+    "policy-and-planning-manager": "方針・企画マネージャー",
+    "business-services-and-administration-manager": "事業サービス・管理マネージャー",
+    "sales-marketing-and-development-manager": "営業・マーケティング・開発マネージャー",
+    "production-and-specialized-services-manager": "生産・専門サービスマネージャー",
+    "hospitality-retail-and-other-services-manager": "ホスピタリティ・小売・その他サービスマネージャー",
+    "science-and-engineering-professional": "科学・工学専門職",
+    "software-developer": "ソフトウェア開発者",
+    "systems-analyst": "システムアナリスト",
+    "database-designer": "データベース設計者",
+    "network-professional": "ネットワーク専門家",
+    "health-professional": "医療専門職",
+    "doctor": "医師",
+    "nurse": "看護師",
+    "pharmacist": "薬剤師",
+    "veterinarian": "獣医師",
+    "teaching-professional": "教育専門職",
+    "professor": "教授",
+    "secondary-education-teacher": "中等教育教員",
+    "primary-school-teacher": "小学校教員",
+    "business-and-administration-professional": "ビジネス・管理専門職",
+    "accountant": "会計士",
+    "financial-analyst": "財務アナリスト",
+    "human-resources-professional": "人事専門職",
+    "information-and-communications-technology-professional": "情報通信技術専門職",
+    "legal-professional": "法務専門職",
+    "lawyer": "弁護士",
+    "judge": "裁判官",
+    "culture-arts-and-design-professional": "文化・芸術・デザイン専門職",
+    "author": "作家",
+    "journalist": "ジャーナリスト",
+    "artist": "アーティスト",
+    "designer": "デザイナー",
+    "science-and-engineering-associate-professional": "科学・工学準専門職",
+    "engineering-technician": "エンジニアリング技術者",
+    "drafter": "製図者",
+    "health-associate-professional": "医療準専門職",
+    "medical-technician": "医療技術者",
+    "nursing-associate-professional": "看護準専門職",
+    "business-and-administration-associate-professional": "ビジネス・管理準専門職",
+    "insurance-representative": "保険代理店",
+    "estate-agent": "不動産業者",
+    "legal-social-and-cultural-associate-professional": "法務・社会・文化準専門職",
+    "legal-associate-professional": "法務準専門職",
+    "social-worker": "ソーシャルワーカー",
+    "information-and-communications-technician": "情報通信技術者",
+    "computer-technician": "コンピュータ技術者",
+    "telecommunications-technician": "電気通信技術者",
+    "general-and-keyboard-clerk": "一般・キーボード事務員",
+    "secretary": "秘書",
+    "data-entry-clerk": "データ入力事務員",
+    "customer-services-clerk": "顧客サービス事務員",
+    "customer-service-representative": "カスタマーサービス担当者",
+    "receptionist": "受付係",
+    "numerical-and-material-recording-clerk": "数値・資材記録事務員",
+    "accounting-associate-professional": "会計準専門職",
+    "bookkeeper": "簿記係",
+    "other-clerical-support-worker": "その他事務支援員",
+    "mail-carrier": "郵便配達員",
+    "filing-clerk": "ファイリング事務員",
+    "personal-service-worker": "パーソナルサービス従事者",
+    "travel-attendant": "客室乗務員",
+    "cook": "調理師",
+    "waiter": "ウェイター",
+    "hairdresser": "美容師",
+    "housekeeper": "家政婦",
+    "protective-services-worker": "保安サービス従事者",
+    "security-guard": "警備員",
+    "police-officer": "警察官",
+    "firefighter": "消防士",
+    "sales-worker": "販売員",
+    "shop-salesperson": "店舗販売員",
+    "cashier": "レジ係",
+    "sales-representative": "営業担当者",
+    "market-oriented-skilled-agricultural-worker": "市場志向型熟練農業従事者",
+    "farmer": "農家",
+    "livestock-producer": "畜産生産者",
+    "crop-grower": "作物栽培者",
+    "market-oriented-skilled-forestry-fishery-and-hunting-worker": "市場志向型熟練林業・漁業・狩猟従事者",
+    "logger": "きこり",
+    "fisherman": "漁師",
+    "subsistence-farmer-fisherman-hunter-and-gatherer": "自給自足農家・漁師・狩人・採集者",
+    "building-and-related-trades-worker": "建設・関連業従事者",
+    "carpenter": "大工",
+    "electrician": "電気技師",
+    "plumber": "配管工",
+    "painter": "塗装工",
+    "metal-machinery-and-related-trades-worker": "金属・機械・関連業従事者",
+    "welder": "溶接工",
+    "machinist": "機械工",
+    "mechanic": "整備士",
+    "handicraft-and-printing-worker": "手工芸・印刷従事者",
+    "potter": "陶芸家",
+    "tailor": "仕立て屋",
+    "printer": "印刷工",
+    "electrical-and-electronic-trades-worker": "電気・電子業従事者",
+    "food-processing-woodworking-garment-and-other-craft-and-related-trades-worker": "食品加工・木工・衣料・その他工芸関連業従事者",
+    "stationary-plant-and-machine-operator": "定置プラント・機械オペレーター",
+    "power-plant-operator": "発電所オペレーター",
+    "machine-operator": "機械オペレーター",
+    "assembler": "組立工",
+    "product-assembler": "製品組立工",
+    "electronics-assembler": "電子機器組立工",
+    "driver-and-mobile-plant-operator": "運転手・移動式プラントオペレーター",
+    "truck-driver": "トラック運転手",
+    "bus-driver": "バス運転手",
+    "taxi-driver": "タクシー運転手",
+    "cleaner-and-helper": "清掃員・補助員",
+    "domestic-helper": "家事手伝い",
+    "building-cleaner": "ビル清掃員",
+    "kitchen-helper": "厨房補助員",
+    "agricultural-forestry-and-fishery-laborer": "農林水産業労働者",
+    "farm-worker": "農作業員",
+    "gardener": "庭師",
+    "laborer-in-mining-construction-manufacturing-and-transport": "鉱業・建設・製造・運輸労働者",
+    "construction-laborer": "建設作業員",
+    "factory-worker": "工場作業員",
+    "food-preparation-assistant": "調理補助",
+    "street-and-related-service-worker": "街頭・関連サービス従事者",
+    "content-creator": "コンテンツクリエーター",
+    "social-media-manager": "ソーシャルメディアマネージャー",
+    "digital-marketing-specialist": "デジタルマーケティング専門家",
+    "uxui-designer": "UX/UIデザイナー",
+    "data-scientist": "データサイエンティスト",
+    "machine-learning-engineer": "機械学習エンジニア",
+    "devops-engineer": "DevOpsエンジニア",
+    "product-manager": "プロダクトマネージャー",
+    "consultant": "コンサルタント",
+    "entrepreneur": "起業家",
+    "freelancer": "フリーランサー",
+    "student": "学生",
+    "retired": "退職者",
+    "unemployed": "無職",
+    "other": "その他"
+  },
+  "skills": {
+    "javascript": "JavaScript",
+    "typescript": "TypeScript",
+    "python": "Python",
+    "java": "Java",
+    "c#": "C#",
+    "c++": "C++",
+    "go": "Go",
+    "rust": "Rust",
+    "php": "PHP",
+    "ruby": "Ruby",
+    "swift": "Swift",
+    "kotlin": "Kotlin",
+    "react": "React",
+    "vuejs": "Vue.js",
+    "angular": "Angular",
+    "svelte": "Svelte",
+    "nextjs": "Next.js",
+    "nodejs": "Node.js",
+    "expressjs": "Express.js",
+    "django": "Django",
+    "flask": "Flask",
+    "postgresql": "PostgreSQL",
+    "mysql": "MySQL",
+    "mongodb": "MongoDB",
+    "redis": "Redis",
+    "aws": "AWS",
+    "azure": "Azure",
+    "google-cloud": "Google Cloud",
+    "docker": "Docker",
+    "kubernetes": "Kubernetes",
+    "machine-learning": "機械学習",
+    "artificial-intelligence": "人工知能",
+    "data-science": "データサイエンス",
+    "data-analysis": "データ分析",
+    "statistics": "統計学",
+    "cybersecurity": "サイバーセキュリティ",
+    "network-administration": "ネットワーク管理",
+    "database-administration": "データベース管理",
+    "system-administration": "システム管理",
+    "web-development": "ウェブ開発",
+    "mobile-development": "モバイル開発",
+    "game-development": "ゲーム開発",
+    "software-testing": "ソフトウェアテスト",
+    "devops": "DevOps",
+    "graphic-design": "グラフィックデザイン",
+    "uiux-design": "UI/UXデザイン",
+    "web-design": "ウェブデザイン",
+    "brand-design": "ブランドデザイン",
+    "logo-design": "ロゴデザイン",
+    "typography": "タイポグラフィ",
+    "adobe-photoshop": "Adobe Photoshop",
+    "adobe-illustrator": "Adobe Illustrator",
+    "figma": "Figma",
+    "sketch": "Sketch",
+    "canva": "Canva",
+    "video-editing": "動画編集",
+    "animation": "アニメーション",
+    "photography": "写真撮影",
+    "digital-photography": "デジタル写真",
+    "portrait-photography": "ポートレート写真",
+    "landscape-photography": "風景写真",
+    "photo-editing": "写真編集",
+    "drawing": "描画",
+    "painting": "絵画",
+    "digital-art": "デジタルアート",
+    "illustration": "イラストレーション",
+    "sculpture": "彫刻",
+    "ceramics": "陶芸",
+    "jewelry-making": "ジュエリー製作",
+    "3d-modeling": "3Dモデリング",
+    "cad-design": "CADデザイン",
+    "industrial-design": "工業デザイン",
+    "interior-design": "インテリアデザイン",
+    "fashion-design": "ファッションデザイン",
+    "project-management": "プロジェクト管理",
+    "product-management": "プロダクト管理",
+    "business-analysis": "ビジネス分析",
+    "strategic-planning": "戦略計画",
+    "leadership": "リーダーシップ",
+    "team-management": "チーム管理",
+    "human-resources": "人事",
+    "recruitment": "採用",
+    "sales": "営業",
+    "marketing": "マーケティング",
+    "digital-marketing": "デジタルマーケティング",
+    "social-media-marketing": "ソーシャルメディアマーケティング",
+    "content-marketing": "コンテンツマーケティング",
+    "email-marketing": "メールマーケティング",
+    "seo": "SEO",
+    "sem": "SEM",
+    "ppc-advertising": "PPC広告",
+    "financial-analysis": "財務分析",
+    "accounting": "会計",
+    "bookkeeping": "簿記",
+    "budgeting": "予算編成",
+    "investment-analysis": "投資分析",
+    "risk-management": "リスク管理",
+    "supply-chain-management": "サプライチェーン管理",
+    "operations-management": "業務管理",
+    "quality-assurance": "品質保証",
+    "process-improvement": "プロセス改善",
+    "business-development": "事業開発",
+    "negotiation": "交渉",
+    "contract-management": "契約管理",
+    "vendor-management": "ベンダー管理",
+    "public-speaking": "パブリックスピーキング",
+    "presentation-skills": "プレゼンテーションスキル",
+    "technical-writing": "テクニカルライティング",
+    "creative-writing": "クリエイティブライティング",
+    "copywriting": "コピーライティング",
+    "content-creation": "コンテンツ作成",
+    "journalism": "ジャーナリズム",
+    "blogging": "ブログ",
+    "editing": "編集",
+    "proofreading": "校正",
+    "translation": "翻訳",
+    "interpretation": "通訳",
+    "customer-service": "カスタマーサービス",
+    "client-relations": "顧客対応",
+    "conflict-resolution": "紛争解決",
+    "mediation": "調停",
+    "storytelling": "ストーリーテリング",
+    "interviewing": "インタビュー",
+    "active-listening": "アクティブリスニング",
+    "cross-cultural-communication": "異文化コミュニケーション",
+    "teaching": "教育",
+    "training-development": "研修開発",
+    "curriculum-design": "カリキュラム設計",
+    "educational-technology": "教育工学",
+    "e-learning": "Eラーニング",
+    "mentoring": "メンタリング",
+    "coaching": "コーチング",
+    "workshop-facilitation": "ワークショップファシリテーション",
+    "adult-education": "成人教育",
+    "child-development": "児童発達",
+    "special-education": "特別支援教育",
+    "educational-assessment": "教育評価",
+    "research-methods": "研究方法論",
+    "academic-writing": "学術論文執筆",
+    "first-aid": "応急手当",
+    "cpr": "心肺蘇生法（CPR）",
+    "medical-knowledge": "医学知識",
+    "nursing": "看護",
+    "physical-therapy": "理学療法",
+    "mental-health-support": "メンタルヘルスサポート",
+    "nutrition": "栄養学",
+    "fitness-training": "フィットネストレーニング",
+    "yoga": "ヨガ",
+    "meditation": "瞑想",
+    "mindfulness": "マインドフルネス",
+    "stress-management": "ストレス管理",
+    "health-coaching": "ヘルスコーチング",
+    "massage-therapy": "マッサージ療法",
+    "acupuncture": "鍼治療",
+    "herbal-medicine": "漢方薬",
+    "alternative-medicine": "代替医療",
+    "carpentry": "大工仕事",
+    "plumbing": "配管工事",
+    "electrical-work": "電気工事",
+    "hvac": "HVAC（空調設備）",
+    "welding": "溶接",
+    "automotive-repair": "自動車修理",
+    "motorcycle-repair": "バイク修理",
+    "appliance-repair": "家電修理",
+    "computer-repair": "コンピュータ修理",
+    "electronics-repair": "電子機器修理",
+    "decorating": "装飾",
+    "tiling": "タイル張り",
+    "roofing": "屋根葺き",
+    "masonry": "石工",
+    "landscaping": "造園",
+    "construction": "建設",
+    "home-improvement": "リフォーム",
+    "furniture-making": "家具製作",
+    "cooking": "料理",
+    "baking": "パン・菓子作り",
+    "pastry-making": "製菓",
+    "food-preparation": "調理",
+    "menu-planning": "メニュー計画",
+    "recipe-development": "レシピ開発",
+    "food-safety": "食品安全",
+    "kitchen-management": "厨房管理",
+    "wine-knowledge": "ワイン知識",
+    "bartending": "バーテンディング",
+    "coffee-making": "コーヒー抽出",
+    "brewing": "醸造",
+    "food-photography": "フード写真",
+    "catering": "ケータリング",
+    "meal-planning": "食事計画",
+    "nutrition-planning": "栄養計画",
+    "dietary-planning": "食事療法計画",
+    "music-production": "音楽制作",
+    "audio-engineering": "音響工学",
+    "music-composition": "作曲",
+    "singing": "歌唱",
+    "guitar": "ギター",
+    "piano": "ピアノ",
+    "drums": "ドラム",
+    "violin": "バイオリン",
+    "bass": "ベース",
+    "saxophone": "サックス",
+    "music-theory": "音楽理論",
+    "sound-design": "サウンドデザイン",
+    "podcast-production": "ポッドキャスト制作",
+    "acting": "演技",
+    "theater": "演劇",
+    "film-making": "映画製作",
+    "screenwriting": "脚本執筆",
+    "video-production": "ビデオ制作",
+    "broadcasting": "放送",
+    "stand-up-comedy": "スタンドアップコメディ",
+    "improvisation": "即興",
+    "dance": "ダンス",
+    "ballet": "バレエ",
+    "hip-hop": "ヒップホップ",
+    "salsa": "サルサ",
+    "ballroom-dancing": "社交ダンス",
+    "football": "アメリカンフットボール",
+    "basketball": "バスケットボール",
+    "soccer": "サッカー",
+    "tennis": "テニス",
+    "golf": "ゴルフ",
+    "swimming": "水泳",
+    "running": "ランニング",
+    "cycling": "サイクリング",
+    "hiking": "ハイキング",
+    "rock-climbing": "ロッククライミング",
+    "skiing": "スキー",
+    "snowboarding": "スノーボード",
+    "surfing": "サーフィン",
+    "martial-arts": "武道",
+    "boxing": "ボクシング",
+    "wrestling": "レスリング",
+    "gymnastics": "体操",
+    "track-and-field": "陸上競技",
+    "baseball": "野球",
+    "volleyball": "バレーボール",
+    "badminton": "バドミントン",
+    "table-tennis": "卓球",
+    "sports-coaching": "スポーツコーチング",
+    "personal-training": "パーソナルトレーニング",
+    "athletic-training": "アスレティックトレーニング",
+    "camping": "キャンプ",
+    "backpacking": "バックパッキング",
+    "fishing": "釣り",
+    "hunting": "狩猟",
+    "map-reading": "地図読み",
+    "orienteering": "オリエンテーリング",
+    "wilderness-survival": "サバイバル技術",
+    "fire-making": "火起こし",
+    "foraging": "食料採集",
+    "knot-tying": "ロープワーク",
+    "rope-work": "ロープ作業",
+    "sailing": "セーリング",
+    "kayaking": "カヤック",
+    "canoeing": "カヌー",
+    "mountain-climbing": "登山",
+    "cave-exploration": "洞窟探検",
+    "wildlife-tracking": "野生動物追跡",
+    "gardening": "ガーデニング",
+    "organic-gardening": "有機栽培",
+    "hydroponics": "水耕栽培",
+    "permaculture": "パーマカルチャー",
+    "composting": "コンポスティング",
+    "plant-propagation": "植物繁殖",
+    "tree-care": "樹木手入れ",
+    "flower-arranging": "フラワーアレンジメント",
+    "botanical-knowledge": "植物学知識",
+    "pest-management": "害虫管理",
+    "soil-management": "土壌管理",
+    "irrigation": "灌漑",
+    "greenhouse-management": "温室管理",
+    "urban-farming": "都市農業",
+    "beekeeping": "養蜂",
+    "knitting": "編み物",
+    "crocheting": "かぎ針編み",
+    "sewing": "裁縫",
+    "quilting": "キルティング",
+    "embroidery": "刺繍",
+    "cross-stitch": "クロスステッチ",
+    "woodworking": "木工",
+    "metalworking": "金属加工",
+    "glassblowing": "吹きガラス",
+    "pottery": "陶芸",
+    "candle-making": "キャンドル作り",
+    "soap-making": "石鹸作り",
+    "leatherworking": "革細工",
+    "bookbinding": "製本",
+    "origami": "折り紙",
+    "calligraphy": "書道",
+    "scrapbooking": "スクラップブッキング",
+    "model-building": "模型製作",
+    "data-collection": "データ収集",
+    "statistical-analysis": "統計分析",
+    "literature-review": "文献レビュー",
+    "critical-thinking": "批判的思考",
+    "problem-solving": "問題解決能力",
+    "mathematical-modeling": "数理モデリング",
+    "scientific-method": "科学的方法",
+    "laboratory-skills": "実験スキル",
+    "microscopy": "顕微鏡操作",
+    "spectroscopy": "分光法",
+    "chemical-analysis": "化学分析",
+    "fieldwork": "フィールドワーク",
+    "survey-design": "調査設計",
+    "grant-writing": "助成金申請書作成",
+    "time-management": "時間管理",
+    "organization": "整理整頓",
+    "goal-setting": "目標設定",
+    "self-discipline": "自己規律",
+    "emotional-intelligence": "感情的知性",
+    "decision-making": "意思決定",
+    "creative-thinking": "創造的思考",
+    "innovation": "イノベーション",
+    "adaptability": "適応性",
+    "resilience": "回復力",
+    "self-motivation": "自己動機付け",
+    "continuous-learning": "継続的学習",
+    "self-reflection": "自己内省",
+    "networking": "ネットワーキング",
+    "relationship-building": "関係構築",
+    "empathy": "共感力",
+    "cultural-sensitivity": "文化的感受性",
+    "team-collaboration": "チームコラボレーション",
+    "volunteer-coordination": "ボランティア調整",
+    "community-organizing": "コミュニティ形成",
+    "event-planning": "イベント企画",
+    "party-planning": "パーティー企画",
+    "hospitality": "ホスピタリティ",
+    "customer-relations": "顧客対応",
+    "diplomacy": "外交術",
+    "persuasion": "説得力",
+    "influence": "影響力",
+    "social-media-engagement": "ソーシャルメディアエンゲージメント",
+    "computer-literacy": "コンピュータースキル",
+    "internet-research": "インターネットリサーチ",
+    "email-management": "メール管理",
+    "social-media-management": "ソーシャルメディア管理",
+    "online-marketing": "オンラインマーケティング",
+    "e-commerce": "Eコマース",
+    "digital-privacy": "デジタルプライバシー",
+    "cybersecurity-awareness": "サイバーセキュリティ意識",
+    "podcast-creation": "ポッドキャスト作成",
+    "youtube-creation": "YouTubeコンテンツ作成",
+    "live-streaming": "ライブストリーミング",
+    "online-teaching": "オンライン教育",
+    "virtual-collaboration": "バーチャルコラボレーション",
+    "driving": "運転",
+    "truck-driving": "トラック運転",
+    "motorcycle-riding": "バイク運転",
+    "bicycle-maintenance": "自転車整備",
+    "navigation": "ナビゲーション",
+    "route-planning": "ルート計画",
+    "logistics-coordination": "物流調整",
+    "warehouse-management": "倉庫管理",
+    "inventory-management": "在庫管理",
+    "shipping-and-receiving": "出荷・受入",
+    "personal-finance": "個人金融",
+    "investment-planning": "投資計画",
+    "tax-preparation": "税務申告",
+    "insurance-knowledge": "保険知識",
+    "real-estate": "不動産",
+    "cryptocurrency": "暗号通貨",
+    "trading": "トレーディング",
+    "financial-planning": "ファイナンシャルプランニング",
+    "retirement-planning": "退職計画",
+    "debt-management": "債務管理",
+    "spanish": "スペイン語",
+    "french": "フランス語",
+    "german": "ドイツ語",
+    "italian": "イタリア語",
+    "portuguese": "ポルトガル語",
+    "russian": "ロシア語",
+    "chinese": "中国語",
+    "japanese": "日本語",
+    "korean": "韓国語",
+    "arabic": "アラビア語",
+    "hindi": "ヒンディー語",
+    "dutch": "オランダ語",
+    "swedish": "スウェーデン語",
+    "norwegian": "ノルウェー語",
+    "danish": "デンマーク語",
+    "finnish": "フィンランド語",
+    "polish": "ポーランド語",
+    "turkish": "トルコ語",
+    "magic-tricks": "手品",
+    "juggling": "ジャグリング",
+    "balloon-animals": "バルーンアート",
+    "face-painting": "フェイスペインティング",
+    "card-games": "カードゲーム",
+    "board-games": "ボードゲーム",
+    "chess": "チェス",
+    "bridge": "ブリッジ",
+    "poker": "ポーカー",
+    "trivia-knowledge": "雑学知識",
+    "speed-reading": "速読",
+    "memory-techniques": "記憶術",
+    "escape-rooms": "脱出ゲーム",
+    "puzzle-solving": "パズル解決",
+    "crossword-puzzles": "クロスワードパズル",
+    "sudoku": "数独",
+    "word-games": "ワードゲーム"
+  },
+  "common": {
+    "add": "追加",
+    "remove": "削除",
+    "search": "検索",
+    "select": "選択",
+    "loading": "読み込み中...",
+    "error": "エラー",
+    "success": "成功",
+    "yes": "はい",
+    "no": "いいえ",
+    "ok": "OK",
+    "close": "閉じる",
+    "submit": "送信",
+    "reset": "リセット",
+    "clear": "クリア",
+    "next": "次へ",
+    "previous": "前へ",
+    "back": "戻る",
+    "forward": "進む",
+    "help": "ヘルプ",
+    "about": "概要"
+  },
+  "cookiePolicy": {
+    "title": "クッキーポリシー",
+    "lastUpdated": "最終更新日：2025年6月",
+    "labels": {
+      "purpose": "目的：",
+      "cookies": "クッキー：",
+      "privacy": "プライバシー：",
+      "legalBasis": "法的根拠：",
+      "cookieName": "クッキー名",
+      "duration": "期間"
+    },
+    "introduction": {
+      "title": "クッキーポリシー",
+      "content": "このクッキーポリシーは、QUEER MEDIA LITERACY e.V.（「クィア・アライアンス」）が当社のプラットフォームでクッキーをどのように使用するかを説明します。<strong>当社は、プラットフォームが機能するために必要な必須クッキーのみを使用します</strong>。同意が必要な追跡、広告、または分析クッキーは使用しません。"
+    },
+    "whatAreCookies": {
+      "title": "1. クッキーとは",
+      "content": "クッキーは、お客様が当社のウェブサイトを訪れた際に、お使いのデバイスに保存される小さなテキストファイルです。<strong>当社は、プラットフォームが機能するために必要な必須クッキーのみを使用します</strong>：",
+      "remembering": "• <strong>安全なログインセッション</strong> - 安全にログイン状態を維持します",
+      "improving": "• <strong>多言語サポート</strong> - ナビゲーションのためにお客様の言語選択を記憶します",
+      "analyzing": "• <strong>支払いセキュリティ</strong> - 寄付時の不正行為を防止します",
+      "personalizing": "• <strong>追跡なし</strong> - お客様の行動を追跡するためにクッキーを使用しません"
+    },
+    "typesOfCookies": {
+      "title": "2. 当社が使用するクッキーの種類",
+      "essential": {
+        "title": "必須クッキー（当社が使用する唯一のクッキー）",
+        "content": "<strong>当社のすべてのクッキーは必須です</strong> - プラットフォームが機能するために必要であり、GDPRに基づきお客様の同意は不要です：",
+        "authentication": "• <strong>ログインセキュリティ</strong>: 安全にログインを維持するためのセッショントークン",
+        "security": "• <strong>支払い保護</strong>: 寄付時のStripe不正防止",
+        "functionality": "• <strong>言語サポート</strong>: サイトナビゲーションのためにお客様の言語選択を記憶",
+        "compliance": "• <strong>追跡なし</strong>: 個人データ収集や行動追跡にクッキーは使用しません"
+      },
+      "functional": {
+        "title": "ユーザー設定（クッキーではなくアカウントに保存）",
+        "content": "<strong>プライバシー・バイ・デザイン</strong>: お客様の設定は追跡クッキーではなく、安全なアカウントプロフィールに保存します：",
+        "preferences": "• <strong>言語とテーマ</strong>: アカウントプロフィールに保存され、どのデバイスからでもアクセス可能",
+        "formData": "• <strong>アクセシビリティ設定</strong>: データベースプロフィールに安全に保存",
+        "accessibility": "• <strong>より良いプライバシー</strong>: アカウントベースの保存により、追跡クッキーは不要"
+      },
+      "analytics": {
+        "title": "分析（完全にクッキーフリー）",
+        "content": "当社は<strong>Vercel Web Analytics</strong>を使用しています - これはゼロクッキーを使用するプライバシー第一のソリューションです：",
+        "usage": "• <strong>クッキーなし</strong>: 匿名ハッシュベースの訪問者識別を使用",
+        "performance": "• <strong>プライバシー第一</strong>: ハッシュは24時間ごとにリセットされ、サイト横断追跡はなし",
+        "demographics": "• <strong>匿名のみ</strong>: 集計された統計情報、個人データはなし",
+        "provider": "• <strong>同意不要</strong>: 設計上準拠しており、クッキーがないため同意は不要"
+      },
+      "payment": {
+        "title": "支払い処理クッキー（支払いに必須）",
+        "content": "Stripe支払い処理業者は、支払い処理中に必須クッキーを使用します：",
+        "fraud": "• <strong>不正防止</strong>: __stripe_mid (1年), __stripe_sid (30分)",
+        "security": "• <strong>支払いセキュリティ</strong>: 安全な取引処理に不可欠",
+        "session": "• <strong>セッション管理</strong>: チェックアウトプロセス中の支払い状態を維持"
+      }
+    },
+    "thirdPartyServices": {
+      "title": "3. 第三者サービスとそのクッキー",
+      "content": "当社は、お客様がそのサービスを使用する際にクッキーを設定する可能性のあるGDPR準拠のパートナーと協力しています：",
+      "stripe": {
+        "title": "Stripe（支払い処理）",
+        "purpose": "寄付とメンバーシップのための安全な支払い処理",
+        "cookies": "必須クッキー: __stripe_mid, __stripe_sid (不正防止、セキュリティ)",
+        "privacy": "プライバシーポリシー: stripe.com/privacy | クッキーポリシー: stripe.com/legal/cookies-policy",
+        "legal": "支払い処理中にのみ使用（契約履行のための正当な利益）"
+      },
+      "vercel": {
+        "title": "Vercel Analytics（ウェブサイト分析）",
+        "purpose": "プライバシー重視のウェブサイト分析とパフォーマンス監視",
+        "cookies": "クッキーは使用されません - ハッシュベースの匿名訪問者識別",
+        "privacy": "プライバシーポリシー: vercel.com/legal/privacy-policy",
+        "legal": "個人データやクッキーが使用されないため、同意は不要"
+      },
+      "supabase": {
+        "title": "Supabase（認証とデータベース）",
+        "purpose": "安全なユーザー認証とデータ保存",
+        "cookies": "認証用セッションクッキー（ログイン機能に必須）",
+        "privacy": "プライバシーポリシー: supabase.com/privacy",
+        "legal": "契約履行のための必須クッキー（同意不要）"
+      }
+    },
+    "cookieConsent": {
+      "title": "4. なぜクッキーの同意が不要なのか",
+      "content": "<strong>同意は不要です</strong> - 当社のすべてのクッキーは機能に不可欠です：",
+      "essential": "• <strong>必須のみ</strong>: ログイン、支払い、ナビゲーションに必要なすべてのクッキー",
+      "granular": "• <strong>追跡なし</strong>: 広告、分析、または行動クッキーは使用しません",
+      "withdraw": "• <strong>GDPR準拠</strong>: 必須クッキーは同意要件から免除されます",
+      "settings": "• <strong>プライバシー・バイ・デザイン</strong>: 最小限のデータ収集、最大限のユーザープライバシー",
+      "noConsent": "• <strong>透明性</strong>: 何を、なぜ使用するのかを正確にお伝えします"
+    },
+    "browserControls": {
+      "title": "5. ブラウザのクッキー制御",
+      "content": "ブラウザの設定でクッキーを制御できます。必須クッキーを無効にすると、ログインや支払いの機能が妨げられる可能性があることに注意してください：",
+      "chrome": "• <strong>Chrome</strong>: 設定 > プライバシーとセキュリティ > Cookieと他のサイトデータ",
+      "firefox": "• <strong>Firefox</strong>: オプション > プライバシーとセキュリティ > Cookieとサイトデータ",
+      "safari": "• <strong>Safari</strong>: 環境設定 > プライバシー > CookieとWebサイトのデータ",
+      "edge": "• <strong>Edge</strong>: 設定 > サイトのアクセス許可 > Cookieとサイトデータ",
+      "impact": "<strong>重要</strong>: 必須クッキーを無効にすると、ログイン、支払い、およびコア機能が妨げられます"
+    },
+    "cookieDetails": {
+      "title": "6. 詳細なクッキー一覧",
+      "content": "お使いのデバイスに設定される可能性のあるクッキーの完全なリスト：",
+      "essential": {
+        "title": "必須クッキー（機能に必要）",
+        "items": [
+          {
+            "name": "sb-[project]-auth-token",
+            "purpose": "Supabase認証セッショントークン（安全なログイン）",
+            "duration": "1時間（自動更新）",
+            "provider": "Supabase",
+            "legal": "契約履行（ユーザーアカウントアクセスに必須）"
+          },
+          {
+            "name": "__stripe_mid",
+            "purpose": "Stripe不正防止（支払いセキュリティ）",
+            "duration": "1年",
+            "provider": "Stripe",
+            "legal": "正当な利益（支払い時の不正防止）"
+          },
+          {
+            "name": "__stripe_sid",
+            "purpose": "Stripeセッション管理（支払いプロセス）",
+            "duration": "30分",
+            "provider": "Stripe",
+            "legal": "契約履行（支払い処理に必須）"
+          },
+          {
+            "name": "NEXT_LOCALE",
+            "purpose": "Next.jsロケールルーティング（言語URLルーティング）",
+            "duration": "1年",
+            "provider": "Next.js",
+            "legal": "契約履行（多言語機能に必須）"
+          }
+        ]
+      },
+      "functional": {
+        "title": "機能性クッキー（現在なし）",
+        "content": "当社は機能性クッキーを使用していません。ユーザー設定はクッキーの代わりにデータベースプロフィールに安全に保存され、より良いプライバシーとデバイス間での持続性を提供します。"
+      },
+      "analytics": {
+        "title": "分析（クッキーなし）",
+        "content": "Vercel Web Analyticsは、GDPRの下で同意を必要としない、プライバシーに配慮したクッキーフリーの分析を使用しています。"
+      }
+    },
+    "legalBasis": {
+      "title": "7. クッキー処理の法的根拠",
+      "content": "当社のクッキー使用は、GDPR第6条およびeプライバシー指令第5条(3)に準拠しています：",
+      "essential": "• <strong>必須クッキー</strong>: プラットフォームの機能性とセキュリティのための正当な利益（第6条(1)(f)）",
+      "payment": "• <strong>支払いクッキー</strong>: 取引処理のための契約履行（第6条(1)(b)）",
+      "consent": "• <strong>機能性クッキー</strong>: ユーザー体験向上のための同意（第6条(1)(a)）",
+      "compliance": "• <strong>同意クッキー</strong>: GDPRコンプライアンス記録のための法的義務（第6条(1)(c)）",
+      "analytics": "• <strong>分析</strong>: 法的根拠は不要（クッキーや個人データは処理されません）"
+    },
+    "dataProtection": {
+      "title": "8. データ保護とクッキーに関する権利",
+      "content": "GDPRに基づくクッキー関連のデータ保護権は以下の通りです：",
+      "access": "• <strong>アクセス権</strong>: デバイスに設定されたクッキーに関する情報を要求する",
+      "rectification": "• <strong>訂正権</strong>: 不正確なクッキー設定記録を訂正する",
+      "erasure": "• <strong>消去権</strong>: クッキー同意記録を削除する（連絡先: admin@queer-Deep Resirch.com）",
+      "restriction": "• <strong>制限権</strong>: クッキー処理を必須のもののみに制限する",
+      "objection": "• <strong>異議申立権</strong>: 非必須クッキーに異議を申し立てる（同意を撤回する）",
+      "portability": "• <strong>データポータビリティ権</strong>: クッキー同意履歴を構造化された形式で受け取る"
+    },
+    "updates": {
+      "title": "9. 本クッキーポリシーの更新",
+      "content": "法的または技術的な変更を反映するために、このクッキーポリシーを更新することがあります：",
+      "notification": "• <strong>通知</strong>: お客様の権利に影響を与える重要な変更があった場合、メールで通知します",
+      "consent": "• <strong>新たな同意</strong>: 新しい種類のクッキーや目的について、更新された同意を求めます",
+      "effective": "• <strong>発効日</strong>: 緊急の場合を除き、変更は通知後30日で発効します",
+      "version": "• <strong>バージョン管理</strong>: 以前のバージョンはリクエストに応じて利用可能です"
+    },
+    "contact": {
+      "title": "10. クッキーに関するお問い合わせ",
+      "content": "当社のクッキーに関する慣行についてのご質問や、お客様の権利を行使するためには、以下にご連絡ください：",
+      "email": "データ保護責任者: admin@queer-Deep Resirch.com",
+      "response": "GDPR第12条に基づき、30日以内に回答します",
+      "dpa": "監督当局: オーストリアデータ保護当局 (dsb.gv.at)",
+      "address": "QUEER MEDIA LITERACY e.V., 1060 Wien, Mariahilfer Straße 49/15, Austria"
+    }
+  },
+  "manifest": {
+    "title": "マニフェスト",
+    "lastUpdated": "最終更新日：2025年6月",
+    "why": {
+      "title": "なぜ私たちは集まったのか？",
+      "content": "私たちは、よく組織され、豊富なリソースを持つ勢力が人々を互いに対立させる時代に生きています。彼らの目標は明確です：クィアの人々の基本的権利を攻撃し、平等な権利が付与されるのを妨げることです。私たちの同盟は、これらの反民主的で非人道的な試みへの応答です。私たちは後退させられたり、分裂させられたり、混乱させられたり、抑圧されたりすることはなく、決意を持って前進します。"
+    },
+    "who": {
+      "title": "私たちは誰か？",
+      "content": "私たちは、LGBTQIA+コミュニティを強化し保護するために協力するクィアの人々とそのアライ（支援者）の同盟です。私たちは、集合的な力を結集し、メンバーの利益を促進する連帯のためのネットワークであると自認しています。私たちは、オープンで多様な社会のアイデアとデザインのための創造的な空間を創り出します。"
+    },
+    "what": {
+      "title": "私たちを駆り立てるものは何か？",
+      "content": "私たちは、あらゆる敵意に対して、安全、可視性、そして愛への権利を守ります。私たちの存在について決定する権利は誰にもありません。私たちは、他者に決定されることなく、自分たちの未来を自分たちの手で切り開きます。"
+    },
+    "participation": {
+      "title": "誰が参加できるのか？",
+      "content": "私たちの同盟は、出身、所属、生活様式に関わらず、LGBTQIA+コミュニティのすべてのメンバーとそのアライに開かれています。他者が分裂させ排除するところで、私たちは多様性を通じて強さを生きます。"
+    },
+    "action": {
+      "title": "私たちはどう行動するのか？",
+      "content": "私たちは、内部的にも外部的にも、お互いのために立ち上がります。私たちは傍観せず、行動します。私たちは、自由、多様性、自己決定のための同盟の一部です。"
+    }
+  },
+  "imprint": {
+    "title": "インプリント",
+    "lastUpdated": "最終更新日：2025年6月",
+    "labels": {
+      "name": "名称",
+      "seat": "所在地",
+      "address": "住所",
+      "country": "国",
+      "foundationDate": "設立日"
+    },
+    "organization": {
+      "title": "団体情報",
+      "name": "QUEER MEDIA LITERACY e.V.",
+      "seat": "ウィーン",
+      "address": "1060 Wien, Mariahilfer Straße 49/15",
+      "country": "オーストリア",
+      "foundationDate": "2024年9月21日"
+    },
+    "partners": {
+      "title": "パートナー",
+      "partnersList": "Deep Resirchの独立まで、Queer Media Literacy協会がウェブサイトの責任を負います。しかし、協会は多くのパートナーの中の一つに過ぎません。Vangardist Agency & Magazine, GGG.at, Transv.at, Queer Moments, Queer Dance im Gemeindebau, Porn Film Festival Vienna, Queer Shorts Vienna, Vienna Gay Mans Chorus, YK Media"
+    },
+    "registration": {
+      "title": "登記",
+      "authority": "管轄：ウィーン州警察本部、協会・集会・メディア法務課",
+      "zvrNumber": "ZVR番号 1689372191"
+    },
+    "contact": {
+      "title": "連絡先",
+      "emailLabel": "Eメール：",
+      "email": "admin@queer-Deep Resirch.com",
+      "note": "すべてのお問い合わせには、上記のEメールアドレスを専らご使用ください。"
+    },
+    "responsible": {
+      "title": "コンテンツ責任者",
+      "content": "協会QUEER MEDIA LITERACY e.V.は、このウェブサイトのすべてのコンテンツに責任を負います。"
+    },
+    "disclaimer": {
+      "title": "免責事項",
+      "content": "慎重なコンテンツ管理にもかかわらず、外部リンクのコンテンツに対する責任は負いません。リンク先のページのコンテンツについては、その運営者のみが責任を負います。"
+    }
+  },
+  "privacyPolicy": {
+    "title": "プライバシーポリシー",
+    "lastUpdated": "最終更新日：2025年6月",
+    "introduction": {
+      "title": "プライバシーポリシー",
+      "content": "このプライバシーポリシーは、Deep Resirch（「私たち」、「私たちの」、または「私たち」）が、お客様が私たちのプラットフォームおよびサービスを利用する際に、お客様の個人情報をどのように収集、使用、共有、保護するかを説明するものです。私たちは、お客様が私たちのコミュニティプラットフォームと関わる際に、お客様のプライバシーを保護し、お客様が私たちに寄せる信頼を維持することに尽力しています。",
+      "keyPrivacyFeaturesTitle": "主要なプライバシー機能：",
+      "keyPoints": "<strong>主要なプライバシー機能：</strong><br>• <strong>完全なコントロール</strong>：プロフィール設定からアカウント全体と全データを即座に削除<br>• <strong>詳細な同意</strong>：受信したい通信を正確に選択<br>• <strong>データの透明性</strong>：収集するデータとその理由を明確に説明<br>• <strong>EUによる保護</strong>：EU内でホストされ、完全なGDPRコンプライアンスとオーストリアのデータ保護法を遵守<br>• <strong>データ販売なし</strong>：お客様の個人情報を第三者に販売することは決してありません"
+    },
+    "controllerInfo": {
+      "title": "1. データ管理者情報",
+      "content": "私たちはお客様の個人情報に責任を負うデータ管理者です。プライバシーに関するすべての事項については、以下までお問い合わせください：",
+      "contact": "データ保護責任者：admin@queer-Deep Resirch.com"
+    },
+    "legalBasis": {
+      "title": "2. 処理の法的根拠",
+      "content": "私たちは、GDPR第6条に基づき、以下の法的根拠に基づいてお客様の個人データを処理します：",
+      "consent": "• <strong>お客様の同意</strong>：ニュースレターの購読および直接のコミュニケーションについて",
+      "contract": "• <strong>契約上の必要性</strong>：プラットフォームサービスの提供およびコミュニティのつながりを促進するため",
+      "legitimateInterest": "• <strong>正当な利益</strong>：プラットフォームの運営と改善、コミュニティの安全確保、コミュニティ内での有意義なつながりを促進するため。私たちの正当な利益は、お客様のプライバシー権とバランスが取られています。",
+      "legalObligation": "• <strong>法的義務</strong>：適用される法律および規制を遵守するため",
+      "vitalInterests": "• <strong>生命に関する利益</strong>：まれに、個人の生命または身体の安全を保護するため"
+    },
+    "dataCollection": {
+      "title": "3. 収集する情報",
+      "profileData": {
+        "title": "プロフィール情報（内容と理由）",
+        "content": "• <strong>メールアドレス</strong>（必須）：アカウント作成、認証、重要な連絡、パスワードリセット<br>• <strong>ユーザー名</strong>：コミュニティでの対話やプロフィール表示のための一意の識別子<br>• <strong>名前</strong>（姓/名、任意）：パーソナライズされた挨拶、コミュニティでの認知、ネットワーキングの促進<br>• <strong>電話番号</strong>（任意）：緊急連絡先、二要素認証、プレミアムサポート<br>• <strong>自己紹介とウェブサイト</strong>（任意）：コミュニティネットワーキング、スキルの紹介、専門的なつながり<br>• <strong>スキルと能力</strong>：関連する機会とのマッチング、プロジェクト協力、専門家の特定<br>• <strong>職務経歴情報</strong>：キャリアネットワーキング、専門知識の検証、協力の機会<br>• <strong>参加設定</strong>：役割のマッチング（メンバー、専門家、活動家、サポーター）、イベントの推薦<br>• <strong>所在地</strong>（国/都道府県/市区町村）：地域イベントの通知、地域コミュニティの構築、法的コンプライアンス<br>• <strong>コミュニケーション設定</strong>：同意選択の尊重、パーソナライズされたコミュニケーション頻度"
+      },
+      "usageData": {
+        "title": "技術データ（セキュリティと機能性のみ）",
+        "content": "• <strong>IPアドレス</strong>：セキュリティ監視、不正防止、地域法の遵守<br>• <strong>ブラウザ/デバイス情報</strong>：互換性の最適化、セキュリティ検証、レスポンシブデザイン<br>• <strong>セッションデータ</strong>：認証状態、ログインセキュリティ、保護のための自動ログアウト<br>• <strong>エラーログ</strong>：技術的な問題解決、プラットフォームの安定性監視、バグ修正<br>• <strong>注</strong>：個人の活動パターン、ページ訪問、または対話データは追跡しません"
+      },
+      "paymentData": {
+        "title": "支払い情報（内容と方法）",
+        "content": "• <strong>取引記録</strong>：寄付履歴、サブスクリプション状況、請求照合<br>• <strong>支払いメタデータ</strong>：取引ID、金額、通貨、財務報告用の日付<br>• <strong>Stripe連携</strong>：PCI DSS準拠のStripeによる支払い処理<br>• <strong>請求先住所</strong>：税計算、不正防止、規制遵守<br>• <strong>サブスクリプション詳細</strong>：サービスレベル管理、更新処理、利用追跡<br>• <strong>注</strong>：クレジットカード番号、CVVコード、または機密性の高い支払いデータは一切保存しません"
+      },
+      "consentData": {
+        "title": "同意データ（コミュニケーション設定）",
+        "content": "• <strong>直接連絡</strong>：クィア・アライアンス内での機会に関する連絡を受けることへの同意<br>• <strong>ニュースレター</strong>：ニュースレターおよび情報（マーケティングではない）の受信への同意<br>• <strong>組織代表者</strong>：組織の代表として直接連絡を受けることへの同意<br>• <strong>同意履歴</strong>：設定のタイムスタンプと変更履歴（GDPRコンプライアンス）"
+      }
+    },
+    "purposes": {
+      "title": "4. お客様の情報の使用方法（詳細な目的）",
+      "community": "• <strong>コミュニティ構築</strong>：スキルベースのメンバーマッチング、地域イベントの推薦、メンターシップの連携、共通の興味や所在地に基づく協力の機会",
+      "personalization": "• <strong>パーソナライズされた体験</strong>：参加役割に基づくコンテンツのキュレーション、スキルに合わせたイベント提案、言語別のコミュニケーション、タイムゾーンに応じた通知",
+      "communication": "• <strong>コミュニケーション</strong>：ニュースレターの配信（同意に基づく）、機会に関する直接連絡（同意に基づく）、組織代表者への連絡（同意に基づく）、プラットフォームの更新、セキュリティ通知",
+      "platform": "• <strong>プラットフォーム運営</strong>：ユーザー認証、セッション管理、機能性、データ同期、多言語サポート、モバイルレスポンシブ対応",
+      "safety": "• <strong>コミュニティの安全</strong>：IP監視による不正検出、レート制限によるスパム防止、不正報告システム、コンテンツモデレーション、アカウント認証",
+      "analytics": "• <strong>ウェブサイト分析</strong>：Vercel Analyticsによる匿名化されたウェブサイト統計（個人データは収集されず、完全にクッキーフリー）",
+      "legal": "• <strong>法的コンプライアンス</strong>：オーストリアのデータ保護法の遵守、GDPR要件の履行、監査証跡の維持、必要に応じた規制報告",
+      "technical": "• <strong>技術的な機能性</strong>：データベースの最適化、バックアップ作成、システム監視、セキュリティパッチの展開、パフォーマンスの最適化、エラーの追跡と解決"
+    },
+    "sharing": {
+      "title": "5. 情報共有",
+      "content": "私たちはあなたのプライバシーを真剣に受け止めており、以下の特定の状況でのみ情報を共有します：",
+      "serviceProviders": "• <strong>サービスプロバイダー</strong>：プラットフォームの運営を支援する信頼できるパートナー（例：データホスティングのSupabase、支払いのStripe、分析のVercel）",
+      "legal": "• <strong>法的要件</strong>：法律、裁判所命令により要求された場合、または私たちの法的権利を保護するため",
+      "consent": "• <strong>あなたの同意を得て</strong>：その他の共有は、あなたの明確な許可がある場合にのみ行われます",
+      "noSharing": "• <strong>メンバー間の共有なし</strong>：他のアライアンスメンバーやユーザーとあなたの情報を共有することはありません",
+      "noSale": "<strong>私たちはあなたの個人情報を第三者に販売することは決してありません。</strong>"
+    },
+    "dataTransfers": {
+      "title": "6. 国際データ転送",
+      "content": "当社のサービスプロバイダーの一部は、欧州経済領域（EEA）外に所在する場合があります。お客様のデータを国際的に転送する場合、以下の方法で適切な保護を確保します：",
+      "adequacy": "• <strong>十分性認定</strong>：十分なデータ保護水準を持つ国への転送",
+      "safeguards": "• <strong>適切な保護措置</strong>：欧州委員会によって承認された標準契約条項",
+      "providers": "• 現在のプロバイダーには、Supabase（EUインフラ）、Stripe（EU保護措置付きグローバル）、Vercel（フランクフルト地域のEUホスティング）が含まれます"
+    },
+    "retention": {
+      "title": "7. データ保持と削除",
+      "content": "私たちはお客様の個人情報を必要な期間のみ保持し、即時の削除機能を提供します：",
+      "active": "• <strong>アクティブなアカウント</strong>：アカウントがアクティブである限り、またお客様が当社のサービスを利用し続ける限り、データは保持されます",
+      "dormant": "• <strong>休眠アカウント</strong>：完全な非アクティブ状態が3年間続いた後、自動的に削除されます（90日前にメールで事前通知）",
+      "immediate": "• <strong>即時自己削除</strong>：プロフィール設定 → アカウント設定 → アカウントの削除 から、アカウント全体を即座に削除できます",
+      "deletion": "• <strong>削除要求時</strong>：すべてのアクティブなシステム、データベース、認証サービスから即座に削除されます",
+      "backups": "• <strong>バックアップからの削除</strong>：アカウント削除後90日以内にすべてのバックアップシステムから完全に削除されます",
+      "legal": "• <strong>法的要件</strong>：オーストリアまたはEU法で具体的に要求される場合に限り、限定的なデータ保持（例：税務目的の財務記録）",
+      "technical": "• <strong>技術的な削除プロセス</strong>：メインデータベースからプロフィールデータを削除 → 認証情報を削除 → 監査ログを削除対象としてマーク → バックアップシステムを整理",
+      "confirmation": "• <strong>削除確認</strong>：アカウントが正常に削除された後、自動的にログアウトされ、メールで確認が送信されます"
+    },
+    "rights": {
+      "title": "8. GDPRに基づくあなたの権利",
+      "content": "あなたには、あなたの個人データに関して以下の権利があります：",
+      "access": "• <strong>アクセス権</strong>：admin@queer-Deep Resirch.com を通じて個人データのコピーを要求するか、プロフィール設定で直接表示します",
+      "rectification": "• <strong>訂正権</strong>：不正確なデータをプロフィール設定で直接訂正するか、admin@queer-Deep Resirch.com を通じて支援を要求します",
+      "erasure": "• <strong>消去権</strong>：プロフィール設定（設定 > アカウント設定 > アカウントの削除）から<strong>アカウント全体を即座に削除</strong>するか、admin@queer-Deep Resirch.com を通じて削除を要求します",
+      "restriction": "• <strong>処理制限権</strong>：admin@queer-Deep Resirch.com に連絡して、私たちがあなたのデータを処理する方法を制限します",
+      "portability": "• <strong>データポータビリティ権</strong>：admin@queer-Deep Resirch.com を通じて、構造化されたJSON形式であなたのデータを受け取ります",
+      "objection": "• <strong>異議申立権</strong>：admin@queer-Deep Resirch.com を通じて、正当な利益に基づく処理に異議を申し立てます",
+      "withdrawal": "• <strong>同意撤回権</strong>：プロフィール設定で直接同意設定を変更するか、admin@queer-Deep Resirch.com に連絡します",
+      "complaint": "• <strong>苦情申立権</strong>：オーストリアのデータ保護当局（Datenschutzbehörde）に dsb.gv.at で苦情を申し立てます",
+      "exercise": "ほとんどの権利はプロフィール設定で直接行使できます。追加の支援が必要な場合は、admin@queer-Deep Resirch.com にご連絡ください（30日以内の返信を保証します）。"
+    },
+    "accountDeletion": {
+      "title": "8.1. 完全なアカウント削除（セルフサービス）",
+      "content": "あなたはいつでもプロフィール設定からアカウント全体と関連するすべてのデータを直接削除できます：",
+      "access": "• <strong>アクセス方法</strong>：サインイン → プロフィール → 設定 → アカウント設定 → アカウントの削除",
+      "process": "• <strong>削除プロセス</strong>：「削除」と入力して確認 → すべてのデータが即座に永久削除",
+      "scope": "• <strong>削除されるもの</strong>：すべてのプロフィール情報、スキル、設定、同意履歴、監査ログ、セッションデータ、認証情報",
+      "immediate": "• <strong>タイミング</strong>：データベースや認証を含むすべてのシステムから即座に削除",
+      "irreversible": "• <strong>重要</strong>：この操作は元に戻せません - 一度削除されると、あなたのアカウントとデータは回復できません",
+      "backup": "• <strong>バックアップからの削除</strong>：あなたのデータは削除後90日以内にすべてのバックアップから削除されます",
+      "confirmation": "• <strong>確認</strong>：削除が成功すると、自動的にログアウトされ、リダイレクトされます",
+      "alternative": "• <strong>代替手段</strong>：アカウントの削除に関して支援が必要な場合は、admin@queer-Deep Resirch.com にお問い合わせください"
+    },
+    "security": {
+      "title": "9. 包括的なデータセキュリティ対策",
+      "content": "私たちは、あなたの個人情報を保護するために、複数の層からなる堅牢なセキュリティ対策を実施しています：",
+      "technical": {
+        "title": "技術的セキュリティ対策",
+        "content": "• <strong>データ暗号化</strong>：すべてのデータはSupabase経由で転送中（TLS 1.3）および保存時（AES-256）に暗号化<br>• <strong>データベースセキュリティ</strong>：行レベルセキュリティ（RLS）ポリシーにより、ユーザーが自分のデータにのみアクセスできるように保証<br>• <strong>認証</strong>：多要素認証のサポート、自動有効期限付きの安全なセッション管理<br>• <strong>入力検証</strong>：包括的なXSS防止、SQLインジェクション保護、入力サニタイズ<br>• <strong>セキュリティヘッダー</strong>：コンテンツセキュリティポリシー（CSP）、HTTP Strict Transport Security（HSTS）、アンチクリックジャッキング保護<br>• <strong>APIセキュリティ</strong>：レート制限、リクエスト検証、認証が必要な安全なAPIエンドポイント"
+      },
+      "organizational": {
+        "title": "組織的セキュリティ対策",
+        "content": "• <strong>アクセス制御</strong>：最小権限の原則、システムとデータへの役割ベースのアクセス<br>• <strong>スタッフ研修</strong>：定期的なセキュリティ意識向上トレーニング、データ保護プロトコル<br>• <strong>データ処理契約</strong>：すべての第三者処理業者との包括的な契約<br>• <strong>インシデント対応計画</strong>：セキュリティ侵害の検出と対応に関する文書化された手順<br>• <strong>定期的な監査</strong>：四半期ごとのセキュリティレビュー、年次の侵入テスト、脆弱性評価"
+      },
+      "monitoring": {
+        "title": "継続的なセキュリティ監視",
+        "content": "• <strong>リアルタイム監視</strong>：24時間365日のシステム監視、自動化された脅威検出<br>• <strong>監査証跡</strong>：すべてのプロフィール変更、ログイン試行、データアクセスの包括的なロギング<br>• <strong>セッション追跡</strong>：アクティブなセッションの監視、非アクティブ後の自動ログアウト<br>• <strong>不正防止</strong>：IPベースの異常検出、不審なアクティビティのアラート<br>• <strong>エラー追跡</strong>：セキュリティ関連の問題に対する自動化されたエラーロギングと対応"
+      },
+      "infrastructure": {
+        "title": "インフラストラクチャセキュリティ",
+        "content": "• <strong>ホスティングセキュリティ</strong>：SOC 2 Type II準拠のEUベースのSupabaseインフラストラクチャ<br>• <strong>ネットワークセキュリティ</strong>：ファイアウォール、管理者向けVPNアクセス、安全な通信チャネル<br>• <strong>バックアップセキュリティ</strong>：暗号化された自動バックアップ、安全なバックアップストレージ、テスト済みの回復手順<br>• <strong>更新管理</strong>：自動化されたセキュリティパッチ、定期的な依存関係の更新、脆弱性スキャン<br>• <strong>コンプライアンス</strong>：GDPRコンプライアンス、オーストリアのデータ保護法遵守、定期的なコンプライアンス監査"
+      },
+      "incident": {
+        "title": "データ侵害対応",
+        "content": "• <strong>検出</strong>：自動化された監視システム、不審なアクティビティの即時アラート<br>• <strong>対応</strong>：必要な場合、72時間以内にオーストリアのデータ保護当局への侵害通知<br>• <strong>ユーザー通知</strong>：侵害が確認されてから72時間以内に影響を受けたユーザーへの直接連絡<br>• <strong>被害軽減</strong>：即時の封じ込め手順、セキュリティパッチの展開、システムの強化<br>• <strong>文書化</strong>：完全なインシデント文書化、インシデント後のセキュリティ改善"
+      }
+    },
+    "cookies": {
+      "title": "10. クッキーと追跡",
+      "content": "<strong>私たちは必須クッキーのみを使用しており</strong>、追跡、分析、またはマーケティングクッキーは使用していません。詳細については、当社のクッキーポリシーをご覧ください。主なポイント：",
+      "essential": "• <strong>必須クッキーのみ</strong>：ログイン、支払い、言語サポートに必要（同意不要）",
+      "analytics": "• <strong>分析クッキーなし</strong>：代わりにVercelのクッキーフリー分析を使用しています",
+      "preference": "• <strong>設定はアカウントに保存</strong>：言語、テーマ、設定はクッキーではなくデータベースプロフィールに保存されます",
+      "marketing": "• <strong>マーケティングクッキーなし</strong>：広告や行動追跡クッキーは使用しません"
+    },
+    "minors": {
+      "title": "11. 未成年者の保護",
+      "content": "当社のプラットフォームは18歳以上の個人を対象としています。18歳未満のユーザーは、アカウントを作成したり、当社のサービスを利用したりすることはできません。"
+    },
+    "changes": {
+      "title": "12. 本ポリシーの変更",
+      "content": "私たちは、当社の慣行や法的要件の変更を反映するために、このプライバシーポリシーを更新することがあります。その際には：",
+      "notification": "• <strong>ユーザーへの通知</strong>：重要な変更についてはメールで通知します",
+      "consent": "• <strong>同意の取得</strong>：お客様の権利に重大な影響を与える変更については、同意を得ます",
+      "posting": "• <strong>更新の掲載</strong>：常に最新版を当社のウェブサイトに掲載します",
+      "date": "• <strong>日付の更新</strong>：「最終更新日」の日付は最新の改訂を示します"
+    },
+    "contact": {
+      "title": "13. 連絡先情報",
+      "content": "プライバシーに関するご質問や権利の行使については、以下までお問い合わせください：",
+      "details": "Eメール：admin@queer-Deep Resirch.com\n返信時間：30日以内\nデータ保護当局：オーストリアデータ保護当局 (dsb.gv.at)"
+    }
+  },
+  "partners": {
+    "title": "パートナー",
+    "descriptions": {
+      "1": "主要なクィアメディアエージェンシーおよび雑誌",
+      "2": "クィアコミュニケーション",
+      "3": "トランスジェンダーに関する交流、教育、カウンセリングなど",
+      "4": "私たちはクィア・アート・プロジェクトを企画し、アーティストに光を当てることで、可視性を高め、議論を喚起します。",
+      "5": "寛容、尊重、多様性のために、私たちはコミュニティを巡って踊ります。",
+      "6": "ポルノとクィアのトピックに関する映画祭",
+      "7": "ウィーンで最初の国際クィア短編映画祭",
+      "8": "ウィーンのゲイ男性合唱団",
+      "9": "クィアなクリエイティブ制作会社",
+      "10": "ウィーンのクィアポップパーティー"
+    },
+    "categories": {
+      "1": "エージェンシー、雑誌",
+      "2": "メディア",
+      "3": "カウンセリング、教育、サポート",
+      "4": "イベント、ニュース",
+      "5": "イベント、ダンス",
+      "6": "映画祭",
+      "7": "映画祭",
+      "8": "音楽",
+      "9": "クリエイティブ制作",
+      "10": "クラビング"
+    },
+    "visit": "訪問する"
+  },
+  "accessibility": {
+    "menuButton": "メニュー"
+  },
+  "errors": {
+    "stripe": {
+      "checkoutFailed": "チェックアウトに失敗しました",
+      "billingPortalError": "請求ポータルエラー",
+      "failedToCreateCheckoutSession": "チェックアウトセッションの作成に失敗しました",
+      "noCheckoutUrlReceived": "チェックアウトURLが受信されませんでした",
+      "failedToStartCheckout": "チェックアウトの開始に失敗しました。もう一度お試しください。",
+      "failedToCreatePortalSession": "ポータルセッションの作成に失敗しました",
+      "noPortalUrlReceived": "ポータルURLが受信されませんでした",
+      "failedToOpenBillingPortal": "請求ポータルを開けませんでした。もう一度お試しください。",
+      "userProfileNotFound": "ユーザープロフィールが見つかりません。アカウントを削除できません。",
+      "failedToDeleteAccountViaAPI": "API経由でのアカウント削除に失敗しました",
+      "failedToDeleteAccount": "アカウントの削除に失敗しました"
+    },
+    "finance": {
+      "planFallbackName": "プラン {index}",
+      "planFallbackDescription": "あなたの貢献で活動を支援してください"
+    }
+  }
+}

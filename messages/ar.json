@@ -1,0 +1,1517 @@
+{
+  "navigation": {
+    "home": "الرئيسية",
+    "settings": "الإعدادات",
+    "dashboard": "الملف الشخصي",
+    "manifest": "البيان",
+    "partners": "الشركاء",
+    "signIn": "تسجيل الدخول",
+    "signUp": "التسجيل",
+    "signOut": "تسجيل الخروج",
+    "protected": "الملف الشخصي",
+    "loading": "جارٍ التحميل..."
+  },
+  "home": {
+    "title": "تحالف الكوير",
+    "welcomeBackPrefix": "أهلاً بك في تحالف الكوير",
+    "joinPrefix": "انضم إلى تحالف الكوير",
+    "welcomeBack": "مرحباً بعودتك، {email}",
+    "subtitle": "أنت بالفعل جزء من تحالف الكوير! ادخل إلى ملفك الشخصي لمواصلة رحلتك.",
+    "guestSubtitle": "سجل لتصبح جزءًا من مجتمعنا",
+    "goToDashboard": "الذهاب إلى الملف الشخصي",
+    "register": "التسجيل",
+    "userGreeting": "أهلاً، {email}!",
+    "joinOurDeep Resirch": "انضم إلى تحالف الكوير",
+    "welcomeBackShort": "مرحباً بعودتك!",
+    "loginButton": "تسجيل الدخول",
+    "currentLanguage": "العربية",
+    "memberSince": "عضو منذ",
+    "accountStatus": "حالة الحساب",
+    "accountVerified": "موثق",
+    "accountPending": "قيد الانتظار",
+    "profileStatus": "الملف الشخصي",
+    "profileActive": "نشط",
+    "roles": "الأدوار",
+    "undecided": "لم يقرر بعد",
+    "metaTitle": "تحالف الكوير - انضم إلى تحالفنا",
+    "metaDescription": "انضم إلى تحالف الكوير",
+    "genericUser": "مستخدم",
+    "profileExplainer": {
+      "title": "رائع أنك اتبعت الأرنب قوس قزح.",
+      "content": "<h2>نحن بحاجة الآن إلى أبطال مثلك.</h2><p>بما أن حقوقنا في خطر حول العالم، حان الوقت لنتحد معاً. من خلال تحالف المثليين، نريد توفير المزيد من التواصل والمعلومات والترابط داخل المجتمع، ودعم بعضنا البعض في المشاريع القائمة بالفعل، وكذلك بدء مشاريع جديدة معاً. نريد الانتقال من الكلام إلى الفعل.</p><p>تتراوح الأفكار من دعم فخر براتيسلافا، ويوم معلومات المجتمع، إلى قائمة بريدية كبيرة للعرائض والإجراءات والمظاهرات. يمكنك أيضاً تقديم أفكار ورغبات جديدة. سندعم بعضنا البعض في التنفيذ.</p><h3>هل تريد أن تبقى على اطلاع أو المشاركة؟</h3><p>حالياً، يمكنك المشاركة بأربعة أدوار مختلفة:</p><ol><li>كداعم ومشترك في النشرة الإخبارية</li><li>كناشط لأنشطة فردية</li><li>كخبير للأسئلة المتخصصة</li><li>وكعضو للمشاركة النشطة والاجتماعات الشهرية.</li></ol><p>إذا كنت تريد معرفة المزيد، املأ معلومات ملفك الشخصي وسنتواصل معك بعد شهر الفخر.</p><h3>ليس لديك وقت، لكنك تريد التبرع؟</h3><p>جميع خدماتنا مجانية.</p><p>لكننا لا يجب أن نعتمد على التمويل الحكومي أو رعاية الشركات.</p><p>لذلك، يجب أن يمول المجتمع نفسه على المدى المتوسط.</p>"
+    },
+    "fillOutProfile": "املأ الملف الشخصي",
+    "rainbowRabbitAlt": "أرنب قوس قزح",
+    "footer": {
+      "copyright": "© 2025 تحالف الكوير. جميع الحقوق محفوظة.",
+      "imprint": "البصمة القانونية",
+      "cookiePolicy": "سياسة ملفات تعريف الارتباط",
+      "privacyPolicy": "سياسة الخصوصية",
+      "contact": "اتصل بنا",
+      "partners": "الشركاء"
+    }
+  },
+  "auth": {
+    "login": {
+      "title": "مرحباً بعودتك",
+      "subtitle": "سجّل الدخول إلى حسابك في تحالف الكوير",
+      "email": "البريد الإلكتروني",
+      "emailPlaceholder": "your.email@example.com",
+      "password": "كلمة المرور",
+      "forgotPassword": "هل نسيت كلمة المرور؟",
+      "signInButton": "تسجيل الدخول",
+      "signingIn": "جارٍ تسجيل الدخول...",
+      "noAccount": "ليس لديك حساب؟"
+    },
+    "signUp": {
+      "title": "انضم إلى تحالف الكوير",
+      "subtitle": "أنشئ حسابك وكن جزءًا من تحالف الكوير",
+      "email": "البريد الإلكتروني",
+      "emailPlaceholder": "your.email@example.com",
+      "password": "كلمة المرور",
+      "passwordPlaceholder": "أنشئ كلمة مرور قوية",
+      "confirmPassword": "تأكيد كلمة المرور",
+      "confirmPasswordPlaceholder": "كرر كلمة المرور الخاصة بك",
+      "joinButton": "الانضمام إلى التحالف",
+      "creatingAccount": "جارٍ إنشاء الحساب...",
+      "passwordsDoNotMatch": "كلمات المرور غير متطابقة",
+      "emailAlreadyRegistered": "عنوان البريد الإلكتروني هذا مسجل بالفعل في تحالف الكوير.",
+      "registrationFailed": "فشل التسجيل. يرجى المحاولة مرة أخرى.",
+      "alreadyHaveAccount": "هل لديك حساب بالفعل؟",
+      "signInHere": "سجل الدخول هنا"
+    },
+    "signUpSuccess": {
+      "readyToSignIn": "هل أنت مستعد لتسجيل الدخول؟",
+      "journeyBegins": "رحلتك تبدأ الآن",
+      "registrationSuccessful": "تم التسجيل بنجاح!",
+      "confirmationInstructions": "لقد قمت بالتسجيل بنجاح في تحالف الكوير. يرجى التحقق من بريدك الإلكتروني لتأكيد حسابك قبل تسجيل الدخول.",
+      "whatsNext": "ماذا بعد؟",
+      "checkEmail": "تحقق من صندوق بريدك الإلكتروني",
+      "clickConfirmation": "انقر على رابط التأكيد",
+      "returnToSignIn": "عد إلى هنا لتسجيل الدخول",
+      "startJourney": "ابدأ رحلتك مع تحالف الكوير",
+      "noEmailReceived": "لم تستلم بريدًا إلكترونيًا؟ تحقق من مجلد الرسائل غير المرغوب فيها أو",
+      "tryAgain": "حاول مرة أخرى"
+    },
+    "forgotPassword": {
+      "title": "إعادة تعيين كلمة المرور",
+      "description": "اكتب بريدك الإلكتروني وسنرسل لك رابطًا آمنًا لإعادة تعيين كلمة المرور الخاصة بك",
+      "successTitle": "تحقق من بريدك الإلكتروني",
+      "successDescription": "تم إرسال رابط إعادة تعيين كلمة المرور",
+      "successMessage": "لقد أرسلنا لك رابطًا آمنًا لإعادة تعيين كلمة المرور الخاصة بك. انقر على الرابط لتعيين كلمة مرورك الجديدة.",
+      "successInstructions": "ماذا تفعل بعد ذلك:",
+      "step1": "تحقق من صندوق بريدك الإلكتروني (ومجلد الرسائل غير المرغوب فيها)",
+      "step2": "انقر على رابط 'إعادة تعيين كلمة المرور' في البريد الإلكتروني",
+      "step3": "أدخل كلمة مرورك الجديدة في صفحة إعادة التعيين الآمنة",
+      "noEmail": "لم تستلم بريدًا إلكترونيًا؟",
+      "resendLink": "إرسال بريد إلكتروني آخر لإعادة التعيين",
+      "sending": "جارٍ الإرسال...",
+      "sendResetEmail": "إرسال بريد إلكتروني لإعادة التعيين",
+      "alreadyHaveAccount": "هل لديك حساب بالفعل؟"
+    },
+    "updatePassword": {
+      "title": "إعادة تعيين كلمة المرور",
+      "description": "الرجاء إدخال كلمة المرور الجديدة أدناه.",
+      "newPassword": "كلمة المرور الجديدة",
+      "newPasswordPlaceholder": "كلمة المرور الجديدة",
+      "confirmNewPassword": "تأكيد كلمة المرور الجديدة",
+      "confirmNewPasswordPlaceholder": "تأكيد كلمة المرور الجديدة",
+      "saving": "جارٍ الحفظ...",
+      "saveNewPassword": "حفظ كلمة المرور الجديدة",
+      "verifyingLink": "جارٍ التحقق من رابط إعادة التعيين...",
+      "authenticationRequired": "المصادقة مطلوبة",
+      "passwordUpdated": "تم تحديث كلمة المرور!",
+      "passwordUpdatedSuccess": "تم تحديث كلمة المرور بنجاح. يتم الآن إعادة توجيهك إلى ملفك الشخصي.",
+      "redirectingMoment": "إعادة التوجيه بعد لحظات..."
+    },
+    "signOut": {
+      "signingOut": "جارٍ تسجيل الخروج...",
+      "signOutError": "فشل تسجيل الخروج. يرجى المحاولة مرة أخرى.",
+      "signOutSuccess": "تم تسجيل خروجك بنجاح"
+    },
+    "errors": {
+      "genericError": "حدث خطأ",
+      "invalidCredentials": "بريد إلكتروني أو كلمة مرور غير صالحة",
+      "emailRequired": "البريد الإلكتروني مطلوب",
+      "passwordRequired": "كلمة المرور مطلوبة",
+      "codeError": "خطأ في الرمز: {code}",
+      "codeErrorPrefix": "خطأ في الرمز:",
+      "unspecifiedError": "حدث خطأ غير محدد."
+    }
+  },
+  "settings": {
+    "title": "الملف الشخصي",
+    "subtitle": "إدارة معلومات ملفك الشخصي وتفضيلاتك",
+    "loading": "جارٍ تحميل إعداداتك...",
+    "error": "فشل تحميل الإعدادات",
+    "tryAgain": "حاول مرة أخرى",
+    "edit": "تعديل",
+    "save": "حفظ",
+    "saving": "جارٍ الحفظ...",
+    "cancel": "إلغاء",
+    "notSet": "غير محدد",
+    "menu": {
+      "profile": "الملف الشخصي",
+      "contact": "الاتصال",
+      "professional": "المهني",
+      "participation": "الأدوار",
+      "location": "الموقع",
+      "finance": "التبرعات",
+      "settings": "الإعدادات"
+    },
+    "categories": {
+      "personal": {
+        "title": "المعلومات الشخصية"
+      },
+      "professional": {
+        "title": "المعلومات المهنية",
+        "description": "عملك ومهاراتك"
+      },
+      "location": {
+        "title": "الموقع",
+        "description": "أين تقيم"
+      },
+      "contact": {
+        "title": "معلومات الاتصال",
+        "description": "كيف يمكننا الوصول إليك"
+      },
+      "participation": {
+        "title": "أدوار التحالف",
+        "description": "اختر كيف تريد المشاركة في تحالف الكوير"
+      },
+      "account": {
+        "title": "إعدادات الحساب",
+        "description": "الأمان وإدارة الحساب"
+      },
+      "profile": {
+        "title": "معلومات الملف الشخصي",
+        "description": "تفاصيل ملفك الشخصي الأساسية"
+      },
+      "finance": {
+        "title": "التبرعات",
+        "description": "إدارة اشتراكك والفواتير"
+      }
+    },
+    "fields": {
+      "username": {
+        "label": "اسم المستخدم",
+        "placeholder": "اختر اسم مستخدم فريد",
+        "description": "يمكن تغييره مرة واحدة فقط في اليوم.",
+        "autoGeneratedDescription": "تم إنشاء اسم المستخدم هذا تلقائيًا من بريدك الإلكتروني. يمكنك تغييره مرة واحدة.",
+        "rateLimitError": "يمكنك تغيير اسم المستخدم مرة واحدة فقط في اليوم.",
+        "formatError": "يجب أن يتراوح طول اسم المستخدم بين 6 و 30 حرفًا وأن يحتوي فقط على أحرف وأرقام وشرطات سفلية ونقاط"
+      },
+      "firstName": {
+        "label": "الاسم الأول",
+        "placeholder": "اسمك الأول",
+        "description": "اختياري",
+        "rateLimitError": "يمكنك تغيير اسمك الأول 3 مرات فقط."
+      },
+      "lastName": {
+        "label": "اسم العائلة",
+        "placeholder": "اسم عائلتك",
+        "description": "اختياري",
+        "rateLimitError": "يمكنك تغيير اسم عائلتك 3 مرات فقط."
+      },
+      "language": {
+        "label": "اللغة"
+      },
+      "bio": {
+        "label": "نبذة تعريفية",
+        "placeholder": "اكتب نبذة تعريفية قصيرة...",
+        "description": "",
+        "rateLimitError": "يمكنك تغيير نبذتك التعريفية 10 مرات فقط في اليوم"
+      },
+      "website": {
+        "label": "الموقع الإلكتروني",
+        "placeholder": "https://your-website.com",
+        "description": "",
+        "rateLimitError": "يمكنك تغيير موقعك الإلكتروني 5 مرات فقط في اليوم",
+        "formatError": "تنسيق خاطئ. مثال: https://your-website.com"
+      },
+      "phone": {
+        "label": "رقم الهاتف",
+        "placeholder": "رقم هاتفك",
+        "description": "حقل اختياري، يمكن تغييره حتى مرتين بعد الإدخال الأولي.",
+        "rateLimitError": "يمكنك تغيير رقم هاتفك مرتين فقط بعد الإدخال الأولي",
+        "formatError": "تنسيق خاطئ. مثال: +4366012345678"
+      },
+      "contactComment": {
+        "label": "براغ برايد وتعليق الاتصال",
+        "placeholder": "إذا كنت ترغب في مزيد من المعلومات حول براغ برايد، يرجى الكتابة لنا في حقل التعليق هذا. وإلا، اترك لنا تعليقًا بشأن رغبات الاتصال الخاصة بك.",
+        "description": "معلومات إضافية لأغراض الاتصال"
+      },
+      "professionalComment": {
+        "label": "تعليق مهني",
+        "placeholder": "تعليقات إضافية حول مهنتك...",
+        "description": "تعليق مفتوح حول خبرتك المهنية"
+      },
+      "profession": {
+        "label": "المهنة",
+        "placeholder": "ابحث عن مهنتك..."
+      },
+      "organization": {
+        "label": "المؤسسة",
+        "placeholder": "اسم مؤسستك (صاحب العمل، اسم النشاط التجاري، إلخ)"
+      },
+      "experienceLevel": {
+        "label": "مستوى الخبرة"
+      },
+      "skills": {
+        "label": "المهارات والقدرات",
+        "description": "أضف أي مهارات لديك - من المهارات التقنية إلى الهوايات والمهارات الحياتية",
+        "placeholder": "مثلاً، الطبخ، جافاسكريبت، البستنة، مراجعة الأدبيات..."
+      },
+      "country": {
+        "label": "البلد",
+        "description": "اختر بلد إقامتك"
+      },
+      "region": {
+        "label": "المنطقة/المقاطعة",
+        "description": "اختر منطقتك أو مقاطعتك",
+        "placeholder": "اختر المنطقة/المقاطعة"
+      },
+      "city": {
+        "label": "المدينة",
+        "placeholder": "مدينتك"
+      },
+      "email": {
+        "label": "عنوان البريد الإلكتروني",
+        "description": "تغيير عنوان بريدك الإلكتروني",
+        "confirmationRequired": "ستحتاج إلى تأكيد عنوان بريدك الإلكتروني الجديد",
+        "placeholder": "your.email@example.com",
+        "emailRequired": "البريد الإلكتروني مطلوب"
+      },
+      "password": {
+        "label": "كلمة المرور",
+        "description": "تغيير كلمة المرور الخاصة بك",
+        "currentPassword": "كلمة المرور الحالية",
+        "newPassword": "كلمة المرور الجديدة",
+        "newPasswordRequired": "كلمة المرور الجديدة مطلوبة",
+        "confirmNewPassword": "تأكيد كلمة المرور الجديدة",
+        "confirmNewPasswordPlaceholder": "تأكيد كلمة المرور الجديدة",
+        "newPasswordPlaceholder": "أدخل كلمة المرور الجديدة"
+      }
+    },
+    "consent": {
+      "title": "أذونات الاتصال",
+      "directContact": {
+        "label": "السماح بالاتصال المباشر",
+        "description": "أوافق على أن يتم الاتصال بي بفرص داخل تحالف الكوير"
+      },
+      "newsletter": {
+        "label": "النشرة الإخبارية عبر البريد الإلكتروني",
+        "description": "أوافق على تلقي النشرات الإخبارية والمعلومات"
+      },
+      "privacyNotice": "يمكنك تغيير هذه الأذونات في أي وقت. نحن نحترم خصوصيتك ونتبع إرشادات اللائحة العامة لحماية البيانات (GDPR).",
+      "consentTimestamp": "تم منح الموافقة في: {timestamp}",
+      "lastUpdated": "آخر تحديث: {timestamp}"
+    },
+    "professional": {
+      "organizationRepresentative": {
+        "label": "أنا أمثل مؤسسة",
+        "description": "أوافق على أن يتم الاتصال بي كممثل لمؤسسة بشكل مباشر"
+      }
+    },
+    "participation": {
+      "title": "اختر دور (أدوار) مشاركتك",
+      "description": "اختر دورًا واحدًا أو أكثر لمشاركتك (غير ملزم). يمكنك اختيار أدوار متعددة بناءً على مدى توفرك ومهاراتك وشبكتك ووقتك أو أهدافك <strong>وتغييرها في أي وقت</strong>.",
+      "roles": {
+        "member": {
+          "title": "عضو",
+          "description": "أريد المشاركة بطرق مختلفة كعضو"
+        },
+        "expert": {
+          "title": "خبير",
+          "description": "أريد تقديم المشورة للتحالف في المسائل الخاصة بالمجال"
+        },
+        "activist": {
+          "title": "ناشط",
+          "description": "أريد مساعدة التحالف في خلق الرؤية والتأثير"
+        },
+        "supporter": {
+          "title": "داعم",
+          "description": "أريد دعم تحالف الكوير ماليًا"
+        }
+      }
+    },
+    "account": {
+      "changeEmail": {
+        "title": "تغيير عنوان البريد الإلكتروني",
+        "button": "تغيير البريد الإلكتروني",
+        "success": "بدء تغيير البريد الإلكتروني. يرجى التحقق من بريدك الإلكتروني للتأكيد."
+      },
+      "changePassword": {
+        "title": "تغيير كلمة المرور",
+        "button": "تغيير كلمة المرور",
+        "success": "تم تحديث كلمة المرور بنجاح"
+      },
+      "deleteAccount": {
+        "title": "حذف الحساب",
+        "description": "حذف ملفك الشخصي وجميع البيانات المرتبطة به بشكل دائم",
+        "button": "حذف الحساب",
+        "confirmText": "DELETE",
+        "confirmPlaceholder": "اكتب 'DELETE' للتأكيد",
+        "warning": "لا يمكن التراجع عن هذا الإجراء. سيتم حذف جميع بياناتك بشكل دائم.",
+        "subscriptionWarning": "هام: يرجى إلغاء جميع اشتراكاتك النشطة قبل حذف حسابك. إذا قمت بحذف حسابك دون إلغاء الاشتراكات، يجب عليك الاتصال بالمسؤول لإلغائها يدويًا لك.",
+        "success": "تم حذف الحساب بنجاح"
+      }
+    },
+    "options": {
+      "experienceLevel": {
+        "intern": "متدرب",
+        "entry": "مبتدئ (0-2 سنوات)",
+        "mid": "متوسط المستوى (3-5 سنوات)",
+        "senior": "مستوى متقدم (6-10 سنوات)",
+        "lead": "رائد/رئيسي (10+ سنوات)",
+        "executive": "تنفيذي/مستوى C"
+      }
+    },
+    "profile": {
+      "title": "معلومات الملف الشخصي",
+      "description": "معلومات حسابك الأساسية",
+      "email": "البريد الإلكتروني",
+      "memberSince": "عضو منذ",
+      "lastUpdated": "آخر تحديث",
+      "profileCompletion": "اكتمال الملف الشخصي"
+    },
+    "loadingStates": {
+      "saving": "جارٍ الحفظ...",
+      "updatingSettings": "جارٍ تحديث إعداداتك",
+      "deletingAccount": "جارٍ حذف الحساب...",
+      "deletingWarning": "لا يمكن التراجع عن هذا الإجراء",
+      "autoNavigating": "جارٍ التنقل التلقائي...",
+      "nextSection": "القسم التالي",
+      "loadingCountries": "جارٍ تحميل البلدان...",
+      "loadingRegions": "جارٍ تحميل المناطق...",
+      "loadingCities": "جارٍ تحميل المدن...",
+      "loadingSupportStatus": "جارٍ تحميل حالة دعمك...",
+      "loadingPlans": "جارٍ تحميل الخطط..."
+    },
+    "errors": {
+      "rateLimitExceeded": "تم تجاوز حد المعدل لهذا الحقل",
+      "changeLimitExceeded": "تم تجاوز حد التغيير لهذا الحقل",
+      "invalidInput": "إدخال غير صالح",
+      "saveFailed": "فشل حفظ التغييرات",
+      "loadFailed": "فشل تحميل البيانات",
+      "failedToChangeEmail": "فشل تغيير البريد الإلكتروني",
+      "failedToChangePassword": "فشل تغيير كلمة المرور",
+      "maximumCharacters": "الحد الأقصى {maxLength} حرفًا مسموح به",
+      "validation": {
+        "invalidLanguageCode": "رمز لغة غير صالح",
+        "invalidExperienceLevel": "مستوى خبرة غير صالح",
+        "skillsMustBeArray": "يجب أن تكون المهارات مصفوفة",
+        "bioTooLong": "النبذة التعريفية طويلة جدًا (الحد الأقصى 500 حرف)",
+        "invalidWebsite": "يجب أن يبدأ الموقع الإلكتروني بـ http:// أو https:// وأن يكون له نطاق صالح (على سبيل المثال، https://a.co)",
+        "invalidPreferencesStructure": "هيكل تفضيلات غير صالح"
+      }
+    },
+    "finance": {
+      "title": "المالية والفواتير",
+      "description": "إدارة اشتراكك وتفضيلات الفوترة",
+      "current": "الاشتراك الحالي",
+      "loading": "جارٍ تحميل الاشتراك...",
+      "manage": "إدارة الاشتراك",
+      "upgrade": "ترقية الخطة",
+      "billing": "سجل الفواتير",
+      "thankYouSupport": "شكرًا لدعمك للتحالف!",
+      "considerSupporting": "فكر في دعم القضية",
+      "premiumFeatures": "ميزات ودعم مميز",
+      "processing": "جارٍ المعالجة...",
+      "contributeNow": "ساهم الآن",
+      "changeSupportLevel": "تغيير مستوى الدعم",
+      "startSupporting": "ابدأ الدعم",
+      "noPlansAvailable": "لا توجد خطط متاحة",
+      "manageSubscriptionDescription": "إدارة اشتراكك، عرض الفواتير، وتحديث معلومات الفوترة",
+      "accessAccountDescription": "الوصول إلى إعدادات حسابك، طرق الدفع، ومعلومات الفوترة",
+      "manageSubscriptionBilling": "إدارة الاشتراك والفواتير",
+      "accessBillingPortal": "الوصول إلى بوابة الفواتير",
+      "stripePortalDescription": "مدعوم ببوابة الفواتير الآمنة من Stripe: إدارة طرق الدفع، عرض الفواتير، تحديث عنوان الفوترة، والمزيد",
+      "currentSupportStatus": "حالة الدعم الحالية",
+      "activeSubscription": "✓ اشتراك نشط",
+      "statusLabel": "الحالة:",
+      "nextBilling": "الفوترة التالية:",
+      "oneTimeContributionMade": "✓ تم تقديم مساهمة لمرة واحدة",
+      "successfulContribution": "لقد ساهمت بنجاح في القضية",
+      "noActiveSupport": "⚠ لا يوجد دعم نشط",
+      "chooseSupportOption": "اختر خيار دعم أدناه للمساعدة في تمويل تحالف الكوير",
+      "waysToSupport": "طرق لدعم القضية",
+      "chooseAmountStripe": "أنت تختار المبلغ في صفحة الدفع الآمنة لـ Stripe",
+      "perInterval": "لكل {interval}",
+      "plansAvailableOnce": "ستظهر الخطط هنا بمجرد إنشائها في Stripe",
+      "billingAccountManagement": "إدارة الفواتير والحساب",
+      "payAsYouWish": "ادفع كما تشاء",
+      "oneTime": "لمرة واحدة",
+      "plans": {
+        "basic": {
+          "name": "أساسي",
+          "description": "ميزات أساسية للبدء",
+          "price": "$9.99/شهريًا"
+        },
+        "pro": {
+          "name": "احترافي",
+          "description": "ميزات متقدمة للأعضاء النشطين",
+          "price": "$19.99/شهريًا"
+        },
+        "expert": {
+          "name": "خبير",
+          "description": "وصول كامل مع دعم ذي أولوية",
+          "price": "$39.99/شهريًا"
+        },
+        "lifetime": {
+          "name": "وصول مدى الحياة",
+          "description": "دفعة لمرة واحدة للوصول الدائم",
+          "price": "$299.99"
+        }
+      },
+      "error": "فشل تحميل معلومات الاشتراك",
+      "messages": {
+        "paymentSuccessSyncing": "تم الدفع بنجاح! جارٍ مزامنة بياناتك...",
+        "paymentSuccessActivated": "تم الدفع بنجاح! تم تفعيل اشتراكك.",
+        "paymentCanceled": "تم إلغاء الدفع. يمكنك المحاولة مرة أخرى في أي وقت.",
+        "welcomeBackSyncing": "مرحباً بعودتك! جارٍ مزامنة بيانات الفوترة الخاصة بك...",
+        "welcomeBackUpdated": "مرحباً بعودتك! تم تحديث معلومات الفوترة الخاصة بك."
+      }
+    }
+  },
+  "languageSwitcher": {
+    "selectLanguage": "اختر اللغة",
+    "updating": "جارٍ تحديث اللغة..."
+  },
+  "theme": {
+    "light": "فاتح",
+    "dark": "داكن",
+    "system": "النظام"
+  },
+  "languages": {
+    "en": "English",
+    "de": "Deutsch",
+    "fr": "Français",
+    "es": "Español",
+    "it": "Italiano",
+    "pt": "Português",
+    "nl": "Nederlands",
+    "pl": "Polski",
+    "ru": "Русский",
+    "ja": "日本語",
+    "ko": "한국어",
+    "zh": "中文",
+    "ar": "العربية",
+    "hi": "हिन्दी"
+  },
+  "professions": {
+    "chief-executive": "رئيس تنفيذي",
+    "administration-and-planning-manager": "مدير الإدارة والتخطيط",
+    "policy-and-planning-manager": "مدير السياسات والتخطيط",
+    "business-services-and-administration-manager": "مدير خدمات الأعمال والإدارة",
+    "sales-marketing-and-development-manager": "مدير المبيعات والتسويق والتطوير",
+    "production-and-specialized-services-manager": "مدير الإنتاج والخدمات المتخصصة",
+    "hospitality-retail-and-other-services-manager": "مدير الضيافة والتجزئة والخدمات الأخرى",
+    "science-and-engineering-professional": "متخصص في العلوم والهندسة",
+    "software-developer": "مطور برامج",
+    "systems-analyst": "محلل نظم",
+    "database-designer": "مصمم قواعد بيانات",
+    "network-professional": "متخصص شبكات",
+    "health-professional": "متخصص صحي",
+    "doctor": "طبيب",
+    "nurse": "ممرض/ممرضة",
+    "pharmacist": "صيدلي",
+    "veterinarian": "طبيب بيطري",
+    "teaching-professional": "متخصص في التدريس",
+    "professor": "أستاذ جامعي",
+    "secondary-education-teacher": "معلم تعليم ثانوي",
+    "primary-school-teacher": "معلم مدرسة ابتدائية",
+    "business-and-administration-professional": "متخصص في الأعمال والإدارة",
+    "accountant": "محاسب",
+    "financial-analyst": "محلل مالي",
+    "human-resources-professional": "متخصص موارد بشرية",
+    "information-and-communications-technology-professional": "متخصص في تكنولوجيا المعلومات والاتصالات",
+    "legal-professional": "متخصص قانوني",
+    "lawyer": "محامي",
+    "judge": "قاضي",
+    "culture-arts-and-design-professional": "متخصص في الثقافة والفنون والتصميم",
+    "author": "مؤلف",
+    "journalist": "صحفي",
+    "artist": "فنان",
+    "designer": "مصمم",
+    "science-and-engineering-associate-professional": "مساعد متخصص في العلوم والهندسة",
+    "engineering-technician": "فني هندسة",
+    "drafter": "رسام هندسي",
+    "health-associate-professional": "مساعد متخصص صحي",
+    "medical-technician": "فني طبي",
+    "nursing-associate-professional": "مساعد تمريض",
+    "business-and-administration-associate-professional": "مساعد متخصص في الأعمال والإدارة",
+    "insurance-representative": "ممثل تأمين",
+    "estate-agent": "وكيل عقاري",
+    "legal-social-and-cultural-associate-professional": "مساعد متخصص قانوني واجتماعي وثقافي",
+    "legal-associate-professional": "مساعد قانوني",
+    "social-worker": "أخصائي اجتماعي",
+    "information-and-communications-technician": "فني تكنولوجيا المعلومات والاتصالات",
+    "computer-technician": "فني حاسوب",
+    "telecommunications-technician": "فني اتصالات",
+    "general-and-keyboard-clerk": "كاتب عام ولوحة مفاتيح",
+    "secretary": "سكرتير",
+    "data-entry-clerk": "مدخل بيانات",
+    "customer-services-clerk": "موظف خدمة عملاء",
+    "customer-service-representative": "ممثل خدمة عملاء",
+    "receptionist": "موظف استقبال",
+    "numerical-and-material-recording-clerk": "كاتب تسجيل رقمي ومادي",
+    "accounting-associate-professional": "مساعد محاسبة",
+    "bookkeeper": "ماسِك دفاتر",
+    "other-clerical-support-worker": "عامل دعم مكتبي آخر",
+    "mail-carrier": "ساعي بريد",
+    "filing-clerk": "كاتب ملفات",
+    "personal-service-worker": "عامل خدمة شخصية",
+    "travel-attendant": "مضيف سفر",
+    "cook": "طاهٍ",
+    "waiter": "نادِل",
+    "hairdresser": "مصفف شعر",
+    "housekeeper": "مدبرة منزل",
+    "protective-services-worker": "عامل خدمات حماية",
+    "security-guard": "حارس أمن",
+    "police-officer": "ضابط شرطة",
+    "firefighter": "رجل إطفاء",
+    "sales-worker": "عامل مبيعات",
+    "shop-salesperson": "بائع في متجر",
+    "cashier": "أمين صندوق",
+    "sales-representative": "مندوب مبيعات",
+    "market-oriented-skilled-agricultural-worker": "عامل زراعي ماهر موجه للسوق",
+    "farmer": "مزارع",
+    "livestock-producer": "منتج ماشية",
+    "crop-grower": "مزارع محاصيل",
+    "market-oriented-skilled-forestry-fishery-and-hunting-worker": "عامل ماهر في الغابات ومصائد الأسماك والصيد موجه للسوق",
+    "logger": "حطّاب",
+    "fisherman": "صياد سمك",
+    "subsistence-farmer-fisherman-hunter-and-gatherer": "مزارع/صياد/صياد وجمّاع كفاف",
+    "building-and-related-trades-worker": "عامل بناء وحرف ذات صلة",
+    "carpenter": "نجار",
+    "electrician": "كهربائي",
+    "plumber": "سباك",
+    "painter": "دهان",
+    "metal-machinery-and-related-trades-worker": "عامل معادن وآلات وحرف ذات صلة",
+    "welder": "لحّام",
+    "machinist": "ميكانيكي آلات",
+    "mechanic": "ميكانيكي",
+    "handicraft-and-printing-worker": "عامل حرف يدوية وطباعة",
+    "potter": "خزّاف",
+    "tailor": "خياط",
+    "printer": "طبّاع",
+    "electrical-and-electronic-trades-worker": "عامل حرف كهربائية وإلكترونية",
+    "food-processing-woodworking-garment-and-other-craft-and-related-trades-worker": "عامل تجهيز أغذية وأعمال خشبية وملابس وحرف أخرى ذات صلة",
+    "stationary-plant-and-machine-operator": "مشغل مصنع وآلات ثابتة",
+    "power-plant-operator": "مشغل محطة طاقة",
+    "machine-operator": "مشغل آلة",
+    "assembler": "عامل تجميع",
+    "product-assembler": "مجمّع منتجات",
+    "electronics-assembler": "مجمّع إلكترونيات",
+    "driver-and-mobile-plant-operator": "سائق ومشغل معدات متنقلة",
+    "truck-driver": "سائق شاحنة",
+    "bus-driver": "سائق حافلة",
+    "taxi-driver": "سائق سيارة أجرة",
+    "cleaner-and-helper": "عامل نظافة ومساعد",
+    "domestic-helper": "مساعد منزلي",
+    "building-cleaner": "عامل نظافة مباني",
+    "kitchen-helper": "مساعد مطبخ",
+    "agricultural-forestry-and-fishery-laborer": "عامل زراعي وحراجي وسمكي",
+    "farm-worker": "عامل مزرعة",
+    "gardener": "بستاني",
+    "laborer-in-mining-construction-manufacturing-and-transport": "عامل في التعدين والبناء والتصنيع والنقل",
+    "construction-laborer": "عامل بناء",
+    "factory-worker": "عامل مصنع",
+    "food-preparation-assistant": "مساعد تحضير طعام",
+    "street-and-related-service-worker": "عامل شارع وخدمات ذات صلة",
+    "content-creator": "صانع محتوى",
+    "social-media-manager": "مدير وسائل تواصل اجتماعي",
+    "digital-marketing-specialist": "أخصائي تسويق رقمي",
+    "uxui-designer": "مصمم تجربة وواجهة المستخدم",
+    "data-scientist": "عالم بيانات",
+    "machine-learning-engineer": "مهندس تعلم آلي",
+    "devops-engineer": "مهندس DevOps",
+    "product-manager": "مدير منتج",
+    "consultant": "مستشار",
+    "entrepreneur": "رائد أعمال",
+    "freelancer": "مستقل",
+    "student": "طالب",
+    "retired": "متقاعد",
+    "unemployed": "عاطل عن العمل",
+    "other": "أخرى"
+  },
+  "skills": {
+    "javascript": "JavaScript",
+    "typescript": "TypeScript",
+    "python": "Python",
+    "java": "Java",
+    "c#": "C#",
+    "c++": "C++",
+    "go": "Go",
+    "rust": "Rust",
+    "php": "PHP",
+    "ruby": "Ruby",
+    "swift": "Swift",
+    "kotlin": "Kotlin",
+    "react": "React",
+    "vuejs": "Vue.js",
+    "angular": "Angular",
+    "svelte": "Svelte",
+    "nextjs": "Next.js",
+    "nodejs": "Node.js",
+    "expressjs": "Express.js",
+    "django": "Django",
+    "flask": "Flask",
+    "postgresql": "PostgreSQL",
+    "mysql": "MySQL",
+    "mongodb": "MongoDB",
+    "redis": "Redis",
+    "aws": "AWS",
+    "azure": "Azure",
+    "google-cloud": "Google Cloud",
+    "docker": "Docker",
+    "kubernetes": "Kubernetes",
+    "machine-learning": "تعلم الآلة",
+    "artificial-intelligence": "ذكاء اصطناعي",
+    "data-science": "علم البيانات",
+    "data-analysis": "تحليل البيانات",
+    "statistics": "إحصاء",
+    "cybersecurity": "أمن سيبراني",
+    "network-administration": "إدارة الشبكات",
+    "database-administration": "إدارة قواعد البيانات",
+    "system-administration": "إدارة النظم",
+    "web-development": "تطوير الويب",
+    "mobile-development": "تطوير الموبايل",
+    "game-development": "تطوير الألعاب",
+    "software-testing": "اختبار البرمجيات",
+    "devops": "DevOps",
+    "graphic-design": "تصميم جرافيك",
+    "uiux-design": "تصميم واجهة وتجربة المستخدم",
+    "web-design": "تصميم الويب",
+    "brand-design": "تصميم العلامة التجارية",
+    "logo-design": "تصميم الشعارات",
+    "typography": "فن الطباعة",
+    "adobe-photoshop": "Adobe Photoshop",
+    "adobe-illustrator": "Adobe Illustrator",
+    "figma": "Figma",
+    "sketch": "Sketch",
+    "canva": "Canva",
+    "video-editing": "تحرير الفيديو",
+    "animation": "رسوم متحركة",
+    "photography": "تصوير فوتوغرافي",
+    "digital-photography": "تصوير رقمي",
+    "portrait-photography": "تصوير البورتريه",
+    "landscape-photography": "تصوير المناظر الطبيعية",
+    "photo-editing": "تحرير الصور",
+    "drawing": "رسم",
+    "painting": "تلوين",
+    "digital-art": "فن رقمي",
+    "illustration": "رسم توضيحي",
+    "sculpture": "نحت",
+    "ceramics": "خزف",
+    "jewelry-making": "صناعة المجوهرات",
+    "3d-modeling": "نمذجة ثلاثية الأبعاد",
+    "cad-design": "تصميم CAD",
+    "industrial-design": "تصميم صناعي",
+    "interior-design": "تصميم داخلي",
+    "fashion-design": "تصميم أزياء",
+    "project-management": "إدارة المشاريع",
+    "product-management": "إدارة المنتجات",
+    "business-analysis": "تحليل الأعمال",
+    "strategic-planning": "تخطيط استراتيجي",
+    "leadership": "قيادة",
+    "team-management": "إدارة الفريق",
+    "human-resources": "موارد بشرية",
+    "recruitment": "توظيف",
+    "sales": "مبيعات",
+    "marketing": "تسويق",
+    "digital-marketing": "تسويق رقمي",
+    "social-media-marketing": "تسويق عبر وسائل التواصل الاجتماعي",
+    "content-marketing": "تسويق المحتوى",
+    "email-marketing": "تسويق عبر البريد الإلكتروني",
+    "seo": "تحسين محركات البحث",
+    "sem": "تسويق عبر محركات البحث",
+    "ppc-advertising": "إعلانات الدفع لكل نقرة",
+    "financial-analysis": "تحليل مالي",
+    "accounting": "محاسبة",
+    "bookkeeping": "مسك الدفاتر",
+    "budgeting": "موازنة",
+    "investment-analysis": "تحليل الاستثمار",
+    "risk-management": "إدارة المخاطر",
+    "supply-chain-management": "إدارة سلسلة التوريد",
+    "operations-management": "إدارة العمليات",
+    "quality-assurance": "ضمان الجودة",
+    "process-improvement": "تحسين العمليات",
+    "business-development": "تطوير الأعمال",
+    "negotiation": "تفاوض",
+    "contract-management": "إدارة العقود",
+    "vendor-management": "إدارة الموردين",
+    "public-speaking": "تحدث عام",
+    "presentation-skills": "مهارات العرض التقديمي",
+    "technical-writing": "كتابة تقنية",
+    "creative-writing": "كتابة إبداعية",
+    "copywriting": "كتابة إعلانية",
+    "content-creation": "إنشاء المحتوى",
+    "journalism": "صحافة",
+    "blogging": "تدوين",
+    "editing": "تحرير",
+    "proofreading": "تدقيق لغوي",
+    "translation": "ترجمة",
+    "interpretation": "ترجمة فورية",
+    "customer-service": "خدمة العملاء",
+    "client-relations": "علاقات العملاء",
+    "conflict-resolution": "حل النزاعات",
+    "mediation": "وساطة",
+    "storytelling": "سرد القصص",
+    "interviewing": "إجراء المقابلات",
+    "active-listening": "استماع فعال",
+    "cross-cultural-communication": "تواصل بين الثقافات",
+    "teaching": "تعليم",
+    "training-development": "تطوير التدريب",
+    "curriculum-design": "تصميم المناهج الدراسية",
+    "educational-technology": "تكنولوجيا التعليم",
+    "e-learning": "تعلم إلكتروني",
+    "mentoring": "توجيه",
+    "coaching": "تدريب",
+    "workshop-facilitation": "تيسير ورش العمل",
+    "adult-education": "تعليم الكبار",
+    "child-development": "تنمية الطفل",
+    "special-education": "تعليم خاص",
+    "educational-assessment": "تقييم تعليمي",
+    "research-methods": "طرق البحث",
+    "academic-writing": "كتابة أكاديمية",
+    "first-aid": "إسعافات أولية",
+    "cpr": "إنعاش قلبي رئوي",
+    "medical-knowledge": "معرفة طبية",
+    "nursing": "تمريض",
+    "physical-therapy": "علاج طبيعي",
+    "mental-health-support": "دعم الصحة النفسية",
+    "nutrition": "تغذية",
+    "fitness-training": "تدريب لياقة بدنية",
+    "yoga": "يوغا",
+    "meditation": "تأمل",
+    "mindfulness": "يقظة ذهنية",
+    "stress-management": "إدارة الضغط",
+    "health-coaching": "تدريب صحي",
+    "massage-therapy": "علاج بالتدليك",
+    "acupuncture": "وخز بالإبر",
+    "herbal-medicine": "طب الأعشاب",
+    "alternative-medicine": "طب بديل",
+    "carpentry": "نجارة",
+    "plumbing": "سباكة",
+    "electrical-work": "أعمال كهربائية",
+    "hvac": "تدفئة وتهوية وتكييف",
+    "welding": "لحام",
+    "automotive-repair": "إصلاح سيارات",
+    "motorcycle-repair": "إصلاح دراجات نارية",
+    "appliance-repair": "إصلاح أجهزة",
+    "computer-repair": "إصلاح حاسوب",
+    "electronics-repair": "إصلاح إلكترونيات",
+    "decorating": "ديكور",
+    "tiling": "تبليط",
+    "roofing": "تسقيف",
+    "masonry": "بناء",
+    "landscaping": "تصميم حدائق",
+    "construction": "تشييد",
+    "home-improvement": "تحسينات منزلية",
+    "furniture-making": "صناعة الأثاث",
+    "cooking": "طبخ",
+    "baking": "خبز",
+    "pastry-making": "صناعة الحلويات",
+    "food-preparation": "تحضير الطعام",
+    "menu-planning": "تخطيط قوائم الطعام",
+    "recipe-development": "تطوير الوصفات",
+    "food-safety": "سلامة الغذاء",
+    "kitchen-management": "إدارة المطبخ",
+    "wine-knowledge": "معرفة بالنبيذ",
+    "bartending": "سقاية",
+    "coffee-making": "صنع القهوة",
+    "brewing": "تخمير",
+    "food-photography": "تصوير الطعام",
+    "catering": "تموين",
+    "meal-planning": "تخطيط الوجبات",
+    "nutrition-planning": "تخطيط التغذية",
+    "dietary-planning": "تخطيط النظام الغذائي",
+    "music-production": "إنتاج موسيقي",
+    "audio-engineering": "هندسة صوتية",
+    "music-composition": "تأليف موسيقي",
+    "singing": "غناء",
+    "guitar": "جيتار",
+    "piano": "بيانو",
+    "drums": "طبول",
+    "violin": "كمان",
+    "bass": "باس",
+    "saxophone": "ساكسفون",
+    "music-theory": "نظرية الموسيقى",
+    "sound-design": "تصميم الصوت",
+    "podcast-production": "إنتاج بودكاست",
+    "acting": "تمثيل",
+    "theater": "مسرح",
+    "film-making": "صناعة الأفلام",
+    "screenwriting": "كتابة سيناريو",
+    "video-production": "إنتاج فيديو",
+    "broadcasting": "بث",
+    "stand-up-comedy": "ستاند أب كوميدي",
+    "improvisation": "ارتجال",
+    "dance": "رقص",
+    "ballet": "باليه",
+    "hip-hop": "هيب هوب",
+    "salsa": "سالسا",
+    "ballroom-dancing": "رقص صالونات",
+    "football": "كرة قدم أمريكية",
+    "basketball": "كرة سلة",
+    "soccer": "كرة قدم",
+    "tennis": "تنس",
+    "golf": "جولف",
+    "swimming": "سباحة",
+    "running": "جري",
+    "cycling": "ركوب الدراجات",
+    "hiking": "تنزه",
+    "rock-climbing": "تسلق الصخور",
+    "skiing": "تزلج",
+    "snowboarding": "تزلج على الجليد",
+    "surfing": "ركوب الأمواج",
+    "martial-arts": "فنون قتالية",
+    "boxing": "ملاكمة",
+    "wrestling": "مصارعة",
+    "gymnastics": "جمباز",
+    "track-and-field": "ألعاب قوى",
+    "baseball": "بيسبول",
+    "volleyball": "كرة طائرة",
+    "badminton": "تنس الريشة",
+    "table-tennis": "تنس طاولة",
+    "sports-coaching": "تدريب رياضي",
+    "personal-training": "تدريب شخصي",
+    "athletic-training": "تدريب رياضي",
+    "camping": "تخييم",
+    "backpacking": "ترحال",
+    "fishing": "صيد السمك",
+    "hunting": "صيد",
+    "map-reading": "قراءة الخرائط",
+    "orienteering": "توجيه",
+    "wilderness-survival": "بقاء في البرية",
+    "fire-making": "إشعال النار",
+    "foraging": "بحث عن طعام",
+    "knot-tying": "ربط العقد",
+    "rope-work": "أعمال الحبال",
+    "sailing": "إبحار",
+    "kayaking": "تجديف بالكاياك",
+    "canoeing": "تجديف بالكانو",
+    "mountain-climbing": "تسلق الجبال",
+    "cave-exploration": "استكشاف الكهوف",
+    "wildlife-tracking": "تتبع الحياة البرية",
+    "gardening": "بستنة",
+    "organic-gardening": "بستنة عضوية",
+    "hydroponics": "زراعة مائية",
+    "permaculture": "زراعة مستدامة",
+    "composting": "تسميد",
+    "plant-propagation": "تكاثر النباتات",
+    "tree-care": "رعاية الأشجار",
+    "flower-arranging": "تنسيق الزهور",
+    "botanical-knowledge": "معرفة نباتية",
+    "pest-management": "مكافحة الآفات",
+    "soil-management": "إدارة التربة",
+    "irrigation": "ري",
+    "greenhouse-management": "إدارة الدفيئة",
+    "urban-farming": "زراعة حضرية",
+    "beekeeping": "تربية النحل",
+    "knitting": "حياكة",
+    "crocheting": "كروشيه",
+    "sewing": "خياطة",
+    "quilting": "تطريز لحاف",
+    "embroidery": "تطريز",
+    "cross-stitch": "غرزة متصالبة",
+    "woodworking": "أعمال خشبية",
+    "metalworking": "أعمال معدنية",
+    "glassblowing": "نفخ الزجاج",
+    "pottery": "فخار",
+    "candle-making": "صناعة الشموع",
+    "soap-making": "صناعة الصابون",
+    "leatherworking": "أعمال جلدية",
+    "bookbinding": "تجليد الكتب",
+    "origami": "أوريجامي",
+    "calligraphy": "خط",
+    "scrapbooking": "سكرابوكينغ",
+    "model-building": "بناء نماذج",
+    "data-collection": "جمع البيانات",
+    "statistical-analysis": "تحليل إحصائي",
+    "literature-review": "مراجعة الأدبيات",
+    "critical-thinking": "تفكير نقدي",
+    "problem-solving": "حل المشكلات",
+    "mathematical-modeling": "نمذجة رياضية",
+    "scientific-method": "منهج علمي",
+    "laboratory-skills": "مهارات مختبرية",
+    "microscopy": "علم المجاهر",
+    "spectroscopy": "تحليل طيفي",
+    "chemical-analysis": "تحليل كيميائي",
+    "fieldwork": "عمل ميداني",
+    "survey-design": "تصميم استطلاعات",
+    "grant-writing": "كتابة طلبات المنح",
+    "time-management": "إدارة الوقت",
+    "organization": "تنظيم",
+    "goal-setting": "تحديد الأهداف",
+    "self-discipline": "انضباط ذاتي",
+    "emotional-intelligence": "ذكاء عاطفي",
+    "decision-making": "اتخاذ القرار",
+    "creative-thinking": "تفكير إبداعي",
+    "innovation": "ابتكار",
+    "adaptability": "قدرة على التكيف",
+    "resilience": "مرونة",
+    "self-motivation": "تحفيز ذاتي",
+    "continuous-learning": "تعلم مستمر",
+    "self-reflection": "تأمل ذاتي",
+    "networking": "تواصل شبكي",
+    "relationship-building": "بناء العلاقات",
+    "empathy": "تعاطف",
+    "cultural-sensitivity": "حساسية ثقافية",
+    "team-collaboration": "تعاون جماعي",
+    "volunteer-coordination": "تنسيق المتطوعين",
+    "community-organizing": "تنظيم مجتمعي",
+    "event-planning": "تخطيط الفعاليات",
+    "party-planning": "تخطيط الحفلات",
+    "hospitality": "ضيافة",
+    "customer-relations": "علاقات العملاء",
+    "diplomacy": "دبلوماسية",
+    "persuasion": "إقناع",
+    "influence": "تأثير",
+    "social-media-engagement": "تفاعل عبر وسائل التواصل الاجتماعي",
+    "computer-literacy": "معرفة بالحاسوب",
+    "internet-research": "بحث عبر الإنترنت",
+    "email-management": "إدارة البريد الإلكتروني",
+    "social-media-management": "إدارة وسائل التواصل الاجتماعي",
+    "online-marketing": "تسويق عبر الإنترنت",
+    "e-commerce": "تجارة إلكترونية",
+    "digital-privacy": "خصوصية رقمية",
+    "cybersecurity-awareness": "وعي بالأمن السيبراني",
+    "podcast-creation": "إنشاء بودكاست",
+    "youtube-creation": "إنشاء محتوى يوتيوب",
+    "live-streaming": "بث مباشر",
+    "online-teaching": "تعليم عبر الإنترنت",
+    "virtual-collaboration": "تعاون افتراضي",
+    "driving": "قيادة",
+    "truck-driving": "قيادة شاحنة",
+    "motorcycle-riding": "ركوب دراجة نارية",
+    "bicycle-maintenance": "صيانة الدراجات",
+    "navigation": "ملاحة",
+    "route-planning": "تخطيط المسارات",
+    "logistics-coordination": "تنسيق لوجستي",
+    "warehouse-management": "إدارة المستودعات",
+    "inventory-management": "إدارة المخزون",
+    "shipping-and-receiving": "شحن واستلام",
+    "personal-finance": "تمويل شخصي",
+    "investment-planning": "تخطيط استثماري",
+    "tax-preparation": "إعداد الضرائب",
+    "insurance-knowledge": "معرفة بالتأمين",
+    "real-estate": "عقارات",
+    "cryptocurrency": "عملات مشفرة",
+    "trading": "تداول",
+    "financial-planning": "تخطيط مالي",
+    "retirement-planning": "تخطيط للتقاعد",
+    "debt-management": "إدارة الديون",
+    "spanish": "إسباني",
+    "french": "فرنسي",
+    "german": "ألماني",
+    "italian": "إيطالي",
+    "portuguese": "برتغالي",
+    "russian": "روسي",
+    "chinese": "صيني",
+    "japanese": "ياباني",
+    "korean": "كوري",
+    "arabic": "عربي",
+    "hindi": "هندي",
+    "dutch": "هولندي",
+    "swedish": "سويدي",
+    "norwegian": "نرويجي",
+    "danish": "دنماركي",
+    "finnish": "فنلندي",
+    "polish": "بولندي",
+    "turkish": "تركي",
+    "magic-tricks": "خدع سحرية",
+    "juggling": "شعوذة",
+    "balloon-animals": "حيوانات بالونات",
+    "face-painting": "رسم على الوجوه",
+    "card-games": "ألعاب ورق",
+    "board-games": "ألعاب لوحية",
+    "chess": "شطرنج",
+    "bridge": "بريدج",
+    "poker": "بوكر",
+    "trivia-knowledge": "معرفة عامة",
+    "speed-reading": "قراءة سريعة",
+    "memory-techniques": "تقنيات الذاكرة",
+    "escape-rooms": "غرف الهروب",
+    "puzzle-solving": "حل الألغاز",
+    "crossword-puzzles": "كلمات متقاطعة",
+    "sudoku": "سودوكو",
+    "word-games": "ألعاب كلمات"
+  },
+  "common": {
+    "add": "إضافة",
+    "remove": "إزالة",
+    "search": "بحث",
+    "select": "اختيار",
+    "loading": "جارٍ التحميل...",
+    "error": "خطأ",
+    "success": "نجاح",
+    "yes": "نعم",
+    "no": "لا",
+    "ok": "موافق",
+    "close": "إغلاق",
+    "submit": "إرسال",
+    "reset": "إعادة تعيين",
+    "clear": "مسح",
+    "next": "التالي",
+    "previous": "السابق",
+    "back": "رجوع",
+    "forward": "إلى الأمام",
+    "help": "مساعدة",
+    "about": "حول"
+  },
+  "privacyPolicy": {
+    "title": "سياسة الخصوصية",
+    "lastUpdated": "آخر تحديث: يونيو 2025",
+    "introduction": {
+      "title": "سياسة الخصوصية",
+      "content": "تشرح سياسة الخصوصية هذه كيف يقوم تحالف الكوير (\"نحن\"، \"لنا\" أو \"خاصتنا\") بجمع واستخدام ومشاركة وحماية معلوماتك الشخصية عند استخدامك لمنصتنا وخدماتنا. نحن ملتزمون بحماية خصوصيتك والحفاظ على الثقة التي تضعها فينا عند تفاعلك مع منصة مجتمعنا.",
+      "keyPrivacyFeaturesTitle": "ميزات الخصوصية الرئيسية:",
+      "keyPoints": "<strong>ميزات الخصوصية الرئيسية:</strong><br>• <strong>تحكم كامل</strong>: احذف حسابك بالكامل وجميع بياناتك فورًا من إعدادات ملفك الشخصي<br>• <strong>موافقة تفصيلية</strong>: اختر بالضبط ما هي الاتصالات التي ترغب في تلقيها<br>• <strong>شفافية البيانات</strong>: شروحات واضحة حول البيانات التي نجمعها وسبب جمعها<br>• <strong>حماية الاتحاد الأوروبي</strong>: مستضافة في الاتحاد الأوروبي مع الامتثال الكامل للائحة العامة لحماية البيانات (GDPR) والالتزام بقانون حماية البيانات النمساوي<br>• <strong>لا لبيع البيانات</strong>: نحن لا نبيع معلوماتك الشخصية أبدًا لأطراف ثالثة"
+    },
+    "controllerInfo": {
+      "title": "1. معلومات وحدة التحكم بالبيانات",
+      "content": "نحن وحدة التحكم بالبيانات المسؤولة عن معلوماتك الشخصية. يمكنك الاتصال بنا بخصوص أي مسائل تتعلق بالخصوصية على:",
+      "contact": "مسؤول حماية البيانات: admin@queer-Deep Resirch.com"
+    },
+    "legalBasis": {
+      "title": "2. الأساس القانوني للمعالجة",
+      "content": "نقوم بمعالجة بياناتك الشخصية بناءً على الأسس القانونية التالية بموجب المادة 6 من اللائحة العامة لحماية البيانات (GDPR):",
+      "consent": "• <strong>موافقتك</strong>: لاشتراكات النشرة الإخبارية والاتصالات المباشرة فقط",
+      "contract": "• <strong>الضرورة التعاقدية</strong>: لتوفير خدمات منصتنا وتسهيل الاتصالات المجتمعية",
+      "legitimateInterest": "• <strong>المصالح المشروعة</strong>: لتشغيل وتحسين منصتنا، وضمان سلامة المجتمع، وتسهيل الاتصالات الهادفة داخل المجتمع. يتم موازنة مصلحتنا المشروعة مع حقوق الخصوصية الخاصة بك.",
+      "legalObligation": "• <strong>الالتزام القانوني</strong>: للامتثال للقوانين واللوائح المعمول بها",
+      "vitalInterests": "• <strong>المصالح الحيوية</strong>: في حالات نادرة لحماية حياة شخص ما أو سلامته الجسدية"
+    },
+    "dataCollection": {
+      "title": "3. المعلومات التي نجمعها",
+      "profileData": {
+        "title": "معلومات الملف الشخصي (ماذا ولماذا)",
+        "content": "• <strong>عنوان البريد الإلكتروني</strong> (مطلوب): إنشاء الحساب، المصادقة، الاتصالات الهامة، إعادة تعيين كلمة المرور<br>• <strong>اسم المستخدم</strong>: معرف فريد للتفاعلات المجتمعية وعرض الملف الشخصي<br>• <strong>الاسم</strong> (الأول/الأخير، اختياري): تحيات مخصصة، تقدير مجتمعي، تسهيل التواصل<br>• <strong>رقم الهاتف</strong> (اختياري): اتصال الطوارئ، المصادقة الثنائية، الدعم المميز<br>• <strong>النبذة التعريفية والموقع الإلكتروني</strong> (اختياري): التواصل المجتمعي، عرض المهارات، الاتصالات المهنية<br>• <strong>المهارات والقدرات</strong>: التوفيق مع الفرص ذات الصلة، التعاون في المشاريع، تحديد الخبرات<br>• <strong>المعلومات المهنية</strong>: التواصل المهني، التحقق من الخبرة، فرص التعاون<br>• <strong>تفضيلات المشاركة</strong>: مطابقة الأدوار (عضو، خبير، ناشط، داعم)، توصيات الفعاليات<br>• <strong>الموقع</strong> (البلد/الولاية/المدينة): إشعارات الفعاليات المحلية، بناء المجتمع الإقليمي، الامتثال القانوني<br>• <strong>تفضيلات الاتصال</strong>: احترام خيارات الموافقة، تردد الاتصال المخصص"
+      },
+      "usageData": {
+        "title": "البيانات الفنية (للأمان والوظائف فقط)",
+        "content": "• <strong>عنوان IP</strong>: مراقبة الأمان، منع الاحتيال، الامتثال للقوانين الإقليمية<br>• <strong>معلومات المتصفح/الجهاز</strong>: تحسين التوافق، التحقق الأمني، التصميم المتجاوب<br>• <strong>بيانات الجلسة</strong>: حالة المصادقة، أمان تسجيل الدخول، تسجيل الخروج التلقائي للحماية<br>• <strong>سجلات الأخطاء</strong>: حل المشكلات الفنية، مراقبة استقرار المنصة، إصلاح الأخطاء<br>• <strong>ملاحظة</strong>: نحن لا نتتبع أنماط النشاط الشخصي أو زيارات الصفحات أو بيانات التفاعل"
+      },
+      "paymentData": {
+        "title": "معلومات الدفع (ماذا وكيف)",
+        "content": "• <strong>سجلات المعاملات</strong>: سجل التبرعات، حالة الاشتراك، تسوية الفواتير<br>• <strong>البيانات الوصفية للدفع</strong>: معرفات المعاملات، المبالغ، العملة، التواريخ للتقارير المالية<br>• <strong>تكامل Stripe</strong>: تتم معالجة الدفع بواسطة Stripe مع الامتثال لـ PCI DSS<br>• <strong>عناوين الفوترة</strong>: حساب الضرائب، منع الاحتيال، الامتثال التنظيمي<br>• <strong>تفاصيل الاشتراك</strong>: إدارة مستوى الخدمة، معالجة التجديد، تتبع الاستخدام<br>• <strong>ملاحظة</strong>: نحن لا نخزن أبدًا أرقام بطاقات الائتمان أو رموز CVV أو بيانات الدفع الحساسة"
+      },
+      "consentData": {
+        "title": "بيانات الموافقة (تفضيلات الاتصال الخاصة بك)",
+        "content": "• <strong>الاتصال المباشر</strong>: الموافقة على الاتصال بك بفرص داخل تحالف الكوير<br>• <strong>النشرة الإخبارية</strong>: الموافقة على تلقي النشرات الإخبارية والمعلومات (وليس التسويق)<br>• <strong>ممثل المؤسسة</strong>: الموافقة على الاتصال بك كممثل لمؤسسة بشكل مباشر<br>• <strong>سجل الموافقة</strong>: الطوابع الزمنية والتغييرات في تفضيلاتك (امتثال للائحة العامة لحماية البيانات)"
+      }
+    },
+    "purposes": {
+      "title": "4. كيف نستخدم معلوماتك (أغراض مفصلة)",
+      "community": "• <strong>بناء المجتمع</strong>: مطابقة الأعضاء على أساس المهارات، توصيات الفعاليات المحلية، توصيلات التوجيه، فرص التعاون بناءً على الاهتمامات المشتركة والموقع",
+      "personalization": "• <strong>تجربة مخصصة</strong>: تنظيم المحتوى بناءً على أدوار المشاركة، اقتراحات الفعاليات التي تتناسب مع مهاراتك، الاتصالات الخاصة باللغة، الإشعارات المناسبة للمنطقة الزمنية",
+      "communication": "• <strong>الاتصالات</strong>: تسليم النشرات الإخبارية (بناءً على الموافقة)، الاتصال المباشر بالفرص (بناءً على الموافقة)، الاتصال بممثل المؤسسة (بناءً على الموافقة)، تحديثات المنصة، إشعارات الأمان",
+      "platform": "• <strong>تشغيل المنصة</strong>: مصادقة المستخدم، إدارة الجلسات، وظائف الميزات، مزامنة البيانات، دعم متعدد اللغات، استجابة الجوال",
+      "safety": "• <strong>سلامة المجتمع</strong>: كشف الاحتيال من خلال مراقبة IP، منع البريد العشوائي عبر تحديد المعدل، أنظمة الإبلاغ عن الانتهاكات، الإشراف على المحتوى، التحقق من الحساب",
+      "analytics": "• <strong>تحليلات الموقع</strong>: إحصائيات موقع الويب المجهولة من Vercel Analytics (لا يتم جمع بيانات شخصية، خالية تمامًا من ملفات تعريف الارتباط)",
+      "legal": "• <strong>الامتثال القانوني</strong>: الالتزام بقانون حماية البيانات النمساوي، استيفاء متطلبات اللائحة العامة لحماية البيانات (GDPR)، صيانة مسار التدقيق، التقارير التنظيمية عند الحاجة",
+      "technical": "• <strong>الوظائف الفنية</strong>: تحسين قاعدة البيانات، إنشاء النسخ الاحتياطي، مراقبة النظام، نشر تصحيحات الأمان، تحسين الأداء، تتبع الأخطاء وحلها"
+    },
+    "sharing": {
+      "title": "5. مشاركة المعلومات",
+      "content": "نحن نأخذ خصوصيتك على محمل الجد ولا نشارك المعلومات إلا في هذه الظروف المحددة:",
+      "serviceProviders": "• <strong>مزودو الخدمة</strong>: شركاء موثوق بهم يساعدوننا في تشغيل منصتنا (على سبيل المثال، Supabase لاستضافة البيانات، Stripe للمدفوعات، Vercel للتحليلات)",
+      "legal": "• <strong>المتطلبات القانونية</strong>: عندما يقتضي القانون ذلك، أو بموجب أمر من المحكمة، أو لحماية حقوقنا القانونية",
+      "consent": "• <strong>بموافقتك</strong>: أي مشاركة أخرى لا تحدث إلا بإذن صريح منك",
+      "noSharing": "• <strong>لا مشاركة مع الأعضاء</strong>: نحن لا نشارك معلوماتك مع أعضاء التحالف أو المستخدمين الآخرين",
+      "noSale": "<strong>نحن لا نبيع معلوماتك الشخصية أبدًا لأطراف ثالثة.</strong>"
+    },
+    "dataTransfers": {
+      "title": "6. عمليات نقل البيانات الدولية",
+      "content": "قد يكون بعض مزودي الخدمة لدينا موجودين خارج المنطقة الاقتصادية الأوروبية (EEA). عندما ننقل بياناتك دوليًا، نضمن حماية كافية من خلال:",
+      "adequacy": "• <strong>قرارات الكفاية</strong>: عمليات النقل إلى البلدان التي لديها حماية كافية للبيانات",
+      "safeguards": "• <strong>الضمانات المناسبة</strong>: البنود التعاقدية القياسية المعتمدة من قبل المفوضية الأوروبية",
+      "providers": "• يشمل مزودونا الحاليون Supabase (بنية تحتية في الاتحاد الأوروبي)، Stripe (عالمي مع ضمانات الاتحاد الأوروبي)، و Vercel (استضافة في الاتحاد الأوروبي في منطقة فرانكفورت)"
+    },
+    "retention": {
+      "title": "7. الاحتفاظ بالبيانات وحذفها",
+      "content": "نحتفظ بمعلوماتك الشخصية فقط طالما كان ذلك ضروريًا ونوفر إمكانيات الحذف الفوري:",
+      "active": "• <strong>الحسابات النشطة</strong>: يتم الاحتفاظ بالبيانات طالما بقي حسابك نشطًا وتواصل استخدام خدماتنا",
+      "dormant": "• <strong>الحسابات الخاملة</strong>: الحذف التلقائي بعد 3 سنوات من عدم النشاط الكامل (مع إشعار مسبق عبر البريد الإلكتروني قبل 90 يومًا)",
+      "immediate": "• <strong>الحذف الذاتي الفوري</strong>: احذف حسابك بالكامل فورًا عبر إعدادات الملف الشخصي ← إعدادات الحساب ← حذف الحساب",
+      "deletion": "• <strong>عند طلب الحذف</strong>: الإزالة الفورية من جميع الأنظمة النشطة وقواعد البيانات وخدمات المصادقة",
+      "backups": "• <strong>إزالة النسخ الاحتياطي</strong>: الإزالة الكاملة من جميع أنظمة النسخ الاحتياطي في غضون 90 يومًا من حذف الحساب",
+      "legal": "• <strong>المتطلبات القانونية</strong>: الاحتفاظ المحدود بالبيانات فقط عند الاقتضاء المحدد بموجب القانون النمساوي أو قانون الاتحاد الأوروبي (على سبيل المثال، السجلات المالية للأغراض الضريبية)",
+      "technical": "• <strong>عملية الحذف الفنية</strong>: يتم حذف بيانات الملف الشخصي من قاعدة البيانات الرئيسية ← تتم إزالة بيانات المصادقة ← يتم تمييز سجلات التدقيق للحذف ← يتم تطهير أنظمة النسخ الاحتياطي",
+      "confirmation": "• <strong>تأكيد الحذف</strong>: تسجيل الخروج التلقائي وإرسال تأكيد عبر البريد الإلكتروني بعد حذف الحساب بنجاح"
+    },
+    "rights": {
+      "title": "8. حقوقك بموجب اللائحة العامة لحماية البيانات (GDPR)",
+      "content": "لديك الحقوق التالية فيما يتعلق ببياناتك الشخصية:",
+      "access": "• <strong>الحق في الوصول</strong>: اطلب نسخة من بياناتك الشخصية عبر admin@queer-Deep Resirch.com أو اعرضها مباشرة في إعدادات ملفك الشخصي",
+      "rectification": "• <strong>الحق في التصحيح</strong>: صحح البيانات غير الدقيقة مباشرة في إعدادات ملفك الشخصي أو اطلب المساعدة عبر admin@queer-Deep Resirch.com",
+      "erasure": "• <strong>الحق في الحذف</strong>: <strong>احذف حسابك بالكامل فورًا</strong> من إعدادات ملفك الشخصي (الإعدادات > إعدادات الحساب > حذف الحساب) أو اطلب الحذف عبر admin@queer-Deep Resirch.com",
+      "restriction": "• <strong>الحق في تقييد المعالجة</strong>: حدد كيفية معالجتنا لبياناتك عن طريق الاتصال بـ admin@queer-Deep Resirch.com",
+      "portability": "• <strong>الحق في نقل البيانات</strong>: احصل على بياناتك بتنسيق JSON منظم عبر admin@queer-Deep Resirch.com",
+      "objection": "• <strong>الحق في الاعتراض</strong>: اعترض على المعالجة بناءً على المصالح المشروعة عبر admin@queer-Deep Resirch.com",
+      "withdrawal": "• <strong>سحب الموافقة</strong>: عدل تفضيلات الموافقة مباشرة في إعدادات ملفك الشخصي أو اتصل بـ admin@queer-Deep Resirch.com",
+      "complaint": "• <strong>الحق في تقديم شكوى</strong>: قدم شكوى إلى هيئة حماية البيانات النمساوية (Datenschutzbehörde) على dsb.gv.at",
+      "exercise": "يمكن ممارسة معظم الحقوق مباشرة في إعدادات ملفك الشخصي. للحصول على مساعدة إضافية، اتصل بـ admin@queer-Deep Resirch.com (ضمان الرد في غضون 30 يومًا)."
+    },
+    "accountDeletion": {
+      "title": "8.1. الحذف الكامل للحساب (خدمة ذاتية)",
+      "content": "يمكنك حذف حسابك بالكامل وجميع البيانات المرتبطة به في أي وقت مباشرة من إعدادات ملفك الشخصي:",
+      "access": "• <strong>كيفية الوصول</strong>: تسجيل الدخول ← الملف الشخصي ← الإعدادات ← إعدادات الحساب ← حذف الحساب",
+      "process": "• <strong>عملية الحذف</strong>: اكتب 'حذف' للتأكيد ← حذف دائم فوري لجميع البيانات",
+      "scope": "• <strong>ما الذي يتم حذفه</strong>: جميع معلومات الملف الشخصي، المهارات، التفضيلات، سجل الموافقة، سجلات التدقيق، بيانات الجلسة، وبيانات المصادقة",
+      "immediate": "• <strong>التوقيت</strong>: الحذف الفوري من جميع الأنظمة، بما في ذلك قاعدة البيانات والمصادقة",
+      "irreversible": "• <strong>هام</strong>: هذا الإجراء لا رجعة فيه - بمجرد حذفه، لا يمكن استعادة حسابك وبياناتك",
+      "backup": "• <strong>إزالة النسخ الاحتياطي</strong>: تتم إزالة بياناتك من جميع النسخ الاحتياطية في غضون 90 يومًا من الحذف",
+      "confirmation": "• <strong>تأكيد</strong>: سيتم تسجيل خروجك تلقائيًا وإعادة توجيهك بعد الحذف الناجح",
+      "alternative": "• <strong>بديل</strong>: اتصل بـ admin@queer-Deep Resirch.com إذا كنت بحاجة إلى مساعدة في حذف الحساب"
+    },
+    "security": {
+      "title": "9. تدابير أمن البيانات الشاملة",
+      "content": "نحن نطبق طبقات متعددة من تدابير الأمان القوية لحماية معلوماتك الشخصية:",
+      "technical": {
+        "title": "تدابير الأمان الفنية",
+        "content": "• <strong>تشفير البيانات</strong>: جميع البيانات مشفرة أثناء النقل (TLS 1.3) وفي حالة السكون (AES-256) عبر Supabase<br>• <strong>أمان قاعدة البيانات</strong>: سياسات أمان على مستوى الصف (RLS) تضمن أن المستخدمين يمكنهم الوصول إلى بياناتهم الخاصة فقط<br>• <strong>المصادقة</strong>: دعم المصادقة متعددة العوامل، إدارة جلسات آمنة مع انتهاء صلاحية تلقائي<br>• <strong>التحقق من صحة الإدخال</strong>: منع شامل لهجمات XSS، حماية من حقن SQL، تنقية الإدخال<br>• <strong>رؤوس الأمان</strong>: سياسة أمان المحتوى (CSP)، أمان النقل الصارم لبروتوكول HTTP (HSTS)، حماية من هجمات Clickjacking<br>• <strong>أمان واجهة برمجة التطبيقات</strong>: تحديد المعدل، التحقق من صحة الطلبات، نقاط نهاية API آمنة مع مصادقة مطلوبة"
+      },
+      "organizational": {
+        "title": "تدابير الأمان التنظيمية",
+        "content": "• <strong>ضوابط الوصول</strong>: مبدأ الامتياز الأقل، الوصول القائم على الأدوار إلى الأنظمة والبيانات<br>• <strong>تدريب الموظفين</strong>: تدريب منتظم على الوعي الأمني، بروتوكولات حماية البيانات<br>• <strong>اتفاقيات معالجة البيانات</strong>: اتفاقيات شاملة مع جميع معالجي البيانات من الأطراف الثالثة<br>• <strong>خطة الاستجابة للحوادث</strong>: إجراءات موثقة للكشف عن خروقات الأمان والاستجابة لها<br>• <strong>عمليات تدقيق منتظمة</strong>: مراجعات أمنية ربع سنوية، اختبار اختراق سنوي، تقييمات الثغرات الأمنية"
+      },
+      "monitoring": {
+        "title": "مراقبة الأمان المستمرة",
+        "content": "• <strong>مراقبة في الوقت الفعلي</strong>: مراقبة النظام على مدار الساعة طوال أيام الأسبوع، الكشف الآلي عن التهديدات<br>• <strong>مسارات التدقيق</strong>: تسجيل شامل لجميع تغييرات الملف الشخصي، محاولات تسجيل الدخول، الوصول إلى البيانات<br>• <strong>تتبع الجلسات</strong>: مراقبة الجلسات النشطة، تسجيل الخروج التلقائي بعد عدم النشاط<br>• <strong>منع الاحتيال</strong>: الكشف عن الحالات الشاذة المستندة إلى IP، تنبيهات النشاط المشبوه<br>• <strong>تتبع الأخطاء</strong>: تسجيل الأخطاء والاستجابة الآلية للمشكلات المتعلقة بالأمان"
+      },
+      "infrastructure": {
+        "title": "أمان البنية التحتية",
+        "content": "• <strong>أمان الاستضافة</strong>: بنية تحتية Supabase مقرها الاتحاد الأوروبي مع امتثال SOC 2 Type II<br>• <strong>أمان الشبكة</strong>: جدران الحماية، وصول VPN للمسؤولين، قنوات اتصال آمنة<br>• <strong>أمان النسخ الاحتياطي</strong>: نسخ احتياطية آلية مشفرة، تخزين نسخ احتياطية آمن، إجراءات استرداد مختبرة<br>• <strong>إدارة التحديثات</strong>: تصحيحات أمان آلية، تحديثات تبعية منتظمة، فحص الثغرات الأمنية<br>• <strong>الامتثال</strong>: امتثال للائحة العامة لحماية البيانات (GDPR)، الالتزام بقانون حماية البيانات النمساوي، عمليات تدقيق الامتثال المنتظمة"
+      },
+      "incident": {
+        "title": "الاستجابة لخرق البيانات",
+        "content": "• <strong>الكشف</strong>: أنظمة مراقبة آلية، تنبيهات فورية للنشاط المشبوه<br>• <strong>الاستجابة</strong>: إخطار بخرق البيانات في غضون 72 ساعة إلى هيئة حماية البيانات النمساوية عند الاقتضاء<br>• <strong>إخطار المستخدم</strong>: اتصال مباشر بالمستخدمين المتأثرين في غضون 72 ساعة من تأكيد الخرق<br>• <strong>التخفيف</strong>: إجراءات احتواء فورية، نشر تصحيحات الأمان، تقوية النظام<br>• <strong>التوثيق</strong>: توثيق كامل للحوادث، تحسينات أمنية بعد الحوادث"
+      }
+    },
+    "cookies": {
+      "title": "10. ملفات تعريف الارتباط والتتبع",
+      "content": "<strong>نحن نستخدم فقط ملفات تعريف الارتباط الأساسية</strong> - لا توجد ملفات تعريف ارتباط للتتبع أو التحليلات أو التسويق. للحصول على معلومات مفصلة، يرجى الاطلاع على سياسة ملفات تعريف الارتباط الخاصة بنا. النقاط الرئيسية:",
+      "essential": "• <strong>ملفات تعريف الارتباط الأساسية فقط</strong>: مطلوبة لتسجيل الدخول والمدفوعات ودعم اللغة (لا يلزم الحصول على موافقة)",
+      "analytics": "• <strong>لا توجد ملفات تعريف ارتباط للتحليلات</strong>: نستخدم تحليلات Vercel الخالية من ملفات تعريف الارتباط بدلاً من ذلك",
+      "preference": "• <strong>التفضيلات المخزنة في حسابك</strong>: يتم حفظ اللغة والسمة والإعدادات في ملف تعريف قاعدة البيانات الخاصة بك، وليس في ملفات تعريف الارتباط",
+      "marketing": "• <strong>لا توجد ملفات تعريف ارتباط تسويقية</strong>: نحن لا نستخدم ملفات تعريف ارتباط إعلانية أو تتبع سلوكي"
+    },
+    "minors": {
+      "title": "11. حماية القصر",
+      "content": "منصتنا مصممة للأفراد الذين تبلغ أعمارهم 18 عامًا فأكثر. لا يُسمح للمستخدمين الذين تقل أعمارهم عن 18 عامًا بإنشاء حسابات أو استخدام خدماتنا."
+    },
+    "changes": {
+      "title": "12. التغييرات على هذه السياسة",
+      "content": "قد نقوم بتحديث سياسة الخصوصية هذه لتعكس التغييرات في ممارساتنا أو المتطلبات القانونية. سنقوم بما يلي:",
+      "notification": "• <strong>إخطار المستخدمين</strong>: إخطار عبر البريد الإلكتروني بالتغييرات الهامة",
+      "consent": "• <strong>الحصول على الموافقة</strong>: للتغييرات الجوهرية التي تؤثر على حقوقك",
+      "posting": "• <strong>نشر التحديثات</strong>: الحفاظ دائمًا على أحدث إصدار على موقعنا",
+      "date": "• <strong>تحديث التاريخ</strong>: يوضح تاريخ \"آخر تحديث\" أحدث مراجعة"
+    },
+    "contact": {
+      "title": "13. معلومات الاتصال",
+      "content": "لأي أسئلة تتعلق بالخصوصية أو لممارسة حقوقك، اتصل بنا:",
+      "details": "البريد الإلكتروني: admin@queer-Deep Resirch.com\nوقت الاستجابة: في غضون 30 يومًا\nهيئة حماية البيانات: هيئة حماية البيانات النمساوية (dsb.gv.at)"
+    }
+  },
+  "cookiePolicy": {
+    "title": "سياسة ملفات تعريف الارتباط",
+    "lastUpdated": "آخر تحديث: يونيو 2025",
+    "labels": {
+      "purpose": "الغرض:",
+      "cookies": "ملفات تعريف الارتباط:",
+      "privacy": "الخصوصية:",
+      "legalBasis": "الأساس القانوني:",
+      "cookieName": "اسم ملف تعريف الارتباط",
+      "duration": "المدة"
+    },
+    "introduction": {
+      "title": "سياسة ملفات تعريف الارتباط",
+      "content": "تشرح سياسة ملفات تعريف الارتباط هذه كيف يستخدم QUEER MEDIA LITERACY e.V. (\"تحالف الكوير\") ملفات تعريف الارتباط على منصتنا. <strong>نحن نستخدم فقط ملفات تعريف الارتباط الأساسية</strong> اللازمة لعمل منصتنا - لا ملفات تعريف ارتباط للتتبع أو الإعلان أو التحليلات تتطلب موافقتك."
+    },
+    "whatAreCookies": {
+      "title": "1. ما هي ملفات تعريف الارتباط",
+      "content": "ملفات تعريف الارتباط هي ملفات نصية صغيرة يتم تخزينها على جهازك عند زيارة موقعنا. <strong>نحن نستخدم فقط ملفات تعريف الارتباط الأساسية</strong> اللازمة لعمل منصتنا:",
+      "remembering": "• <strong>جلسات تسجيل دخول آمنة</strong> - لإبقائك مسجلاً للدخول بأمان",
+      "improving": "• <strong>دعم متعدد اللغات</strong> - لتذكر اختيارك للغة للتنقل",
+      "analyzing": "• <strong>أمان الدفع</strong> - لمنع الاحتيال أثناء التبرعات",
+      "personalizing": "• <strong>لا تتبع</strong> - نحن لا نستخدم ملفات تعريف الارتباط لتتبع سلوكك"
+    },
+    "typesOfCookies": {
+      "title": "2. أنواع ملفات تعريف الارتباط التي نستخدمها",
+      "essential": {
+        "title": "ملفات تعريف الارتباط الأساسية (ملفات تعريف الارتباط الوحيدة التي نستخدمها)",
+        "content": "<strong>جميع ملفات تعريف الارتباط لدينا أساسية</strong> - فهي مطلوبة لعمل المنصة ولا تتطلب موافقتك بموجب اللائحة العامة لحماية البيانات:",
+        "authentication": "• <strong>أمان تسجيل الدخول</strong>: رموز الجلسة لإبقائك مسجلاً للدخول بأمان",
+        "security": "• <strong>حماية الدفع</strong>: منع الاحتيال من Stripe أثناء التبرعات",
+        "functionality": "• <strong>دعم اللغة</strong>: تذكر اختيارك للغة لتصفح الموقع",
+        "compliance": "• <strong>لا تتبع</strong>: نحن لا نستخدم ملفات تعريف الارتباط لجمع البيانات الشخصية أو تتبع السلوك"
+      },
+      "functional": {
+        "title": "تفضيلات المستخدم (مخزنة في حسابك، وليس في ملفات تعريف الارتباط)",
+        "content": "<strong>الخصوصية حسب التصميم</strong>: نقوم بتخزين تفضيلاتك في ملف تعريف حسابك الآمن، وليس في ملفات تعريف الارتباط للتتبع:",
+        "preferences": "• <strong>اللغة والسمة</strong>: محفوظة في ملف تعريف حسابك، ويمكن الوصول إليها عبر الأجهزة",
+        "formData": "• <strong>إعدادات الوصول</strong>: مخزنة بأمان في ملف تعريف قاعدة البيانات الخاصة بك",
+        "accessibility": "• <strong>خصوصية أفضل</strong>: التخزين المستند إلى الحساب يعني عدم الحاجة إلى ملفات تعريف الارتباط للتتبع"
+      },
+      "analytics": {
+        "title": "التحليلات (خالية تمامًا من ملفات تعريف الارتباط)",
+        "content": "نحن نستخدم <strong>Vercel Web Analytics</strong> - وهو حل يركز على الخصوصية ويستخدم صفر من ملفات تعريف الارتباط:",
+        "usage": "• <strong>لا ملفات تعريف ارتباط</strong>: يستخدم تعريف الزائر المجهول المستند إلى التجزئة",
+        "performance": "• <strong>الخصوصية أولاً</strong>: يتم إعادة تعيين التجزئة كل 24 ساعة، ولا يوجد تتبع عبر المواقع",
+        "demographics": "• <strong>مجهول فقط</strong>: إحصائيات مجمعة، لا توجد بيانات شخصية",
+        "provider": "• <strong>لا حاجة للموافقة</strong>: متوافق حسب التصميم، عدم وجود ملفات تعريف ارتباط يعني عدم الحاجة إلى موافقة"
+      },
+      "payment": {
+        "title": "ملفات تعريف الارتباط لمعالجة الدفع (أساسية للمدفوعات)",
+        "content": "يستخدم معالج الدفع Stripe ملفات تعريف الارتباط الأساسية أثناء معالجة الدفع:",
+        "fraud": "• <strong>منع الاحتيال</strong>: __stripe_mid (سنة واحدة)، __stripe_sid (30 دقيقة)",
+        "security": "• <strong>أمان الدفع</strong>: أساسي لمعالجة المعاملات الآمنة",
+        "session": "• <strong>إدارة الجلسة</strong>: الحفاظ على حالة الدفع أثناء عملية الدفع"
+      }
+    },
+    "thirdPartyServices": {
+      "title": "3. خدمات الطرف الثالث وملفات تعريف الارتباط الخاصة بها",
+      "content": "نحن نعمل مع شركاء متوافقين مع اللائحة العامة لحماية البيانات قد يقومون بتعيين ملفات تعريف الارتباط عند استخدام خدماتهم:",
+      "stripe": {
+        "title": "Stripe (معالجة الدفع)",
+        "purpose": "معالجة دفع آمنة للتبرعات والعضويات",
+        "cookies": "ملفات تعريف الارتباط الأساسية: __stripe_mid، __stripe_sid (منع الاحتيال، الأمان)",
+        "privacy": "سياسة الخصوصية: stripe.com/privacy | سياسة ملفات تعريف الارتباط: stripe.com/legal/cookies-policy",
+        "legal": "تستخدم فقط أثناء معالجة الدفع (مصلحة مشروعة لأداء العقد)"
+      },
+      "vercel": {
+        "title": "Vercel Analytics (تحليلات الموقع)",
+        "purpose": "تحليلات الموقع ومراقبة الأداء التي تركز على الخصوصية",
+        "cookies": "لا تستخدم ملفات تعريف الارتباط - تحديد هوية الزائر المجهول المستند إلى التجزئة",
+        "privacy": "سياسة الخصوصية: vercel.com/legal/privacy-policy",
+        "legal": "لا يلزم الحصول على موافقة حيث لا يتم استخدام بيانات شخصية أو ملفات تعريف ارتباط"
+      },
+      "supabase": {
+        "title": "Supabase (المصادقة وقاعدة البيانات)",
+        "purpose": "مصادقة المستخدم وتخزين البيانات بشكل آمن",
+        "cookies": "ملفات تعريف الارتباط للجلسة للمصادقة (أساسية لوظيفة تسجيل الدخول)",
+        "privacy": "سياسة الخصوصية: supabase.com/privacy",
+        "legal": "ملفات تعريف الارتباط الأساسية لأداء العقد (لا يلزم الحصول على موافقة)"
+      }
+    },
+    "cookieConsent": {
+      "title": "4. لماذا لا نحتاج إلى موافقة على ملفات تعريف الارتباط",
+      "content": "<strong>لا يلزم الحصول على موافقة</strong> - جميع ملفات تعريف الارتباط لدينا أساسية للوظائف:",
+      "essential": "• <strong>أساسية فقط</strong>: جميع ملفات تعريف الارتباط ضرورية لتسجيل الدخول والمدفوعات والتنقل",
+      "granular": "• <strong>لا تتبع</strong>: نحن لا نستخدم ملفات تعريف ارتباط إعلانية أو تحليلية أو سلوكية",
+      "withdraw": "• <strong>متوافق مع اللائحة العامة لحماية البيانات</strong>: ملفات تعريف الارتباط الأساسية معفاة من متطلبات الموافقة",
+      "settings": "• <strong>الخصوصية حسب التصميم</strong>: الحد الأدنى من جمع البيانات، والحد الأقصى لخصوصية المستخدم",
+      "noConsent": "• <strong>شفاف</strong>: نخبرك بالضبط بما نستخدمه ولماذا"
+    },
+    "browserControls": {
+      "title": "5. ضوابط ملفات تعريف الارتباط في المتصفح",
+      "content": "يمكنك التحكم في ملفات تعريف الارتباط من خلال إعدادات متصفحك. لاحظ أن تعطيل ملفات تعريف الارتباط الأساسية قد يمنع وظائف تسجيل الدخول والدفع:",
+      "chrome": "• <strong>Chrome</strong>: الإعدادات > الخصوصية والأمان > ملفات تعريف الارتباط وبيانات الموقع الأخرى",
+      "firefox": "• <strong>Firefox</strong>: الخيارات > الخصوصية والأمان > ملفات تعريف الارتباط وبيانات الموقع",
+      "safari": "• <strong>Safari</strong>: التفضيلات > الخصوصية > ملفات تعريف الارتباط وبيانات الموقع",
+      "edge": "• <strong>Edge</strong>: الإعدادات > أذونات الموقع > ملفات تعريف الارتباط وبيانات الموقع",
+      "impact": "<strong>هام</strong>: سيؤدي تعطيل ملفات تعريف الارتباط الأساسية إلى منع تسجيل الدخول والمدفوعات والوظائف الأساسية"
+    },
+    "cookieDetails": {
+      "title": "6. قائمة مفصلة بملفات تعريف الارتباط",
+      "content": "قائمة كاملة بملفات تعريف الارتباط التي قد يتم تعيينها على جهازك:",
+      "essential": {
+        "title": "ملفات تعريف الارتباط الأساسية (مطلوبة للوظائف)",
+        "items": [
+          {
+            "name": "sb-[project]-auth-token",
+            "purpose": "رمز جلسة المصادقة من Supabase (تسجيل دخول آمن)",
+            "duration": "ساعة واحدة (تحديث تلقائي)",
+            "provider": "Supabase",
+            "legal": "أداء العقد (أساسي لوصول المستخدم إلى الحساب)"
+          },
+          {
+            "name": "__stripe_mid",
+            "purpose": "منع الاحتيال من Stripe (أمان الدفع)",
+            "duration": "سنة واحدة",
+            "provider": "Stripe",
+            "legal": "مصلحة مشروعة (منع الاحتيال أثناء المدفوعات)"
+          },
+          {
+            "name": "__stripe_sid",
+            "purpose": "إدارة جلسة Stripe (عملية الدفع)",
+            "duration": "30 دقيقة",
+            "provider": "Stripe",
+            "legal": "أداء العقد (أساسي لمعالجة الدفع)"
+          },
+          {
+            "name": "NEXT_LOCALE",
+            "purpose": "توجيه لغة Next.js (توجيه URL اللغة)",
+            "duration": "سنة واحدة",
+            "provider": "Next.js",
+            "legal": "أداء العقد (أساسي لوظيفة متعددة اللغات)"
+          }
+        ]
+      },
+      "functional": {
+        "title": "ملفات تعريف الارتباط الوظيفية (لا يوجد حاليًا)",
+        "content": "نحن لا نستخدم ملفات تعريف الارتباط الوظيفية. يتم تخزين تفضيلات المستخدم بشكل آمن في ملف تعريف قاعدة البيانات الخاصة بك بدلاً من ملفات تعريف الارتباط، مما يوفر خصوصية أفضل واستمرارية عبر الأجهزة."
+      },
+      "analytics": {
+        "title": "التحليلات (لا توجد ملفات تعريف ارتباط)",
+        "content": "تستخدم Vercel Web Analytics تحليلات صديقة للخصوصية وخالية من ملفات تعريف الارتباط ولا تتطلب موافقة بموجب اللائحة العامة لحماية البيانات."
+      }
+    },
+    "legalBasis": {
+      "title": "7. الأساس القانوني لمعالجة ملفات تعريف الارتباط",
+      "content": "يتوافق استخدامنا لملفات تعريف الارتباط مع المادة 6 من اللائحة العامة لحماية البيانات والمادة 5 (3) من توجيه الخصوصية الإلكترونية:",
+      "essential": "• <strong>ملفات تعريف الارتباط الأساسية</strong>: مصلحة مشروعة (المادة 6 (1) (و)) لوظائف المنصة وأمنها",
+      "payment": "• <strong>ملفات تعريف الارتباط للدفع</strong>: أداء العقد (المادة 6 (1) (ب)) لمعالجة المعاملات",
+      "consent": "• <strong>ملفات تعريف الارتباط الوظيفية</strong>: الموافقة (المادة 6 (1) (أ)) لتحسين تجربة المستخدم",
+      "compliance": "• <strong>ملفات تعريف الارتباط للموافقة</strong>: التزام قانوني (المادة 6 (1) (ج)) لحفظ سجلات الامتثال للائحة العامة لحماية البيانات",
+      "analytics": "• <strong>التحليلات</strong>: لا يلزم وجود أساس قانوني (لا تتم معالجة ملفات تعريف الارتباط أو البيانات الشخصية)"
+    },
+    "dataProtection": {
+      "title": "8. حماية البيانات وحقوق ملفات تعريف الارتباط",
+      "content": "حقوق حماية البيانات المتعلقة بملفات تعريف الارتباط بموجب اللائحة العامة لحماية البيانات:",
+      "access": "• <strong>الحق في الوصول</strong>: طلب معلومات حول ملفات تعريف الارتباط الموضوعة على جهازك",
+      "rectification": "• <strong>الحق في التصحيح</strong>: تصحيح سجلات تفضيلات ملفات تعريف الارتباط غير الدقيقة",
+      "erasure": "• <strong>الحق في الحذف</strong>: حذف سجلات الموافقة على ملفات تعريف الارتباط (اتصل بـ admin@queer-Deep Resirch.com)",
+      "restriction": "• <strong>الحق في تقييد المعالجة</strong>: قصر معالجة ملفات تعريف الارتباط على الأساسية فقط",
+      "objection": "• <strong>الحق في الاعتراض</strong>: الاعتراض على ملفات تعريف الارتباط غير الأساسية (سحب الموافقة)",
+      "portability": "• <strong>الحق في نقل البيانات</strong>: تلقي سجل موافقتك على ملفات تعريف الارتباط بتنسيق منظم"
+    },
+    "updates": {
+      "title": "9. تحديثات سياسة ملفات تعريف الارتباط هذه",
+      "content": "قد نقوم بتحديث سياسة ملفات تعريف الارتباط هذه لتعكس التغييرات القانونية أو الفنية:",
+      "notification": "• <strong>الإخطار</strong>: إخطار عبر البريد الإلكتروني بالتغييرات الجوهرية التي تؤثر على حقوقك",
+      "consent": "• <strong>موافقة جديدة</strong>: طلب موافقة محدثة لأنواع أو أغراض جديدة لملفات تعريف الارتباط",
+      "effective": "• <strong>تاريخ السريان</strong>: تدخل التغييرات حيز التنفيذ بعد 30 يومًا من الإخطار ما لم تكن عاجلة",
+      "version": "• <strong>التحكم في الإصدار</strong>: الإصدارات السابقة متاحة عند الطلب"
+    },
+    "contact": {
+      "title": "10. اتصل بنا بخصوص ملفات تعريف الارتباط",
+      "content": "للأسئلة حول ممارسات ملفات تعريف الارتباط لدينا أو لممارسة حقوقك:",
+      "email": "<strong>مسؤول حماية البيانات</strong>: admin@queer-Deep Resirch.com",
+      "response": "<strong>الاستجابة في غضون 30 يومًا</strong> كما هو مطلوب بموجب المادة 12 من اللائحة العامة لحماية البيانات",
+      "dpa": "<strong>السلطة الإشرافية</strong>: هيئة حماية البيانات النمساوية (dsb.gv.at)",
+      "address": "<strong>QUEER MEDIA LITERACY e.V.</strong>، 1060 فيينا، Mariahilfer Straße 49/15، النمسا"
+    }
+  },
+  "manifest": {
+    "title": "البيان",
+    "lastUpdated": "آخر تحديث: يونيو 2025",
+    "why": {
+      "title": "لماذا اجتمعنا؟",
+      "content": "نعيش في زمن، حيث تقوم قوى منظمة جيدًا ومجهزة بموارد جيدة بتحريض الناس ضد بعضهم البعض. هدفهم واضح: مهاجمة الحقوق الأساسية للأشخاص الكويريين ومنع منح الحقوق المتساوية. تحالفنا هو استجابة لهذه الجهود المعادية للديمقراطية واللاإنسانية. لن نُدفع إلى الوراء، ولن نُقسّم، ولن نُربك، ولن نُقمع، وسنمضي قدمًا بعزم."
+    },
+    "who": {
+      "title": "من نحن؟",
+      "content": "نحن تحالف من الأشخاص الكويريين وحلفائهم الذين يعملون معًا لتعزيز وحماية مجتمع LGBTQIA+. نرى أنفسنا كشبكة للتضامن تجمع القوى المشتركة وتعزز مصالح أعضائها. نخلق مساحات إبداعية للأفكار وتصميم مجتمع منفتح ومتنوع."
+    },
+    "what": {
+      "title": "ما الذي يدفعنا؟",
+      "content": "ندافع عن حقنا في الأمان، وفي الظهور، وفي الحب ضد أي عداء. لا يحق لأحد أن يقرر بشأن وجودنا. نحن نأخذ مستقبلنا بأيدينا، دون أن يقرره الآخرون."
+    },
+    "participation": {
+      "title": "من يمكنه الانضمام إلينا؟",
+      "content": "تحالفنا مفتوح لجميع أعضاء مجتمع LGBTQIA+ وحلفائهم، بغض النظر عن الأصل والانتماء وأسلوب الحياة. حيثما يفرق الآخرون ويستبعدون، نحن نعيش القوة من خلال التنوع."
+    },
+    "action": {
+      "title": "كيف نتصرف؟",
+      "content": "نحن نقف إلى جانب بعضنا البعض، داخليًا وخارجيًا. نحن لا نقف مكتوفي الأيدي، بل نتصرف. نحن جزء من تحالف الحرية والتنوع وتقرير المصير."
+    }
+  },
+  "imprint": {
+    "title": "البصمة القانونية",
+    "lastUpdated": "آخر تحديث: يونيو 2025",
+    "labels": {
+      "name": "الاسم",
+      "seat": "المقر",
+      "address": "العنوان",
+      "country": "البلد",
+      "foundationDate": "تاريخ التأسيس"
+    },
+    "organization": {
+      "title": "معلومات المنظمة",
+      "name": "QUEER MEDIA LITERACY e.V.",
+      "seat": "فيينا",
+      "address": "1060 فيينا، Mariahilfer Straße 49/15",
+      "country": "النمسا",
+      "foundationDate": "21.09.2024"
+    },
+    "partners": {
+      "title": "الشركاء",
+      "partnersList": "حتى انفصال Deep Resirch، ستتولى جمعية Queer Media Literacy المسؤولية عن الموقع الإلكتروني. ومع ذلك، فإن الجمعية هي مجرد شريك واحد من بين العديد. Vangardist Agency & Magazine, GGG.at, Transv.at, Queer Moments, Queer Dance im Gemeindebau, Porn Film Festival Vienna, Queer Shorts Vienna, Vienna Gay Mans Chorus, YK Media"
+    },
+    "registration": {
+      "title": "التسجيل",
+      "authority": "السلطة: مديرية شرطة ولاية فيينا، قسم شؤون الجمعيات والتجمعات والإعلام",
+      "zvrNumber": "رقم ZVR 1689372191"
+    },
+    "contact": {
+      "title": "الاتصال",
+      "emailLabel": "البريد الإلكتروني:",
+      "email": "admin@queer-Deep Resirch.com",
+      "note": "لجميع الاستفسارات، يرجى استخدام عنوان البريد الإلكتروني المقدم أعلاه حصريًا."
+    },
+    "responsible": {
+      "title": "المسؤول عن المحتوى",
+      "content": "جمعية QUEER MEDIA LITERACY e.V. مسؤولة عن جميع المحتويات على هذا الموقع."
+    },
+    "disclaimer": {
+      "title": "إخلاء المسؤولية",
+      "content": "على الرغم من التحكم الدقيق في المحتوى، فإننا لا نتحمل أي مسؤولية عن محتويات الروابط الخارجية. يتحمل مشغلو الصفحات المرتبطة وحدهم مسؤولية محتواها."
+    }
+  },
+  "partners": {
+    "title": "الشركاء",
+    "descriptions": {
+      "1": "وكالة إعلامية ومجلة كويرية رائدة",
+      "2": "اتصالات كويرية",
+      "3": "تبادل، تعليم، استشارات والمزيد لمواضيع العابرين جنسياً",
+      "4": "ننظم مشاريع فنية كويرية، ونعزز الظهور والحوار من خلال تسليط الضوء على الفنانين والفنانات",
+      "5": "نرقص من حي إلى حي من أجل التسامح والاحترام والتنوع",
+      "6": "مهرجان أفلام إباحية ومواضيع كويرية",
+      "7": "أول مهرجان دولي للأفلام القصيرة الكويرية في فيينا",
+      "8": "مؤسسة جمعية لتصبح صوتاً في مجتمع LGBTQIA+",
+      "9": "شركة إنتاج إبداعي كويرية",
+      "10": "مهرجان كويري للسهر"
+    },
+    "categories": {
+      "1": "وكالة، مجلة",
+      "2": "إعلام",
+      "3": "استشارات، تعليم، دعم",
+      "4": "أحداث، أخبار",
+      "5": "أحداث، رقص",
+      "6": "مهرجان أفلام",
+      "7": "مهرجان أفلام",
+      "8": "موسيقى",
+      "9": "إنتاج إبداعي",
+      "10": "السهر"
+    },
+    "visit": "زيارة"
+  },
+  "accessibility": {
+    "menuButton": "القائمة"
+  },
+  "errors": {
+    "stripe": {
+      "checkoutFailed": "فشل الدفع",
+      "billingPortalError": "خطأ في بوابة الفوترة",
+      "failedToCreateCheckoutSession": "فشل إنشاء جلسة الدفع",
+      "noCheckoutUrlReceived": "لم يتم استلام رابط الدفع",
+      "failedToStartCheckout": "فشل بدء الدفع. يرجى المحاولة مرة أخرى.",
+      "failedToCreatePortalSession": "فشل إنشاء جلسة البوابة",
+      "noPortalUrlReceived": "لم يتم استلام رابط البوابة",
+      "failedToOpenBillingPortal": "فشل فتح بوابة الفوترة. يرجى المحاولة مرة أخرى.",
+      "userProfileNotFound": "لم يتم العثور على ملف تعريف المستخدم. لا يمكن حذف الحساب.",
+      "failedToDeleteAccountViaAPI": "فشل حذف الحساب عبر API",
+      "failedToDeleteAccount": "فشل حذف الحساب"
+    },
+    "finance": {
+      "planFallbackName": "خطة {index}",
+      "planFallbackDescription": "ادعم القضية بمساهمتك"
+    }
+  }
+}

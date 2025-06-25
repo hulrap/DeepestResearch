@@ -1,0 +1,1517 @@
+{
+  "navigation": {
+    "home": "Главная",
+    "settings": "Настройки",
+    "dashboard": "Профиль",
+    "manifest": "Манифест",
+    "partners": "Партнёры",
+    "signIn": "Войти",
+    "signUp": "Регистрация",
+    "signOut": "Выйти",
+    "protected": "Профиль",
+    "loading": "Загрузка..."
+  },
+  "home": {
+    "title": "Deep Resirch",
+    "welcomeBackPrefix": "Добро пожаловать в Deep Resirch",
+    "joinPrefix": "Присоединяйтесь к нашему Deep Resirch",
+    "welcomeBack": "С возвращением, {email}",
+    "subtitle": "Вы уже являетесь частью Deep Resirch! Перейдите в свой профиль, чтобы продолжить.",
+    "guestSubtitle": "Зарегистрируйтесь, чтобы стать частью нашего сообщества",
+    "goToDashboard": "Перейти в профиль",
+    "register": "Зарегистрироваться",
+    "userGreeting": "Привет, {email}!",
+    "joinOurDeep Resirch": "Присоединяйтесь к нашему Deep Resirch",
+    "welcomeBackShort": "С возвращением!",
+    "loginButton": "Войти",
+    "currentLanguage": "Русский",
+    "memberSince": "В сообществе с",
+    "accountStatus": "Статус аккаунта",
+    "accountVerified": "Подтверждён",
+    "accountPending": "Ожидает подтверждения",
+    "profileStatus": "Профиль",
+    "profileActive": "Активен",
+    "roles": "Роли",
+    "undecided": "Не определено",
+    "metaTitle": "Deep Resirch - Присоединяйтесь к нашему альянсу",
+    "metaDescription": "Присоединяйтесь к Deep Resirch",
+    "genericUser": "Пользователь",
+    "profileExplainer": {
+      "title": "Отлично, что вы последовали за Rainbow Rabbit.",
+      "content": "<h2>Именно такие герои, как вы, нужны нам сейчас.</h2><p>Поскольку наши права находятся под угрозой по всему миру, пришло время объединиться. С помощью квир-альянса мы хотим обеспечить больше общения, информации и связей внутри сообщества, поддерживать друг друга в уже существующих проектах, а также запускать новые проекты вместе. Мы хотим перейти от слов к делу.</p><p>Идеи варьируются от поддержки Bratislava Pride, дня информации сообщества до большого списка рассылки для петиций, акций и демонстраций. Вы также можете внести новые идеи и пожелания. Затем мы поддерживаем друг друга в реализации.</p><p><strong>Хотите быть в курсе или участвовать?</strong></p><p>В настоящее время вы можете участвовать в четырех различных ролях:</p><ol><li>как Сторонник и Подписчик рассылки</li><li>как Активист для отдельных акций</li><li>как Эксперт по специальным вопросам</li><li>и как Участник для активной совместной работы и ежемесячных встреч</li></ol><p>Если вы хотите узнать больше, заполните информацию о своем профиле, и мы свяжемся с вами после Месяца Гордости.</p><p><strong>У вас нет времени, но вы хотите пожертвовать?</strong></p><p>Все наши услуги бесплатны.</p><p>Однако мы не должны становиться зависимыми от государственного финансирования или корпоративного спонсорства.</p><p>Поэтому сообщество должно финансировать себя в среднесрочной перспективе.</p>"
+    },
+    "fillOutProfile": "Заполнить профиль",
+    "rainbowRabbitAlt": "Радужный кролик",
+    "footer": {
+      "copyright": "© 2025 Deep Resirch. Все права защищены.",
+      "imprint": "Выходные данные",
+      "cookiePolicy": "Политика использования cookie",
+      "privacyPolicy": "Политика конфиденциальности",
+      "contact": "Контакты",
+      "partners": "Партнёры"
+    }
+  },
+  "auth": {
+    "login": {
+      "title": "С возвращением",
+      "subtitle": "Войдите в свой аккаунт Deep Resirch",
+      "email": "Электронная почта",
+      "emailPlaceholder": "vash.email@example.com",
+      "password": "Пароль",
+      "forgotPassword": "Забыли пароль?",
+      "signInButton": "Войти",
+      "signingIn": "Выполняется вход...",
+      "noAccount": "Ещё нет аккаунта?"
+    },
+    "signUp": {
+      "title": "Присоединяйтесь к Deep Resirch",
+      "subtitle": "Создайте аккаунт и станьте частью Deep Resirch",
+      "email": "Электронная почта",
+      "emailPlaceholder": "vash.email@example.com",
+      "password": "Пароль",
+      "passwordPlaceholder": "Создайте надёжный пароль",
+      "confirmPassword": "Подтвердите пароль",
+      "confirmPasswordPlaceholder": "Повторите ваш пароль",
+      "joinButton": "Присоединиться к альянсу",
+      "creatingAccount": "Создание аккаунта...",
+      "passwordsDoNotMatch": "Пароли не совпадают",
+      "emailAlreadyRegistered": "Этот адрес электронной почты уже зарегистрирован в Deep Resirch.",
+      "registrationFailed": "Регистрация не удалась. Пожалуйста, попробуйте снова.",
+      "alreadyHaveAccount": "Уже есть аккаунт?",
+      "signInHere": "Войдите здесь"
+    },
+    "signUpSuccess": {
+      "readyToSignIn": "Готовы войти?",
+      "journeyBegins": "Ваше путешествие начинается сейчас",
+      "registrationSuccessful": "Регистрация прошла успешно!",
+      "confirmationInstructions": "Вы успешно зарегистрировались в Deep Resirch. Пожалуйста, проверьте свою электронную почту, чтобы подтвердить аккаунт перед входом.",
+      "whatsNext": "Что дальше?",
+      "checkEmail": "Проверьте ваш почтовый ящик",
+      "clickConfirmation": "Нажмите на ссылку для подтверждения",
+      "returnToSignIn": "Вернитесь сюда, чтобы войти",
+      "startJourney": "Начните ваше путешествие с Deep Resirch",
+      "noEmailReceived": "Не получили письмо? Проверьте папку \"Спам\" или",
+      "tryAgain": "попробуйте снова"
+    },
+    "forgotPassword": {
+      "title": "Сбросить пароль",
+      "description": "Введите свой email, и мы вышлем вам безопасную ссылку для сброса пароля",
+      "successTitle": "Проверьте вашу почту",
+      "successDescription": "Ссылка для сброса пароля отправлена",
+      "successMessage": "Мы отправили вам безопасную ссылку для сброса пароля. Нажмите на ссылку, чтобы установить новый пароль.",
+      "successInstructions": "Что делать дальше:",
+      "step1": "Проверьте ваш почтовый ящик (и папку \"Спам\")",
+      "step2": "Нажмите на ссылку 'Сбросить пароль' в письме",
+      "step3": "Введите ваш новый пароль на безопасной странице сброса",
+      "noEmail": "Не получили письмо?",
+      "resendLink": "Отправить письмо для сброса еще раз",
+      "sending": "Отправка...",
+      "sendResetEmail": "Отправить письмо для сброса",
+      "alreadyHaveAccount": "Уже есть аккаунт?"
+    },
+    "updatePassword": {
+      "title": "Сбросить пароль",
+      "description": "Пожалуйста, введите ваш новый пароль ниже.",
+      "newPassword": "Новый пароль",
+      "newPasswordPlaceholder": "Новый пароль",
+      "confirmNewPassword": "Подтвердите новый пароль",
+      "confirmNewPasswordPlaceholder": "Подтвердите ваш новый пароль",
+      "saving": "Сохранение...",
+      "saveNewPassword": "Сохранить новый пароль",
+      "verifyingLink": "Проверка вашей ссылки для сброса...",
+      "authenticationRequired": "Требуется аутентификация",
+      "passwordUpdated": "Пароль обновлён!",
+      "passwordUpdatedSuccess": "Ваш пароль был успешно обновлён. Вы будете перенаправлены в ваш профиль.",
+      "redirectingMoment": "Перенаправление через мгновение..."
+    },
+    "signOut": {
+      "signingOut": "Выход...",
+      "signOutError": "Не удалось выйти. Пожалуйста, попробуйте снова.",
+      "signOutSuccess": "Вы успешно вышли из системы"
+    },
+    "errors": {
+      "genericError": "Произошла ошибка",
+      "invalidCredentials": "Неверный email или пароль",
+      "emailRequired": "Требуется указать email",
+      "passwordRequired": "Требуется ввести пароль",
+      "codeError": "Ошибка кода: {code}",
+      "codeErrorPrefix": "Ошибка кода:",
+      "unspecifiedError": "Произошла неизвестная ошибка."
+    }
+  },
+  "settings": {
+    "title": "Профиль",
+    "subtitle": "Управляйте информацией и настройками вашего профиля",
+    "loading": "Загрузка ваших настроек...",
+    "error": "Не удалось загрузить настройки",
+    "tryAgain": "Попробовать снова",
+    "edit": "Редактировать",
+    "save": "Сохранить",
+    "saving": "Сохранение...",
+    "cancel": "Отмена",
+    "notSet": "Не указано",
+    "menu": {
+      "profile": "Профиль",
+      "contact": "Контакты",
+      "professional": "Профессия",
+      "participation": "Роли",
+      "location": "Местоположение",
+      "finance": "Пожертвования",
+      "settings": "Настройки"
+    },
+    "categories": {
+      "personal": {
+        "title": "Личная информация"
+      },
+      "professional": {
+        "title": "Профессиональная информация",
+        "description": "Ваша работа и навыки"
+      },
+      "location": {
+        "title": "Местоположение",
+        "description": "Где вы находитесь"
+      },
+      "contact": {
+        "title": "Контактная информация",
+        "description": "Как мы можем с вами связаться"
+      },
+      "participation": {
+        "title": "Роли в альянсе",
+        "description": "Выберите, как вы хотите участвовать в Deep Resirch"
+      },
+      "account": {
+        "title": "Настройки аккаунта",
+        "description": "Безопасность и управление аккаунтом"
+      },
+      "profile": {
+        "title": "Информация профиля",
+        "description": "Ваши основные данные профиля"
+      },
+      "finance": {
+        "title": "Пожертвования",
+        "description": "Управляйте вашей подпиской и оплатой"
+      }
+    },
+    "fields": {
+      "username": {
+        "label": "Имя пользователя",
+        "placeholder": "Выберите уникальное имя пользователя",
+        "description": "Можно изменять только раз в день.",
+        "autoGeneratedDescription": "Это имя пользователя было автоматически сгенерировано из вашего email. Вы можете изменить его один раз.",
+        "rateLimitError": "Вы можете изменять имя пользователя только раз в день.",
+        "formatError": "Имя пользователя должно содержать от 6 до 30 символов и состоять только из букв, цифр, подчёркиваний и точек"
+      },
+      "firstName": {
+        "label": "Имя",
+        "placeholder": "Ваше имя",
+        "description": "Необязательно",
+        "rateLimitError": "Вы можете изменить своё имя только 3 раза."
+      },
+      "lastName": {
+        "label": "Фамилия",
+        "placeholder": "Ваша фамилия",
+        "description": "Необязательно",
+        "rateLimitError": "Вы можете изменить свою фамилию только 3 раза."
+      },
+      "language": {
+        "label": "Язык"
+      },
+      "bio": {
+        "label": "О себе",
+        "placeholder": "Напишите короткую биографию...",
+        "description": "",
+        "rateLimitError": "Вы можете изменять свою биографию только 10 раз в день"
+      },
+      "website": {
+        "label": "Веб-сайт",
+        "placeholder": "https://vash-site.com",
+        "description": "",
+        "rateLimitError": "Вы можете изменять свой веб-сайт только 5 раз в день",
+        "formatError": "Неверный формат. Пример: https://vash-site.com"
+      },
+      "phone": {
+        "label": "Номер телефона",
+        "placeholder": "Ваш номер телефона",
+        "description": "Необязательное поле, можно изменить до 2 раз после первоначального ввода.",
+        "rateLimitError": "Вы можете изменить свой номер телефона только 2 раза после первоначального ввода",
+        "formatError": "Неверный формат. Пример: +79123456789"
+      },
+      "contactComment": {
+        "label": "Братислава-Прайд и контактный комментарий",
+        "placeholder": "Если вы хотите получить больше информации о Братиславском прайде, напишите нам в этом поле для комментариев. В противном случае оставьте комментарий о ваших пожеланиях по контактам.",
+        "description": "Дополнительная информация для связи"
+      },
+      "professionalComment": {
+        "label": "Комментарий к профессии",
+        "placeholder": "Дополнительные комментарии о вашей профессии...",
+        "description": "Свободный комментарий о вашем профессиональном опыте"
+      },
+      "profession": {
+        "label": "Профессия",
+        "placeholder": "Найдите свою профессию..."
+      },
+      "organization": {
+        "label": "Организация",
+        "placeholder": "Название вашей организации (работодатель, название бизнеса и т.д.)"
+      },
+      "experienceLevel": {
+        "label": "Уровень опыта"
+      },
+      "skills": {
+        "label": "Навыки и умения",
+        "description": "Добавьте любые ваши навыки - от технических до хобби и жизненных умений",
+        "placeholder": "например, Кулинария, JavaScript, Садоводство, Литературный обзор..."
+      },
+      "country": {
+        "label": "Страна",
+        "description": "Выберите страну вашего проживания"
+      },
+      "region": {
+        "label": "Регион/Область",
+        "description": "Выберите ваш регион или область",
+        "placeholder": "Выберите регион/область"
+      },
+      "city": {
+        "label": "Город",
+        "placeholder": "Ваш город"
+      },
+      "email": {
+        "label": "Адрес электронной почты",
+        "description": "Изменить ваш адрес электронной почты",
+        "confirmationRequired": "Вам нужно будет подтвердить ваш новый адрес электронной почты",
+        "placeholder": "vash.email@example.com",
+        "emailRequired": "Требуется указать email"
+      },
+      "password": {
+        "label": "Пароль",
+        "description": "Изменить ваш пароль",
+        "currentPassword": "Текущий пароль",
+        "newPassword": "Новый пароль",
+        "newPasswordRequired": "Требуется новый пароль",
+        "confirmNewPassword": "Подтвердите новый пароль",
+        "confirmNewPasswordPlaceholder": "Подтвердите ваш новый пароль",
+        "newPasswordPlaceholder": "Введите ваш новый пароль"
+      }
+    },
+    "consent": {
+      "title": "Разрешения на контакт",
+      "directContact": {
+        "label": "Разрешить прямые контакты",
+        "description": "Я согласен(на) на получение предложений внутри квир-альянса"
+      },
+      "newsletter": {
+        "label": "Email-рассылка",
+        "description": "Я согласен(на) на получение новостных рассылок и информации"
+      },
+      "privacyNotice": "Вы можете изменить эти разрешения в любое время. Мы уважаем вашу конфиденциальность и следуем принципам GDPR.",
+      "consentTimestamp": "Согласие дано: {timestamp}",
+      "lastUpdated": "Последнее обновление: {timestamp}"
+    },
+    "professional": {
+      "organizationRepresentative": {
+        "label": "Я представляю организацию",
+        "description": "Я согласен(на) на прямые контакты в качестве представителя организации"
+      }
+    },
+    "participation": {
+      "title": "Выберите ваши роли для участия",
+      "description": "Выберите одну или несколько ролей для вашего участия (не обязывающие). Вы можете выбрать несколько ролей в зависимости от ваших возможностей, навыков, связей, времени или целей <strong>и изменять в любое время</strong>.",
+      "roles": {
+        "member": {
+          "title": "Участник",
+          "description": "Я хочу участвовать различными способами как участник"
+        },
+        "expert": {
+          "title": "Эксперт",
+          "description": "Я хочу консультировать альянс по узкоспециализированным вопросам"
+        },
+        "activist": {
+          "title": "Активист",
+          "description": "Я хочу помогать альянсу в создании видимости и влияния"
+        },
+        "supporter": {
+          "title": "Сторонник",
+          "description": "Я хочу финансово поддерживать квир-альянс"
+        }
+      }
+    },
+    "account": {
+      "changeEmail": {
+        "title": "Изменить адрес электронной почты",
+        "button": "Изменить Email",
+        "success": "Начато изменение email. Пожалуйста, проверьте вашу почту для подтверждения."
+      },
+      "changePassword": {
+        "title": "Изменить пароль",
+        "button": "Изменить пароль",
+        "success": "Пароль успешно обновлен"
+      },
+      "deleteAccount": {
+        "title": "Удалить аккаунт",
+        "description": "Безвозвратно удалить ваш профиль и все связанные данные",
+        "button": "Удалить аккаунт",
+        "confirmText": "DELETE",
+        "confirmPlaceholder": "Введите DELETE для подтверждения",
+        "warning": "Это действие необратимо. Все ваши данные будут безвозвратно удалены.",
+        "subscriptionWarning": "Важно: Пожалуйста, отмените все активные подписки перед удалением аккаунта. Если вы удалите аккаунт, не отменив подписки, вам нужно будет связаться с администратором, чтобы он отменил их для вас вручную.",
+        "success": "Аккаунт успешно удален"
+      }
+    },
+    "options": {
+      "experienceLevel": {
+        "intern": "Стажёр",
+        "entry": "Начальный уровень (0-2 года)",
+        "mid": "Средний уровень (3-5 лет)",
+        "senior": "Старший уровень (6-10 лет)",
+        "lead": "Ведущий/Главный специалист (10+ лет)",
+        "executive": "Руководитель/Топ-менеджер"
+      }
+    },
+    "profile": {
+      "title": "Информация профиля",
+      "description": "Ваши основные данные аккаунта",
+      "email": "Email",
+      "memberSince": "В сообществе с",
+      "lastUpdated": "Последнее обновление",
+      "profileCompletion": "Заполненность профиля"
+    },
+    "loadingStates": {
+      "saving": "Сохранение...",
+      "updatingSettings": "Обновление ваших настроек",
+      "deletingAccount": "Удаление аккаунта...",
+      "deletingWarning": "Это действие необратимо",
+      "autoNavigating": "Автоматическая навигация...",
+      "nextSection": "следующий раздел",
+      "loadingCountries": "Загрузка стран...",
+      "loadingRegions": "Загрузка регионов...",
+      "loadingCities": "Загрузка городов...",
+      "loadingSupportStatus": "Загрузка вашего статуса поддержки...",
+      "loadingPlans": "Загрузка планов..."
+    },
+    "errors": {
+      "rateLimitExceeded": "Превышен лимит запросов для этого поля",
+      "changeLimitExceeded": "Превышен лимит изменений для этого поля",
+      "invalidInput": "Неверный ввод",
+      "saveFailed": "Не удалось сохранить изменения",
+      "loadFailed": "Не удалось загрузить данные",
+      "failedToChangeEmail": "Не удалось изменить email",
+      "failedToChangePassword": "Не удалось изменить пароль",
+      "maximumCharacters": "Допускается максимум {maxLength} символов",
+      "validation": {
+        "invalidLanguageCode": "Неверный код языка",
+        "invalidExperienceLevel": "Неверный уровень опыта",
+        "skillsMustBeArray": "Навыки должны быть массивом",
+        "bioTooLong": "Биография слишком длинная (макс. 500 символов)",
+        "invalidWebsite": "Веб-сайт должен начинаться с http:// или https:// и иметь действительный домен (например, https://a.co)",
+        "invalidPreferencesStructure": "Неверная структура предпочтений"
+      }
+    },
+    "finance": {
+      "title": "Финансы и оплата",
+      "description": "Управляйте вашей подпиской и предпочтениями по оплате",
+      "current": "Текущая подписка",
+      "loading": "Загрузка подписки...",
+      "manage": "Управлять подпиской",
+      "upgrade": "Улучшить план",
+      "billing": "История платежей",
+      "thankYouSupport": "Спасибо за поддержку альянса!",
+      "considerSupporting": "Рассмотрите возможность поддержки нашего дела",
+      "premiumFeatures": "Премиум-функции и поддержка",
+      "processing": "Обработка...",
+      "contributeNow": "Сделать взнос сейчас",
+      "changeSupportLevel": "Изменить уровень поддержки",
+      "startSupporting": "Начать поддерживать",
+      "noPlansAvailable": "Нет доступных планов",
+      "manageSubscriptionDescription": "Управляйте вашей подпиской, просматривайте счета и обновляйте платежную информацию",
+      "accessAccountDescription": "Получите доступ к настройкам вашего аккаунта, способам оплаты и платежной информации",
+      "manageSubscriptionBilling": "Управление подпиской и оплатой",
+      "accessBillingPortal": "Перейти в платежный портал",
+      "stripePortalDescription": "Работает на безопасном платежном портале Stripe: управляйте способами оплаты, просматривайте счета, обновляйте платежный адрес и многое другое",
+      "currentSupportStatus": "Текущий статус поддержки",
+      "activeSubscription": "✓ Активная подписка",
+      "statusLabel": "Статус:",
+      "nextBilling": "Следующий платеж:",
+      "oneTimeContributionMade": "✓ Сделан разовый взнос",
+      "successfulContribution": "Вы успешно внесли вклад в наше дело",
+      "noActiveSupport": "⚠ Нет активной поддержки",
+      "chooseSupportOption": "Выберите вариант поддержки ниже, чтобы помочь финансировать квир-альянс",
+      "waysToSupport": "Способы поддержать наше дело",
+      "chooseAmountStripe": "Вы выбираете сумму в безопасной кассе Stripe",
+      "perInterval": "за {interval}",
+      "plansAvailableOnce": "Планы появятся здесь, как только они будут созданы в Stripe",
+      "billingAccountManagement": "Управление оплатой и аккаунтом",
+      "payAsYouWish": "Платите, сколько хотите",
+      "oneTime": "Разовый",
+      "plans": {
+        "basic": {
+          "name": "Базовый",
+          "description": "Основные функции для начала работы",
+          "price": "$9.99/месяц"
+        },
+        "pro": {
+          "name": "Профессиональный",
+          "description": "Расширенные функции для активных участников",
+          "price": "$19.99/месяц"
+        },
+        "expert": {
+          "name": "Эксперт",
+          "description": "Полный доступ с приоритетной поддержкой",
+          "price": "$39.99/месяц"
+        },
+        "lifetime": {
+          "name": "Пожизненный доступ",
+          "description": "Единовременный платеж за постоянный доступ",
+          "price": "$299.99"
+        }
+      },
+      "error": "Не удалось загрузить информацию о подписке",
+      "messages": {
+        "paymentSuccessSyncing": "Оплата прошла успешно! Синхронизация ваших данных...",
+        "paymentSuccessActivated": "Оплата прошла успешно! Ваша подписка активирована.",
+        "paymentCanceled": "Оплата была отменена. Вы можете попробовать снова в любое время.",
+        "welcomeBackSyncing": "С возвращением! Синхронизация ваших платежных данных...",
+        "welcomeBackUpdated": "С возвращением! Ваша платежная информация была обновлена."
+      }
+    }
+  },
+  "languageSwitcher": {
+    "selectLanguage": "Выберите язык",
+    "updating": "Обновление языка..."
+  },
+  "theme": {
+    "light": "Светлая",
+    "dark": "Тёмная",
+    "system": "Системная"
+  },
+  "languages": {
+    "en": "Английский",
+    "de": "Немецкий",
+    "fr": "Французский",
+    "es": "Испанский",
+    "it": "Итальянский",
+    "pt": "Португальский",
+    "nl": "Нидерландский",
+    "pl": "Польский",
+    "ru": "Русский",
+    "ja": "Японский",
+    "ko": "Корейский",
+    "zh": "Китайский",
+    "ar": "Арабский",
+    "hi": "Хинди"
+  },
+  "professions": {
+    "chief-executive": "Генеральный директор",
+    "administration-and-planning-manager": "Менеджер по администрированию и планированию",
+    "policy-and-planning-manager": "Менеджер по политике и планированию",
+    "business-services-and-administration-manager": "Менеджер по бизнес-услугам и администрированию",
+    "sales-marketing-and-development-manager": "Менеджер по продажам, маркетингу и развитию",
+    "production-and-specialized-services-manager": "Менеджер по производству и специализированным услугам",
+    "hospitality-retail-and-other-services-manager": "Менеджер в сфере гостеприимства, розничной торговли и других услуг",
+    "science-and-engineering-professional": "Специалист в области науки и инженерии",
+    "software-developer": "Разработчик программного обеспечения",
+    "systems-analyst": "Системный аналитик",
+    "database-designer": "Проектировщик баз данных",
+    "network-professional": "Сетевой специалист",
+    "health-professional": "Медицинский работник",
+    "doctor": "Врач",
+    "nurse": "Медсестра/Медбрат",
+    "pharmacist": "Фармацевт",
+    "veterinarian": "Ветеринар",
+    "teaching-professional": "Педагог",
+    "professor": "Профессор",
+    "secondary-education-teacher": "Учитель средней школы",
+    "primary-school-teacher": "Учитель начальной школы",
+    "business-and-administration-professional": "Специалист по бизнесу и администрированию",
+    "accountant": "Бухгалтер",
+    "financial-analyst": "Финансовый аналитик",
+    "human-resources-professional": "Специалист по кадрам",
+    "information-and-communications-technology-professional": "Специалист по ИКТ",
+    "legal-professional": "Юрист",
+    "lawyer": "Адвокат",
+    "judge": "Судья",
+    "culture-arts-and-design-professional": "Специалист в области культуры, искусства и дизайна",
+    "author": "Автор",
+    "journalist": "Журналист",
+    "artist": "Художник",
+    "designer": "Дизайнер",
+    "science-and-engineering-associate-professional": "Младший специалист в области науки и инженерии",
+    "engineering-technician": "Инженер-техник",
+    "drafter": "Чертежник",
+    "health-associate-professional": "Младший медицинский специалист",
+    "medical-technician": "Медицинский техник",
+    "nursing-associate-professional": "Младший специалист по уходу",
+    "business-and-administration-associate-professional": "Младший специалист по бизнесу и администрированию",
+    "insurance-representative": "Страховой представитель",
+    "estate-agent": "Агент по недвижимости",
+    "legal-social-and-cultural-associate-professional": "Младший специалист в правовой, социальной и культурной сферах",
+    "legal-associate-professional": "Помощник юриста",
+    "social-worker": "Социальный работник",
+    "information-and-communications-technician": "Техник по ИКТ",
+    "computer-technician": "Компьютерный техник",
+    "telecommunications-technician": "Техник по телекоммуникациям",
+    "general-and-keyboard-clerk": "Офисный служащий / Оператор ввода данных",
+    "secretary": "Секретарь",
+    "data-entry-clerk": "Оператор ввода данных",
+    "customer-services-clerk": "Сотрудник службы поддержки клиентов",
+    "customer-service-representative": "Представитель службы поддержки",
+    "receptionist": "Администратор",
+    "numerical-and-material-recording-clerk": "Учетчик",
+    "accounting-associate-professional": "Помощник бухгалтера",
+    "bookkeeper": "Счетовод",
+    "other-clerical-support-worker": "Другой офисный работник",
+    "mail-carrier": "Почтальон",
+    "filing-clerk": "Архивариус",
+    "personal-service-worker": "Работник сферы персональных услуг",
+    "travel-attendant": "Бортпроводник / Сопровождающий в поездках",
+    "cook": "Повар",
+    "waiter": "Официант",
+    "hairdresser": "Парикмахер",
+    "housekeeper": "Домработник/Домработница",
+    "protective-services-worker": "Работник охранных служб",
+    "security-guard": "Охранник",
+    "police-officer": "Полицейский",
+    "firefighter": "Пожарный",
+    "sales-worker": "Работник торговли",
+    "shop-salesperson": "Продавец в магазине",
+    "cashier": "Кассир",
+    "sales-representative": "Торговый представитель",
+    "market-oriented-skilled-agricultural-worker": "Квалифицированный работник сельского хозяйства",
+    "farmer": "Фермер",
+    "livestock-producer": "Животновод",
+    "crop-grower": "Растениевод",
+    "market-oriented-skilled-forestry-fishery-and-hunting-worker": "Квалифицированный работник лесного, рыбного и охотничьего хозяйства",
+    "logger": "Лесоруб",
+    "fisherman": "Рыбак",
+    "subsistence-farmer-fisherman-hunter-and-gatherer": "Фермер/Рыбак/Охотник/Собиратель (для собственного потребления)",
+    "building-and-related-trades-worker": "Строитель",
+    "carpenter": "Плотник",
+    "electrician": "Электрик",
+    "plumber": "Сантехник",
+    "painter": "Маляр",
+    "metal-machinery-and-related-trades-worker": "Работник по металлу и оборудованию",
+    "welder": "Сварщик",
+    "machinist": "Станочник",
+    "mechanic": "Механик",
+    "handicraft-and-printing-worker": "Ремесленник / Печатник",
+    "potter": "Гончар",
+    "tailor": "Портной",
+    "printer": "Печатник",
+    "electrical-and-electronic-trades-worker": "Электромонтажник / Специалист по электронике",
+    "food-processing-woodworking-garment-and-other-craft-and-related-trades-worker": "Работник пищевой, деревообрабатывающей, швейной и других отраслей",
+    "stationary-plant-and-machine-operator": "Оператор стационарных установок и машин",
+    "power-plant-operator": "Оператор электростанции",
+    "machine-operator": "Оператор станка",
+    "assembler": "Сборщик",
+    "product-assembler": "Сборщик изделий",
+    "electronics-assembler": "Сборщик электроники",
+    "driver-and-mobile-plant-operator": "Водитель и оператор мобильных установок",
+    "truck-driver": "Водитель грузовика",
+    "bus-driver": "Водитель автобуса",
+    "taxi-driver": "Водитель такси",
+    "cleaner-and-helper": "Уборщик и помощник",
+    "domestic-helper": "Помощник по дому",
+    "building-cleaner": "Уборщик зданий",
+    "kitchen-helper": "Помощник на кухне",
+    "agricultural-forestry-and-fishery-laborer": "Рабочий в сельском, лесном и рыбном хозяйстве",
+    "farm-worker": "Сельскохозяйственный рабочий",
+    "gardener": "Садовник",
+    "laborer-in-mining-construction-manufacturing-and-transport": "Рабочий в горнодобывающей, строительной, производственной и транспортной сферах",
+    "construction-laborer": "Строительный рабочий",
+    "factory-worker": "Заводской рабочий",
+    "food-preparation-assistant": "Помощник повара",
+    "street-and-related-service-worker": "Уличный работник и работник смежных служб",
+    "content-creator": "Создатель контента",
+    "social-media-manager": "SMM-менеджер",
+    "digital-marketing-specialist": "Специалист по цифровому маркетингу",
+    "uxui-designer": "UX/UI-дизайнер",
+    "data-scientist": "Специалист по данным (Data Scientist)",
+    "machine-learning-engineer": "Инженер по машинному обучению",
+    "devops-engineer": "DevOps-инженер",
+    "product-manager": "Менеджер по продукту",
+    "consultant": "Консультант",
+    "entrepreneur": "Предприниматель",
+    "freelancer": "Фрилансер",
+    "student": "Студент",
+    "retired": "На пенсии",
+    "unemployed": "Безработный",
+    "other": "Другое"
+  },
+  "skills": {
+    "javascript": "JavaScript",
+    "typescript": "TypeScript",
+    "python": "Python",
+    "java": "Java",
+    "c#": "C#",
+    "c++": "C++",
+    "go": "Go",
+    "rust": "Rust",
+    "php": "PHP",
+    "ruby": "Ruby",
+    "swift": "Swift",
+    "kotlin": "Kotlin",
+    "react": "React",
+    "vuejs": "Vue.js",
+    "angular": "Angular",
+    "svelte": "Svelte",
+    "nextjs": "Next.js",
+    "nodejs": "Node.js",
+    "expressjs": "Express.js",
+    "django": "Django",
+    "flask": "Flask",
+    "postgresql": "PostgreSQL",
+    "mysql": "MySQL",
+    "mongodb": "MongoDB",
+    "redis": "Redis",
+    "aws": "AWS",
+    "azure": "Azure",
+    "google-cloud": "Google Cloud",
+    "docker": "Docker",
+    "kubernetes": "Kubernetes",
+    "machine-learning": "Машинное обучение",
+    "artificial-intelligence": "Искусственный интеллект",
+    "data-science": "Наука о данных",
+    "data-analysis": "Анализ данных",
+    "statistics": "Статистика",
+    "cybersecurity": "Кибербезопасность",
+    "network-administration": "Сетевое администрирование",
+    "database-administration": "Администрирование баз данных",
+    "system-administration": "Системное администрирование",
+    "web-development": "Веб-разработка",
+    "mobile-development": "Мобильная разработка",
+    "game-development": "Разработка игр",
+    "software-testing": "Тестирование ПО",
+    "devops": "DevOps",
+    "graphic-design": "Графический дизайн",
+    "uiux-design": "UI/UX дизайн",
+    "web-design": "Веб-дизайн",
+    "brand-design": "Бренд-дизайн",
+    "logo-design": "Дизайн логотипов",
+    "typography": "Типографика",
+    "adobe-photoshop": "Adobe Photoshop",
+    "adobe-illustrator": "Adobe Illustrator",
+    "figma": "Figma",
+    "sketch": "Sketch",
+    "canva": "Canva",
+    "video-editing": "Видеомонтаж",
+    "animation": "Анимация",
+    "photography": "Фотография",
+    "digital-photography": "Цифровая фотография",
+    "portrait-photography": "Портретная фотография",
+    "landscape-photography": "Пейзажная фотография",
+    "photo-editing": "Обработка фотографий",
+    "drawing": "Рисование",
+    "painting": "Живопись",
+    "digital-art": "Цифровое искусство",
+    "illustration": "Иллюстрация",
+    "sculpture": "Скульптура",
+    "ceramics": "Керамика",
+    "jewelry-making": "Создание украшений",
+    "3d-modeling": "3D-моделирование",
+    "cad-design": "САПР-проектирование",
+    "industrial-design": "Промышленный дизайн",
+    "interior-design": "Дизайн интерьера",
+    "fashion-design": "Дизайн одежды",
+    "project-management": "Управление проектами",
+    "product-management": "Управление продуктом",
+    "business-analysis": "Бизнес-анализ",
+    "strategic-planning": "Стратегическое планирование",
+    "leadership": "Лидерство",
+    "team-management": "Управление командой",
+    "human-resources": "Управление персоналом",
+    "recruitment": "Рекрутинг",
+    "sales": "Продажи",
+    "marketing": "Маркетинг",
+    "digital-marketing": "Цифровой маркетинг",
+    "social-media-marketing": "SMM",
+    "content-marketing": "Контент-маркетинг",
+    "email-marketing": "Email-маркетинг",
+    "seo": "SEO",
+    "sem": "SEM",
+    "ppc-advertising": "PPC-реклама",
+    "financial-analysis": "Финансовый анализ",
+    "accounting": "Бухгалтерский учет",
+    "bookkeeping": "Ведение бухгалтерии",
+    "budgeting": "Бюджетирование",
+    "investment-analysis": "Инвестиционный анализ",
+    "risk-management": "Управление рисками",
+    "supply-chain-management": "Управление цепями поставок",
+    "operations-management": "Операционный менеджмент",
+    "quality-assurance": "Обеспечение качества",
+    "process-improvement": "Оптимизация процессов",
+    "business-development": "Развитие бизнеса",
+    "negotiation": "Ведение переговоров",
+    "contract-management": "Управление контрактами",
+    "vendor-management": "Управление поставщиками",
+    "public-speaking": "Публичные выступления",
+    "presentation-skills": "Навыки презентации",
+    "technical-writing": "Техническое писательство",
+    "creative-writing": "Креативное письмо",
+    "copywriting": "Копирайтинг",
+    "content-creation": "Создание контента",
+    "journalism": "Журналистика",
+    "blogging": "Ведение блога",
+    "editing": "Редактирование",
+    "proofreading": "Корректура",
+    "translation": "Перевод",
+    "interpretation": "Устный перевод",
+    "customer-service": "Обслуживание клиентов",
+    "client-relations": "Работа с клиентами",
+    "conflict-resolution": "Разрешение конфликтов",
+    "mediation": "Медиация",
+    "storytelling": "Сторителлинг",
+    "interviewing": "Проведение интервью",
+    "active-listening": "Активное слушание",
+    "cross-cultural-communication": "Межкультурная коммуникация",
+    "teaching": "Преподавание",
+    "training-development": "Обучение и развитие",
+    "curriculum-design": "Разработка учебных программ",
+    "educational-technology": "Образовательные технологии",
+    "e-learning": "Электронное обучение",
+    "mentoring": "Менторство",
+    "coaching": "Коучинг",
+    "workshop-facilitation": "Ведение воркшопов",
+    "adult-education": "Образование для взрослых",
+    "child-development": "Детское развитие",
+    "special-education": "Специальное образование",
+    "educational-assessment": "Оценка в образовании",
+    "research-methods": "Методы исследования",
+    "academic-writing": "Академическое письмо",
+    "first-aid": "Первая помощь",
+    "cpr": "Сердечно-легочная реанимация",
+    "medical-knowledge": "Медицинские знания",
+    "nursing": "Сестринское дело",
+    "physical-therapy": "Физиотерапия",
+    "mental-health-support": "Поддержка ментального здоровья",
+    "nutrition": "Нутрициология",
+    "fitness-training": "Фитнес-тренировки",
+    "yoga": "Йога",
+    "meditation": "Медитация",
+    "mindfulness": "Осознанность",
+    "stress-management": "Управление стрессом",
+    "health-coaching": "Коучинг по здоровью",
+    "massage-therapy": "Массаж",
+    "acupuncture": "Акупунктура",
+    "herbal-medicine": "Фитотерапия",
+    "alternative-medicine": "Альтернативная медицина",
+    "carpentry": "Плотницкое дело",
+    "plumbing": "Сантехнические работы",
+    "electrical-work": "Электромонтажные работы",
+    "hvac": "ОВК (отопление, вентиляция, кондиционирование)",
+    "welding": "Сварка",
+    "automotive-repair": "Ремонт автомобилей",
+    "motorcycle-repair": "Ремонт мотоциклов",
+    "appliance-repair": "Ремонт бытовой техники",
+    "computer-repair": "Ремонт компьютеров",
+    "electronics-repair": "Ремонт электроники",
+    "decorating": "Декорирование",
+    "tiling": "Укладка плитки",
+    "roofing": "Кровельные работы",
+    "masonry": "Каменные работы",
+    "landscaping": "Ландшафтный дизайн",
+    "construction": "Строительство",
+    "home-improvement": "Ремонт дома",
+    "furniture-making": "Изготовление мебели",
+    "cooking": "Кулинария",
+    "baking": "Выпечка",
+    "pastry-making": "Кондитерское дело",
+    "food-preparation": "Приготовление пищи",
+    "menu-planning": "Планирование меню",
+    "recipe-development": "Разработка рецептов",
+    "food-safety": "Безопасность пищевых продуктов",
+    "kitchen-management": "Управление кухней",
+    "wine-knowledge": "Знание вин",
+    "bartending": "Барменское дело",
+    "coffee-making": "Приготовление кофе",
+    "brewing": "Пивоварение",
+    "food-photography": "Фуд-фотография",
+    "catering": "Кейтеринг",
+    "meal-planning": "Планирование питания",
+    "nutrition-planning": "Планирование рациона",
+    "dietary-planning": "Планирование диеты",
+    "music-production": "Музыкальное продюсирование",
+    "audio-engineering": "Звукорежиссура",
+    "music-composition": "Композиция музыки",
+    "singing": "Пение",
+    "guitar": "Гитара",
+    "piano": "Фортепиано",
+    "drums": "Барабаны",
+    "violin": "Скрипка",
+    "bass": "Бас-гитара",
+    "saxophone": "Саксофон",
+    "music-theory": "Теория музыки",
+    "sound-design": "Саунд-дизайн",
+    "podcast-production": "Производство подкастов",
+    "acting": "Актерское мастерство",
+    "theater": "Театр",
+    "film-making": "Кинопроизводство",
+    "screenwriting": "Сценарное мастерство",
+    "video-production": "Видеопроизводство",
+    "broadcasting": "Телерадиовещание",
+    "stand-up-comedy": "Стендап-комедия",
+    "improvisation": "Импровизация",
+    "dance": "Танцы",
+    "ballet": "Балет",
+    "hip-hop": "Хип-хоп",
+    "salsa": "Сальса",
+    "ballroom-dancing": "Бальные танцы",
+    "football": "Футбол (американский)",
+    "basketball": "Баскетбол",
+    "soccer": "Футбол",
+    "tennis": "Теннис",
+    "golf": "Гольф",
+    "swimming": "Плавание",
+    "running": "Бег",
+    "cycling": "Велоспорт",
+    "hiking": "Хайкинг",
+    "rock-climbing": "Скалолазание",
+    "skiing": "Лыжи",
+    "snowboarding": "Сноубординг",
+    "surfing": "Серфинг",
+    "martial-arts": "Боевые искусства",
+    "boxing": "Бокс",
+    "wrestling": "Борьба",
+    "gymnastics": "Гимнастика",
+    "track-and-field": "Легкая атлетика",
+    "baseball": "Бейсбол",
+    "volleyball": "Волейбол",
+    "badminton": "Бадминтон",
+    "table-tennis": "Настольный теннис",
+    "sports-coaching": "Спортивный коучинг",
+    "personal-training": "Персональные тренировки",
+    "athletic-training": "Атлетическая подготовка",
+    "camping": "Кемпинг",
+    "backpacking": "Пеший туризм",
+    "fishing": "Рыбалка",
+    "hunting": "Охота",
+    "map-reading": "Чтение карт",
+    "orienteering": "Спортивное ориентирование",
+    "wilderness-survival": "Выживание в дикой природе",
+    "fire-making": "Разведение огня",
+    "foraging": "Собирательство",
+    "knot-tying": "Вязание узлов",
+    "rope-work": "Работа с веревкой",
+    "sailing": "Парусный спорт",
+    "kayaking": "Каякинг",
+    "canoeing": "Гребля на каноэ",
+    "mountain-climbing": "Альпинизм",
+    "cave-exploration": "Спелеология",
+    "wildlife-tracking": "Выслеживание диких животных",
+    "gardening": "Садоводство",
+    "organic-gardening": "Органическое садоводство",
+    "hydroponics": "Гидропоника",
+    "permaculture": "Пермакультура",
+    "composting": "Компостирование",
+    "plant-propagation": "Размножение растений",
+    "tree-care": "Уход за деревьями",
+    "flower-arranging": "Флористика",
+    "botanical-knowledge": "Ботанические знания",
+    "pest-management": "Борьба с вредителями",
+    "soil-management": "Управление почвой",
+    "irrigation": "Орошение",
+    "greenhouse-management": "Управление теплицей",
+    "urban-farming": "Городское фермерство",
+    "beekeeping": "Пчеловодство",
+    "knitting": "Вязание",
+    "crocheting": "Вязание крючком",
+    "sewing": "Шитье",
+    "quilting": "Квилтинг",
+    "embroidery": "Вышивание",
+    "cross-stitch": "Вышивание крестиком",
+    "woodworking": "Деревообработка",
+    "metalworking": "Металлообработка",
+    "glassblowing": "Стеклодувное дело",
+    "pottery": "Гончарное дело",
+    "candle-making": "Изготовление свечей",
+    "soap-making": "Мыловарение",
+    "leatherworking": "Работа с кожей",
+    "bookbinding": "Переплетное дело",
+    "origami": "Оригами",
+    "calligraphy": "Каллиграфия",
+    "scrapbooking": "Скрапбукинг",
+    "model-building": "Моделизм",
+    "data-collection": "Сбор данных",
+    "statistical-analysis": "Статистический анализ",
+    "literature-review": "Литературный обзор",
+    "critical-thinking": "Критическое мышление",
+    "problem-solving": "Решение проблем",
+    "mathematical-modeling": "Математическое моделирование",
+    "scientific-method": "Научный метод",
+    "laboratory-skills": "Лабораторные навыки",
+    "microscopy": "Микроскопия",
+    "spectroscopy": "Спектроскопия",
+    "chemical-analysis": "Химический анализ",
+    "fieldwork": "Полевая работа",
+    "survey-design": "Разработка опросов",
+    "grant-writing": "Написание грантов",
+    "time-management": "Тайм-менеджмент",
+    "organization": "Организованность",
+    "goal-setting": "Постановка целей",
+    "self-discipline": "Самодисциплина",
+    "emotional-intelligence": "Эмоциональный интеллект",
+    "decision-making": "Принятие решений",
+    "creative-thinking": "Креативное мышление",
+    "innovation": "Инновации",
+    "adaptability": "Адаптивность",
+    "resilience": "Стрессоустойчивость",
+    "self-motivation": "Самомотивация",
+    "continuous-learning": "Непрерывное обучение",
+    "self-reflection": "Саморефлексия",
+    "networking": "Нетворкинг",
+    "relationship-building": "Построение отношений",
+    "empathy": "Эмпатия",
+    "cultural-sensitivity": "Культурная чувствительность",
+    "team-collaboration": "Командная работа",
+    "volunteer-coordination": "Координация волонтеров",
+    "community-organizing": "Организация сообществ",
+    "event-planning": "Планирование мероприятий",
+    "party-planning": "Организация вечеринок",
+    "hospitality": "Гостеприимство",
+    "customer-relations": "Отношения с клиентами",
+    "diplomacy": "Дипломатия",
+    "persuasion": "Убеждение",
+    "influence": "Влияние",
+    "social-media-engagement": "Вовлечение в социальных сетях",
+    "computer-literacy": "Компьютерная грамотность",
+    "internet-research": "Поиск в интернете",
+    "email-management": "Управление почтой",
+    "social-media-management": "Управление соцсетями",
+    "online-marketing": "Онлайн-маркетинг",
+    "e-commerce": "Электронная коммерция",
+    "digital-privacy": "Цифровая конфиденциальность",
+    "cybersecurity-awareness": "Осведомленность о кибербезопасности",
+    "podcast-creation": "Создание подкастов",
+    "youtube-creation": "Создание контента для YouTube",
+    "live-streaming": "Прямые трансляции",
+    "online-teaching": "Онлайн-преподавание",
+    "virtual-collaboration": "Виртуальное сотрудничество",
+    "driving": "Вождение",
+    "truck-driving": "Вождение грузовика",
+    "motorcycle-riding": "Езда на мотоцикле",
+    "bicycle-maintenance": "Обслуживание велосипеда",
+    "navigation": "Навигация",
+    "route-planning": "Планирование маршрута",
+    "logistics-coordination": "Координация логистики",
+    "warehouse-management": "Управление складом",
+    "inventory-management": "Управление запасами",
+    "shipping-and-receiving": "Отправка и получение",
+    "personal-finance": "Личные финансы",
+    "investment-planning": "Инвестиционное планирование",
+    "tax-preparation": "Подготовка налоговых деклараций",
+    "insurance-knowledge": "Знания в области страхования",
+    "real-estate": "Недвижимость",
+    "cryptocurrency": "Криптовалюта",
+    "trading": "Трейдинг",
+    "financial-planning": "Финансовое планирование",
+    "retirement-planning": "Планирование пенсии",
+    "debt-management": "Управление долгами",
+    "spanish": "Испанский",
+    "french": "Французский",
+    "german": "Немецкий",
+    "italian": "Итальянский",
+    "portuguese": "Португальский",
+    "russian": "Русский",
+    "chinese": "Китайский",
+    "japanese": "Японский",
+    "korean": "Корейский",
+    "arabic": "Арабский",
+    "hindi": "Хинди",
+    "dutch": "Нидерландский",
+    "swedish": "Шведский",
+    "norwegian": "Норвежский",
+    "danish": "Датский",
+    "finnish": "Финский",
+    "polish": "Польский",
+    "turkish": "Турецкий",
+    "magic-tricks": "Фокусы",
+    "juggling": "Жонглирование",
+    "balloon-animals": "Фигурки из шаров",
+    "face-painting": "Аквагрим",
+    "card-games": "Карточные игры",
+    "board-games": "Настольные игры",
+    "chess": "Шахматы",
+    "bridge": "Бридж",
+    "poker": "Покер",
+    "trivia-knowledge": "Эрудиция",
+    "speed-reading": "Скорочтение",
+    "memory-techniques": "Техники запоминания",
+    "escape-rooms": "Квесты в реальности",
+    "puzzle-solving": "Решение головоломок",
+    "crossword-puzzles": "Кроссворды",
+    "sudoku": "Судоку",
+    "word-games": "Словесные игры"
+  },
+  "common": {
+    "add": "Добавить",
+    "remove": "Удалить",
+    "search": "Поиск",
+    "select": "Выбрать",
+    "loading": "Загрузка...",
+    "error": "Ошибка",
+    "success": "Успешно",
+    "yes": "Да",
+    "no": "Нет",
+    "ok": "ОК",
+    "close": "Закрыть",
+    "submit": "Отправить",
+    "reset": "Сбросить",
+    "clear": "Очистить",
+    "next": "Далее",
+    "previous": "Назад",
+    "back": "Назад",
+    "forward": "Вперед",
+    "help": "Помощь",
+    "about": "О нас"
+  },
+  "privacyPolicy": {
+    "title": "Политика конфиденциальности",
+    "lastUpdated": "Последнее обновление: июнь 2025",
+    "introduction": {
+      "title": "Политика конфиденциальности",
+      "content": "Эта Политика конфиденциальности объясняет, как Deep Resirch (\"мы\", \"наш\" или \"нас\") собирает, использует, передает и защищает вашу личную информацию, когда вы пользуетесь нашей платформой и услугами. Мы обязуемся защищать вашу конфиденциальность и поддерживать доверие, которое вы нам оказываете, взаимодействуя с нашей платформой сообщества.",
+      "keyPrivacyFeaturesTitle": "Ключевые особенности конфиденциальности:",
+      "keyPoints": "<strong>Ключевые особенности конфиденциальности:</strong><br>• <strong>Полный контроль</strong>: Удаляйте свой аккаунт и все данные мгновенно из настроек профиля<br>• <strong>Детализированное согласие</strong>: Выбирайте, какие именно сообщения вы хотите получать<br>• <strong>Прозрачность данных</strong>: Четкие объяснения, какие данные мы собираем и почему<br>• <strong>Защита по стандартам ЕС</strong>: Хостинг в ЕС с полным соответствием GDPR и австрийскому законодательству о защите данных<br>• <strong>Никакой продажи данных</strong>: Мы никогда не продаем вашу личную информацию третьим лицам"
+    },
+    "controllerInfo": {
+      "title": "1. Информация о контролере данных",
+      "content": "Мы являемся контролером данных, ответственным за вашу личную информацию. Вы можете связаться с нами по любым вопросам конфиденциальности по адресу:",
+      "contact": "Специалист по защите данных: admin@queer-Deep Resirch.com"
+    },
+    "legalBasis": {
+      "title": "2. Правовая основа для обработки",
+      "content": "Мы обрабатываем ваши персональные данные на следующих правовых основаниях согласно статье 6 GDPR:",
+      "consent": "• <strong>Ваше согласие</strong>: Только для подписки на рассылку и прямой связи",
+      "contract": "• <strong>Договорная необходимость</strong>: Для предоставления услуг нашей платформы и содействия связям в сообществе",
+      "legitimateInterest": "• <strong>Законные интересы</strong>: Для работы и улучшения нашей платформы, обеспечения безопасности сообщества и содействия значимым связям внутри сообщества. Наш законный интерес сбалансирован с вашими правами на конфиденциальность.",
+      "legalObligation": "• <strong>Правовое обязательство</strong>: Для соблюдения применимых законов и нормативных актов",
+      "vitalInterests": "• <strong>Жизненно важные интересы</strong>: В редких случаях для защиты чьей-либо жизни или физической безопасности"
+    },
+    "dataCollection": {
+      "title": "3. Информация, которую мы собираем",
+      "profileData": {
+        "title": "Профильная информация (Что и зачем)",
+        "content": "• <strong>Адрес электронной почты</strong> (обязательно): Создание аккаунта, аутентификация, критически важные сообщения, сброс пароля<br>• <strong>Имя пользователя</strong>: Уникальный идентификатор для взаимодействия в сообществе и отображения в профиле<br>• <strong>Имя</strong> (имя/фамилия, необязательно): Персонализированные приветствия, узнаваемость в сообществе, содействие нетворкингу<br>• <strong>Номер телефона</strong> (необязательно): Экстренный контакт, двухфакторная аутентификация, премиум-поддержка<br>• <strong>Биография и веб-сайт</strong> (необязательно): Нетворкинг в сообществе, демонстрация навыков, профессиональные связи<br>• <strong>Навыки и умения</strong>: Подбор релевантных возможностей, сотрудничество в проектах, определение экспертизы<br>• <strong>Профессиональная информация</strong>: Карьерный нетворкинг, подтверждение экспертизы, возможности для сотрудничества<br>• <strong>Предпочтения по участию</strong>: Подбор ролей (участник, эксперт, активист, сторонник), рекомендации мероприятий<br>• <strong>Местоположение</strong> (страна/штат/город): Уведомления о местных событиях, создание регионального сообщества, соблюдение законодательства<br>• <strong>Предпочтения по коммуникации</strong>: Уважение выбора согласия, персонализированная частота общения"
+      },
+      "usageData": {
+        "title": "Технические данные (Только для безопасности и функциональности)",
+        "content": "• <strong>IP-адрес</strong>: Мониторинг безопасности, предотвращение мошенничества, соблюдение региональных законов<br>• <strong>Информация о браузере/устройстве</strong>: Оптимизация совместимости, проверка безопасности, адаптивный дизайн<br>• <strong>Данные сессии</strong>: Состояние аутентификации, безопасность входа, автоматический выход для защиты<br>• <strong>Журналы ошибок</strong>: Решение технических проблем, мониторинг стабильности платформы, исправление ошибок<br>• <strong>Примечание</strong>: Мы не отслеживаем личные паттерны активности, посещения страниц или данные о взаимодействии"
+      },
+      "paymentData": {
+        "title": "Платежная информация (Что и как)",
+        "content": "• <strong>Записи транзакций</strong>: История пожертвований, статус подписки, сверка счетов<br>• <strong>Метаданные платежей</strong>: ID транзакций, суммы, валюта, даты для финансовой отчетности<br>• <strong>Интеграция со Stripe</strong>: Обработка платежей осуществляется Stripe с соблюдением стандарта PCI DSS<br>• <strong>Платежные адреса</strong>: Расчет налогов, предотвращение мошенничества, соблюдение нормативных требований<br>• <strong>Детали подписки</strong>: Управление уровнем обслуживания, обработка продлений, отслеживание использования<br>• <strong>Примечание</strong>: Мы никогда не храним номера кредитных карт, CVV-коды или конфиденциальные платежные данные"
+      },
+      "consentData": {
+        "title": "Данные о согласии (Ваши предпочтения по коммуникации)",
+        "content": "• <strong>Прямой контакт</strong>: Согласие на получение предложений внутри квир-альянса<br>• <strong>Рассылка</strong>: Согласие на получение новостных рассылок и информации (не маркетинговой)<br>• <strong>Представитель организации</strong>: Согласие на прямые контакты в качестве представителя организации<br>• <strong>История согласий</strong>: Временные метки и изменения ваших предпочтений (соответствие GDPR)"
+      }
+    },
+    "purposes": {
+      "title": "4. Как мы используем вашу информацию (Подробные цели)",
+      "community": "• <strong>Создание сообщества</strong>: Подбор участников по навыкам, рекомендации местных мероприятий, менторские связи, возможности для сотрудничества на основе общих интересов и местоположения",
+      "personalization": "• <strong>Персонализированный опыт</strong>: Подбор контента на основе ролей участия, предложения мероприятий, соответствующие вашим навыкам, коммуникации на определенном языке, уведомления с учетом часового пояса",
+      "communication": "• <strong>Коммуникация</strong>: Доставка рассылки (на основе согласия), прямой контакт с предложениями (на основе согласия), контакт с представителями организаций (на основе согласия), обновления платформы, уведомления о безопасности",
+      "platform": "• <strong>Работа платформы</strong>: Аутентификация пользователей, управление сессиями, функциональность, синхронизация данных, поддержка нескольких языков, мобильная адаптивность",
+      "safety": "• <strong>Безопасность сообщества</strong>: Обнаружение мошенничества через мониторинг IP, предотвращение спама с помощью ограничения запросов, системы сообщений о злоупотреблениях, модерация контента, верификация аккаунтов",
+      "analytics": "• <strong>Веб-аналитика</strong>: Анонимная статистика веб-сайта от Vercel Analytics (личные данные не собираются, полностью без cookie)",
+      "legal": "• <strong>Соблюдение законодательства</strong>: Соблюдение австрийского законодательства о защите данных, выполнение требований GDPR, ведение аудиторских журналов, регуляторная отчетность при необходимости",
+      "technical": "• <strong>Техническая функциональность</strong>: Оптимизация базы данных, создание резервных копий, мониторинг системы, развертывание обновлений безопасности, оптимизация производительности, отслеживание и устранение ошибок"
+    },
+    "sharing": {
+      "title": "5. Передача информации",
+      "content": "Мы серьезно относимся к вашей конфиденциальности и передаем информацию только в следующих конкретных случаях:",
+      "serviceProviders": "• <strong>Поставщики услуг</strong>: Доверенные партнеры, которые помогают нам в работе нашей платформы (например, Supabase для хостинга данных, Stripe для платежей, Vercel для аналитики)",
+      "legal": "• <strong>Правовые требования</strong>: Когда это требуется по закону, по решению суда или для защиты наших законных прав",
+      "consent": "• <strong>С вашего согласия</strong>: Любая другая передача информации происходит только с вашего явного разрешения",
+      "noSharing": "• <strong>Нет обмена между участниками</strong>: Мы не передаем вашу информацию другим участникам альянса или пользователям",
+      "noSale": "<strong>Мы никогда не продаем вашу личную информацию третьим лицам.</strong>"
+    },
+    "dataTransfers": {
+      "title": "6. Международная передача данных",
+      "content": "Некоторые из наших поставщиков услуг могут находиться за пределами Европейской экономической зоны (ЕЭЗ). При международной передаче ваших данных мы обеспечиваем адекватную защиту через:",
+      "adequacy": "• <strong>Решения об адекватности</strong>: Передача в страны с адекватной защитой данных",
+      "safeguards": "• <strong>Соответствующие гарантии</strong>: Стандартные договорные клаузулы, одобренные Европейской комиссией",
+      "providers": "• Наши текущие провайдеры включают Supabase (инфраструктура в ЕС), Stripe (глобальный с гарантиями для ЕС) и Vercel (хостинг в ЕС в регионе Франкфурт)"
+    },
+    "retention": {
+      "title": "7. Хранение и удаление данных",
+      "content": "Мы храним вашу личную информацию только столько, сколько необходимо, и предоставляем возможность немедленного удаления:",
+      "active": "• <strong>Активные аккаунты</strong>: Данные хранятся, пока ваш аккаунт активен и вы продолжаете пользоваться нашими услугами",
+      "dormant": "• <strong>Неактивные аккаунты</strong>: Автоматическое удаление после 3 лет полной неактивности (с предварительным уведомлением по электронной почте за 90 дней)",
+      "immediate": "• <strong>Немедленное самостоятельное удаление</strong>: Удалите весь свой аккаунт мгновенно через Настройки профиля → Настройки аккаунта → Удалить аккаунт",
+      "deletion": "• <strong>По запросу на удаление</strong>: Немедленное удаление из всех активных систем, баз данных и служб аутентификации",
+      "backups": "• <strong>Удаление из резервных копий</strong>: Полное удаление из всех систем резервного копирования в течение 90 дней после удаления аккаунта",
+      "legal": "• <strong>Правовые требования</strong>: Ограниченное хранение данных только там, где это конкретно требуется австрийским или европейским законодательством (например, финансовые записи для налоговых целей)",
+      "technical": "• <strong>Технический процесс удаления</strong>: Данные профиля удаляются из основной базы данных → Учетные данные для аутентификации удаляются → Журналы аудита помечаются для удаления → Системы резервного копирования очищаются",
+      "confirmation": "• <strong>Подтверждение удаления</strong>: Автоматический выход из системы и отправка подтверждения по электронной почте после успешного удаления аккаунта"
+    },
+    "rights": {
+      "title": "8. Ваши права согласно GDPR",
+      "content": "Вы имеете следующие права в отношении ваших персональных данных:",
+      "access": "• <strong>Право на доступ</strong>: Запросите копию ваших персональных данных по адресу admin@queer-Deep Resirch.com или просмотрите их непосредственно в настройках вашего профиля",
+      "rectification": "• <strong>Право на исправление</strong>: Исправляйте неточные данные непосредственно в настройках вашего профиля или запросите помощь по адресу admin@queer-Deep Resirch.com",
+      "erasure": "• <strong>Право на удаление</strong>: <strong>Удалите весь свой аккаунт мгновенно</strong> из настроек вашего профиля (Настройки > Настройки аккаунта > Удалить аккаунт) или запросите удаление по адресу admin@queer-Deep Resirch.com",
+      "restriction": "• <strong>Право на ограничение обработки</strong>: Ограничьте способ обработки ваших данных, связавшись с admin@queer-Deep Resirch.com",
+      "portability": "• <strong>Право на переносимость данных</strong>: Получите ваши данные в структурированном формате JSON, написав на admin@queer-Deep Resirch.com",
+      "objection": "• <strong>Право на возражение</strong>: Возражайте против обработки на основе законных интересов, связавшись с admin@queer-Deep Resirch.com",
+      "withdrawal": "• <strong>Отозвать согласие</strong>: Измените предпочтения согласия непосредственно в настройках вашего профиля или свяжитесь с admin@queer-Deep Resirch.com",
+      "complaint": "• <strong>Право на подачу жалобы</strong>: Подайте жалобу в Австрийский орган по защите данных (Datenschutzbehörde) на dsb.gv.at",
+      "exercise": "Большинство прав можно реализовать непосредственно в настройках вашего профиля. Для дополнительной помощи свяжитесь с admin@queer-Deep Resirch.com (гарантия ответа в течение 30 дней)."
+    },
+    "accountDeletion": {
+      "title": "8.1. Полное удаление аккаунта (самообслуживание)",
+      "content": "Вы можете удалить весь свой аккаунт и все связанные с ним данные в любое время непосредственно из настроек вашего профиля:",
+      "access": "• <strong>Как получить доступ</strong>: Войти → Профиль → Настройки → Настройки аккаунта → Удалить аккаунт",
+      "process": "• <strong>Процесс удаления</strong>: Введите 'УДАЛИТЬ' для подтверждения → Немедленное безвозвратное удаление всех данных",
+      "scope": "• <strong>Что удаляется</strong>: Вся информация профиля, навыки, предпочтения, история согласий, журналы аудита, данные сессии и учетные данные для аутентификации",
+      "immediate": "• <strong>Сроки</strong>: Немедленное удаление из всех систем, включая базу данных и аутентификацию",
+      "irreversible": "• <strong>Важно</strong>: Это действие необратимо - после удаления ваш аккаунт и данные не могут быть восстановлены",
+      "backup": "• <strong>Удаление из резервных копий</strong>: Ваши данные удаляются из всех резервных копий в течение 90 дней после удаления",
+      "confirmation": "• <strong>Подтверждение</strong>: Вы будете автоматически выведены из системы и перенаправлены после успешного удаления",
+      "alternative": "• <strong>Альтернатива</strong>: Свяжитесь с admin@queer-Deep Resirch.com, если вам нужна помощь в удалении аккаунта"
+    },
+    "security": {
+      "title": "9. Комплексные меры безопасности данных",
+      "content": "Мы применяем многоуровневые надежные меры безопасности для защиты вашей личной информации:",
+      "technical": {
+        "title": "Технические меры безопасности",
+        "content": "• <strong>Шифрование данных</strong>: Все данные шифруются при передаче (TLS 1.3) и в состоянии покоя (AES-256) через Supabase<br>• <strong>Безопасность базы данных</strong>: Политики безопасности на уровне строк (RLS), гарантирующие, что пользователи могут получить доступ только к своим собственным данным<br>• <strong>Аутентификация</strong>: Поддержка многофакторной аутентификации, безопасное управление сессиями с автоматическим истечением срока действия<br>• <strong>Проверка ввода</strong>: Комплексная защита от XSS, защита от SQL-инъекций, санация ввода<br>• <strong>Заголовки безопасности</strong>: Политика безопасности контента (CSP), HTTP Strict Transport Security (HSTS), защита от кликджекинга<br>• <strong>Безопасность API</strong>: Ограничение скорости запросов, проверка запросов, защищенные конечные точки API с обязательной аутентификацией"
+      },
+      "organizational": {
+        "title": "Организационные меры безопасности",
+        "content": "• <strong>Контроль доступа</strong>: Принцип наименьших привилегий, ролевой доступ к системам и данным<br>• <strong>Обучение персонала</strong>: Регулярное обучение по вопросам безопасности, протоколы защиты данных<br>• <strong>Соглашения об обработке данных</strong>: Комплексные соглашения со всеми сторонними обработчиками<br>• <strong>План реагирования на инциденты</strong>: Документированные процедуры обнаружения и реагирования на нарушения безопасности<br>• <strong>Регулярные аудиты</strong>: Ежеквартальные обзоры безопасности, ежегодное тестирование на проникновение, оценка уязвимостей"
+      },
+      "monitoring": {
+        "title": "Непрерывный мониторинг безопасности",
+        "content": "• <strong>Мониторинг в реальном времени</strong>: Круглосуточный мониторинг системы, автоматическое обнаружение угроз<br>• <strong>Аудиторские журналы</strong>: Комплексное ведение журналов всех изменений профиля, попыток входа, доступа к данным<br>• <strong>Отслеживание сессий</strong>: Мониторинг активных сессий, автоматический выход после неактивности<br>• <strong>Предотвращение мошенничества</strong>: Обнаружение аномалий на основе IP, оповещения о подозрительной активности<br>• <strong>Отслеживание ошибок</strong>: Автоматическое ведение журналов ошибок и реагирование на проблемы, связанные с безопасностью"
+      },
+      "infrastructure": {
+        "title": "Безопасность инфраструктуры",
+        "content": "• <strong>Безопасность хостинга</strong>: Инфраструктура Supabase на базе ЕС с соответствием SOC 2 Type II<br>• <strong>Сетевая безопасность</strong>: Брандмауэры, VPN-доступ для администраторов, защищенные каналы связи<br>• <strong>Безопасность резервных копий</strong>: Зашифрованные автоматические резервные копии, безопасное хранение резервных копий, протестированные процедуры восстановления<br>• <strong>Управление обновлениями</strong>: Автоматические исправления безопасности, регулярные обновления зависимостей, сканирование уязвимостей<br>• <strong>Соответствие требованиям</strong>: Соответствие GDPR, соблюдение австрийского законодательства о защите данных, регулярные аудиты соответствия"
+      },
+      "incident": {
+        "title": "Реагирование на утечку данных",
+        "content": "• <strong>Обнаружение</strong>: Автоматизированные системы мониторинга, немедленные оповещения о подозрительной активности<br>• <strong>Реагирование</strong>: Уведомление Австрийского органа по защите данных в течение 72 часов при необходимости<br>• <strong>Уведомление пользователей</strong>: Прямое информирование затронутых пользователей в течение 72 часов после подтвержденной утечки<br>• <strong>Смягчение последствий</strong>: Немедленные процедуры сдерживания, развертывание исправлений безопасности, усиление защиты системы<br>• <strong>Документация</strong>: Полная документация инцидента, улучшения безопасности после инцидента"
+      }
+    },
+    "cookies": {
+      "title": "10. Cookie и отслеживание",
+      "content": "<strong>Мы используем только обязательные cookie</strong> - никаких отслеживающих, аналитических или маркетинговых cookie. Для получения подробной информации, пожалуйста, ознакомьтесь с нашей Политикой использования cookie. Ключевые моменты:",
+      "essential": "• <strong>Только обязательные cookie</strong>: Требуются для входа в систему, платежей и поддержки языков (согласие не требуется)",
+      "analytics": "• <strong>Никаких аналитических cookie</strong>: Мы используем аналитику Vercel без cookie",
+      "preference": "• <strong>Предпочтения хранятся в вашем аккаунте</strong>: Язык, тема и настройки сохраняются в вашем профиле в базе данных, а не в cookie",
+      "marketing": "• <strong>Никаких маркетинговых cookie</strong>: Мы не используем рекламные или поведенческие отслеживающие cookie"
+    },
+    "minors": {
+      "title": "11. Защита несовершеннолетних",
+      "content": "Наша платформа предназначена для лиц в возрасте 18 лет и старше. Пользователям младше 18 лет не разрешается создавать аккаунты или пользоваться нашими услугами."
+    },
+    "changes": {
+      "title": "12. Изменения в этой Политике",
+      "content": "Мы можем обновлять эту Политику конфиденциальности для отражения изменений в нашей практике или правовых требованиях. Мы будем:",
+      "notification": "• <strong>Уведомлять пользователей</strong>: Уведомление по электронной почте о значительных изменениях",
+      "consent": "• <strong>Получать согласие</strong>: На существенные изменения, затрагивающие ваши права",
+      "posting": "• <strong>Публиковать обновления</strong>: Всегда поддерживать актуальную версию на нашем веб-сайте",
+      "date": "• <strong>Обновлять дату</strong>: Дата \"Последнее обновление\" показывает последнюю редакцию"
+    },
+    "contact": {
+      "title": "13. Контактная информация",
+      "content": "По любым вопросам, связанным с конфиденциальностью, или для реализации ваших прав, свяжитесь с нами:",
+      "details": "Email: admin@queer-Deep Resirch.com\nВремя ответа: В течение 30 дней\nОрган по защите данных: Österreichische Datenschutzbehörde (dsb.gv.at)"
+    }
+  },
+  "cookiePolicy": {
+    "title": "Политика использования cookie",
+    "lastUpdated": "Последнее обновление: июнь 2025",
+    "labels": {
+      "purpose": "Цель:",
+      "cookies": "Cookie:",
+      "privacy": "Конфиденциальность:",
+      "legalBasis": "Правовая основа:",
+      "cookieName": "Название cookie",
+      "duration": "Срок действия"
+    },
+    "introduction": {
+      "title": "Политика использования cookie",
+      "content": "Эта Политика использования cookie объясняет, как QUEER MEDIA LITERACY e.V. (\"Deep Resirch\") использует cookie на нашей платформе. <strong>Мы используем только обязательные cookie</strong>, которые необходимы для функционирования нашей платформы - никаких отслеживающих, рекламных или аналитических cookie, требующих вашего согласия."
+    },
+    "whatAreCookies": {
+      "title": "1. Что такое cookie",
+      "content": "Cookie - это небольшие текстовые файлы, хранящиеся на вашем устройстве при посещении нашего веб-сайта. <strong>Мы используем только обязательные cookie</strong>, которые необходимы для функционирования нашей платформы:",
+      "remembering": "• <strong>Безопасные сеансы входа</strong> - для безопасного поддержания вашего входа в систему",
+      "improving": "• <strong>Поддержка нескольких языков</strong> - для запоминания вашего выбора языка для навигации",
+      "analyzing": "• <strong>Безопасность платежей</strong> - для предотвращения мошенничества во время пожертвований",
+      "personalizing": "• <strong>Без отслеживания</strong> - мы не используем cookie для отслеживания вашего поведения"
+    },
+    "typesOfCookies": {
+      "title": "2. Типы cookie, которые мы используем",
+      "essential": {
+        "title": "Обязательные cookie (Единственные cookie, которые мы используем)",
+        "content": "<strong>Все наши cookie являются обязательными</strong> - они необходимы для работы платформы и не требуют вашего согласия согласно GDPR:",
+        "authentication": "• <strong>Безопасность входа</strong>: Сессионные токены для безопасного поддержания вашего входа в систему",
+        "security": "• <strong>Защита платежей</strong>: Предотвращение мошенничества Stripe во время пожертвований",
+        "functionality": "• <strong>Поддержка языков</strong>: Запоминание вашего выбора языка для навигации по сайту",
+        "compliance": "• <strong>Без отслеживания</strong>: Мы не используем cookie для сбора личных данных или отслеживания поведения"
+      },
+      "functional": {
+        "title": "Пользовательские предпочтения (хранятся в вашем аккаунте, а не в cookie)",
+        "content": "<strong>Конфиденциальность по умолчанию</strong>: Мы храним ваши предпочтения в вашем защищенном профиле аккаунта, а не в отслеживающих cookie:",
+        "preferences": "• <strong>Язык и тема</strong>: Сохраняются в профиле вашего аккаунта, доступны на разных устройствах",
+        "formData": "• <strong>Настройки доступности</strong>: Хранятся безопасно в вашем профиле в базе данных",
+        "accessibility": "• <strong>Лучшая конфиденциальность</strong>: Хранение на основе аккаунта означает, что отслеживающие cookie не нужны"
+      },
+      "analytics": {
+        "title": "Аналитика (Полностью без cookie)",
+        "content": "Мы используем <strong>Vercel Web Analytics</strong> - решение, ориентированное на конфиденциальность, которое не использует cookie:",
+        "usage": "• <strong>Без cookie</strong>: Использует анонимную идентификацию посетителей на основе хэша",
+        "performance": "• <strong>Конфиденциальность прежде всего</strong>: Хэш сбрасывается каждые 24 часа, нет межсайтового отслеживания",
+        "demographics": "• <strong>Только анонимно</strong>: Агрегированная статистика, без личных данных",
+        "provider": "• <strong>Согласие не требуется</strong>: Соответствует требованиям по умолчанию, отсутствие cookie означает отсутствие необходимости в согласии"
+      },
+      "payment": {
+        "title": "Cookie для обработки платежей (Обязательные для платежей)",
+        "content": "Платежный процессор Stripe использует обязательные cookie во время обработки платежей:",
+        "fraud": "• <strong>Предотвращение мошенничества</strong>: __stripe_mid (1 год), __stripe_sid (30 минут)",
+        "security": "• <strong>Безопасность платежей</strong>: Обязательны для безопасной обработки транзакций",
+        "session": "• <strong>Управление сессией</strong>: Поддержание состояния платежа во время процесса оформления заказа"
+      }
+    },
+    "thirdPartyServices": {
+      "title": "3. Сторонние сервисы и их cookie",
+      "content": "Мы работаем с партнерами, соответствующими GDPR, которые могут устанавливать cookie, когда вы пользуетесь их услугами:",
+      "stripe": {
+        "title": "Stripe (Обработка платежей)",
+        "purpose": "Безопасная обработка платежей для пожертвований и членских взносов",
+        "cookies": "Обязательные cookie: __stripe_mid, __stripe_sid (предотвращение мошенничества, безопасность)",
+        "privacy": "Политика конфиденциальности: stripe.com/privacy | Политика использования cookie: stripe.com/legal/cookies-policy",
+        "legal": "Используется только во время обработки платежей (законный интерес для выполнения договора)"
+      },
+      "vercel": {
+        "title": "Vercel Analytics (Веб-аналитика)",
+        "purpose": "Веб-аналитика и мониторинг производительности с фокусом на конфиденциальность",
+        "cookies": "Cookie не используются - анонимная идентификация посетителей на основе хэша",
+        "privacy": "Политика конфиденциальности: vercel.com/legal/privacy-policy",
+        "legal": "Согласие не требуется, так как личные данные или cookie не используются"
+      },
+      "supabase": {
+        "title": "Supabase (Аутентификация и база данных)",
+        "purpose": "Безопасная аутентификация пользователей и хранение данных",
+        "cookies": "Сессионные cookie для аутентификации (обязательны для функциональности входа)",
+        "privacy": "Политика конфиденциальности: supabase.com/privacy",
+        "legal": "Обязательные cookie для выполнения договора (согласие не требуется)"
+      }
+    },
+    "cookieConsent": {
+      "title": "4. Почему нам не нужно согласие на использование cookie",
+      "content": "<strong>Согласие не требуется</strong> - все наши cookie обязательны для функциональности:",
+      "essential": "• <strong>Только обязательные</strong>: Все cookie необходимы для входа, платежей и навигации",
+      "granular": "• <strong>Без отслеживания</strong>: Мы не используем рекламные, аналитические или поведенческие cookie",
+      "withdraw": "• <strong>Соответствие GDPR</strong>: Обязательные cookie освобождены от требований о согласии",
+      "settings": "• <strong>Конфиденциальность по умолчанию</strong>: Минимальный сбор данных, максимальная конфиденциальность пользователя",
+      "noConsent": "• <strong>Прозрачность</strong>: Мы точно говорим вам, что мы используем и почему"
+    },
+    "browserControls": {
+      "title": "5. Управление cookie в браузере",
+      "content": "Вы можете управлять cookie через настройки вашего браузера. Обратите внимание, что отключение обязательных cookie может помешать работе функций входа и оплаты:",
+      "chrome": "• <strong>Chrome</strong>: Настройки > Конфиденциальность и безопасность > Файлы cookie и другие данные сайтов",
+      "firefox": "• <strong>Firefox</strong>: Настройки > Приватность и защита > Куки и данные сайтов",
+      "safari": "• <strong>Safari</strong>: Настройки > Конфиденциальность > Куки и данные веб-сайтов",
+      "edge": "• <strong>Edge</strong>: Настройки > Разрешения для сайта > Файлы cookie и данные сайтов",
+      "impact": "<strong>Важно</strong>: Отключение обязательных cookie помешает входу в систему, платежам и основной функциональности"
+    },
+    "cookieDetails": {
+      "title": "6. Подробный список cookie",
+      "content": "Полный список cookie, которые могут быть установлены на вашем устройстве:",
+      "essential": {
+        "title": "Обязательные cookie (Требуются для функциональности)",
+        "items": [
+          {
+            "name": "sb-[project]-auth-token",
+            "purpose": "Сессионный токен аутентификации Supabase (безопасный вход)",
+            "duration": "1 час (автообновление)",
+            "provider": "Supabase",
+            "legal": "Выполнение договора (обязателен для доступа к аккаунту пользователя)"
+          },
+          {
+            "name": "__stripe_mid",
+            "purpose": "Предотвращение мошенничества Stripe (безопасность платежей)",
+            "duration": "1 год",
+            "provider": "Stripe",
+            "legal": "Законный интерес (предотвращение мошенничества при платежах)"
+          },
+          {
+            "name": "__stripe_sid",
+            "purpose": "Управление сессией Stripe (процесс оплаты)",
+            "duration": "30 минут",
+            "provider": "Stripe",
+            "legal": "Выполнение договора (обязателен для обработки платежей)"
+          },
+          {
+            "name": "NEXT_LOCALE",
+            "purpose": "Маршрутизация локали Next.js (маршрутизация URL по языку)",
+            "duration": "1 год",
+            "provider": "Next.js",
+            "legal": "Выполнение договора (обязателен для многоязычной функциональности)"
+          }
+        ]
+      },
+      "functional": {
+        "title": "Функциональные cookie (В настоящее время нет)",
+        "content": "Мы НЕ используем функциональные cookie. Предпочтения пользователя хранятся безопасно в вашем профиле в базе данных вместо cookie, обеспечивая лучшую конфиденциальность и постоянство на разных устройствах."
+      },
+      "analytics": {
+        "title": "Аналитика (Без cookie)",
+        "content": "Vercel Web Analytics использует аналитику, ориентированную на конфиденциальность и не использующую cookie, которая не требует согласия согласно GDPR."
+      }
+    },
+    "legalBasis": {
+      "title": "7. Правовая основа для обработки cookie",
+      "content": "Использование нами cookie соответствует статье 6 GDPR и статье 5(3) Директивы о конфиденциальности электронных коммуникаций:",
+      "essential": "• <strong>Обязательные cookie</strong>: Законный интерес (статья 6(1)(f)) для функциональности и безопасности платформы",
+      "payment": "• <strong>Платежные cookie</strong>: Выполнение договора (статья 6(1)(b)) для обработки транзакций",
+      "consent": "• <strong>Функциональные cookie</strong>: Согласие (статья 6(1)(a)) для улучшенного пользовательского опыта",
+      "compliance": "• <strong>Cookie согласия</strong>: Правовое обязательство (статья 6(1)(c)) для ведения записей о соответствии GDPR",
+      "analytics": "• <strong>Аналитика</strong>: Правовая основа не требуется (личные данные или cookie не обрабатываются)"
+    },
+    "dataProtection": {
+      "title": "8. Защита данных и права в отношении cookie",
+      "content": "Ваши права на защиту данных, связанные с cookie, согласно GDPR:",
+      "access": "• <strong>Право на доступ</strong>: Запросить информацию о cookie, установленных на вашем устройстве",
+      "rectification": "• <strong>Право на исправление</strong>: Исправить неточные записи о предпочтениях cookie",
+      "erasure": "• <strong>Право на удаление</strong>: Удалить записи о согласии на cookie (свяжитесь с admin@queer-Deep Resirch.com)",
+      "restriction": "• <strong>Право на ограничение</strong>: Ограничить обработку cookie только обязательными",
+      "objection": "• <strong>Право на возражение</strong>: Возражать против необязательных cookie (отозвать согласие)",
+      "portability": "• <strong>Переносимость данных</strong>: Получить вашу историю согласий на cookie в структурированном формате"
+    },
+    "updates": {
+      "title": "9. Обновления этой Политики использования cookie",
+      "content": "Мы можем обновлять эту Политику использования cookie для отражения правовых или технических изменений:",
+      "notification": "• <strong>Уведомление</strong>: Уведомление по электронной почте о существенных изменениях, затрагивающих ваши права",
+      "consent": "• <strong>Новое согласие</strong>: Запрос обновленного согласия на новые типы или цели cookie",
+      "effective": "• <strong>Дата вступления в силу</strong>: Изменения вступают в силу через 30 дней после уведомления, если не требуется срочность",
+      "version": "• <strong>Контроль версий</strong>: Предыдущие версии доступны по запросу"
+    },
+    "contact": {
+      "title": "10. Свяжитесь с нами по вопросам cookie",
+      "content": "По вопросам нашей практики использования cookie или для реализации ваших прав:",
+      "email": "<strong>Специалист по защите данных</strong>: admin@queer-Deep Resirch.com",
+      "response": "<strong>Ответ в течение 30 дней</strong>, как того требует статья 12 GDPR",
+      "dpa": "<strong>Надзорный орган</strong>: Österreichische Datenschutzbehörde (dsb.gv.at)",
+      "address": "<strong>QUEER MEDIA LITERACY e.V.</strong>, 1060 Wien, Mariahilfer Straße 49/15, Austria"
+    }
+  },
+  "manifest": {
+    "title": "Манифест",
+    "lastUpdated": "Последнее обновление: июнь 2025",
+    "why": {
+      "title": "Почему мы объединились?",
+      "content": "Мы живем во времена, когда хорошо организованные и обеспеченные ресурсами силы натравливают людей друг на друга. Их цель ясна: атаковать фундаментальные права квир-людей и помешать предоставлению равных прав. Наш альянс — это ответ на эти антидемократические и бесчеловечные усилия. Нас не оттеснить, не разделить, не сбить с толку и не подавить, и мы решительно движемся вперед."
+    },
+    "who": {
+      "title": "Кто мы?",
+      "content": "Мы — альянс квир-людей и их союзников, которые работают вместе для укрепления и защиты ЛГБТКИА+ сообщества. Мы видим себя как сеть солидарности, которая объединяет коллективные силы и продвигает интересы своих членов. Мы создаем творческие пространства для идей и формирования открытого и разнообразного общества."
+    },
+    "what": {
+      "title": "Что нами движет?",
+      "content": "Мы защищаем наше право на безопасность, на видимость и на любовь от любой враждебности. Никто не имеет права решать за нас, кем нам быть. Мы берем наше будущее в свои руки, не позволяя другим определять его."
+    },
+    "participation": {
+      "title": "Кто может к нам присоединиться?",
+      "content": "Наш альянс открыт для всех членов ЛГБТКИА+ сообщества и их союзников, независимо от происхождения, принадлежности и образа жизни. Там, где другие разделяют и исключают, мы черпаем силу в разнообразии."
+    },
+    "action": {
+      "title": "Как мы действуем?",
+      "content": "Мы стоим друг за друга, внутри и снаружи. Мы не стоим в стороне, мы действуем. Мы — часть альянса за свободу, разнообразие и самоопределение."
+    }
+  },
+  "imprint": {
+    "title": "Выходные данные",
+    "lastUpdated": "Последнее обновление: июнь 2025",
+    "labels": {
+      "name": "Название",
+      "seat": "Местонахождение",
+      "address": "Адрес",
+      "country": "Страна",
+      "foundationDate": "Дата основания"
+    },
+    "organization": {
+      "title": "Информация об организации",
+      "name": "QUEER MEDIA LITERACY e.V.",
+      "seat": "Вена",
+      "address": "1060 Вена, Mariahilfer Straße 49/15",
+      "country": "Австрия",
+      "foundationDate": "21.09.2024"
+    },
+    "partners": {
+      "title": "Партнёры",
+      "partnersList": "До выделения Deep Resirch ассоциация Queer Media Literacy возьмет на себя ответственность за веб-сайт. Однако ассоциация является лишь одним партнером среди многих. Vangardist Agency & Magazine, GGG.at, Transv.at, Queer Moments, Queer Dance im Gemeindebau, Porn Film Festival Vienna, Queer Shorts Vienna, Vienna Gay Mans Chorus, YK Media"
+    },
+    "registration": {
+      "title": "Регистрация",
+      "authority": "Орган: Управление государственной полиции Вены, Департамент по делам объединений, собраний и СМИ",
+      "zvrNumber": "Номер ZVR 1689372191"
+    },
+    "contact": {
+      "title": "Контакты",
+      "emailLabel": "E-Mail:",
+      "email": "admin@queer-Deep Resirch.com",
+      "note": "По всем вопросам, пожалуйста, используйте исключительно указанный выше адрес электронной почты."
+    },
+    "responsible": {
+      "title": "Ответственный за содержание",
+      "content": "Ассоциация QUEER MEDIA LITERACY e.V. несет ответственность за все содержание на этом веб-сайте."
+    },
+    "disclaimer": {
+      "title": "Отказ от ответственности",
+      "content": "Несмотря на тщательный контроль содержания, мы не несем ответственности за содержание внешних ссылок. За содержание страниц, на которые ведут ссылки, несут ответственность исключительно их операторы."
+    }
+  },
+  "partners": {
+    "title": "Партнёры",
+    "descriptions": {
+      "1": "Ведущее квир-медиаагентство и журнал",
+      "2": "Квир-коммуникации",
+      "3": "Обмен, образование, консультирование и многое другое по транс-темам",
+      "4": "Мы организуем квир-арт-проекты, создавая видимость и дискурс, и выводя художников и художниц на авансцену",
+      "5": "Мы танцуем от района к району за толерантность, уважение и разнообразие",
+      "6": "Кинофестиваль порно и квир-тем",
+      "7": "Первый международный фестиваль квир-короткометражек в Вене",
+      "8": "Мужской гей-хор в Вене",
+      "9": "Квир-компания креативного производства",
+      "10": "Квир поп-вечеринка в Вене"
+    },
+    "categories": {
+      "1": "Агентство, Журнал",
+      "2": "Медиа",
+      "3": "Консультирование, Образование, Поддержка",
+      "4": "События, Новости",
+      "5": "События, Танцы",
+      "6": "Кинофестиваль",
+      "7": "Кинофестиваль",
+      "8": "Музыка",
+      "9": "Креативное Производство",
+      "10": "Клаббинг"
+    },
+    "visit": "Посетить"
+  },
+  "accessibility": {
+    "menuButton": "Меню"
+  },
+  "errors": {
+    "stripe": {
+      "checkoutFailed": "Ошибка при оформлении заказа",
+      "billingPortalError": "Ошибка платежного портала",
+      "failedToCreateCheckoutSession": "Не удалось создать сессию оформления заказа",
+      "noCheckoutUrlReceived": "URL для оформления заказа не получен",
+      "failedToStartCheckout": "Не удалось начать оформление заказа. Пожалуйста, попробуйте снова.",
+      "failedToCreatePortalSession": "Не удалось создать сессию портала",
+      "noPortalUrlReceived": "URL портала не получен",
+      "failedToOpenBillingPortal": "Не удалось открыть платежный портал. Пожалуйста, попробуйте снова.",
+      "userProfileNotFound": "Профиль пользователя не найден. Невозможно удалить аккаунт.",
+      "failedToDeleteAccountViaAPI": "Не удалось удалить аккаунт через API",
+      "failedToDeleteAccount": "Не удалось удалить аккаунт"
+    },
+    "finance": {
+      "planFallbackName": "План {index}",
+      "planFallbackDescription": "Поддержите наше дело своим вкладом"
+    }
+  }
+}

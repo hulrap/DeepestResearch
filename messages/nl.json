@@ -1,0 +1,1517 @@
+{
+  "navigation": {
+    "home": "Home",
+    "settings": "Instellingen",
+    "dashboard": "Profiel",
+    "manifest": "Manifest",
+    "partners": "Partners",
+    "signIn": "Inloggen",
+    "signUp": "Registreren",
+    "signOut": "Uitloggen",
+    "protected": "Profiel",
+    "loading": "Laden..."
+  },
+  "home": {
+    "title": "Deep Resirch",
+    "welcomeBackPrefix": "Welkom bij de Deep Resirch",
+    "joinPrefix": "Sluit je aan bij onze Deep Resirch",
+    "welcomeBack": "Welkom terug, {email}",
+    "subtitle": "Je maakt al deel uit van de Deep Resirch! Ga naar je dashboard om je reis voort te zetten.",
+    "guestSubtitle": "Registreer je om deel uit te maken van onze community",
+    "goToDashboard": "Ga naar Dashboard",
+    "register": "Registreren",
+    "userGreeting": "Hoi, {email}!",
+    "joinOurDeep Resirch": "Sluit je aan bij onze Deep Resirch",
+    "welcomeBackShort": "Welkom terug!",
+    "loginButton": "Inloggen",
+    "currentLanguage": "Nederlands",
+    "memberSince": "Lid sinds",
+    "accountStatus": "Accountstatus",
+    "accountVerified": "Geverifieerd",
+    "accountPending": "In behandeling",
+    "profileStatus": "Profiel",
+    "profileActive": "Actief",
+    "roles": "Rollen",
+    "undecided": "Nog niet besloten",
+    "metaTitle": "Deep Resirch - Sluit je aan bij onze Alliantie",
+    "metaDescription": "Sluit je aan bij de Deep Resirch",
+    "genericUser": "Gebruiker",
+    "profileExplainer": {
+      "title": "Geweldig dat je het Rainbow Rabbit hebt gevolgd.",
+      "content": "<h2>Helden zoals jij zijn nu nodig.</h2><p>Nu onze rechten wereldwijd in gevaar zijn, is het tijd dat we ons verenigen. Met de queer alliantie willen we zorgen voor meer communicatie, informatie en netwerking binnen de community, elkaar ondersteunen bij reeds bestaande projecten, maar ook nieuwe projecten samen starten. We willen van praten naar handelen gaan.</p><p>De ideeën variëren van het ondersteunen van de Bratislava Pride, een Community-Info-Day tot een grote e-maillijst voor petities, acties en demonstraties. Je kunt ook nieuwe ideeën en wensen inbrengen. We ondersteunen elkaar dan bij de uitvoering.</p><p><strong>Wil je geïnformeerd worden of meedoen?</strong></p><p>Momenteel kun je deelnemen met vier verschillende rollen:</p><ol><li>als Supporter en Nieuwsbrief Abonnee</li><li>als Activist voor individuele acties</li><li>als Expert voor vakinhoudelijke vragen</li><li>en als Member voor actieve samenwerking en maandelijkse bijeenkomsten</li></ol><p>Als je meer wilt weten, vul je profielinformatie in en we nemen contact met je op na de Pride Maand.</p><p><strong>Heb je geen tijd, maar wil je wel doneren?</strong></p><p>Al onze services zijn gratis.</p><p>We mogen echter niet afhankelijk worden van overheidssubsidies of bedrijfssponsorships.</p><p>Daarom moet de community zich op middellange termijn zelf financieren.</p>"
+    },
+    "fillOutProfile": "Profiel invullen",
+    "rainbowRabbitAlt": "Regenboogkonijn",
+    "footer": {
+      "copyright": "© 2025 Deep Resirch. Alle rechten voorbehouden.",
+      "imprint": "Imprint",
+      "cookiePolicy": "Cookiebeleid",
+      "privacyPolicy": "Privacybeleid",
+      "contact": "Contact",
+      "partners": "Partners"
+    }
+  },
+  "auth": {
+    "login": {
+      "title": "Welkom terug",
+      "subtitle": "Log in op je Deep Resirch-account",
+      "email": "E-mail",
+      "emailPlaceholder": "jouw.email@voorbeeld.com",
+      "password": "Wachtwoord",
+      "forgotPassword": "Wachtwoord vergeten?",
+      "signInButton": "Inloggen",
+      "signingIn": "Inloggen...",
+      "noAccount": "Heb je nog geen account?"
+    },
+    "signUp": {
+      "title": "Sluit je aan bij de Deep Resirch",
+      "subtitle": "Maak je account aan en word deel van de Deep Resirch",
+      "email": "E-mail",
+      "emailPlaceholder": "jouw.email@voorbeeld.com",
+      "password": "Wachtwoord",
+      "passwordPlaceholder": "Maak een sterk wachtwoord",
+      "confirmPassword": "Bevestig wachtwoord",
+      "confirmPasswordPlaceholder": "Herhaal je wachtwoord",
+      "joinButton": "Word lid van de Alliantie",
+      "creatingAccount": "Account wordt aangemaakt...",
+      "passwordsDoNotMatch": "Wachtwoorden komen niet overeen",
+      "emailAlreadyRegistered": "Dit e-mailadres is al geregistreerd bij de Deep Resirch.",
+      "registrationFailed": "Registratie mislukt. Probeer het opnieuw.",
+      "alreadyHaveAccount": "Heb je al een account?",
+      "signInHere": "Log hier in"
+    },
+    "signUpSuccess": {
+      "readyToSignIn": "Klaar om in te loggen?",
+      "journeyBegins": "Je reis begint nu",
+      "registrationSuccessful": "Registratie succesvol!",
+      "confirmationInstructions": "Je hebt je succesvol aangemeld voor de Deep Resirch. Controleer je e-mail om je account te bevestigen voordat je inlogt.",
+      "whatsNext": "Wat nu?",
+      "checkEmail": "Controleer je e-mailinbox",
+      "clickConfirmation": "Klik op de bevestigingslink",
+      "returnToSignIn": "Keer hier terug om in te loggen",
+      "startJourney": "Start je Deep Resirch-reis",
+      "noEmailReceived": "Geen e-mail ontvangen? Controleer je spamfolder of",
+      "tryAgain": "probeer opnieuw"
+    },
+    "forgotPassword": {
+      "title": "Stel je wachtwoord opnieuw in",
+      "description": "Voer je e-mailadres in en we sturen je een beveiligde link om je wachtwoord opnieuw in te stellen",
+      "successTitle": "Controleer je e-mail",
+      "successDescription": "Link voor het opnieuw instellen van je wachtwoord is verzonden",
+      "successMessage": "We hebben je een beveiligde link gestuurd om je wachtwoord opnieuw in te stellen. Klik op de link om je nieuwe wachtwoord in te stellen.",
+      "successInstructions": "Wat je nu moet doen:",
+      "step1": "Controleer je e-mailinbox (en spamfolder)",
+      "step2": "Klik op de 'Wachtwoord opnieuw instellen'-link in de e-mail",
+      "step3": "Voer je nieuwe wachtwoord in op de beveiligde resetpagina",
+      "noEmail": "Geen e-mail ontvangen?",
+      "resendLink": "Stuur nog een reset-e-mail",
+      "sending": "Verzenden...",
+      "sendResetEmail": "Stuur reset-e-mail",
+      "alreadyHaveAccount": "Heb je al een account?"
+    },
+    "updatePassword": {
+      "title": "Stel je wachtwoord opnieuw in",
+      "description": "Voer hieronder je nieuwe wachtwoord in.",
+      "newPassword": "Nieuw wachtwoord",
+      "newPasswordPlaceholder": "Nieuw wachtwoord",
+      "confirmNewPassword": "Bevestig nieuw wachtwoord",
+      "confirmNewPasswordPlaceholder": "Bevestig je nieuwe wachtwoord",
+      "saving": "Opslaan...",
+      "saveNewPassword": "Nieuw wachtwoord opslaan",
+      "verifyingLink": "Je resetlink wordt geverifieerd...",
+      "authenticationRequired": "Authenticatie vereist",
+      "passwordUpdated": "Wachtwoord bijgewerkt!",
+      "passwordUpdatedSuccess": "Je wachtwoord is succesvol bijgewerkt. Je wordt doorgestuurd naar je dashboard.",
+      "redirectingMoment": "Je wordt zo doorgestuurd..."
+    },
+    "signOut": {
+      "signingOut": "Uitloggen...",
+      "signOutError": "Uitloggen mislukt. Probeer het opnieuw.",
+      "signOutSuccess": "Je bent succesvol uitgelogd"
+    },
+    "errors": {
+      "genericError": "Er is een fout opgetreden",
+      "invalidCredentials": "Ongeldig e-mailadres of wachtwoord",
+      "emailRequired": "E-mail is verplicht",
+      "passwordRequired": "Wachtwoord is verplicht",
+      "codeError": "Codefout: {code}",
+      "codeErrorPrefix": "Codefout:",
+      "unspecifiedError": "Er is een onbekende fout opgetreden."
+    }
+  },
+  "settings": {
+    "title": "Profiel",
+    "subtitle": "Beheer je profielinformatie en voorkeuren",
+    "loading": "Je instellingen worden geladen...",
+    "error": "Instellingen konden niet worden geladen",
+    "tryAgain": "Probeer opnieuw",
+    "edit": "Bewerken",
+    "save": "Opslaan",
+    "saving": "Opslaan...",
+    "cancel": "Annuleren",
+    "notSet": "Niet ingesteld",
+    "menu": {
+      "profile": "Profiel",
+      "contact": "Contact",
+      "professional": "Professioneel",
+      "participation": "Rollen",
+      "location": "Locatie",
+      "finance": "Donaties",
+      "settings": "Instellingen"
+    },
+    "categories": {
+      "personal": {
+        "title": "Persoonlijke informatie"
+      },
+      "professional": {
+        "title": "Professionele informatie",
+        "description": "Je werk en vaardigheden"
+      },
+      "location": {
+        "title": "Locatie",
+        "description": "Waar je je bevindt"
+      },
+      "contact": {
+        "title": "Contactinformatie",
+        "description": "Hoe we je kunnen bereiken"
+      },
+      "participation": {
+        "title": "Alliantierollen",
+        "description": "Kies hoe je wilt deelnemen aan de Deep Resirch"
+      },
+      "account": {
+        "title": "Accountinstellingen",
+        "description": "Beveiliging en accountbeheer"
+      },
+      "profile": {
+        "title": "Profielinformatie",
+        "description": "Je basisprofielgegevens"
+      },
+      "finance": {
+        "title": "Donaties",
+        "description": "Beheer je abonnement en facturering"
+      }
+    },
+    "fields": {
+      "username": {
+        "label": "Gebruikersnaam",
+        "placeholder": "Kies een unieke gebruikersnaam",
+        "description": "Kan slechts eenmaal per dag worden gewijzigd.",
+        "autoGeneratedDescription": "Deze gebruikersnaam is automatisch gegenereerd op basis van je e-mail. Je kunt deze eenmalig wijzigen.",
+        "rateLimitError": "Je kunt je gebruikersnaam slechts eenmaal per dag wijzigen.",
+        "formatError": "Gebruikersnaam moet 6-30 tekens lang zijn en mag alleen letters, cijfers, underscores en punten bevatten"
+      },
+      "firstName": {
+        "label": "Voornaam",
+        "placeholder": "Je voornaam",
+        "description": "Optioneel",
+        "rateLimitError": "Je kunt je voornaam slechts 3 keer wijzigen."
+      },
+      "lastName": {
+        "label": "Achternaam",
+        "placeholder": "Je achternaam",
+        "description": "Optioneel",
+        "rateLimitError": "Je kunt je achternaam slechts 3 keer wijzigen."
+      },
+      "language": {
+        "label": "Taal"
+      },
+      "bio": {
+        "label": "Bio",
+        "placeholder": "Schrijf een korte biografie...",
+        "description": "",
+        "rateLimitError": "Je kunt je bio slechts 10 keer per dag wijzigen"
+      },
+      "website": {
+        "label": "Website",
+        "placeholder": "https://jouw-website.nl",
+        "description": "",
+        "rateLimitError": "Je kunt je website slechts 5 keer per dag wijzigen",
+        "formatError": "Verkeerd formaat. Voorbeeld: https://jouw-website.nl"
+      },
+      "phone": {
+        "label": "Telefoonnummer",
+        "placeholder": "Je telefoonnummer",
+        "description": "Optioneel veld, kan tot 2 keer worden gewijzigd na de eerste invoer.",
+        "rateLimitError": "Je kunt je telefoonnummer slechts 2 keer wijzigen na de eerste invoer",
+        "formatError": "Verkeerd formaat. Voorbeeld: +31612345678"
+      },
+      "contactComment": {
+        "label": "Bratislava-Pride & Contact-opmerking",
+        "placeholder": "Als u meer informatie wilt over de Bratislava-Pride, schrijf het ons dan in dit opmerkingenveld. Laat anders een opmerking achter over uw contactwensen.",
+        "description": "Aanvullende informatie voor contactdoeleinden"
+      },
+      "professionalComment": {
+        "label": "Professionele opmerking",
+        "placeholder": "Aanvullende opmerkingen over je beroep...",
+        "description": "Vrije opmerking over je professionele ervaring"
+      },
+      "profession": {
+        "label": "Beroep",
+        "placeholder": "Zoek naar je beroep..."
+      },
+      "organization": {
+        "label": "Organisatie",
+        "placeholder": "Naam van je organisatie (werkgever, bedrijfsnaam, etc.)"
+      },
+      "experienceLevel": {
+        "label": "Ervaringsniveau"
+      },
+      "skills": {
+        "label": "Vaardigheden & competenties",
+        "description": "Voeg al je vaardigheden toe - van technische skills tot hobby's en levenservaring",
+        "placeholder": "bijv. Koken, JavaScript, Tuinieren, Literatuuronderzoek..."
+      },
+      "country": {
+        "label": "Land",
+        "description": "Selecteer het land waar je woont"
+      },
+      "region": {
+        "label": "Regio/Provincie",
+        "description": "Selecteer je regio of provincie",
+        "placeholder": "Selecteer regio/provincie"
+      },
+      "city": {
+        "label": "Stad",
+        "placeholder": "Je stad"
+      },
+      "email": {
+        "label": "E-mailadres",
+        "description": "Wijzig je e-mailadres",
+        "confirmationRequired": "Je moet je nieuwe e-mailadres bevestigen",
+        "placeholder": "jouw.email@voorbeeld.com",
+        "emailRequired": "E-mail is verplicht"
+      },
+      "password": {
+        "label": "Wachtwoord",
+        "description": "Wijzig je wachtwoord",
+        "currentPassword": "Huidig wachtwoord",
+        "newPassword": "Nieuw wachtwoord",
+        "newPasswordRequired": "Nieuw wachtwoord is verplicht",
+        "confirmNewPassword": "Bevestig nieuw wachtwoord",
+        "confirmNewPasswordPlaceholder": "Bevestig je nieuwe wachtwoord",
+        "newPasswordPlaceholder": "Voer je nieuwe wachtwoord in"
+      }
+    },
+    "consent": {
+      "title": "Contacttoestemmingen",
+      "directContact": {
+        "label": "Direct contact toestaan",
+        "description": "Ik stem ermee in dat er contact met me wordt opgenomen voor kansen binnen de queer alliantie"
+      },
+      "newsletter": {
+        "label": "E-mailnieuwsbrief",
+        "description": "Ik stem in met het ontvangen van nieuwsbrieven en informatie"
+      },
+      "privacyNotice": "Je kunt deze toestemmingen op elk moment wijzigen. We respecteren je privacy en volgen de AVG/GDPR-richtlijnen.",
+      "consentTimestamp": "Toestemming gegeven op: {timestamp}",
+      "lastUpdated": "Laatst bijgewerkt: {timestamp}"
+    },
+    "professional": {
+      "organizationRepresentative": {
+        "label": "Ik vertegenwoordig een organisatie",
+        "description": "Ik stem ermee in om rechtstreeks als vertegenwoordiger van een organisatie te worden benaderd"
+      }
+    },
+    "participation": {
+      "title": "Selecteer je deelnamerol(len)",
+      "description": "Selecteer een of meer rollen voor je deelname (niet-bindend). Je kunt meerdere rollen kiezen op basis van je beschikbaarheid, vaardigheden, netwerk, tijd of doelen <strong>en op elk moment wijzigen</strong>.",
+      "roles": {
+        "member": {
+          "title": "Lid",
+          "description": "Ik wil op verschillende manieren als lid deelnemen"
+        },
+        "expert": {
+          "title": "Expert",
+          "description": "Ik wil de alliantie adviseren bij domeinspecifieke vragen"
+        },
+        "activist": {
+          "title": "Activist",
+          "description": "Ik wil de alliantie helpen bij het creëren van zichtbaarheid en impact"
+        },
+        "supporter": {
+          "title": "Supporter",
+          "description": "Ik wil de queer alliantie financieel steunen"
+        }
+      }
+    },
+    "account": {
+      "changeEmail": {
+        "title": "E-mailadres wijzigen",
+        "button": "E-mail wijzigen",
+        "success": "E-mailwijziging gestart. Controleer je e-mail om te bevestigen."
+      },
+      "changePassword": {
+        "title": "Wachtwoord wijzigen",
+        "button": "Wachtwoord wijzigen",
+        "success": "Wachtwoord succesvol bijgewerkt"
+      },
+      "deleteAccount": {
+        "title": "Account verwijderen",
+        "description": "Verwijder je profiel en alle bijbehorende gegevens permanent",
+        "button": "Account verwijderen",
+        "confirmText": "DELETE",
+        "confirmPlaceholder": "Typ DELETE om te bevestigen",
+        "warning": "Deze actie kan niet ongedaan worden gemaakt. Al je gegevens worden permanent verwijderd.",
+        "subscriptionWarning": "Belangrijk: Zeg al je actieve abonnementen op voordat je je account verwijdert. Als je je account verwijdert zonder abonnementen op te zeggen, moet je contact opnemen met de beheerder om ze handmatig voor je op te zeggen.",
+        "success": "Account succesvol verwijderd"
+      }
+    },
+    "options": {
+      "experienceLevel": {
+        "intern": "Stagiair",
+        "entry": "Instapniveau (0-2 jaar)",
+        "mid": "Medior (3-5 jaar)",
+        "senior": "Senior (6-10 jaar)",
+        "lead": "Lead/Principal (10+ jaar)",
+        "executive": "Executive/C-Level"
+      }
+    },
+    "profile": {
+      "title": "Profielinformatie",
+      "description": "Je basisaccountinformatie",
+      "email": "E-mail",
+      "memberSince": "Lid sinds",
+      "lastUpdated": "Laatst bijgewerkt",
+      "profileCompletion": "Profielvoltooiing"
+    },
+    "loadingStates": {
+      "saving": "Opslaan...",
+      "updatingSettings": "Je instellingen worden bijgewerkt",
+      "deletingAccount": "Account wordt verwijderd...",
+      "deletingWarning": "Deze actie kan niet ongedaan worden gemaakt",
+      "autoNavigating": "Automatisch navigeren...",
+      "nextSection": "volgende sectie",
+      "loadingCountries": "Landen laden...",
+      "loadingRegions": "Regio's laden...",
+      "loadingCities": "Steden laden...",
+      "loadingSupportStatus": "Je supportstatus wordt geladen...",
+      "loadingPlans": "Plannen worden geladen..."
+    },
+    "errors": {
+      "rateLimitExceeded": "Limiet voor dit veld overschreden",
+      "changeLimitExceeded": "Wijzigingslimiet voor dit veld overschreden",
+      "invalidInput": "Ongeldige invoer",
+      "saveFailed": "Wijzigingen konden niet worden opgeslagen",
+      "loadFailed": "Gegevens konden niet worden geladen",
+      "failedToChangeEmail": "E-mailadres wijzigen is mislukt",
+      "failedToChangePassword": "Wachtwoord wijzigen is mislukt",
+      "maximumCharacters": "Maximaal {maxLength} tekens toegestaan",
+      "validation": {
+        "invalidLanguageCode": "Ongeldige taalcode",
+        "invalidExperienceLevel": "Ongeldig ervaringsniveau",
+        "skillsMustBeArray": "Vaardigheden moeten een array zijn",
+        "bioTooLong": "Bio te lang (max 500 tekens)",
+        "invalidWebsite": "Website moet beginnen met http:// of https:// en een geldig domein hebben (bijv. https://a.co)",
+        "invalidPreferencesStructure": "Ongeldige voorkeurenstructuur"
+      }
+    },
+    "finance": {
+      "title": "Financiën & Facturering",
+      "description": "Beheer je abonnement en factureringsvoorkeuren",
+      "current": "Huidig abonnement",
+      "loading": "Abonnement wordt geladen...",
+      "manage": "Abonnement beheren",
+      "upgrade": "Plan upgraden",
+      "billing": "Factuurgeschiedenis",
+      "thankYouSupport": "Bedankt voor je steun aan de alliantie!",
+      "considerSupporting": "Overweeg de zaak te steunen",
+      "premiumFeatures": "Premium functies en ondersteuning",
+      "processing": "Verwerken...",
+      "contributeNow": "Draag nu bij",
+      "changeSupportLevel": "Supportniveau wijzigen",
+      "startSupporting": "Begin met steunen",
+      "noPlansAvailable": "Geen plannen beschikbaar",
+      "manageSubscriptionDescription": "Beheer je abonnement, bekijk facturen en werk factuurgegevens bij",
+      "accessAccountDescription": "Toegang tot je accountinstellingen, betaalmethoden en factuurgegevens",
+      "manageSubscriptionBilling": "Abonnement & Facturering beheren",
+      "accessBillingPortal": "Ga naar Factuurportaal",
+      "stripePortalDescription": "Mogelijk gemaakt door het beveiligde factuurportaal van Stripe: beheer betaalmethoden, bekijk facturen, werk factuuradres bij en meer",
+      "currentSupportStatus": "Huidige supportstatus",
+      "activeSubscription": "✓ Actief abonnement",
+      "statusLabel": "Status:",
+      "nextBilling": "Volgende factuur:",
+      "oneTimeContributionMade": "✓ Eenmalige bijdrage gedaan",
+      "successfulContribution": "Je hebt succesvol bijgedragen aan de zaak",
+      "noActiveSupport": "⚠ Geen actieve steun",
+      "chooseSupportOption": "Kies hieronder een steunoptie om de queer alliantie te helpen financieren",
+      "waysToSupport": "Manieren om de zaak te steunen",
+      "chooseAmountStripe": "Je kiest het bedrag in de beveiligde checkout van Stripe",
+      "perInterval": "per {interval}",
+      "plansAvailableOnce": "Plannen verschijnen hier zodra ze in Stripe zijn aangemaakt",
+      "billingAccountManagement": "Facturering & Accountbeheer",
+      "payAsYouWish": "Betaal wat je wilt",
+      "oneTime": "Eenmalig",
+      "plans": {
+        "basic": {
+          "name": "Basis",
+          "description": "Essentiële functies om te beginnen",
+          "price": "€9,99/maand"
+        },
+        "pro": {
+          "name": "Professioneel",
+          "description": "Geavanceerde functies voor actieve leden",
+          "price": "€19,99/maand"
+        },
+        "expert": {
+          "name": "Expert",
+          "description": "Volledige toegang met prioriteitsondersteuning",
+          "price": "€39,99/maand"
+        },
+        "lifetime": {
+          "name": "Levenslange toegang",
+          "description": "Eenmalige betaling voor permanente toegang",
+          "price": "€299,99"
+        }
+      },
+      "error": "Abonnementsinformatie kon niet worden geladen",
+      "messages": {
+        "paymentSuccessSyncing": "Betaling geslaagd! Je gegevens worden gesynchroniseerd...",
+        "paymentSuccessActivated": "Betaling geslaagd! Je abonnement is geactiveerd.",
+        "paymentCanceled": "Betaling is geannuleerd. Je kunt het op elk moment opnieuw proberen.",
+        "welcomeBackSyncing": "Welkom terug! Je factuurgegevens worden gesynchroniseerd...",
+        "welcomeBackUpdated": "Welkom terug! Je factuurgegevens zijn bijgewerkt."
+      }
+    }
+  },
+  "languageSwitcher": {
+    "selectLanguage": "Selecteer taal",
+    "updating": "Taal wordt bijgewerkt..."
+  },
+  "theme": {
+    "light": "Licht",
+    "dark": "Donker",
+    "system": "Systeem"
+  },
+  "languages": {
+    "en": "English",
+    "de": "Deutsch",
+    "fr": "Français",
+    "es": "Español",
+    "it": "Italiano",
+    "pt": "Português",
+    "nl": "Nederlands",
+    "pl": "Polski",
+    "ru": "Русский",
+    "ja": "日本語",
+    "ko": "한국어",
+    "zh": "中文",
+    "ar": "العربية",
+    "hi": "हिन्दी"
+  },
+  "professions": {
+    "chief-executive": "Directeur",
+    "administration-and-planning-manager": "Manager Administratie en Planning",
+    "policy-and-planning-manager": "Manager Beleid en Planning",
+    "business-services-and-administration-manager": "Manager Bedrijfsdiensten en Administratie",
+    "sales-marketing-and-development-manager": "Manager Verkoop, Marketing en Ontwikkeling",
+    "production-and-specialized-services-manager": "Manager Productie en Gespecialiseerde Diensten",
+    "hospitality-retail-and-other-services-manager": "Manager Horeca, Retail en Overige Diensten",
+    "science-and-engineering-professional": "Wetenschapper en Ingenieur",
+    "software-developer": "Softwareontwikkelaar",
+    "systems-analyst": "Systeemanalist",
+    "database-designer": "Databaseontwerper",
+    "network-professional": "Netwerkprofessional",
+    "health-professional": "Gezondheidsprofessional",
+    "doctor": "Arts",
+    "nurse": "Verpleegkundige",
+    "pharmacist": "Apotheker",
+    "veterinarian": "Dierenarts",
+    "teaching-professional": "Onderwijsprofessional",
+    "professor": "Professor",
+    "secondary-education-teacher": "Leraar Voortgezet Onderwijs",
+    "primary-school-teacher": "Leraar Basisonderwijs",
+    "business-and-administration-professional": "Bedrijfs- en Administratieprofessional",
+    "accountant": "Accountant",
+    "financial-analyst": "Financieel Analist",
+    "human-resources-professional": "HR-professional",
+    "information-and-communications-technology-professional": "ICT-professional",
+    "legal-professional": "Juridisch Professional",
+    "lawyer": "Advocaat",
+    "judge": "Rechter",
+    "culture-arts-and-design-professional": "Professional in Cultuur, Kunst en Design",
+    "author": "Auteur",
+    "journalist": "Journalist",
+    "artist": "Kunstenaar",
+    "designer": "Ontwerper",
+    "science-and-engineering-associate-professional": "Technisch Assistent Wetenschap en Techniek",
+    "engineering-technician": "Technicus",
+    "drafter": "Technisch Tekenaar",
+    "health-associate-professional": "Medisch Assistent",
+    "medical-technician": "Medisch Technicus",
+    "nursing-associate-professional": "Verpleegassistent",
+    "business-and-administration-associate-professional": "Assistent Bedrijf en Administratie",
+    "insurance-representative": "Verzekeringsagent",
+    "estate-agent": "Makelaar",
+    "legal-social-and-cultural-associate-professional": "Assistent Juridisch, Sociaal en Cultureel Werk",
+    "legal-associate-professional": "Juridisch Assistent",
+    "social-worker": "Maatschappelijk Werker",
+    "information-and-communications-technician": "ICT-technicus",
+    "computer-technician": "Computertechnicus",
+    "telecommunications-technician": "Telecommunicatietechnicus",
+    "general-and-keyboard-clerk": "Administratief Medewerker",
+    "secretary": "Secretaresse",
+    "data-entry-clerk": "Data-entry Medewerker",
+    "customer-services-clerk": "Klantenservicemedewerker",
+    "customer-service-representative": "Klantenservicevertegenwoordiger",
+    "receptionist": "Receptionist",
+    "numerical-and-material-recording-clerk": "Administratief Medewerker Materiaalbeheer",
+    "accounting-associate-professional": "Assistent-accountant",
+    "bookkeeper": "Boekhouder",
+    "other-clerical-support-worker": "Overig Administratief Ondersteunend Personeel",
+    "mail-carrier": "Postbode",
+    "filing-clerk": "Archiefmedewerker",
+    "personal-service-worker": "Persoonlijke Dienstverlener",
+    "travel-attendant": "Reisbegeleider",
+    "cook": "Kok",
+    "waiter": "Ober",
+    "hairdresser": "Kapper",
+    "housekeeper": "Huishoudhulp",
+    "protective-services-worker": "Beveiligingsmedewerker",
+    "security-guard": "Beveiliger",
+    "police-officer": "Politieagent",
+    "firefighter": "Brandweerman",
+    "sales-worker": "Verkoper",
+    "shop-salesperson": "Winkelverkoper",
+    "cashier": "Kassamedewerker",
+    "sales-representative": "Vertegenwoordiger",
+    "market-oriented-skilled-agricultural-worker": "Marktgerichte Geschoolde Landbouwer",
+    "farmer": "Boer",
+    "livestock-producer": "Veehouder",
+    "crop-grower": "Akkerbouwer",
+    "market-oriented-skilled-forestry-fishery-and-hunting-worker": "Marktgerichte Geschoolde Bosbouwer, Visser en Jager",
+    "logger": "Houthakker",
+    "fisherman": "Visser",
+    "subsistence-farmer-fisherman-hunter-and-gatherer": "Zelfvoorzienende Boer, Visser, Jager en Verzamelaar",
+    "building-and-related-trades-worker": "Bouwvakker",
+    "carpenter": "Timmerman",
+    "electrician": "Elektricien",
+    "plumber": "Loodgieter",
+    "painter": "Schilder",
+    "metal-machinery-and-related-trades-worker": "Metaal-, Machine- en Aanverwant Vakman",
+    "welder": "Lasser",
+    "machinist": "Machinist",
+    "mechanic": "Monteur",
+    "handicraft-and-printing-worker": "Ambachts- en Drukkerijmedewerker",
+    "potter": "Pottenbakker",
+    "tailor": "Kleermaker",
+    "printer": "Drukker",
+    "electrical-and-electronic-trades-worker": "Elektrotechnisch en Elektronisch Vakman",
+    "food-processing-woodworking-garment-and-other-craft-and-related-trades-worker": "Vakman in Voedselverwerking, Houtbewerking, Kleding en Overige Ambachten",
+    "stationary-plant-and-machine-operator": "Operator Stationaire Installaties en Machines",
+    "power-plant-operator": "Energiecentrale-operator",
+    "machine-operator": "Machine-operator",
+    "assembler": "Assemblagemedewerker",
+    "product-assembler": "Productassemblagemedewerker",
+    "electronics-assembler": "Elektronica-assemblagemedewerker",
+    "driver-and-mobile-plant-operator": "Chauffeur en Mobiele Installatie-operator",
+    "truck-driver": "Vrachtwagenchauffeur",
+    "bus-driver": "Buschauffeur",
+    "taxi-driver": "Taxichauffeur",
+    "cleaner-and-helper": "Schoonmaker en Hulpkracht",
+    "domestic-helper": "Huishoudelijke Hulp",
+    "building-cleaner": "Gebouwenreiniger",
+    "kitchen-helper": "Keukenhulp",
+    "agricultural-forestry-and-fishery-laborer": "Arbeider in Landbouw, Bosbouw en Visserij",
+    "farm-worker": "Landarbeider",
+    "gardener": "Tuinier",
+    "laborer-in-mining-construction-manufacturing-and-transport": "Arbeider in Mijnbouw, Bouw, Productie en Transport",
+    "construction-laborer": "Bouwvakarbeider",
+    "factory-worker": "Fabrieksarbeider",
+    "food-preparation-assistant": "Assistent Voedselbereiding",
+    "street-and-related-service-worker": "Straat- en Aanverwant Dienstverlener",
+    "content-creator": "Content Creator",
+    "social-media-manager": "Social Media Manager",
+    "digital-marketing-specialist": "Specialist Digitale Marketing",
+    "uxui-designer": "UX/UI Designer",
+    "data-scientist": "Datawetenschapper",
+    "machine-learning-engineer": "Machine Learning Engineer",
+    "devops-engineer": "DevOps Engineer",
+    "product-manager": "Productmanager",
+    "consultant": "Consultant",
+    "entrepreneur": "Ondernemer",
+    "freelancer": "Freelancer",
+    "student": "Student",
+    "retired": "Gepensioneerd",
+    "unemployed": "Werkloos",
+    "other": "Anders"
+  },
+  "skills": {
+    "javascript": "JavaScript",
+    "typescript": "TypeScript",
+    "python": "Python",
+    "java": "Java",
+    "c#": "C#",
+    "c++": "C++",
+    "go": "Go",
+    "rust": "Rust",
+    "php": "PHP",
+    "ruby": "Ruby",
+    "swift": "Swift",
+    "kotlin": "Kotlin",
+    "react": "React",
+    "vuejs": "Vue.js",
+    "angular": "Angular",
+    "svelte": "Svelte",
+    "nextjs": "Next.js",
+    "nodejs": "Node.js",
+    "expressjs": "Express.js",
+    "django": "Django",
+    "flask": "Flask",
+    "postgresql": "PostgreSQL",
+    "mysql": "MySQL",
+    "mongodb": "MongoDB",
+    "redis": "Redis",
+    "aws": "AWS",
+    "azure": "Azure",
+    "google-cloud": "Google Cloud",
+    "docker": "Docker",
+    "kubernetes": "Kubernetes",
+    "machine-learning": "Machine Learning",
+    "artificial-intelligence": "Kunstmatige Intelligentie",
+    "data-science": "Datawetenschap",
+    "data-analysis": "Data-analyse",
+    "statistics": "Statistiek",
+    "cybersecurity": "Cybersecurity",
+    "network-administration": "Netwerkbeheer",
+    "database-administration": "Databasebeheer",
+    "system-administration": "Systeembeheer",
+    "web-development": "Webontwikkeling",
+    "mobile-development": "Mobiele ontwikkeling",
+    "game-development": "Gameontwikkeling",
+    "software-testing": "Softwaretesten",
+    "devops": "DevOps",
+    "graphic-design": "Grafisch ontwerp",
+    "uiux-design": "UI/UX-ontwerp",
+    "web-design": "Webdesign",
+    "brand-design": "Merkontwerp",
+    "logo-design": "Logo-ontwerp",
+    "typography": "Typografie",
+    "adobe-photoshop": "Adobe Photoshop",
+    "adobe-illustrator": "Adobe Illustrator",
+    "figma": "Figma",
+    "sketch": "Sketch",
+    "canva": "Canva",
+    "video-editing": "Videobewerking",
+    "animation": "Animatie",
+    "photography": "Fotografie",
+    "digital-photography": "Digitale fotografie",
+    "portrait-photography": "Portretfotografie",
+    "landscape-photography": "Landschapsfotografie",
+    "photo-editing": "Fotobewerking",
+    "drawing": "Tekenen",
+    "painting": "Schilderen",
+    "digital-art": "Digitale kunst",
+    "illustration": "Illustratie",
+    "sculpture": "Beeldhouwen",
+    "ceramics": "Keramiek",
+    "jewelry-making": "Sieraden maken",
+    "3d-modeling": "3D-modellering",
+    "cad-design": "CAD-ontwerp",
+    "industrial-design": "Industrieel ontwerp",
+    "interior-design": "Interieurontwerp",
+    "fashion-design": "Modeontwerp",
+    "project-management": "Projectmanagement",
+    "product-management": "Productmanagement",
+    "business-analysis": "Bedrijfsanalyse",
+    "strategic-planning": "Strategische planning",
+    "leadership": "Leiderschap",
+    "team-management": "Teammanagement",
+    "human-resources": "Human Resources",
+    "recruitment": "Werving",
+    "sales": "Verkoop",
+    "marketing": "Marketing",
+    "digital-marketing": "Digitale marketing",
+    "social-media-marketing": "Social media marketing",
+    "content-marketing": "Contentmarketing",
+    "email-marketing": "E-mailmarketing",
+    "seo": "SEO",
+    "sem": "SEM",
+    "ppc-advertising": "PPC-adverteren",
+    "financial-analysis": "Financiële analyse",
+    "accounting": "Accountancy",
+    "bookkeeping": "Boekhouding",
+    "budgeting": "Budgettering",
+    "investment-analysis": "Investeringsanalyse",
+    "risk-management": "Risicomanagement",
+    "supply-chain-management": "Supply chain management",
+    "operations-management": "Operations management",
+    "quality-assurance": "Kwaliteitsborging",
+    "process-improvement": "Procesverbetering",
+    "business-development": "Bedrijfsontwikkeling",
+    "negotiation": "Onderhandelen",
+    "contract-management": "Contractbeheer",
+    "vendor-management": "Leveranciersbeheer",
+    "public-speaking": "Spreken in het openbaar",
+    "presentation-skills": "Presentatievaardigheden",
+    "technical-writing": "Technisch schrijven",
+    "creative-writing": "Creatief schrijven",
+    "copywriting": "Copywriting",
+    "content-creation": "Contentcreatie",
+    "journalism": "Journalistiek",
+    "blogging": "Bloggen",
+    "editing": "Redactie",
+    "proofreading": "Proeflezen",
+    "translation": "Vertalen",
+    "interpretation": "Tolken",
+    "customer-service": "Klantenservice",
+    "client-relations": "Klantrelaties",
+    "conflict-resolution": "Conflictoplossing",
+    "mediation": "Bemiddeling",
+    "storytelling": "Storytelling",
+    "interviewing": "Interviewen",
+    "active-listening": "Actief luisteren",
+    "cross-cultural-communication": "Interculturele communicatie",
+    "teaching": "Onderwijzen",
+    "training-development": "Training en ontwikkeling",
+    "curriculum-design": "Curriculumontwerp",
+    "educational-technology": "Onderwijstechnologie",
+    "e-learning": "E-learning",
+    "mentoring": "Mentoring",
+    "coaching": "Coaching",
+    "workshop-facilitation": "Workshopfacilitatie",
+    "adult-education": "Volwassenenonderwijs",
+    "child-development": "Kinderontwikkeling",
+    "special-education": "Speciaal onderwijs",
+    "educational-assessment": "Onderwijsevaluatie",
+    "research-methods": "Onderzoeksmethoden",
+    "academic-writing": "Academisch schrijven",
+    "first-aid": "Eerste hulp",
+    "cpr": "Reanimatie",
+    "medical-knowledge": "Medische kennis",
+    "nursing": "Verpleegkunde",
+    "physical-therapy": "Fysiotherapie",
+    "mental-health-support": "Mentale gezondheidsondersteuning",
+    "nutrition": "Voeding",
+    "fitness-training": "Fitnesstraining",
+    "yoga": "Yoga",
+    "meditation": "Meditatie",
+    "mindfulness": "Mindfulness",
+    "stress-management": "Stressmanagement",
+    "health-coaching": "Gezondheidscoaching",
+    "massage-therapy": "Massagetherapie",
+    "acupuncture": "Acupunctuur",
+    "herbal-medicine": "Kruidengeneeskunde",
+    "alternative-medicine": "Alternatieve geneeskunde",
+    "carpentry": "Timmerwerk",
+    "plumbing": "Loodgieterswerk",
+    "electrical-work": "Elektrisch werk",
+    "hvac": "HVAC",
+    "welding": "Lassen",
+    "automotive-repair": "Autoreparatie",
+    "motorcycle-repair": "Motorreparatie",
+    "appliance-repair": "Apparaatreparatie",
+    "computer-repair": "Computerreparatie",
+    "electronics-repair": "Elektronicareparatie",
+    "decorating": "Decoreren",
+    "tiling": "Tegelen",
+    "roofing": "Dakdekken",
+    "masonry": "Metselwerk",
+    "landscaping": "Landschapsarchitectuur",
+    "construction": "Bouw",
+    "home-improvement": "Huisverbetering",
+    "furniture-making": "Meubels maken",
+    "cooking": "Koken",
+    "baking": "Bakken",
+    "pastry-making": "Patisserie",
+    "food-preparation": "Voedselbereiding",
+    "menu-planning": "Menuplanning",
+    "recipe-development": "Receptontwikkeling",
+    "food-safety": "Voedselveiligheid",
+    "kitchen-management": "Keukenbeheer",
+    "wine-knowledge": "Wijnkennis",
+    "bartending": "Bartending",
+    "coffee-making": "Koffiezetten",
+    "brewing": "Brouwen",
+    "food-photography": "Voedselfotografie",
+    "catering": "Catering",
+    "meal-planning": "Maaltijdplanning",
+    "nutrition-planning": "Voedingsplanning",
+    "dietary-planning": "Dieetplanning",
+    "music-production": "Muziekproductie",
+    "audio-engineering": "Audio-engineering",
+    "music-composition": "Muziekcompositie",
+    "singing": "Zingen",
+    "guitar": "Gitaar",
+    "piano": "Piano",
+    "drums": "Drums",
+    "violin": "Viool",
+    "bass": "Bas",
+    "saxophone": "Saxofoon",
+    "music-theory": "Muziektheorie",
+    "sound-design": "Geluidsontwerp",
+    "podcast-production": "Podcastproductie",
+    "acting": "Acteren",
+    "theater": "Theater",
+    "film-making": "Filmmaken",
+    "screenwriting": "Scenarioschrijven",
+    "video-production": "Videoproductie",
+    "broadcasting": "Uitzenden",
+    "stand-up-comedy": "Stand-up comedy",
+    "improvisation": "Improvisatie",
+    "dance": "Dans",
+    "ballet": "Ballet",
+    "hip-hop": "Hip Hop",
+    "salsa": "Salsa",
+    "ballroom-dancing": "Stijldansen",
+    "football": "Voetbal",
+    "basketball": "Basketbal",
+    "soccer": "Voetbal",
+    "tennis": "Tennis",
+    "golf": "Golf",
+    "swimming": "Zwemmen",
+    "running": "Hardlopen",
+    "cycling": "Fietsen",
+    "hiking": "Wandelen",
+    "rock-climbing": "Rotsklimmen",
+    "skiing": "Skiën",
+    "snowboarding": "Snowboarden",
+    "surfing": "Surfen",
+    "martial-arts": "Vechtsport",
+    "boxing": "Boksen",
+    "wrestling": "Worstelen",
+    "gymnastics": "Gymnastiek",
+    "track-and-field": "Atletiek",
+    "baseball": "Honkbal",
+    "volleyball": "Volleybal",
+    "badminton": "Badminton",
+    "table-tennis": "Tafeltennis",
+    "sports-coaching": "Sportcoaching",
+    "personal-training": "Personal training",
+    "athletic-training": "Atletische training",
+    "camping": "Kamperen",
+    "backpacking": "Backpacken",
+    "fishing": "Vissen",
+    "hunting": "Jagen",
+    "map-reading": "Kaartlezen",
+    "orienteering": "Oriëntatielopen",
+    "wilderness-survival": "Overleven in de wildernis",
+    "fire-making": "Vuur maken",
+    "foraging": "Foerageren",
+    "knot-tying": "Knopen leggen",
+    "rope-work": "Touwtechnieken",
+    "sailing": "Zeilen",
+    "kayaking": "Kajakken",
+    "canoeing": "Kanoën",
+    "mountain-climbing": "Bergbeklimmen",
+    "cave-exploration": "Grotverkenning",
+    "wildlife-tracking": "Wildsporen volgen",
+    "gardening": "Tuinieren",
+    "organic-gardening": "Biologisch tuinieren",
+    "hydroponics": "Hydrocultuur",
+    "permaculture": "Permacultuur",
+    "composting": "Composteren",
+    "plant-propagation": "Planten vermeerderen",
+    "tree-care": "Boomverzorging",
+    "flower-arranging": "Bloemschikken",
+    "botanical-knowledge": "Botanische kennis",
+    "pest-management": "Plaagbestrijding",
+    "soil-management": "Bodembeheer",
+    "irrigation": "Irrigatie",
+    "greenhouse-management": "Kasbeheer",
+    "urban-farming": "Stadslandbouw",
+    "beekeeping": "Bijenhouden",
+    "knitting": "Breien",
+    "crocheting": "Haken",
+    "sewing": "Naaien",
+    "quilting": "Quilten",
+    "embroidery": "Borduren",
+    "cross-stitch": "Kruissteek",
+    "woodworking": "Houtbewerking",
+    "metalworking": "Metaalbewerking",
+    "glassblowing": "Glasblazen",
+    "pottery": "Pottenbakken",
+    "candle-making": "Kaarsen maken",
+    "soap-making": "Zeep maken",
+    "leatherworking": "Leerbewerking",
+    "bookbinding": "Boekbinden",
+    "origami": "Origami",
+    "calligraphy": "Kalligrafie",
+    "scrapbooking": "Scrapbooking",
+    "model-building": "Modelbouw",
+    "data-collection": "Gegevensverzameling",
+    "statistical-analysis": "Statistische analyse",
+    "literature-review": "Literatuuronderzoek",
+    "critical-thinking": "Kritisch denken",
+    "problem-solving": "Probleemoplossing",
+    "mathematical-modeling": "Wiskundige modellering",
+    "scientific-method": "Wetenschappelijke methode",
+    "laboratory-skills": "Laboratoriumvaardigheden",
+    "microscopy": "Microscopie",
+    "spectroscopy": "Spectroscopie",
+    "chemical-analysis": "Chemische analyse",
+    "fieldwork": "Veldwerk",
+    "survey-design": "Enquêteontwerp",
+    "grant-writing": "Subsidieaanvragen schrijven",
+    "time-management": "Tijdmanagement",
+    "organization": "Organisatie",
+    "goal-setting": "Doelen stellen",
+    "self-discipline": "Zelfdiscipline",
+    "emotional-intelligence": "Emotionele intelligentie",
+    "decision-making": "Besluitvorming",
+    "creative-thinking": "Creatief denken",
+    "innovation": "Innovatie",
+    "adaptability": "Aanpassingsvermogen",
+    "resilience": "Veerkracht",
+    "self-motivation": "Zelfmotivatie",
+    "continuous-learning": "Continu leren",
+    "self-reflection": "Zelfreflectie",
+    "networking": "Netwerken",
+    "relationship-building": "Relaties opbouwen",
+    "empathy": "Empathie",
+    "cultural-sensitivity": "Culturele gevoeligheid",
+    "team-collaboration": "Samenwerken in een team",
+    "volunteer-coordination": "Vrijwilligerscoördinatie",
+    "community-organizing": "Community organizing",
+    "event-planning": "Evenementenplanning",
+    "party-planning": "Feestplanning",
+    "hospitality": "Gastvrijheid",
+    "customer-relations": "Klantrelaties",
+    "diplomacy": "Diplomatie",
+    "persuasion": "Overtuigingskracht",
+    "influence": "Beïnvloeden",
+    "social-media-engagement": "Social media engagement",
+    "computer-literacy": "Computervaardigheid",
+    "internet-research": "Internetonderzoek",
+    "email-management": "E-mailbeheer",
+    "social-media-management": "Social media beheer",
+    "online-marketing": "Online marketing",
+    "e-commerce": "E-commerce",
+    "digital-privacy": "Digitale privacy",
+    "cybersecurity-awareness": "Bewustzijn van cybersecurity",
+    "podcast-creation": "Podcastcreatie",
+    "youtube-creation": "YouTube-creatie",
+    "live-streaming": "Live streaming",
+    "online-teaching": "Online lesgeven",
+    "virtual-collaboration": "Virtuele samenwerking",
+    "driving": "Rijden",
+    "truck-driving": "Vrachtwagen rijden",
+    "motorcycle-riding": "Motorrijden",
+    "bicycle-maintenance": "Fietsenonderhoud",
+    "navigation": "Navigatie",
+    "route-planning": "Routeplanning",
+    "logistics-coordination": "Logistieke coördinatie",
+    "warehouse-management": "Magazijnbeheer",
+    "inventory-management": "Voorraadbeheer",
+    "shipping-and-receiving": "Verzending en ontvangst",
+    "personal-finance": "Persoonlijke financiën",
+    "investment-planning": "Investeringsplanning",
+    "tax-preparation": "Belastingaangifte voorbereiden",
+    "insurance-knowledge": "Verzekeringskennis",
+    "real-estate": "Vastgoed",
+    "cryptocurrency": "Cryptocurrency",
+    "trading": "Handelen",
+    "financial-planning": "Financiële planning",
+    "retirement-planning": "Pensioenplanning",
+    "debt-management": "Schuldenbeheer",
+    "spanish": "Spaans",
+    "french": "Frans",
+    "german": "Duits",
+    "italian": "Italiaans",
+    "portuguese": "Portugees",
+    "russian": "Russisch",
+    "chinese": "Chinees",
+    "japanese": "Japans",
+    "korean": "Koreaans",
+    "arabic": "Arabisch",
+    "hindi": "Hindi",
+    "dutch": "Nederlands",
+    "swedish": "Zweeds",
+    "norwegian": "Noors",
+    "danish": "Deens",
+    "finnish": "Fins",
+    "polish": "Pools",
+    "turkish": "Turks",
+    "magic-tricks": "Goocheltrucs",
+    "juggling": "Jongleren",
+    "balloon-animals": "Ballondieren",
+    "face-painting": "Schminken",
+    "card-games": "Kaartspellen",
+    "board-games": "Bordspellen",
+    "chess": "Schaken",
+    "bridge": "Bridge",
+    "poker": "Poker",
+    "trivia-knowledge": "Triviakennis",
+    "speed-reading": "Snellezen",
+    "memory-techniques": "Geheugentechnieken",
+    "escape-rooms": "Escape rooms",
+    "puzzle-solving": "Puzzels oplossen",
+    "crossword-puzzles": "Kruiswoordpuzzels",
+    "sudoku": "Sudoku",
+    "word-games": "Woordspelletjes"
+  },
+  "common": {
+    "add": "Toevoegen",
+    "remove": "Verwijderen",
+    "search": "Zoeken",
+    "select": "Selecteren",
+    "loading": "Laden...",
+    "error": "Fout",
+    "success": "Succes",
+    "yes": "Ja",
+    "no": "Nee",
+    "ok": "OK",
+    "close": "Sluiten",
+    "submit": "Verzenden",
+    "reset": "Resetten",
+    "clear": "Wissen",
+    "next": "Volgende",
+    "previous": "Vorige",
+    "back": "Terug",
+    "forward": "Vooruit",
+    "help": "Help",
+    "about": "Over"
+  },
+  "privacyPolicy": {
+    "title": "Privacybeleid",
+    "lastUpdated": "Laatst bijgewerkt: juni 2025",
+    "introduction": {
+      "title": "Privacybeleid",
+      "content": "Dit Privacybeleid legt uit hoe Deep Resirch (\"wij\", \"onze\" of \"ons\") uw persoonlijke informatie verzamelt, gebruikt, deelt en beschermt wanneer u ons platform en onze diensten gebruikt. We zijn toegewijd aan het beschermen van uw privacy en het behouden van het vertrouwen dat u in ons stelt terwijl u deelneemt aan ons communityplatform.",
+      "keyPrivacyFeaturesTitle": "Belangrijkste privacykenmerken:",
+      "keyPoints": "<strong>Belangrijkste privacykenmerken:</strong><br>• <strong>Volledige controle</strong>: Verwijder uw volledige account en alle gegevens onmiddellijk via uw profielinstellingen<br>• <strong>Gedetailleerde toestemming</strong>: Kies precies welke communicatie u ontvangt<br>• <strong>Datatransparantie</strong>: Duidelijke uitleg over welke gegevens we verzamelen en waarom<br>• <strong>EU-bescherming</strong>: Gehost in de EU met volledige AVG/GDPR-naleving en inachtneming van de Oostenrijkse privacywetgeving<br>• <strong>Geen dataverkoop</strong>: We verkopen uw persoonlijke informatie nooit aan derden"
+    },
+    "controllerInfo": {
+      "title": "1. Informatie over de Verwerkingsverantwoordelijke",
+      "content": "Wij zijn de verwerkingsverantwoordelijke die verantwoordelijk is voor uw persoonlijke informatie. U kunt contact met ons opnemen over privacykwesties via:",
+      "contact": "Functionaris voor gegevensbescherming: admin@queer-Deep Resirch.com"
+    },
+    "legalBasis": {
+      "title": "2. Rechtsgrondslag voor Verwerking",
+      "content": "Wij verwerken uw persoonsgegevens op basis van de volgende rechtsgronden onder AVG/GDPR Artikel 6:",
+      "consent": "• <strong>Uw toestemming</strong>: Alleen voor nieuwsbriefabonnementen en directe communicatie",
+      "contract": "• <strong>Contractuele noodzaak</strong>: Om onze platformdiensten te leveren en communityverbindingen te faciliteren",
+      "legitimateInterest": "• <strong>Gerechtvaardigde belangen</strong>: Om ons platform te beheren en te verbeteren, de veiligheid van de community te waarborgen en zinvolle verbindingen binnen de community te faciliteren. Ons gerechtvaardigd belang wordt afgewogen tegen uw privacyrechten.",
+      "legalObligation": "• <strong>Wettelijke verplichting</strong>: Om te voldoen aan toepasselijke wet- en regelgeving",
+      "vitalInterests": "• <strong>Vitale belangen</strong>: In zeldzame gevallen om iemands leven of fysieke veiligheid te beschermen"
+    },
+    "dataCollection": {
+      "title": "3. Informatie die we verzamelen",
+      "profileData": {
+        "title": "Profielinformatie (Wat & Waarom)",
+        "content": "• <strong>E-mailadres</strong> (vereist): Accountcreatie, authenticatie, kritieke communicatie, wachtwoordherstel<br>• <strong>Gebruikersnaam</strong>: Unieke identificatie voor community-interacties en profielweergave<br>• <strong>Naam</strong> (voor/achternaam, optioneel): Gepersonaliseerde begroetingen, community-erkenning, netwerkfacilitatie<br>• <strong>Telefoonnummer</strong> (optioneel): Noodcontact, tweefactorauthenticatie, premium ondersteuning<br>• <strong>Bio en website</strong> (optioneel): Community-netwerken, vaardigheden presenteren, professionele connecties<br>• <strong>Vaardigheden en competenties</strong>: Matchen met relevante kansen, projectsamenwerking, expertise-identificatie<br>• <strong>Professionele informatie</strong>: Carrièrenetwerken, expertisevalidatie, samenwerkingsmogelijkheden<br>• <strong>Deelnamevoorkeuren</strong>: Rolmatching (lid, expert, activist, supporter), evenementaanbevelingen<br>• <strong>Locatie</strong> (land/provincie/stad): Lokale evenementmeldingen, regionale community-opbouw, wettelijke naleving<br>• <strong>Communicatievoorkeuren</strong>: Respecteren van toestemmingskeuzes, gepersonaliseerde communicatiefrequentie"
+      },
+      "usageData": {
+        "title": "Technische gegevens (Alleen voor Veiligheid & Functionaliteit)",
+        "content": "• <strong>IP-adres</strong>: Veiligheidsmonitoring, fraudepreventie, naleving van regionale wetgeving<br>• <strong>Browser/apparaatinformatie</strong>: Compatibiliteitsoptimalisatie, veiligheidsverificatie, responsief ontwerp<br>• <strong>Sessiegegevens</strong>: Authenticatiestatus, inlogbeveiliging, automatisch uitloggen ter bescherming<br>• <strong>Foutlogboeken</strong>: Oplossen van technische problemen, monitoring van platformstabiliteit, bugfixes<br>• <strong>Opmerking</strong>: We volgen geen persoonlijke activiteitspatronen, paginabezoeken of interactiegegevens"
+      },
+      "paymentData": {
+        "title": "Betalingsinformatie (Wat & Hoe)",
+        "content": "• <strong>Transactiegegevens</strong>: Donatiegeschiedenis, abonnementsstatus, factuurafstemming<br>• <strong>Betalingsmetadata</strong>: Transactie-ID's, bedragen, valuta, datums voor financiële rapportage<br>• <strong>Stripe-integratie</strong>: Betalingsverwerking afgehandeld door Stripe met PCI DSS-naleving<br>• <strong>Factuuradressen</strong>: Belastingberekening, fraudepreventie, naleving van regelgeving<br>• <strong>Abonnementsdetails</strong>: Beheer van serviceniveau, verwerkingsverlenging, gebruiksregistratie<br>• <strong>Opmerking</strong>: We slaan nooit creditcardnummers, CVV-codes of gevoelige betalingsgegevens op"
+      },
+      "consentData": {
+        "title": "Toestemmingsgegevens (Uw communicatievoorkeuren)",
+        "content": "• <strong>Direct contact</strong>: Toestemming om benaderd te worden met kansen binnen de queer alliantie<br>• <strong>Nieuwsbrief</strong>: Toestemming voor het ontvangen van nieuwsbrieven en informatie (geen marketing)<br>• <strong>Organisatievertegenwoordiger</strong>: Toestemming om rechtstreeks benaderd te worden als vertegenwoordiger van een organisatie<br>• <strong>Toestemmingsgeschiedenis</strong>: Tijdstempels en wijzigingen van uw voorkeuren (AVG/GDPR-naleving)"
+      }
+    },
+    "purposes": {
+      "title": "4. Hoe we uw informatie gebruiken (Gedetailleerde doeleinden)",
+      "community": "• <strong>Community-opbouw</strong>: Op vaardigheden gebaseerde ledenmatching, aanbevelingen voor lokale evenementen, mentorverbindingen, samenwerkingsmogelijkheden op basis van gedeelde interesses en locatie",
+      "personalization": "• <strong>Gepersonaliseerde ervaring</strong>: Contentcuratie op basis van deelnamerollen, evenementsuggesties die passen bij uw vaardigheden, taalspecifieke communicatie, tijdzone-geschikte meldingen",
+      "communication": "• <strong>Communicatie</strong>: Nieuwsbrieflevering (op basis van toestemming), direct contact met kansen (op basis van toestemming), contact met organisatievertegenwoordigers (op basis van toestemming), platformupdates, veiligheidsmeldingen",
+      "platform": "• <strong>Platformoperatie</strong>: Gebruikersauthenticatie, sessiebeheer, functiefunctionaliteit, datasynchronisatie, meertalige ondersteuning, mobiele responsiviteit",
+      "safety": "• <strong>Community-veiligheid</strong>: Fraudetectie via IP-monitoring, spampreventie via rate limiting, systemen voor misbruikrapportage, contentmoderatie, accountverificatie",
+      "analytics": "• <strong>Website-analyse</strong>: Geanonimiseerde websitestatistieken van Vercel Analytics (geen persoonlijke gegevens verzameld, volledig cookie-vrij)",
+      "legal": "• <strong>Wettelijke naleving</strong>: Naleving van de Oostenrijkse privacywetgeving, voldoen aan AVG/GDPR-vereisten, bijhouden van audittrails, rapportage aan regelgevende instanties indien nodig",
+      "technical": "• <strong>Technische functionaliteit</strong>: Databaseoptimalisatie, back-upcreatie, systeembewaking, implementatie van beveiligingspatches, prestatieoptimalisatie, foutopsporing en -oplossing"
+    },
+    "sharing": {
+      "title": "5. Informatiedeling",
+      "content": "Wij nemen uw privacy serieus en delen informatie alleen in deze specifieke omstandigheden:",
+      "serviceProviders": "• <strong>Dienstverleners</strong>: Vertrouwde partners die ons helpen ons platform te beheren (bijv. Supabase voor datahosting, Stripe voor betalingen, Vercel voor analyse)",
+      "legal": "• <strong>Wettelijke vereisten</strong>: Indien vereist door de wet, een gerechtelijk bevel, of om onze wettelijke rechten te beschermen",
+      "consent": "• <strong>Met uw toestemming</strong>: Elke andere deling vindt alleen plaats met uw uitdrukkelijke toestemming",
+      "noSharing": "• <strong>Geen deling met leden</strong>: Wij delen uw informatie niet met andere alliantieleden of gebruikers",
+      "noSale": "<strong>Wij verkopen uw persoonlijke informatie nooit aan derden.</strong>"
+    },
+    "dataTransfers": {
+      "title": "6. Internationale gegevensoverdrachten",
+      "content": "Sommige van onze dienstverleners kunnen zich buiten de Europese Economische Ruimte (EER) bevinden. Wanneer we uw gegevens internationaal overdragen, zorgen we voor adequate bescherming door:",
+      "adequacy": "• <strong>Adequaatheidsbesluiten</strong>: Overdrachten naar landen met adequate gegevensbescherming",
+      "safeguards": "• <strong>Passende waarborgen</strong>: Standaard contractbepalingen goedgekeurd door de Europese Commissie",
+      "providers": "• Onze huidige providers omvatten Supabase (EU-infrastructuur), Stripe (wereldwijd met EU-waarborgen) en Vercel (EU-hosting in de regio Frankfurt)"
+    },
+    "retention": {
+      "title": "7. Gegevensbewaring en -verwijdering",
+      "content": "Wij bewaren uw persoonlijke informatie alleen zo lang als nodig is en bieden onmiddellijke verwijderingsmogelijkheden:",
+      "active": "• <strong>Actieve accounts</strong>: Gegevens worden bewaard zolang uw account actief blijft en u onze diensten blijft gebruiken",
+      "dormant": "• <strong>Slapende accounts</strong>: Automatische verwijdering na 3 jaar volledige inactiviteit (met 90 dagen van tevoren een waarschuwing per e-mail)",
+      "immediate": "• <strong>Onmiddellijke zelfverwijdering</strong>: Verwijder uw volledige account onmiddellijk via Profielinstellingen → Accountinstellingen → Account verwijderen",
+      "deletion": "• <strong>Op verzoek tot verwijdering</strong>: Onmiddellijke verwijdering uit alle actieve systemen, databases en authenticatiediensten",
+      "backups": "• <strong>Verwijdering uit back-ups</strong>: Volledige verwijdering uit alle back-upsystemen binnen 90 dagen na accountverwijdering",
+      "legal": "• <strong>Wettelijke vereisten</strong>: Beperkte gegevensbewaring alleen waar specifiek vereist door Oostenrijkse of EU-wetgeving (bijv. financiële gegevens voor belastingdoeleinden)",
+      "technical": "• <strong>Technisch verwijderingsproces</strong>: Profielgegevens verwijderd uit hoofddatabase → Authenticatiegegevens verwijderd → Auditlogs gemarkeerd voor verwijdering → Back-upsystemen opgeschoond",
+      "confirmation": "• <strong>Bevestiging van verwijdering</strong>: Automatisch uitloggen en een bevestigings-e-mail verzonden na succesvolle accountverwijdering"
+    },
+    "rights": {
+      "title": "8. Uw rechten onder de AVG/GDPR",
+      "content": "U heeft de volgende rechten met betrekking tot uw persoonsgegevens:",
+      "access": "• <strong>Recht op inzage</strong>: Vraag een kopie van uw persoonsgegevens op via admin@queer-Deep Resirch.com of bekijk deze direct in uw profielinstellingen",
+      "rectification": "• <strong>Recht op rectificatie</strong>: Corrigeer onjuiste gegevens direct in uw profielinstellingen of vraag assistentie via admin@queer-Deep Resirch.com",
+      "erasure": "• <strong>Recht op wissing</strong>: <strong>Verwijder uw volledige account onmiddellijk</strong> via uw profielinstellingen (Instellingen > Accountinstellingen > Account verwijderen) of vraag om verwijdering via admin@queer-Deep Resirch.com",
+      "restriction": "• <strong>Recht op beperking van de verwerking</strong>: Beperk hoe wij uw gegevens verwerken door contact op te nemen met admin@queer-Deep Resirch.com",
+      "portability": "• <strong>Recht op overdraagbaarheid van gegevens</strong>: Ontvang uw gegevens in een gestructureerd JSON-formaat via admin@queer-Deep Resirch.com",
+      "objection": "• <strong>Recht van bezwaar</strong>: Maak bezwaar tegen verwerking op basis van gerechtvaardigde belangen via admin@queer-Deep Resirch.com",
+      "withdrawal": "• <strong>Toestemming intrekken</strong>: Wijzig toestemmingsvoorkeuren direct in uw profielinstellingen of neem contact op met admin@queer-Deep Resirch.com",
+      "complaint": "• <strong>Recht om een klacht in te dienen</strong>: Dien een klacht in bij de Oostenrijkse Gegevensbeschermingsautoriteit (Datenschutzbehörde) op dsb.gv.at",
+      "exercise": "De meeste rechten kunt u direct uitoefenen in uw profielinstellingen. Voor extra hulp, neem contact op met admin@queer-Deep Resirch.com (30 dagen antwoordgarantie)."
+    },
+    "accountDeletion": {
+      "title": "8.1. Volledige accountverwijdering (Self-Service)",
+      "content": "U kunt uw volledige account en alle bijbehorende gegevens op elk moment direct verwijderen vanuit uw profielinstellingen:",
+      "access": "• <strong>Hoe te bereiken</strong>: Inloggen → Profiel → Instellingen → Accountinstellingen → Account verwijderen",
+      "process": "• <strong>Verwijderingsproces</strong>: Typ 'VERWIJDER' om te bevestigen → Onmiddellijke permanente verwijdering van alle gegevens",
+      "scope": "• <strong>Wat wordt verwijderd</strong>: Alle profielinformatie, vaardigheden, voorkeuren, toestemmingsgeschiedenis, auditlogs, sessiegegevens en authenticatiegegevens",
+      "immediate": "• <strong>Timing</strong>: Onmiddellijke verwijdering uit alle systemen, inclusief database en authenticatie",
+      "irreversible": "• <strong>Belangrijk</strong>: Deze actie is onomkeerbaar - eenmaal verwijderd, kunnen uw account en gegevens niet worden hersteld",
+      "backup": "• <strong>Verwijdering uit back-ups</strong>: Uw gegevens worden binnen 90 dagen na verwijdering uit alle back-ups verwijderd",
+      "confirmation": "• <strong>Bevestiging</strong>: U wordt automatisch uitgelogd en doorgestuurd na succesvolle verwijdering",
+      "alternative": "• <strong>Alternatief</strong>: Neem contact op met admin@queer-Deep Resirch.com als u hulp nodig heeft bij het verwijderen van uw account"
+    },
+    "security": {
+      "title": "9. Uitgebreide gegevensbeveiligingsmaatregelen",
+      "content": "We implementeren meerdere lagen van robuuste beveiligingsmaatregelen om uw persoonlijke informatie te beschermen:",
+      "technical": {
+        "title": "Technische beveiligingsmaatregelen",
+        "content": "• <strong>Gegevensversleuteling</strong>: Alle gegevens versleuteld in transit (TLS 1.3) en at rest (AES-256) via Supabase<br>• <strong>Databasebeveiliging</strong>: Row Level Security (RLS) beleid dat ervoor zorgt dat gebruikers alleen toegang hebben tot hun eigen gegevens<br>• <strong>Authenticatie</strong>: Ondersteuning voor multi-factor authenticatie, veilig sessiebeheer met automatische vervaltijd<br>• <strong>Invoervalidatie</strong>: Uitgebreide XSS-preventie, bescherming tegen SQL-injectie, invoersanering<br>• <strong>Beveiligingsheaders</strong>: Content Security Policy (CSP), HTTP Strict Transport Security (HSTS), anti-clickjacking bescherming<br>• <strong>API-beveiliging</strong>: Rate limiting, verzoekvalidatie, beveiligde API-eindpunten met vereiste authenticatie"
+      },
+      "organizational": {
+        "title": "Organisatorische beveiligingsmaatregelen",
+        "content": "• <strong>Toegangscontroles</strong>: Principe van de minste privileges, op rollen gebaseerde toegang tot systemen en gegevens<br>• <strong>Personeelstraining</strong>: Regelmatige training in beveiligingsbewustzijn, protocollen voor gegevensbescherming<br>• <strong>Gegevensverwerkingsovereenkomsten</strong>: Uitgebreide overeenkomsten met alle externe verwerkers<br>• <strong>Incidentresponsplan</strong>: Gedocumenteerde procedures voor detectie en reactie op beveiligingsinbreuken<br>• <strong>Regelmatige audits</strong>: Driemaandelijkse beveiligingsbeoordelingen, jaarlijkse penetratietests, kwetsbaarheidsbeoordelingen"
+      },
+      "monitoring": {
+        "title": "Continue beveiligingsmonitoring",
+        "content": "• <strong>Real-time monitoring</strong>: 24/7 systeembewaking, geautomatiseerde dreigingsdetectie<br>• <strong>Audit trails</strong>: Uitgebreide logging van alle profielwijzigingen, inlogpogingen, gegevenstoegang<br>• <strong>Sessietracking</strong>: Actieve sessiemonitoring, automatisch uitloggen na inactiviteit<br>• <strong>Fraudepreventie</strong>: IP-gebaseerde anomaliedetectie, waarschuwingen voor verdachte activiteiten<br>• <strong>Fouttracering</strong>: Geautomatiseerde foutlogging en reactie op beveiligingsgerelateerde problemen"
+      },
+      "infrastructure": {
+        "title": "Infrastructuurbeveiliging",
+        "content": "• <strong>Hostingbeveiliging</strong>: EU-gebaseerde Supabase-infrastructuur met SOC 2 Type II-naleving<br>• <strong>Netwerkbeveiliging</strong>: Firewalls, VPN-toegang voor beheerders, beveiligde communicatiekanalen<br>• <strong>Back-upbeveiliging</strong>: Versleutelde automatische back-ups, veilige back-upopslag, geteste herstelprocedures<br>• <strong>Updatemanagement</strong>: Geautomatiseerde beveiligingspatches, regelmatige afhankelijkheidsupdates, kwetsbaarheidsscans<br>• <strong>Naleving</strong>: AVG/GDPR-naleving, naleving van de Oostenrijkse privacywetgeving, regelmatige nalevingsaudits"
+      },
+      "incident": {
+        "title": "Reactie op datalekken",
+        "content": "• <strong>Detectie</strong>: Geautomatiseerde monitoringsystemen, onmiddellijke waarschuwingen bij verdachte activiteit<br>• <strong>Reactie</strong>: 72-uurs melding van inbreuk aan de Oostenrijkse Gegevensbeschermingsautoriteit indien vereist<br>• <strong>Gebruikersmelding</strong>: Directe communicatie naar getroffen gebruikers binnen 72 uur na bevestigde inbreuk<br>• <strong>Mitigatie</strong>: Onmiddellijke inperkingsprocedures, implementatie van beveiligingspatches, systeemverharding<br>• <strong>Documentatie</strong>: Volledige incidentdocumentatie, post-incident beveiligingsverbeteringen"
+      }
+    },
+    "cookies": {
+      "title": "10. Cookies en Tracking",
+      "content": "<strong>Wij gebruiken alleen essentiële cookies</strong> - geen tracking-, analyse- of marketingcookies. Voor gedetailleerde informatie, zie ons Cookiebeleid. Belangrijkste punten:",
+      "essential": "• <strong>Alleen essentiële cookies</strong>: Vereist voor inloggen, betalingen en taalondersteuning (geen toestemming nodig)",
+      "analytics": "• <strong>Geen analysecookies</strong>: We gebruiken in plaats daarvan de cookie-vrije analyse van Vercel",
+      "preference": "• <strong>Voorkeuren opgeslagen in uw account</strong>: Taal, thema en instellingen opgeslagen in uw databaseprofiel, niet in cookies",
+      "marketing": "• <strong>Geen marketingcookies</strong>: We gebruiken geen advertentie- of gedragstrackingcookies"
+    },
+    "minors": {
+      "title": "11. Bescherming van minderjarigen",
+      "content": "Ons platform is ontworpen voor personen van 18 jaar en ouder. Gebruikers onder de 18 jaar mogen geen accounts aanmaken of onze diensten gebruiken."
+    },
+    "changes": {
+      "title": "12. Wijzigingen in dit beleid",
+      "content": "We kunnen dit Privacybeleid bijwerken om wijzigingen in onze praktijken of wettelijke vereisten weer te geven. We zullen:",
+      "notification": "• <strong>Gebruikers informeren</strong>: E-mailmelding bij belangrijke wijzigingen",
+      "consent": "• <strong>Toestemming verkrijgen</strong>: Voor materiële wijzigingen die uw rechten beïnvloeden",
+      "posting": "• <strong>Updates publiceren</strong>: Altijd de huidige versie op onze website onderhouden",
+      "date": "• <strong>Datum bijwerken</strong>: De \"Laatst bijgewerkt\"-datum toont de meest recente revisie"
+    },
+    "contact": {
+      "title": "13. Contactinformatie",
+      "content": "Voor privacygerelateerde vragen of om uw rechten uit te oefenen, neem contact met ons op:",
+      "details": "E-mail: admin@queer-Deep Resirch.com\nReactietijd: Binnen 30 dagen\nGegevensbeschermingsautoriteit: Österreichische Datenschutzbehörde (dsb.gv.at)"
+    }
+  },
+  "cookiePolicy": {
+    "title": "Cookiebeleid",
+    "lastUpdated": "Laatst bijgewerkt: juni 2025",
+    "labels": {
+      "purpose": "Doel:",
+      "cookies": "Cookies:",
+      "privacy": "Privacy:",
+      "legalBasis": "Rechtsgrondslag:",
+      "cookieName": "Naam van cookie",
+      "duration": "Duur"
+    },
+    "introduction": {
+      "title": "Cookiebeleid",
+      "content": "Dit Cookiebeleid legt uit hoe QUEER MEDIA LITERACY e.V. (\"Deep Resirch\") cookies gebruikt op ons platform. <strong>We gebruiken alleen essentiële cookies</strong> die noodzakelijk zijn voor het functioneren van ons platform - geen tracking-, advertentie- of analysecookies waarvoor uw toestemming nodig is."
+    },
+    "whatAreCookies": {
+      "title": "1. Wat zijn cookies",
+      "content": "Cookies zijn kleine tekstbestanden die op uw apparaat worden opgeslagen wanneer u onze website bezoekt. <strong>We gebruiken alleen essentiële cookies</strong> die nodig zijn voor het functioneren van ons platform:",
+      "remembering": "• <strong>Veilige inlogsessies</strong> - Houdt u veilig ingelogd",
+      "improving": "• <strong>Meertalige ondersteuning</strong> - Onthoudt uw taalkeuze voor navigatie",
+      "analyzing": "• <strong>Betalingsbeveiliging</strong> - Fraudepreventie tijdens donaties",
+      "personalizing": "• <strong>Geen tracking</strong> - We gebruiken geen cookies om uw gedrag te volgen"
+    },
+    "typesOfCookies": {
+      "title": "2. Soorten cookies die we gebruiken",
+      "essential": {
+        "title": "Essentiële cookies (De enige cookies die we gebruiken)",
+        "content": "<strong>Al onze cookies zijn essentieel</strong> - ze zijn nodig om het platform te laten werken en vereisen geen toestemming onder de AVG/GDPR:",
+        "authentication": "• <strong>Inlogbeveiliging</strong>: Sessietokens om u veilig ingelogd te houden",
+        "security": "• <strong>Betalingsbescherming</strong>: Stripe-fraudepreventie tijdens donaties",
+        "functionality": "• <strong>Taalondersteuning</strong>: Onthoudt uw taalkeuze voor sitenavigatie",
+        "compliance": "• <strong>Geen tracking</strong>: We gebruiken geen cookies om persoonsgegevens te verzamelen of gedrag te volgen"
+      },
+      "functional": {
+        "title": "Gebruikersvoorkeuren (Opgeslagen in uw account, niet in cookies)",
+        "content": "<strong>Privacy by design</strong>: We slaan uw voorkeuren op in uw beveiligde accountprofiel, niet in trackingcookies:",
+        "preferences": "• <strong>Taal & Thema</strong>: Opgeslagen in uw accountprofiel, toegankelijk op verschillende apparaten",
+        "formData": "• <strong>Toegankelijkheidsinstellingen</strong>: Veilig opgeslagen in uw databaseprofiel",
+        "accessibility": "• <strong>Betere privacy</strong>: Accountgebaseerde opslag betekent dat er geen trackingcookies nodig zijn"
+      },
+      "analytics": {
+        "title": "Analyse (Volledig cookie-vrij)",
+        "content": "We gebruiken <strong>Vercel Web Analytics</strong> - een privacy-first oplossing die geen cookies gebruikt:",
+        "usage": "• <strong>Geen cookies</strong>: Gebruikt anonieme, op hash gebaseerde bezoekersidentificatie",
+        "performance": "• <strong>Privacy voorop</strong>: Hash wordt elke 24 uur gereset, geen cross-site tracking",
+        "demographics": "• <strong>Alleen anoniem</strong>: Geaggregeerde statistieken, geen persoonsgegevens",
+        "provider": "• <strong>Geen toestemming nodig</strong>: Naleving by design, geen cookies betekent geen toestemming vereist"
+      },
+      "payment": {
+        "title": "Betalingsverwerkingscookies (Essentieel voor betalingen)",
+        "content": "Stripe, onze betalingsverwerker, gebruikt essentiële cookies tijdens de betalingsverwerking:",
+        "fraud": "• <strong>Fraudepreventie</strong>: __stripe_mid (1 jaar), __stripe_sid (30 minuten)",
+        "security": "• <strong>Betalingsbeveiliging</strong>: Essentieel voor veilige transactieverwerking",
+        "session": "• <strong>Sessiebeheer</strong>: Behoudt de betalingsstatus tijdens het afrekenproces"
+      }
+    },
+    "thirdPartyServices": {
+      "title": "3. Diensten van derden en hun cookies",
+      "content": "We werken met AVG/GDPR-conforme partners die cookies kunnen plaatsen wanneer u hun diensten gebruikt:",
+      "stripe": {
+        "title": "Stripe (Betalingsverwerking)",
+        "purpose": "Veilige betalingsverwerking voor donaties en lidmaatschappen",
+        "cookies": "Essentiële cookies: __stripe_mid, __stripe_sid (fraudepreventie, beveiliging)",
+        "privacy": "Privacybeleid: stripe.com/privacy | Cookiebeleid: stripe.com/legal/cookies-policy",
+        "legal": "Alleen gebruikt tijdens de betalingsverwerking (gerechtvaardigd belang voor contractuitvoering)"
+      },
+      "vercel": {
+        "title": "Vercel Analytics (Website-analyse)",
+        "purpose": "Privacygerichte website-analyse en prestatiebewaking",
+        "cookies": "Geen cookies gebruikt - op hash gebaseerde anonieme bezoekersidentificatie",
+        "privacy": "Privacybeleid: vercel.com/legal/privacy-policy",
+        "legal": "Geen toestemming vereist omdat er geen persoonsgegevens of cookies worden gebruikt"
+      },
+      "supabase": {
+        "title": "Supabase (Authenticatie & Database)",
+        "purpose": "Veilige gebruikersauthenticatie en gegevensopslag",
+        "cookies": "Sessiecookies voor authenticatie (essentieel voor inlogfunctionaliteit)",
+        "privacy": "Privacybeleid: supabase.com/privacy",
+        "legal": "Essentiële cookies voor contractuitvoering (geen toestemming vereist)"
+      }
+    },
+    "cookieConsent": {
+      "title": "4. Waarom we geen cookietoestemming nodig hebben",
+      "content": "<strong>Geen toestemming vereist</strong> - al onze cookies zijn essentieel voor de functionaliteit:",
+      "essential": "• <strong>Alleen essentieel</strong>: Alle cookies noodzakelijk voor inloggen, betalingen en navigatie",
+      "granular": "• <strong>Geen tracking</strong>: We gebruiken geen advertentie-, analyse- of gedragscookies",
+      "withdraw": "• <strong>AVG/GDPR-conform</strong>: Essentiële cookies zijn vrijgesteld van toestemmingsvereisten",
+      "settings": "• <strong>Privacy by Design</strong>: Minimale gegevensverzameling, maximale gebruikersprivacy",
+      "noConsent": "• <strong>Transparant</strong>: We vertellen u precies wat we gebruiken en waarom"
+    },
+    "browserControls": {
+      "title": "5. Browser cookie-instellingen",
+      "content": "U kunt cookies beheren via uw browserinstellingen. Let op: het uitschakelen van essentiële cookies kan de inlog- en betalingsfunctionaliteit verhinderen:",
+      "chrome": "• <strong>Chrome</strong>: Instellingen > Privacy en beveiliging > Cookies en andere sitegegevens",
+      "firefox": "• <strong>Firefox</strong>: Opties > Privacy & Beveiliging > Cookies en websitegegevens",
+      "safari": "• <strong>Safari</strong>: Voorkeuren > Privacy > Cookies en websitegegevens",
+      "edge": "• <strong>Edge</strong>: Instellingen > Sitemachtigingen > Cookies en sitegegevens",
+      "impact": "<strong>Belangrijk</strong>: Het uitschakelen van essentiële cookies zal inloggen, betalingen en kernfunctionaliteit verhinderen"
+    },
+    "cookieDetails": {
+      "title": "6. Gedetailleerde cookielijst",
+      "content": "Volledige lijst van cookies die op uw apparaat kunnen worden geplaatst:",
+      "essential": {
+        "title": "Essentiële cookies (Vereist voor functionaliteit)",
+        "items": [
+          {
+            "name": "sb-[project]-auth-token",
+            "purpose": "Supabase authenticatie sessietoken (veilig inloggen)",
+            "duration": "1 uur (automatische verversing)",
+            "provider": "Supabase",
+            "legal": "Contractuitvoering (essentieel voor toegang tot gebruikersaccount)"
+          },
+          {
+            "name": "__stripe_mid",
+            "purpose": "Stripe fraudepreventie (betalingsbeveiliging)",
+            "duration": "1 jaar",
+            "provider": "Stripe",
+            "legal": "Gerechtvaardigd belang (fraudepreventie tijdens betalingen)"
+          },
+          {
+            "name": "__stripe_sid",
+            "purpose": "Stripe sessiebeheer (betalingsproces)",
+            "duration": "30 minuten",
+            "provider": "Stripe",
+            "legal": "Contractuitvoering (essentieel voor betalingsverwerking)"
+          },
+          {
+            "name": "NEXT_LOCALE",
+            "purpose": "Next.js locale-routing (taal-URL-routing)",
+            "duration": "1 jaar",
+            "provider": "Next.js",
+            "legal": "Contractuitvoering (essentieel voor meertalige functionaliteit)"
+          }
+        ]
+      },
+      "functional": {
+        "title": "Functionele cookies (Momenteel geen)",
+        "content": "Wij gebruiken GEEN functionele cookies. Gebruikersvoorkeuren worden veilig opgeslagen in uw databaseprofiel in plaats van in cookies, wat betere privacy en persistentie op verschillende apparaten biedt."
+      },
+      "analytics": {
+        "title": "Analyse (Geen cookies)",
+        "content": "Vercel Web Analytics gebruikt privacyvriendelijke, cookie-vrije analyses die geen toestemming vereisen onder de AVG/GDPR."
+      }
+    },
+    "legalBasis": {
+      "title": "7. Rechtsgrondslag voor cookieverwerking",
+      "content": "Ons cookiegebruik voldoet aan AVG/GDPR Artikel 6 en de ePrivacy-richtlijn Artikel 5(3):",
+      "essential": "• <strong>Essentiële cookies</strong>: Gerechtvaardigd belang (Artikel 6(1)(f)) voor platformfunctionaliteit en -beveiliging",
+      "payment": "• <strong>Betalingscookies</strong>: Contractuitvoering (Artikel 6(1)(b)) voor het verwerken van transacties",
+      "consent": "• <strong>Functionele cookies</strong>: Toestemming (Artikel 6(1)(a)) voor een verbeterde gebruikerservaring",
+      "compliance": "• <strong>Toestemmingscookies</strong>: Wettelijke verplichting (Artikel 6(1)(c)) voor het bijhouden van AVG/GDPR-naleving",
+      "analytics": "• <strong>Analyse</strong>: Geen rechtsgrondslag vereist (geen cookies of persoonsgegevens verwerkt)"
+    },
+    "dataProtection": {
+      "title": "8. Gegevensbescherming en cookierechten",
+      "content": "Uw cookie-gerelateerde gegevensbeschermingsrechten onder de AVG/GDPR:",
+      "access": "• <strong>Recht op inzage</strong>: Informatie opvragen over cookies die op uw apparaat zijn geplaatst",
+      "rectification": "• <strong>Recht op rectificatie</strong>: Onjuiste cookievoorkeurgegevens corrigeren",
+      "erasure": "• <strong>Recht op wissing</strong>: Cookie-toestemmingsgegevens verwijderen (contact: admin@queer-Deep Resirch.com)",
+      "restriction": "• <strong>Recht op beperking</strong>: Cookieverwerking beperken tot alleen het essentiële",
+      "objection": "• <strong>Recht van bezwaar</strong>: Bezwaar maken tegen niet-essentiële cookies (toestemming intrekken)",
+      "portability": "• <strong>Gegevensoverdraagbaarheid</strong>: Uw cookie-toestemmingsgeschiedenis ontvangen in een gestructureerd formaat"
+    },
+    "updates": {
+      "title": "9. Updates van dit cookiebeleid",
+      "content": "We kunnen dit Cookiebeleid bijwerken om wettelijke of technische wijzigingen weer te geven:",
+      "notification": "• <strong>Melding</strong>: E-mailmelding bij materiële wijzigingen die uw rechten beïnvloeden",
+      "consent": "• <strong>Nieuwe toestemming</strong>: Bijgewerkte toestemming vragen voor nieuwe cookietypes of -doeleinden",
+      "effective": "• <strong>Ingangsdatum</strong>: Wijzigingen worden 30 dagen na melding van kracht, tenzij urgent",
+      "version": "• <strong>Versiebeheer</strong>: Vorige versies op aanvraag beschikbaar"
+    },
+    "contact": {
+      "title": "10. Neem contact met ons op over cookies",
+      "content": "Voor vragen over onze cookiepraktijken of om uw rechten uit te oefenen:",
+      "email": "<strong>Functionaris voor Gegevensbescherming</strong>: admin@queer-Deep Resirch.com",
+      "response": "<strong>Reactie binnen 30 dagen</strong> zoals vereist door AVG/GDPR Artikel 12",
+      "dpa": "<strong>Toezichthoudende autoriteit</strong>: Österreichische Datenschutzbehörde (dsb.gv.at)",
+      "address": "<strong>QUEER MEDIA LITERACY e.V.</strong>, 1060 Wien, Mariahilfer Straße 49/15, Oostenrijk"
+    }
+  },
+  "manifest": {
+    "title": "Manifest",
+    "lastUpdated": "Laatst bijgewerkt: juni 2025",
+    "why": {
+      "title": "Waarom zijn we samengekomen?",
+      "content": "We leven in een tijd waarin goed georganiseerde en kapitaalkrachtige krachten mensen tegen elkaar opzetten. Hun doel is duidelijk: de fundamentele rechten van queer mensen aanvallen en de toekenning van gelijke rechten verhinderen. Onze alliantie is een antwoord op deze antidemocratische en onmenselijke inspanningen. We laten ons niet terugdringen, verdelen, verwarren of onderdrukken, en we gaan vastberaden vooruit."
+    },
+    "who": {
+      "title": "Wie zijn wij?",
+      "content": "Wij zijn een alliantie van queer mensen en hun bondgenoten die samenwerken om de LGBTQIA+ gemeenschap te versterken en te beschermen. We zien onszelf als een netwerk voor solidaire samenhang dat collectieve krachten bundelt en de belangen van haar leden behartigt. We creëren creatieve ruimtes voor ideeën en de vormgeving van een open en diverse samenleving."
+    },
+    "what": {
+      "title": "Wat drijft ons?",
+      "content": "Wij verdedigen ons recht op veiligheid, op zichtbaarheid en op liefde tegen elke vijandigheid. Niemand heeft het recht om over ons bestaan te beslissen. Wij nemen onze toekomst in eigen handen, zonder dat anderen erover bepalen."
+    },
+    "participation": {
+      "title": "Wie kan zich bij ons aansluiten?",
+      "content": "Onze alliantie staat open voor alle leden van de LGBTQIA+ gemeenschap en hun bondgenoten, ongeacht afkomst, overtuiging en levenswijze. Waar anderen verdelen en uitsluiten, leven wij kracht door diversiteit."
+    },
+    "action": {
+      "title": "Hoe handelen wij?",
+      "content": "We komen voor elkaar op, intern en extern. We kijken niet werkeloos toe, we handelen. Wij zijn deel van de alliantie voor vrijheid, diversiteit en zelfbeschikking."
+    }
+  },
+  "imprint": {
+    "title": "Imprint",
+    "lastUpdated": "Laatst bijgewerkt: juni 2025",
+    "labels": {
+      "name": "Naam",
+      "seat": "Zetel",
+      "address": "Adres",
+      "country": "Land",
+      "foundationDate": "Oprichtingsdatum"
+    },
+    "organization": {
+      "title": "Organisatie-informatie",
+      "name": "QUEER MEDIA LITERACY e.V.",
+      "seat": "Wenen",
+      "address": "1060 Wenen, Mariahilfer Straße 49/15",
+      "country": "Oostenrijk",
+      "foundationDate": "21.09.2024"
+    },
+    "partners": {
+      "title": "Partners",
+      "partnersList": "Tot de afsplitsing van de Deep Resirch zal de vereniging Queer Media Literacy de aansprakelijkheid voor de website op zich nemen. De vereniging is echter slechts één partner onder velen. Vangardist Agency & Magazine, GGG.at, Transv.at, Queer Moments, Queer Dance im Gemeindebau, Porn Film Festival Vienna, Queer Shorts Vienna, Vienna Gay Mans Chorus, YK Media"
+    },
+    "registration": {
+      "title": "Registratie",
+      "authority": "Autoriteit: Staatsdirectie van de politie van Wenen, afdeling voor verenigings-, vergaderings- en mediarechtzaken",
+      "zvrNumber": "ZVR-nummer 1689372191"
+    },
+    "contact": {
+      "title": "Contact",
+      "emailLabel": "E-mail:",
+      "email": "admin@queer-Deep Resirch.com",
+      "note": "Gebruik voor alle vragen uitsluitend het hierboven vermelde e-mailadres."
+    },
+    "responsible": {
+      "title": "Verantwoordelijk voor de inhoud",
+      "content": "De vereniging QUEER MEDIA LITERACY e.V. is verantwoordelijk voor alle inhoud op deze website."
+    },
+    "disclaimer": {
+      "title": "Disclaimer",
+      "content": "Ondanks zorgvuldige inhoudelijke controle aanvaarden wij geen aansprakelijkheid voor de inhoud van externe links. Voor de inhoud van de gelinkte pagina's zijn uitsluitend de beheerders ervan verantwoordelijk."
+    }
+  },
+  "partners": {
+    "title": "Partners",
+    "descriptions": {
+      "1": "Toonaangevend queer media-agentschap en magazine",
+      "2": "Queer communicatie",
+      "3": "Uitwisseling, educatie, advies en meer voor trans-onderwerpen",
+      "4": "We organiseren queer kunstprojecten en zorgen voor zichtbaarheid en dialoog door kunstenaars in de schijnwerpers te zetten",
+      "5": "We dansen van gemeenschap naar gemeenschap voor tolerantie, respect en diversiteit",
+      "6": "Filmfestival voor porno en queer onderwerpen",
+      "7": "Het eerste internationale queer kortfilmfestival in Wenen",
+      "8": "Mannen gaykoortje in Wenen",
+      "9": "Queer creatief productiebedrijf",
+      "10": "Een queer pop-party in Wenen"
+    },
+    "categories": {
+      "1": "Bureau, Tijdschrift",
+      "2": "Media",
+      "3": "Advies, Onderwijs, Ondersteuning",
+      "4": "Evenementen, Nieuws",
+      "5": "Evenementen, Dansen",
+      "6": "Filmfestival",
+      "7": "Filmfestival",
+      "8": "Muziek",
+      "9": "Creatieve Productie",
+      "10": "Clubbing"
+    },
+    "visit": "Bezoek"
+  },
+  "accessibility": {
+    "menuButton": "Menu"
+  },
+  "errors": {
+    "stripe": {
+      "checkoutFailed": "Afrekenen mislukt",
+      "billingPortalError": "Fout in factuurportaal",
+      "failedToCreateCheckoutSession": "Aanmaken van afrekensessie mislukt",
+      "noCheckoutUrlReceived": "Geen afreken-URL ontvangen",
+      "failedToStartCheckout": "Starten van afrekenen mislukt. Probeer het opnieuw.",
+      "failedToCreatePortalSession": "Aanmaken van portaalsessie mislukt",
+      "noPortalUrlReceived": "Geen portaal-URL ontvangen",
+      "failedToOpenBillingPortal": "Openen van factuurportaal mislukt. Probeer het opnieuw.",
+      "userProfileNotFound": "Gebruikersprofiel niet gevonden. Kan account niet verwijderen.",
+      "failedToDeleteAccountViaAPI": "Verwijderen van account via API mislukt",
+      "failedToDeleteAccount": "Verwijderen van account mislukt"
+    },
+    "finance": {
+      "planFallbackName": "Plan {index}",
+      "planFallbackDescription": "Steun de zaak met uw bijdrage"
+    }
+  }
+}

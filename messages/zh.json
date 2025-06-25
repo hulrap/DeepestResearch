@@ -1,0 +1,1518 @@
+{
+  "navigation": {
+    "home": "首页",
+    "settings": "设置",
+    "dashboard": "个人资料",
+    "manifest": "宣言",
+    "partners": "合作伙伴",
+    "signIn": "登录",
+    "signUp": "注册",
+    "signOut": "退出登录",
+    "protected": "个人资料",
+    "loading": "加载中..."
+  },
+  "home": {
+    "title": "酷儿联盟",
+    "welcomeBackPrefix": "欢迎来到酷儿联盟",
+    "joinPrefix": "加入我们的酷儿联盟",
+    "welcomeBack": "欢迎回来, {email}",
+    "subtitle": "您已经是酷儿联盟的一员！访问您的仪表板以继续您的旅程。",
+    "guestSubtitle": "注册成为我们社群的一员",
+    "goToDashboard": "前往仪表板",
+    "register": "注册",
+    "userGreeting": "嘿, {email}！",
+    "joinOurDeep Resirch": "加入我们的酷儿联盟",
+    "welcomeBackShort": "欢迎回来！",
+    "loginButton": "登录",
+    "currentLanguage": "中文",
+    "memberSince": "成为会员自",
+    "accountStatus": "账户状态",
+    "accountVerified": "已验证",
+    "accountPending": "待处理",
+    "profileStatus": "个人资料",
+    "profileActive": "活跃",
+    "roles": "角色",
+    "undecided": "未决定",
+    "metaTitle": "酷儿联盟 - 加入我们的联盟",
+    "metaDescription": "加入酷儿联盟",
+    "genericUser": "用户",
+    "profileExplainer": {
+      "title": "感谢你追随彩虹兔的脚步。",
+      "content": "<h2>我们现在需要像你这样的英雄。</h2><p>由于我们的权利在全球范围内正面临威胁，现在是我们团结起来的时候了。通过酷儿联盟，我们希望增进社区内的沟通、信息共享和网络联系，互相支持已有的项目，同时也共同启动新项目。我们希望从谈论转向行动。</p><p>我们的想法包括支持布拉迪斯拉发骄傲游行、举办社区信息日，以及建立一个用于请愿、行动和示威的大型电子邮件分发名单。你也可以提出新的想法和愿望。我们将互相支持，共同实现这些目标。</p><h3>你想获取信息或参与其中吗？</h3><p>目前，你可以通过四种不同的角色参与：</p><ol><li>作为支持者和通讯订阅者</li><li>作为单项活动的行动者</li><li>作为专业问题的专家</li><li>作为积极参与并参加月度会议的成员。</li></ol><p>如果你想了解更多，请填写你的个人资料信息，我们将在骄傲月结束后与你联系。</p><h3>你没有时间，但想要捐款？</h3><p>我们所有的服务都是免费的。</p><p>但我们不能依赖政府资助或企业赞助。</p><p>因此，社区应该在中期内实现自我融资。</p>"
+    },
+    "fillOutProfile": "填写个人资料",
+    "rainbowRabbitAlt": "彩虹兔",
+    "footer": {
+      "copyright": "© 2025 酷儿联盟。版权所有。",
+      "imprint": "版本说明",
+      "cookiePolicy": "Cookie 政策",
+      "privacyPolicy": "隐私政策",
+      "contact": "联系我们",
+      "partners": "合作伙伴"
+    }
+  },
+  "auth": {
+    "login": {
+      "title": "欢迎回来",
+      "subtitle": "登录您的酷儿联盟账户",
+      "email": "电子邮件",
+      "emailPlaceholder": "your.email@example.com",
+      "password": "密码",
+      "forgotPassword": "忘记密码？",
+      "signInButton": "登录",
+      "signingIn": "登录中...",
+      "noAccount": "还没有账户？"
+    },
+    "signUp": {
+      "title": "加入酷儿联盟",
+      "subtitle": "创建您的账户，成为酷儿联盟的一员",
+      "email": "电子邮件",
+      "emailPlaceholder": "your.email@example.com",
+      "password": "密码",
+      "passwordPlaceholder": "创建一个强密码",
+      "confirmPassword": "确认密码",
+      "confirmPasswordPlaceholder": "重复您的密码",
+      "joinButton": "加入联盟",
+      "creatingAccount": "正在创建账户...",
+      "passwordsDoNotMatch": "密码不匹配",
+      "emailAlreadyRegistered": "此电子邮件地址已在酷儿联盟注册。",
+      "registrationFailed": "注册失败。请重试。",
+      "alreadyHaveAccount": "已经有账户了？",
+      "signInHere": "在此登录"
+    },
+    "signUpSuccess": {
+      "readyToSignIn": "准备好登录了吗？",
+      "journeyBegins": "您的旅程现在开始",
+      "registrationSuccessful": "注册成功！",
+      "confirmationInstructions": "您已成功注册酷儿联盟。请检查您的电子邮件以确认您的账户，然后再登录。",
+      "whatsNext": "接下来做什么？",
+      "checkEmail": "检查您的电子邮箱",
+      "clickConfirmation": "点击确认链接",
+      "returnToSignIn": "返回此处登录",
+      "startJourney": "开始您的酷儿联盟之旅",
+      "noEmailReceived": "没有收到电子邮件？检查您的垃圾邮件文件夹或",
+      "tryAgain": "重试"
+    },
+    "forgotPassword": {
+      "title": "重置您的密码",
+      "description": "输入您的电子邮件，我们将向您发送一个安全链接以重置您的密码",
+      "successTitle": "检查您的电子邮件",
+      "successDescription": "密码重置链接已发送",
+      "successMessage": "我们已向您发送了一个安全链接以重置您的密码。点击链接设置您的新密码。",
+      "successInstructions": "接下来做什么：",
+      "step1": "检查您的电子邮箱（和垃圾邮件文件夹）",
+      "step2": "点击邮件中的“重置密码”链接",
+      "step3": "在安全重置页面上输入您的新密码",
+      "noEmail": "没有收到电子邮件？",
+      "resendLink": "发送另一封重置邮件",
+      "sending": "发送中...",
+      "sendResetEmail": "发送重置邮件",
+      "alreadyHaveAccount": "已经有账户了？"
+    },
+    "updatePassword": {
+      "title": "重置您的密码",
+      "description": "请在下方输入您的新密码。",
+      "newPassword": "新密码",
+      "newPasswordPlaceholder": "新密码",
+      "confirmNewPassword": "确认新密码",
+      "confirmNewPasswordPlaceholder": "确认您的新密码",
+      "saving": "保存中...",
+      "saveNewPassword": "保存新密码",
+      "verifyingLink": "正在验证您的重置链接...",
+      "authenticationRequired": "需要身份验证",
+      "passwordUpdated": "密码已更新！",
+      "passwordUpdatedSuccess": "您的密码已成功更新。正在将您重定向到您的仪表板。",
+      "redirectingMoment": "稍后将重定向..."
+    },
+    "signOut": {
+      "signingOut": "退出登录中...",
+      "signOutError": "退出登录失败。请重试。",
+      "signOutSuccess": "您已成功退出登录"
+    },
+    "errors": {
+      "genericError": "发生错误",
+      "invalidCredentials": "电子邮件或密码无效",
+      "emailRequired": "需要电子邮件",
+      "passwordRequired": "需要密码",
+      "codeError": "代码错误: {code}",
+      "codeErrorPrefix": "代码错误:",
+      "unspecifiedError": "发生未指定的错误。"
+    }
+  },
+  "settings": {
+    "title": "个人资料",
+    "subtitle": "管理您的个人资料信息和偏好",
+    "loading": "正在加载您的设置...",
+    "error": "加载设置失败",
+    "tryAgain": "重试",
+    "edit": "编辑",
+    "save": "保存",
+    "saving": "保存中...",
+    "cancel": "取消",
+    "notSet": "未设置",
+    "menu": {
+      "profile": "个人资料",
+      "contact": "联系方式",
+      "professional": "职业信息",
+      "participation": "角色",
+      "location": "位置",
+      "finance": "捐赠",
+      "settings": "设置"
+    },
+    "categories": {
+      "personal": {
+        "title": "个人信息"
+      },
+      "professional": {
+        "title": "职业信息",
+        "description": "您的工作和技能"
+      },
+      "location": {
+        "title": "位置",
+        "description": "您所在的地区"
+      },
+      "contact": {
+        "title": "联系信息",
+        "description": "我们如何联系您"
+      },
+      "participation": {
+        "title": "联盟角色",
+        "description": "选择您希望如何参与酷儿联盟"
+      },
+      "account": {
+        "title": "账户设置",
+        "description": "安全和账户管理"
+      },
+      "profile": {
+        "title": "个人资料信息",
+        "description": "您的基本个人资料详情"
+      },
+      "finance": {
+        "title": "捐赠",
+        "description": "管理您的订阅和账单"
+      }
+    },
+    "fields": {
+      "username": {
+        "label": "用户名",
+        "placeholder": "选择一个唯一的用户名",
+        "description": "每天只能更改一次。",
+        "autoGeneratedDescription": "此用户名是根据您的电子邮件自动生成的。您可以更改一次。",
+        "rateLimitError": "您每天只能更改一次用户名。",
+        "formatError": "用户名必须为6-30个字符长，且只能包含字母、数字、下划线和点"
+      },
+      "firstName": {
+        "label": "名",
+        "placeholder": "您的名",
+        "description": "可选",
+        "rateLimitError": "您只能更改3次您的名。"
+      },
+      "lastName": {
+        "label": "姓",
+        "placeholder": "您的姓",
+        "description": "可选",
+        "rateLimitError": "您只能更改3次您的姓。"
+      },
+      "language": {
+        "label": "语言"
+      },
+      "bio": {
+        "label": "个人简介",
+        "placeholder": "写一个简短的个人简介...",
+        "description": "",
+        "rateLimitError": "您每天只能更改10次个人简介"
+      },
+      "website": {
+        "label": "网站",
+        "placeholder": "https://your-website.com",
+        "description": "",
+        "rateLimitError": "您每天只能更改5次网站",
+        "formatError": "格式错误。示例: https://your-website.com"
+      },
+      "phone": {
+        "label": "电话号码",
+        "placeholder": "您的电话号码",
+        "description": "可选字段，初次输入后最多可更改2次。",
+        "rateLimitError": "初次输入后，您只能更改2次电话号码",
+        "formatError": "格式错误。示例: +8613812345678"
+      },
+      "contactComment": {
+        "label": "布拉迪斯拉发骄傲与联系评论",
+        "placeholder": "如果您想了解有关布拉迪斯拉发骄傲节的更多信息，请在此评论字段中写信给我们。否则，请给我们留言说明您的联系方式。",
+        "description": "用于联系目的的附加信息"
+      },
+      "professionalComment": {
+        "label": "职业评论",
+        "placeholder": "关于您职业的附加评论...",
+        "description": "关于您职业经历的开放式评论"
+      },
+      "profession": {
+        "label": "职业",
+        "placeholder": "搜索您的职业..."
+      },
+      "organization": {
+        "label": "组织",
+        "placeholder": "您的组织名称（雇主、企业名称等）"
+      },
+      "experienceLevel": {
+        "label": "经验水平"
+      },
+      "skills": {
+        "label": "技能与能力",
+        "description": "添加您拥有的任何技能 - 从技术技能到爱好和生活技能",
+        "placeholder": "例如，烹饪、JavaScript、园艺、文献综述..."
+      },
+      "country": {
+        "label": "国家",
+        "description": "选择您的居住国家"
+      },
+      "region": {
+        "label": "地区/省份",
+        "description": "选择您的地区或省份",
+        "placeholder": "选择地区/省份"
+      },
+      "city": {
+        "label": "城市",
+        "placeholder": "您的城市"
+      },
+      "email": {
+        "label": "电子邮件地址",
+        "description": "更改您的电子邮件地址",
+        "confirmationRequired": "您需要确认您的新电子邮件地址",
+        "placeholder": "your.email@example.com",
+        "emailRequired": "需要电子邮件"
+      },
+      "password": {
+        "label": "密码",
+        "description": "更改您的密码",
+        "currentPassword": "当前密码",
+        "newPassword": "新密码",
+        "newPasswordRequired": "需要新密码",
+        "confirmNewPassword": "确认新密码",
+        "confirmNewPasswordPlaceholder": "确认您的新密码",
+        "newPasswordPlaceholder": "输入您的新密码"
+      }
+    },
+    "consent": {
+      "title": "联系权限",
+      "directContact": {
+        "label": "允许直接联系",
+        "description": "我同意在酷儿联盟内部接收机会联系"
+      },
+      "newsletter": {
+        "label": "电子邮件通讯",
+        "description": "我同意接收通讯和信息"
+      },
+      "privacyNotice": "您可以随时更改这些权限。我们尊重您的隐私并遵循GDPR指南。",
+      "consentTimestamp": "同意于: {timestamp}",
+      "lastUpdated": "最后更新: {timestamp}"
+    },
+    "professional": {
+      "organizationRepresentative": {
+        "label": "我代表一个组织",
+        "description": "我同意作为组织代表被直接联系"
+      }
+    },
+    "participation": {
+      "title": "选择您的参与角色",
+      "description": "根据您的可用性、技能、网络、时间或目标，选择一个或多个参与角色（非约束性）。您可以选择多个角色<strong>并可随时更改</strong>。",
+      "roles": {
+        "member": {
+          "title": "成员",
+          "description": "我想以不同方式作为成员参与"
+        },
+        "expert": {
+          "title": "专家",
+          "description": "我想在特定领域问题上为联盟提供建议"
+        },
+        "activist": {
+          "title": "活动家",
+          "description": "我想帮助联盟创造可见性和影响力"
+        },
+        "supporter": {
+          "title": "支持者",
+          "description": "我想在经济上支持酷儿联盟"
+        }
+      }
+    },
+    "account": {
+      "changeEmail": {
+        "title": "更改电子邮件地址",
+        "button": "更改电子邮件",
+        "success": "电子邮件更改已启动。请检查您的电子邮件以确认。"
+      },
+      "changePassword": {
+        "title": "更改密码",
+        "button": "更改密码",
+        "success": "密码更新成功"
+      },
+      "deleteAccount": {
+        "title": "删除账户",
+        "description": "永久删除您的个人资料和所有相关数据",
+        "button": "删除账户",
+        "confirmText": "DELETE",
+        "confirmPlaceholder": "输入 DELETE 以确认",
+        "warning": "此操作无法撤销。您的所有数据将被永久删除。",
+        "subscriptionWarning": "重要提示：请在删除账户前取消所有有效订阅。如果您在未取消订阅的情况下删除账户，您必须联系管理员手动为您取消。",
+        "success": "账户删除成功"
+      }
+    },
+    "options": {
+      "experienceLevel": {
+        "intern": "实习生",
+        "entry": "初级 (0-2年)",
+        "mid": "中级 (3-5年)",
+        "senior": "高级 (6-10年)",
+        "lead": "主管/首席 (10年以上)",
+        "executive": "行政/C级"
+      }
+    },
+    "profile": {
+      "title": "个人资料信息",
+      "description": "您的基本账户信息",
+      "email": "电子邮件",
+      "memberSince": "成为会员自",
+      "lastUpdated": "最后更新",
+      "profileCompletion": "个人资料完成度"
+    },
+    "loadingStates": {
+      "saving": "保存中...",
+      "updatingSettings": "正在更新您的设置",
+      "deletingAccount": "正在删除账户...",
+      "deletingWarning": "此操作无法撤销",
+      "autoNavigating": "自动导航中...",
+      "nextSection": "下一部分",
+      "loadingCountries": "正在加载国家...",
+      "loadingRegions": "正在加载地区...",
+      "loadingCities": "正在加载城市...",
+      "loadingSupportStatus": "正在加载您的支持状态...",
+      "loadingPlans": "正在加载计划..."
+    },
+    "errors": {
+      "rateLimitExceeded": "此字段超出速率限制",
+      "changeLimitExceeded": "此字段超出更改限制",
+      "invalidInput": "无效输入",
+      "saveFailed": "保存更改失败",
+      "loadFailed": "加载数据失败",
+      "failedToChangeEmail": "更改电子邮件失败",
+      "failedToChangePassword": "更改密码失败",
+      "maximumCharacters": "最多允许 {maxLength} 个字符",
+      "validation": {
+        "invalidLanguageCode": "无效的语言代码",
+        "invalidExperienceLevel": "无效的经验水平",
+        "skillsMustBeArray": "技能必须是一个数组",
+        "bioTooLong": "个人简介太长（最多500个字符）",
+        "invalidWebsite": "网站必须以 http:// 或 https:// 开头，并具有有效的域名（例如，https://a.co）",
+        "invalidPreferencesStructure": "无效的偏好结构"
+      }
+    },
+    "finance": {
+      "title": "财务与账单",
+      "description": "管理您的订阅和账单偏好",
+      "current": "当前订阅",
+      "loading": "正在加载订阅...",
+      "manage": "管理订阅",
+      "upgrade": "升级计划",
+      "billing": "账单历史",
+      "thankYouSupport": "感谢您支持联盟！",
+      "considerSupporting": "考虑支持这项事业",
+      "premiumFeatures": "高级功能和支持",
+      "processing": "处理中...",
+      "contributeNow": "立即贡献",
+      "changeSupportLevel": "更改支持级别",
+      "startSupporting": "开始支持",
+      "noPlansAvailable": "无可用计划",
+      "manageSubscriptionDescription": "管理您的订阅、查看发票并更新账单信息",
+      "accessAccountDescription": "访问您的账户设置、支付方式和账单信息",
+      "manageSubscriptionBilling": "管理订阅与账单",
+      "accessBillingPortal": "访问账单门户",
+      "stripePortalDescription": "由 Stripe 的安全账单门户提供支持：管理支付方式、查看发票、更新账单地址等",
+      "currentSupportStatus": "当前支持状态",
+      "activeSubscription": "✓ 有效订阅",
+      "statusLabel": "状态:",
+      "nextBilling": "下次账单:",
+      "oneTimeContributionMade": "✓ 已进行一次性贡献",
+      "successfulContribution": "您已成功为这项事业做出贡献",
+      "noActiveSupport": "⚠ 无有效支持",
+      "chooseSupportOption": "在下方选择一个支持选项以帮助资助酷儿联盟",
+      "waysToSupport": "支持这项事业的方式",
+      "chooseAmountStripe": "您在 Stripe 的安全结账中选择金额",
+      "perInterval": "每 {interval}",
+      "plansAvailableOnce": "计划在 Stripe 中创建后将显示在此处",
+      "billingAccountManagement": "账单与账户管理",
+      "payAsYouWish": "随心支付",
+      "oneTime": "一次性",
+      "plans": {
+        "basic": {
+          "name": "基础版",
+          "description": "入门基本功能",
+          "price": "¥68/月"
+        },
+        "pro": {
+          "name": "专业版",
+          "description": "为活跃成员提供的高级功能",
+          "price": "¥138/月"
+        },
+        "expert": {
+          "name": "专家版",
+          "description": "完全访问权限和优先支持",
+          "price": "¥268/月"
+        },
+        "lifetime": {
+          "name": "终身访问",
+          "description": "一次性支付永久访问",
+          "price": "¥1998"
+        }
+      },
+      "error": "加载订阅信息失败",
+      "messages": {
+        "paymentSuccessSyncing": "支付成功！正在同步您的数据...",
+        "paymentSuccessActivated": "支付成功！您的订阅已激活。",
+        "paymentCanceled": "支付已取消。您可以随时重试。",
+        "welcomeBackSyncing": "欢迎回来！正在同步您的账单数据...",
+        "welcomeBackUpdated": "欢迎回来！您的账单信息已更新。"
+      }
+    }
+  },
+  "languageSwitcher": {
+    "selectLanguage": "选择语言",
+    "updating": "正在更新语言..."
+  },
+  "theme": {
+    "light": "浅色",
+    "dark": "深色",
+    "system": "系统"
+  },
+  "languages": {
+    "en": "English",
+    "de": "Deutsch",
+    "fr": "Français",
+    "es": "Español",
+    "it": "Italiano",
+    "pt": "Português",
+    "nl": "Nederlands",
+    "pl": "Polski",
+    "ru": "Русский",
+    "ja": "日本語",
+    "ko": "한국어",
+    "zh": "中文",
+    "ar": "العربية",
+    "hi": "हिन्दी"
+  },
+  "professions": {
+    "chief-executive": "首席执行官",
+    "administration-and-planning-manager": "行政与规划经理",
+    "policy-and-planning-manager": "政策与规划经理",
+    "business-services-and-administration-manager": "商业服务与行政经理",
+    "sales-marketing-and-development-manager": "销售、市场与发展经理",
+    "production-and-specialized-services-manager": "生产与专业服务经理",
+    "hospitality-retail-and-other-services-manager": "酒店、零售与其他服务经理",
+    "science-and-engineering-professional": "科学与工程专业人士",
+    "software-developer": "软件开发者",
+    "systems-analyst": "系统分析师",
+    "database-designer": "数据库设计师",
+    "network-professional": "网络专业人士",
+    "health-professional": "健康专业人士",
+    "doctor": "医生",
+    "nurse": "护士",
+    "pharmacist": "药剂师",
+    "veterinarian": "兽医",
+    "teaching-professional": "教学专业人士",
+    "professor": "教授",
+    "secondary-education-teacher": "中学教师",
+    "primary-school-teacher": "小学教师",
+    "business-and-administration-professional": "商业与行政专业人士",
+    "accountant": "会计师",
+    "financial-analyst": "金融分析师",
+    "human-resources-professional": "人力资源专业人士",
+    "information-and-communications-technology-professional": "信息与通信技术专业人士",
+    "legal-professional": "法律专业人士",
+    "lawyer": "律师",
+    "judge": "法官",
+    "culture-arts-and-design-professional": "文化、艺术与设计专业人士",
+    "author": "作家",
+    "journalist": "记者",
+    "artist": "艺术家",
+    "designer": "设计师",
+    "science-and-engineering-associate-professional": "科学与工程助理专业人士",
+    "engineering-technician": "工程技术员",
+    "drafter": "绘图员",
+    "health-associate-professional": "健康助理专业人士",
+    "medical-technician": "医疗技术员",
+    "nursing-associate-professional": "护理助理专业人士",
+    "business-and-administration-associate-professional": "商业与行政助理专业人士",
+
+    "insurance-representative": "保险代表",
+    "estate-agent": "房地产经纪人",
+    "legal-social-and-cultural-associate-professional": "法律、社会与文化助理专业人士",
+    "legal-associate-professional": "法律助理专业人士",
+    "social-worker": "社会工作者",
+    "information-and-communications-technician": "信息与通信技术员",
+    "computer-technician": "计算机技术员",
+    "telecommunications-technician": "电信技术员",
+    "general-and-keyboard-clerk": "普通与键盘文员",
+    "secretary": "秘书",
+    "data-entry-clerk": "数据录入员",
+    "customer-services-clerk": "客户服务文员",
+    "customer-service-representative": "客户服务代表",
+    "receptionist": "接待员",
+    "numerical-and-material-recording-clerk": "数字与材料记录文员",
+    "accounting-associate-professional": "会计助理专业人士",
+    "bookkeeper": "簿记员",
+    "other-clerical-support-worker": "其他文书支持人员",
+    "mail-carrier": "邮递员",
+    "filing-clerk": "档案管理员",
+    "personal-service-worker": "个人服务工作者",
+    "travel-attendant": "旅行服务员",
+    "cook": "厨师",
+    "waiter": "服务员",
+    "hairdresser": "理发师",
+    "housekeeper": "管家",
+    "protective-services-worker": "保护服务工作者",
+    "security-guard": "保安",
+    "police-officer": "警察",
+    "firefighter": "消防员",
+    "sales-worker": "销售人员",
+    "shop-salesperson": "商店销售员",
+    "cashier": "收银员",
+    "sales-representative": "销售代表",
+    "market-oriented-skilled-agricultural-worker": "市场导向型熟练农业工人",
+    "farmer": "农民",
+    "livestock-producer": "畜牧生产者",
+    "crop-grower": "作物种植者",
+    "market-oriented-skilled-forestry-fishery-and-hunting-worker": "市场导向型熟练林业、渔业和狩猎工人",
+    "logger": "伐木工",
+    "fisherman": "渔夫",
+    "subsistence-farmer-fisherman-hunter-and-gatherer": "自给自足的农民、渔夫、猎人和采集者",
+    "building-and-related-trades-worker": "建筑及相关行业工人",
+    "carpenter": "木匠",
+    "electrician": "电工",
+    "plumber": "水管工",
+    "painter": "油漆工",
+    "metal-machinery-and-related-trades-worker": "金属、机械及相关行业工人",
+    "welder": "焊工",
+    "machinist": "机械师",
+    "mechanic": "技工",
+    "handicraft-and-printing-worker": "手工艺和印刷工人",
+    "potter": "陶艺家",
+    "tailor": "裁缝",
+    "printer": "印刷工",
+    "electrical-and-electronic-trades-worker": "电气和电子行业工人",
+    "food-processing-woodworking-garment-and-other-craft-and-related-trades-worker": "食品加工、木工、服装及其他工艺及相关行业工人",
+    "stationary-plant-and-machine-operator": "固定设备和机器操作员",
+    "power-plant-operator": "发电厂操作员",
+    "machine-operator": "机器操作员",
+    "assembler": "装配工",
+    "product-assembler": "产品装配工",
+    "electronics-assembler": "电子装配工",
+    "driver-and-mobile-plant-operator": "司机和移动设备操作员",
+    "truck-driver": "卡车司机",
+    "bus-driver": "公交车司机",
+    "taxi-driver": "出租车司机",
+    "cleaner-and-helper": "清洁工和帮工",
+    "domestic-helper": "家政服务员",
+    "building-cleaner": "建筑清洁工",
+    "kitchen-helper": "厨房帮工",
+    "agricultural-forestry-and-fishery-laborer": "农业、林业和渔业劳动者",
+    "farm-worker": "农场工人",
+    "gardener": "园丁",
+    "laborer-in-mining-construction-manufacturing-and-transport": "矿业、建筑、制造和运输业劳动者",
+    "construction-laborer": "建筑工人",
+    "factory-worker": "工厂工人",
+    "food-preparation-assistant": "食品准备助理",
+    "street-and-related-service-worker": "街道及相关服务工作者",
+    "content-creator": "内容创作者",
+    "social-media-manager": "社交媒体经理",
+    "digital-marketing-specialist": "数字营销专员",
+    "uxui-designer": "UX/UI 设计师",
+    "data-scientist": "数据科学家",
+    "machine-learning-engineer": "机器学习工程师",
+    "devops-engineer": "DevOps 工程师",
+    "product-manager": "产品经理",
+    "consultant": "顾问",
+    "entrepreneur": "企业家",
+    "freelancer": "自由职业者",
+    "student": "学生",
+    "retired": "退休人员",
+    "unemployed": "失业人员",
+    "other": "其他"
+  },
+  "skills": {
+    "javascript": "JavaScript",
+    "typescript": "TypeScript",
+    "python": "Python",
+    "java": "Java",
+    "c#": "C#",
+    "c++": "C++",
+    "go": "Go",
+    "rust": "Rust",
+    "php": "PHP",
+    "ruby": "Ruby",
+    "swift": "Swift",
+    "kotlin": "Kotlin",
+    "react": "React",
+    "vuejs": "Vue.js",
+    "angular": "Angular",
+    "svelte": "Svelte",
+    "nextjs": "Next.js",
+    "nodejs": "Node.js",
+    "expressjs": "Express.js",
+    "django": "Django",
+    "flask": "Flask",
+    "postgresql": "PostgreSQL",
+    "mysql": "MySQL",
+    "mongodb": "MongoDB",
+    "redis": "Redis",
+    "aws": "AWS",
+    "azure": "Azure",
+    "google-cloud": "Google Cloud",
+    "docker": "Docker",
+    "kubernetes": "Kubernetes",
+    "machine-learning": "机器学习",
+    "artificial-intelligence": "人工智能",
+    "data-science": "数据科学",
+    "data-analysis": "数据分析",
+    "statistics": "统计学",
+    "cybersecurity": "网络安全",
+    "network-administration": "网络管理",
+    "database-administration": "数据库管理",
+    "system-administration": "系统管理",
+    "web-development": "Web 开发",
+    "mobile-development": "移动开发",
+    "game-development": "游戏开发",
+    "software-testing": "软件测试",
+    "devops": "DevOps",
+    "graphic-design": "平面设计",
+    "uiux-design": "UI/UX 设计",
+    "web-design": "网页设计",
+    "brand-design": "品牌设计",
+    "logo-design": "标志设计",
+    "typography": "排版学",
+    "adobe-photoshop": "Adobe Photoshop",
+    "adobe-illustrator": "Adobe Illustrator",
+    "figma": "Figma",
+    "sketch": "Sketch",
+    "canva": "Canva",
+    "video-editing": "视频编辑",
+    "animation": "动画",
+    "photography": "摄影",
+    "digital-photography": "数码摄影",
+    "portrait-photography": "人像摄影",
+    "landscape-photography": "风景摄影",
+    "photo-editing": "照片编辑",
+    "drawing": "绘画",
+    "painting": "油画",
+    "digital-art": "数字艺术",
+    "illustration": "插画",
+    "sculpture": "雕塑",
+    "ceramics": "陶瓷",
+    "jewelry-making": "珠宝制作",
+    "3d-modeling": "3D 建模",
+    "cad-design": "CAD 设计",
+    "industrial-design": "工业设计",
+    "interior-design": "室内设计",
+    "fashion-design": "时装设计",
+    "project-management": "项目管理",
+    "product-management": "产品管理",
+    "business-analysis": "商业分析",
+    "strategic-planning": "战略规划",
+    "leadership": "领导力",
+    "team-management": "团队管理",
+    "human-resources": "人力资源",
+    "recruitment": "招聘",
+    "sales": "销售",
+    "marketing": "市场营销",
+    "digital-marketing": "数字营销",
+    "social-media-marketing": "社交媒体营销",
+    "content-marketing": "内容营销",
+    "email-marketing": "电子邮件营销",
+    "seo": "搜索引擎优化",
+    "sem": "搜索引擎营销",
+    "ppc-advertising": "PPC 广告",
+    "financial-analysis": "财务分析",
+    "accounting": "会计",
+    "bookkeeping": "簿记",
+    "budgeting": "预算编制",
+    "investment-analysis": "投资分析",
+    "risk-management": "风险管理",
+    "supply-chain-management": "供应链管理",
+    "operations-management": "运营管理",
+    "quality-assurance": "质量保证",
+    "process-improvement": "流程改进",
+    "business-development": "业务发展",
+    "negotiation": "谈判",
+    "contract-management": "合同管理",
+    "vendor-management": "供应商管理",
+    "public-speaking": "公开演讲",
+    "presentation-skills": "演讲技巧",
+    "technical-writing": "技术写作",
+    "creative-writing": "创意写作",
+    "copywriting": "文案写作",
+    "content-creation": "内容创作",
+    "journalism": "新闻学",
+    "blogging": "博客写作",
+    "editing": "编辑",
+    "proofreading": "校对",
+    "translation": "翻译",
+    "interpretation": "口译",
+    "customer-service": "客户服务",
+    "client-relations": "客户关系",
+    "conflict-resolution": "冲突解决",
+    "mediation": "调解",
+    "storytelling": "讲故事",
+    "interviewing": "面试技巧",
+    "active-listening": "积极倾听",
+    "cross-cultural-communication": "跨文化交流",
+    "teaching": "教学",
+    "training-development": "培训与发展",
+    "curriculum-design": "课程设计",
+    "educational-technology": "教育技术",
+    "e-learning": "电子学习",
+    "mentoring": "指导",
+    "coaching": "教练",
+    "workshop-facilitation": "工作坊引导",
+    "adult-education": "成人教育",
+    "child-development": "儿童发展",
+    "special-education": "特殊教育",
+    "educational-assessment": "教育评估",
+    "research-methods": "研究方法",
+    "academic-writing": "学术写作",
+    "first-aid": "急救",
+    "cpr": "心肺复苏",
+    "medical-knowledge": "医学知识",
+    "nursing": "护理",
+    "physical-therapy": "物理治疗",
+    "mental-health-support": "心理健康支持",
+    "nutrition": "营养学",
+    "fitness-training": "健身训练",
+    "yoga": "瑜伽",
+    "meditation": "冥想",
+    "mindfulness": "正念",
+    "stress-management": "压力管理",
+    "health-coaching": "健康教练",
+    "massage-therapy": "按摩疗法",
+    "acupuncture": "针灸",
+    "herbal-medicine": "草药医学",
+    "alternative-medicine": "替代医学",
+    "carpentry": "木工",
+    "plumbing": "管道工程",
+    "electrical-work": "电气工作",
+    "hvac": "暖通空调",
+    "welding": "焊接",
+    "automotive-repair": "汽车维修",
+    "motorcycle-repair": "摩托车维修",
+    "appliance-repair": "家电维修",
+    "computer-repair": "计算机维修",
+    "electronics-repair": "电子维修",
+    "decorating": "装饰",
+    "tiling": "铺瓦",
+    "roofing": "屋顶工程",
+    "masonry": "砌体工程",
+    "landscaping": "景观设计",
+    "construction": "建筑",
+    "home-improvement": "家居改善",
+    "furniture-making": "家具制作",
+    "cooking": "烹饪",
+    "baking": "烘焙",
+    "pastry-making": "糕点制作",
+    "food-preparation": "食品准备",
+    "menu-planning": "菜单规划",
+    "recipe-development": "食谱开发",
+    "food-safety": "食品安全",
+    "kitchen-management": "厨房管理",
+    "wine-knowledge": "葡萄酒知识",
+    "bartending": "调酒",
+    "coffee-making": "咖啡制作",
+    "brewing": "酿造",
+    "food-photography": "美食摄影",
+    "catering": "餐饮服务",
+    "meal-planning": "膳食计划",
+    "nutrition-planning": "营养规划",
+    "dietary-planning": "饮食规划",
+    "music-production": "音乐制作",
+    "audio-engineering": "音频工程",
+    "music-composition": "音乐作曲",
+    "singing": "唱歌",
+    "guitar": "吉他",
+    "piano": "钢琴",
+    "drums": "鼓",
+    "violin": "小提琴",
+    "bass": "贝斯",
+    "saxophone": "萨克斯管",
+    "music-theory": "乐理",
+    "sound-design": "声音设计",
+    "podcast-production": "播客制作",
+    "acting": "表演",
+    "theater": "戏剧",
+    "film-making": "电影制作",
+    "screenwriting": "剧本写作",
+    "video-production": "视频制作",
+    "broadcasting": "广播",
+    "stand-up-comedy": "单口喜剧",
+    "improvisation": "即兴表演",
+    "dance": "舞蹈",
+    "ballet": "芭蕾",
+    "hip-hop": "嘻哈",
+    "salsa": "萨尔萨舞",
+    "ballroom-dancing": "交谊舞",
+    "football": "美式足球",
+    "basketball": "篮球",
+    "soccer": "足球",
+    "tennis": "网球",
+    "golf": "高尔夫",
+    "swimming": "游泳",
+    "running": "跑步",
+    "cycling": "骑行",
+    "hiking": "徒步",
+    "rock-climbing": "攀岩",
+    "skiing": "滑雪",
+    "snowboarding": "单板滑雪",
+    "surfing": "冲浪",
+    "martial-arts": "武术",
+    "boxing": "拳击",
+    "wrestling": "摔跤",
+    "gymnastics": "体操",
+    "track-and-field": "田径",
+    "baseball": "棒球",
+    "volleyball": "排球",
+    "badminton": "羽毛球",
+    "table-tennis": "乒乓球",
+    "sports-coaching": "体育教练",
+    "personal-training": "私人教练",
+    "athletic-training": "运动训练",
+    "camping": "露营",
+    "backpacking": "背包旅行",
+    "fishing": "钓鱼",
+    "hunting": "狩猎",
+    "map-reading": "地图阅读",
+    "orienteering": "定向越野",
+    "wilderness-survival": "野外生存",
+    "fire-making": "生火",
+    "foraging": "觅食",
+    "knot-tying": "绳结",
+    "rope-work": "绳索作业",
+    "sailing": "帆船",
+    "kayaking": "皮划艇",
+    "canoeing": "独木舟",
+    "mountain-climbing": "登山",
+    "cave-exploration": "洞穴探险",
+    "wildlife-tracking": "野生动物追踪",
+    "gardening": "园艺",
+    "organic-gardening": "有机园艺",
+    "hydroponics": "水培",
+    "permaculture": "永续农业",
+    "composting": "堆肥",
+    "plant-propagation": "植物繁殖",
+    "tree-care": "树木护理",
+    "flower-arranging": "插花",
+    "botanical-knowledge": "植物学知识",
+    "pest-management": "害虫管理",
+    "soil-management": "土壤管理",
+    "irrigation": "灌溉",
+    "greenhouse-management": "温室管理",
+    "urban-farming": "城市农业",
+    "beekeeping": "养蜂",
+    "knitting": "针织",
+    "crocheting": "钩针",
+    "sewing": "缝纫",
+    "quilting": "绗缝",
+    "embroidery": "刺绣",
+    "cross-stitch": "十字绣",
+    "woodworking": "木工",
+    "metalworking": "金工",
+    "glassblowing": "玻璃吹制",
+    "pottery": "陶艺",
+    "candle-making": "蜡烛制作",
+    "soap-making": "肥皂制作",
+    "leatherworking": "皮革工艺",
+    "bookbinding": "书籍装订",
+    "origami": "折纸",
+    "calligraphy": "书法",
+    "scrapbooking": "剪贴簿",
+    "model-building": "模型制作",
+    "data-collection": "数据收集",
+    "statistical-analysis": "统计分析",
+    "literature-review": "文献综述",
+    "critical-thinking": "批判性思维",
+    "problem-solving": "解决问题",
+    "mathematical-modeling": "数学建模",
+    "scientific-method": "科学方法",
+    "laboratory-skills": "实验室技能",
+    "microscopy": "显微镜学",
+    "spectroscopy": "光谱学",
+    "chemical-analysis": "化学分析",
+    "fieldwork": "实地考察",
+    "survey-design": "调查设计",
+    "grant-writing": "拨款申请写作",
+    "time-management": "时间管理",
+    "organization": "组织能力",
+    "goal-setting": "目标设定",
+    "self-discipline": "自律",
+    "emotional-intelligence": "情商",
+    "decision-making": "决策能力",
+    "creative-thinking": "创造性思维",
+    "innovation": "创新",
+    "adaptability": "适应性",
+    "resilience": "韧性",
+    "self-motivation": "自我激励",
+    "continuous-learning": "持续学习",
+    "self-reflection": "自我反思",
+    "networking": "人脉建立",
+    "relationship-building": "关系建立",
+    "empathy": "同理心",
+    "cultural-sensitivity": "文化敏感性",
+    "team-collaboration": "团队协作",
+    "volunteer-coordination": "志愿者协调",
+    "community-organizing": "社区组织",
+    "event-planning": "活动策划",
+    "party-planning": "派对策划",
+    "hospitality": "待客之道",
+    "customer-relations": "客户关系",
+    "diplomacy": "外交手腕",
+    "persuasion": "说服力",
+    "influence": "影响力",
+    "social-media-engagement": "社交媒体互动",
+    "computer-literacy": "计算机知识",
+    "internet-research": "互联网研究",
+    "email-management": "邮件管理",
+    "social-media-management": "社交媒体管理",
+    "online-marketing": "在线营销",
+    "e-commerce": "电子商务",
+    "digital-privacy": "数字隐私",
+    "cybersecurity-awareness": "网络安全意识",
+    "podcast-creation": "播客创作",
+    "youtube-creation": "YouTube 创作",
+    "live-streaming": "直播",
+    "online-teaching": "在线教学",
+    "virtual-collaboration": "虚拟协作",
+    "driving": "驾驶",
+    "truck-driving": "卡车驾驶",
+    "motorcycle-riding": "摩托车骑行",
+    "bicycle-maintenance": "自行车维修",
+    "navigation": "导航",
+    "route-planning": "路线规划",
+    "logistics-coordination": "物流协调",
+    "warehouse-management": "仓库管理",
+    "inventory-management": "库存管理",
+    "shipping-and-receiving": "收发货",
+    "personal-finance": "个人理财",
+    "investment-planning": "投资规划",
+    "tax-preparation": "税务准备",
+    "insurance-knowledge": "保险知识",
+    "real-estate": "房地产",
+    "cryptocurrency": "加密货币",
+    "trading": "交易",
+    "financial-planning": "财务规划",
+    "retirement-planning": "退休规划",
+    "debt-management": "债务管理",
+    "spanish": "西班牙语",
+    "french": "法语",
+    "german": "德语",
+    "italian": "意大利语",
+    "portuguese": "葡萄牙语",
+    "russian": "俄语",
+    "chinese": "中文",
+    "japanese": "日语",
+    "korean": "韩语",
+    "arabic": "阿拉伯语",
+    "hindi": "印地语",
+    "dutch": "荷兰语",
+    "swedish": "瑞典语",
+    "norwegian": "挪威语",
+    "danish": "丹麦语",
+    "finnish": "芬兰语",
+    "polish": "波兰语",
+    "turkish": "土耳其语",
+    "magic-tricks": "魔术",
+    "juggling": "杂耍",
+    "balloon-animals": "气球动物",
+    "face-painting": "面部彩绘",
+    "card-games": "纸牌游戏",
+    "board-games": "棋盘游戏",
+    "chess": "国际象棋",
+    "bridge": "桥牌",
+    "poker": "扑克",
+    "trivia-knowledge": "知识问答",
+    "speed-reading": "速读",
+    "memory-techniques": "记忆技巧",
+    "escape-rooms": "密室逃脱",
+    "puzzle-solving": "解谜",
+    "crossword-puzzles": "填字游戏",
+    "sudoku": "数独",
+    "word-games": "文字游戏"
+  },
+  "common": {
+    "add": "添加",
+    "remove": "移除",
+    "search": "搜索",
+    "select": "选择",
+    "loading": "加载中...",
+    "error": "错误",
+    "success": "成功",
+    "yes": "是",
+    "no": "否",
+    "ok": "确定",
+    "close": "关闭",
+    "submit": "提交",
+    "reset": "重置",
+    "clear": "清除",
+    "next": "下一步",
+    "previous": "上一步",
+    "back": "返回",
+    "forward": "前进",
+    "help": "帮助",
+    "about": "关于"
+  },
+  "privacyPolicy": {
+    "title": "隐私政策",
+    "lastUpdated": "最后更新: 2025年6月",
+    "introduction": {
+      "title": "隐私政策",
+      "content": "本隐私政策解释了当您使用我们的平台和服务时，酷儿联盟（“我们”、“我们的”）如何收集、使用、分享和保护您的个人信息。我们致力于保护您的隐私，并维护您在与我们社区平台互动时对我们的信任。",
+      "keyPrivacyFeaturesTitle": "主要隐私特性:",
+      "keyPoints": "<strong>主要隐私特性:</strong><br>• <strong>完全控制</strong>: 从您的个人资料设置中即时删除您的整个账户和所有数据<br>• <strong>精细同意</strong>: 精确选择您接收的通讯内容<br>• <strong>数据透明</strong>: 清楚解释我们收集哪些数据及其原因<br>• <strong>欧盟保护</strong>: 托管在欧盟，完全符合GDPR和奥地利数据保护法<br>• <strong>无数据销售</strong>: 我们绝不向第三方出售您的个人信息"
+    },
+    "controllerInfo": {
+      "title": "1. 数据控制者信息",
+      "content": "我们是负责您个人信息的数据控制者。您可以通过以下方式就任何隐私事宜与我们联系：",
+      "contact": "数据保护官: admin@queer-Deep Resirch.com"
+    },
+    "legalBasis": {
+      "title": "2. 处理的法律依据",
+      "content": "我们根据GDPR第6条的以下法律依据处理您的个人数据：",
+      "consent": "• <strong>您的同意</strong>: 仅用于通讯订阅和直接沟通",
+      "contract": "• <strong>合同必要性</strong>: 提供我们的平台服务并促进社区联系",
+      "legitimateInterest": "• <strong>合法利益</strong>: 运营和改进我们的平台，确保社区安全，并促进社区内有意义的联系。我们的合法利益与您的隐私权相平衡。",
+      "legalObligation": "• <strong>法律义务</strong>: 遵守适用的法律法规",
+      "vitalInterests": "• <strong>重大利益</strong>: 在极少数情况下保护某人的生命或身体安全"
+    },
+    "dataCollection": {
+      "title": "3. 我们收集的信息",
+      "profileData": {
+        "title": "个人资料信息 (内容与原因)",
+        "content": "• <strong>电子邮件地址</strong> (必需): 账户创建、认证、关键通讯、密码重置<br>• <strong>用户名</strong>: 社区互动和个人资料展示的唯一标识符<br>• <strong>姓名</strong> (名/姓, 可选): 个性化问候、社区认可、促进社交<br>• <strong>电话号码</strong> (可选): 紧急联系、双因素认证、高级支持<br>• <strong>个人简介和网站</strong> (可选): 社区社交、技能展示、专业联系<br>• <strong>技能和能力</strong>: 匹配相关机会、项目协作、专业知识识别<br>• <strong>职业信息</strong>: 职业社交、专业知识验证、合作机会<br>• <strong>参与偏好</strong>: 角色匹配（成员、专家、活动家、支持者）、活动推荐<br>• <strong>位置</strong> (国家/州/市): 本地活动通知、区域社区建设、法律合规<br>• <strong>通讯偏好</strong>: 尊重同意选择、个性化通讯频率"
+      },
+      "usageData": {
+        "title": "技术数据 (仅用于安全与功能)",
+        "content": "• <strong>IP地址</strong>: 安全监控、欺诈预防、遵守区域法律<br>• <strong>浏览器/设备信息</strong>: 兼容性优化、安全验证、响应式设计<br>• <strong>会话数据</strong>: 认证状态、登录安全、为保护自动登出<br>• <strong>错误日志</strong>: 技术问题解决、平台稳定性监控、错误修复<br>• <strong>注意</strong>: 我们不追踪个人活动模式、页面访问或互动数据"
+      },
+      "paymentData": {
+        "title": "支付信息 (内容与方式)",
+        "content": "• <strong>交易记录</strong>: 捐赠历史、订阅状态、账单核对<br>• <strong>支付元数据</strong>: 交易ID、金额、货币、日期用于财务报告<br>• <strong>Stripe集成</strong>: 支付处理由Stripe负责，符合PCI DSS标准<br>• <strong>账单地址</strong>: 税务计算、欺诈预防、法规遵从<br>• <strong>订阅详情</strong>: 服务级别管理、续订处理、使用情况跟踪<br>• <strong>注意</strong>: 我们绝不存储信用卡号、CVV码或敏感支付数据"
+      },
+      "consentData": {
+        "title": "同意数据 (您的通讯偏好)",
+        "content": "• <strong>直接联系</strong>: 同意在酷儿联盟内部接收机会联系<br>• <strong>通讯</strong>: 同意接收通讯和信息（非营销）<br>• <strong>组织代表</strong>: 同意作为组织代表被直接联系<br>• <strong>同意历史</strong>: 您的偏好更改的时间戳和记录 (GDPR合规)"
+      }
+    },
+    "purposes": {
+      "title": "4. 我们如何使用您的信息 (详细目的)",
+      "community": "• <strong>社区建设</strong>: 基于技能的成员匹配、本地活动推荐、导师联系、基于共同兴趣和位置的合作机会",
+      "personalization": "• <strong>个性化体验</strong>: 基于参与角色的内容策划、匹配您技能的活动建议、特定语言的通讯、适应时区的通知",
+      "communication": "• <strong>通讯</strong>: 通讯投递（基于同意）、直接联系机会（基于同意）、组织代表联系（基于同意）、平台更新、安全通知",
+      "platform": "• <strong>平台运营</strong>: 用户认证、会话管理、功能性、数据同步、多语言支持、移动响应性",
+      "safety": "• <strong>社区安全</strong>: 通过IP监控进行欺诈检测、通过速率限制防止垃圾邮件、滥用报告系统、内容审核、账户验证",
+      "analytics": "• <strong>网站分析</strong>: 来自Vercel Analytics的匿名网站统计（不收集个人数据，完全无cookie）",
+      "legal": "• <strong>法律合规</strong>: 遵守奥地利数据保护法、满足GDPR要求、维护审计跟踪、按要求进行监管报告",
+      "technical": "• <strong>技术功能</strong>: 数据库优化、备份创建、系统监控、安全补丁部署、性能优化、错误跟踪和解决"
+    },
+    "sharing": {
+      "title": "5. 信息共享",
+      "content": "我们严肃对待您的隐私，仅在以下特定情况下共享信息：",
+      "serviceProviders": "• <strong>服务提供商</strong>: 帮助我们运营平台的受信任合作伙伴（例如，Supabase用于数据托管，Stripe用于支付，Vercel用于分析）",
+      "legal": "• <strong>法律要求</strong>: 当法律、法院命令要求或为保护我们的合法权利时",
+      "consent": "• <strong>经您同意</strong>: 任何其他共享仅在您明确许可的情况下发生",
+      "noSharing": "• <strong>不与成员共享</strong>: 我们不与其他联盟成员或用户共享您的信息",
+      "noSale": "<strong>我们绝不向第三方出售您的个人信息。</strong>"
+    },
+    "dataTransfers": {
+      "title": "6. 国际数据传输",
+      "content": "我们的一些服务提供商可能位于欧洲经济区（EEA）之外。当我们国际传输您的数据时，我们通过以下方式确保充分保护：",
+      "adequacy": "• <strong>充分性决定</strong>: 向具有足够数据保护水平的国家传输",
+      "safeguards": "• <strong>适当的保障措施</strong>: 欧洲委员会批准的标准合同条款",
+      "providers": "• 我们目前的提供商包括Supabase（欧盟基础设施）、Stripe（全球，有欧盟保障措施）和Vercel（法兰克福地区的欧盟托管）"
+    },
+    "retention": {
+      "title": "7. 数据保留和删除",
+      "content": "我们仅在必要时保留您的个人信息，并提供即时删除功能：",
+      "active": "• <strong>活跃账户</strong>: 只要您的账户保持活跃并继续使用我们的服务，数据就会被保留",
+      "dormant": "• <strong>休眠账户</strong>: 在完全不活动3年后自动删除（提前90天通过电子邮件警告）",
+      "immediate": "• <strong>即时自删除</strong>: 通过个人资料设置 → 账户设置 → 删除账户，立即删除您的整个账户",
+      "deletion": "• <strong>根据删除请求</strong>: 立即从所有活动系统、数据库和认证服务中移除",
+      "backups": "• <strong>从备份中移除</strong>: 在账户删除后90天内从所有备份系统中完全移除",
+      "legal": "• <strong>法律要求</strong>: 仅在奥地利或欧盟法律特别要求的情况下有限地保留数据（例如，税务目的的财务记录）",
+      "technical": "• <strong>技术删除过程</strong>: 从主数据库删除个人资料数据 → 移除认证凭证 → 标记审计日志以供删除 → 清理备份系统",
+      "confirmation": "• <strong>删除确认</strong>: 成功删除账户后自动登出并发送电子邮件确认"
+    },
+    "rights": {
+      "title": "8. 您在GDPR下的权利",
+      "content": "您对您的个人数据拥有以下权利：",
+      "access": "• <strong>访问权</strong>: 通过admin@queer-Deep Resirch.com请求您的个人数据副本，或直接在您的个人资料设置中查看",
+      "rectification": "• <strong>纠正权</strong>: 直接在您的个人资料设置中更正不准确的数据，或通过admin@queer-Deep Resirch.com请求帮助",
+      "erasure": "• <strong>删除权</strong>: <strong>从您的个人资料设置中立即删除您的整个账户</strong> (设置 > 账户设置 > 删除账户) 或通过admin@queer-Deep Resirch.com请求删除",
+      "restriction": "• <strong>限制处理权</strong>: 通过联系admin@queer-Deep Resirch.com限制我们处理您数据的方式",
+      "portability": "• <strong>数据可携权</strong>: 通过admin@queer-Deep Resirch.com以结构化的JSON格式接收您的数据",
+      "objection": "• <strong>反对权</strong>: 通过admin@queer-Deep Resirch.com反对基于合法利益的处理",
+      "withdrawal": "• <strong>撤回同意</strong>: 直接在您的个人资料设置中修改同意偏好或联系admin@queer-Deep Resirch.com",
+      "complaint": "• <strong>投诉权</strong>: 向奥地利数据保护局(Datenschutzbehörde)投诉，网址为dsb.gv.at",
+      "exercise": "大多数权利可以直接在您的个人资料设置中行使。如需额外帮助，请联系admin@queer-Deep Resirch.com（保证30天内回复）。"
+    },
+    "accountDeletion": {
+      "title": "8.1. 完全账户删除 (自助服务)",
+      "content": "您可以随时直接从您的个人资料设置中删除您的整个账户和所有相关数据：",
+      "access": "• <strong>如何访问</strong>: 登录 → 个人资料 → 设置 → 账户设置 → 删除账户",
+      "process": "• <strong>删除过程</strong>: 输入'DELETE'以确认 → 立即永久删除所有数据",
+      "scope": "• <strong>删除内容</strong>: 所有个人资料信息、技能、偏好、同意历史、审计日志、会话数据和认证凭证",
+      "immediate": "• <strong>时间</strong>: 立即从所有系统（包括数据库和认证）中删除",
+      "irreversible": "• <strong>重要</strong>: 此操作不可逆 - 一旦删除，您的账户和数据将无法恢复",
+      "backup": "• <strong>从备份中移除</strong>: 您的数据将在删除后90天内从所有备份中移除",
+      "confirmation": "• <strong>确认</strong>: 成功删除后，您将被自动登出并重定向",
+      "alternative": "• <strong>替代方案</strong>: 如果您需要账户删除方面的帮助，请联系admin@queer-Deep Resirch.com"
+    },
+    "security": {
+      "title": "9. 全面的数据安全措施",
+      "content": "我们实施多层次的强大安全措施来保护您的个人信息：",
+      "technical": {
+        "title": "技术安全措施",
+        "content": "• <strong>数据加密</strong>: 所有数据在传输中（TLS 1.3）和静止时（AES-256）通过Supabase加密<br>• <strong>数据库安全</strong>: 行级安全（RLS）策略确保用户只能访问自己的数据<br>• <strong>认证</strong>: 多因素认证支持，带自动过期的安全会话管理<br>• <strong>输入验证</strong>: 全面的XSS预防、SQL注入保护、输入清理<br>• <strong>安全头</strong>: 内容安全策略（CSP）、HTTP严格传输安全（HSTS）、防点击劫持保护<br>• <strong>API安全</strong>: 速率限制、请求验证、需要认证的安全API端点"
+      },
+      "organizational": {
+        "title": "组织安全措施",
+        "content": "• <strong>访问控制</strong>: 最小权限原则，基于角色的系统和数据访问<br>• <strong>员工培训</strong>: 定期安全意识培训、数据保护协议<br>• <strong>数据处理协议</strong>: 与所有第三方处理器签订全面的协议<br>• <strong>事件响应计划</strong>: 记录在案的安全漏洞检测和响应程序<br>• <strong>定期审计</strong>: 季度安全审查、年度渗透测试、漏洞评估"
+      },
+      "monitoring": {
+        "title": "持续安全监控",
+        "content": "• <strong>实时监控</strong>: 24/7系统监控、自动威胁检测<br>• <strong>审计跟踪</strong>: 全面记录所有个人资料更改、登录尝试、数据访问<br>• <strong>会话跟踪</strong>: 活动会话监控、不活动后自动登出<br>• <strong>欺诈预防</strong>: 基于IP的异常检测、可疑活动警报<br>• <strong>错误跟踪</strong>: 自动错误记录和响应安全相关问题"
+      },
+      "infrastructure": {
+        "title": "基础设施安全",
+        "content": "• <strong>托管安全</strong>: 基于欧盟的Supabase基础设施，符合SOC 2 Type II标准<br>• <strong>网络安全</strong>: 防火墙、管理员VPN访问、安全通信渠道<br>• <strong>备份安全</strong>: 加密自动备份、安全备份存储、经测试的恢复程序<br>• <strong>更新管理</strong>: 自动安全补丁、定期依赖项更新、漏洞扫描<br>• <strong>合规性</strong>: GDPR合规、遵守奥地利数据保护法、定期合规审计"
+      },
+      "incident": {
+        "title": "数据泄露响应",
+        "content": "• <strong>检测</strong>: 自动监控系统、可疑活动即时警报<br>• <strong>响应</strong>: 在需要时72小时内向奥地利数据保护局通报泄露事件<br>• <strong>用户通知</strong>: 在确认泄露后72小时内直接与受影响用户沟通<br>• <strong>缓解</strong>: 立即采取遏制措施、部署安全补丁、系统加固<br>• <strong>文档记录</strong>: 完整的事件文档、事件后安全改进"
+      }
+    },
+    "cookies": {
+      "title": "10. Cookie 和追踪",
+      "content": "<strong>我们只使用必要的Cookie</strong> - 没有追踪、分析或营销Cookie。有关详细信息，请参阅我们的Cookie政策。关键点：",
+      "essential": "• <strong>仅必要的Cookie</strong>: 登录、支付和语言支持所必需（无需同意）",
+      "analytics": "• <strong>无分析Cookie</strong>: 我们使用Vercel的无Cookie分析代替",
+      "preference": "• <strong>偏好存储在您的账户中</strong>: 语言、主题和设置保存在您的数据库个人资料中，而不是Cookie中",
+      "marketing": "• <strong>无营销Cookie</strong>: 我们不使用广告或行为追踪Cookie"
+    },
+    "minors": {
+      "title": "11. 未成年人保护",
+      "content": "我们的平台专为18岁及以上人士设计。18岁以下用户不得创建账户或使用我们的服务。"
+    },
+    "changes": {
+      "title": "12. 本政策的变更",
+      "content": "我们可能会更新本隐私政策以反映我们实践或法律要求的变化。我们将：",
+      "notification": "• <strong>通知用户</strong>: 对重大变更进行电子邮件通知",
+      "consent": "• <strong>获取同意</strong>: 对影响您权利的重大变更",
+      "posting": "• <strong>发布更新</strong>: 始终在我们的网站上维护当前版本",
+      "date": "• <strong>更新日期</strong>: “最后更新”日期显示最新修订版"
+    },
+    "contact": {
+      "title": "13. 联系信息",
+      "content": "如有任何与隐私相关的问题或行使您的权利，请联系我们：",
+      "details": "电子邮件: admin@queer-Deep Resirch.com\n响应时间: 30天内\n数据保护机构: 奥地利数据保护局 (dsb.gv.at)"
+    }
+  },
+  "cookiePolicy": {
+    "title": "Cookie 政策",
+    "lastUpdated": "最后更新: 2025年6月",
+    "labels": {
+      "purpose": "目的:",
+      "cookies": "Cookies:",
+      "privacy": "隐私:",
+      "legalBasis": "法律依据:",
+      "cookieName": "Cookie 名称",
+      "duration": "持续时间"
+    },
+    "introduction": {
+      "title": "Cookie 政策",
+      "content": "本Cookie政策解释了QUEER MEDIA LITERACY e.V. (“酷儿联盟”) 如何在我们的平台上使用Cookie。<strong>我们仅使用对平台功能至关重要的必要Cookie</strong> - 不含需要您同意的追踪、广告或分析Cookie。"
+    },
+    "whatAreCookies": {
+      "title": "1. 什么是 Cookie",
+      "content": "Cookie是您访问我们网站时存储在您设备上的小文本文件。<strong>我们仅使用对平台功能至关重要的必要Cookie</strong>:",
+      "remembering": "• <strong>安全登录会话</strong> - 确保您安全登录",
+      "improving": "• <strong>多语言支持</strong> - 记住您的语言选择以便导航",
+      "analyzing": "• <strong>支付安全</strong> - 在捐赠期间防止欺诈",
+      "personalizing": "• <strong>无追踪</strong> - 我们不使用Cookie追踪您的行为"
+    },
+    "typesOfCookies": {
+      "title": "2. 我们使用的 Cookie 类型",
+      "essential": {
+        "title": "必要 Cookie (我们使用的唯一类型)",
+        "content": "<strong>我们所有的Cookie都是必要的</strong> - 它们是平台运行所必需的，根据GDPR无需您的同意:",
+        "authentication": "• <strong>登录安全</strong>: 用于安全登录的会话令牌",
+        "security": "• <strong>支付保护</strong>: 捐赠期间的Stripe欺诈预防",
+        "functionality": "• <strong>语言支持</strong>: 记住您选择的网站导航语言",
+        "compliance": "• <strong>无追踪</strong>: 我们不使用Cookie收集个人数据或追踪行为"
+      },
+      "functional": {
+        "title": "用户偏好 (存储在您的账户中，而非Cookie)",
+        "content": "<strong>设计隐私</strong>: 我们将您的偏好存储在您的安全账户资料中，而非追踪Cookie:",
+        "preferences": "• <strong>语言和主题</strong>: 保存在您的账户资料中，可在各设备间访问",
+        "formData": "• <strong>无障碍设置</strong>: 安全地存储在您的数据库资料中",
+        "accessibility": "• <strong>更好的隐私</strong>: 基于账户的存储意味着不需要追踪Cookie"
+      },
+      "analytics": {
+        "title": "分析 (完全无Cookie)",
+        "content": "我们使用<strong>Vercel Web Analytics</strong> - 一种隐私优先的解决方案，不使用任何Cookie:",
+        "usage": "• <strong>无Cookie</strong>: 使用基于哈希的匿名访客识别",
+        "performance": "• <strong>隐私优先</strong>: 哈希每24小时重置，无跨站追踪",
+        "demographics": "• <strong>仅匿名</strong>: 聚合统计数据，无个人数据",
+        "provider": "• <strong>无需同意</strong>: 设计合规，无Cookie意味着无需同意"
+      },
+      "payment": {
+        "title": "支付处理Cookie (支付所必需)",
+        "content": "Stripe支付处理器在支付处理期间使用必要的Cookie:",
+        "fraud": "• <strong>欺诈预防</strong>: __stripe_mid (1年), __stripe_sid (30分钟)",
+        "security": "• <strong>支付安全</strong>: 安全交易处理所必需",
+        "session": "• <strong>会话管理</strong>: 在结账过程中维持支付状态"
+      }
+    },
+    "thirdPartyServices": {
+      "title": "3. 第三方服务及其Cookie",
+      "content": "我们与符合GDPR的合作伙伴合作，当您使用他们的服务时，他们可能会设置Cookie:",
+      "stripe": {
+        "title": "Stripe (支付处理)",
+        "purpose": "为捐赠和会员资格提供安全的支付处理",
+        "cookies": "必要Cookie: __stripe_mid, __stripe_sid (欺诈预防, 安全)",
+        "privacy": "隐私政策: stripe.com/privacy | Cookie政策: stripe.com/legal/cookies-policy",
+        "legal": "仅在支付处理期间使用 (为履行合同的合法利益)"
+      },
+      "vercel": {
+        "title": "Vercel Analytics (网站分析)",
+        "purpose": "注重隐私的网站分析和性能监控",
+        "cookies": "不使用Cookie - 基于哈希的匿名访客识别",
+        "privacy": "隐私政策: vercel.com/legal/privacy-policy",
+        "legal": "由于不使用个人数据或Cookie，因此无需同意"
+      },
+      "supabase": {
+        "title": "Supabase (认证与数据库)",
+        "purpose": "安全的用户认证和数据存储",
+        "cookies": "用于认证的会话Cookie (登录功能所必需)",
+        "privacy": "隐私政策: supabase.com/privacy",
+        "legal": "为履行合同的必要Cookie (无需同意)"
+      }
+    },
+    "cookieConsent": {
+      "title": "4. 为何我们不需要Cookie同意",
+      "content": "<strong>无需同意</strong> - 我们所有的Cookie对于功能都是必要的:",
+      "essential": "• <strong>仅必要</strong>: 所有Cookie对于登录、支付和导航都是必需的",
+      "granular": "• <strong>无追踪</strong>: 我们不使用广告、分析或行为Cookie",
+      "withdraw": "• <strong>GDPR合规</strong>: 必要Cookie免于同意要求",
+      "settings": "• <strong>设计隐私</strong>: 最小化数据收集，最大化用户隐私",
+      "noConsent": "• <strong>透明</strong>: 我们明确告知您我们使用什么以及为什么使用"
+    },
+    "browserControls": {
+      "title": "5. 浏览器Cookie控制",
+      "content": "您可以通过浏览器设置控制Cookie。请注意，禁用必要Cookie可能会妨碍登录和支付功能:",
+      "chrome": "• <strong>Chrome</strong>: 设置 > 隐私和安全 > Cookie和其他网站数据",
+      "firefox": "• <strong>Firefox</strong>: 选项 > 隐私与安全 > Cookie和网站数据",
+      "safari": "• <strong>Safari</strong>: 偏好设置 > 隐私 > Cookie和网站数据",
+      "edge": "• <strong>Edge</strong>: 设置 > 网站权限 > Cookie和网站数据",
+      "impact": "<strong>重要提示</strong>: 禁用必要Cookie将妨碍登录、支付和核心功能"
+    },
+    "cookieDetails": {
+      "title": "6. 详细Cookie列表",
+      "content": "可能在您设备上设置的Cookie的完整列表:",
+      "essential": {
+        "title": "必要Cookie (功能所需)",
+        "items": [
+          {
+            "name": "sb-[project]-auth-token",
+            "purpose": "Supabase认证会话令牌 (安全登录)",
+            "duration": "1小时 (自动刷新)",
+            "provider": "Supabase",
+            "legal": "合同履行 (用户账户访问所必需)"
+          },
+          {
+            "name": "__stripe_mid",
+            "purpose": "Stripe欺诈预防 (支付安全)",
+            "duration": "1年",
+            "provider": "Stripe",
+            "legal": "合法利益 (支付期间的欺诈预防)"
+          },
+          {
+            "name": "__stripe_sid",
+            "purpose": "Stripe会话管理 (支付过程)",
+            "duration": "30分钟",
+            "provider": "Stripe",
+            "legal": "合同履行 (支付处理所必需)"
+          },
+          {
+            "name": "NEXT_LOCALE",
+            "purpose": "Next.js区域路由 (语言URL路由)",
+            "duration": "1年",
+            "provider": "Next.js",
+            "legal": "合同履行 (多语言功能所必需)"
+          }
+        ]
+      },
+      "functional": {
+        "title": "功能性Cookie (目前无)",
+        "content": "我们不使用功能性Cookie。用户偏好安全地存储在您的数据库个人资料中，而不是Cookie中，从而提供更好的隐私和跨设备持久性。"
+      },
+      "analytics": {
+        "title": "分析 (无Cookie)",
+        "content": "Vercel Web Analytics使用注重隐私、无Cookie的分析，根据GDPR无需同意。"
+      }
+    },
+    "legalBasis": {
+      "title": "7. Cookie处理的法律依据",
+      "content": "我们的Cookie使用符合GDPR第6条和ePrivacy指令第5(3)条:",
+      "essential": "• <strong>必要Cookie</strong>: 合法利益 (第6(1)(f)条) 用于平台功能和安全",
+      "payment": "• <strong>支付Cookie</strong>: 合同履行 (第6(1)(b)条) 用于处理交易",
+      "consent": "• <strong>功能性Cookie</strong>: 同意 (第6(1)(a)条) 用于增强用户体验",
+      "compliance": "• <strong>同意Cookie</strong>: 法律义务 (第6(1)(c)条) 用于GDPR合规记录保存",
+      "analytics": "• <strong>分析</strong>: 无需法律依据 (不处理Cookie或个人数据)"
+    },
+    "dataProtection": {
+      "title": "8. 数据保护和Cookie权利",
+      "content": "您在GDPR下的与Cookie相关的数据保护权利:",
+      "access": "• <strong>访问权</strong>: 请求有关您设备上设置的Cookie的信息",
+      "rectification": "• <strong>纠正权</strong>: 更正不准确的Cookie偏好记录",
+      "erasure": "• <strong>删除权</strong>: 删除Cookie同意记录 (联系 admin@queer-Deep Resirch.com)",
+      "restriction": "• <strong>限制权</strong>: 仅将Cookie处理限制为必要的",
+      "objection": "• <strong>反对权</strong>: 反对非必要Cookie (撤回同意)",
+      "portability": "• <strong>数据可携权</strong>: 以结构化格式接收您的Cookie同意历史"
+    },
+    "updates": {
+      "title": "9. 本Cookie政策的更新",
+      "content": "我们可能会更新本Cookie政策以反映法律或技术变化:",
+      "notification": "• <strong>通知</strong>: 对影响您权利的重大变更进行电子邮件通知",
+      "consent": "• <strong>新同意</strong>: 为新型Cookie或目的请求更新的同意",
+      "effective": "• <strong>生效日期</strong>: 除非紧急，否则变更在通知后30天生效",
+      "version": "• <strong>版本控制</strong>: 可根据要求提供以前的版本"
+    },
+    "contact": {
+      "title": "10. 联系我们关于Cookie",
+      "content": "有关我们Cookie实践的问题或行使您的权利:",
+      "email": "<strong>数据保护官</strong>: admin@queer-Deep Resirch.com",
+      "response": "<strong>根据GDPR第12条要求，30天内回复</strong>",
+      "dpa": "<strong>监管机构</strong>: 奥地利数据保护局 (dsb.gv.at)",
+      "address": "<strong>QUEER MEDIA LITERACY e.V.</strong>, 1060 Wien, Mariahilfer Straße 49/15, 奥地利"
+    }
+  },
+  "manifest": {
+    "title": "宣言",
+    "lastUpdated": "最后更新: 2025年6月",
+    "why": {
+      "title": "我们为何在此相聚？",
+      "content": "我们生活在一个组织精良、资源充足的势力挑动人们相互对立的时代。他们的目标明确：攻击酷儿群体的基本权利，阻止平权。我们的联盟是对这些反民主和非人道努力的回应。我们不会被击退、分裂、迷惑或压迫，我们将坚定前行。"
+    },
+    "who": {
+      "title": "我们是谁？",
+      "content": "我们是酷儿群体及其盟友的联合，共同致力于加强和保护LGBTQIA+社区。我们将自己视为一个团结互助的网络，汇聚集体力量，促进成员的利益。我们为创意和构建一个开放多元的社会创造空间。"
+    },
+    "what": {
+      "title": "是什么驱动我们？",
+      "content": "我们捍卫我们获得安全、可见和爱的权利，对抗任何敌意。没有人有权决定我们的存在。我们将未来掌握在自己手中，不受他人主宰。"
+    },
+    "participation": {
+      "title": "谁可以加入我们？",
+      "content": "我们的联盟对所有LGBTQIA+社区成员及其盟友开放，无论其出身、归属和生活方式如何。在他人分裂和排斥之处，我们以多样性彰显力量。"
+    },
+    "action": {
+      "title": "我们如何行动？",
+      "content": "我们内外互助，挺身而出。我们不会袖手旁观，我们会采取行动。我们是自由、多样性和自决联盟的一部分。"
+    }
+  },
+  "imprint": {
+    "title": "版本说明",
+    "lastUpdated": "最后更新: 2025年6月",
+    "labels": {
+      "name": "名称",
+      "seat": "所在地",
+      "address": "地址",
+      "country": "国家",
+      "foundationDate": "成立日期"
+    },
+    "organization": {
+      "title": "组织信息",
+      "name": "QUEER MEDIA LITERACY e.V.",
+      "seat": "维也на",
+      "address": "1060 Vienna, Mariahilfer Straße 49/15",
+      "country": "奥地利",
+      "foundationDate": "2024年9月21日"
+    },
+    "partners": {
+      "title": "合作伙伴",
+      "partnersList": "在Deep Resirch独立之前，Queer Media Literacy协会将承担网站的责任。然而，该协会只是众多合作伙伴中的一个。Vangardist Agency & Magazine, GGG.at, Transv.at, Queer Moments, Queer Dance im Gemeindebau, Porn Film Festival Vienna, Queer Shorts Vienna, Vienna Gay Mans Chorus, YK Media"
+    },
+    "registration": {
+      "title": "注册信息",
+      "authority": "主管机构: 维也纳州警察局，协会、集会和媒体法事务部",
+      "zvrNumber": "ZVR号 1689372191"
+    },
+    "contact": {
+      "title": "联系方式",
+      "emailLabel": "电子邮件:",
+      "email": "admin@queer-Deep Resirch.com",
+      "note": "所有查询请仅使用上述电子邮件地址。"
+    },
+    "responsible": {
+      "title": "内容负责人",
+      "content": "QUEER MEDIA LITERACY e.V. 协会对本网站所有内容负责。"
+    },
+    "disclaimer": {
+      "title": "免责声明",
+      "content": "尽管我们对内容进行了仔细控制，但我们对外部链接的内容不承担任何责任。链接页面的运营商对其内容全权负责。"
+    }
+  },
+  "partners": {
+    "title": "合作伙伴",
+    "descriptions": {
+      "1": "领先的酷儿媒体代理和杂志",
+      "2": "酷儿通讯",
+      "3": "跨性别议题的交流、教育、咨询等",
+      "4": "我们组织酷儿艺术项目，通过将艺术家推向台前，来提升可见性并引发讨论",
+      "5": "我们穿梭于各个社区之间，为促进宽容、尊重和多元化而舞",
+      "6": "色情和酷儿主题电影节",
+      "7": "维也纳首个国际酷儿短片电影节",
+      "8": "维也纳男同性恋合唱团",
+      "9": "酷儿创意制作公司",
+      "10": "维也纳酷儿流行夜店派对"
+    },
+    "categories": {
+      "1": "代理, 杂志",
+      "2": "媒体",
+      "3": "咨询, 教育, 支持",
+      "4": "活动, 新闻",
+      "5": "活动, 舞蹈",
+      "6": "电影节",
+      "7": "电影节",
+      "8": "音乐",
+      "9": "创意制作",
+      "10": "去夜店"
+    },
+    "visit": "访问"
+  },
+  "accessibility": {
+    "menuButton": "菜单"
+  },
+  "errors": {
+    "stripe": {
+      "checkoutFailed": "结账失败",
+      "billingPortalError": "账单门户错误",
+      "failedToCreateCheckoutSession": "创建结账会话失败",
+      "noCheckoutUrlReceived": "未收到结账URL",
+      "failedToStartCheckout": "启动结账失败。请重试。",
+      "failedToCreatePortalSession": "创建门户会话失败",
+      "noPortalUrlReceived": "未收到门户URL",
+      "failedToOpenBillingPortal": "打开账单门户失败。请重试。",
+      "userProfileNotFound": "未找到用户个人资料。无法删除账户。",
+      "failedToDeleteAccountViaAPI": "通过API删除账户失败",
+      "failedToDeleteAccount": "删除账户失败"
+    },
+    "finance": {
+      "planFallbackName": "计划 {index}",
+      "planFallbackDescription": "用您的贡献支持这项事业"
+    }
+  }
+}

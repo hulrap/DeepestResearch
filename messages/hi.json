@@ -1,0 +1,1517 @@
+{
+  "navigation": {
+    "home": "होम",
+    "manifest": "घोषणापत्र",
+    "partners": "पार्टनर",
+    "settings": "सेटिंग्स",
+    "dashboard": "प्रोफ़ाइल",
+    "signIn": "साइन इन करें",
+    "signUp": "साइन अप करें",
+    "signOut": "साइन आउट करें",
+    "protected": "प्रोफ़ाइल",
+    "loading": "लोड हो रहा है..."
+  },
+  "home": {
+    "title": "क्वीयर अलायंस",
+    "welcomeBackPrefix": "क्वीयर अलायंस में आपका स्वागत है",
+    "joinPrefix": "हमारे क्वीयर अलायंस से जुड़ें",
+    "welcomeBack": "वापस स्वागत है, {email}",
+    "subtitle": "आप पहले से ही क्वीयर अलायंस का हिस्सा हैं! अपनी यात्रा जारी रखने के लिए अपने डैशबोर्ड तक पहुँचें।",
+    "guestSubtitle": "हमारे समुदाय का हिस्सा बनने के लिए रजिस्टर करें",
+    "goToDashboard": "डैशबोर्ड पर जाएँ",
+    "register": "रजिस्टर करें",
+    "userGreeting": "नमस्ते, {email}!",
+    "joinOurDeep Resirch": "हमारे क्वीयर अलायंस से जुड़ें",
+    "welcomeBackShort": "वापस स्वागत है!",
+    "loginButton": "लॉगिन",
+    "currentLanguage": "अंग्रेजी",
+    "memberSince": "सदस्य जबसे",
+    "accountStatus": "खाते की स्थिति",
+    "accountVerified": "सत्यापित",
+    "accountPending": "लंबित",
+    "profileStatus": "प्रोफ़ाइल",
+    "profileActive": "सक्रिय",
+    "roles": "भूमिकाएँ",
+    "undecided": "अनिर्णित",
+    "metaTitle": "क्वीयर अलायंस - हमारे गठबंधन में शामिल हों",
+    "metaDescription": "हमारे क्वीयर गठबंधन में शामिल हों",
+    "genericUser": "उपयोगकर्ता",
+    "profileExplainer": {
+      "title": "बहुत अच्छा है कि आप रेनबो रैबिट का अनुसरण कर रहे हैं।",
+      "content": "<h2>अब आप जैसे नायकों की जरूरत है।</h2><p>चूंकि हमारे अधिकार दुनिया भर में खतरे में हैं, इसलिए अब हमें एकजुट होने का समय आ गया है। क्वीयर अलायंस के साथ, हम समुदाय के भीतर अधिक संचार, जानकारी और नेटवर्किंग सुनिश्चित करना चाहते हैं, मौजूदा परियोजनाओं में एक-दूसरे का समर्थन करना चाहते हैं, और साथ ही नई परियोजनाएं भी शुरू करना चाहते हैं। हम बातों से कार्रवाई की ओर बढ़ना चाहते हैं।</p><p>विचारों में ब्रातिस्लावा प्राइड का समर्थन, एक समुदाय-सूचना दिवस से लेकर याचिकाओं, कार्यों और प्रदर्शनों के लिए एक बड़ा ईमेल वितरक शामिल है। आप नए विचार और इच्छाएं भी प्रस्तुत कर सकते हैं। हम फिर कार्यान्वयन में एक-दूसरे का समर्थन करेंगे।</p><h3>क्या आप सूचित रहना चाहते हैं या भाग लेना चाहते हैं?</h3><p>वर्तमान में आप चार अलग-अलग भूमिकाओं में भाग ले सकते हैं:</p><ol><li>समर्थक और न्यूज़लेटर सदस्य के रूप में</li><li>व्यक्तिगत कार्यों के लिए कार्यकर्ता के रूप में</li><li>विशेषज्ञ प्रश्नों के लिए विशेषज्ञ के रूप में</li><li>और सक्रिय भागीदारी और मासिक बैठकों के लिए सदस्य के रूप में।</li></ol><p>यदि आप अधिक जानना चाहते हैं, तो अपनी प्रोफ़ाइल जानकारी भरें और हम प्राइड महीने के बाद आपसे संपर्क करेंगे।</p><h3>आपके पास समय नहीं है, लेकिन आप दान करना चाहते हैं?</h3><p>हमारी सभी सेवाएं निःशुल्क हैं।</p><p>लेकिन हमें सरकारी अनुदान या कॉर्पोरेट प्रायोजन पर निर्भर नहीं होना चाहिए।</p><p>इसलिए समुदाय को मध्यम अवधि में स्वयं वित्त पोषित करना चाहिए।</p>"
+    },
+    "fillOutProfile": "प्रोफ़ाइल भरें",
+    "rainbowRabbitAlt": "इंद्रधनुषी खरगोश",
+    "footer": {
+      "copyright": "© 2025 क्वीयर अलायंस। सर्वाधिकार सुरक्षित।",
+      "imprint": "इंप्रिंट",
+      "cookiePolicy": "कुकी नीति",
+      "privacyPolicy": "गोपनीयता नीति",
+      "contact": "संपर्क",
+      "partners": "पार्टनर"
+    }
+  },
+  "auth": {
+    "login": {
+      "title": "वापस स्वागत है",
+      "subtitle": "अपने क्वीयर अलायंस खाते में साइन इन करें",
+      "email": "ईमेल",
+      "emailPlaceholder": "your.email@example.com",
+      "password": "पासवर्ड",
+      "forgotPassword": "पासवर्ड भूल गए?",
+      "signInButton": "साइन इन करें",
+      "signingIn": "साइन इन हो रहा है...",
+      "noAccount": "खाता नहीं है?"
+    },
+    "signUp": {
+      "title": "क्वीयर अलायंस से जुड़ें",
+      "subtitle": "अपना खाता बनाएं और क्वीयर अलायंस का हिस्सा बनें",
+      "email": "ईमेल",
+      "emailPlaceholder": "your.email@example.com",
+      "password": "पासवर्ड",
+      "passwordPlaceholder": "एक मजबूत पासवर्ड बनाएं",
+      "confirmPassword": "पासवर्ड की पुष्टि करें",
+      "confirmPasswordPlaceholder": "अपना पासवर्ड दोहराएं",
+      "joinButton": "अलायंस से जुड़ें",
+      "creatingAccount": "खाता बनाया जा रहा है...",
+      "passwordsDoNotMatch": "पासवर्ड मेल नहीं खाते",
+      "emailAlreadyRegistered": "यह ईमेल पता पहले से ही क्वीयर अलायंस के साथ पंजीकृत है।",
+      "registrationFailed": "पंजीकरण विफल। कृपया पुनः प्रयास करें।",
+      "alreadyHaveAccount": "पहले से ही एक खाता है?",
+      "signInHere": "यहां साइन इन करें"
+    },
+    "signUpSuccess": {
+      "readyToSignIn": "साइन इन करने के लिए तैयार हैं?",
+      "journeyBegins": "आपकी यात्रा अब शुरू होती है",
+      "registrationSuccessful": "पंजीकरण सफल!",
+      "confirmationInstructions": "आपने क्वीयर अलायंस के लिए सफलतापूर्वक साइन अप कर लिया है। साइन इन करने से पहले कृपया अपने खाते की पुष्टि करने के लिए अपना ईमेल जांचें।",
+      "whatsNext": "आगे क्या?",
+      "checkEmail": "अपना ईमेल इनबॉक्स जांचें",
+      "clickConfirmation": "पुष्टिकरण लिंक पर क्लिक करें",
+      "returnToSignIn": "साइन इन करने के लिए यहां वापस आएं",
+      "startJourney": "अपनी क्वीयर अलायंस यात्रा शुरू करें",
+      "noEmailReceived": "ईमेल प्राप्त नहीं हुआ? अपना स्पैम फ़ोल्डर जांचें या",
+      "tryAgain": "पुनः प्रयास करें"
+    },
+    "forgotPassword": {
+      "title": "अपना पासवर्ड रीसेट करें",
+      "description": "अपना ईमेल टाइप करें और हम आपको अपना पासवर्ड रीसेट करने के लिए एक सुरक्षित लिंक भेजेंगे",
+      "successTitle": "अपना ईमेल जांचें",
+      "successDescription": "पासवर्ड रीसेट लिंक भेजा गया",
+      "successMessage": "हमने आपको अपना पासवर्ड रीसेट करने के लिए एक सुरक्षित लिंक भेजा है। अपना नया पासवर्ड सेट करने के लिए लिंक पर क्लिक करें।",
+      "successInstructions": "आगे क्या करना है:",
+      "step1": "अपना ईमेल इनबॉक्स (और स्पैम फ़ोल्डर) जांचें",
+      "step2": "ईमेल में 'पासवर्ड रीसेट करें' लिंक पर क्लिक करें",
+      "step3": "सुरक्षित रीसेट पेज पर अपना नया पासवर्ड दर्ज करें",
+      "noEmail": "ईमेल प्राप्त नहीं हुआ?",
+      "resendLink": "एक और रीसेट ईमेल भेजें",
+      "sending": "भेजा जा रहा है...",
+      "sendResetEmail": "रीसेट ईमेल भेजें",
+      "alreadyHaveAccount": "पहले से ही एक खाता है?"
+    },
+    "updatePassword": {
+      "title": "अपना पासवर्ड रीसेट करें",
+      "description": "कृपया नीचे अपना नया पासवर्ड दर्ज करें।",
+      "newPassword": "नया पासवर्ड",
+      "newPasswordPlaceholder": "नया पासवर्ड",
+      "confirmNewPassword": "नए पासवर्ड की पुष्टि करें",
+      "confirmNewPasswordPlaceholder": "अपने नए पासवर्ड की पुष्टि करें",
+      "saving": "सहेजा जा रहा है...",
+      "saveNewPassword": "नया पासवर्ड सहेजें",
+      "verifyingLink": "आपके रीसेट लिंक का सत्यापन किया जा रहा है...",
+      "authenticationRequired": "प्रमाणीकरण आवश्यक है",
+      "passwordUpdated": "पासवर्ड अपडेट किया गया!",
+      "passwordUpdatedSuccess": "आपका पासवर्ड सफलतापूर्वक अपडेट कर दिया गया है। आपको आपके डैशबोर्ड पर पुनः निर्देशित किया जा रहा है।",
+      "redirectingMoment": "एक पल में पुनः निर्देशित किया जा रहा है..."
+    },
+    "signOut": {
+      "signingOut": "साइन आउट हो रहा है...",
+      "signOutError": "साइन आउट करने में विफल। कृपया पुनः प्रयास करें।",
+      "signOutSuccess": "आप सफलतापूर्वक साइन आउट हो गए हैं"
+    },
+    "errors": {
+      "genericError": "एक त्रुटि हुई",
+      "invalidCredentials": "अमान्य ईमेल या पासवर्ड",
+      "emailRequired": "ईमेल आवश्यक है",
+      "passwordRequired": "पासवर्ड आवश्यक है",
+      "codeError": "कोड त्रुटि: {code}",
+      "codeErrorPrefix": "कोड त्रुटि:",
+      "unspecifiedError": "एक अनिर्दिष्ट त्रुटि हुई।"
+    }
+  },
+  "settings": {
+    "title": "प्रोफ़ाइल",
+    "subtitle": "अपनी प्रोफ़ाइल जानकारी और वरीयताओं का प्रबंधन करें",
+    "loading": "आपकी सेटिंग्स लोड हो रही हैं...",
+    "error": "सेटिंग्स लोड करने में विफल",
+    "tryAgain": "पुनः प्रयास करें",
+    "edit": "संपादित करें",
+    "save": "सहेजें",
+    "saving": "सहेजा जा रहा है...",
+    "cancel": "रद्द करें",
+    "notSet": "सेट नहीं है",
+    "menu": {
+      "profile": "प्रोफ़ाइल",
+      "contact": "संपर्क",
+      "professional": "पेशेवर",
+      "participation": "भूमिकाएँ",
+      "location": "स्थान",
+      "finance": "दान",
+      "settings": "सेटिंग्स"
+    },
+    "categories": {
+      "personal": {
+        "title": "व्यक्तिगत जानकारी"
+      },
+      "professional": {
+        "title": "पेशेवर जानकारी",
+        "description": "आपका काम और कौशल"
+      },
+      "location": {
+        "title": "स्थान",
+        "description": "आप कहाँ स्थित हैं"
+      },
+      "contact": {
+        "title": "संपर्क जानकारी",
+        "description": "हम आप तक कैसे पहुँच सकते हैं"
+      },
+      "participation": {
+        "title": "अलायंस भूमिकाएँ",
+        "description": "चुनें कि आप क्वीयर अलायंस में कैसे भाग लेना चाहते हैं"
+      },
+      "account": {
+        "title": "खाता सेटिंग्स",
+        "description": "सुरक्षा और खाता प्रबंधन"
+      },
+      "profile": {
+        "title": "प्रोफ़ाइल जानकारी",
+        "description": "आपके मूल प्रोफ़ाइल विवरण"
+      },
+      "finance": {
+        "title": "दान",
+        "description": "अपनी सदस्यता और बिलिंग का प्रबंधन करें"
+      }
+    },
+    "fields": {
+      "username": {
+        "label": "उपयोगकर्ता नाम",
+        "placeholder": "एक अद्वितीय उपयोगकर्ता नाम चुनें",
+        "description": "प्रति दिन केवल एक बार बदला जा सकता है।",
+        "autoGeneratedDescription": "यह उपयोगकर्ता नाम आपके ईमेल से स्वतः उत्पन्न हुआ था। आप इसे एक बार बदल सकते हैं।",
+        "rateLimitError": "आप अपना उपयोगकर्ता नाम प्रति दिन केवल एक बार बदल सकते हैं।",
+        "formatError": "उपयोगकर्ता नाम 6-30 वर्ण लंबा होना चाहिए और इसमें केवल अक्षर, संख्याएँ, अंडरस्कोर और बिंदु होने चाहिए"
+      },
+      "firstName": {
+        "label": "पहला नाम",
+        "placeholder": "आपका पहला नाम",
+        "description": "वैकल्पिक",
+        "rateLimitError": "आप अपना पहला नाम केवल 3 बार बदल सकते हैं।"
+      },
+      "lastName": {
+        "label": "अंतिम नाम",
+        "placeholder": "आपका अंतिम नाम",
+        "description": "वैकल्पिक",
+        "rateLimitError": "आप अपना अंतिम नाम केवल 3 बार बदल सकते हैं।"
+      },
+      "language": {
+        "label": "भाषा"
+      },
+      "bio": {
+        "label": "बायो",
+        "placeholder": "एक छोटा बायो लिखें...",
+        "description": "",
+        "rateLimitError": "आप अपना बायो प्रति दिन केवल 10 बार बदल सकते हैं"
+      },
+      "website": {
+        "label": "वेबसाइट",
+        "placeholder": "https://your-website.com",
+        "description": "",
+        "rateLimitError": "आप अपनी वेबसाइट प्रति दिन केवल 5 बार बदल सकते हैं",
+        "formatError": "गलत प्रारूप। उदाहरण: https://your-website.com"
+      },
+      "phone": {
+        "label": "फोन नंबर",
+        "placeholder": "आपका फोन नंबर",
+        "description": "वैकल्पिक फ़ील्ड, प्रारंभिक प्रविष्टि के बाद 2 बार तक बदला जा सकता है।",
+        "rateLimitError": "प्रारंभिक प्रविष्टि के बाद आप अपना फ़ोन नंबर केवल 2 बार बदल सकते हैं",
+        "formatError": "गलत प्रारूप। उदाहरण: +4366012345678"
+      },
+      "contactComment": {
+        "label": "ब्रातिस्लावा-प्राइड और संपर्क-टिप्पणी",
+        "placeholder": "यदि आप ब्रातिस्लावा-प्राइड के बारे में अधिक जानकारी चाहते हैं, तो कृपया हमें इस टिप्पणी क्षेत्र में लिखें। अन्यथा, अपनी संपर्क इच्छाओं के बारे में हमें एक टिप्पणी छोड़ दें।",
+        "description": "संपर्क उद्देश्यों के लिए अतिरिक्त जानकारी"
+      },
+      "professionalComment": {
+        "label": "पेशेवर टिप्पणी",
+        "placeholder": "आपके पेशे के बारे में अतिरिक्त टिप्पणियाँ...",
+        "description": "आपके पेशेवर अनुभव के बारे में खुली टिप्पणी"
+      },
+      "profession": {
+        "label": "पेशा",
+        "placeholder": "अपने पेशे की खोज करें..."
+      },
+      "organization": {
+        "label": "संगठन",
+        "placeholder": "आपके संगठन का नाम (नियोक्ता, व्यवसाय का नाम, आदि)"
+      },
+      "experienceLevel": {
+        "label": "अनुभव स्तर"
+      },
+      "skills": {
+        "label": "कौशल और क्षमताएँ",
+        "description": "आपके पास कोई भी कौशल जोड़ें - तकनीकी कौशल से लेकर शौक और जीवन कौशल तक",
+        "placeholder": "उदा., खाना बनाना, जावास्क्रिप्ट, बागवानी, साहित्य समीक्षा..."
+      },
+      "country": {
+        "label": "देश",
+        "description": "अपने निवास का देश चुनें"
+      },
+      "region": {
+        "label": "क्षेत्र/प्रांत",
+        "description": "अपना क्षेत्र या प्रांत चुनें",
+        "placeholder": "क्षेत्र/प्रांत चुनें"
+      },
+      "city": {
+        "label": "शहर",
+        "placeholder": "आपका शहर"
+      },
+      "email": {
+        "label": "ईमेल पता",
+        "description": "अपना ईमेल पता बदलें",
+        "confirmationRequired": "आपको अपना नया ईमेल पता पुष्टि करना होगा",
+        "placeholder": "your.email@example.com",
+        "emailRequired": "ईमेल आवश्यक है"
+      },
+      "password": {
+        "label": "पासवर्ड",
+        "description": "अपना पासवर्ड बदलें",
+        "currentPassword": "वर्तमान पासवर्ड",
+        "newPassword": "नया पासवर्ड",
+        "newPasswordRequired": "नया पासवर्ड आवश्यक है",
+        "confirmNewPassword": "नए पासवर्ड की पुष्टि करें",
+        "confirmNewPasswordPlaceholder": "अपने नए पासवर्ड की पुष्टि करें",
+        "newPasswordPlaceholder": "अपना नया पासवर्ड दर्ज करें"
+      }
+    },
+    "consent": {
+      "title": "संपर्क अनुमतियाँ",
+      "directContact": {
+        "label": "सीधे संपर्क की अनुमति दें",
+        "description": "मैं क्वीयर अलायंस के अंदर अवसरों के साथ संपर्क किए जाने की सहमति देता/देती हूँ"
+      },
+      "newsletter": {
+        "label": "ईमेल न्यूज़लेटर",
+        "description": "मैं न्यूज़लेटर और जानकारी प्राप्त करने की सहमति देता/देती हूँ"
+      },
+      "privacyNotice": "आप इन अनुमतियों को किसी भी समय बदल सकते हैं। हम आपकी गोपनीयता का सम्मान करते हैं और GDPR दिशानिर्देशों का पालन करते हैं।",
+      "consentTimestamp": "सहमति दी गई: {timestamp}",
+      "lastUpdated": "अंतिम अपडेट: {timestamp}"
+    },
+    "participation": {
+      "title": "अपनी भागीदारी भूमिका(एँ) चुनें",
+      "description": "अपनी भागीदारी के लिए एक या अधिक भूमिकाएँ चुनें (गैर-बाध्यकारी)। आप अपनी उपलब्धता, कौशल, नेटवर्क, समय या लक्ष्यों के आधार पर कई भूमिकाएँ चुन सकते हैं <strong>और किसी भी समय बदल सकते हैं</strong>।",
+      "roles": {
+        "member": {
+          "title": "सदस्य",
+          "description": "मैं एक सदस्य के रूप में विभिन्न तरीकों से भाग लेना चाहता/चाहती हूँ"
+        },
+        "expert": {
+          "title": "विशेषज्ञ",
+          "description": "मैं डोमेन-विशिष्ट प्रश्नों में अलायंस को सलाह देना चाहता/चाहती हूँ"
+        },
+        "activist": {
+          "title": "कार्यकर्ता",
+          "description": "मैं दृश्यता और प्रभाव बनाने में अलायंस की मदद करना चाहता/चाहती हूँ"
+        },
+        "supporter": {
+          "title": "समर्थक",
+          "description": "मैं क्वीयर अलायंस का आर्थिक रूप से समर्थन करना चाहता/चाहती हूँ"
+        }
+      }
+    },
+    "account": {
+      "changeEmail": {
+        "title": "ईमेल पता बदलें",
+        "button": "ईमेल बदलें",
+        "success": "ईमेल परिवर्तन शुरू किया गया। पुष्टि करने के लिए कृपया अपना ईमेल जांचें।"
+      },
+      "changePassword": {
+        "title": "पासवर्ड बदलें",
+        "button": "पासवर्ड बदलें",
+        "success": "पासवर्ड सफलतापूर्वक अपडेट किया गया"
+      },
+      "deleteAccount": {
+        "title": "खाता हटाएं",
+        "description": "अपनी प्रोफ़ाइल और सभी संबंधित डेटा को स्थायी रूप से हटाएं",
+        "button": "खाता हटाएं",
+        "confirmText": "DELETE",
+        "confirmPlaceholder": "पुष्टि करने के लिए DELETE टाइप करें",
+        "warning": "यह क्रिया पूर्ववत नहीं की जा सकती। आपका सारा डेटा स्थायी रूप से हटा दिया जाएगा।",
+        "subscriptionWarning": "महत्वपूर्ण: कृपया अपना खाता हटाने से पहले अपनी सभी सक्रिय सदस्यताओं को रद्द कर दें। यदि आप सदस्यताओं को रद्द किए बिना अपना खाता हटाते हैं, तो आपको उन्हें मैन्युअल रूप से रद्द करने के लिए व्यवस्थापक से संपर्क करना होगा।",
+        "success": "खाता सफलतापूर्वक हटा दिया गया"
+      }
+    },
+    "options": {
+      "experienceLevel": {
+        "intern": "इंटर्न",
+        "entry": "प्रवेश स्तर (0-2 वर्ष)",
+        "mid": "मध्य स्तर (3-5 वर्ष)",
+        "senior": "वरिष्ठ स्तर (6-10 वर्ष)",
+        "lead": "लीड/प्रिंसिपल (10+ वर्ष)",
+        "executive": "कार्यकारी/सी-स्तर"
+      }
+    },
+    "profile": {
+      "title": "प्रोफ़ाइल जानकारी",
+      "description": "आपकी मूल खाता जानकारी",
+      "email": "ईमेल",
+      "memberSince": "सदस्य जबसे",
+      "lastUpdated": "अंतिम अपडेट",
+      "profileCompletion": "प्रोफ़ाइल पूर्णता"
+    },
+    "loadingStates": {
+      "saving": "सहेजा जा रहा है...",
+      "updatingSettings": "आपकी सेटिंग्स अपडेट हो रही हैं",
+      "deletingAccount": "खाता हटाया जा रहा है...",
+      "deletingWarning": "यह क्रिया पूर्ववत नहीं की जा सकती",
+      "autoNavigating": "स्वतः-नेविगेट हो रहा है...",
+      "nextSection": "अगला अनुभाग",
+      "loadingCountries": "देश लोड हो रहे हैं...",
+      "loadingRegions": "क्षेत्र लोड हो रहे हैं...",
+      "loadingCities": "शहर लोड हो रहे हैं...",
+      "loadingSupportStatus": "आपकी समर्थन स्थिति लोड हो रही है...",
+      "loadingPlans": "योजनाएं लोड हो रही हैं..."
+    },
+    "errors": {
+      "rateLimitExceeded": "इस फ़ील्ड के लिए दर सीमा पार हो गई",
+      "changeLimitExceeded": "इस फ़ील्ड के लिए परिवर्तन सीमा पार हो गई",
+      "invalidInput": "अमान्य इनपुट",
+      "saveFailed": "परिवर्तन सहेजने में विफल",
+      "loadFailed": "डेटा लोड करने में विफल",
+      "failedToChangeEmail": "ईमेल बदलने में विफल",
+      "failedToChangePassword": "पासवर्ड बदलने में विफल",
+      "maximumCharacters": "अधिकतम {maxLength} वर्णों की अनुमति है",
+      "validation": {
+        "invalidLanguageCode": "अमान्य भाषा कोड",
+        "invalidExperienceLevel": "अमान्य अनुभव स्तर",
+        "skillsMustBeArray": "कौशल एक सरणी होनी चाहिए",
+        "bioTooLong": "बायो बहुत लंबा है (अधिकतम 500 वर्ण)",
+        "invalidWebsite": "वेबसाइट http:// या https:// से शुरू होनी चाहिए और एक वैध डोमेन होना चाहिए (उदा., https://a.co)",
+        "invalidPreferencesStructure": "अमान्य वरीयता संरचना"
+      }
+    },
+    "professional": {
+      "organizationRepresentative": {
+        "label": "मैं एक संगठन का प्रतिनिधित्व करता/करती हूँ",
+        "description": "मैं एक संगठन के प्रतिनिधि के रूप में सीधे संपर्क किए जाने की सहमति देता/देती हूँ"
+      }
+    },
+    "finance": {
+      "title": "वित्त और बिलिंग",
+      "description": "अपनी सदस्यता और बिलिंग वरीयताओं का प्रबंधन करें",
+      "current": "वर्तमान सदस्यता",
+      "loading": "सदस्यता लोड हो रही है...",
+      "manage": "सदस्यता प्रबंधित करें",
+      "upgrade": "योजना अपग्रेड करें",
+      "billing": "बिलिंग इतिहास",
+      "thankYouSupport": "अलायंस का समर्थन करने के लिए धन्यवाद!",
+      "considerSupporting": "इस काम का समर्थन करने पर विचार करें",
+      "premiumFeatures": "प्रीमियम सुविधाएँ और समर्थन",
+      "processing": "संसाधित हो रहा है...",
+      "contributeNow": "अभी योगदान करें",
+      "changeSupportLevel": "समर्थन स्तर बदलें",
+      "startSupporting": "समर्थन शुरू करें",
+      "noPlansAvailable": "कोई योजना उपलब्ध नहीं है",
+      "manageSubscriptionDescription": "अपनी सदस्यता प्रबंधित करें, चालान देखें, और बिलिंग जानकारी अपडेट करें",
+      "accessAccountDescription": "अपनी खाता सेटिंग्स, भुगतान विधियों और बिलिंग जानकारी तक पहुँचें",
+      "manageSubscriptionBilling": "सदस्यता और बिलिंग प्रबंधित करें",
+      "accessBillingPortal": "बिलिंग पोर्टल तक पहुँचें",
+      "stripePortalDescription": "स्ट्राइप के सुरक्षित बिलिंग पोर्टल द्वारा संचालित: भुगतान विधियों का प्रबंधन करें, चालान देखें, बिलिंग पता अपडेट करें, और बहुत कुछ",
+      "currentSupportStatus": "वर्तमान समर्थन स्थिति",
+      "activeSubscription": "✓ सक्रिय सदस्यता",
+      "statusLabel": "स्थिति:",
+      "nextBilling": "अगली बिलिंग:",
+      "oneTimeContributionMade": "✓ एकमुश्त योगदान किया गया",
+      "successfulContribution": "आपने इस काम में सफलतापूर्वक योगदान दिया है",
+      "noActiveSupport": "⚠ कोई सक्रिय समर्थन नहीं",
+      "chooseSupportOption": "क्वीयर अलायंस को निधि देने में मदद करने के लिए नीचे एक समर्थन विकल्प चुनें",
+      "waysToSupport": "इस काम का समर्थन करने के तरीके",
+      "chooseAmountStripe": "आप स्ट्राइप के सुरक्षित चेकआउट में राशि चुनते हैं",
+      "perInterval": "प्रति {interval}",
+      "plansAvailableOnce": "योजनाएं स्ट्राइप में बनाए जाने के बाद यहां दिखाई देंगी",
+      "billingAccountManagement": "बिलिंग और खाता प्रबंधन",
+      "payAsYouWish": "अपनी इच्छानुसार भुगतान करें",
+      "oneTime": "एकमुश्त",
+      "plans": {
+        "basic": {
+          "name": "बेसिक",
+          "description": "शुरू करने के लिए आवश्यक सुविधाएँ",
+          "price": "$9.99/माह"
+        },
+        "pro": {
+          "name": "पेशेवर",
+          "description": "सक्रिय सदस्यों के लिए उन्नत सुविधाएँ",
+          "price": "$19.99/माह"
+        },
+        "expert": {
+          "name": "विशेषज्ञ",
+          "description": "प्राथमिकता समर्थन के साथ पूर्ण पहुँच",
+          "price": "$39.99/माह"
+        },
+        "lifetime": {
+          "name": "आजीवन पहुँच",
+          "description": "स्थायी पहुँच के लिए एकमुश्त भुगतान",
+          "price": "$299.99"
+        }
+      },
+      "error": "सदस्यता जानकारी लोड करने में विफल",
+      "messages": {
+        "paymentSuccessSyncing": "भुगतान सफल! आपका डेटा सिंक हो रहा है...",
+        "paymentSuccessActivated": "भुगतान सफल! आपकी सदस्यता सक्रिय हो गई है।",
+        "paymentCanceled": "भुगतान रद्द कर दिया गया था। आप किसी भी समय पुनः प्रयास कर सकते हैं।",
+        "welcomeBackSyncing": "वापस स्वागत है! आपका बिलिंग डेटा सिंक हो रहा है...",
+        "welcomeBackUpdated": "वापस स्वागत है! आपकी बिलिंग जानकारी अपडेट कर दी गई है।"
+      }
+    }
+  },
+  "languageSwitcher": {
+    "selectLanguage": "भाषा चुनें",
+    "updating": "भाषा अपडेट हो रही है..."
+  },
+  "theme": {
+    "light": "हल्का",
+    "dark": "गहरा",
+    "system": "सिस्टम"
+  },
+  "languages": {
+    "en": "अंग्रेजी",
+    "de": "जर्मन",
+    "fr": "फ्रेंच",
+    "es": "स्पेनिश",
+    "it": "इतालवी",
+    "pt": "पुर्तगाली",
+    "nl": "डच",
+    "pl": "पोलिश",
+    "ru": "रूसी",
+    "ja": "जापानी",
+    "ko": "कोरियाई",
+    "zh": "चीनी",
+    "ar": "अरबी",
+    "hi": "हिंदी"
+  },
+  "professions": {
+    "chief-executive": "मुख्य कार्यकारी",
+    "administration-and-planning-manager": "प्रशासन और योजना प्रबंधक",
+    "policy-and-planning-manager": "नीति और योजना प्रबंधक",
+    "business-services-and-administration-manager": "व्यावसायिक सेवा और प्रशासन प्रबंधक",
+    "sales-marketing-and-development-manager": "बिक्री, विपणन और विकास प्रबंधक",
+    "production-and-specialized-services-manager": "उत्पादन और विशेष सेवा प्रबंधक",
+    "hospitality-retail-and-other-services-manager": "आतिथ्य, खुदरा और अन्य सेवा प्रबंधक",
+    "science-and-engineering-professional": "विज्ञान और इंजीनियरिंग पेशेवर",
+    "software-developer": "सॉफ्टवेयर डेवलपर",
+    "systems-analyst": "सिस्टम विश्लेषक",
+    "database-designer": "डेटाबेस डिजाइनर",
+    "network-professional": "नेटवर्क पेशेवर",
+    "health-professional": "स्वास्थ्य पेशेवर",
+    "doctor": "डॉक्टर",
+    "nurse": "नर्स",
+    "pharmacist": "फार्मासिस्ट",
+    "veterinarian": "पशु चिकित्सक",
+    "teaching-professional": "शिक्षण पेशेवर",
+    "professor": "प्रोफेसर",
+    "secondary-education-teacher": "माध्यमिक शिक्षा शिक्षक",
+    "primary-school-teacher": "प्राथमिक विद्यालय शिक्षक",
+    "business-and-administration-professional": "व्यापार और प्रशासन पेशेवर",
+    "accountant": "लेखाकार",
+    "financial-analyst": "वित्तीय विश्लेषक",
+    "human-resources-professional": "मानव संसाधन पेशेवर",
+    "information-and-communications-technology-professional": "सूचना और संचार प्रौद्योगिकी पेशेवर",
+    "legal-professional": "कानूनी पेशेवर",
+    "lawyer": "वकील",
+    "judge": "न्यायाधीश",
+    "culture-arts-and-design-professional": "संस्कृति, कला और डिजाइन पेशेवर",
+    "author": "लेखक",
+    "journalist": "पत्रकार",
+    "artist": "कलाकार",
+    "designer": "डिजाइनर",
+    "science-and-engineering-associate-professional": "विज्ञान और इंजीनियरिंग सहयोगी पेशेवर",
+    "engineering-technician": "इंजीनियरिंग तकनीशियन",
+    "drafter": "ड्राफ्टर",
+    "health-associate-professional": "स्वास्थ्य सहयोगी पेशेवर",
+    "medical-technician": "चिकित्सा तकनीशियन",
+    "nursing-associate-professional": "नर्सिंग सहयोगी पेशेवर",
+    "business-and-administration-associate-professional": "व्यापार और प्रशासन सहयोगी पेशेवर",
+    "insurance-representative": "बीमा प्रतिनिधि",
+    "estate-agent": "एस्टेट एजेंट",
+    "legal-social-and-cultural-associate-professional": "कानूनी, सामाजिक और सांस्कृतिक सहयोगी पेशेवर",
+    "legal-associate-professional": "कानूनी सहयोगी पेशेवर",
+    "social-worker": "सामाजिक कार्यकर्ता",
+    "information-and-communications-technician": "सूचना और संचार तकनीशियन",
+    "computer-technician": "कंप्यूटर तकनीशियन",
+    "telecommunications-technician": "दूरसंचार तकनीशियन",
+    "general-and-keyboard-clerk": "सामान्य और कीबोर्ड क्लर्क",
+    "secretary": "सचिव",
+    "data-entry-clerk": "डेटा एंट्री क्लर्क",
+    "customer-services-clerk": "ग्राहक सेवा क्लर्क",
+    "customer-service-representative": "ग्राहक सेवा प्रतिनिधि",
+    "receptionist": "रिसेप्शनिस्ट",
+    "numerical-and-material-recording-clerk": "संख्यात्मक और सामग्री रिकॉर्डिंग क्लर्क",
+    "accounting-associate-professional": "लेखा सहयोगी पेशेवर",
+    "bookkeeper": "मुनीम",
+    "other-clerical-support-worker": "अन्य लिपिकीय सहायक कार्यकर्ता",
+    "mail-carrier": "डाकिया",
+    "filing-clerk": "फाइलिंग क्लर्क",
+    "personal-service-worker": "व्यक्तिगत सेवा कार्यकर्ता",
+    "travel-attendant": "यात्रा परिचारक",
+    "cook": "रसोइया",
+    "waiter": "वेटर",
+    "hairdresser": "नाई",
+    "housekeeper": "गृह व्यवस्थापक",
+    "protective-services-worker": "सुरक्षा सेवा कार्यकर्ता",
+    "security-guard": "सुरक्षा गार्ड",
+    "police-officer": "पुलिस अधिकारी",
+    "firefighter": "दमकलकर्मी",
+    "sales-worker": "बिक्री कार्यकर्ता",
+    "shop-salesperson": "दुकान विक्रेता",
+    "cashier": "खजांची",
+    "sales-representative": "बिक्री प्रतिनिधि",
+    "market-oriented-skilled-agricultural-worker": "बाजारोन्मुख कुशल कृषि कार्यकर्ता",
+    "farmer": "किसान",
+    "livestock-producer": "पशुधन उत्पादक",
+    "crop-grower": "फसल उत्पादक",
+    "market-oriented-skilled-forestry-fishery-and-hunting-worker": "बाजारोन्मुख कुशल वानिकी, मत्स्य पालन और शिकार कार्यकर्ता",
+    "logger": "लॉगर",
+    "fisherman": "मछुआरा",
+    "subsistence-farmer-fisherman-hunter-and-gatherer": "निर्वाह किसान, मछुआरा, शिकारी और संग्राहक",
+    "building-and-related-trades-worker": "भवन और संबंधित व्यापार कार्यकर्ता",
+    "carpenter": "बढ़ई",
+    "electrician": "इलेक्ट्रीशियन",
+    "plumber": "प्लम्बर",
+    "painter": "पेंटर",
+    "metal-machinery-and-related-trades-worker": "धातु, मशीनरी और संबंधित व्यापार कार्यकर्ता",
+    "welder": "वेल्डर",
+    "machinist": "मशीनिस्ट",
+    "mechanic": "मैकेनिक",
+    "handicraft-and-printing-worker": "हस्तशिल्प और मुद्रण कार्यकर्ता",
+    "potter": "कुम्हार",
+    "tailor": "दर्जी",
+    "printer": "प्रिंटर",
+    "electrical-and-electronic-trades-worker": "विद्युत और इलेक्ट्रॉनिक व्यापार कार्यकर्ता",
+    "food-processing-woodworking-garment-and-other-craft-and-related-trades-worker": "खाद्य प्रसंस्करण, लकड़ी, परिधान और अन्य शिल्प और संबंधित व्यापार कार्यकर्ता",
+    "stationary-plant-and-machine-operator": "स्थिर संयंत्र और मशीन ऑपरेटर",
+    "power-plant-operator": "पावर प्लांट ऑपरेटर",
+    "machine-operator": "मशीन ऑपरेटर",
+    "assembler": "असेंबलर",
+    "product-assembler": "उत्पाद असेंबलर",
+    "electronics-assembler": "इलेक्ट्रॉनिक्स असेंबलर",
+    "driver-and-mobile-plant-operator": "ड्राइवर और मोबाइल प्लांट ऑपरेटर",
+    "truck-driver": "ट्रक चालक",
+    "bus-driver": "बस चालक",
+    "taxi-driver": "टैक्सी चालक",
+    "cleaner-and-helper": "सफाईकर्मी और सहायक",
+    "domestic-helper": "घरेलू सहायक",
+    "building-cleaner": "भवन सफाईकर्मी",
+    "kitchen-helper": "रसोई सहायक",
+    "agricultural-forestry-and-fishery-laborer": "कृषि, वानिकी और मत्स्य श्रमिक",
+    "farm-worker": "खेत मजदूर",
+    "gardener": "माली",
+    "laborer-in-mining-construction-manufacturing-and-transport": "खनन, निर्माण, विनिर्माण और परिवहन में श्रमिक",
+    "construction-laborer": "निर्माण श्रमिक",
+    "factory-worker": "कारखाना मजदूर",
+    "food-preparation-assistant": "खाद्य तैयारी सहायक",
+    "street-and-related-service-worker": "सड़क और संबंधित सेवा कार्यकर्ता",
+    "content-creator": "कंटेंट क्रिएटर",
+    "social-media-manager": "सोशल मीडिया मैनेजर",
+    "digital-marketing-specialist": "डिजिटल मार्केटिंग विशेषज्ञ",
+    "uxui-designer": "UX/UI डिजाइनर",
+    "data-scientist": "डेटा वैज्ञानिक",
+    "machine-learning-engineer": "मशीन लर्निंग इंजीनियर",
+    "devops-engineer": "DevOps इंजीनियर",
+    "product-manager": "उत्पाद प्रबंधक",
+    "consultant": "सलाहकार",
+    "entrepreneur": "उद्यमी",
+    "freelancer": "फ्रीलांसर",
+    "student": "छात्र",
+    "retired": "सेवानिवृत्त",
+    "unemployed": "बेरोजगार",
+    "other": "अन्य"
+  },
+  "skills": {
+    "javascript": "जावास्क्रिप्ट",
+    "typescript": "टाइपस्क्रिप्ट",
+    "python": "पायथन",
+    "java": "जावा",
+    "c#": "C#",
+    "c++": "C++",
+    "go": "गो",
+    "rust": "रस्ट",
+    "php": "PHP",
+    "ruby": "रूबी",
+    "swift": "स्विफ्ट",
+    "kotlin": "कोट्लिन",
+    "react": "रिएक्ट",
+    "vuejs": "Vue.js",
+    "angular": "एंगुलर",
+    "svelte": "स्वेल्ट",
+    "nextjs": "Next.js",
+    "nodejs": "Node.js",
+    "expressjs": "Express.js",
+    "django": "जैंगो",
+    "flask": "फ्लास्क",
+    "postgresql": "PostgreSQL",
+    "mysql": "MySQL",
+    "mongodb": "MongoDB",
+    "redis": "रेडिस",
+    "aws": "AWS",
+    "azure": "एज़्योर",
+    "google-cloud": "गूगल क्लाउड",
+    "docker": "डॉकर",
+    "kubernetes": "कुबेरनेट्स",
+    "machine-learning": "मशीन लर्निंग",
+    "artificial-intelligence": "कृत्रिम बुद्धिमत्ता",
+    "data-science": "डेटा विज्ञान",
+    "data-analysis": "डेटा विश्लेषण",
+    "statistics": "सांख्यिकी",
+    "cybersecurity": "साइबर सुरक्षा",
+    "network-administration": "नेटवर्क प्रशासन",
+    "database-administration": "डेटाबेस प्रशासन",
+    "system-administration": "सिस्टम प्रशासन",
+    "web-development": "वेब डेवलपमेंट",
+    "mobile-development": "मोबाइल डेवलपमेंट",
+    "game-development": "गेम डेवलपमेंट",
+    "software-testing": "सॉफ्टवेयर परीक्षण",
+    "devops": "DevOps",
+    "graphic-design": "ग्राफिक डिजाइन",
+    "uiux-design": "UI/UX डिजाइन",
+    "web-design": "वेब डिजाइन",
+    "brand-design": "ब्रांड डिजाइन",
+    "logo-design": "लोगो डिजाइन",
+    "typography": "टाइपोग्राफी",
+    "adobe-photoshop": "एडोब फोटोशॉप",
+    "adobe-illustrator": "एडोब इलस्ट्रेटर",
+    "figma": "फिग्मा",
+    "sketch": "स्केच",
+    "canva": "कैनवा",
+    "video-editing": "वीडियो संपादन",
+    "animation": "एनिमेशन",
+    "photography": "फोटोग्राफी",
+    "digital-photography": "डिजिटल फोटोग्राफी",
+    "portrait-photography": "पोर्ट्रेट फोटोग्राफी",
+    "landscape-photography": "लैंडस्केप फोटोग्राफी",
+    "photo-editing": "फोटो संपादन",
+    "drawing": "चित्रकारी",
+    "painting": "पेंटिंग",
+    "digital-art": "डिजिटल कला",
+    "illustration": "चित्रण",
+    "sculpture": "मूर्ति कला",
+    "ceramics": "सिरेमिक",
+    "jewelry-making": "आभूषण बनाना",
+    "3d-modeling": "3डी मॉडलिंग",
+    "cad-design": "सीएडी डिजाइन",
+    "industrial-design": "औद्योगिक डिजाइन",
+    "interior-design": "इंटीरियर डिजाइन",
+    "fashion-design": "फैशन डिजाइन",
+    "project-management": "परियोजना प्रबंधन",
+    "product-management": "उत्पाद प्रबंधन",
+    "business-analysis": "व्यापार विश्लेषण",
+    "strategic-planning": "रणनीतिक योजना",
+    "leadership": "नेतृत्व",
+    "team-management": "टीम प्रबंधन",
+    "human-resources": "मानव संसाधन",
+    "recruitment": "भर्ती",
+    "sales": "बिक्री",
+    "marketing": "विपणन",
+    "digital-marketing": "डिजिटल विपणन",
+    "social-media-marketing": "सोशल मीडिया विपणन",
+    "content-marketing": "कंटेंट मार्केटिंग",
+    "email-marketing": "ईमेल विपणन",
+    "seo": "एसईओ",
+    "sem": "एसईएम",
+    "ppc-advertising": "पीपीसी विज्ञापन",
+    "financial-analysis": "वित्तीय विश्लेषण",
+    "accounting": "लेखांकन",
+    "bookkeeping": "बहीखाता",
+    "budgeting": "बजट बनाना",
+    "investment-analysis": "निवेश विश्लेषण",
+    "risk-management": "जोखिम प्रबंधन",
+    "supply-chain-management": "आपूर्ति श्रृंखला प्रबंधन",
+    "operations-management": "संचालन प्रबंधन",
+    "quality-assurance": "गुणवत्ता आश्वासन",
+    "process-improvement": "प्रक्रिया सुधार",
+    "business-development": "व्यापार विकास",
+    "negotiation": "बातचीत",
+    "contract-management": "अनुबंध प्रबंधन",
+    "vendor-management": "विक्रेता प्रबंधन",
+    "public-speaking": "सार्वजनिक भाषण",
+    "presentation-skills": "प्रस्तुति कौशल",
+    "technical-writing": "तकनीकी लेखन",
+    "creative-writing": "रचनात्मक लेखन",
+    "copywriting": "कॉपी राइटिंग",
+    "content-creation": "कंटेंट निर्माण",
+    "journalism": "पत्रकारिता",
+    "blogging": "ब्लॉगिंग",
+    "editing": "संपादन",
+    "proofreading": "प्रूफरीडिंग",
+    "translation": "अनुवाद",
+    "interpretation": "व्याख्या",
+    "customer-service": "ग्राहक सेवा",
+    "client-relations": "ग्राहक संबंध",
+    "conflict-resolution": "संघर्ष समाधान",
+    "mediation": "मध्यस्थता",
+    "storytelling": "कहानी सुनाना",
+    "interviewing": "साक्षात्कार",
+    "active-listening": "सक्रिय श्रवण",
+    "cross-cultural-communication": "अंतर-सांस्कृतिक संचार",
+    "teaching": "शिक्षण",
+    "training-development": "प्रशिक्षण विकास",
+    "curriculum-design": "पाठ्यक्रम डिजाइन",
+    "educational-technology": "शैक्षिक प्रौद्योगिकी",
+    "e-learning": "ई-लर्निंग",
+    "mentoring": "परामर्श",
+    "coaching": "कोचिंग",
+    "workshop-facilitation": "कार्यशाला सुविधा",
+    "adult-education": "प्रौढ़ शिक्षा",
+    "child-development": "बाल विकास",
+    "special-education": "विशेष शिक्षा",
+    "educational-assessment": "शैक्षिक मूल्यांकन",
+    "research-methods": "अनुसंधान के तरीके",
+    "academic-writing": "अकादमिक लेखन",
+    "first-aid": "प्राथमिक चिकित्सा",
+    "cpr": "सीपीआर",
+    "medical-knowledge": "चिकित्सा ज्ञान",
+    "nursing": "नर्सिंग",
+    "physical-therapy": "भौतिक चिकित्सा",
+    "mental-health-support": "मानसिक स्वास्थ्य सहायता",
+    "nutrition": "पोषण",
+    "fitness-training": "फिटनेस प्रशिक्षण",
+    "yoga": "योग",
+    "meditation": "ध्यान",
+    "mindfulness": "माइंडफुलनेस",
+    "stress-management": "तनाव प्रबंधन",
+    "health-coaching": "स्वास्थ्य कोचिंग",
+    "massage-therapy": "मालिश चिकित्सा",
+    "acupuncture": "एक्यूपंक्चर",
+    "herbal-medicine": "हर्बल दवा",
+    "alternative-medicine": "वैकल्पिक चिकित्सा",
+    "carpentry": "बढ़ईगीरी",
+    "plumbing": "प्लंबिंग",
+    "electrical-work": "बिजली का काम",
+    "hvac": "एचवीएसी",
+    "welding": "वेल्डिंग",
+    "automotive-repair": "ऑटोमोटिव मरम्मत",
+    "motorcycle-repair": "मोटरसाइकिल मरम्मत",
+    "appliance-repair": "उपकरण मरम्मत",
+    "computer-repair": "कंप्यूटर मरम्मत",
+    "electronics-repair": "इलेक्ट्रॉनिक्स मरम्मत",
+    "decorating": "सजावट",
+    "tiling": "टाइलिंग",
+    "roofing": "छत बनाना",
+    "masonry": "राजमिस्त्री का काम",
+    "landscaping": "भूदृश्य",
+    "construction": "निर्माण",
+    "home-improvement": "गृह सुधार",
+    "furniture-making": "फर्नीचर बनाना",
+    "cooking": "खाना बनाना",
+    "baking": "पकाना",
+    "pastry-making": "पेस्ट्री बनाना",
+    "food-preparation": "भोजन तैयारी",
+    "menu-planning": "मेनू योजना",
+    "recipe-development": "नुस्खा विकास",
+    "food-safety": "खाद्य सुरक्षा",
+    "kitchen-management": "रसोई प्रबंधन",
+    "wine-knowledge": "शराब का ज्ञान",
+    "bartending": "बारटेंडिंग",
+    "coffee-making": "कॉफी बनाना",
+    "brewing": "शराब बनाना",
+    "food-photography": "खाद्य फोटोग्राफी",
+    "catering": "कैटरिंग",
+    "meal-planning": "भोजन योजना",
+    "nutrition-planning": "पोषण योजना",
+    "dietary-planning": "आहार योजना",
+    "music-production": "संगीत उत्पादन",
+    "audio-engineering": "ऑडियो इंजीनियरिंग",
+    "music-composition": "संगीत रचना",
+    "singing": "गायन",
+    "guitar": "गिटार",
+    "piano": "पियानो",
+    "drums": "ड्रम",
+    "violin": "वायलिन",
+    "bass": "बास",
+    "saxophone": "सैक्सोफोन",
+    "music-theory": "संगीत सिद्धांत",
+    "sound-design": "ध्वनि डिजाइन",
+    "podcast-production": "पॉडकास्ट उत्पादन",
+    "acting": "अभिनय",
+    "theater": "थिएटर",
+    "film-making": "फिल्म निर्माण",
+    "screenwriting": "पटकथा लेखन",
+    "video-production": "वीडियो उत्पादन",
+    "broadcasting": "प्रसारण",
+    "stand-up-comedy": "स्टैंड-अप कॉमेडी",
+    "improvisation": "आशु रचना",
+    "dance": "नृत्य",
+    "ballet": "बैले",
+    "hip-hop": "हिप हॉप",
+    "salsa": "साल्सा",
+    "ballroom-dancing": "बॉलरूम नृत्य",
+    "football": "फुटबॉल",
+    "basketball": "बास्केटबॉल",
+    "soccer": "सॉकर",
+    "tennis": "टेनिस",
+    "golf": "गोल्फ",
+    "swimming": "तैराकी",
+    "running": "दौड़ना",
+    "cycling": "साइकिल चलाना",
+    "hiking": "लंबी पैदल यात्रा",
+    "rock-climbing": "रॉक क्लाइंबिंग",
+    "skiing": "स्कीइंग",
+    "snowboarding": "स्नोबोर्डिंग",
+    "surfing": "सर्फिंग",
+    "martial-arts": "मार्शल आर्ट",
+    "boxing": "मुक्केबाजी",
+    "wrestling": "कुश्ती",
+    "gymnastics": "जिमनास्टिक",
+    "track-and-field": "ट्रैक और फील्ड",
+    "baseball": "बेसबॉल",
+    "volleyball": "वॉलीबॉल",
+    "badminton": "बैडमिंटन",
+    "table-tennis": "टेबल टेनिस",
+    "sports-coaching": "खेल कोचिंग",
+    "personal-training": "व्यक्तिगत प्रशिक्षण",
+    "athletic-training": "एथलेटिक प्रशिक्षण",
+    "camping": "कैंपिंग",
+    "backpacking": "बैकपैकिंग",
+    "fishing": "मछली पकड़ना",
+    "hunting": "शिकार",
+    "map-reading": "नक्शा पढ़ना",
+    "orienteering": "ओरिएंटियरिंग",
+    "wilderness-survival": "जंगल में जीवन रक्षा",
+    "fire-making": "आग बनाना",
+    "foraging": "चारा खोजना",
+    "knot-tying": "गाँठ बाँधना",
+    "rope-work": "रस्सी का काम",
+    "sailing": "नौकायन",
+    "kayaking": "कयाकिंग",
+    "canoeing": "कैनोइंग",
+    "mountain-climbing": "पर्वतारोहण",
+    "cave-exploration": "गुफा अन्वेषण",
+    "wildlife-tracking": "वन्यजीव ट्रैकिंग",
+    "gardening": "बागवानी",
+    "organic-gardening": "जैविक बागवानी",
+    "hydroponics": "हाइड्रोपोनिक्स",
+    "permaculture": "पर्माकल्चर",
+    "composting": "खाद बनाना",
+    "plant-propagation": "पौधा प्रसार",
+    "tree-care": "पेड़ की देखभाल",
+    "flower-arranging": "फूलों की सजावट",
+    "botanical-knowledge": "वनस्पति ज्ञान",
+    "pest-management": "कीट प्रबंधन",
+    "soil-management": "मिट्टी प्रबंधन",
+    "irrigation": "सिंचाई",
+    "greenhouse-management": "ग्रीनहाउस प्रबंधन",
+    "urban-farming": "शहरी खेती",
+    "beekeeping": "मधुमक्खी पालन",
+    "knitting": "बुनाई",
+    "crocheting": "क्रोशिया",
+    "sewing": "सिलाई",
+    "quilting": "रजाई बनाना",
+    "embroidery": "कढ़ाई",
+    "cross-stitch": "क्रॉस-स्टिच",
+    "woodworking": "लकड़ी का काम",
+    "metalworking": "धातु का काम",
+    "glassblowing": "कांच उड़ाना",
+    "pottery": "मिट्टी के बर्तन",
+    "candle-making": "मोमबत्ती बनाना",
+    "soap-making": "साबुन बनाना",
+    "leatherworking": "चमड़े का काम",
+    "bookbinding": "किताब जिल्दसाजी",
+    "origami": "ओरिगेमी",
+    "calligraphy": "सुलेख",
+    "scrapbooking": "स्क्रैपबुकिंग",
+    "model-building": "मॉडल बनाना",
+    "data-collection": "डेटा संग्रह",
+    "statistical-analysis": "सांख्यिकीय विश्लेषण",
+    "literature-review": "साहित्य समीक्षा",
+    "critical-thinking": "महत्वपूर्ण सोच",
+    "problem-solving": "समस्या को सुलझाना",
+    "mathematical-modeling": "गणितीय मॉडलिंग",
+    "scientific-method": "वैज्ञानिक विधि",
+    "laboratory-skills": "प्रयोगशाला कौशल",
+    "microscopy": "माइक्रोस्कोपी",
+    "spectroscopy": "स्पेक्ट्रोस्कोपी",
+    "chemical-analysis": "रासायनिक विश्लेषण",
+    "fieldwork": "क्षेत्रकार्य",
+    "survey-design": "सर्वेक्षण डिजाइन",
+    "grant-writing": "अनुदान लेखन",
+    "time-management": "समय प्रबंधन",
+    "organization": "संगठन",
+    "goal-setting": "लक्ष्य निर्धारण",
+    "self-discipline": "आत्म-अनुशासन",
+    "emotional-intelligence": "भावनात्मक बुद्धिमत्ता",
+    "decision-making": "निर्णय लेना",
+    "creative-thinking": "रचनात्मक सोच",
+    "innovation": "नवाचार",
+    "adaptability": "अनुकूलनशीलता",
+    "resilience": "लचीलापन",
+    "self-motivation": "आत्म-प्रेरणा",
+    "continuous-learning": "सतत सीखना",
+    "self-reflection": "आत्म-चिंतन",
+    "networking": "नेटवर्किंग",
+    "relationship-building": "संबंध निर्माण",
+    "empathy": "सहानुभूति",
+    "cultural-sensitivity": "सांस्कृतिक संवेदनशीलता",
+    "team-collaboration": "टीम सहयोग",
+    "volunteer-coordination": "स्वयंसेवी समन्वय",
+    "community-organizing": "सामुदायिक आयोजन",
+    "event-planning": "इवेंट प्लानिंग",
+    "party-planning": "पार्टी प्लानिंग",
+    "hospitality": "आतिथ्य",
+    "customer-relations": "ग्राहक संबंध",
+    "diplomacy": "कूटनीति",
+    "persuasion": "अनुनय",
+    "influence": "प्रभाव",
+    "social-media-engagement": "सोशल मीडिया सहभागिता",
+    "computer-literacy": "कंप्यूटर साक्षरता",
+    "internet-research": "इंटरनेट अनुसंधान",
+    "email-management": "ईमेल प्रबंधन",
+    "social-media-management": "सोशल मीडिया प्रबंधन",
+    "online-marketing": "ऑनलाइन विपणन",
+    "e-commerce": "ई-कॉमर्स",
+    "digital-privacy": "डिजिटल गोपनीयता",
+    "cybersecurity-awareness": "साइबर सुरक्षा जागरूकता",
+    "podcast-creation": "पॉडकास्ट निर्माण",
+    "youtube-creation": "यूट्यूब निर्माण",
+    "live-streaming": "लाइव स्ट्रीमिंग",
+    "online-teaching": "ऑनलाइन शिक्षण",
+    "virtual-collaboration": "आभासी सहयोग",
+    "driving": "ड्राइविंग",
+    "truck-driving": "ट्रक ड्राइविंग",
+    "motorcycle-riding": "मोटरसाइकिल चलाना",
+    "bicycle-maintenance": "साइकिल रखरखाव",
+    "navigation": "नेविगेशन",
+    "route-planning": "मार्ग योजना",
+    "logistics-coordination": "लॉजिस्टिक्स समन्वय",
+    "warehouse-management": "गोदाम प्रबंधन",
+    "inventory-management": "सूची प्रबंधन",
+    "shipping-and-receiving": "शिपिंग और प्राप्ति",
+    "personal-finance": "व्यक्तिगत वित्त",
+    "investment-planning": "निवेश योजना",
+    "tax-preparation": "कर तैयारी",
+    "insurance-knowledge": "बीमा ज्ञान",
+    "real-estate": "अचल संपत्ति",
+    "cryptocurrency": "क्रिप्टोकरेंसी",
+    "trading": "व्यापार",
+    "financial-planning": "वित्तीय योजना",
+    "retirement-planning": "सेवानिवृत्ति योजना",
+    "debt-management": "ऋण प्रबंधन",
+    "spanish": "स्पेनिश",
+    "french": "फ्रेंच",
+    "german": "जर्मन",
+    "italian": "इतालवी",
+    "portuguese": "पुर्तगाली",
+    "russian": "रूसी",
+    "chinese": "चीनी",
+    "japanese": "जापानी",
+    "korean": "कोरियाई",
+    "arabic": "अरबी",
+    "hindi": "हिंदी",
+    "dutch": "डच",
+    "swedish": "स्वीडिश",
+    "norwegian": "नॉर्वेजियन",
+    "danish": "डेनिश",
+    "finnish": "फिनिश",
+    "polish": "पोलिश",
+    "turkish": "तुर्की",
+    "magic-tricks": "जादू के करतब",
+    "juggling": "जादूगरी",
+    "balloon-animals": "गुब्बारे के जानवर",
+    "face-painting": "फेस पेंटिंग",
+    "card-games": "ताश के खेल",
+    "board-games": "बोर्ड गेम",
+    "chess": "शतरंज",
+    "bridge": "ब्रिज",
+    "poker": "पोकर",
+    "trivia-knowledge": "सामान्य ज्ञान",
+    "speed-reading": "तेजी से पढ़ना",
+    "memory-techniques": "स्मृति तकनीक",
+    "escape-rooms": "एस्केप रूम",
+    "puzzle-solving": "पहेली सुलझाना",
+    "crossword-puzzles": "वर्ग पहेली",
+    "sudoku": "सुडोकू",
+    "word-games": "शब्द का खेल"
+  },
+  "common": {
+    "add": "जोड़ें",
+    "remove": "हटाएं",
+    "search": "खोजें",
+    "select": "चुनें",
+    "loading": "लोड हो रहा है...",
+    "error": "त्रुटि",
+    "success": "सफलता",
+    "yes": "हाँ",
+    "no": "नहीं",
+    "ok": "ठीक है",
+    "close": "बंद करें",
+    "submit": "सबमिट करें",
+    "reset": "रीसेट करें",
+    "clear": "साफ़ करें",
+    "next": "अगला",
+    "previous": "पिछला",
+    "back": "वापस",
+    "forward": "आगे",
+    "help": "मदद",
+    "about": "के बारे में"
+  },
+  "cookiePolicy": {
+    "title": "कुकी नीति",
+    "lastUpdated": "अंतिम अपडेट: जून 2025",
+    "labels": {
+      "purpose": "उद्देश्य:",
+      "cookies": "कुकीज़:",
+      "privacy": "गोपनीयता:",
+      "legalBasis": "कानूनी आधार:",
+      "cookieName": "कुकी का नाम",
+      "duration": "अवधि"
+    },
+    "introduction": {
+      "title": "कुकी नीति",
+      "content": "यह कुकी नीति बताती है कि QUEER MEDIA LITERACY e.V. (\"क्वीयर अलायंस\") हमारे प्लेटफ़ॉर्म पर कुकीज़ का उपयोग कैसे करता है। <strong>हम केवल आवश्यक कुकीज़ का उपयोग करते हैं</strong> जो हमारे प्लेटफ़ॉर्म के काम करने के लिए आवश्यक हैं - कोई ट्रैकिंग, विज्ञापन या एनालिटिक्स कुकीज़ नहीं जिनके लिए आपकी सहमति की आवश्यकता होगी।"
+    },
+    "whatAreCookies": {
+      "title": "1. कुकीज़ क्या हैं",
+      "content": "कुकीज़ छोटी टेक्स्ट फाइलें होती हैं जो आपके डिवाइस पर संग्रहीत होती हैं जब आप हमारी वेबसाइट पर जाते हैं। <strong>हम केवल आवश्यक कुकीज़ का उपयोग करते हैं</strong> जो हमारे प्लेटफ़ॉर्म के काम करने के लिए आवश्यक हैं:",
+      "remembering": "• <strong>सुरक्षित लॉगिन सत्र</strong> - आपको सुरक्षित रूप से लॉग इन रखना",
+      "improving": "• <strong>बहु-भाषा समर्थन</strong> - नेविगेशन के लिए आपकी भाषा पसंद को याद रखना",
+      "analyzing": "• <strong>भुगतान सुरक्षा</strong> - दान के दौरान धोखाधड़ी की रोकथाम",
+      "personalizing": "• <strong>कोई ट्रैकिंग नहीं</strong> - हम आपके व्यवहार को ट्रैक करने के लिए कुकीज़ का उपयोग नहीं करते हैं"
+    },
+    "typesOfCookies": {
+      "title": "2. हम जिन प्रकार की कुकीज़ का उपयोग करते हैं",
+      "essential": {
+        "title": "आवश्यक कुकीज़ (केवल वे कुकीज़ जिनका हम उपयोग करते हैं)",
+        "content": "<strong>हमारी सभी कुकीज़ आवश्यक हैं</strong> - वे प्लेटफ़ॉर्म के काम करने के लिए आवश्यक हैं और उन्हें GDPR के तहत आपकी सहमति की आवश्यकता नहीं है:",
+        "authentication": "• <strong>लॉगिन सुरक्षा</strong>: आपको सुरक्षित रूप से लॉग इन रखने के लिए सत्र टोकन",
+        "security": "• <strong>भुगतान सुरक्षा</strong>: दान के दौरान स्ट्राइप धोखाधड़ी की रोकथाम",
+        "functionality": "• <strong>भाषा समर्थन</strong>: साइट नेविगेशन के लिए आपकी भाषा पसंद को याद रखना",
+        "compliance": "• <strong>कोई ट्रैकिंग नहीं</strong>: हम व्यक्तिगत डेटा एकत्र करने या व्यवहार को ट्रैक करने के लिए कुकीज़ का उपयोग नहीं करते हैं"
+      },
+      "functional": {
+        "title": "उपयोगकर्ता वरीयताएँ (आपके खाते में संग्रहीत, कुकीज़ में नहीं)",
+        "content": "<strong>डिजाइन द्वारा गोपनीयता</strong>: हम आपकी वरीयताओं को आपके सुरक्षित खाता प्रोफ़ाइल में संग्रहीत करते हैं, ट्रैकिंग कुकीज़ में नहीं:",
+        "preferences": "• <strong>भाषा और थीम</strong>: आपके खाता प्रोफ़ाइल में सहेजा गया, उपकरणों पर पहुँचा जा सकता है",
+        "formData": "• <strong>पहुँच-योग्यता सेटिंग्स</strong>: आपके डेटाबेस प्रोफ़ाइल में सुरक्षित रूप से संग्रहीत",
+        "accessibility": "• <strong>बेहतर गोपनीयता</strong>: खाता-आधारित भंडारण का मतलब है कि कोई ट्रैकिंग कुकीज़ की आवश्यकता नहीं है"
+      },
+      "analytics": {
+        "title": "एनालिटिक्स (पूरी तरह से कुकी-मुक्त)",
+        "content": "हम <strong>Vercel Web Analytics</strong> का उपयोग करते हैं - एक गोपनीयता-प्रथम समाधान जो शून्य कुकीज़ का उपयोग करता है:",
+        "usage": "• <strong>कोई कुकीज़ नहीं</strong>: अनाम हैश-आधारित आगंतुक पहचान का उपयोग करता है",
+        "performance": "• <strong>गोपनीयता पहले</strong>: हैश हर 24 घंटे में रीसेट होता है, कोई क्रॉस-साइट ट्रैकिंग नहीं",
+        "demographics": "• <strong>केवल अनाम</strong>: एकत्रित आँकड़े, कोई व्यक्तिगत डेटा नहीं",
+        "provider": "• <strong>कोई सहमति आवश्यक नहीं</strong>: डिजाइन द्वारा अनुपालन, कोई कुकीज़ का मतलब कोई सहमति की आवश्यकता नहीं"
+      },
+      "payment": {
+        "title": "भुगतान प्रसंस्करण कुकीज़ (भुगतान के लिए आवश्यक)",
+        "content": "स्ट्राइप भुगतान प्रोसेसर भुगतान प्रसंस्करण के दौरान आवश्यक कुकीज़ का उपयोग करता है:",
+        "fraud": "• <strong>धोखाधड़ी की रोकथाम</strong>: __stripe_mid (1 वर्ष), __stripe_sid (30 मिनट)",
+        "security": "• <strong>भुगतान सुरक्षा</strong>: सुरक्षित लेनदेन प्रसंस्करण के लिए आवश्यक",
+        "session": "• <strong>सत्र प्रबंधन</strong>: चेकआउट प्रक्रिया के दौरान भुगतान स्थिति बनाए रखना"
+      }
+    },
+    "thirdPartyServices": {
+      "title": "3. तृतीय-पक्ष सेवाएँ और उनकी कुकीज़",
+      "content": "हम GDPR-अनुपालक भागीदारों के साथ काम करते हैं जो जब आप उनकी सेवाओं का उपयोग करते हैं तो कुकीज़ सेट कर सकते हैं:",
+      "stripe": {
+        "title": "स्ट्राइप (भुगतान प्रसंस्करण)",
+        "purpose": "दान और सदस्यता के लिए सुरक्षित भुगतान प्रसंस्करण",
+        "cookies": "आवश्यक कुकीज़: __stripe_mid, __stripe_sid (धोखाधड़ी की रोकथाम, सुरक्षा)",
+        "privacy": "गोपनीयता नीति: stripe.com/privacy | कुकी नीति: stripe.com/legal/cookies-policy",
+        "legal": "केवल भुगतान प्रसंस्करण के दौरान उपयोग किया जाता है (अनुबंध प्रदर्शन के लिए वैध हित)"
+      },
+      "vercel": {
+        "title": "Vercel Analytics (वेबसाइट एनालिटिक्स)",
+        "purpose": "गोपनीयता-केंद्रित वेबसाइट एनालिटिक्स और प्रदर्शन निगरानी",
+        "cookies": "कोई कुकीज़ उपयोग नहीं किया जाता है - हैश-आधारित अनाम आगंतुक पहचान",
+        "privacy": "गोपनीयता नीति: vercel.com/legal/privacy-policy",
+        "legal": "कोई सहमति आवश्यक नहीं है क्योंकि कोई व्यक्तिगत डेटा या कुकीज़ का उपयोग नहीं किया जाता है"
+      },
+      "supabase": {
+        "title": "सुपाबेस (प्रमाणीकरण और डेटाबेस)",
+        "purpose": "सुरक्षित उपयोगकर्ता प्रमाणीकरण और डेटा भंडारण",
+        "cookies": "प्रमाणीकरण के लिए सत्र कुकीज़ (लॉगिन कार्यक्षमता के लिए आवश्यक)",
+        "privacy": "गोपनीयता नीति: supabase.com/privacy",
+        "legal": "अनुबंध प्रदर्शन के लिए आवश्यक कुकीज़ (कोई सहमति आवश्यक नहीं)"
+      }
+    },
+    "cookieConsent": {
+      "title": "4. हमें कुकी सहमति की आवश्यकता क्यों नहीं है",
+      "content": "<strong>कोई सहमति आवश्यक नहीं</strong> - हमारी सभी कुकीज़ कार्यक्षमता के लिए आवश्यक हैं:",
+      "essential": "• <strong>केवल आवश्यक</strong>: लॉगिन, भुगतान और नेविगेशन के लिए सभी कुकीज़ आवश्यक हैं",
+      "granular": "• <strong>कोई ट्रैकिंग नहीं</strong>: हम विज्ञापन, एनालिटिक्स या व्यवहार संबंधी कुकीज़ का उपयोग नहीं करते हैं",
+      "withdraw": "• <strong>GDPR अनुपालक</strong>: आवश्यक कुकीज़ को सहमति आवश्यकताओं से छूट दी गई है",
+      "settings": "• <strong>डिजाइन द्वारा गोपनीयता</strong>: न्यूनतम डेटा संग्रह, अधिकतम उपयोगकर्ता गोपनीयता",
+      "noConsent": "• <strong>पारदर्शी</strong>: हम आपको ठीक-ठीक बताते हैं कि हम क्या उपयोग करते हैं और क्यों"
+    },
+    "browserControls": {
+      "title": "5. ब्राउज़र कुकी नियंत्रण",
+      "content": "आप अपनी ब्राउज़र सेटिंग्स के माध्यम से कुकीज़ को नियंत्रित कर सकते हैं। ध्यान दें कि आवश्यक कुकीज़ को अक्षम करने से लॉगिन और भुगतान कार्यक्षमता बाधित हो सकती है:",
+      "chrome": "• <strong>क्रोम</strong>: सेटिंग्स > गोपनीयता और सुरक्षा > कुकीज़ और अन्य साइट डेटा",
+      "firefox": "• <strong>फ़ायरफ़ॉक्स</strong>: विकल्प > गोपनीयता और सुरक्षा > कुकीज़ और साइट डेटा",
+      "safari": "• <strong>सफारी</strong>: वरीयताएँ > गोपनीयता > कुकीज़ और वेबसाइट डेटा",
+      "edge": "• <strong>एज</strong>: सेटिंग्स > साइट अनुमतियाँ > कुकीज़ और साइट डेटा",
+      "impact": "<strong>महत्वपूर्ण</strong>: आवश्यक कुकीज़ को अक्षम करने से लॉगिन, भुगतान और मुख्य कार्यक्षमता बाधित होगी"
+    },
+    "cookieDetails": {
+      "title": "6. विस्तृत कुकी सूची",
+      "content": "आपके डिवाइस पर सेट की जा सकने वाली कुकीज़ की पूरी सूची:",
+      "essential": {
+        "title": "आवश्यक कुकीज़ (कार्यक्षमता के लिए आवश्यक)",
+        "items": [
+          {
+            "name": "sb-[project]-auth-token",
+            "purpose": "सुपाबेस प्रमाणीकरण सत्र टोकन (सुरक्षित लॉगिन)",
+            "duration": "1 घंटा (स्वतः-ताज़ा)",
+            "provider": "सुपाबेस",
+            "legal": "अनुबंध प्रदर्शन (उपयोगकर्ता खाता पहुँच के लिए आवश्यक)"
+          },
+          {
+            "name": "__stripe_mid",
+            "purpose": "स्ट्राइप धोखाधड़ी की रोकथाम (भुगतान सुरक्षा)",
+            "duration": "1 वर्ष",
+            "provider": "स्ट्राइप",
+            "legal": "वैध हित (भुगतान के दौरान धोखाधड़ी की रोकथाम)"
+          },
+          {
+            "name": "__stripe_sid",
+            "purpose": "स्ट्राइप सत्र प्रबंधन (भुगतान प्रक्रिया)",
+            "duration": "30 मिनट",
+            "provider": "स्ट्राइप",
+            "legal": "अनुबंध प्रदर्शन (भुगतान प्रसंस्करण के लिए आवश्यक)"
+          },
+          {
+            "name": "NEXT_LOCALE",
+            "purpose": "Next.js लोकेल रूटिंग (भाषा URL रूटिंग)",
+            "duration": "1 वर्ष",
+            "provider": "Next.js",
+            "legal": "अनुबंध प्रदर्शन (बहु-भाषा कार्यक्षमता के लिए आवश्यक)"
+          }
+        ]
+      },
+      "functional": {
+        "title": "कार्यात्मक कुकीज़ (वर्तमान में कोई नहीं)",
+        "content": "हम कार्यात्मक कुकीज़ का उपयोग नहीं करते हैं। उपयोगकर्ता वरीयताएँ कुकीज़ के बजाय आपके डेटाबेस प्रोफ़ाइल में सुरक्षित रूप से संग्रहीत की जाती हैं, जो बेहतर गोपनीयता और उपकरणों पर दृढ़ता प्रदान करती हैं।"
+      },
+      "analytics": {
+        "title": "एनालिटिक्स (कोई कुकीज़ नहीं)",
+        "content": "Vercel Web Analytics गोपनीयता-अनुकूल, कुकी-मुक्त एनालिटिक्स का उपयोग करता है जिसे GDPR के तहत सहमति की आवश्यकता नहीं है।"
+      }
+    },
+    "legalBasis": {
+      "title": "7. कुकी प्रसंस्करण के लिए कानूनी आधार",
+      "content": "हमारी कुकी का उपयोग GDPR अनुच्छेद 6 और ePrivacy निर्देश अनुच्छेद 5(3) का अनुपालन करता है:",
+      "essential": "• <strong>आवश्यक कुकीज़</strong>: प्लेटफ़ॉर्म कार्यक्षमता और सुरक्षा के लिए वैध हित (अनुच्छेद 6(1)(f))",
+      "payment": "• <strong>भुगतान कुकीज़</strong>: लेनदेन संसाधित करने के लिए अनुबंध प्रदर्शन (अनुच्छेद 6(1)(b))",
+      "consent": "• <strong>कार्यात्मक कुकीज़</strong>: उन्नत उपयोगकर्ता अनुभव के लिए सहमति (अनुच्छेद 6(1)(a))",
+      "compliance": "• <strong>सहमति कुकीज़</strong>: GDPR अनुपालन रिकॉर्ड-कीपिंग के लिए कानूनी दायित्व (अनुच्छेद 6(1)(c))",
+      "analytics": "• <strong>एनालिटिक्स</strong>: कोई कानूनी आधार आवश्यक नहीं (कोई कुकीज़ या व्यक्तिगत डेटा संसाधित नहीं)"
+    },
+    "dataProtection": {
+      "title": "8. डेटा संरक्षण और कुकी अधिकार",
+      "content": "GDPR के तहत आपके कुकी-संबंधित डेटा संरक्षण अधिकार:",
+      "access": "• <strong>पहुँच का अधिकार</strong>: अपने डिवाइस पर सेट कुकीज़ के बारे में जानकारी का अनुरोध करें",
+      "rectification": "• <strong>सुधार का अधिकार</strong>: गलत कुकी वरीयता रिकॉर्ड को सही करें",
+      "erasure": "• <strong>मिटाने का अधिकार</strong>: कुकी सहमति रिकॉर्ड हटाएं (संपर्क admin@queer-Deep Resirch.com)",
+      "restriction": "• <strong>प्रतिबंध का अधिकार</strong>: कुकी प्रसंस्करण को केवल आवश्यक तक सीमित करें",
+      "objection": "• <strong>आपत्ति का अधिकार</strong>: गैर-आवश्यक कुकीज़ पर आपत्ति (सहमति वापस लें)",
+      "portability": "• <strong>डेटा पोर्टेबिलिटी</strong>: अपनी कुकी सहमति इतिहास को संरचित प्रारूप में प्राप्त करें"
+    },
+    "updates": {
+      "title": "9. इस कुकी नीति में अपडेट",
+      "content": "हम कानूनी या तकनीकी परिवर्तनों को प्रतिबिंबित करने के लिए इस कुकी नीति को अपडेट कर सकते हैं:",
+      "notification": "• <strong>अधिसूचना</strong>: आपके अधिकारों को प्रभावित करने वाले महत्वपूर्ण परिवर्तनों के लिए ईमेल अधिसूचना",
+      "consent": "• <strong>नई सहमति</strong>: नई कुकी प्रकारों या उद्देश्यों के लिए अद्यतन सहमति का अनुरोध करें",
+      "effective": "• <strong>प्रभावी तिथि</strong>: परिवर्तन अधिसूचना के 30 दिन बाद प्रभावी होते हैं जब तक कि तत्काल न हो",
+      "version": "• <strong>संस्करण नियंत्रण</strong>: पिछले संस्करण अनुरोध पर उपलब्ध हैं"
+    },
+    "contact": {
+      "title": "10. कुकीज़ के बारे में हमसे संपर्क करें",
+      "content": "हमारी कुकी प्रथाओं के बारे में प्रश्नों के लिए या अपने अधिकारों का प्रयोग करने के लिए:",
+      "email": "<strong>डेटा संरक्षण अधिकारी</strong>: admin@queer-Deep Resirch.com",
+      "response": "<strong>30 दिनों के भीतर प्रतिक्रिया</strong> जैसा कि GDPR अनुच्छेद 12 द्वारा आवश्यक है",
+      "dpa": "<strong>पर्यवेक्षी प्राधिकरण</strong>: Österreichische Datenschutzbehörde (dsb.gv.at)",
+      "address": "<strong>QUEER MEDIA LITERACY e.V.</strong>, 1060 Wien, Mariahilfer Straße 49/15, Austria"
+    }
+  },
+  "manifest": {
+    "title": "घोषणापत्र",
+    "lastUpdated": "अंतिम अपडेट: जून 2025",
+    "why": {
+      "title": "हम एक साथ क्यों आए?",
+      "content": "हम एक ऐसे समय में रहते हैं, जहाँ सुव्यवस्थित और संसाधन-संपन्न ताकतें लोगों को एक-दूसरे के खिलाफ खड़ा करती हैं। उनका लक्ष्य स्पष्ट है: क्वीयर लोगों के मौलिक अधिकारों पर हमला करना और समान अधिकारों को दिए जाने से रोकना। हमारा गठबंधन इन अलोकतांत्रिक और अमानवीय प्रयासों की प्रतिक्रिया है। हम पीछे धकेले नहीं जाएंगे, विभाजित नहीं होंगे, भ्रमित नहीं होंगे, या दमित नहीं होंगे, और हम दृढ़ संकल्प के साथ आगे बढ़ते हैं।"
+    },
+    "who": {
+      "title": "हम कौन हैं?",
+      "content": "हम क्वीयर लोगों और उनके सहयोगियों का एक गठबंधन हैं जो LGBTQIA+ समुदाय को मजबूत करने और उसकी रक्षा करने के लिए मिलकर काम करते हैं। हम खुद को एकजुटता के लिए एक नेटवर्क के रूप में देखते हैं जो सामूहिक ताकतों को एकजुट करता है और अपने सदस्यों के हितों को बढ़ावा देता है। हम विचारों और एक खुले और विविध समाज के डिजाइन के लिए रचनात्मक स्थान बनाते हैं।"
+    },
+    "what": {
+      "title": "हमें क्या प्रेरित करता है?",
+      "content": "हम सुरक्षा, दृश्यता और प्रेम के अपने अधिकार की किसी भी शत्रुता के खिलाफ रक्षा करते हैं। किसी को भी हमारे अस्तित्व के बारे में निर्णय लेने का अधिकार नहीं है। हम अपना भविष्य अपने हाथों में लेते हैं, बिना दूसरों के इसे निर्धारित किए।"
+    },
+    "participation": {
+      "title": "हमसे कौन जुड़ सकता है?",
+      "content": "हमारा गठबंधन LGBTQIA+ समुदाय के सभी सदस्यों और उनके सहयोगियों के लिए खुला है, चाहे उनकी उत्पत्ति, संबद्धता और जीवन शैली कुछ भी हो। जहाँ दूसरे विभाजित और बहिष्कृत करते हैं, हम विविधता के माध्यम से ताकत जीते हैं।"
+    },
+    "action": {
+      "title": "हम कैसे कार्य करते हैं?",
+      "content": "हम एक-दूसरे के लिए खड़े होते हैं, आंतरिक और बाह्य रूप से। हम चुपचाप खड़े नहीं रहते, हम कार्य करते हैं। हम स्वतंत्रता, विविधता और आत्मनिर्णय के लिए गठबंधन का हिस्सा हैं।"
+    }
+  },
+  "imprint": {
+    "title": "इंप्रिंट",
+    "lastUpdated": "अंतिम अपडेट: जून 2025",
+    "labels": {
+      "name": "नाम",
+      "seat": "सीट",
+      "address": "पता",
+      "country": "देश",
+      "foundationDate": "स्थापना तिथि"
+    },
+    "organization": {
+      "title": "संगठन की जानकारी",
+      "name": "QUEER MEDIA LITERACY e.V.",
+      "seat": "वियना",
+      "address": "1060 वियना, Mariahilfer Straße 49/15",
+      "country": "ऑस्ट्रिया",
+      "foundationDate": "21.09.2024"
+    },
+    "partners": {
+      "title": "पार्टनर",
+      "partnersList": "Deep Resirch के अलग होने तक, Queer Media Literacy संघ वेबसाइट की जिम्मेदारी लेगा। हालांकि, संघ कई भागीदारों में से केवल एक है। Vangardist Agency & Magazine, GGG.at, Transv.at, Queer Moments, Queer Dance im Gemeindebau, Porn Film Festival Vienna, Queer Shorts Vienna, Vienna Gay Mans Chorus, YK Media"
+    },
+    "registration": {
+      "title": "पंजीकरण",
+      "authority": "प्राधिकरण: वियना राज्य पुलिस निदेशालय, संघ, विधानसभा और मीडिया कानून मामलों के लिए विभाग",
+      "zvrNumber": "ZVR संख्या 1689372191"
+    },
+    "contact": {
+      "title": "संपर्क",
+      "emailLabel": "ई-मेल:",
+      "email": "admin@queer-Deep Resirch.com",
+      "note": "सभी पूछताछ के लिए, कृपया विशेष रूप से ऊपर दिए गए ईमेल पते का उपयोग करें।"
+    },
+    "responsible": {
+      "title": "सामग्री के लिए जिम्मेदार",
+      "content": "एसोसिएशन QUEER MEDIA LITERACY e.V. इस वेबसाइट पर सभी सामग्री के लिए जिम्मेदार है।"
+    },
+    "disclaimer": {
+      "title": "अस्वीकरण",
+      "content": "सावधान सामग्री नियंत्रण के बावजूद, हम बाहरी लिंक की सामग्री के लिए कोई दायित्व नहीं लेते हैं। लिंक किए गए पृष्ठों के ऑपरेटर उनकी सामग्री के लिए पूरी तरह से जिम्मेदार हैं।"
+    }
+  },
+  "privacyPolicy": {
+    "title": "गोपनीयता नीति",
+    "lastUpdated": "अंतिम अपडेट: जून 2025",
+    "introduction": {
+      "title": "गोपनीयता नीति",
+      "content": "यह गोपनीयता नीति बताती है कि क्वीयर अलायंस (\"हम,\" \"हमारा,\" या \"हमें\") आपकी व्यक्तिगत जानकारी को कैसे एकत्र, उपयोग, साझा और संरक्षित करता है जब आप हमारे प्लेटफ़ॉर्म और सेवाओं का उपयोग करते हैं। हम आपकी गोपनीयता की रक्षा करने और हमारे सामुदायिक प्लेटफ़ॉर्म के साथ जुड़ने पर आपके द्वारा हम पर रखे गए विश्वास को बनाए रखने के लिए प्रतिबद्ध हैं।",
+      "keyPrivacyFeaturesTitle": "मुख्य गोपनीयता सुविधाएँ:",
+      "keyPoints": "<strong>मुख्य गोपनीयता सुविधाएँ:</strong><br>• <strong>पूर्ण नियंत्रण</strong>: अपनी प्रोफ़ाइल सेटिंग्स से तुरंत अपना पूरा खाता और सभी डेटा हटाएं<br>• <strong>विस्तृत सहमति</strong>: ठीक वही संचार चुनें जो आप प्राप्त करना चाहते हैं<br>• <strong>डेटा पारदर्शिता</strong>: हम कौन सा डेटा एकत्र करते हैं और क्यों, इसकी स्पष्ट व्याख्या<br>• <strong>यूरोपीय संघ सुरक्षा</strong>: यूरोपीय संघ में होस्ट किया गया, पूर्ण GDPR अनुपालन और ऑस्ट्रियाई डेटा संरक्षण कानून का पालन<br>• <strong>कोई डेटा बिक्री नहीं</strong>: हम कभी भी आपकी व्यक्तिगत जानकारी तीसरे पक्ष को नहीं बेचते हैं"
+    },
+    "controllerInfo": {
+      "title": "1. डेटा नियंत्रक सूचना",
+      "content": "हम आपकी व्यक्तिगत जानकारी के लिए जिम्मेदार डेटा नियंत्रक हैं। आप किसी भी गोपनीयता मामले के संबंध में हमसे संपर्क कर सकते हैं:",
+      "contact": "डेटा संरक्षण अधिकारी: admin@queer-Deep Resirch.com"
+    },
+    "legalBasis": {
+      "title": "2. प्रसंस्करण के लिए कानूनी आधार",
+      "content": "हम आपके व्यक्तिगत डेटा को GDPR अनुच्छेद 6 के तहत निम्नलिखित कानूनी आधारों पर संसाधित करते हैं:",
+      "consent": "• <strong>आपकी सहमति</strong>: केवल न्यूज़लेटर सदस्यता और सीधे संचार के लिए",
+      "contract": "• <strong>संविदात्मक आवश्यकता</strong>: हमारी प्लेटफ़ॉर्म सेवाएँ प्रदान करने और सामुदायिक कनेक्शन की सुविधा के लिए",
+      "legitimateInterest": "• <strong>वैध हित</strong>: हमारे प्लेटफ़ॉर्म को संचालित करने और सुधारने, सामुदायिक सुरक्षा सुनिश्चित करने और समुदाय के भीतर सार्थक कनेक्शन की सुविधा के लिए। हमारा वैध हित आपके गोपनीयता अधिकारों के विरुद्ध संतुलित है।",
+      "legalObligation": "• <strong>कानूनी दायित्व</strong>: लागू कानूनों और विनियमों का पालन करने के लिए",
+      "vitalInterests": "• <strong>महत्वपूर्ण हित</strong>: किसी के जीवन या शारीरिक सुरक्षा की रक्षा के लिए दुर्लभ मामलों में"
+    },
+    "dataCollection": {
+      "title": "3. हम जो जानकारी एकत्र करते हैं",
+      "profileData": {
+        "title": "प्रोफ़ाइल जानकारी (क्या और क्यों)",
+        "content": "• <strong>ईमेल पता</strong> (आवश्यक): खाता निर्माण, प्रमाणीकरण, महत्वपूर्ण संचार, पासवर्ड रीसेट<br>• <strong>उपयोगकर्ता नाम</strong>: सामुदायिक बातचीत और प्रोफ़ाइल प्रदर्शन के लिए अद्वितीय पहचानकर्ता<br>• <strong>नाम</strong> (पहला/अंतिम, वैकल्पिक): व्यक्तिगत बधाई, सामुदायिक मान्यता, नेटवर्किंग सुविधा<br>• <strong>फोन नंबर</strong> (वैकल्पिक): आपातकालीन संपर्क, दो-कारक प्रमाणीकरण, प्रीमियम समर्थन<br>• <strong>बायो और वेबसाइट</strong> (वैकल्पिक): सामुदायिक नेटवर्किंग, कौशल प्रदर्शन, पेशेवर कनेक्शन<br>• <strong>कौशल और क्षमताएँ</strong>: प्रासंगिक अवसरों के साथ मिलान, परियोजना सहयोग, विशेषज्ञता की पहचान<br>• <strong>पेशेवर जानकारी</strong>: कैरियर नेटवर्किंग, विशेषज्ञता सत्यापन, सहयोग के अवसर<br>• <strong>भागीदारी वरीयताएँ</strong>: भूमिका मिलान (सदस्य, विशेषज्ञ, कार्यकर्ता, समर्थक), घटना की सिफारिशें<br>• <strong>स्थान</strong> (देश/राज्य/शहर): स्थानीय घटना सूचनाएं, क्षेत्रीय समुदाय निर्माण, कानूनी अनुपालन<br>• <strong>संचार वरीयताएँ</strong>: सहमति विकल्पों का सम्मान, व्यक्तिगत संचार आवृत्ति"
+      },
+      "usageData": {
+        "title": "तकनीकी डेटा (केवल सुरक्षा और कार्यक्षमता)",
+        "content": "• <strong>आईपी पता</strong>: सुरक्षा निगरानी, धोखाधड़ी की रोकथाम, क्षेत्रीय कानूनों का अनुपालन<br>• <strong>ब्राउज़र/डिवाइस जानकारी</strong>: संगतता अनुकूलन, सुरक्षा सत्यापन, उत्तरदायी डिजाइन<br>• <strong>सत्र डेटा</strong>: प्रमाणीकरण स्थिति, लॉगिन सुरक्षा, सुरक्षा के लिए स्वचालित लॉगआउट<br>• <strong>त्रुटि लॉग</strong>: तकनीकी समस्या समाधान, प्लेटफ़ॉर्म स्थिरता निगरानी, बग फिक्स<br>• <strong>नोट</strong>: हम व्यक्तिगत गतिविधि पैटर्न, पृष्ठ विज़िट या इंटरैक्शन डेटा को ट्रैक नहीं करते हैं"
+      },
+      "paymentData": {
+        "title": "भुगतान जानकारी (क्या और कैसे)",
+        "content": "• <strong>लेनदेन रिकॉर्ड</strong>: दान इतिहास, सदस्यता स्थिति, बिलिंग सुलह<br>• <strong>भुगतान मेटाडेटा</strong>: लेनदेन आईडी, राशि, मुद्रा, वित्तीय रिपोर्टिंग के लिए तिथियां<br>• <strong>स्ट्राइप एकीकरण</strong>: PCI DSS अनुपालन के साथ स्ट्राइप द्वारा संभाला गया भुगतान प्रसंस्करण<br>• <strong>बिलिंग पते</strong>: कर गणना, धोखाधड़ी की रोकथाम, नियामक अनुपालन<br>• <strong>सदस्यता विवरण</strong>: सेवा स्तर प्रबंधन, नवीनीकरण प्रसंस्करण, उपयोग ट्रैकिंग<br>• <strong>नोट</strong>: हम कभी भी क्रेडिट कार्ड नंबर, सीवीवी कोड या संवेदनशील भुगतान डेटा संग्रहीत नहीं करते हैं"
+      },
+      "consentData": {
+        "title": "सहमति डेटा (आपकी संचार वरीयताएँ)",
+        "content": "• <strong>सीधा संपर्क</strong>: क्वीयर अलायंस के अंदर अवसरों के साथ संपर्क किए जाने की सहमति<br>• <strong>न्यूज़लेटर</strong>: न्यूज़लेटर और जानकारी प्राप्त करने की सहमति (विपणन नहीं)<br>• <strong>संगठनात्मक प्रतिनिधि</strong>: एक संगठन के प्रतिनिधि के रूप में सीधे संपर्क किए जाने की सहमति<br>• <strong>सहमति इतिहास</strong>: आपकी वरीयताओं में टाइमस्टैम्प और परिवर्तन (GDPR अनुपालन)"
+      }
+    },
+    "purposes": {
+      "title": "4. हम आपकी जानकारी का उपयोग कैसे करते हैं (विस्तृत उद्देश्य)",
+      "community": "• <strong>समुदाय निर्माण</strong>: कौशल-आधारित सदस्य मिलान, स्थानीय घटना सिफारिशें, परामर्श कनेक्शन, साझा हितों और स्थान के आधार पर सहयोग के अवसर",
+      "personalization": "• <strong>व्यक्तिगत अनुभव</strong>: भागीदारी भूमिकाओं के आधार पर सामग्री क्यूरेशन, आपके कौशल से मेल खाने वाले घटना सुझाव, भाषा-विशिष्ट संचार, समय-क्षेत्र-उपयुक्त सूचनाएं",
+      "communication": "• <strong>संचार</strong>: न्यूज़लेटर वितरण (सहमति-आधारित), अवसरों के साथ सीधा संपर्क (सहमति-आधारित), संगठनात्मक प्रतिनिधि संपर्क (सहमति-आधारित), प्लेटफ़ॉर्म अपडेट, सुरक्षा सूचनाएं",
+      "platform": "• <strong>प्लेटफ़ॉर्म संचालन</strong>: उपयोगकर्ता प्रमाणीकरण, सत्र प्रबंधन, सुविधा कार्यक्षमता, डेटा सिंक्रनाइज़ेशन, बहु-भाषा समर्थन, मोबाइल जवाबदेही",
+      "safety": "• <strong>सामुदायिक सुरक्षा</strong>: आईपी निगरानी के माध्यम से धोखाधड़ी का पता लगाना, दर सीमित करके स्पैम की रोकथाम, दुरुपयोग रिपोर्टिंग सिस्टम, सामग्री मॉडरेशन, खाता सत्यापन",
+      "analytics": "• <strong>वेबसाइट एनालिटिक्स</strong>: Vercel Analytics से अनाम वेबसाइट आँकड़े (कोई व्यक्तिगत डेटा एकत्र नहीं, पूरी तरह से कुकी-मुक्त)",
+      "legal": "• <strong>कानूनी अनुपालन</strong>: ऑस्ट्रियाई डेटा संरक्षण कानून का पालन, GDPR आवश्यकता पूर्ति, ऑडिट ट्रेल रखरखाव, आवश्यक होने पर नियामक रिपोर्टिंग",
+      "technical": "• <strong>तकनीकी कार्यक्षमता</strong>: डेटाबेस अनुकूलन, बैकअप निर्माण, सिस्टम निगरानी, सुरक्षा पैच परिनियोजन, प्रदर्शन अनुकूलन, त्रुटि ट्रैकिंग और समाधान"
+    },
+    "sharing": {
+      "title": "5. सूचना साझाकरण",
+      "content": "हम आपकी गोपनीयता को गंभीरता से लेते हैं और केवल इन विशिष्ट परिस्थितियों में जानकारी साझा करते हैं:",
+      "serviceProviders": "• <strong>सेवा प्रदाता</strong>: विश्वसनीय भागीदार जो हमारे प्लेटफ़ॉर्म को संचालित करने में हमारी मदद करते हैं (उदा., डेटा होस्टिंग के लिए सुपाबेस, भुगतान के लिए स्ट्राइप, एनालिटिक्स के लिए वर्सेल)",
+      "legal": "• <strong>कानूनी आवश्यकताएँ</strong>: जब कानून, अदालत के आदेश से आवश्यक हो, या हमारे कानूनी अधिकारों की रक्षा के लिए",
+      "consent": "• <strong>आपकी सहमति से</strong>: कोई अन्य साझाकरण केवल आपकी स्पष्ट अनुमति से होता है",
+      "noSharing": "• <strong>कोई सदस्य साझाकरण नहीं</strong>: हम आपकी जानकारी अन्य गठबंधन सदस्यों या उपयोगकर्ताओं के साथ साझा नहीं करते हैं",
+      "noSale": "<strong>हम कभी भी आपकी व्यक्तिगत जानकारी तीसरे पक्ष को नहीं बेचते हैं।</strong>"
+    },
+    "dataTransfers": {
+      "title": "6. अंतर्राष्ट्रीय डेटा स्थानांतरण",
+      "content": "हमारे कुछ सेवा प्रदाता यूरोपीय आर्थिक क्षेत्र (EEA) के बाहर स्थित हो सकते हैं। जब हम आपके डेटा को अंतरराष्ट्रीय स्तर पर स्थानांतरित करते हैं, तो हम इनके माध्यम से पर्याप्त सुरक्षा सुनिश्चित करते हैं:",
+      "adequacy": "• <strong>पर्याप्तता निर्णय</strong>: पर्याप्त डेटा संरक्षण वाले देशों में स्थानांतरण",
+      "safeguards": "• <strong>उपयुक्त सुरक्षा उपाय</strong>: यूरोपीय आयोग द्वारा अनुमोदित मानक संविदात्मक खंड",
+      "providers": "• हमारे वर्तमान प्रदाताओं में सुपाबेस (यूरोपीय संघ का बुनियादी ढांचा), स्ट्राइप (यूरोपीय संघ की सुरक्षा के साथ वैश्विक) और वर्सेल (फ्रैंकफर्ट क्षेत्र में यूरोपीय संघ की मेजबानी) शामिल हैं"
+    },
+    "retention": {
+      "title": "7. डेटा प्रतिधारण और विलोपन",
+      "content": "हम आपकी व्यक्तिगत जानकारी को केवल तब तक बनाए रखते हैं जब तक आवश्यक हो और तत्काल विलोपन क्षमताएं प्रदान करते हैं:",
+      "active": "• <strong>सक्रिय खाते</strong>: जब तक आपका खाता सक्रिय रहता है और आप हमारी सेवाओं का उपयोग करना जारी रखते हैं, तब तक डेटा बनाए रखा जाता है",
+      "dormant": "• <strong>निष्क्रिय खाते</strong>: 3 साल की पूर्ण निष्क्रियता के बाद स्वचालित विलोपन (ईमेल के माध्यम से 90-दिन की अग्रिम चेतावनी के साथ)",
+      "immediate": "• <strong>तत्काल स्व-विलोपन</strong>: प्रोफ़ाइल सेटिंग्स → खाता सेटिंग्स → खाता हटाएं के माध्यम से तुरंत अपना पूरा खाता हटाएं",
+      "deletion": "• <strong>विलोपन अनुरोध पर</strong>: सभी सक्रिय प्रणालियों, डेटाबेस और प्रमाणीकरण सेवाओं से तत्काल हटाना",
+      "backups": "• <strong>बैकअप हटाना</strong>: खाता विलोपन के 90 दिनों के भीतर सभी बैकअप प्रणालियों से पूर्ण हटाना",
+      "legal": "• <strong>कानूनी आवश्यकताएँ</strong>: सीमित डेटा प्रतिधारण केवल जहाँ ऑस्ट्रियाई या यूरोपीय संघ के कानून द्वारा विशेष रूप से आवश्यक हो (उदा., कर उद्देश्यों के लिए वित्तीय रिकॉर्ड)",
+      "technical": "• <strong>तकनीकी विलोपन प्रक्रिया</strong>: मुख्य डेटाबेस से प्रोफ़ाइल डेटा हटाया गया → प्रमाणीकरण क्रेडेंशियल हटा दिए गए → विलोपन के लिए चिह्नित ऑडिट लॉग → बैकअप सिस्टम शुद्ध किए गए",
+      "confirmation": "• <strong>विलोपन पुष्टि</strong>: सफल खाता विलोपन के बाद स्वचालित लॉगआउट और ईमेल पुष्टि भेजी गई"
+    },
+    "rights": {
+      "title": "8. GDPR के तहत आपके अधिकार",
+      "content": "आपके व्यक्तिगत डेटा के संबंध में आपके निम्नलिखित अधिकार हैं:",
+      "access": "• <strong>पहुँच का अधिकार</strong>: admin@queer-Deep Resirch.com के माध्यम से अपने व्यक्तिगत डेटा की एक प्रति का अनुरोध करें या सीधे अपनी प्रोफ़ाइल सेटिंग्स में देखें",
+      "rectification": "• <strong>सुधार का अधिकार</strong>: सीधे अपनी प्रोफ़ाइल सेटिंग्स में गलत डेटा को सही करें या admin@queer-Deep Resirch.com के माध्यम से सहायता का अनुरोध करें",
+      "erasure": "• <strong>मिटाने का अधिकार</strong>: <strong>अपनी प्रोफ़ाइल सेटिंग्स से तुरंत अपना पूरा खाता हटाएं</strong> (सेटिंग्स > खाता सेटिंग्स > खाता हटाएं) या admin@queer-Deep Resirch.com के माध्यम से विलोपन का अनुरोध करें",
+      "restriction": "• <strong>प्रतिबंध का अधिकार</strong>: admin@queer-Deep Resirch.com से संपर्क करके हम आपके डेटा को कैसे संसाधित करते हैं, इसे सीमित करें",
+      "portability": "• <strong>डेटा पोर्टेबिलिटी का अधिकार</strong>: admin@queer-Deep Resirch.com के माध्यम से संरचित JSON प्रारूप में अपना डेटा प्राप्त करें",
+      "objection": "• <strong>आपत्ति का अधिकार</strong>: admin@queer-Deep Resirch.com के माध्यम से वैध हितों के आधार पर प्रसंस्करण पर आपत्ति करें",
+      "withdrawal": "• <strong>सहमति वापस लेना</strong>: सीधे अपनी प्रोफ़ाइल सेटिंग्स में सहमति वरीयताओं को संशोधित करें या admin@queer-Deep Resirch.com से संपर्क करें",
+      "complaint": "• <strong>शिकायत का अधिकार</strong>: ऑस्ट्रियाई डेटा संरक्षण प्राधिकरण (Datenschutzbehörde) में dsb.gv.at पर शिकायत दर्ज करें",
+      "exercise": "अधिकांश अधिकारों का प्रयोग सीधे आपकी प्रोफ़ाइल सेटिंग्स में किया जा सकता है। अतिरिक्त सहायता के लिए, admin@queer-Deep Resirch.com से संपर्क करें (30-दिन की प्रतिक्रिया गारंटी)।"
+    },
+    "accountDeletion": {
+      "title": "8.1. पूर्ण खाता विलोपन (स्व-सेवा)",
+      "content": "आप किसी भी समय सीधे अपनी प्रोफ़ाइल सेटिंग्स से अपना पूरा खाता और सभी संबंधित डेटा हटा सकते हैं:",
+      "access": "• <strong>कैसे पहुँचें</strong>: साइन इन करें → प्रोफ़ाइल → सेटिंग्स → खाता सेटिंग्स → खाता हटाएं",
+      "process": "• <strong>विलोपन प्रक्रिया</strong>: पुष्टि करने के लिए 'DELETE' टाइप करें → सभी डेटा का तत्काल स्थायी विलोपन",
+      "scope": "• <strong>क्या हटाया जाता है</strong>: सभी प्रोफ़ाइल जानकारी, कौशल, वरीयताएँ, सहमति इतिहास, ऑडिट लॉग, सत्र डेटा और प्रमाणीकरण क्रेडेंशियल",
+      "immediate": "• <strong>समय</strong>: डेटाबेस और प्रमाणीकरण सहित सभी प्रणालियों से तत्काल विलोपन",
+      "irreversible": "• <strong>महत्वपूर्ण</strong>: यह क्रिया अपरिवर्तनीय है - एक बार हटा दिए जाने के बाद, आपका खाता और डेटा पुनर्प्राप्त नहीं किया जा सकता है",
+      "backup": "• <strong>बैकअप हटाना</strong>: आपका डेटा विलोपन के 90 दिनों के भीतर सभी बैकअप से हटा दिया जाता है",
+      "confirmation": "• <strong>पुष्टि</strong>: सफल विलोपन के बाद आपको स्वचालित रूप से लॉग आउट और पुनः निर्देशित किया जाएगा",
+      "alternative": "• <strong>विकल्प</strong>: यदि आपको खाता विलोपन में सहायता की आवश्यकता है तो admin@queer-Deep Resirch.com से संपर्क करें"
+    },
+    "security": {
+      "title": "9. व्यापक डेटा सुरक्षा उपाय",
+      "content": "हम आपकी व्यक्तिगत जानकारी की सुरक्षा के लिए मजबूत सुरक्षा उपायों की कई परतें लागू करते हैं:",
+      "technical": {
+        "title": "तकनीकी सुरक्षा उपाय",
+        "content": "• <strong>डेटा एन्क्रिप्शन</strong>: सुपाबेस के माध्यम से पारगमन (TLS 1.3) और आराम (AES-256) पर सभी डेटा एन्क्रिप्ट किया गया<br>• <strong>डेटाबेस सुरक्षा</strong>: पंक्ति स्तर सुरक्षा (RLS) नीतियां यह सुनिश्चित करती हैं कि उपयोगकर्ता केवल अपने स्वयं के डेटा तक पहुँच सकते हैं<br>• <strong>प्रमाणीकरण</strong>: बहु-कारक प्रमाणीकरण समर्थन, स्वचालित समाप्ति के साथ सुरक्षित सत्र प्रबंधन<br>• <strong>इनपुट सत्यापन</strong>: व्यापक XSS रोकथाम, SQL इंजेक्शन सुरक्षा, इनपुट सैनिटाइजेशन<br>• <strong>सुरक्षा हेडर</strong>: सामग्री सुरक्षा नीति (CSP), HTTP सख्त परिवहन सुरक्षा (HSTS), एंटी-क्लिकजैकिंग सुरक्षा<br>• <strong>API सुरक्षा</strong>: दर सीमित करना, अनुरोध सत्यापन, प्रमाणीकरण के साथ सुरक्षित API समापन बिंदु"
+      },
+      "organizational": {
+        "title": "संगठनात्मक सुरक्षा उपाय",
+        "content": "• <strong>पहुँच नियंत्रण</strong>: कम से कम विशेषाधिकार का सिद्धांत, प्रणालियों और डेटा तक भूमिका-आधारित पहुँच<br>• <strong>कर्मचारी प्रशिक्षण</strong>: नियमित सुरक्षा जागरूकता प्रशिक्षण, डेटा संरक्षण प्रोटोकॉल<br>• <strong>डेटा प्रसंस्करण समझौते</strong>: सभी तृतीय-पक्ष प्रोसेसर के साथ व्यापक समझौते<br>• <strong>घटना प्रतिक्रिया योजना</strong>: सुरक्षा उल्लंघन का पता लगाने और प्रतिक्रिया के लिए प्रलेखित प्रक्रियाएं<br>• <strong>नियमित ऑडिट</strong>: त्रैमासिक सुरक्षा समीक्षा, वार्षिक प्रवेश परीक्षण, भेद्यता आकलन"
+      },
+      "monitoring": {
+        "title": "सतत सुरक्षा निगरानी",
+        "content": "• <strong>वास्तविक समय की निगरानी</strong>: 24/7 सिस्टम निगरानी, स्वचालित खतरा पहचान<br>• <strong>ऑडिट ट्रेल्स</strong>: सभी प्रोफ़ाइल परिवर्तनों, लॉगिन प्रयासों, डेटा पहुँच का व्यापक लॉगिंग<br>• <strong>सत्र ट्रैकिंग</strong>: सक्रिय सत्र निगरानी, निष्क्रियता के बाद स्वचालित लॉगआउट<br>• <strong>धोखाधड़ी की रोकथाम</strong>: आईपी-आधारित विसंगति का पता लगाना, संदिग्ध गतिविधि अलर्ट<br>• <strong>त्रुटि ट्रैकिंग</strong>: सुरक्षा-संबंधित मुद्दों के लिए स्वचालित त्रुटि लॉगिंग और प्रतिक्रिया"
+      },
+      "infrastructure": {
+        "title": "बुनियादी ढाँचा सुरक्षा",
+        "content": "• <strong>होस्टिंग सुरक्षा</strong>: SOC 2 प्रकार II अनुपालन के साथ यूरोपीय संघ-आधारित सुपाबेस बुनियादी ढांचा<br>• <strong>नेटवर्क सुरक्षा</strong>: फायरवॉल, प्रशासकों के लिए वीपीएन पहुँच, सुरक्षित संचार चैनल<br>• <strong>बैकअप सुरक्षा</strong>: एन्क्रिप्टेड स्वचालित बैकअप, सुरक्षित बैकअप भंडारण, परीक्षणित पुनर्प्राप्ति प्रक्रियाएं<br>• <strong>अद्यतन प्रबंधन</strong>: स्वचालित सुरक्षा पैच, नियमित निर्भरता अद्यतन, भेद्यता स्कैनिंग<br>• <strong>अनुपालन</strong>: GDPR अनुपालन, ऑस्ट्रियाई डेटा संरक्षण कानून का पालन, नियमित अनुपालन ऑडिट"
+      },
+      "incident": {
+        "title": "डेटा उल्लंघन प्रतिक्रिया",
+        "content": "• <strong>पहचान</strong>: स्वचालित निगरानी प्रणाली, संदिग्ध गतिविधि के लिए तत्काल अलर्ट<br>• <strong>प्रतिक्रिया</strong>: आवश्यक होने पर ऑस्ट्रियाई डेटा संरक्षण प्राधिकरण को 72-घंटे की उल्लंघन अधिसूचना<br>• <strong>उपयोगकर्ता अधिसूचना</strong>: पुष्टि किए गए उल्लंघन के 72 घंटों के भीतर प्रभावित उपयोगकर्ताओं को सीधा संचार<br>• <strong>शमन</strong>: तत्काल रोकथाम प्रक्रियाएं, सुरक्षा पैच परिनियोजन, सिस्टम सुदृढीकरण<br>• <strong>प्रलेखन</strong>: पूर्ण घटना प्रलेखन, घटनाओं के बाद सुरक्षा सुधार"
+      }
+    },
+    "cookies": {
+      "title": "10. कुकीज़ और ट्रैकिंग",
+      "content": "<strong>हम केवल आवश्यक कुकीज़ का उपयोग करते हैं</strong> - कोई ट्रैकिंग, एनालिटिक्स या मार्केटिंग कुकीज़ नहीं। विस्तृत जानकारी के लिए, कृपया हमारी कुकी नीति देखें। मुख्य बिंदु:",
+      "essential": "• <strong>केवल आवश्यक कुकीज़</strong>: लॉगिन, भुगतान और भाषा समर्थन के लिए आवश्यक (कोई सहमति आवश्यक नहीं)",
+      "analytics": "• <strong>कोई एनालिटिक्स कुकीज़ नहीं</strong>: हम इसके बजाय वर्सेल के कुकी-मुक्त एनालिटिक्स का उपयोग करते हैं",
+      "preference": "• <strong>वरीयताएँ आपके खाते में संग्रहीत हैं</strong>: भाषा, थीम और सेटिंग्स आपके डेटाबेस प्रोफ़ाइल में सहेजी गई हैं, कुकीज़ में नहीं",
+      "marketing": "• <strong>कोई मार्केटिंग कुकीज़ नहीं</strong>: हम विज्ञापन या व्यवहार ट्रैकिंग कुकीज़ का उपयोग नहीं करते हैं"
+    },
+    "minors": {
+      "title": "11. नाबालिगों का संरक्षण",
+      "content": "हमारा प्लेटफ़ॉर्म 18 वर्ष और उससे अधिक आयु के व्यक्तियों के लिए डिज़ाइन किया गया है। 18 वर्ष से कम आयु के उपयोगकर्ताओं को खाते बनाने या हमारी सेवाओं का उपयोग करने की अनुमति नहीं है।"
+    },
+    "changes": {
+      "title": "12. इस नीति में परिवर्तन",
+      "content": "हम अपनी प्रथाओं या कानूनी आवश्यकताओं में परिवर्तनों को प्रतिबिंबित करने के लिए इस गोपनीयता नीति को अपडेट कर सकते हैं। हम करेंगे:",
+      "notification": "• <strong>उपयोगकर्ताओं को सूचित करें</strong>: महत्वपूर्ण परिवर्तनों के लिए ईमेल अधिसूचना",
+      "consent": "• <strong>सहमति प्राप्त करें</strong>: आपके अधिकारों को प्रभावित करने वाले भौतिक परिवर्तनों के लिए",
+      "posting": "• <strong>अपडेट पोस्ट करें</strong>: हमेशा हमारी वेबसाइट पर वर्तमान संस्करण बनाए रखें",
+      "date": "• <strong>तिथि अपडेट करें</strong>: \"अंतिम अपडेट\" तिथि सबसे हालिया संशोधन दिखाती है"
+    },
+    "contact": {
+      "title": "13. संपर्क जानकारी",
+      "content": "किसी भी गोपनीयता-संबंधित प्रश्नों के लिए या अपने अधिकारों का प्रयोग करने के लिए, हमसे संपर्क करें:",
+      "details": "ईमेल: admin@queer-Deep Resirch.com\nप्रतिक्रिया समय: 30 दिनों के भीतर\nडेटा संरक्षण प्राधिकरण: Österreichische Datenschutzbehörde (dsb.gv.at)"
+    }
+  },
+  "partners": {
+    "title": "पार्टनर",
+    "descriptions": {
+      "1": "अग्रणी क्वीयर मीडिया एजेंसी और पत्रिका",
+      "2": "क्वीयर संचार",
+      "3": "ट्रांस विषयों के लिए विनिमय, शिक्षा, परामर्श और बहुत कुछ",
+      "4": "हम क्वीयर कला परियोजनाओं का आयोजन करते हैं और कलाकारों को सुर्खियों में लाकर दृश्यता और संवाद को बढ़ावा देते हैं।",
+      "5": "हम सहिष्णुता, सम्मान और विविधता के लिए एक समुदाय से दूसरे समुदाय तक नृत्य करते हैं।",
+      "6": "पोर्न और क्वीयर विषयों के लिए फिल्म महोत्सव",
+      "7": "वियना में पहला अंतर्राष्ट्रीय क्वीयर लघु फिल्म महोत्सव",
+      "8": "एक कला संस्थान जो लगातार एक ध्वनि बनने का मिशन रखता है",
+      "9": "क्वीयर रचनात्मक उत्पादन कंपनी",
+      "10": "नाइट क्लब जाना"
+    },
+    "categories": {
+      "1": "एजेंसी, पत्रिका",
+      "2": "मीडिया",
+      "3": "परामर्श, शिक्षा, सहायता",
+      "4": "कार्यक्रम, समाचार",
+      "5": "कार्यक्रम, नृत्य",
+      "6": "फिल्म महोत्सव",
+      "7": "फिल्म महोत्सव",
+      "8": "चोर",
+      "9": "रचनात्मक उत्पादन",
+      "10": "क्लबिंग"
+    },
+    "visit": "विजिट करें"
+  },
+  "accessibility": {
+    "menuButton": "मेनू"
+  },
+  "errors": {
+    "stripe": {
+      "checkoutFailed": "चेकआउट विफल",
+      "billingPortalError": "बिलिंग पोर्टल त्रुटि",
+      "failedToCreateCheckoutSession": "चेकआउट सत्र बनाने में विफल",
+      "noCheckoutUrlReceived": "कोई चेकआउट URL प्राप्त नहीं हुआ",
+      "failedToStartCheckout": "चेकआउट शुरू करने में विफल। कृपया पुनः प्रयास करें।",
+      "failedToCreatePortalSession": "पोर्टल सत्र बनाने में विफल",
+      "noPortalUrlReceived": "कोई पोर्टल URL प्राप्त नहीं हुआ",
+      "failedToOpenBillingPortal": "बिलिंग पोर्टल खोलने में विफल। कृपया पुनः प्रयास करें।",
+      "userProfileNotFound": "उपयोगकर्ता प्रोफ़ाइल नहीं मिली। खाता नहीं हटा सकते।",
+      "failedToDeleteAccountViaAPI": "API के माध्यम से खाता हटाने में विफल",
+      "failedToDeleteAccount": "खाता हटाने में विफल"
+    },
+    "finance": {
+      "planFallbackName": "योजना {index}",
+      "planFallbackDescription": "अपने योगदान से इस काम का समर्थन करें"
+    }
+  }
+}

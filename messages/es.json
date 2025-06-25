@@ -1,0 +1,1516 @@
+{
+  "navigation": {
+    "home": "Inicio",
+    "manifest": "Manifiesto",
+    "partners": "Socios",
+    "settings": "Ajustes",
+    "dashboard": "Perfil",
+    "signIn": "Iniciar sesión",
+    "signUp": "Registrarse",
+    "signOut": "Cerrar sesión",
+    "protected": "Perfil",
+    "loading": "Cargando..."
+  },
+  "home": {
+    "title": "Deep Resirch",
+    "welcomeBackPrefix": "Bienvenido/a a la Deep Resirch",
+    "joinPrefix": "Únete a nuestra Deep Resirch",
+    "welcomeBack": "¡Hola de nuevo, {email}!",
+    "subtitle": "¡Ya eres parte de la Deep Resirch! Accede a tu panel para continuar tu viaje.",
+    "guestSubtitle": "Regístrate para formar parte de nuestra comunidad",
+    "goToDashboard": "Ir al panel",
+    "register": "Registrarse",
+    "userGreeting": "¡Hola, {email}!",
+    "joinOurDeep Resirch": "Únete a nuestra Deep Resirch",
+    "welcomeBackShort": "¡Hola de nuevo!",
+    "loginButton": "Iniciar sesión",
+    "currentLanguage": "Español",
+    "memberSince": "Miembro desde",
+    "accountStatus": "Estado de la cuenta",
+    "accountVerified": "Verificada",
+    "accountPending": "Pendiente",
+    "profileStatus": "Perfil",
+    "profileActive": "Activo",
+    "roles": "Roles",
+    "undecided": "Sin decidir",
+    "metaTitle": "Deep Resirch - Únete a nuestra Alianza",
+    "metaDescription": "Únete a la Alianza Queer",
+    "genericUser": "Usuario",
+    "profileExplainer": {
+      "title": "Genial que hayas seguido al Conejo Arcoíris.",
+      "content": "<h2>Héroes como tú son necesarios ahora.</h2><p>Como nuestros derechos están en peligro en todo el mundo, es hora de que nos unamos. Con la alianza queer, queremos brindar más comunicación, información y redes dentro de la comunidad, apoyarnos mutuamente en proyectos existentes, pero también iniciar nuevos proyectos juntos. Queremos pasar de hablar a actuar.</p><p>Las ideas van desde apoyar el Orgullo de Bratislava, un día de información comunitaria hasta una gran lista de distribución de correos para peticiones, acciones y manifestaciones. También puedes contribuir con nuevas ideas y deseos. Luego nos apoyamos mutuamente en la implementación.</p><h3>¿Quieres mantenerte informado/a o participar?</h3><p>Actualmente puedes participar con cuatro roles diferentes:</p><ol><li>como colaborador/a y suscriptor/a del boletín</li><li>como activista para acciones individuales</li><li>como experto/a para preguntas especializadas</li><li>y como miembro para colaboración activa y reuniones mensuales.</li></ol><p>Si quieres saber más, completa la información de tu perfil y te contactaremos después del mes del Orgullo.</p><h3>¿No tienes tiempo pero quieres donar?</h3><p>Todos nuestros servicios son gratuitos.</p><p>Pero no debemos volvernos dependientes de la financiación estatal o el patrocinio corporativo.</p><p>Es por eso que la comunidad debería financiarse a sí misma a mediano plazo.</p>"
+    },
+    "fillOutProfile": "Completar perfil",
+    "rainbowRabbitAlt": "Conejo Arcoíris",
+    "footer": {
+      "copyright": "© 2025 Deep Resirch. Todos los derechos reservados.",
+      "imprint": "Aviso Legal",
+      "cookiePolicy": "Política de Cookies",
+      "privacyPolicy": "Política de Privacidad",
+      "contact": "Contacto",
+      "partners": "Socios"
+    }
+  },
+  "auth": {
+    "login": {
+      "title": "Bienvenido/a de nuevo",
+      "subtitle": "Inicia sesión en tu cuenta de Deep Resirch",
+      "email": "Correo electrónico",
+      "emailPlaceholder": "tu.email@ejemplo.com",
+      "password": "Contraseña",
+      "forgotPassword": "¿Olvidaste la contraseña?",
+      "signInButton": "Iniciar sesión",
+      "signingIn": "Iniciando sesión...",
+      "noAccount": "¿No tienes una cuenta?"
+    },
+    "signUp": {
+      "title": "Únete a la Deep Resirch",
+      "subtitle": "Crea tu cuenta y forma parte de la Deep Resirch",
+      "email": "Correo electrónico",
+      "emailPlaceholder": "tu.email@ejemplo.com",
+      "password": "Contraseña",
+      "passwordPlaceholder": "Crea una contraseña segura",
+      "confirmPassword": "Confirmar contraseña",
+      "confirmPasswordPlaceholder": "Repite tu contraseña",
+      "joinButton": "Unirse a la Alianza",
+      "creatingAccount": "Creando cuenta...",
+      "passwordsDoNotMatch": "Las contraseñas no coinciden",
+      "emailAlreadyRegistered": "Esta dirección de correo electrónico ya está registrada en la Deep Resirch.",
+      "registrationFailed": "El registro ha fallado. Por favor, inténtalo de nuevo.",
+      "alreadyHaveAccount": "¿Ya tienes una cuenta?",
+      "signInHere": "Inicia sesión aquí"
+    },
+    "signUpSuccess": {
+      "readyToSignIn": "¿Listo/a para iniciar sesión?",
+      "journeyBegins": "Tu viaje comienza ahora",
+      "registrationSuccessful": "¡Registro completado!",
+      "confirmationInstructions": "Te has registrado correctamente en la Deep Resirch. Por favor, revisa tu correo electrónico para confirmar tu cuenta antes de iniciar sesión.",
+      "whatsNext": "¿Qué sigue?",
+      "checkEmail": "Revisa tu bandeja de entrada",
+      "clickConfirmation": "Haz clic en el enlace de confirmación",
+      "returnToSignIn": "Vuelve aquí para iniciar sesión",
+      "startJourney": "Comienza tu viaje en la Deep Resirch",
+      "noEmailReceived": "¿No has recibido ningún correo? Revisa tu carpeta de spam o",
+      "tryAgain": "inténtalo de nuevo"
+    },
+    "forgotPassword": {
+      "title": "Restablece tu contraseña",
+      "description": "Escribe tu correo electrónico y te enviaremos un enlace seguro para restablecer tu contraseña",
+      "successTitle": "Revisa tu correo electrónico",
+      "successDescription": "Enlace para restablecer la contraseña enviado",
+      "successMessage": "Te hemos enviado un enlace seguro para restablecer tu contraseña. Haz clic en el enlace para establecer tu nueva contraseña.",
+      "successInstructions": "Qué hacer a continuación:",
+      "step1": "Revisa tu bandeja de entrada (y la carpeta de spam)",
+      "step2": "Haz clic en el enlace 'Restablecer contraseña' del correo",
+      "step3": "Introduce tu nueva contraseña en la página segura de restablecimiento",
+      "noEmail": "¿No has recibido el correo?",
+      "resendLink": "Enviar otro correo de restablecimiento",
+      "sending": "Enviando...",
+      "sendResetEmail": "Enviar correo de restablecimiento",
+      "alreadyHaveAccount": "¿Ya tienes una cuenta?"
+    },
+    "updatePassword": {
+      "title": "Restablece tu contraseña",
+      "description": "Por favor, introduce tu nueva contraseña a continuación.",
+      "newPassword": "Nueva contraseña",
+      "newPasswordPlaceholder": "Nueva contraseña",
+      "confirmNewPassword": "Confirmar nueva contraseña",
+      "confirmNewPasswordPlaceholder": "Confirma tu nueva contraseña",
+      "saving": "Guardando...",
+      "saveNewPassword": "Guardar nueva contraseña",
+      "verifyingLink": "Verificando tu enlace de restablecimiento...",
+      "authenticationRequired": "Autenticación requerida",
+      "passwordUpdated": "¡Contraseña actualizada!",
+      "passwordUpdatedSuccess": "Tu contraseña se ha actualizado correctamente. Estás siendo redirigido/a a tu panel.",
+      "redirectingMoment": "Redirigiendo en un momento..."
+    },
+    "signOut": {
+      "signingOut": "Cerrando sesión...",
+      "signOutError": "Error al cerrar sesión. Por favor, inténtalo de nuevo.",
+      "signOutSuccess": "Has cerrado sesión correctamente"
+    },
+    "errors": {
+      "genericError": "Ha ocurrido un error",
+      "invalidCredentials": "Correo electrónico o contraseña no válidos",
+      "emailRequired": "El correo electrónico es obligatorio",
+      "passwordRequired": "La contraseña es obligatoria",
+      "codeError": "Error de código: {code}",
+      "codeErrorPrefix": "Error de código:",
+      "unspecifiedError": "Ha ocurrido un error no especificado."
+    }
+  },
+  "settings": {
+    "title": "Perfil",
+    "subtitle": "Gestiona la información y las preferencias de tu perfil",
+    "loading": "Cargando tus ajustes...",
+    "error": "No se pudieron cargar los ajustes",
+    "tryAgain": "Intentar de nuevo",
+    "edit": "Editar",
+    "save": "Guardar",
+    "saving": "Guardando...",
+    "cancel": "Cancelar",
+    "notSet": "No establecido",
+    "menu": {
+      "profile": "Perfil",
+      "contact": "Contacto",
+      "professional": "Profesional",
+      "participation": "Roles",
+      "location": "Ubicación",
+      "finance": "Donaciones",
+      "settings": "Ajustes"
+    },
+    "categories": {
+      "personal": {
+        "title": "Información Personal"
+      },
+      "professional": {
+        "title": "Información Profesional",
+        "description": "Tu trabajo y habilidades"
+      },
+      "location": {
+        "title": "Ubicación",
+        "description": "Dónde te encuentras"
+      },
+      "contact": {
+        "title": "Información de Contacto",
+        "description": "Cómo podemos contactarte"
+      },
+      "participation": {
+        "title": "Roles en la Alianza",
+        "description": "Elige cómo quieres participar en la Deep Resirch"
+      },
+      "account": {
+        "title": "Ajustes de la Cuenta",
+        "description": "Seguridad y gestión de la cuenta"
+      },
+      "profile": {
+        "title": "Información del Perfil",
+        "description": "Los datos básicos de tu perfil"
+      },
+      "finance": {
+        "title": "Donaciones",
+        "description": "Gestiona tu suscripción y facturación"
+      }
+    },
+    "fields": {
+      "username": {
+        "label": "Nombre de usuario",
+        "placeholder": "Elige un nombre de usuario único",
+        "description": "Solo se puede cambiar una vez al día.",
+        "autoGeneratedDescription": "Este nombre de usuario se generó automáticamente a partir de tu correo. Puedes cambiarlo una vez.",
+        "rateLimitError": "Solo puedes cambiar tu nombre de usuario una vez al día.",
+        "formatError": "El nombre de usuario debe tener entre 6 y 30 caracteres y solo puede contener letras, números, guiones bajos y puntos"
+      },
+      "firstName": {
+        "label": "Nombre",
+        "placeholder": "Tu nombre",
+        "description": "Opcional",
+        "rateLimitError": "Solo puedes cambiar tu nombre 3 veces."
+      },
+      "lastName": {
+        "label": "Apellido",
+        "placeholder": "Tu apellido",
+        "description": "Opcional",
+        "rateLimitError": "Solo puedes cambiar tu apellido 3 veces."
+      },
+      "language": {
+        "label": "Idioma"
+      },
+      "bio": {
+        "label": "Biografía",
+        "placeholder": "Escribe una breve biografía...",
+        "description": "",
+        "rateLimitError": "Solo puedes cambiar tu biografía 10 veces al día"
+      },
+      "website": {
+        "label": "Sitio web",
+        "placeholder": "https://tu-sitio-web.com",
+        "description": "",
+        "rateLimitError": "Solo puedes cambiar tu sitio web 5 veces al día",
+        "formatError": "Formato incorrecto. Ejemplo: https://tu-sitio-web.com"
+      },
+      "phone": {
+        "label": "Número de teléfono",
+        "placeholder": "Tu número de teléfono",
+        "description": "Campo opcional, se puede cambiar hasta 2 veces después del primer ingreso.",
+        "rateLimitError": "Solo puedes cambiar tu número de teléfono 2 veces después del primer ingreso",
+        "formatError": "Formato incorrecto. Ejemplo: +34612345678"
+      },
+      "contactComment": {
+        "label": "Orgullo de Bratislava y comentario de contacto",
+        "placeholder": "Si deseas más información sobre el Orgullo de Bratislava, escríbenos en este campo de comentarios. De lo contrario, déjanos un comentario sobre tus deseos de contacto."
+      },
+      "professionalComment": {
+        "label": "Comentario profesional",
+        "placeholder": "Comentarios adicionales sobre tu profesión...",
+        "description": "Comentario abierto sobre tu experiencia profesional"
+      },
+      "profession": {
+        "label": "Profesión",
+        "placeholder": "Busca tu profesión..."
+      },
+      "organization": {
+        "label": "Organización",
+        "placeholder": "El nombre de tu organización (empleador, empresa, etc.)"
+      },
+      "experienceLevel": {
+        "label": "Nivel de experiencia"
+      },
+      "skills": {
+        "label": "Habilidades y Capacidades",
+        "description": "Añade cualquier habilidad que tengas, desde habilidades técnicas hasta aficiones y habilidades para la vida",
+        "placeholder": "Ej: Cocina, JavaScript, Jardinería, Revisión de literatura..."
+      },
+      "country": {
+        "label": "País",
+        "description": "Selecciona tu país de residencia"
+      },
+      "region": {
+        "label": "Región/Provincia",
+        "description": "Selecciona tu región o provincia",
+        "placeholder": "Seleccionar región/provincia"
+      },
+      "city": {
+        "label": "Ciudad",
+        "placeholder": "Tu ciudad"
+      },
+      "email": {
+        "label": "Dirección de correo electrónico",
+        "description": "Cambia tu dirección de correo electrónico",
+        "confirmationRequired": "Deberás confirmar tu nueva dirección de correo electrónico",
+        "placeholder": "tu.email@ejemplo.com",
+        "emailRequired": "El correo electrónico es obligatorio"
+      },
+      "password": {
+        "label": "Contraseña",
+        "description": "Cambia tu contraseña",
+        "currentPassword": "Contraseña actual",
+        "newPassword": "Nueva contraseña",
+        "newPasswordRequired": "La nueva contraseña es obligatoria",
+        "confirmNewPassword": "Confirmar nueva contraseña",
+        "confirmNewPasswordPlaceholder": "Confirma tu nueva contraseña",
+        "newPasswordPlaceholder": "Introduce tu nueva contraseña"
+      }
+    },
+    "consent": {
+      "title": "Permisos de Contacto",
+      "directContact": {
+        "label": "Permitir contacto directo",
+        "description": "Consiento que se me contacte con oportunidades dentro de la alianza queer"
+      },
+      "newsletter": {
+        "label": "Boletín informativo por correo",
+        "description": "Consiento recibir boletines informativos e información"
+      },
+      "privacyNotice": "Puedes cambiar estos permisos en cualquier momento. Respetamos tu privacidad y seguimos las directrices del RGPD.",
+      "consentTimestamp": "Consentimiento otorgado el: {timestamp}",
+      "lastUpdated": "Última actualización: {timestamp}"
+    },
+    "participation": {
+      "title": "Selecciona tu(s) Rol(es) de Participación",
+      "description": "Selecciona uno o más roles para tu participación (no vinculante). Puedes elegir múltiples roles según tu disponibilidad, habilidades, red, tiempo u objetivos <strong>y cambiar en cualquier momento</strong>.",
+      "roles": {
+        "member": {
+          "title": "Miembro",
+          "description": "Quiero participar de diferentes maneras como miembro"
+        },
+        "expert": {
+          "title": "Experto/a",
+          "description": "Quiero asesorar a la alianza en cuestiones de dominio específico"
+        },
+        "activist": {
+          "title": "Activista",
+          "description": "Quiero ayudar a la alianza a crear visibilidad e impacto"
+        },
+        "supporter": {
+          "title": "Colaborador/a",
+          "description": "Quiero apoyar económicamente a la alianza queer"
+        }
+      }
+    },
+    "account": {
+      "changeEmail": {
+        "title": "Cambiar Dirección de Correo Electrónico",
+        "button": "Cambiar correo",
+        "success": "Cambio de correo electrónico iniciado. Por favor, revisa tu correo para confirmar."
+      },
+      "changePassword": {
+        "title": "Cambiar Contraseña",
+        "button": "Cambiar contraseña",
+        "success": "Contraseña actualizada correctamente"
+      },
+      "deleteAccount": {
+        "title": "Eliminar Cuenta",
+        "description": "Elimina permanentemente tu perfil y todos los datos asociados",
+        "button": "Eliminar cuenta",
+        "confirmText": "DELETE",
+        "confirmPlaceholder": "Escribe DELETE para confirmar",
+        "warning": "Esta acción no se puede deshacer. Todos tus datos serán eliminados permanentemente.",
+        "subscriptionWarning": "Importante: Cancela todas tus suscripciones activas antes de eliminar tu cuenta. Si eliminas tu cuenta sin cancelar las suscripciones, deberás contactar al administrador para que las cancele manualmente por ti.",
+        "success": "Cuenta eliminada correctamente"
+      }
+    },
+    "options": {
+      "experienceLevel": {
+        "intern": "Becario/a",
+        "entry": "Nivel Inicial (0-2 años)",
+        "mid": "Nivel Medio (3-5 años)",
+        "senior": "Nivel Senior (6-10 años)",
+        "lead": "Líder/Principal (10+ años)",
+        "executive": "Ejecutivo/Nivel C"
+      }
+    },
+    "profile": {
+      "title": "Información del Perfil",
+      "description": "La información básica de tu cuenta",
+      "email": "Correo electrónico",
+      "memberSince": "Miembro desde",
+      "lastUpdated": "Última actualización",
+      "profileCompletion": "Perfil completado"
+    },
+    "loadingStates": {
+      "saving": "Guardando...",
+      "updatingSettings": "Actualizando tus ajustes",
+      "deletingAccount": "Eliminando cuenta...",
+      "deletingWarning": "Esta acción no se puede deshacer",
+      "autoNavigating": "Navegación automática...",
+      "nextSection": "siguiente sección",
+      "loadingCountries": "Cargando países...",
+      "loadingRegions": "Cargando regiones...",
+      "loadingCities": "Cargando ciudades...",
+      "loadingSupportStatus": "Cargando tu estado de apoyo...",
+      "loadingPlans": "Cargando planes..."
+    },
+    "errors": {
+      "rateLimitExceeded": "Límite de frecuencia excedido para este campo",
+      "changeLimitExceeded": "Límite de cambios excedido para este campo",
+      "invalidInput": "Entrada no válida",
+      "saveFailed": "No se pudieron guardar los cambios",
+      "loadFailed": "No se pudieron cargar los datos",
+      "failedToChangeEmail": "Error al cambiar el correo electrónico",
+      "failedToChangePassword": "Error al cambiar la contraseña",
+      "maximumCharacters": "Máximo {maxLength} caracteres permitidos",
+      "validation": {
+        "invalidLanguageCode": "Código de idioma no válido",
+        "invalidExperienceLevel": "Nivel de experiencia no válido",
+        "skillsMustBeArray": "Las habilidades deben ser un array",
+        "bioTooLong": "Biografía demasiado larga (máx. 500 caracteres)",
+        "invalidWebsite": "El sitio web debe comenzar con http:// o https:// y tener un dominio válido (ej: https://a.co)",
+        "invalidPreferencesStructure": "Estructura de preferencias no válida"
+      }
+    },
+    "professional": {
+      "organizationRepresentative": {
+        "label": "Represento a una organización",
+        "description": "Consiento ser contactado/a directamente como representante de una organización"
+      }
+    },
+    "finance": {
+      "title": "Finanzas y Facturación",
+      "description": "Gestiona tu suscripción y preferencias de facturación",
+      "current": "Suscripción Actual",
+      "loading": "Cargando suscripción...",
+      "manage": "Gestionar Suscripción",
+      "upgrade": "Mejorar Plan",
+      "billing": "Historial de Facturación",
+      "thankYouSupport": "¡Gracias por apoyar a la alianza!",
+      "considerSupporting": "Considera apoyar la causa",
+      "premiumFeatures": "Funciones premium y soporte",
+      "processing": "Procesando...",
+      "contributeNow": "Contribuir Ahora",
+      "changeSupportLevel": "Cambiar Nivel de Apoyo",
+      "startSupporting": "Empezar a Apoyar",
+      "noPlansAvailable": "No hay planes disponibles",
+      "manageSubscriptionDescription": "Gestiona tu suscripción, consulta facturas y actualiza la información de facturación",
+      "accessAccountDescription": "Accede a los ajustes de tu cuenta, métodos de pago e información de facturación",
+      "manageSubscriptionBilling": "Gestionar Suscripción y Facturación",
+      "accessBillingPortal": "Acceder al Portal de Facturación",
+      "stripePortalDescription": "Potenciado por el portal de facturación seguro de Stripe: gestiona métodos de pago, consulta facturas, actualiza la dirección de facturación y más",
+      "currentSupportStatus": "Estado de Apoyo Actual",
+      "activeSubscription": "✓ Suscripción Activa",
+      "statusLabel": "Estado:",
+      "nextBilling": "Próxima facturación:",
+      "oneTimeContributionMade": "✓ Contribución Única Realizada",
+      "successfulContribution": "Has contribuido con éxito a la causa",
+      "noActiveSupport": "⚠ Sin Apoyo Activo",
+      "chooseSupportOption": "Elige una opción de apoyo a continuación para ayudar a financiar la alianza queer",
+      "waysToSupport": "Formas de Apoyar la Causa",
+      "chooseAmountStripe": "Tú eliges la cantidad en el checkout seguro de Stripe",
+      "perInterval": "por {interval}",
+      "plansAvailableOnce": "Los planes aparecerán aquí una vez que se creen en Stripe",
+      "billingAccountManagement": "Gestión de Facturación y Cuenta",
+      "payAsYouWish": "Paga lo que quieras",
+      "oneTime": "Una vez",
+      "plans": {
+        "basic": {
+          "name": "Básico",
+          "description": "Funciones esenciales para empezar",
+          "price": "9,99 €/mes"
+        },
+        "pro": {
+          "name": "Profesional",
+          "description": "Funciones avanzadas para miembros activos",
+          "price": "19,99 €/mes"
+        },
+        "expert": {
+          "name": "Experto/a",
+          "description": "Acceso completo con soporte prioritario",
+          "price": "39,99 €/mes"
+        },
+        "lifetime": {
+          "name": "Acceso Vitalicio",
+          "description": "Pago único para acceso permanente",
+          "price": "299,99 €"
+        }
+      },
+      "error": "Error al cargar la información de la suscripción",
+      "messages": {
+        "paymentSuccessSyncing": "¡Pago realizado con éxito! Sincronizando tus datos...",
+        "paymentSuccessActivated": "¡Pago realizado con éxito! Tu suscripción ha sido activada.",
+        "paymentCanceled": "El pago fue cancelado. Puedes intentarlo de nuevo en cualquier momento.",
+        "welcomeBackSyncing": "¡Hola de nuevo! Sincronizando tus datos de facturación...",
+        "welcomeBackUpdated": "¡Hola de nuevo! Tu información de facturación ha sido actualizada."
+      }
+    }
+  },
+  "languageSwitcher": {
+    "selectLanguage": "Seleccionar idioma",
+    "updating": "Actualizando idioma..."
+  },
+  "theme": {
+    "light": "Claro",
+    "dark": "Oscuro",
+    "system": "Sistema"
+  },
+  "languages": {
+    "en": "English",
+    "de": "Deutsch",
+    "fr": "Français",
+    "es": "Español",
+    "it": "Italiano",
+    "pt": "Português",
+    "nl": "Nederlands",
+    "pl": "Polski",
+    "ru": "Русский",
+    "ja": "日本語",
+    "ko": "한국어",
+    "zh": "中文",
+    "ar": "العربية",
+    "hi": "हिन्दी"
+  },
+  "professions": {
+    "chief-executive": "Director/a Ejecutivo/a",
+    "administration-and-planning-manager": "Gerente de Administración y Planificación",
+    "policy-and-planning-manager": "Gerente de Políticas y Planificación",
+    "business-services-and-administration-manager": "Gerente de Servicios Empresariales y Administración",
+    "sales-marketing-and-development-manager": "Gerente de Ventas, Marketing y Desarrollo",
+    "production-and-specialized-services-manager": "Gerente de Producción y Servicios Especializados",
+    "hospitality-retail-and-other-services-manager": "Gerente de Hostelería, Retail y Otros Servicios",
+    "science-and-engineering-professional": "Profesional de Ciencia e Ingeniería",
+    "software-developer": "Desarrollador/a de Software",
+    "systems-analyst": "Analista de Sistemas",
+    "database-designer": "Diseñador/a de Bases de Datos",
+    "network-professional": "Profesional de Redes",
+    "health-professional": "Profesional de la Salud",
+    "doctor": "Médico/a",
+    "nurse": "Enfermero/a",
+    "pharmacist": "Farmacéutico/a",
+    "veterinarian": "Veterinario/a",
+    "teaching-professional": "Profesional de la Enseñanza",
+    "professor": "Profesor/a",
+    "secondary-education-teacher": "Profesor/a de Educación Secundaria",
+    "primary-school-teacher": "Maestro/a de Educación Primaria",
+    "business-and-administration-professional": "Profesional de Negocios y Administración",
+    "accountant": "Contable",
+    "financial-analyst": "Analista Financiero/a",
+    "human-resources-professional": "Profesional de Recursos Humanos",
+    "information-and-communications-technology-professional": "Profesional de Tecnologías de la Información y la Comunicación",
+    "legal-professional": "Profesional Jurídico",
+    "lawyer": "Abogado/a",
+    "judge": "Juez/a",
+    "culture-arts-and-design-professional": "Profesional de Cultura, Artes y Diseño",
+    "author": "Autor/a",
+    "journalist": "Periodista",
+    "artist": "Artista",
+    "designer": "Diseñador/a",
+    "science-and-engineering-associate-professional": "Profesional Asociado de Ciencia e Ingeniería",
+    "engineering-technician": "Técnico/a de Ingeniería",
+    "drafter": "Delineante",
+    "health-associate-professional": "Profesional Asociado de la Salud",
+    "medical-technician": "Técnico/a Médico",
+    "nursing-associate-professional": "Profesional Asociado de Enfermería",
+    "business-and-administration-associate-professional": "Profesional Asociado de Negocios y Administración",
+    "insurance-representative": "Agente de Seguros",
+    "estate-agent": "Agente Inmobiliario/a",
+    "legal-social-and-cultural-associate-professional": "Profesional Asociado Jurídico, Social y Cultural",
+    "legal-associate-professional": "Asistente Jurídico",
+    "social-worker": "Trabajador/a Social",
+    "information-and-communications-technician": "Técnico/a de Tecnologías de la Información y la Comunicación",
+    "computer-technician": "Técnico/a Informático",
+    "telecommunications-technician": "Técnico/a de Telecomunicaciones",
+    "general-and-keyboard-clerk": "Administrativo/a General",
+    "secretary": "Secretario/a",
+    "data-entry-clerk": "Operador/a de Entrada de Datos",
+    "customer-services-clerk": "Empleado/a de Atención al Cliente",
+    "customer-service-representative": "Representante de Atención al Cliente",
+    "receptionist": "Recepcionista",
+    "numerical-and-material-recording-clerk": "Empleado/a de Registro Numérico y de Materiales",
+    "accounting-associate-professional": "Profesional Asociado de Contabilidad",
+    "bookkeeper": "Tenedor/a de Libros",
+    "other-clerical-support-worker": "Otro Personal de Apoyo Administrativo",
+    "mail-carrier": "Cartero/a",
+    "filing-clerk": "Archivista",
+    "personal-service-worker": "Trabajador/a de Servicios Personales",
+    "travel-attendant": "Asistente de Viaje",
+    "cook": "Cocinero/a",
+    "waiter": "Camarero/a",
+    "hairdresser": "Peluquero/a",
+    "housekeeper": "Gobernante/a",
+    "protective-services-worker": "Trabajador/a de Servicios de Protección",
+    "security-guard": "Guardia de Seguridad",
+    "police-officer": "Oficial de Policía",
+    "firefighter": "Bombero/a",
+    "sales-worker": "Vendedor/a",
+    "shop-salesperson": "Dependiente/a de Tienda",
+    "cashier": "Cajero/a",
+    "sales-representative": "Representante de Ventas",
+    "market-oriented-skilled-agricultural-worker": "Trabajador/a Agrícola Cualificado Orientado al Mercado",
+    "farmer": "Agricultor/a",
+    "livestock-producer": "Ganadero/a",
+    "crop-grower": "Cultivador/a",
+    "market-oriented-skilled-forestry-fishery-and-hunting-worker": "Trabajador/a Forestal, Pesquero y de Caza Cualificado Orientado al Mercado",
+    "logger": "Leñador/a",
+    "fisherman": "Pescador/a",
+    "subsistence-farmer-fisherman-hunter-and-gatherer": "Agricultor/a, Pescador/a, Cazador/a y Recolector/a de Subsistencia",
+    "building-and-related-trades-worker": "Trabajador/a de la Construcción y Oficios Relacionados",
+    "carpenter": "Carpintero/a",
+    "electrician": "Electricista",
+    "plumber": "Fontanero/a",
+    "painter": "Pintor/a",
+    "metal-machinery-and-related-trades-worker": "Trabajador/a de Metal, Maquinaria y Oficios Relacionados",
+    "welder": "Soldador/a",
+    "machinist": "Maquinista",
+    "mechanic": "Mecánico/a",
+    "handicraft-and-printing-worker": "Artesano/a y Trabajador/a de Imprenta",
+    "potter": "Alfarero/a",
+    "tailor": "Sastre/a",
+    "printer": "Impresor/a",
+    "electrical-and-electronic-trades-worker": "Trabajador/a de Oficios Eléctricos y Electrónicos",
+    "food-processing-woodworking-garment-and-other-craft-and-related-trades-worker": "Trabajador/a de Procesamiento de Alimentos, Carpintería, Confección y Otros Oficios Artesanales",
+    "stationary-plant-and-machine-operator": "Operador/a de Planta Fija y Máquinas",
+    "power-plant-operator": "Operador/a de Central Eléctrica",
+    "machine-operator": "Operador/a de Máquinas",
+    "assembler": "Ensamblador/a",
+    "product-assembler": "Ensamblador/a de Productos",
+    "electronics-assembler": "Ensamblador/a de Electrónica",
+    "driver-and-mobile-plant-operator": "Conductor/a y Operador/a de Planta Móvil",
+    "truck-driver": "Conductor/a de Camión",
+    "bus-driver": "Conductor/a de Autobús",
+    "taxi-driver": "Taxista",
+    "cleaner-and-helper": "Limpiador/a y Ayudante",
+    "domestic-helper": "Ayudante Doméstico/a",
+    "building-cleaner": "Limpiador/a de Edificios",
+    "kitchen-helper": "Ayudante de Cocina",
+    "agricultural-forestry-and-fishery-laborer": "Peón Agrícola, Forestal y Pesquero",
+    "farm-worker": "Trabajador/a Agrícola",
+    "gardener": "Jardinero/a",
+    "laborer-in-mining-construction-manufacturing-and-transport": "Peón en Minería, Construcción, Manufactura y Transporte",
+    "construction-laborer": "Peón de Construcción",
+    "factory-worker": "Operario/a de Fábrica",
+    "food-preparation-assistant": "Asistente de Preparación de Alimentos",
+    "street-and-related-service-worker": "Trabajador/a de Servicios en la Vía Pública y Relacionados",
+    "content-creator": "Creador/a de Contenido",
+    "social-media-manager": "Gestor/a de Redes Sociales",
+    "digital-marketing-specialist": "Especialista en Marketing Digital",
+    "uxui-designer": "Diseñador/a UX/UI",
+    "data-scientist": "Científico/a de Datos",
+    "machine-learning-engineer": "Ingeniero/a de Machine Learning",
+    "devops-engineer": "Ingeniero/a DevOps",
+    "product-manager": "Gerente de Producto",
+    "consultant": "Consultor/a",
+    "entrepreneur": "Emprendedor/a",
+    "freelancer": "Autónomo/a",
+    "student": "Estudiante",
+    "retired": "Jubilado/a",
+    "unemployed": "Desempleado/a",
+    "other": "Otro"
+  },
+  "skills": {
+    "javascript": "JavaScript",
+    "typescript": "TypeScript",
+    "python": "Python",
+    "java": "Java",
+    "c#": "C#",
+    "c++": "C++",
+    "go": "Go",
+    "rust": "Rust",
+    "php": "PHP",
+    "ruby": "Ruby",
+    "swift": "Swift",
+    "kotlin": "Kotlin",
+    "react": "React",
+    "vuejs": "Vue.js",
+    "angular": "Angular",
+    "svelte": "Svelte",
+    "nextjs": "Next.js",
+    "nodejs": "Node.js",
+    "expressjs": "Express.js",
+    "django": "Django",
+    "flask": "Flask",
+    "postgresql": "PostgreSQL",
+    "mysql": "MySQL",
+    "mongodb": "MongoDB",
+    "redis": "Redis",
+    "aws": "AWS",
+    "azure": "Azure",
+    "google-cloud": "Google Cloud",
+    "docker": "Docker",
+    "kubernetes": "Kubernetes",
+    "machine-learning": "Aprendizaje Automático",
+    "artificial-intelligence": "Inteligencia Artificial",
+    "data-science": "Ciencia de Datos",
+    "data-analysis": "Análisis de Datos",
+    "statistics": "Estadística",
+    "cybersecurity": "Ciberseguridad",
+    "network-administration": "Administración de Redes",
+    "database-administration": "Administración de Bases de Datos",
+    "system-administration": "Administración de Sistemas",
+    "web-development": "Desarrollo Web",
+    "mobile-development": "Desarrollo Móvil",
+    "game-development": "Desarrollo de Videojuegos",
+    "software-testing": "Pruebas de Software",
+    "devops": "DevOps",
+    "graphic-design": "Diseño Gráfico",
+    "uiux-design": "Diseño UI/UX",
+    "web-design": "Diseño Web",
+    "brand-design": "Diseño de Marca",
+    "logo-design": "Diseño de Logos",
+    "typography": "Tipografía",
+    "adobe-photoshop": "Adobe Photoshop",
+    "adobe-illustrator": "Adobe Illustrator",
+    "figma": "Figma",
+    "sketch": "Sketch",
+    "canva": "Canva",
+    "video-editing": "Edición de Vídeo",
+    "animation": "Animación",
+    "photography": "Fotografía",
+    "digital-photography": "Fotografía Digital",
+    "portrait-photography": "Fotografía de Retrato",
+    "landscape-photography": "Fotografía de Paisaje",
+    "photo-editing": "Edición de Fotos",
+    "drawing": "Dibujo",
+    "painting": "Pintura",
+    "digital-art": "Arte Digital",
+    "illustration": "Ilustración",
+    "sculpture": "Escultura",
+    "ceramics": "Cerámica",
+    "jewelry-making": "Joyería",
+    "3d-modeling": "Modelado 3D",
+    "cad-design": "Diseño CAD",
+    "industrial-design": "Diseño Industrial",
+    "interior-design": "Diseño de Interiores",
+    "fashion-design": "Diseño de Moda",
+    "project-management": "Gestión de Proyectos",
+    "product-management": "Gestión de Productos",
+    "business-analysis": "Análisis de Negocio",
+    "strategic-planning": "Planificación Estratégica",
+    "leadership": "Liderazgo",
+    "team-management": "Gestión de Equipos",
+    "human-resources": "Recursos Humanos",
+    "recruitment": "Reclutamiento",
+    "sales": "Ventas",
+    "marketing": "Marketing",
+    "digital-marketing": "Marketing Digital",
+    "social-media-marketing": "Marketing en Redes Sociales",
+    "content-marketing": "Marketing de Contenidos",
+    "email-marketing": "Email Marketing",
+    "seo": "SEO",
+    "sem": "SEM",
+    "ppc-advertising": "Publicidad PPC",
+    "financial-analysis": "Análisis Financiero",
+    "accounting": "Contabilidad",
+    "bookkeeping": "Teneduría de Libros",
+    "budgeting": "Presupuestación",
+    "investment-analysis": "Análisis de Inversiones",
+    "risk-management": "Gestión de Riesgos",
+    "supply-chain-management": "Gestión de la Cadena de Suministro",
+    "operations-management": "Gestión de Operaciones",
+    "quality-assurance": "Garantía de Calidad",
+    "process-improvement": "Mejora de Procesos",
+    "business-development": "Desarrollo de Negocio",
+    "negotiation": "Negociación",
+    "contract-management": "Gestión de Contratos",
+    "vendor-management": "Gestión de Proveedores",
+    "public-speaking": "Hablar en Público",
+    "presentation-skills": "Habilidades de Presentación",
+    "technical-writing": "Redacción Técnica",
+    "creative-writing": "Escritura Creativa",
+    "copywriting": "Redacción Publicitaria",
+    "content-creation": "Creación de Contenido",
+    "journalism": "Periodismo",
+    "blogging": "Blogging",
+    "editing": "Edición",
+    "proofreading": "Corrección de Textos",
+    "translation": "Traducción",
+    "interpretation": "Interpretación",
+    "customer-service": "Atención al Cliente",
+    "client-relations": "Relaciones con Clientes",
+    "conflict-resolution": "Resolución de Conflictos",
+    "mediation": "Mediación",
+    "storytelling": "Narración de Historias",
+    "interviewing": "Entrevistas",
+    "active-listening": "Escucha Activa",
+    "cross-cultural-communication": "Comunicación Intercultural",
+    "teaching": "Enseñanza",
+    "training-development": "Desarrollo de Formación",
+    "curriculum-design": "Diseño Curricular",
+    "educational-technology": "Tecnología Educativa",
+    "e-learning": "E-learning",
+    "mentoring": "Mentoría",
+    "coaching": "Coaching",
+    "workshop-facilitation": "Facilitación de Talleres",
+    "adult-education": "Educación de Adultos",
+    "child-development": "Desarrollo Infantil",
+    "special-education": "Educación Especial",
+    "educational-assessment": "Evaluación Educativa",
+    "research-methods": "Métodos de Investigación",
+    "academic-writing": "Escritura Académica",
+    "first-aid": "Primeros Auxilios",
+    "cpr": "RCP",
+    "medical-knowledge": "Conocimientos Médicos",
+    "nursing": "Enfermería",
+    "physical-therapy": "Fisioterapia",
+    "mental-health-support": "Apoyo en Salud Mental",
+    "nutrition": "Nutrición",
+    "fitness-training": "Entrenamiento Físico",
+    "yoga": "Yoga",
+    "meditation": "Meditación",
+    "mindfulness": "Mindfulness",
+    "stress-management": "Gestión del Estrés",
+    "health-coaching": "Coaching de Salud",
+    "massage-therapy": "Masoterapia",
+    "acupuncture": "Acupuntura",
+    "herbal-medicine": "Medicina Herbal",
+    "alternative-medicine": "Medicina Alternativa",
+    "carpentry": "Carpintería",
+    "plumbing": "Fontanería",
+    "electrical-work": "Trabajos Eléctricos",
+    "hvac": "Climatización",
+    "welding": "Soldadura",
+    "automotive-repair": "Reparación de Automóviles",
+    "motorcycle-repair": "Reparación de Motocicletas",
+    "appliance-repair": "Reparación de Electrodomésticos",
+    "computer-repair": "Reparación de Ordenadores",
+    "electronics-repair": "Reparación de Electrónica",
+    "decorating": "Decoración",
+    "tiling": "Alicatado",
+    "roofing": "Techado",
+    "masonry": "Albañilería",
+    "landscaping": "Paisajismo",
+    "construction": "Construcción",
+    "home-improvement": "Mejoras del Hogar",
+    "furniture-making": "Fabricación de Muebles",
+    "cooking": "Cocina",
+    "baking": "Repostería",
+    "pastry-making": "Pastelería",
+    "food-preparation": "Preparación de Alimentos",
+    "menu-planning": "Planificación de Menús",
+    "recipe-development": "Desarrollo de Recetas",
+    "food-safety": "Seguridad Alimentaria",
+    "kitchen-management": "Gestión de Cocina",
+    "wine-knowledge": "Conocimientos de Vino",
+    "bartending": "Coctelería",
+    "coffee-making": "Preparación de Café",
+    "brewing": "Elaboración de Cerveza",
+    "food-photography": "Fotografía de Alimentos",
+    "catering": "Catering",
+    "meal-planning": "Planificación de Comidas",
+    "nutrition-planning": "Planificación Nutricional",
+    "dietary-planning": "Planificación Dietética",
+    "music-production": "Producción Musical",
+    "audio-engineering": "Ingeniería de Audio",
+    "music-composition": "Composición Musical",
+    "singing": "Canto",
+    "guitar": "Guitarra",
+    "piano": "Piano",
+    "drums": "Batería",
+    "violin": "Violín",
+    "bass": "Bajo",
+    "saxophone": "Saxofón",
+    "music-theory": "Teoría Musical",
+    "sound-design": "Diseño de Sonido",
+    "podcast-production": "Producción de Podcasts",
+    "acting": "Actuación",
+    "theater": "Teatro",
+    "film-making": "Producción de Cine",
+    "screenwriting": "Guionismo",
+    "video-production": "Producción de Vídeo",
+    "broadcasting": "Radiodifusión",
+    "stand-up-comedy": "Comedia en Vivo",
+    "improvisation": "Improvisación",
+    "dance": "Baile",
+    "ballet": "Ballet",
+    "hip-hop": "Hip Hop",
+    "salsa": "Salsa",
+    "ballroom-dancing": "Bailes de Salón",
+    "football": "Fútbol Americano",
+    "basketball": "Baloncesto",
+    "soccer": "Fútbol",
+    "tennis": "Tenis",
+    "golf": "Golf",
+    "swimming": "Natación",
+    "running": "Correr",
+    "cycling": "Ciclismo",
+    "hiking": "Senderismo",
+    "rock-climbing": "Escalada en Roca",
+    "skiing": "Esquí",
+    "snowboarding": "Snowboard",
+    "surfing": "Surf",
+    "martial-arts": "Artes Marciales",
+    "boxing": "Boxeo",
+    "wrestling": "Lucha Libre",
+    "gymnastics": "Gimnasia",
+    "track-and-field": "Atletismo",
+    "baseball": "Béisbol",
+    "volleyball": "Voleibol",
+    "badminton": "Bádminton",
+    "table-tennis": "Tenis de Mesa",
+    "sports-coaching": "Entrenamiento Deportivo",
+    "personal-training": "Entrenamiento Personal",
+    "athletic-training": "Entrenamiento Atlético",
+    "camping": "Acampada",
+    "backpacking": "Mochilero",
+    "fishing": "Pesca",
+    "hunting": "Caza",
+    "map-reading": "Lectura de Mapas",
+    "orienteering": "Orientación",
+    "wilderness-survival": "Supervivencia en la Naturaleza",
+    "fire-making": "Hacer Fuego",
+    "foraging": "Recolección",
+    "knot-tying": "Hacer Nudos",
+    "rope-work": "Trabajos con Cuerdas",
+    "sailing": "Navegación a Vela",
+    "kayaking": "Kayak",
+    "canoeing": "Piragüismo",
+    "mountain-climbing": "Alpinismo",
+    "cave-exploration": "Espeleología",
+    "wildlife-tracking": "Rastreo de Vida Silvestre",
+    "gardening": "Jardinería",
+    "organic-gardening": "Jardinería Orgánica",
+    "hydroponics": "Hidroponía",
+    "permaculture": "Permacultura",
+    "composting": "Compostaje",
+    "plant-propagation": "Propagación de Plantas",
+    "tree-care": "Cuidado de Árboles",
+    "flower-arranging": "Arreglos Florales",
+    "botanical-knowledge": "Conocimientos Botánicos",
+    "pest-management": "Manejo de Plagas",
+    "soil-management": "Manejo de Suelos",
+    "irrigation": "Riego",
+    "greenhouse-management": "Gestión de Invernaderos",
+    "urban-farming": "Agricultura Urbana",
+    "beekeeping": "Apicultura",
+    "knitting": "Tejer",
+    "crocheting": "Croché",
+    "sewing": "Costura",
+    "quilting": "Acolchado",
+    "embroidery": "Bordado",
+    "cross-stitch": "Punto de Cruz",
+    "woodworking": "Trabajo en Madera",
+    "metalworking": "Trabajo en Metal",
+    "glassblowing": "Soplado de Vidrio",
+    "pottery": "Alfarería",
+    "candle-making": "Fabricación de Velas",
+    "soap-making": "Fabricación de Jabón",
+    "leatherworking": "Marroquinería",
+    "bookbinding": "Encuadernación",
+    "origami": "Origami",
+    "calligraphy": "Caligrafía",
+    "scrapbooking": "Scrapbooking",
+    "model-building": "Modelismo",
+    "data-collection": "Recopilación de Datos",
+    "statistical-analysis": "Análisis Estadístico",
+    "literature-review": "Revisión de Literatura",
+    "critical-thinking": "Pensamiento Crítico",
+    "problem-solving": "Resolución de Problemas",
+    "mathematical-modeling": "Modelado Matemático",
+    "scientific-method": "Método Científico",
+    "laboratory-skills": "Habilidades de Laboratorio",
+    "microscopy": "Microscopía",
+    "spectroscopy": "Espectroscopía",
+    "chemical-analysis": "Análisis Químico",
+    "fieldwork": "Trabajo de Campo",
+    "survey-design": "Diseño de Encuestas",
+    "grant-writing": "Redacción de Subvenciones",
+    "time-management": "Gestión del Tiempo",
+    "organization": "Organización",
+    "goal-setting": "Establecimiento de Objetivos",
+    "self-discipline": "Autodisciplina",
+    "emotional-intelligence": "Inteligencia Emocional",
+    "decision-making": "Toma de Decisiones",
+    "creative-thinking": "Pensamiento Creativo",
+    "innovation": "Innovación",
+    "adaptability": "Adaptabilidad",
+    "resilience": "Resiliencia",
+    "self-motivation": "Automotivación",
+    "continuous-learning": "Aprendizaje Continuo",
+    "self-reflection": "Autorreflexión",
+    "networking": "Networking",
+    "relationship-building": "Creación de Relaciones",
+    "empathy": "Empatía",
+    "cultural-sensitivity": "Sensibilidad Cultural",
+    "team-collaboration": "Colaboración en Equipo",
+    "volunteer-coordination": "Coordinación de Voluntarios",
+    "community-organizing": "Organización Comunitaria",
+    "event-planning": "Planificación de Eventos",
+    "party-planning": "Planificación de Fiestas",
+    "hospitality": "Hospitalidad",
+    "customer-relations": "Relaciones con Clientes",
+    "diplomacy": "Diplomacia",
+    "persuasion": "Persuasión",
+    "influence": "Influencia",
+    "social-media-engagement": "Interacción en Redes Sociales",
+    "computer-literacy": "Conocimientos de Informática",
+    "internet-research": "Investigación en Internet",
+    "email-management": "Gestión de Correo Electrónico",
+    "social-media-management": "Gestión de Redes Sociales",
+    "online-marketing": "Marketing Online",
+    "e-commerce": "Comercio Electrónico",
+    "digital-privacy": "Privacidad Digital",
+    "cybersecurity-awareness": "Conciencia de Ciberseguridad",
+    "podcast-creation": "Creación de Podcasts",
+    "youtube-creation": "Creación en YouTube",
+    "live-streaming": "Transmisión en Vivo",
+    "online-teaching": "Enseñanza Online",
+    "virtual-collaboration": "Colaboración Virtual",
+    "driving": "Conducir",
+    "truck-driving": "Conducción de Camiones",
+    "motorcycle-riding": "Conducción de Motocicletas",
+    "bicycle-maintenance": "Mantenimiento de Bicicletas",
+    "navigation": "Navegación",
+    "route-planning": "Planificación de Rutas",
+    "logistics-coordination": "Coordinación Logística",
+    "warehouse-management": "Gestión de Almacenes",
+    "inventory-management": "Gestión de Inventario",
+    "shipping-and-receiving": "Envío y Recepción",
+    "personal-finance": "Finanzas Personales",
+    "investment-planning": "Planificación de Inversiones",
+    "tax-preparation": "Preparación de Impuestos",
+    "insurance-knowledge": "Conocimientos de Seguros",
+    "real-estate": "Bienes Raíces",
+    "cryptocurrency": "Criptomonedas",
+    "trading": "Trading",
+    "financial-planning": "Planificación Financiera",
+    "retirement-planning": "Planificación de la Jubilación",
+    "debt-management": "Gestión de Deudas",
+    "spanish": "Español",
+    "french": "Francés",
+    "german": "Alemán",
+    "italian": "Italiano",
+    "portuguese": "Portugués",
+    "russian": "Ruso",
+    "chinese": "Chino",
+    "japanese": "Japonés",
+    "korean": "Coreano",
+    "arabic": "Árabe",
+    "hindi": "Hindi",
+    "dutch": "Neerlandés",
+    "swedish": "Sueco",
+    "norwegian": "Noruego",
+    "danish": "Danés",
+    "finnish": "Finlandés",
+    "polish": "Polaco",
+    "turkish": "Turco",
+    "magic-tricks": "Trucos de Magia",
+    "juggling": "Malabares",
+    "balloon-animals": "Globoflexia",
+    "face-painting": "Pintacaras",
+    "card-games": "Juegos de Cartas",
+    "board-games": "Juegos de Mesa",
+    "chess": "Ajedrez",
+    "bridge": "Bridge",
+    "poker": "Póker",
+    "trivia-knowledge": "Conocimientos de Trivial",
+    "speed-reading": "Lectura Rápida",
+    "memory-techniques": "Técnicas de Memoria",
+    "escape-rooms": "Salas de Escape",
+    "puzzle-solving": "Resolución de Puzles",
+    "crossword-puzzles": "Crucigramas",
+    "sudoku": "Sudoku",
+    "word-games": "Juegos de Palabras"
+  },
+  "common": {
+    "add": "Añadir",
+    "remove": "Eliminar",
+    "search": "Buscar",
+    "select": "Seleccionar",
+    "loading": "Cargando...",
+    "error": "Error",
+    "success": "Éxito",
+    "yes": "Sí",
+    "no": "No",
+    "ok": "OK",
+    "close": "Cerrar",
+    "submit": "Enviar",
+    "reset": "Restablecer",
+    "clear": "Limpiar",
+    "next": "Siguiente",
+    "previous": "Anterior",
+    "back": "Atrás",
+    "forward": "Adelante",
+    "help": "Ayuda",
+    "about": "Acerca de"
+  },
+  "cookiePolicy": {
+    "title": "Política de Cookies",
+    "lastUpdated": "Última actualización: junio de 2025",
+    "labels": {
+      "purpose": "Finalidad:",
+      "cookies": "Cookies:",
+      "privacy": "Privacidad:",
+      "legalBasis": "Base legal:",
+      "cookieName": "Nombre de la Cookie",
+      "duration": "Duración"
+    },
+    "introduction": {
+      "title": "Política de Cookies",
+      "content": "Esta Política de Cookies explica cómo QUEER MEDIA LITERACY e.V. (\"Deep Resirch\") utiliza cookies en nuestra plataforma. <strong>Solo utilizamos cookies esenciales</strong> que son necesarias para que nuestra plataforma funcione, sin cookies de seguimiento, publicidad o análisis que requieran su consentimiento."
+    },
+    "whatAreCookies": {
+      "title": "1. ¿Qué son las cookies?",
+      "content": "Las cookies son pequeños archivos de texto que se almacenan en su dispositivo cuando visita nuestro sitio web. <strong>Solo utilizamos cookies esenciales</strong> que son necesarias para que nuestra plataforma funcione:",
+      "remembering": "• <strong>Sesiones de inicio de sesión seguras</strong> - Mantenerle conectado de forma segura.",
+      "improving": "• <strong>Soporte multilingüe</strong> - Recordar su elección de idioma para la navegación.",
+      "analyzing": "• <strong>Seguridad en los pagos</strong> - Prevención de fraudes durante las donaciones.",
+      "personalizing": "• <strong>Sin seguimiento</strong> - No utilizamos cookies para rastrear su comportamiento."
+    },
+    "typesOfCookies": {
+      "title": "2. Tipos de cookies que utilizamos",
+      "essential": {
+        "title": "Cookies Esenciales (Las únicas cookies que utilizamos)",
+        "content": "<strong>Todas nuestras cookies son esenciales</strong>: son necesarias para que la plataforma funcione y no requieren su consentimiento según el RGPD:",
+        "authentication": "• <strong>Seguridad de inicio de sesión</strong>: Tokens de sesión para mantenerle conectado de forma segura.",
+        "security": "• <strong>Protección de pagos</strong>: Prevención de fraudes de Stripe durante las donaciones.",
+        "functionality": "• <strong>Soporte de idiomas</strong>: Recordar su elección de idioma para la navegación del sitio.",
+        "compliance": "• <strong>Sin seguimiento</strong>: No utilizamos cookies para recopilar datos personales ni rastrear el comportamiento."
+      },
+      "functional": {
+        "title": "Preferencias del Usuario (Almacenadas en su cuenta, no en cookies)",
+        "content": "<strong>Privacidad por diseño</strong>: Almacenamos sus preferencias en su perfil de cuenta seguro, no en cookies de seguimiento:",
+        "preferences": "• <strong>Idioma y Tema</strong>: Guardados en su perfil de cuenta, accesibles en todos los dispositivos.",
+        "formData": "• <strong>Configuración de accesibilidad</strong>: Almacenada de forma segura en su perfil de base de datos.",
+        "accessibility": "• <strong>Mejor privacidad</strong>: El almacenamiento basado en la cuenta significa que no se necesitan cookies de seguimiento."
+      },
+      "analytics": {
+        "title": "Analítica (Totalmente libre de cookies)",
+        "content": "Utilizamos <strong>Vercel Web Analytics</strong>, una solución que prioriza la privacidad y no utiliza cookies:",
+        "usage": "• <strong>Sin cookies</strong>: Utiliza identificación de visitantes anónima basada en hash.",
+        "performance": "• <strong>Privacidad primero</strong>: El hash se reinicia cada 24 horas, sin seguimiento entre sitios.",
+        "demographics": "• <strong>Solo anónimo</strong>: Estadísticas agregadas, sin datos personales.",
+        "provider": "• <strong>No se necesita consentimiento</strong>: Cumple por diseño, sin cookies significa que no se requiere consentimiento."
+      },
+      "payment": {
+        "title": "Cookies de Procesamiento de Pagos (Esenciales para los pagos)",
+        "content": "El procesador de pagos Stripe utiliza cookies esenciales durante el procesamiento de pagos:",
+        "fraud": "• <strong>Prevención de fraudes</strong>: __stripe_mid (1 año), __stripe_sid (30 minutos).",
+        "security": "• <strong>Seguridad en los pagos</strong>: Esencial para el procesamiento seguro de transacciones.",
+        "session": "• <strong>Gestión de sesiones</strong>: Mantener el estado del pago durante el proceso de compra."
+      }
+    },
+    "thirdPartyServices": {
+      "title": "3. Servicios de Terceros y sus Cookies",
+      "content": "Trabajamos con socios que cumplen con el RGPD y que pueden establecer cookies cuando utiliza sus servicios:",
+      "stripe": {
+        "title": "Stripe (Procesamiento de Pagos)",
+        "purpose": "Procesamiento seguro de pagos para donaciones y membresías.",
+        "cookies": "Cookies esenciales: __stripe_mid, __stripe_sid (prevención de fraudes, seguridad).",
+        "privacy": "Política de Privacidad: stripe.com/privacy | Política de Cookies: stripe.com/legal/cookies-policy",
+        "legal": "Utilizado solo durante el procesamiento de pagos (interés legítimo para la ejecución del contrato)."
+      },
+      "vercel": {
+        "title": "Vercel Analytics (Analítica Web)",
+        "purpose": "Analítica web centrada en la privacidad y monitorización del rendimiento.",
+        "cookies": "No se utilizan cookies: identificación de visitantes anónima basada en hash.",
+        "privacy": "Política de Privacidad: vercel.com/legal/privacy-policy",
+        "legal": "No se requiere consentimiento ya que no se utilizan datos personales ni cookies."
+      },
+      "supabase": {
+        "title": "Supabase (Autenticación y Base de Datos)",
+        "purpose": "Autenticación segura de usuarios y almacenamiento de datos.",
+        "cookies": "Cookies de sesión para autenticación (esenciales para la funcionalidad de inicio de sesión).",
+        "privacy": "Política de Privacidad: supabase.com/privacy",
+        "legal": "Cookies esenciales para la ejecución del contrato (no se requiere consentimiento)."
+      }
+    },
+    "cookieConsent": {
+      "title": "4. Por qué no necesitamos consentimiento para las cookies",
+      "content": "<strong>No se requiere consentimiento</strong>: todas nuestras cookies son esenciales para la funcionalidad:",
+      "essential": "• <strong>Solo esenciales</strong>: Todas las cookies son necesarias para el inicio de sesión, los pagos y la navegación.",
+      "granular": "• <strong>Sin seguimiento</strong>: No utilizamos cookies de publicidad, análisis o comportamiento.",
+      "withdraw": "• <strong>Cumple con el RGPD</strong>: Las cookies esenciales están exentas de los requisitos de consentimiento.",
+      "settings": "• <strong>Privacidad por diseño</strong>: Mínima recopilación de datos, máxima privacidad del usuario.",
+      "noConsent": "• <strong>Transparente</strong>: Le decimos exactamente qué usamos y por qué."
+    },
+    "browserControls": {
+      "title": "5. Controles de Cookies del Navegador",
+      "content": "Puede controlar las cookies a través de la configuración de su navegador. Tenga en cuenta que deshabilitar las cookies esenciales puede impedir la funcionalidad de inicio de sesión y pago:",
+      "chrome": "• <strong>Chrome</strong>: Configuración > Privacidad y seguridad > Cookies y otros datos de sitios.",
+      "firefox": "• <strong>Firefox</strong>: Opciones > Privacidad y seguridad > Cookies y datos del sitio.",
+      "safari": "• <strong>Safari</strong>: Preferencias > Privacidad > Cookies y datos de sitios web.",
+      "edge": "• <strong>Edge</strong>: Configuración > Permisos del sitio > Cookies y datos del sitio.",
+      "impact": "<strong>Importante</strong>: Deshabilitar las cookies esenciales impedirá el inicio de sesión, los pagos y la funcionalidad principal."
+    },
+    "cookieDetails": {
+      "title": "6. Lista Detallada de Cookies",
+      "content": "Lista completa de las cookies que pueden establecerse en su dispositivo:",
+      "essential": {
+        "title": "Cookies Esenciales (Requeridas para la funcionalidad)",
+        "items": [
+          {
+            "name": "sb-[proyecto]-auth-token",
+            "purpose": "Token de sesión de autenticación de Supabase (inicio de sesión seguro).",
+            "duration": "1 hora (actualización automática)",
+            "provider": "Supabase",
+            "legal": "Ejecución del contrato (esencial para el acceso a la cuenta de usuario)."
+          },
+          {
+            "name": "__stripe_mid",
+            "purpose": "Prevención de fraudes de Stripe (seguridad en los pagos).",
+            "duration": "1 año",
+            "provider": "Stripe",
+            "legal": "Interés legítimo (prevención de fraudes durante los pagos)."
+          },
+          {
+            "name": "__stripe_sid",
+            "purpose": "Gestión de sesiones de Stripe (proceso de pago).",
+            "duration": "30 minutos",
+            "provider": "Stripe",
+            "legal": "Ejecución del contrato (esencial para el procesamiento de pagos)."
+          },
+          {
+            "name": "NEXT_LOCALE",
+            "purpose": "Enrutamiento de localización de Next.js (enrutamiento de URL de idioma).",
+            "duration": "1 año",
+            "provider": "Next.js",
+            "legal": "Ejecución del contrato (esencial para la funcionalidad multilingüe)."
+          }
+        ]
+      },
+      "functional": {
+        "title": "Cookies Funcionales (Actualmente ninguna)",
+        "content": "NO utilizamos cookies funcionales. Las preferencias del usuario se almacenan de forma segura en su perfil de base de datos en lugar de en cookies, lo que proporciona una mejor privacidad y persistencia en todos los dispositivos."
+      },
+      "analytics": {
+        "title": "Analítica (Sin cookies)",
+        "content": "Vercel Web Analytics utiliza análisis amigables con la privacidad y sin cookies que no requieren consentimiento según el RGPD."
+      }
+    },
+    "legalBasis": {
+      "title": "7. Base Legal para el Procesamiento de Cookies",
+      "content": "Nuestro uso de cookies cumple con el Artículo 6 del RGPD y el Artículo 5(3) de la Directiva ePrivacy:",
+      "essential": "• <strong>Cookies esenciales</strong>: Interés legítimo (Artículo 6(1)(f)) para la funcionalidad y seguridad de la plataforma.",
+      "payment": "• <strong>Cookies de pago</strong>: Ejecución del contrato (Artículo 6(1)(b)) para procesar transacciones.",
+      "consent": "• <strong>Cookies funcionales</strong>: Consentimiento (Artículo 6(1)(a)) para una experiencia de usuario mejorada.",
+      "compliance": "• <strong>Cookies de consentimiento</strong>: Obligación legal (Artículo 6(1)(c)) para el registro de cumplimiento del RGPD.",
+      "analytics": "• <strong>Analítica</strong>: No se requiere base legal (no se procesan cookies ni datos personales)."
+    },
+    "dataProtection": {
+      "title": "8. Protección de Datos y Derechos sobre las Cookies",
+      "content": "Sus derechos de protección de datos relacionados con las cookies según el RGPD:",
+      "access": "• <strong>Derecho de acceso</strong>: Solicitar información sobre las cookies establecidas en su dispositivo.",
+      "rectification": "• <strong>Derecho de rectificación</strong>: Corregir registros de preferencias de cookies inexactos.",
+      "erasure": "• <strong>Derecho de supresión</strong>: Eliminar registros de consentimiento de cookies (contactar a admin@queer-Deep Resirch.com).",
+      "restriction": "• <strong>Derecho a la limitación</strong>: Limitar el procesamiento de cookies solo a las esenciales.",
+      "objection": "• <strong>Derecho de oposición</strong>: Oponerse a las cookies no esenciales (retirar el consentimiento).",
+      "portability": "• <strong>Portabilidad de datos</strong>: Recibir su historial de consentimiento de cookies en formato estructurado."
+    },
+    "updates": {
+      "title": "9. Actualizaciones de esta Política de Cookies",
+      "content": "Podemos actualizar esta Política de Cookies para reflejar cambios legales o técnicos:",
+      "notification": "• <strong>Notificación</strong>: Notificación por correo electrónico para cambios materiales que afecten sus derechos.",
+      "consent": "• <strong>Nuevo consentimiento</strong>: Solicitar consentimiento actualizado para nuevos tipos o fines de cookies.",
+      "effective": "• <strong>Fecha de entrada en vigor</strong>: Los cambios entran en vigor 30 días después de la notificación, a menos que sea urgente.",
+      "version": "• <strong>Control de versiones</strong>: Versiones anteriores disponibles bajo petición."
+    },
+    "contact": {
+      "title": "10. Contáctenos sobre las Cookies",
+      "content": "Para preguntas sobre nuestras prácticas de cookies o para ejercer sus derechos:",
+      "email": "Delegado de Protección de Datos: admin@queer-Deep Resirch.com",
+      "response": "Respuesta en un plazo de 30 días según lo exige el Artículo 12 del RGPD.",
+      "dpa": "Autoridad de Supervisión: Agencia Española de Protección de Datos (aepd.es)",
+      "address": "QUEER MEDIA LITERACY e.V., 1060 Viena, Mariahilfer Straße 49/15, Austria"
+    }
+  },
+  "manifest": {
+    "title": "Manifiesto",
+    "lastUpdated": "Última actualización: junio de 2025",
+    "why": {
+      "title": "¿Por qué nos unimos?",
+      "content": "Vivimos en una época en la que fuerzas bien organizadas y con abundantes recursos enfrentan a las personas entre sí. Su objetivo es claro: atacar los derechos fundamentales de las personas queer e impedir que se concedan derechos iguales. Nuestra alianza es una respuesta a estos esfuerzos antidemocráticos e inhumanos. No nos dejaremos reprimir, dividir, confundir ni oprimir, y avanzamos con determinación."
+    },
+    "who": {
+      "title": "¿Quiénes somos?",
+      "content": "Somos una alianza de personas queer y sus aliados que trabajan juntos para fortalecer y proteger a la comunidad LGBTQIA+. Nos consideramos una red de solidaridad que aúna fuerzas colectivas y promueve los intereses de sus miembros. Creamos espacios creativos para ideas y el diseño de una sociedad abierta y diversa."
+    },
+    "what": {
+      "title": "¿Qué nos impulsa?",
+      "content": "Defendemos nuestro derecho a la seguridad, a la visibilidad y al amor contra toda hostilidad. Nadie tiene derecho a decidir sobre nuestro ser. Tomamos nuestro futuro en nuestras propias manos, sin que otros lo determinen."
+    },
+    "participation": {
+      "title": "¿Quién puede unirse?",
+      "content": "Nuestra alianza está abierta a todos los miembros de la comunidad LGBTQIA+ y sus aliados, independientemente de su origen, afiliación y modo de vida. Donde otros dividen y excluyen, nosotros vivimos la fuerza a través de la diversidad."
+    },
+    "action": {
+      "title": "¿Cómo actuamos?",
+      "content": "Nos apoyamos mutuamente, interna y externamente. No nos quedamos de brazos cruzados, actuamos. Somos parte de la alianza por la libertad, la diversidad y la autodeterminación."
+    }
+  },
+  "imprint": {
+    "title": "Aviso Legal",
+    "lastUpdated": "Última actualización: junio de 2025",
+    "labels": {
+      "name": "Nombre",
+      "seat": "Sede",
+      "address": "Dirección",
+      "country": "País",
+      "foundationDate": "Fecha de Fundación"
+    },
+    "organization": {
+      "title": "Información de la Organización",
+      "name": "QUEER MEDIA LITERACY e.V.",
+      "seat": "Viena",
+      "address": "1060 Viena, Mariahilfer Straße 49/15",
+      "country": "Austria",
+      "foundationDate": "21.09.2024"
+    },
+    "partners": {
+      "title": "Socios",
+      "partnersList": "Hasta la escisión de la Deep Resirch, la asociación Queer Media Literacy asumirá la responsabilidad del sitio web. Sin embargo, la asociación es solo uno de muchos socios. Vangardist Agency & Magazine, GGG.at, Transv.at, Queer Moments, Queer Dance im Gemeindebau, Porn Film Festival Vienna, Queer Shorts Vienna, Vienna Gay Mans Chorus, YK Media"
+    },
+    "registration": {
+      "title": "Registro",
+      "authority": "Autoridad: Dirección de Policía del Estado de Viena, Departamento de Asuntos de Asociaciones, Asambleas y Derecho de Medios",
+      "zvrNumber": "Número ZVR 1689372191"
+    },
+    "contact": {
+      "title": "Contacto",
+      "emailLabel": "Correo electrónico:",
+      "email": "admin@queer-Deep Resirch.com",
+      "note": "Para todas las consultas, utilice exclusivamente la dirección de correo electrónico proporcionada anteriormente."
+    },
+    "responsible": {
+      "title": "Responsable del Contenido",
+      "content": "La asociación QUEER MEDIA LITERACY e.V. es responsable de todo el contenido de este sitio web."
+    },
+    "disclaimer": {
+      "title": "Exención de Responsabilidad",
+      "content": "A pesar de un cuidadoso control del contenido, no asumimos ninguna responsabilidad por el contenido de los enlaces externos. Los operadores de las páginas enlazadas son los únicos responsables de su contenido."
+    }
+  },
+  "privacyPolicy": {
+    "title": "Política de Privacidad",
+    "lastUpdated": "Última actualización: junio de 2025",
+    "introduction": {
+      "title": "Política de Privacidad",
+      "content": "Esta Política de Privacidad explica cómo Deep Resirch (\"nosotros\", \"nuestro\" o \"nos\") recopila, utiliza, comparte y protege su información personal cuando utiliza nuestra plataforma y servicios. Estamos comprometidos a proteger su privacidad y a mantener la confianza que deposita en nosotros al interactuar con nuestra plataforma comunitaria.",
+      "keyPrivacyFeaturesTitle": "Características Clave de Privacidad:",
+      "keyPoints": "<strong>Características Clave de Privacidad:</strong><br>• <strong>Control total</strong>: Elimine toda su cuenta y todos sus datos al instante desde la configuración de su perfil.<br>• <strong>Consentimiento granular</strong>: Elija exactamente qué comunicaciones desea recibir.<br>• <strong>Transparencia de datos</strong>: Explicaciones claras sobre qué datos recopilamos y por qué.<br>• <strong>Protección de la UE</strong>: Alojado en la UE con pleno cumplimiento del RGPD y de la ley de protección de datos austriaca.<br>• <strong>No venta de datos</strong>: Nunca vendemos su información personal a terceros."
+    },
+    "controllerInfo": {
+      "title": "1. Información del Responsable del Tratamiento",
+      "content": "Somos el responsable del tratamiento de sus datos personales. Puede contactarnos para cualquier asunto de privacidad en:",
+      "contact": "Delegado de Protección de Datos: admin@queer-Deep Resirch.com"
+    },
+    "legalBasis": {
+      "title": "2. Base Legal para el Tratamiento",
+      "content": "Tratamos sus datos personales basándonos en las siguientes bases legales según el Artículo 6 del RGPD:",
+      "consent": "• <strong>Su consentimiento</strong>: Solo para suscripciones a boletines informativos y comunicación directa.",
+      "contract": "• <strong>Necesidad contractual</strong>: Para proporcionar los servicios de nuestra plataforma y facilitar las conexiones comunitarias.",
+      "legitimateInterest": "• <strong>Intereses legítimos</strong>: Para operar y mejorar nuestra plataforma, garantizar la seguridad de la comunidad y facilitar conexiones significativas dentro de la comunidad. Nuestro interés legítimo se equilibra con sus derechos de privacidad.",
+      "legalObligation": "• <strong>Obligación legal</strong>: Para cumplir con las leyes y regulaciones aplicables.",
+      "vitalInterests": "• <strong>Intereses vitales</strong>: En casos raros, para proteger la vida o la seguridad física de alguien."
+    },
+    "dataCollection": {
+      "title": "3. Información que Recopilamos",
+      "profileData": {
+        "title": "Información del Perfil (Qué y Por Qué)",
+        "content": "• <strong>Dirección de correo electrónico</strong> (obligatorio): Creación de cuenta, autenticación, comunicaciones críticas, restablecimiento de contraseña.<br>• <strong>Nombre de usuario</strong>: Identificador único para interacciones comunitarias y visualización del perfil.<br>• <strong>Nombre</strong> (nombre/apellido, opcional): Saludos personalizados, reconocimiento comunitario, facilitación de redes de contacto.<br>• <strong>Número de teléfono</strong> (opcional): Contacto de emergencia, autenticación de dos factores, soporte premium.<br>• <strong>Biografía y sitio web</strong> (opcional): Redes de contacto comunitarias, muestra de habilidades, conexiones profesionales.<br>• <strong>Habilidades y capacidades</strong>: Coincidencia con oportunidades relevantes, colaboración en proyectos, identificación de experiencia.<br>• <strong>Información profesional</strong>: Redes de contacto profesionales, validación de experiencia, oportunidades de colaboración.<br>• <strong>Preferencias de participación</strong>: Coincidencia de roles (miembro, experto, activista, colaborador), recomendaciones de eventos.<br>• <strong>Ubicación</strong> (país/estado/ciudad): Notificaciones de eventos locales, creación de comunidades regionales, cumplimiento legal.<br>• <strong>Preferencias de comunicación</strong>: Respeto de las opciones de consentimiento, frecuencia de comunicación personalizada."
+      },
+      "usageData": {
+        "title": "Datos Técnicos (Solo Seguridad y Funcionalidad)",
+        "content": "• <strong>Dirección IP</strong>: Monitoreo de seguridad, prevención de fraudes, cumplimiento de las leyes regionales.<br>• <strong>Información del navegador/dispositivo</strong>: Optimización de la compatibilidad, verificación de seguridad, diseño responsivo.<br>• <strong>Datos de sesión</strong>: Estado de autenticación, seguridad de inicio de sesión, cierre de sesión automático para protección.<br>• <strong>Registros de errores</strong>: Resolución de problemas técnicos, monitoreo de la estabilidad de la plataforma, corrección de errores.<br>• <strong>Nota</strong>: No rastreamos patrones de actividad personal, visitas a páginas o datos de interacción."
+      },
+      "paymentData": {
+        "title": "Información de Pago (Qué y Cómo)",
+        "content": "• <strong>Registros de transacciones</strong>: Historial de donaciones, estado de la suscripción, conciliación de facturación.<br>• <strong>Metadatos de pago</strong>: ID de transacción, importes, moneda, fechas para informes financieros.<br>• <strong>Integración con Stripe</strong>: Procesamiento de pagos gestionado por Stripe con cumplimiento de PCI DSS.<br>• <strong>Direcciones de facturación</strong>: Cálculo de impuestos, prevención de fraudes, cumplimiento normativo.<br>• <strong>Detalles de la suscripción</strong>: Gestión del nivel de servicio, procesamiento de renovaciones, seguimiento del uso.<br>• <strong>Nota</strong>: Nunca almacenamos números de tarjetas de crédito, códigos CVV o datos de pago sensibles."
+      },
+      "consentData": {
+        "title": "Datos de Consentimiento (Sus Preferencias de Comunicación)",
+        "content": "• <strong>Contacto directo</strong>: Consentimiento para ser contactado con oportunidades dentro de la alianza queer.<br>• <strong>Boletín informativo</strong>: Consentimiento para recibir boletines e información (no marketing).<br>• <strong>Representante de organización</strong>: Consentimiento para ser contactado directamente como representante de una organización.<br>• <strong>Historial de consentimiento</strong>: Marcas de tiempo y cambios en sus preferencias (cumplimiento del RGPD)."
+      }
+    },
+    "purposes": {
+      "title": "4. Cómo Utilizamos su Información (Fines Detallados)",
+      "community": "• <strong>Construcción de comunidad</strong>: Coincidencia de miembros basada en habilidades, recomendaciones de eventos locales, conexiones de mentoría, oportunidades de colaboración basadas en intereses y ubicación compartidos.",
+      "personalization": "• <strong>Experiencia personalizada</strong>: Curación de contenido basada en roles de participación, sugerencias de eventos que coincidan con sus habilidades, comunicaciones específicas del idioma, notificaciones apropiadas para la zona horaria.",
+      "communication": "• <strong>Comunicación</strong>: Entrega de boletines informativos (basado en consentimiento), contacto directo con oportunidades (basado en consentimiento), contacto de representante de organización (basado en consentimiento), actualizaciones de la plataforma, notificaciones de seguridad.",
+      "platform": "• <strong>Operación de la plataforma</strong>: Autenticación de usuarios, gestión de sesiones, funcionalidad de características, sincronización de datos, soporte multilingüe, responsividad móvil.",
+      "safety": "• <strong>Seguridad de la comunidad</strong>: Detección de fraudes mediante monitoreo de IP, prevención de spam mediante limitación de velocidad, sistemas de denuncia de abusos, moderación de contenido, verificación de cuentas.",
+      "analytics": "• <strong>Analítica web</strong>: Estadísticas anónimas del sitio web de Vercel Analytics (no se recopilan datos personales, completamente libre de cookies).",
+      "legal": "• <strong>Cumplimiento legal</strong>: Cumplimiento de la ley de protección de datos austriaca, cumplimiento de los requisitos del RGPD, mantenimiento de pistas de auditoría, informes regulatorios cuando sea necesario.",
+      "technical": "• <strong>Funcionalidad técnica</strong>: Optimización de la base de datos, creación de copias de seguridad, monitoreo del sistema, implementación de parches de seguridad, optimización del rendimiento, seguimiento y resolución de errores."
+    },
+    "sharing": {
+      "title": "5. Intercambio de Información",
+      "content": "Nos tomamos su privacidad en serio y solo compartimos información en estas circunstancias específicas:",
+      "serviceProviders": "• <strong>Proveedores de servicios</strong>: Socios de confianza que nos ayudan a operar nuestra plataforma (por ejemplo, Supabase para el alojamiento de datos, Stripe para los pagos, Vercel para la analítica).",
+      "legal": "• <strong>Requisitos legales</strong>: Cuando lo exija la ley, una orden judicial o para proteger nuestros derechos legales.",
+      "consent": "• <strong>Con su consentimiento</strong>: Cualquier otro intercambio solo ocurrirá con su permiso explícito.",
+      "noSharing": "• <strong>No se comparte con miembros</strong>: No compartimos su información con otros miembros o usuarios de la alianza.",
+      "noSale": "<strong>Nunca vendemos su información personal a terceros.</strong>"
+    },
+    "dataTransfers": {
+      "title": "6. Transferencias Internacionales de Datos",
+      "content": "Algunos de nuestros proveedores de servicios pueden estar ubicados fuera del Espacio Económico Europeo (EEE). Cuando transferimos sus datos internacionalmente, garantizamos una protección adecuada mediante:",
+      "adequacy": "• <strong>Decisiones de adecuación</strong>: Transferencias a países con una protección de datos adecuada.",
+      "safeguards": "• <strong>Salvaguardias apropiadas</strong>: Cláusulas contractuales tipo aprobadas por la Comisión Europea.",
+      "providers": "• Nuestros proveedores actuales incluyen Supabase (infraestructura en la UE), Stripe (global con salvaguardias en la UE) y Vercel (alojamiento en la UE en la región de Frankfurt)."
+    },
+    "retention": {
+      "title": "7. Retención y Eliminación de Datos",
+      "content": "Conservamos su información personal solo durante el tiempo necesario y ofrecemos capacidades de eliminación inmediata:",
+      "active": "• <strong>Cuentas activas</strong>: Los datos se conservan mientras su cuenta permanezca activa y continúe utilizando nuestros servicios.",
+      "dormant": "• <strong>Cuentas inactivas</strong>: Eliminación automática después de 3 años de inactividad completa (con un aviso previo de 90 días por correo electrónico).",
+      "immediate": "• <strong>Autoeliminación inmediata</strong>: Elimine toda su cuenta al instante a través de Configuración del Perfil → Configuración de la Cuenta → Eliminar Cuenta.",
+      "deletion": "• <strong>Tras la solicitud de eliminación</strong>: Eliminación inmediata de todos los sistemas activos, bases de datos y servicios de autenticación.",
+      "backups": "• <strong>Eliminación de copias de seguridad</strong>: Eliminación completa de todos los sistemas de copia de seguridad en un plazo de 90 días desde la eliminación de la cuenta.",
+      "legal": "• <strong>Requisitos legales</strong>: Retención de datos limitada solo cuando lo exija específicamente la ley austriaca o de la UE (por ejemplo, registros financieros para fines fiscales).",
+      "technical": "• <strong>Proceso de eliminación técnica</strong>: Datos del perfil eliminados de la base de datos principal → Credenciales de autenticación eliminadas → Registros de auditoría marcados para eliminación → Sistemas de copia de seguridad purgados.",
+      "confirmation": "• <strong>Confirmación de eliminación</strong>: Cierre de sesión automático y confirmación por correo electrónico enviados después de la eliminación exitosa de la cuenta."
+    },
+    "rights": {
+      "title": "8. Sus Derechos bajo el RGPD",
+      "content": "Usted tiene los siguientes derechos con respecto a sus datos personales:",
+      "access": "• <strong>Derecho de acceso</strong>: Solicite una copia de sus datos personales a través de admin@queer-Deep Resirch.com o véalos directamente en la configuración de su perfil.",
+      "rectification": "• <strong>Derecho de rectificación</strong>: Corrija los datos inexactos directamente en la configuración de su perfil o solicite asistencia a través de admin@queer-Deep Resirch.com.",
+      "erasure": "• <strong>Derecho de supresión</strong>: <strong>Elimine toda su cuenta al instante</strong> desde la configuración de su perfil (Ajustes > Ajustes de la Cuenta > Eliminar Cuenta) o solicite la eliminación a través de admin@queer-Deep Resirch.com.",
+      "restriction": "• <strong>Derecho a la limitación</strong>: Limite cómo procesamos sus datos contactando a admin@queer-Deep Resirch.com.",
+      "portability": "• <strong>Derecho a la portabilidad de los datos</strong>: Reciba sus datos en formato JSON estructurado a través de admin@queer-Deep Resirch.com.",
+      "objection": "• <strong>Derecho de oposición</strong>: Oponerse al tratamiento basado en intereses legítimos a través de admin@queer-Deep Resirch.com.",
+      "withdrawal": "• <strong>Retirar el consentimiento</strong>: Modifique las preferencias de consentimiento directamente en la configuración de su perfil o contacte a admin@queer-Deep Resirch.com.",
+      "complaint": "• <strong>Derecho a presentar una reclamación</strong>: Presente una reclamación ante la Autoridad de Protección de Datos de Austria (Datenschutzbehörde) en dsb.gv.at.",
+      "exercise": "La mayoría de los derechos se pueden ejercer directamente en la configuración de su perfil. Para obtener asistencia adicional, contacte a admin@queer-Deep Resirch.com (garantía de respuesta en 30 días)."
+    },
+    "accountDeletion": {
+      "title": "8.1. Eliminación Completa de la Cuenta (Autoservicio)",
+      "content": "Puede eliminar toda su cuenta y todos los datos asociados en cualquier momento directamente desde la configuración de su perfil:",
+      "access": "• <strong>Cómo acceder</strong>: Iniciar sesión → Perfil → Ajustes → Ajustes de la Cuenta → Eliminar Cuenta.",
+      "process": "• <strong>Proceso de eliminación</strong>: Escriba 'ELIMINAR' para confirmar → Eliminación permanente e inmediata de todos los datos.",
+      "scope": "• <strong>Qué se elimina</strong>: Toda la información del perfil, habilidades, preferencias, historial de consentimiento, registros de auditoría, datos de sesión y credenciales de autenticación.",
+      "immediate": "• <strong>Momento</strong>: Eliminación inmediata de todos los sistemas, incluyendo la base de datos y la autenticación.",
+      "irreversible": "• <strong>Importante</strong>: Esta acción es irreversible; una vez eliminada, su cuenta y sus datos no se pueden recuperar.",
+      "backup": "• <strong>Eliminación de copias de seguridad</strong>: Sus datos se eliminan de todas las copias de seguridad en un plazo de 90 días.",
+      "confirmation": "• <strong>Confirmación</strong>: Se le cerrará la sesión automáticamente y será redirigido después de la eliminación exitosa.",
+      "alternative": "• <strong>Alternativa</strong>: Contacte a admin@queer-Deep Resirch.com si necesita ayuda para eliminar la cuenta."
+    },
+    "security": {
+      "title": "9. Medidas Integrales de Seguridad de Datos",
+      "content": "Implementamos múltiples capas de medidas de seguridad robustas para proteger su información personal:",
+      "technical": {
+        "title": "Medidas de Seguridad Técnicas",
+        "content": "• <strong>Cifrado de datos</strong>: Todos los datos cifrados en tránsito (TLS 1.3) y en reposo (AES-256) a través de Supabase.<br>• <strong>Seguridad de la base de datos</strong>: Políticas de Seguridad a Nivel de Fila (RLS) que garantizan que los usuarios solo puedan acceder a sus propios datos.<br>• <strong>Autenticación</strong>: Soporte de autenticación multifactor, gestión segura de sesiones con caducidad automática.<br>• <strong>Validación de entradas</strong>: Prevención integral de XSS, protección contra inyección de SQL, saneamiento de entradas.<br>• <strong>Cabeceras de seguridad</strong>: Política de Seguridad de Contenido (CSP), Seguridad de Transporte Estricta HTTP (HSTS), protección anti-clickjacking.<br>• <strong>Seguridad de la API</strong>: Limitación de velocidad, validación de solicitudes, puntos finales de API seguros con autenticación requerida."
+      },
+      "organizational": {
+        "title": "Medidas de Seguridad Organizativas",
+        "content": "• <strong>Controles de acceso</strong>: Principio de privilegio mínimo, acceso basado en roles a sistemas y datos.<br>• <strong>Formación del personal</strong>: Formación periódica en concienciación sobre seguridad, protocolos de protección de datos.<br>• <strong>Acuerdos de tratamiento de datos</strong>: Acuerdos exhaustivos con todos los procesadores de terceros.<br>• <strong>Plan de respuesta a incidentes</strong>: Procedimientos documentados para la detección y respuesta a brechas de seguridad.<br>• <strong>Auditorías periódicas</strong>: Revisiones de seguridad trimestrales, pruebas de penetración anuales, evaluaciones de vulnerabilidad."
+      },
+      "monitoring": {
+        "title": "Monitoreo Continuo de la Seguridad",
+        "content": "• <strong>Monitoreo en tiempo real</strong>: Monitoreo del sistema 24/7, detección automatizada de amenazas.<br>• <strong>Pistas de auditoría</strong>: Registro exhaustivo de todos los cambios de perfil, intentos de inicio de sesión, accesos a datos.<br>• <strong>Seguimiento de sesiones</strong>: Monitoreo activo de sesiones, cierre de sesión automático después de la inactividad.<br>• <strong>Prevención de fraudes</strong>: Detección de anomalías basada en IP, alertas de actividad sospechosa.<br>• <strong>Seguimiento de errores</strong>: Registro y respuesta automatizados de errores relacionados con la seguridad."
+      },
+      "infrastructure": {
+        "title": "Seguridad de la Infraestructura",
+        "content": "• <strong>Seguridad del alojamiento</strong>: Infraestructura de Supabase con sede en la UE con cumplimiento SOC 2 Tipo II.<br>• <strong>Seguridad de la red</strong>: Cortafuegos, acceso VPN para administradores, canales de comunicación seguros.<br>• <strong>Seguridad de las copias de seguridad</strong>: Copias de seguridad automáticas cifradas, almacenamiento seguro de copias de seguridad, procedimientos de recuperación probados.<br>• <strong>Gestión de actualizaciones</strong>: Parches de seguridad automatizados, actualizaciones periódicas de dependencias, escaneo de vulnerabilidades.<br>• <strong>Cumplimiento</strong>: Cumplimiento del RGPD, cumplimiento de las leyes de protección de datos austriacas, auditorías de cumplimiento periódicas."
+      },
+      "incident": {
+        "title": "Respuesta a Brechas de Datos",
+        "content": "• <strong>Detección</strong>: Sistemas de monitoreo automatizados, alertas inmediatas ante actividades sospechosas.<br>• <strong>Respuesta</strong>: Notificación de brechas en 72 horas a la Autoridad de Protección de Datos de Austria cuando sea necesario.<br>• <strong>Notificación al usuario</strong>: Comunicación directa a los usuarios afectados en un plazo de 72 horas desde la confirmación de la brecha.<br>• <strong>Mitigación</strong>: Procedimientos de contención inmediata, implementación de parches de seguridad, fortalecimiento del sistema.<br>• <strong>Documentación</strong>: Documentación completa del incidente, mejoras de seguridad posteriores a los incidentes."
+      }
+    },
+    "cookies": {
+      "title": "10. Cookies y Seguimiento",
+      "content": "<strong>Solo utilizamos cookies esenciales</strong>, no cookies de seguimiento, análisis o marketing. Para obtener información detallada, consulte nuestra Política de Cookies. Puntos clave:",
+      "essential": "• <strong>Solo cookies esenciales</strong>: Necesarias para el inicio de sesión, los pagos y el soporte de idiomas (no se necesita consentimiento).",
+      "analytics": "• <strong>Sin cookies de análisis</strong>: En su lugar, utilizamos la analítica sin cookies de Vercel.",
+      "preference": "• <strong>Preferencias almacenadas en su cuenta</strong>: Idioma, tema y configuración guardados en su perfil de base de datos, no en cookies.",
+      "marketing": "• <strong>Sin cookies de marketing</strong>: No utilizamos cookies de publicidad o de seguimiento del comportamiento."
+    },
+    "minors": {
+      "title": "11. Protección de Menores",
+      "content": "Nuestra plataforma está diseñada para personas mayores de 18 años. No se permite a los usuarios menores de 18 años crear cuentas o utilizar nuestros servicios."
+    },
+    "changes": {
+      "title": "12. Cambios en esta Política",
+      "content": "Podemos actualizar esta Política de Privacidad para reflejar cambios en nuestras prácticas o requisitos legales. Nosotros:",
+      "notification": "• <strong>Notificaremos a los usuarios</strong>: Notificación por correo electrónico para cambios significativos.",
+      "consent": "• <strong>Obtendremos consentimiento</strong>: Para cambios materiales que afecten sus derechos.",
+      "posting": "• <strong>Publicaremos actualizaciones</strong>: Siempre mantendremos la versión actual en nuestro sitio web.",
+      "date": "• <strong>Actualizaremos la fecha</strong>: La fecha de \"Última actualización\" muestra la revisión más reciente."
+    },
+    "contact": {
+      "title": "13. Información de Contacto",
+      "content": "Para cualquier pregunta relacionada con la privacidad o para ejercer sus derechos, contáctenos:",
+      "details": "Correo electrónico: admin@queer-Deep Resirch.com\nTiempo de respuesta: Dentro de 30 días\nAutoridad de Protección de Datos: Agencia Española de Protección de Datos (aepd.es)"
+    }
+  },
+  "partners": {
+    "title": "Socios",
+    "descriptions": {
+      "1": "Agencia de medios y revista queer líder",
+      "2": "Comunicación queer",
+      "3": "Intercambio, educación, asesoramiento y más para temas trans",
+      "4": "Organizamos proyectos de arte queer, fomentando la visibilidad y el diálogo al dar protagonismo a sus artistas",
+      "5": "Bailamos de comunidad en comunidad por la tolerancia, el respeto y la diversidad",
+      "6": "Festival de cine para porno y temas queers",
+      "7": "El primer festival internacional de cortometrajes queer en Viena",
+      "8": "Institución de arte con la misión de ser una voz en la comunidad LGBTQIA+",
+      "9": "Empresa de producción creativa queer",
+      "10": "Una pop-party queer en Viena"
+    },
+    "categories": {
+      "1": "Agencia, Revista",
+      "2": "Medios",
+      "3": "Asesoramiento, Educación, Apoyo",
+      "4": "Eventos, Noticias",
+      "5": "Eventos, Baile",
+      "6": "Festival de Cine",
+      "7": "Festival de Cine",
+      "8": "Coro",
+      "9": "Producción Creativa",
+      "10": "Clubbing"
+    },
+    "visit": "Visitar"
+  },
+  "accessibility": {
+    "menuButton": "Menú"
+  },
+  "errors": {
+    "stripe": {
+      "checkoutFailed": "El pago falló",
+      "billingPortalError": "Error en el portal de facturación",
+      "failedToCreateCheckoutSession": "No se pudo crear la sesión de pago",
+      "noCheckoutUrlReceived": "No se recibió la URL de pago",
+      "failedToStartCheckout": "No se pudo iniciar el pago. Por favor, inténtelo de nuevo.",
+      "failedToCreatePortalSession": "No se pudo crear la sesión del portal",
+      "noPortalUrlReceived": "No se recibió la URL del portal",
+      "failedToOpenBillingPortal": "No se pudo abrir el portal de facturación. Por favor, inténtelo de nuevo.",
+      "userProfileNotFound": "Perfil de usuario no encontrado. No se puede eliminar la cuenta.",
+      "failedToDeleteAccountViaAPI": "No se pudo eliminar la cuenta a través de la API",
+      "failedToDeleteAccount": "No se pudo eliminar la cuenta"
+    },
+    "finance": {
+      "planFallbackName": "Plan {index}",
+      "planFallbackDescription": "Apoya la causa con tu contribución"
+    }
+  }
+}
