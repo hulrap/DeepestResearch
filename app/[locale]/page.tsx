@@ -6,7 +6,6 @@ import { LogoutButton } from "@/components/logout-button";
 import { LanguageSwitcher } from "@/components/settings/LanguageSwitcher";
 import { MobileMenu } from "@/components/MobileMenu";
 import { GuestPopupWrapper } from "@/components/GuestPopupWrapper";
-import { GuestExplainerSection } from "@/components/GuestExplainerSection";
 import { InteractiveProcessIcon } from "@/components/InteractiveProcessIcon";
 import { getTranslations } from "next-intl/server";
 import type { User } from "@supabase/supabase-js";
@@ -47,7 +46,7 @@ export default async function Home() {
           {user ? (
             <LoggedInContent user={user} userProfile={userProfile} tHome={tHome} tSettings={tSettings} />
           ) : (
-            <GuestContent tHome={tHome} tNav={tNav} />
+            <GuestContent tHome={tHome} />
           )}
         </div>
       </main>
@@ -287,9 +286,8 @@ function LoggedInContent({ user, userProfile, tHome, tSettings }: {
   );
 }
 
-function GuestContent({ tHome, tNav }: { 
+function GuestContent({ tHome }: { 
   tHome: (key: string) => string;
-  tNav: (key: string) => string;
 }) {
   return (
     <>
