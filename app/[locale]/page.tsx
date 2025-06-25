@@ -7,10 +7,11 @@ import { LanguageSwitcher } from "@/components/settings/LanguageSwitcher";
 import { MobileMenu } from "@/components/MobileMenu";
 import { GuestPopupWrapper } from "@/components/GuestPopupWrapper";
 import { InteractiveProcessIcon } from "@/components/InteractiveProcessIcon";
-import { ResearchChat } from "@/components/chat/ResearchChat";
+
 import { getTranslations } from "next-intl/server";
 import type { User } from "@supabase/supabase-js";
 import type { UserProfile } from "@/lib/settings/types";
+import AIDashboard from '@/components/ai-dashboard';
 
 // Force dynamic rendering to ensure fresh data on every request
 export const dynamic = 'force-dynamic';
@@ -35,6 +36,24 @@ export default async function Home() {
   const tNav = await getTranslations('navigation');
   const tHome = await getTranslations('home');
 
+  // Different layout for logged-in users (full-screen chat with overlay header)
+  if (user) {
+    return (
+      <div className="h-screen bg-slate-900 flex flex-col relative">
+        {/* Overlay Header */}
+        <div className="absolute top-0 left-0 right-0 z-50">
+          <ResponsiveHeader user={user} userProfile={userProfile} tNav={tNav} tHome={tHome} />
+        </div>
+
+                  {/* Full-screen AI Agent Dashboard */}
+          <div className="flex-1 pt-16 lg:pt-20">
+            <AIDashboard />
+          </div>
+      </div>
+    );
+  }
+
+  // Original layout for guest users
   return (
     <div className="min-h-screen-mobile lg:min-h-0 bg-slate-900 flex flex-col mobile-scroll">
       {/* Mobile & Desktop Header */}
@@ -43,11 +62,7 @@ export default async function Home() {
       {/* Main Content - Optimized spacing for desktop footer visibility */}
       <main className="flex-1 flex flex-col items-center justify-center lg:justify-start lg:pt-16 px-4 py-8 md:py-12 min-h-0 pb-safe">
         <div className="text-center space-y-8 sm:space-y-10 md:space-y-12 lg:space-y-16 i18n-container">
-          {user ? (
-            <LoggedInContent user={user} userProfile={userProfile} tHome={tHome} />
-          ) : (
-            <GuestContent tHome={tHome} />
-          )}
+          <GuestContent tHome={tHome} />
         </div>
       </main>
 
@@ -63,10 +78,16 @@ function ResponsiveHeader({ user, userProfile, tNav, tHome }: {
   tNav: Awaited<ReturnType<typeof getTranslations>>;
   tHome: Awaited<ReturnType<typeof getTranslations>>;
 }) {
+  // Different styling for overlay mode when user is logged in
+  const isOverlay = !!user;
+  const headerClasses = isOverlay 
+    ? "bg-slate-900/90 backdrop-blur-sm border-b border-slate-700" 
+    : "";
+
   return (
     <>
       {/* Desktop Header */}
-      <header className="hidden lg:flex w-full flex-col sm:flex-row justify-between items-center p-3 md:p-4 gap-4">
+      <header className={`hidden lg:flex w-full flex-col sm:flex-row justify-between items-center p-3 md:p-4 gap-4 ${headerClasses}`}>
         {/* Triangle Logo */}
         <Link href="/" className="flex items-center flex-shrink-0">
           <div className="w-8 h-8">
@@ -91,18 +112,23 @@ function ResponsiveHeader({ user, userProfile, tNav, tHome }: {
       </header>
 
       {/* Mobile Header */}
-      <MobileHeader user={user} userProfile={userProfile} tNav={tNav} />
+      <MobileHeader user={user} userProfile={userProfile} tNav={tNav} isOverlay={isOverlay} />
     </>
   );
 }
 
-function MobileHeader({ user, userProfile, tNav }: {
+function MobileHeader({ user, userProfile, tNav, isOverlay }: {
   user: User | null;
   userProfile: UserProfile | null;
   tNav: Awaited<ReturnType<typeof getTranslations>>;
+  isOverlay?: boolean;
 }) {
+  const headerClasses = isOverlay 
+    ? "bg-slate-900/90 backdrop-blur-sm border-b border-slate-700" 
+    : "";
+
   return (
-    <header className="lg:hidden w-full flex justify-between items-center p-4 relative">
+    <header className={`lg:hidden w-full flex justify-between items-center p-4 relative ${headerClasses}`}>
       {/* Logo - Left */}
       <Link href="/" className="flex items-center flex-shrink-0">
         <div className="w-8 h-8">
@@ -187,34 +213,6 @@ function GuestHeader({ tNav }: {
       <Button asChild variant="outline" className="border-blue-800 text-blue-400 hover:bg-blue-800 hover:text-white i18n-button rounded-sm">
         <Link href="/auth/sign-up">{tNav('signUp')}</Link>
       </Button>
-    </div>
-  );
-}
-
-function LoggedInContent({ user, userProfile, tHome }: { 
-  user: User;
-  userProfile: UserProfile | null;
-  tHome: (key: string) => string;
-}) {
-  // Extract user info for personalization
-  const displayName = userProfile?.username || user.email?.split('@')[0] || 'User';
-  
-  return (
-    <div className="w-full max-w-4xl mx-auto">
-      {/* Welcome Header */}
-      <div className="text-center mb-8">
-        <h1 className="i18n-title mb-4">
-          <span className="alliance-text-gradient-shine block">
-            {tHome('welcomeBackPrefix')} {displayName}
-          </span>
-        </h1>
-        <p className="text-gray-400 text-sm">
-          {tHome('researchAssistantReady')}
-        </p>
-      </div>
-
-      {/* Research Chat Component */}
-      <ResearchChat />
     </div>
   );
 }
