@@ -7,6 +7,7 @@ import { LanguageSwitcher } from "@/components/settings/LanguageSwitcher";
 import { MobileMenu } from "@/components/MobileMenu";
 import { GuestPopupWrapper } from "@/components/GuestPopupWrapper";
 import { InteractiveProcessIcon } from "@/components/InteractiveProcessIcon";
+import { ResearchChat } from "@/components/chat/ResearchChat";
 import { getTranslations } from "next-intl/server";
 import type { User } from "@supabase/supabase-js";
 import type { UserProfile, ParticipationRole } from "@/lib/settings/types";
@@ -199,90 +200,24 @@ function LoggedInContent({ user, userProfile, tHome, tSettings }: {
 }) {
   // Extract user info for personalization
   const displayName = userProfile?.username || user.email?.split('@')[0] || 'User';
-  const memberSince = new Date(user.created_at).toLocaleDateString();
-  
-  // Format participation roles
-  const participationRoles = userProfile?.participation_role || [];
-  const rolesDisplay = participationRoles.length > 0 
-    ? participationRoles.map((role: ParticipationRole) => tSettings(`participation.roles.${role}.title`)).join(', ')
-    : tHome('undecided');
   
   return (
-    <>
-      {/* Personalized Title with Shiny Animation */}
-      <div className="space-y-4">
-        <h1 className="i18n-title">
-          <span className="alliance-text-gradient-shine block mb-2">
-            {tHome('welcomeBackPrefix')}
-          </span>
+    <div className="w-full max-w-4xl mx-auto">
+      {/* Welcome Header */}
+      <div className="text-center mb-8">
+        <h1 className="i18n-title mb-4">
           <span className="alliance-text-gradient-shine block">
-            {displayName}
+            {tHome('welcomeBackPrefix')} {displayName}
           </span>
         </h1>
-        <div className="text-sm text-gray-500">
-          {tHome('memberSince')} {memberSince}
-        </div>
+        <p className="text-gray-400 text-sm">
+          {tHome('researchAssistantReady')}
+        </p>
       </div>
 
-      <div className="space-y-6 w-full">
-        {/* Profile Explainer Card */}
-        <div className="glass-card shadow-glow-xl overflow-hidden border-none rounded-sm relative p-6 break-words">
-          {/* Unified metallic shine overlay */}
-          <div className="absolute inset-0 animate-metallic-shine pointer-events-none rounded-sm"></div>
-          
-          <div className="relative z-10 space-y-4">
-            <h2 className="text-xl md:text-2xl font-bold text-white text-center">
-              {tHome('profileExplainer.title')}
-            </h2>
-            <div 
-              className="text-gray-300 text-sm md:text-base leading-relaxed text-center space-y-4 [&>h2]:text-xl [&>h2]:md:text-2xl [&>h2]:font-bold [&>h2]:text-white [&>h2]:mb-6 [&>h2]:pb-4 [&>h2]:relative [&>h2]:after:content-[''] [&>h2]:after:absolute [&>h2]:after:bottom-0 [&>h2]:after:left-1/2 [&>h2]:after:transform [&>h2]:after:-translate-x-1/2 [&>h2]:after:w-16 [&>h2]:after:h-px [&>h2]:after:bg-gradient-to-r [&>h2]:after:from-transparent [&>h2]:after:via-purple-500/50 [&>h2]:after:to-transparent [&>h3]:text-lg [&>h3]:md:text-xl [&>h3]:font-semibold [&>h3]:text-white [&>h3]:mt-8 [&>h3]:mb-3 [&>h3]:pt-6 [&>h3]:relative [&>h3]:before:content-[''] [&>h3]:before:absolute [&>h3]:before:top-0 [&>h3]:before:left-1/2 [&>h3]:before:transform [&>h3]:before:-translate-x-1/2 [&>h3]:before:w-20 [&>h3]:before:h-px [&>h3]:before:bg-gradient-to-r [&>h3]:before:from-transparent [&>h3]:before:via-gray-500/40 [&>h3]:before:to-transparent [&>p]:mb-4 [&>p]:text-gray-300 [&>ol]:list-decimal [&>ol]:list-inside [&>ol]:space-y-2 [&>ol]:mb-4 [&>li]:text-gray-300"
-              dangerouslySetInnerHTML={{ __html: tHome('profileExplainer.content') }}
-            />
-          </div>
-        </div>
-        
-        {/* Fill Out Profile Button */}
-        <NavigationButton 
-          href="/protected"
-          className="btn-enhanced dashboard-triangle-loading dashboard-btn-enhanced relative w-full h-12 md:h-14 text-base md:text-lg font-semibold bg-gradient-to-r from-blue-800 to-blue-900 hover:from-blue-900 hover:to-blue-950 text-white border-0 rounded-sm shadow-lg hover:shadow-blue-500/25 transition-all duration-200 transform hover:scale-105 gpu-accelerated i18n-button"
-        >
-          {tHome('fillOutProfile')}
-        </NavigationButton>
-        
-        {/* Enhanced User Stats Cards with Glass Background */}
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 text-sm">
-          <div className="glass-card shadow-glow-xl overflow-hidden border-none rounded-sm relative p-4 break-words">
-            {/* Unified metallic shine overlay */}
-            <div className="absolute inset-0 animate-metallic-shine pointer-events-none rounded-sm"></div>
-            
-            <div className="relative z-10">
-              <div className="text-blue-400 font-semibold mb-2">{tHome('accountStatus')}</div>
-              <div className="text-white font-medium">{user.email_confirmed_at ? tHome('accountVerified') : tHome('accountPending')}</div>
-            </div>
-          </div>
-          
-          <div className="glass-card shadow-glow-xl overflow-hidden border-none rounded-sm relative p-4 break-words">
-            {/* Unified metallic shine overlay */}
-            <div className="absolute inset-0 animate-metallic-shine pointer-events-none rounded-sm"></div>
-            
-            <div className="relative z-10">
-              <div className="text-blue-400 font-semibold mb-2">{tHome('profileStatus')}</div>
-              <div className="text-white font-medium">{tHome('profileActive')}</div>
-            </div>
-          </div>
-          
-          <div className="glass-card shadow-glow-xl overflow-hidden border-none rounded-sm relative p-4 break-words">
-            {/* Unified metallic shine overlay */}
-            <div className="absolute inset-0 animate-metallic-shine pointer-events-none rounded-sm"></div>
-            
-            <div className="relative z-10">
-              <div className="text-blue-400 font-semibold mb-2">{tHome('roles')}</div>
-              <div className="text-white font-medium">{rolesDisplay}</div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </>
+      {/* Research Chat Component */}
+      <ResearchChat />
+    </div>
   );
 }
 
