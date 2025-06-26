@@ -23,10 +23,10 @@ import {
   Download,
   Plus
 } from 'lucide-react';
-import { WorkflowTemplateManager, WorkflowTemplate } from '@/lib/workflow-templates';
+import { WorkflowTemplate } from '@/lib/workflow-templates';
 // import { ModelSelector } from '@/lib/model-selector';
-import { MemorySystem, Memory } from '@/lib/memory';
-import { UsageMonitor } from '@/lib/cost-management';
+import { Memory } from '@/lib/memory';
+// import { UsageMonitor } from '@/lib/cost-management';
 import ResearchInterface from '@/components/ResearchInterface';
 
 interface AgentDashboardProps {
@@ -67,10 +67,7 @@ export default function AgentDashboard({ userId }: AgentDashboardProps) {
   const [showResearchInterface, setShowResearchInterface] = useState(false);
   const [currentSessionId, setCurrentSessionId] = useState<string | null>(null);
 
-  // System instances
-  const [templateManager] = useState(() => new WorkflowTemplateManager());
-  const [memorySystem] = useState(() => new MemorySystem());
-  const [usageMonitor] = useState(() => new UsageMonitor());
+  // System instances removed - using mock data for now
 
   const loadDashboardData = useCallback(async () => {
     setIsLoading(true);
