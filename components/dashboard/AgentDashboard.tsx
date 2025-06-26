@@ -75,19 +75,85 @@ export default function AgentDashboard({ userId }: AgentDashboardProps) {
   const loadDashboardData = useCallback(async () => {
     setIsLoading(true);
     try {
-      // Load featured templates
-      const featuredTemplates = await templateManager.getFeaturedTemplates();
-      setTemplates(featuredTemplates);
+      // Use mock data instead of database calls for now
+      console.log('Loading dashboard data with mock data...');
+      
+      // Mock featured templates
+      const mockTemplates: WorkflowTemplate[] = [
+        {
+          id: '1',
+          name: 'Deep Research Analysis',
+          description: 'Comprehensive multi-agent research workflow with fact-checking and synthesis',
+          category: 'research',
+          difficulty_level: 'intermediate',
+          estimated_duration_minutes: 5,
+          estimated_cost_range: { min: 0.01, max: 0.08 },
+          is_public: true,
+          template_data: { steps: [], variables: [] },
+          tags: ['research', 'analysis', 'multi-agent'],
+          usage_count: 1247,
+          rating: 4.8
+        },
+        {
+          id: '2',
+          name: 'Content Creation',
+          description: 'AI-powered content generation with SEO optimization and tone adjustment',
+          category: 'writing',
+          difficulty_level: 'beginner',
+          estimated_duration_minutes: 3,
+          estimated_cost_range: { min: 0.005, max: 0.03 },
+          is_public: true,
+          template_data: { steps: [], variables: [] },
+          tags: ['writing', 'content', 'seo'],
+          usage_count: 892,
+          rating: 4.6
+        },
+        {
+          id: '3',
+          name: 'Market Analysis',
+          description: 'Complete market research with competitor analysis and trend identification',
+          category: 'business',
+          difficulty_level: 'advanced',
+          estimated_duration_minutes: 8,
+          estimated_cost_range: { min: 0.02, max: 0.12 },
+          is_public: true,
+          template_data: { steps: [], variables: [] },
+          tags: ['business', 'market', 'analysis'],
+          usage_count: 634,
+          rating: 4.9
+        }
+      ];
+      
+      setTemplates(mockTemplates);
 
-      // Load usage statistics
-      const stats = await usageMonitor.getUserUsageStats(userId);
-      setUsageStats(stats);
+      // Mock usage statistics
+      const mockStats = {
+        daily_cost: 0.045,
+        daily_limit: 10.00,
+        monthly_cost: 1.23,
+        monthly_limit: 100.00,
+        total_requests: 47,
+        favorite_models: ['gpt-4-turbo', 'claude-3-sonnet'],
+        total_workflows: 3
+      };
+      setUsageStats(mockStats);
 
-      // Load recent memories
-      const memories = await memorySystem.getRecentMemories(userId, 5);
-      setRecentMemories(memories);
+      // Mock recent memories
+      const mockMemories: Memory[] = [
+        {
+          id: '1',
+          user_id: userId,
+          memory_type: 'conversation',
+          content: 'User asked about AI research methodologies',
+          importance_score: 0.8,
+          context_tags: ['research', 'ai'],
+          created_at: new Date(),
+          last_accessed_at: new Date()
+        }
+      ];
+      setRecentMemories(mockMemories);
 
-      // Load active workflows (simplified)
+      // Load active workflows (kept as mock)
       setActiveWorkflows([
         {
           id: '1',
@@ -102,12 +168,19 @@ export default function AgentDashboard({ userId }: AgentDashboardProps) {
         }
       ]);
 
+      console.log('Dashboard data loaded successfully with mock data');
+
     } catch (error) {
       console.error('Failed to load dashboard data:', error);
+      // Set some default data even if there's an error
+      setTemplates([]);
+      setUsageStats(null);
+      setRecentMemories([]);
+      setActiveWorkflows([]);
     } finally {
       setIsLoading(false);
     }
-  }, [userId, templateManager, usageMonitor, memorySystem]);
+  }, [userId]);
 
   // Load dashboard data
   useEffect(() => {
@@ -116,40 +189,31 @@ export default function AgentDashboard({ userId }: AgentDashboardProps) {
 
   const startWorkflowFromTemplate = async (templateId: string) => {
     try {
-      setIsLoading(true);
+      console.log(`Starting workflow from template: ${templateId}`);
       
-      // Create workflow session from template
-      const workflowManager = new WorkflowTemplateManager();
-      const sessionId = await workflowManager.createWorkflowFromTemplate(
-        templateId,
-        userId,
-        `Research Session ${new Date().toLocaleString()}`
-      );
+      // Show immediate feedback
+      alert(`Starting workflow: ${templates.find(t => t.id === templateId)?.name || 'Unknown'}\n\nThis will be implemented with the database integration.`);
       
-      // Start the workflow execution
-      console.log(`Created workflow session: ${sessionId}`);
+      // For now, just simulate starting a workflow
+      const mockSessionId = `session_${Date.now()}`;
+      console.log(`Mock session created: ${mockSessionId}`);
       
-      // Show the research interface
-      setCurrentSessionId(sessionId);
-      setShowResearchInterface(true);
+      // You could add more visual feedback here
+      // For example, showing a loading state or updating the UI
       
-      // Refresh active workflows
-      await loadDashboardData();
     } catch (error) {
       console.error('Failed to start workflow:', error);
       alert(`Failed to start workflow: ${error instanceof Error ? error.message : 'Unknown error'}`);
-    } finally {
-      setIsLoading(false);
     }
   };
 
   const pauseWorkflow = async (workflowId: string) => {
     try {
-      // This would pause the workflow
       console.log(`Pausing workflow ${workflowId}`);
-      await loadDashboardData();
+      alert(`Pausing workflow: ${workflowId}\n\nThis will be implemented with the database integration.`);
     } catch (error) {
       console.error('Failed to pause workflow:', error);
+      alert(`Failed to pause workflow: ${error instanceof Error ? error.message : 'Unknown error'}`);
     }
   };
 

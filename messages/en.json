@@ -407,7 +407,17 @@
         "skillsMustBeArray": "Skills must be an array",
         "bioTooLong": "Bio too long (max 500 characters)",
         "invalidWebsite": "Website must start with http:// or https:// and have a valid domain (e.g., https://a.co)",
-        "invalidPreferencesStructure": "Invalid preferences structure"
+        "invalidPreferencesStructure": "Invalid preferences structure",
+        "createProfileError": "Failed to create user profile",
+        "authenticationError": "Authentication error",
+        "loadProfileError": "Failed to load profile",
+        "noProfileLoaded": "No profile loaded",
+        "updateSettingError": "Failed to update setting",
+        "updateSettingFailed": "Update setting failed",
+        "updateMultipleSettingsError": "Failed to update multiple settings",
+        "updateMultipleSettingsFailed": "Update multiple settings failed",
+        "validationError": "Validation error",
+        "unknownError": "Unknown error occurred"
       }
     },
     "finance": {

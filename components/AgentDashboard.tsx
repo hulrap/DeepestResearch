@@ -90,7 +90,13 @@ export default function AgentDashboard({}: AgentDashboardProps) {
 
   const startWorkflow = (templateId: string) => {
     console.log(`Starting workflow from template ${templateId}`);
-    // This would integrate with the workflow system
+    
+    // Show immediate feedback
+    const template = templates.find(t => t.id === templateId);
+    alert(`Starting workflow: ${template?.name || 'Unknown Template'}\n\nThis will open the research interface when fully implemented.`);
+    
+    // You could add more UI feedback here
+    // For example: setIsLoading(true) or show a modal
   };
 
   return (
