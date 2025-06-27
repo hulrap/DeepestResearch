@@ -56,7 +56,6 @@ export default async function RootLayout({
   }
 
   const messages = await getMessages();
-  const tFooter = await getTranslations('home.footer');
 
   return (
     <html lang={locale} suppressHydrationWarning className="dark">
@@ -66,7 +65,7 @@ export default async function RootLayout({
             <div className="flex-1 flex flex-col">
               {children}
             </div>
-            <Footer tFooter={tFooter} />
+            <Footer />
           </AuthStateProvider>
         </NextIntlClientProvider>
         <Analytics />

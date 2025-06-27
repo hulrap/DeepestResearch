@@ -9,9 +9,6 @@
 DO $$
 DECLARE
     r RECORD;
-    func_name TEXT;
-    table_name TEXT;
-    type_name TEXT;
     schema_name TEXT := 'public';
 BEGIN
     -- Disable all triggers to avoid constraint issues during cleanup
@@ -147,11 +144,10 @@ BEGIN
 END
 $$;
 
--- Vacuum to reclaim space
-VACUUM FULL;
-
--- Reset statistics
-ANALYZE;
+-- Note: VACUUM and ANALYZE must be run outside transaction blocks
+-- Run these manually if needed:
+-- VACUUM FULL;
+-- ANALYZE;
 
 -- Final status check
 SELECT 

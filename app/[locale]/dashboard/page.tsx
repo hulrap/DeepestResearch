@@ -10,5 +10,5 @@ export default async function DashboardPage() {
     redirect("/auth/login");
   }
 
-  return <AgentDashboard userId={data.user.id} />;
+  return <AgentDashboard />;
 } 

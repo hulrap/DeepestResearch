@@ -1,6 +1,6 @@
 // Base logging interfaces
 export interface BaseLogData {
-  [key: string]: string | number | boolean | null | undefined | BaseLogData | BaseLogData[];
+  [key: string]: string | number | boolean | null | undefined | BaseLogData | BaseLogData[] | Record<string, unknown>;
 }
 
 export interface RequestContext {

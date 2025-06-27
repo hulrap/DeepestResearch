@@ -1,6 +1,12 @@
 -- =============================================
 -- MEMORY & CONTEXT SYSTEM
 -- Dynamic AI memory, document processing, and knowledge management
+-- 
+-- NOTE: Vector embeddings are set to 1536 dimensions (OpenAI text-embedding-3-small standard)
+-- For different embedding models with different dimensions, you can:
+-- 1. Use padding/truncation to normalize to 1536 dimensions
+-- 2. Create separate tables for different dimension sizes
+-- 3. Migrate tables to different dimensions using: ALTER TABLE ... ALTER COLUMN embedding TYPE VECTOR(new_size)
 -- =============================================
 
 -- User memory storage with dynamic configuration
@@ -10,10 +16,10 @@ CREATE TABLE public.user_memory (
     memory_type TEXT NOT NULL,
     content TEXT NOT NULL,
     
-    -- Dynamic embedding configuration (no hardcoded dimensions)
-    embedding VECTOR, -- Dimension set dynamically based on user's embedding model choice
+    -- Dynamic embedding configuration (using common 1536 dimensions, expandable via migration)
+    embedding VECTOR(1536), -- OpenAI text-embedding-3-small compatible (1536 dimensions)
     embedding_model TEXT, -- Track which model generated this embedding
-    embedding_dimensions INTEGER, -- Track the actual dimensions used
+    embedding_dimensions INTEGER DEFAULT 1536, -- Track the actual dimensions used
     
     -- Memory metadata with intelligent scoring
     importance_score DECIMAL(3,2) DEFAULT 0.5,
@@ -184,7 +190,7 @@ CREATE TABLE public.user_documents (
     -- Extracted content and analysis
     extracted_text TEXT,
     extracted_metadata JSONB DEFAULT '{}',
-    text_embeddings VECTOR, -- Dynamically sized based on user's embedding model
+    text_embeddings VECTOR(1536), -- Using 1536 dimensions (OpenAI standard), expandable via migration
     embedding_model_used TEXT, -- Track which model was used
     
     -- Content analysis results
@@ -205,7 +211,7 @@ CREATE TABLE public.user_documents (
     
     -- Citations and references
     citations JSONB DEFAULT '{}',
-    references JSONB DEFAULT '{}',
+    document_references JSONB DEFAULT '{}',
     external_links TEXT[],
     
     -- Access and sharing
@@ -337,8 +343,8 @@ CREATE TABLE public.document_chunks (
     context_before TEXT,
     context_after TEXT,
     
-    -- Dynamic embeddings (sized based on user's model choice)
-    embedding VECTOR,
+    -- Dynamic embeddings (using 1536 dimensions, expandable via migration)
+    embedding VECTOR(1536),
     embedding_model TEXT,
     embedding_quality_score DECIMAL(3,2),
     
@@ -498,7 +504,8 @@ CREATE INDEX idx_user_memory_embedding ON public.user_memory USING ivfflat (embe
 CREATE INDEX idx_user_memory_tags ON public.user_memory USING GIN(context_tags);
 CREATE INDEX idx_user_memory_category ON public.user_memory(category, subcategory);
 CREATE INDEX idx_user_memory_source ON public.user_memory(source_type, source_session_id) WHERE source_session_id IS NOT NULL;
-CREATE INDEX idx_user_memory_active ON public.user_memory(user_id, created_at DESC) WHERE is_archived = false AND (expires_at IS NULL OR expires_at > now());
+CREATE INDEX idx_user_memory_active ON public.user_memory(user_id, created_at DESC) WHERE is_archived = false;
+CREATE INDEX idx_user_memory_expires ON public.user_memory(expires_at) WHERE expires_at IS NOT NULL;
 CREATE INDEX idx_user_memory_sharing ON public.user_memory(sharing_level, is_private) WHERE sharing_level != 'private';
 CREATE INDEX idx_user_memory_cluster ON public.user_memory(memory_cluster_id) WHERE memory_cluster_id IS NOT NULL;
 
@@ -809,12 +816,10 @@ CREATE OR REPLACE FUNCTION public.cleanup_expired_memories()
 RETURNS INTEGER AS $$
 DECLARE
     deleted_count INTEGER;
-    archived_count INTEGER;
+    archived_count INTEGER := 0;
     user_record RECORD;
-    retention_days INTEGER;
+    current_archived INTEGER;
 BEGIN
-    archived_count := 0;
-    
     -- Process each user based on their retention settings
     FOR user_record IN 
         SELECT uc.user_id, uc.conversation_retention_days, uc.document_retention_days
@@ -834,7 +839,8 @@ BEGIN
             OR (expires_at IS NOT NULL AND expires_at <= public.utc_now())
         );
         
-        GET DIAGNOSTICS archived_count = archived_count + ROW_COUNT;
+        GET DIAGNOSTICS current_archived = ROW_COUNT;
+        archived_count := archived_count + current_archived;
     END LOOP;
     
     -- Actually delete memories that have been archived for more than 30 days

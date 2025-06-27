@@ -1,8 +1,9 @@
 import { createClient } from '@/lib/supabase/server';
 import { NextResponse } from 'next/server';
 
-export async function GET(req: Request, { params }: { params: { id: string } }) {
+export async function GET(req: Request, { params }: { params: Promise<{ id: string }> }) {
   const supabase = await createClient();
+  const { id } = await params;
   
   try {
     const { data: { user }, error: authError } = await supabase.auth.getUser();
@@ -10,7 +11,7 @@ export async function GET(req: Request, { params }: { params: { id: string } }) 
       return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
     }
 
-    const sessionId = params.id;
+    const sessionId = id;
     if (!sessionId) {
       return NextResponse.json({ error: 'Session ID is required' }, { status: 400 });
     }
@@ -32,13 +33,14 @@ export async function GET(req: Request, { params }: { params: { id: string } }) 
     return NextResponse.json({ session });
 
   } catch (error) {
-    console.error(`Workflow GET /api/workflows/${params.id} Error:`, error);
+    console.error(`Workflow GET /api/workflows/${id} Error:`, error);
     return NextResponse.json({ error: 'An unexpected error occurred' }, { status: 500 });
   }
 }
 
-export async function PATCH(req: Request, { params }: { params: { id: string } }) {
+export async function PATCH(req: Request, { params }: { params: Promise<{ id: string }> }) {
   const supabase = await createClient();
+  const { id } = await params;
   
   try {
     const { data: { user }, error: authError } = await supabase.auth.getUser();
@@ -46,7 +48,7 @@ export async function PATCH(req: Request, { params }: { params: { id: string } }
       return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
     }
 
-    const sessionId = params.id;
+    const sessionId = id;
     if (!sessionId) {
       return NextResponse.json({ error: 'Session ID is required' }, { status: 400 });
     }
@@ -80,7 +82,7 @@ export async function PATCH(req: Request, { params }: { params: { id: string } }
     return NextResponse.json({ session: updatedSession });
 
   } catch (error) {
-    console.error(`Workflow PATCH /api/workflows/${params.id} Error:`, error);
+    console.error(`Workflow PATCH /api/workflows/${id} Error:`, error);
     return NextResponse.json({ error: 'An unexpected error occurred' }, { status: 500 });
   }
 } 

@@ -1,6 +1,10 @@
 -- =============================================
 -- ROW LEVEL SECURITY (RLS) POLICIES
 -- Comprehensive security policies for all tables
+-- 
+-- NOTE: This script uses conditional checks to only enable RLS on tables that exist.
+-- Some tables (like collaboration features) may not exist in your current schema.
+-- The script will safely skip non-existent tables.
 -- =============================================
 
 -- Enable RLS on all tables that contain user data
@@ -8,30 +12,56 @@
 
 -- Core user tables
 ALTER TABLE public.profiles ENABLE ROW LEVEL SECURITY;
-ALTER TABLE public.user_preferences ENABLE ROW LEVEL SECURITY;
-ALTER TABLE public.user_sessions ENABLE ROW LEVEL SECURITY;
+ALTER TABLE public.user_configuration ENABLE ROW LEVEL SECURITY;
+ALTER TABLE public.plan_configurations ENABLE ROW LEVEL SECURITY;
 
 -- AI provider and model tables (mostly public read, admin write)
 ALTER TABLE public.ai_providers ENABLE ROW LEVEL SECURITY;
 ALTER TABLE public.ai_models ENABLE ROW LEVEL SECURITY;
 ALTER TABLE public.user_api_keys ENABLE ROW LEVEL SECURITY;
 ALTER TABLE public.api_key_usage_history ENABLE ROW LEVEL SECURITY;
-ALTER TABLE public.model_performance_stats ENABLE ROW LEVEL SECURITY;
+-- model_performance_stats table - enable if exists
+DO $$ BEGIN
+    IF EXISTS (SELECT FROM information_schema.tables WHERE table_schema = 'public' AND table_name = 'model_performance_stats') THEN
+        ALTER TABLE public.model_performance_stats ENABLE ROW LEVEL SECURITY;
+    END IF;
+END $$;
 
 -- Workflow tables
 ALTER TABLE public.workflow_templates ENABLE ROW LEVEL SECURITY;
 ALTER TABLE public.workflow_sessions ENABLE ROW LEVEL SECURITY;
 ALTER TABLE public.workflow_step_executions ENABLE ROW LEVEL SECURITY;
-ALTER TABLE public.workflow_template_reviews ENABLE ROW LEVEL SECURITY;
-ALTER TABLE public.workflow_favorites ENABLE ROW LEVEL SECURITY;
+-- Enable RLS on optional workflow tables if they exist
+DO $$ BEGIN
+    IF EXISTS (SELECT FROM information_schema.tables WHERE table_schema = 'public' AND table_name = 'workflow_template_reviews') THEN
+        ALTER TABLE public.workflow_template_reviews ENABLE ROW LEVEL SECURITY;
+    END IF;
+    IF EXISTS (SELECT FROM information_schema.tables WHERE table_schema = 'public' AND table_name = 'workflow_favorites') THEN
+        ALTER TABLE public.workflow_favorites ENABLE ROW LEVEL SECURITY;
+    END IF;
+END $$;
 
--- Usage tracking tables
-ALTER TABLE public.user_usage_limits ENABLE ROW LEVEL SECURITY;
-ALTER TABLE public.api_usage_logs ENABLE ROW LEVEL SECURITY;
-ALTER TABLE public.daily_usage_summaries ENABLE ROW LEVEL SECURITY;
-ALTER TABLE public.monthly_usage_summaries ENABLE ROW LEVEL SECURITY;
-ALTER TABLE public.usage_alerts ENABLE ROW LEVEL SECURITY;
-ALTER TABLE public.rate_limit_events ENABLE ROW LEVEL SECURITY;
+-- Usage tracking tables (enable if they exist)
+DO $$ BEGIN
+    IF EXISTS (SELECT FROM information_schema.tables WHERE table_schema = 'public' AND table_name = 'user_usage_limits') THEN
+        ALTER TABLE public.user_usage_limits ENABLE ROW LEVEL SECURITY;
+    END IF;
+    IF EXISTS (SELECT FROM information_schema.tables WHERE table_schema = 'public' AND table_name = 'api_usage_logs') THEN
+        ALTER TABLE public.api_usage_logs ENABLE ROW LEVEL SECURITY;
+    END IF;
+    IF EXISTS (SELECT FROM information_schema.tables WHERE table_schema = 'public' AND table_name = 'daily_usage_summaries') THEN
+        ALTER TABLE public.daily_usage_summaries ENABLE ROW LEVEL SECURITY;
+    END IF;
+    IF EXISTS (SELECT FROM information_schema.tables WHERE table_schema = 'public' AND table_name = 'monthly_usage_summaries') THEN
+        ALTER TABLE public.monthly_usage_summaries ENABLE ROW LEVEL SECURITY;
+    END IF;
+    IF EXISTS (SELECT FROM information_schema.tables WHERE table_schema = 'public' AND table_name = 'usage_alerts') THEN
+        ALTER TABLE public.usage_alerts ENABLE ROW LEVEL SECURITY;
+    END IF;
+    IF EXISTS (SELECT FROM information_schema.tables WHERE table_schema = 'public' AND table_name = 'rate_limit_events') THEN
+        ALTER TABLE public.rate_limit_events ENABLE ROW LEVEL SECURITY;
+    END IF;
+END $$;
 
 -- Memory and context tables
 ALTER TABLE public.user_memory ENABLE ROW LEVEL SECURITY;
@@ -40,23 +70,59 @@ ALTER TABLE public.document_collections ENABLE ROW LEVEL SECURITY;
 ALTER TABLE public.document_chunks ENABLE ROW LEVEL SECURITY;
 ALTER TABLE public.knowledge_entities ENABLE ROW LEVEL SECURITY;
 ALTER TABLE public.entity_relationships ENABLE ROW LEVEL SECURITY;
+-- Enable RLS on document processing config if exists
+DO $$ BEGIN
+    IF EXISTS (SELECT FROM information_schema.tables WHERE table_schema = 'public' AND table_name = 'document_processing_config') THEN
+        ALTER TABLE public.document_processing_config ENABLE ROW LEVEL SECURITY;
+    END IF;
+END $$;
 
--- Collaboration tables
-ALTER TABLE public.workspaces ENABLE ROW LEVEL SECURITY;
-ALTER TABLE public.workspace_members ENABLE ROW LEVEL SECURITY;
-ALTER TABLE public.workspace_invitations ENABLE ROW LEVEL SECURITY;
-ALTER TABLE public.shared_workflows ENABLE ROW LEVEL SECURITY;
-ALTER TABLE public.session_activities ENABLE ROW LEVEL SECURITY;
-ALTER TABLE public.session_comments ENABLE ROW LEVEL SECURITY;
-ALTER TABLE public.team_templates ENABLE ROW LEVEL SECURITY;
+-- Collaboration tables (enable if they exist)
+DO $$ BEGIN
+    IF EXISTS (SELECT FROM information_schema.tables WHERE table_schema = 'public' AND table_name = 'workspaces') THEN
+        ALTER TABLE public.workspaces ENABLE ROW LEVEL SECURITY;
+    END IF;
+    IF EXISTS (SELECT FROM information_schema.tables WHERE table_schema = 'public' AND table_name = 'workspace_members') THEN
+        ALTER TABLE public.workspace_members ENABLE ROW LEVEL SECURITY;
+    END IF;
+    IF EXISTS (SELECT FROM information_schema.tables WHERE table_schema = 'public' AND table_name = 'workspace_invitations') THEN
+        ALTER TABLE public.workspace_invitations ENABLE ROW LEVEL SECURITY;
+    END IF;
+    IF EXISTS (SELECT FROM information_schema.tables WHERE table_schema = 'public' AND table_name = 'shared_workflows') THEN
+        ALTER TABLE public.shared_workflows ENABLE ROW LEVEL SECURITY;
+    END IF;
+    IF EXISTS (SELECT FROM information_schema.tables WHERE table_schema = 'public' AND table_name = 'session_activities') THEN
+        ALTER TABLE public.session_activities ENABLE ROW LEVEL SECURITY;
+    END IF;
+    IF EXISTS (SELECT FROM information_schema.tables WHERE table_schema = 'public' AND table_name = 'session_comments') THEN
+        ALTER TABLE public.session_comments ENABLE ROW LEVEL SECURITY;
+    END IF;
+    IF EXISTS (SELECT FROM information_schema.tables WHERE table_schema = 'public' AND table_name = 'team_templates') THEN
+        ALTER TABLE public.team_templates ENABLE ROW LEVEL SECURITY;
+    END IF;
+END $$;
 
--- Stripe tables (sensitive financial data)
-ALTER TABLE public.stripe_customers ENABLE ROW LEVEL SECURITY;
-ALTER TABLE public.stripe_subscriptions ENABLE ROW LEVEL SECURITY;
-ALTER TABLE public.stripe_invoices ENABLE ROW LEVEL SECURITY;
-ALTER TABLE public.stripe_payment_methods ENABLE ROW LEVEL SECURITY;
-ALTER TABLE public.stripe_payments ENABLE ROW LEVEL SECURITY;
-ALTER TABLE public.stripe_webhook_events ENABLE ROW LEVEL SECURITY;
+-- Stripe tables (sensitive financial data - enable if they exist)
+DO $$ BEGIN
+    IF EXISTS (SELECT FROM information_schema.tables WHERE table_schema = 'public' AND table_name = 'stripe_customers') THEN
+        ALTER TABLE public.stripe_customers ENABLE ROW LEVEL SECURITY;
+    END IF;
+    IF EXISTS (SELECT FROM information_schema.tables WHERE table_schema = 'public' AND table_name = 'stripe_subscriptions') THEN
+        ALTER TABLE public.stripe_subscriptions ENABLE ROW LEVEL SECURITY;
+    END IF;
+    IF EXISTS (SELECT FROM information_schema.tables WHERE table_schema = 'public' AND table_name = 'stripe_invoices') THEN
+        ALTER TABLE public.stripe_invoices ENABLE ROW LEVEL SECURITY;
+    END IF;
+    IF EXISTS (SELECT FROM information_schema.tables WHERE table_schema = 'public' AND table_name = 'stripe_payment_methods') THEN
+        ALTER TABLE public.stripe_payment_methods ENABLE ROW LEVEL SECURITY;
+    END IF;
+    IF EXISTS (SELECT FROM information_schema.tables WHERE table_schema = 'public' AND table_name = 'stripe_payments') THEN
+        ALTER TABLE public.stripe_payments ENABLE ROW LEVEL SECURITY;
+    END IF;
+    IF EXISTS (SELECT FROM information_schema.tables WHERE table_schema = 'public' AND table_name = 'stripe_webhook_events') THEN
+        ALTER TABLE public.stripe_webhook_events ENABLE ROW LEVEL SECURITY;
+    END IF;
+END $$;
 
 -- =============================================
 -- BASIC USER POLICIES
@@ -69,13 +135,16 @@ CREATE POLICY "Users can view own profile" ON public.profiles
 CREATE POLICY "Users can update own profile" ON public.profiles
     FOR UPDATE USING (auth.uid() = id);
 
--- User preferences: Users can manage their own preferences
-CREATE POLICY "Users can manage own preferences" ON public.user_preferences
+-- User configuration: Users can manage their own configuration
+CREATE POLICY "Users can manage own configuration" ON public.user_configuration
     FOR ALL USING (auth.uid() = user_id);
 
--- User sessions: Users can view their own sessions
-CREATE POLICY "Users can view own sessions" ON public.user_sessions
-    FOR SELECT USING (auth.uid() = user_id);
+-- Plan configurations: Public read access, service role can manage
+CREATE POLICY "Anyone can view plan configurations" ON public.plan_configurations
+    FOR SELECT USING (is_active = true);
+
+CREATE POLICY "Service role can manage plan configurations" ON public.plan_configurations
+    FOR ALL USING (auth.role() = 'service_role');
 
 -- API keys: Users can manage their own API keys
 CREATE POLICY "Users can manage own API keys" ON public.user_api_keys
@@ -185,38 +254,60 @@ CREATE POLICY "Users can manage own favorites" ON public.workflow_favorites
     FOR ALL USING (auth.uid() = user_id);
 
 -- =============================================
--- USAGE TRACKING POLICIES
+-- USAGE TRACKING POLICIES (conditional on table existence)
 -- =============================================
 
 -- Usage limits: Users can manage their own limits
-CREATE POLICY "Users can manage own usage limits" ON public.user_usage_limits
-    FOR ALL USING (auth.uid() = user_id);
+DO $$ BEGIN
+    IF EXISTS (SELECT FROM information_schema.tables WHERE table_schema = 'public' AND table_name = 'user_usage_limits') THEN
+        EXECUTE 'CREATE POLICY "Users can manage own usage limits" ON public.user_usage_limits
+            FOR ALL USING (auth.uid() = user_id)';
+    END IF;
+END $$;
 
 -- API usage logs: Users can view their own usage
-CREATE POLICY "Users can view own API usage" ON public.api_usage_logs
-    FOR SELECT USING (auth.uid() = user_id);
-
-CREATE POLICY "Service role can insert usage logs" ON public.api_usage_logs
-    FOR INSERT WITH CHECK (auth.role() = 'service_role');
+DO $$ BEGIN
+    IF EXISTS (SELECT FROM information_schema.tables WHERE table_schema = 'public' AND table_name = 'api_usage_logs') THEN
+        EXECUTE 'CREATE POLICY "Users can view own API usage" ON public.api_usage_logs
+            FOR SELECT USING (auth.uid() = user_id)';
+        EXECUTE 'CREATE POLICY "Service role can insert usage logs" ON public.api_usage_logs
+            FOR INSERT WITH CHECK (auth.role() = ''service_role'')';
+    END IF;
+END $$;
 
 -- Daily usage summaries: Users can view their own summaries
-CREATE POLICY "Users can view own daily summaries" ON public.daily_usage_summaries
-    FOR SELECT USING (auth.uid() = user_id);
+DO $$ BEGIN
+    IF EXISTS (SELECT FROM information_schema.tables WHERE table_schema = 'public' AND table_name = 'daily_usage_summaries') THEN
+        EXECUTE 'CREATE POLICY "Users can view own daily summaries" ON public.daily_usage_summaries
+            FOR SELECT USING (auth.uid() = user_id)';
+        EXECUTE 'CREATE POLICY "Service role can manage daily summaries" ON public.daily_usage_summaries
+            FOR ALL USING (auth.role() = ''service_role'')';
+    END IF;
+END $$;
 
-CREATE POLICY "Service role can manage daily summaries" ON public.daily_usage_summaries
-    FOR ALL USING (auth.role() = 'service_role');
-
--- Monthly usage summaries: Users can view their own summaries
-CREATE POLICY "Users can view own monthly summaries" ON public.monthly_usage_summaries
-    FOR SELECT USING (auth.uid() = user_id);
+-- Monthly usage summaries: Users can view their own summaries  
+DO $$ BEGIN
+    IF EXISTS (SELECT FROM information_schema.tables WHERE table_schema = 'public' AND table_name = 'monthly_usage_summaries') THEN
+        EXECUTE 'CREATE POLICY "Users can view own monthly summaries" ON public.monthly_usage_summaries
+            FOR SELECT USING (auth.uid() = user_id)';
+    END IF;
+END $$;
 
 -- Usage alerts: Users can manage their own alerts
-CREATE POLICY "Users can manage own usage alerts" ON public.usage_alerts
-    FOR ALL USING (auth.uid() = user_id);
+DO $$ BEGIN
+    IF EXISTS (SELECT FROM information_schema.tables WHERE table_schema = 'public' AND table_name = 'usage_alerts') THEN
+        EXECUTE 'CREATE POLICY "Users can manage own usage alerts" ON public.usage_alerts
+            FOR ALL USING (auth.uid() = user_id)';
+    END IF;
+END $$;
 
 -- Rate limit events: Users can view their own events
-CREATE POLICY "Users can view own rate limit events" ON public.rate_limit_events
-    FOR SELECT USING (auth.uid() = user_id);
+DO $$ BEGIN
+    IF EXISTS (SELECT FROM information_schema.tables WHERE table_schema = 'public' AND table_name = 'rate_limit_events') THEN
+        EXECUTE 'CREATE POLICY "Users can view own rate limit events" ON public.rate_limit_events
+            FOR SELECT USING (auth.uid() = user_id)';
+    END IF;
+END $$;
 
 -- =============================================
 -- MEMORY AND CONTEXT POLICIES
@@ -477,15 +568,20 @@ CREATE POLICY "Service role can manage webhook events" ON public.stripe_webhook_
 CREATE POLICY "Service role has full access to profiles" ON public.profiles
     FOR ALL USING (auth.role() = 'service_role');
 
-CREATE POLICY "Service role has full access to sessions" ON public.user_sessions
+CREATE POLICY "Service role has full access to user configuration" ON public.user_configuration
     FOR ALL USING (auth.role() = 'service_role');
 
--- Allow service role to manage system data
-CREATE POLICY "Service role can manage all usage data" ON public.api_usage_logs
-    FOR ALL USING (auth.role() = 'service_role');
-
-CREATE POLICY "Service role can manage all summaries" ON public.monthly_usage_summaries
-    FOR ALL USING (auth.role() = 'service_role');
+-- Allow service role to manage system data (conditional)
+DO $$ BEGIN
+    IF EXISTS (SELECT FROM information_schema.tables WHERE table_schema = 'public' AND table_name = 'api_usage_logs') THEN
+        EXECUTE 'CREATE POLICY "Service role can manage all usage data" ON public.api_usage_logs
+            FOR ALL USING (auth.role() = ''service_role'')';
+    END IF;
+    IF EXISTS (SELECT FROM information_schema.tables WHERE table_schema = 'public' AND table_name = 'monthly_usage_summaries') THEN
+        EXECUTE 'CREATE POLICY "Service role can manage all summaries" ON public.monthly_usage_summaries
+            FOR ALL USING (auth.role() = ''service_role'')';
+    END IF;
+END $$;
 
 -- =============================================
 -- UTILITY FUNCTIONS FOR RLS

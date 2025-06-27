@@ -263,6 +263,19 @@ CREATE INDEX idx_plan_configurations_type ON public.plan_configurations(plan_typ
 CREATE INDEX idx_plan_configurations_active ON public.plan_configurations(is_active, sort_order);
 
 -- =============================================
+-- UTILITY FUNCTIONS
+-- =============================================
+
+-- Function to automatically update updated_at column
+CREATE OR REPLACE FUNCTION public.update_updated_at_column()
+RETURNS TRIGGER AS $$
+BEGIN
+    NEW.updated_at = public.utc_now();
+    RETURN NEW;
+END;
+$$ LANGUAGE plpgsql;
+
+-- =============================================
 -- TRIGGERS FOR UPDATED_AT
 -- =============================================
 

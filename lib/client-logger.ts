@@ -74,7 +74,7 @@ export const componentLogger = {
     clientLogger.debug(`Component mounted: ${componentName}`, { 
       componentName, 
       action: 'mount' as const, 
-      props 
+      propsCount: props ? Object.keys(props).length : 0
     });
   },
 

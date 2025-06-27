@@ -101,7 +101,9 @@ export function withApiLogging(
           body: body || undefined,
         });
       } catch (error) {
-        apiLogger.warn(req, 'Failed to read request body for logging', { error });
+        apiLogger.warn(req, 'Failed to read request body for logging', { 
+          error: error instanceof Error ? error.message : String(error) 
+        });
       }
     }
 
@@ -143,7 +145,9 @@ export function withApiLogging(
             headers: response.headers,
           });
         } catch (logError) {
-          apiLogger.warn(req, 'Failed to read response body for logging', { error: logError });
+          apiLogger.warn(req, 'Failed to read response body for logging', { 
+            error: logError instanceof Error ? logError.message : String(logError) 
+          });
         }
       }
 
