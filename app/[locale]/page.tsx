@@ -11,7 +11,7 @@ import { InteractiveProcessIcon } from "@/components/InteractiveProcessIcon";
 import { getTranslations } from "next-intl/server";
 import type { User } from "@supabase/supabase-js";
 import type { UserProfile } from "@/lib/settings/types";
-import AIDashboard from '@/components/ai-dashboard';
+import AgentDashboard from '@/components/dashboard/AgentDashboard';
 
 // Force dynamic rendering to ensure fresh data on every request
 export const dynamic = 'force-dynamic';
@@ -47,7 +47,7 @@ export default async function Home() {
 
                   {/* Full-screen AI Agent Dashboard */}
           <div className="flex-1 pt-16 lg:pt-20">
-            <AIDashboard />
+            <AgentDashboard />
           </div>
       </div>
     );

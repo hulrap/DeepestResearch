@@ -4,13 +4,20 @@ import { useState, useEffect, useCallback } from 'react';
 import { createClient } from '@/lib/supabase/client';
 import type { 
   UserProfile, 
-  AIProvider, 
+  UserConfiguration,
+  AIProvider,
+  UserAIProviderConfig,
+  AIModel,
   UserAPIKey, 
   UsageLimits, 
   UsageSummary,
-  StripeSubscription,
-  StripePrice,
+  UsageAlert,
+  SubscriptionPlan,
+  UserSubscription,
+  WorkflowTemplate,
+  WorkflowSession,
   ProfileUpdateData,
+  UserConfigurationUpdateData,
   APIKeyCreateData,
   UsageLimitsUpdateData
 } from './types';
@@ -18,59 +25,84 @@ import type {
 interface UseSettingsReturn {
   // Profile data
   profile: UserProfile | null;
+  userConfiguration: UserConfiguration | null;
   isLoading: boolean;
   error: string | null;
   
-  // AI Providers and API Keys
+  // AI Providers and Models
   providers: AIProvider[];
+  userProviderConfigs: UserAIProviderConfig[];
+  availableModels: AIModel[];
   userAPIKeys: UserAPIKey[];
   providersLoading: boolean;
   
   // Usage and limits
   usageLimits: UsageLimits | null;
   recentUsage: UsageSummary[];
+  usageAlerts: UsageAlert[];
   usageLoading: boolean;
   
-  // Billing
-  subscription: StripeSubscription | null;
-  availablePlans: StripePrice[];
+  // Billing and subscriptions
+  currentSubscription: UserSubscription | null;
+  availablePlans: SubscriptionPlan[];
   billingLoading: boolean;
+  
+  // Workflows
+  featuredTemplates: WorkflowTemplate[];
+  activeWorkflows: WorkflowSession[];
+  workflowsLoading: boolean;
   
   // Actions
   updateProfile: (data: ProfileUpdateData) => Promise<void>;
+  updateUserConfiguration: (data: UserConfigurationUpdateData) => Promise<void>;
   addAPIKey: (data: APIKeyCreateData) => Promise<void>;
   removeAPIKey: (keyId: string) => Promise<void>;
   updateUsageLimits: (data: UsageLimitsUpdateData) => Promise<void>;
+  updateProviderConfig: (providerId: string, config: Partial<UserAIProviderConfig>) => Promise<void>;
+  dismissAlert: (alertId: string) => Promise<void>;
+  
+  // Refresh functions
+  refreshAll: () => Promise<void>;
   refreshProfile: () => Promise<void>;
-  refreshAPIKeys: () => Promise<void>;
+  refreshProviders: () => Promise<void>;
   refreshUsageData: () => Promise<void>;
   refreshBillingData: () => Promise<void>;
+  refreshWorkflows: () => Promise<void>;
 }
 
 export function useSettings(): UseSettingsReturn {
   // Core state
   const [profile, setProfile] = useState<UserProfile | null>(null);
+  const [userConfiguration, setUserConfiguration] = useState<UserConfiguration | null>(null);
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
   
-  // AI providers and API keys
+  // AI providers and models
   const [providers, setProviders] = useState<AIProvider[]>([]);
+  const [userProviderConfigs, setUserProviderConfigs] = useState<UserAIProviderConfig[]>([]);
+  const [availableModels, setAvailableModels] = useState<AIModel[]>([]);
   const [userAPIKeys, setUserAPIKeys] = useState<UserAPIKey[]>([]);
   const [providersLoading, setProvidersLoading] = useState(false);
   
   // Usage tracking
   const [usageLimits, setUsageLimits] = useState<UsageLimits | null>(null);
   const [recentUsage, setRecentUsage] = useState<UsageSummary[]>([]);
+  const [usageAlerts, setUsageAlerts] = useState<UsageAlert[]>([]);
   const [usageLoading, setUsageLoading] = useState(false);
   
   // Billing
-  const [subscription, setSubscription] = useState<StripeSubscription | null>(null);
-  const [availablePlans, setAvailablePlans] = useState<StripePrice[]>([]);
+  const [currentSubscription, setCurrentSubscription] = useState<UserSubscription | null>(null);
+  const [availablePlans, setAvailablePlans] = useState<SubscriptionPlan[]>([]);
   const [billingLoading, setBillingLoading] = useState(false);
+  
+  // Workflows
+  const [featuredTemplates, setFeaturedTemplates] = useState<WorkflowTemplate[]>([]);
+  const [activeWorkflows, setActiveWorkflows] = useState<WorkflowSession[]>([]);
+  const [workflowsLoading, setWorkflowsLoading] = useState(false);
 
   const supabase = createClient();
 
-  // Load user profile
+  // Load user profile and configuration
   const loadProfile = useCallback(async () => {
     try {
       setIsLoading(true);
@@ -80,9 +112,11 @@ export function useSettings(): UseSettingsReturn {
       
       if (authError || !user) {
         setProfile(null);
+        setUserConfiguration(null);
         return;
       }
 
+      // Load profile
       const { data: profileData, error: profileError } = await supabase
         .from('profiles')
         .select('*')
@@ -97,6 +131,10 @@ export function useSettings(): UseSettingsReturn {
             .insert({
               id: user.id,
               email: user.email,
+              is_active: true,
+              email_verified: !!user.email_confirmed_at,
+              onboarding_completed: false,
+              onboarding_step: 0,
             })
             .select()
             .single();
@@ -112,6 +150,20 @@ export function useSettings(): UseSettingsReturn {
       } else {
         setProfile(profileData);
       }
+
+      // Load user configuration
+      const { data: configData, error: configError } = await supabase
+        .from('user_configuration')
+        .select('*')
+        .eq('user_id', user.id)
+        .single();
+
+      if (configError && configError.code !== 'PGRST116') {
+        console.error('Failed to load user configuration:', configError);
+      } else {
+        setUserConfiguration(configData);
+      }
+
     } catch (err) {
       const errorMessage = err instanceof Error ? err.message : 'Unknown error occurred';
       setError(errorMessage);
@@ -120,11 +172,14 @@ export function useSettings(): UseSettingsReturn {
     }
   }, [supabase]);
 
-  // Load AI providers
+  // Load AI providers and user configurations
   const loadProviders = useCallback(async () => {
+    if (!profile?.id) return;
+
     try {
       setProvidersLoading(true);
       
+      // Load all active providers
       const { data: providersData, error: providersError } = await supabase
         .from('ai_providers')
         .select('*')
@@ -136,12 +191,50 @@ export function useSettings(): UseSettingsReturn {
       }
 
       setProviders(providersData || []);
+
+      // Load user's provider configurations
+      const { data: userConfigsData, error: userConfigsError } = await supabase
+        .from('user_ai_provider_configs')
+        .select('*')
+        .eq('user_id', profile.id)
+        .order('user_priority', { ascending: false });
+
+      if (userConfigsError && userConfigsError.code !== 'PGRST116') {
+        throw new Error('Failed to load provider configurations');
+      }
+
+      setUserProviderConfigs(userConfigsData || []);
+
+      // Load available models with provider name
+      const { data: modelsData, error: modelsError } = await supabase
+        .from('ai_models')
+        .select(`
+          *,
+          ai_providers (
+            name
+          )
+        `)
+        .eq('is_active', true)
+        .eq('is_deprecated', false)
+        .order('default_performance_score', { ascending: false });
+
+      if (modelsError) {
+        throw new Error('Failed to load AI models');
+      }
+      
+      const transformedModels = (modelsData || []).map(model => ({
+        ...model,
+        provider_name: model.ai_providers.name
+      }));
+
+      setAvailableModels(transformedModels);
+
     } catch (err) {
       console.error('Error loading providers:', err);
     } finally {
       setProvidersLoading(false);
     }
-  }, [supabase]);
+  }, [profile?.id, supabase]);
 
   // Load user's API keys
   const loadAPIKeys = useCallback(async () => {
@@ -172,7 +265,21 @@ export function useSettings(): UseSettingsReturn {
         provider_name: key.ai_providers.name,
         provider_display_name: key.ai_providers.display_name,
         key_name: key.key_name,
+        key_hash: key.key_hash,
+        custom_rate_limits: key.custom_rate_limits,
+        daily_usage_limit: key.daily_usage_limit,
+        monthly_usage_limit: key.monthly_usage_limit,
         is_active: key.is_active,
+        is_verified: key.is_verified,
+        verification_attempts: key.verification_attempts,
+        last_verification_at: key.last_verification_at,
+        last_used_at: key.last_used_at,
+        usage_count: key.usage_count,
+        total_cost_usd: key.total_cost_usd,
+        total_tokens: key.total_tokens,
+        expires_at: key.expires_at,
+        auto_rotate_enabled: key.auto_rotate_enabled,
+        usage_alerts_enabled: key.usage_alerts_enabled,
         created_at: key.created_at,
         updated_at: key.updated_at,
       }));
@@ -183,7 +290,7 @@ export function useSettings(): UseSettingsReturn {
     }
   }, [profile?.id, supabase]);
 
-  // Load usage limits and recent usage
+  // Load usage data
   const loadUsageData = useCallback(async () => {
     if (!profile?.id) return;
 
@@ -203,19 +310,39 @@ export function useSettings(): UseSettingsReturn {
 
       setUsageLimits(limitsData || null);
 
-      // Load recent usage (last 30 days)
+      // Load recent usage summaries (last 30 days)
+      const thirtyDaysAgo = new Date();
+      thirtyDaysAgo.setDate(thirtyDaysAgo.getDate() - 30);
+
       const { data: summaryData, error: summaryError } = await supabase
-        .from('daily_usage_summaries')
+        .from('usage_summaries')
         .select('*')
         .eq('user_id', profile.id)
-        .gte('date', new Date(Date.now() - 30 * 24 * 60 * 60 * 1000).toISOString().split('T')[0])
-        .order('date', { ascending: false });
+        .eq('period_type', 'daily')
+        .gte('period_start', thirtyDaysAgo.toISOString())
+        .order('period_start', { ascending: false });
 
       if (summaryError) {
         throw new Error('Failed to load usage summary');
       }
 
       setRecentUsage(summaryData || []);
+
+      // Load active usage alerts
+      const { data: alertsData, error: alertsError } = await supabase
+        .from('usage_alerts')
+        .select('*')
+        .eq('user_id', profile.id)
+        .eq('is_resolved', false)
+        .order('created_at', { ascending: false })
+        .limit(10);
+
+      if (alertsError) {
+        throw new Error('Failed to load usage alerts');
+      }
+
+      setUsageAlerts(alertsData || []);
+
     } catch (err) {
       console.error('Error loading usage data:', err);
     } finally {
@@ -232,13 +359,8 @@ export function useSettings(): UseSettingsReturn {
       
       // Load current subscription
       const { data: subscriptionData, error: subError } = await supabase
-        .from('stripe_subscriptions')
-        .select(`
-          *,
-          stripe_prices!inner(
-            stripe_products!inner(name)
-          )
-        `)
+        .from('user_subscriptions')
+        .select('*')
         .eq('user_id', profile.id)
         .in('status', ['active', 'trialing'])
         .order('created_at', { ascending: false })
@@ -249,50 +371,70 @@ export function useSettings(): UseSettingsReturn {
         throw new Error('Failed to load subscription');
       }
 
-      if (subscriptionData) {
-        const transformedSubscription: StripeSubscription = {
-          ...subscriptionData,
-          product_name: subscriptionData.stripe_prices?.stripe_products?.name || 'Unknown Plan'
-        };
-        setSubscription(transformedSubscription);
-      } else {
-        setSubscription(null);
-      }
+      setCurrentSubscription(subscriptionData);
 
       // Load available plans
-      const { data: pricesData, error: pricesError } = await supabase
-        .from('stripe_prices')
-        .select(`
-          *,
-          stripe_products!inner(
-            name,
-            description
-          )
-        `)
-        .eq('active', true)
-        .order('unit_amount', { ascending: true });
+      const { data: plansData, error: plansError } = await supabase
+        .from('subscription_plans')
+        .select('*')
+        .eq('is_active', true)
+        .order('sort_order');
 
-      if (pricesError) {
-        throw new Error('Failed to load pricing plans');
+      if (plansError) {
+        throw new Error('Failed to load subscription plans');
       }
 
-      const transformedPlans: StripePrice[] = (pricesData || []).map(price => ({
-        id: price.id,
-        product_id: price.product_id,
-        unit_amount: price.unit_amount,
-        currency: price.currency,
-        recurring_interval: price.recurring_interval,
-        type: price.type,
-        active: price.active,
-        product_name: price.stripe_products?.name || 'Unknown Plan',
-        product_description: price.stripe_products?.description || ''
-      }));
+      setAvailablePlans(plansData || []);
 
-      setAvailablePlans(transformedPlans);
     } catch (err) {
       console.error('Error loading billing data:', err);
     } finally {
       setBillingLoading(false);
+    }
+  }, [profile?.id, supabase]);
+
+  // Load workflow data
+  const loadWorkflows = useCallback(async () => {
+    if (!profile?.id) return;
+
+    try {
+      setWorkflowsLoading(true);
+      
+      // Load featured templates
+      const { data: templatesData, error: templatesError } = await supabase
+        .from('workflow_templates')
+        .select('*')
+        .eq('is_public', true)
+        .eq('is_featured', true)
+        .eq('is_active', true)
+        .order('rating', { ascending: false })
+        .limit(6);
+
+      if (templatesError) {
+        throw new Error('Failed to load workflow templates');
+      }
+
+      setFeaturedTemplates(templatesData || []);
+
+      // Load active workflows
+      const { data: workflowsData, error: workflowsError } = await supabase
+        .from('workflow_sessions')
+        .select('*')
+        .eq('user_id', profile.id)
+        .in('status', ['running', 'paused'])
+        .order('last_activity_at', { ascending: false })
+        .limit(5);
+
+      if (workflowsError) {
+        throw new Error('Failed to load active workflows');
+      }
+
+      setActiveWorkflows(workflowsData || []);
+
+    } catch (err) {
+      console.error('Error loading workflow data:', err);
+    } finally {
+      setWorkflowsLoading(false);
     }
   }, [profile?.id, supabase]);
 
@@ -331,6 +473,38 @@ export function useSettings(): UseSettingsReturn {
     }
   }, [profile?.id, supabase]);
 
+  // Update user configuration
+  const updateUserConfiguration = useCallback(async (data: UserConfigurationUpdateData) => {
+    if (!profile?.id) {
+      throw new Error('No profile loaded');
+    }
+
+    try {
+      setError(null);
+
+      const { data: upsertData, error: upsertError } = await supabase
+        .from('user_configuration')
+        .upsert({
+          user_id: profile.id,
+          ...data,
+          updated_at: new Date().toISOString(),
+        })
+        .select()
+        .single();
+
+      if (upsertError) {
+        throw new Error('Failed to update user configuration');
+      }
+
+      setUserConfiguration(upsertData);
+
+    } catch (err) {
+      const errorMessage = err instanceof Error ? err.message : 'Failed to update configuration';
+      setError(errorMessage);
+      throw err;
+    }
+  }, [profile?.id, supabase]);
+
   // Add API key
   const addAPIKey = useCallback(async (data: APIKeyCreateData) => {
     if (!profile?.id) {
@@ -340,18 +514,20 @@ export function useSettings(): UseSettingsReturn {
     try {
       setError(null);
 
-      const { error: insertError } = await supabase
-        .from('user_api_keys')
-        .insert({
-          user_id: profile.id,
-          ...data,
-        });
+      const response = await fetch('/api/user/api-keys', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(data),
+      });
 
-      if (insertError) {
-        throw new Error('Failed to add API key');
+      if (!response.ok) {
+        const errorData = await response.json();
+        throw new Error(errorData.error || 'Failed to add API key');
       }
 
-      // Refresh API keys
+      // Refresh API keys from the server to get the updated list
       await loadAPIKeys();
 
     } catch (err) {
@@ -359,7 +535,7 @@ export function useSettings(): UseSettingsReturn {
       setError(errorMessage);
       throw err;
     }
-  }, [profile?.id, supabase, loadAPIKeys]);
+  }, [profile?.id, loadAPIKeys]);
 
   // Remove API key
   const removeAPIKey = useCallback(async (keyId: string) => {
@@ -417,56 +593,158 @@ export function useSettings(): UseSettingsReturn {
     }
   }, [profile?.id, supabase]);
 
+  // Update provider configuration
+  const updateProviderConfig = useCallback(async (providerId: string, config: Partial<UserAIProviderConfig>) => {
+    if (!profile?.id) {
+      throw new Error('No profile loaded');
+    }
+
+    try {
+      setError(null);
+
+      const { data: upsertData, error: upsertError } = await supabase
+        .from('user_ai_provider_configs')
+        .upsert({
+          user_id: profile.id,
+          provider_id: providerId,
+          ...config,
+          updated_at: new Date().toISOString(),
+        })
+        .select()
+        .single();
+
+      if (upsertError) {
+        throw new Error('Failed to update provider configuration');
+      }
+
+      // Update local state
+      setUserProviderConfigs(prev => {
+        const existing = prev.find(c => c.provider_id === providerId);
+        if (existing) {
+          return prev.map(c => c.provider_id === providerId ? upsertData : c);
+        } else {
+          return [...prev, upsertData];
+        }
+      });
+
+    } catch (err) {
+      const errorMessage = err instanceof Error ? err.message : 'Failed to update provider configuration';
+      setError(errorMessage);
+      throw err;
+    }
+  }, [profile?.id, supabase]);
+
+  // Dismiss alert
+  const dismissAlert = useCallback(async (alertId: string) => {
+    try {
+      setError(null);
+
+      const { error: updateError } = await supabase
+        .from('usage_alerts')
+        .update({
+          is_dismissed: true,
+          dismissed_at: new Date().toISOString(),
+        })
+        .eq('id', alertId);
+
+      if (updateError) {
+        throw new Error('Failed to dismiss alert');
+      }
+
+      // Update local state
+      setUsageAlerts(prev => prev.map(alert => 
+        alert.id === alertId 
+          ? { ...alert, is_dismissed: true, dismissed_at: new Date().toISOString() }
+          : alert
+      ));
+
+    } catch (err) {
+      const errorMessage = err instanceof Error ? err.message : 'Failed to dismiss alert';
+      setError(errorMessage);
+      throw err;
+    }
+  }, [supabase]);
+
   // Public refresh functions
   const refreshProfile = useCallback(() => loadProfile(), [loadProfile]);
-  const refreshAPIKeys = useCallback(() => loadAPIKeys(), [loadAPIKeys]);
+  const refreshProviders = useCallback(() => loadProviders(), [loadProviders]);
   const refreshUsageData = useCallback(() => loadUsageData(), [loadUsageData]);
   const refreshBillingData = useCallback(() => loadBillingData(), [loadBillingData]);
+  const refreshWorkflows = useCallback(() => loadWorkflows(), [loadWorkflows]);
+
+  const refreshAll = useCallback(async () => {
+    await Promise.all([
+      loadProfile(),
+      loadProviders(),
+      loadUsageData(),
+      loadBillingData(),
+      loadWorkflows(),
+    ]);
+  }, [loadProfile, loadProviders, loadUsageData, loadBillingData, loadWorkflows]);
 
   // Initial load
   useEffect(() => {
     loadProfile();
-    loadProviders();
-  }, [loadProfile, loadProviders]);
+  }, [loadProfile]);
 
   // Load dependent data when profile is loaded
   useEffect(() => {
     if (profile?.id) {
-      loadAPIKeys();
-      loadUsageData();
-      loadBillingData();
+      Promise.all([
+        loadProviders(),
+        loadAPIKeys(),
+        loadUsageData(),
+        loadBillingData(),
+        loadWorkflows(),
+      ]);
     }
-  }, [profile?.id, loadAPIKeys, loadUsageData, loadBillingData]);
+  }, [profile?.id, loadProviders, loadAPIKeys, loadUsageData, loadBillingData, loadWorkflows]);
 
   return {
     // Profile data
     profile,
+    userConfiguration,
     isLoading,
     error,
     
-    // AI Providers and API Keys
+    // AI Providers and Models
     providers,
+    userProviderConfigs,
+    availableModels,
     userAPIKeys,
     providersLoading,
     
     // Usage and limits
     usageLimits,
     recentUsage,
+    usageAlerts,
     usageLoading,
     
     // Billing
-    subscription,
+    currentSubscription,
     availablePlans,
     billingLoading,
     
+    // Workflows
+    featuredTemplates,
+    activeWorkflows,
+    workflowsLoading,
+    
     // Actions
     updateProfile,
+    updateUserConfiguration,
     addAPIKey,
     removeAPIKey,
     updateUsageLimits,
+    updateProviderConfig,
+    dismissAlert,
+    
+    // Refresh functions
+    refreshAll,
     refreshProfile,
-    refreshAPIKeys,
+    refreshProviders,
     refreshUsageData,
     refreshBillingData,
+    refreshWorkflows,
   };
 } 

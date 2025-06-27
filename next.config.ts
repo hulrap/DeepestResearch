@@ -1,5 +1,6 @@
 import type { NextConfig } from "next";
 import createNextIntlPlugin from 'next-intl/plugin';
+import { withSentryConfig } from '@sentry/nextjs';
 
 const withNextIntl = createNextIntlPlugin('./i18n/request.ts');
 
@@ -21,25 +22,25 @@ function createCSPPolicy(): string {
     // Development: Allow unsafe-eval for hot reloading
     return [
       ...basePolicy,
-      "script-src 'self' 'unsafe-eval' 'unsafe-inline' *.supabase.co https://js.stripe.com",
-      "connect-src 'self' *.supabase.co wss://*.supabase.co https://api.stripe.com",
+      "script-src 'self' 'unsafe-eval' 'unsafe-inline' *.supabase.co https://js.stripe.com *.sentry.io",
+      "connect-src 'self' *.supabase.co wss://*.supabase.co https://api.stripe.com *.sentry.io",
       "frame-src 'self' https://js.stripe.com https://hooks.stripe.com",
     ].join('; ');
   } else if (process.env.VERCEL_ENV === 'preview') {
-    // Preview: Add Vercel Live/Comments support + Analytics + Stripe
+    // Preview: Add Vercel Live/Comments support + Analytics + Stripe + Sentry
     return [
       ...basePolicy,
-      "script-src 'self' 'unsafe-inline' *.supabase.co https://vercel.live/ https://vercel.com https://cdn.vercel-insights.com https://js.stripe.com",
-      "connect-src 'self' *.supabase.co wss://*.supabase.co https://vercel.live/ https://vercel.com https://vitals.vercel-insights.com https://sockjs-mt1.pusher.com/ wss://ws-mt1.pusher.com/ https://api.stripe.com",
+      "script-src 'self' 'unsafe-inline' *.supabase.co https://vercel.live/ https://vercel.com https://cdn.vercel-insights.com https://js.stripe.com *.sentry.io",
+      "connect-src 'self' *.supabase.co wss://*.supabase.co https://vercel.live/ https://vercel.com https://vitals.vercel-insights.com https://sockjs-mt1.pusher.com/ wss://ws-mt1.pusher.com/ https://api.stripe.com *.sentry.io",
       "img-src 'self' data: blob: *.supabase.co https://vercel.live/ https://vercel.com https://sockjs-mt1.pusher.com/",
       "frame-src 'self' https://vercel.live/ https://vercel.com https://js.stripe.com https://hooks.stripe.com",
     ].join('; ');
   } else {
-    // Production: Strict policy with Analytics + Stripe support
+    // Production: Strict policy with Analytics + Stripe + Sentry support
     return [
       ...basePolicy,
-      "script-src 'self' 'unsafe-inline' *.supabase.co https://cdn.vercel-insights.com https://js.stripe.com",
-      "connect-src 'self' *.supabase.co wss://*.supabase.co https://vitals.vercel-insights.com https://api.stripe.com",
+      "script-src 'self' 'unsafe-inline' *.supabase.co https://cdn.vercel-insights.com https://js.stripe.com *.sentry.io",
+      "connect-src 'self' *.supabase.co wss://*.supabase.co https://vitals.vercel-insights.com https://api.stripe.com *.sentry.io",
       "frame-src 'self' https://js.stripe.com https://hooks.stripe.com",
     ].join('; ');
   }
@@ -105,4 +106,43 @@ const nextConfig: NextConfig = {
   serverExternalPackages: ['@supabase/supabase-js']
 };
 
-export default withNextIntl(nextConfig);
+// Wrap with Sentry and Next Intl
+export default withSentryConfig(
+  withNextIntl(nextConfig),
+  {
+    // For all available options, see:
+    // https://github.com/getsentry/sentry-webpack-plugin#options
+
+    // Suppresses source map uploading logs during build
+    silent: true,
+    
+    // Optional: Only needed if you want source maps uploaded automatically
+    // org: process.env.SENTRY_ORG,
+    // project: process.env.SENTRY_PROJECT,
+  },
+  {
+    // For all available options, see:
+    // https://docs.sentry.io/platforms/javascript/guides/nextjs/manual-setup/
+
+    // Upload a larger set of source maps for prettier stack traces (increases build time)
+    widenClientFileUpload: true,
+
+    // Transpiles SDK to be compatible with IE11 (increases bundle size)
+    transpileClientSDK: false,
+
+    // Routes browser requests to Sentry through a Next.js rewrite to circumvent ad-blockers. (increases server load)
+    tunnelRoute: "/monitoring",
+
+    // Hides source maps from generated client bundles
+    hideSourceMaps: true,
+
+    // Automatically tree-shake Sentry logger statements for production
+    disableLogger: true,
+
+    // Enables automatic instrumentation of Vercel Cron Monitors.
+    // See the following for more information:
+    // https://docs.sentry.io/product/crons/
+    // https://docs.sentry.io/platforms/javascript/guides/nextjs/manual-setup/
+    automaticVercelMonitors: true,
+  }
+);

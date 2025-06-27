@@ -9,7 +9,7 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import { createClient } from '@/lib/supabase/client';
-import type { SettingsSection, APIKeyCreateData, UsageLimitsUpdateData } from '@/lib/settings/types';
+import type { SettingsSection, APIKeyCreateData, UserConfigurationUpdateData } from '@/lib/settings/types';
 
 export function UserSettings() {
   // Translation hooks
@@ -19,24 +19,23 @@ export function UserSettings() {
   // Settings hook
   const {
     profile,
+    userConfiguration,
     isLoading,
     error,
     providers,
     userAPIKeys,
     providersLoading,
-    usageLimits,
+
     recentUsage,
     usageLoading,
-    subscription,
+    currentSubscription,
     availablePlans,
     billingLoading,
     updateProfile,
+    updateUserConfiguration,
     addAPIKey,
     removeAPIKey,
-    updateUsageLimits,
-    refreshAPIKeys,
-    refreshUsageData,
-    refreshBillingData
+    refreshAll
   } = useSettings();
 
   // Local state
@@ -84,10 +83,9 @@ export function UserSettings() {
     }
 
     try {
-      // In a real implementation, you'd encrypt the API key before storing
       const apiKeyData: APIKeyCreateData = {
         provider_id: selectedProvider,
-        encrypted_api_key: btoa(newAPIKey), // Simple base64 encoding - use proper encryption in production
+        api_key: newAPIKey, // Send the raw key
         key_name: keyName || undefined
       };
 
@@ -111,12 +109,12 @@ export function UserSettings() {
     }
   };
 
-  // Update usage limits
-  const handleUpdateUsageLimits = async (data: UsageLimitsUpdateData) => {
+  // Update user configuration
+  const handleUpdateConfiguration = async (data: UserConfigurationUpdateData) => {
     try {
-      await updateUsageLimits(data);
+      await updateUserConfiguration(data);
     } catch (err) {
-      console.error('Failed to update usage limits:', err);
+      console.error('Failed to update configuration:', err);
     }
   };
 
@@ -177,31 +175,6 @@ export function UserSettings() {
     } finally {
       setIsDeleting(false);
       setDeleteConfirmText('');
-    }
-  };
-
-  // Refresh data functions
-  const handleRefreshAPIKeys = async () => {
-    try {
-      await refreshAPIKeys();
-    } catch (err) {
-      console.error('Failed to refresh API keys:', err);
-    }
-  };
-
-  const handleRefreshUsageData = async () => {
-    try {
-      await refreshUsageData();
-    } catch (err) {
-      console.error('Failed to refresh usage data:', err);
-    }
-  };
-
-  const handleRefreshBillingData = async () => {
-    try {
-      await refreshBillingData();
-    } catch (err) {
-      console.error('Failed to refresh billing data:', err);
     }
   };
 
@@ -278,7 +251,7 @@ export function UserSettings() {
               <CardContent className="space-y-2">
                 {[
                   { key: 'profile', label: t('profile') || 'Profile' },
-                  { key: 'api-keys', label: t('apiKeys') || 'API Keys' },
+                  { key: 'ai-providers', label: t('aiProviders') || 'AI Providers' },
                   { key: 'usage-limits', label: t('usageLimits') || 'Usage & Limits' },
                   { key: 'billing', label: t('billing') || 'Billing' },
                   { key: 'account', label: t('account') || 'Account' }
@@ -351,11 +324,54 @@ export function UserSettings() {
                         />
                       </div>
                     </div>
+
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                      <div className="space-y-2">
+                        <Label className="text-white">{t('userType') || 'User Type'}</Label>
+                        <Select 
+                          value={getValue('user_type') || 'individual'} 
+                          onValueChange={(value) => handleChange('user_type', value)}
+                        >
+                          <SelectTrigger className="bg-gray-800 border-gray-600 text-white">
+                            <SelectValue />
+                          </SelectTrigger>
+                          <SelectContent>
+                            <SelectItem value="individual">Individual</SelectItem>
+                            <SelectItem value="business">Business</SelectItem>
+                            <SelectItem value="enterprise">Enterprise</SelectItem>
+                            <SelectItem value="developer">Developer</SelectItem>
+                          </SelectContent>
+                        </Select>
+                      </div>
+                      <div className="space-y-2">
+                        <Label className="text-white">{t('experienceLevel') || 'Experience Level'}</Label>
+                        <Select 
+                          value={getValue('experience_level') || 'beginner'} 
+                          onValueChange={(value) => handleChange('experience_level', value)}
+                        >
+                          <SelectTrigger className="bg-gray-800 border-gray-600 text-white">
+                            <SelectValue />
+                          </SelectTrigger>
+                          <SelectContent>
+                            <SelectItem value="beginner">Beginner</SelectItem>
+                            <SelectItem value="intermediate">Intermediate</SelectItem>
+                            <SelectItem value="advanced">Advanced</SelectItem>
+                            <SelectItem value="expert">Expert</SelectItem>
+                          </SelectContent>
+                        </Select>
+                      </div>
+                    </div>
+
+                    {hasChanges && (
+                      <Button onClick={handleSave} disabled={isSaving}>
+                        {isSaving ? 'Saving...' : 'Save Changes'}
+                      </Button>
+                    )}
                   </div>
                 )}
 
-                {/* API Keys Section */}
-                {activeSection === 'api-keys' && (
+                {/* AI Providers Section */}
+                {activeSection === 'ai-providers' && (
                   <div className="space-y-6">
                     <div className="flex justify-between items-center">
                       <h3 className="text-white font-medium text-lg">{t('yourApiKeys') || 'Your API Keys'}</h3>
@@ -363,7 +379,7 @@ export function UserSettings() {
                         <Button 
                           variant="outline" 
                           size="sm" 
-                          onClick={handleRefreshAPIKeys}
+                          onClick={refreshAll}
                           disabled={providersLoading}
                         >
                           {providersLoading ? t('refreshing') || 'Refreshing...' : t('refresh') || 'Refresh'}
@@ -398,6 +414,9 @@ export function UserSettings() {
                               <p className="text-xs text-gray-500">
                                 {t('added') || 'Added'} {new Date(key.created_at).toLocaleDateString()}
                               </p>
+                              <p className="text-xs text-gray-500">
+                                Usage: {key.usage_count} requests, ${key.total_cost_usd.toFixed(4)}
+                              </p>
                             </div>
                             <Button
                               variant="destructive"
@@ -410,6 +429,62 @@ export function UserSettings() {
                         ))}
                       </div>
                     )}
+
+                    {/* API Key Modal */}
+                    {showAPIKeyModal && (
+                      <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4 z-50">
+                        <Card className="w-full max-w-md">
+                          <CardHeader>
+                            <CardTitle>{t('addApiKey') || 'Add API Key'}</CardTitle>
+                          </CardHeader>
+                          <CardContent className="space-y-4">
+                            <div className="space-y-2">
+                              <Label>{t('provider') || 'Provider'}</Label>
+                              <Select value={selectedProvider} onValueChange={setSelectedProvider}>
+                                <SelectTrigger>
+                                  <SelectValue placeholder={t('selectProvider') || 'Select a provider'} />
+                                </SelectTrigger>
+                                <SelectContent>
+                                  {providers.map((provider) => (
+                                    <SelectItem key={provider.id} value={provider.id}>
+                                      {provider.display_name}
+                                    </SelectItem>
+                                  ))}
+                                </SelectContent>
+                              </Select>
+                            </div>
+                            <div className="space-y-2">
+                              <Label>{t('keyName') || 'Key Name (Optional)'}</Label>
+                              <Input
+                                value={keyName}
+                                onChange={(e) => setKeyName(e.target.value)}
+                                placeholder={t('enterKeyName') || 'Enter key name'}
+                              />
+                            </div>
+                            <div className="space-y-2">
+                              <Label>{t('apiKey') || 'API Key'}</Label>
+                              <Input
+                                type="password"
+                                value={newAPIKey}
+                                onChange={(e) => setNewAPIKey(e.target.value)}
+                                placeholder={t('enterApiKey') || 'Enter API key'}
+                              />
+                            </div>
+                            {apiKeyError && (
+                              <p className="text-red-400 text-sm">{apiKeyError}</p>
+                            )}
+                            <div className="flex gap-2">
+                              <Button onClick={handleAddAPIKey}>
+                                {t('add') || 'Add'}
+                              </Button>
+                              <Button variant="outline" onClick={() => setShowAPIKeyModal(false)}>
+                                {t('cancel') || 'Cancel'}
+                              </Button>
+                            </div>
+                          </CardContent>
+                        </Card>
+                      </div>
+                    )}
                   </div>
                 )}
 
@@ -420,24 +495,30 @@ export function UserSettings() {
                       <h3 className="text-white font-medium text-lg mb-4">{t('usageLimitsTitle') || 'Usage Limits'}</h3>
                       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                         <div className="space-y-2">
-                          <Label className="text-white">{t('dailyLimit') || 'Daily Limit'} (USD)</Label>
+                          <Label className="text-white">{t('dailyLimit') || 'Daily Cost Limit'} (USD)</Label>
                           <Input
                             type="number"
                             step="0.01"
-                            value={usageLimits?.daily_limit_usd || 10}
-                            onChange={(e) => handleUpdateUsageLimits({ daily_limit_usd: parseFloat(e.target.value) })}
+                            value={userConfiguration?.preferred_daily_cost_limit || userConfiguration?.effective_daily_cost_limit || 10}
+                            onChange={(e) => handleUpdateConfiguration({ preferred_daily_cost_limit: parseFloat(e.target.value) })}
                             className="bg-gray-800 border-gray-600 text-white"
                           />
+                          <p className="text-xs text-gray-400">
+                            Plan limit: ${userConfiguration?.plan_daily_cost_limit || 10}
+                          </p>
                         </div>
                         <div className="space-y-2">
-                          <Label className="text-white">{t('monthlyLimit') || 'Monthly Limit'} (USD)</Label>
+                          <Label className="text-white">{t('monthlyLimit') || 'Monthly Cost Limit'} (USD)</Label>
                           <Input
                             type="number"
                             step="0.01"
-                            value={usageLimits?.monthly_limit_usd || 100}
-                            onChange={(e) => handleUpdateUsageLimits({ monthly_limit_usd: parseFloat(e.target.value) })}
+                            value={userConfiguration?.preferred_monthly_cost_limit || userConfiguration?.effective_monthly_cost_limit || 100}
+                            onChange={(e) => handleUpdateConfiguration({ preferred_monthly_cost_limit: parseFloat(e.target.value) })}
                             className="bg-gray-800 border-gray-600 text-white"
                           />
+                          <p className="text-xs text-gray-400">
+                            Plan limit: ${userConfiguration?.plan_monthly_cost_limit || 100}
+                          </p>
                         </div>
                       </div>
                     </div>
@@ -448,7 +529,7 @@ export function UserSettings() {
                         <Button 
                           variant="outline" 
                           size="sm" 
-                          onClick={handleRefreshUsageData}
+                          onClick={refreshAll}
                           disabled={usageLoading}
                         >
                           {usageLoading ? t('refreshing') || 'Refreshing...' : t('refresh') || 'Refresh'}
@@ -463,11 +544,12 @@ export function UserSettings() {
                       ) : (
                         <div className="space-y-2">
                           {recentUsage.slice(0, 5).map((usage) => (
-                            <div key={usage.date} className="flex justify-between items-center p-3 bg-gray-800 rounded-sm">
-                              <span className="text-white">{usage.date}</span>
+                            <div key={usage.id} className="flex justify-between items-center p-3 bg-gray-800 rounded-sm">
+                              <span className="text-white">{new Date(usage.period_start).toLocaleDateString()}</span>
                               <div className="text-right">
                                 <p className="text-white">${usage.total_cost_usd.toFixed(4)}</p>
                                 <p className="text-sm text-gray-400">{usage.total_tokens} {t('tokens') || 'tokens'}</p>
+                                <p className="text-xs text-gray-500">{usage.total_requests} requests</p>
                               </div>
                             </div>
                           ))}
@@ -485,7 +567,7 @@ export function UserSettings() {
                       <Button 
                         variant="outline" 
                         size="sm" 
-                        onClick={handleRefreshBillingData}
+                        onClick={refreshAll}
                         disabled={billingLoading}
                       >
                         {billingLoading ? t('refreshing') || 'Refreshing...' : t('refresh') || 'Refresh'}
@@ -496,34 +578,44 @@ export function UserSettings() {
                       <div className="text-center py-8">
                         <div className="animate-spin rounded-full h-8 w-8 border-b-2 border-purple-500 mx-auto"></div>
                       </div>
-                    ) : subscription ? (
+                    ) : currentSubscription ? (
                       <div className="p-4 bg-green-900/20 border border-green-700/50 rounded-sm">
-                        <h3 className="text-green-400 font-medium">{t('activeSubscription') || 'Active Subscription'}</h3>
-                        <p className="text-white">{subscription.product_name}</p>
-                        <p className="text-sm text-gray-400">{t('status') || 'Status'}: {subscription.status}</p>
-                        <Button className="mt-4" onClick={handleManageSubscription}>
-                          {t('manageSubscription') || 'Manage Subscription'}
+                        <h4 className="text-white font-medium mb-2">{t('currentPlan') || 'Current Plan'}</h4>
+                        <p className="text-gray-300">Status: {currentSubscription.status}</p>
+                        <p className="text-gray-300">Type: {currentSubscription.subscription_type}</p>
+                        {currentSubscription.current_period_end && (
+                          <p className="text-gray-300">
+                            Next billing: {new Date(currentSubscription.current_period_end).toLocaleDateString()}
+                          </p>
+                        )}
+                        <Button 
+                          onClick={handleManageSubscription}
+                          className="mt-4"
+                          size="sm"
+                        >
+                          {t('manageBilling') || 'Manage Billing'}
                         </Button>
                       </div>
                     ) : (
-                      <div>
-                        <h3 className="text-white font-medium text-lg mb-4">{t('availablePlans') || 'Available Plans'}</h3>
-                        <div className="grid gap-4">
+                      <div className="space-y-4">
+                        <p className="text-gray-400">{t('noActiveSubscription') || 'No active subscription'}</p>
+                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                           {availablePlans.map((plan) => (
-                            <div key={plan.id} className="p-6 bg-gray-800 rounded-sm">
-                              <h4 className="text-white font-bold text-xl">{plan.product_name}</h4>
-                              <p className="text-gray-400 mt-2">{plan.product_description}</p>
-                              <div className="flex justify-between items-center mt-4">
-                                <span className="text-2xl font-bold text-purple-300">
-                                  {plan.unit_amount 
-                                    ? `$${(plan.unit_amount / 100).toFixed(2)}${plan.recurring_interval ? `/${plan.recurring_interval}` : ''}`
-                                    : t('payAsYouWish') || 'Pay as you wish'
-                                  }
-                                </span>
-                                <Button onClick={() => handleSelectPlan(plan.id)}>
-                                  {t('selectPlan') || 'Select Plan'}
-                                </Button>
-                              </div>
+                            <div key={plan.id} className="p-4 bg-gray-800 border border-gray-700 rounded-sm">
+                              <h4 className="text-white font-medium mb-2">{plan.plan_name}</h4>
+                              {plan.plan_description && (
+                                <p className="text-gray-400 text-sm mb-3">{plan.plan_description}</p>
+                              )}
+                              <p className="text-white text-lg font-bold mb-2">
+                                ${(plan.unit_amount / 100).toFixed(2)}/{plan.billing_interval}
+                              </p>
+                              <Button 
+                                onClick={() => handleSelectPlan(plan.stripe_price_id)}
+                                size="sm"
+                                className="w-full"
+                              >
+                                {t('selectPlan') || 'Select Plan'}
+                              </Button>
                             </div>
                           ))}
                         </div>
@@ -535,40 +627,32 @@ export function UserSettings() {
                 {/* Account Section */}
                 {activeSection === 'account' && (
                   <div className="space-y-6">
-                    <div className="border-t border-gray-700/30 pt-6">
-                      <div className="bg-red-900/10 border border-red-800/30 rounded-sm p-6">
-                        <h3 className="text-red-400 font-medium mb-2 text-lg">{t('deleteAccount') || 'Delete Account'}</h3>
-                        <p className="text-gray-400 text-sm mb-4">
-                          {t('deleteAccountWarning') || 'This action cannot be undone. All your data will be permanently deleted.'}
-                        </p>
-                        
-                        <div className="space-y-4">
+                    <div className="p-4 bg-red-900/20 border border-red-700/50 rounded-sm">
+                      <h4 className="text-red-400 font-medium mb-2">{t('dangerZone') || 'Danger Zone'}</h4>
+                      <p className="text-gray-300 mb-4">
+                        {t('deleteAccountWarning') || 'This action cannot be undone. This will permanently delete your account and all associated data.'}
+                      </p>
+                      <div className="space-y-4">
+                        <div>
+                          <Label className="text-white">
+                            {t('confirmDelete') || 'Type "DELETE" to confirm'}
+                          </Label>
                           <Input
-                            placeholder={t('typeDeleteConfirm') || "Type 'DELETE' to confirm"}
                             value={deleteConfirmText}
                             onChange={(e) => setDeleteConfirmText(e.target.value)}
-                            className="bg-red-900/60 border-red-700 text-white"
+                            placeholder="DELETE"
+                            className="bg-gray-800 border-gray-600 text-white mt-2"
                           />
-                          
-                          <Button
-                            variant="destructive"
-                            onClick={handleDeleteAccount}
-                            disabled={deleteConfirmText !== 'DELETE' || isDeleting}
-                          >
-                            {t('deleteAccount') || 'Delete Account'}
-                          </Button>
                         </div>
+                        <Button
+                          variant="destructive"
+                          onClick={handleDeleteAccount}
+                          disabled={deleteConfirmText !== 'DELETE' || isDeleting}
+                        >
+                          {isDeleting ? t('deleting') || 'Deleting...' : t('deleteAccount') || 'Delete Account'}
+                        </Button>
                       </div>
                     </div>
-                  </div>
-                )}
-
-                {/* Save Button */}
-                {hasChanges && activeSection === 'profile' && (
-                  <div className="flex justify-end pt-6 border-t border-gray-700/30">
-                    <Button onClick={handleSave} disabled={isSaving}>
-                      {isSaving ? t('saving') || 'Saving...' : t('saveChanges') || 'Save Changes'}
-                    </Button>
                   </div>
                 )}
               </CardContent>
@@ -576,67 +660,6 @@ export function UserSettings() {
           </div>
         </div>
       </div>
-
-      {/* API Key Modal */}
-      {showAPIKeyModal && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 backdrop-blur-sm">
-          <div className="bg-gray-900 border border-gray-700 rounded-sm p-6 max-w-md w-full mx-4">
-            <h3 className="text-white font-bold text-xl mb-4">{t('addApiKey') || 'Add API Key'}</h3>
-            
-            <div className="space-y-4">
-              <div className="space-y-2">
-                <Label className="text-white">{t('provider') || 'Provider'}</Label>
-                <Select value={selectedProvider} onValueChange={setSelectedProvider}>
-                  <SelectTrigger className="bg-gray-800 border-gray-600 text-white">
-                    <SelectValue placeholder={t('selectProvider') || 'Select provider'} />
-                  </SelectTrigger>
-                  <SelectContent className="bg-gray-800 border-gray-600">
-                    {providers.map((provider) => (
-                      <SelectItem key={provider.id} value={provider.id} className="text-white">
-                        {provider.display_name}
-                      </SelectItem>
-                    ))}
-                  </SelectContent>
-                </Select>
-              </div>
-              
-              <div className="space-y-2">
-                <Label className="text-white">{t('apiKey') || 'API Key'}</Label>
-                <Input
-                  type="password"
-                  value={newAPIKey}
-                  onChange={(e) => setNewAPIKey(e.target.value)}
-                  placeholder={t('enterApiKey') || 'Enter your API key'}
-                  className="bg-gray-800 border-gray-600 text-white"
-                />
-              </div>
-              
-              <div className="space-y-2">
-                <Label className="text-white">{t('keyName') || 'Key Name'} ({t('optional') || 'Optional'})</Label>
-                <Input
-                  value={keyName}
-                  onChange={(e) => setKeyName(e.target.value)}
-                  placeholder={t('keyNamePlaceholder') || 'e.g., Production Key'}
-                  className="bg-gray-800 border-gray-600 text-white"
-                />
-              </div>
-              
-              {apiKeyError && (
-                <p className="text-red-400 text-sm">{apiKeyError}</p>
-              )}
-            </div>
-            
-            <div className="flex justify-end space-x-3 mt-6">
-              <Button variant="outline" onClick={() => setShowAPIKeyModal(false)}>
-                {t('cancel') || 'Cancel'}
-              </Button>
-              <Button onClick={handleAddAPIKey}>
-                {t('addKey') || 'Add Key'}
-              </Button>
-            </div>
-          </div>
-        </div>
-      )}
     </div>
   );
 }
