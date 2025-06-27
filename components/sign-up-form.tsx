@@ -31,6 +31,8 @@ export function SignUpForm({
   
   const t = useTranslations('auth.signUp');
 
+  const isFormValid = email && password && password.length >= 6 && password === repeatPassword;
+
   const handleSignUp = async (e: React.FormEvent) => {
     e.preventDefault();
     const supabase = createClient();
@@ -183,12 +185,16 @@ export function SignUpForm({
                   </div>
                 </div>
               )}
-              <Button 
-                type="submit" 
-                className="w-full h-12 text-lg font-semibold bg-gradient-to-r from-purple-800 to-purple-900 hover:from-purple-900 hover:to-purple-950 text-white border-0 rounded-sm shadow-lg hover:shadow-purple-800/25 transition-all duration-200" 
-                disabled={isLoading}
+              <Button
+                type="submit"
+                className="w-full bg-purple-600 hover:bg-purple-700"
+                disabled={isLoading || !isFormValid}
+                onClick={(e) => {
+                  e.preventDefault();
+                  void handleSignUp(e);
+                }}
               >
-                {isLoading ? t('creatingAccount') : t('joinButton')}
+                {isLoading ? t('creatingAccount') : t('signUp')}
               </Button>
             </div>
           </form>

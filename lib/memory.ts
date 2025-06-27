@@ -1,5 +1,6 @@
 // Memory System for AI Agents
 import { createClient } from '@/lib/supabase/client';
+import { SupabaseClient } from '@supabase/supabase-js';
 
 export interface Memory {
   id: string;
@@ -116,4 +117,36 @@ export class MemorySystem {
       last_accessed_at: new Date(data.last_accessed_at as string | number | Date)
     };
   }
+}
+
+export async function createMemory(
+  supabase: SupabaseClient,
+  userId: string,
+  contextData: { sessionId: string; query: string; response: string }
+): Promise<string | null> {
+  const memoryId = crypto.randomUUID();
+  
+  const { data, error } = await supabase
+    .from('memory_contexts')
+    .insert({
+      id: memoryId,
+      user_id: userId,
+      session_id: contextData.sessionId,
+      context_type: 'conversation',
+      context_data: {
+        query: contextData.query,
+        response: contextData.response
+      },
+      created_at: new Date().toISOString()
+    })
+    .select('id')
+    .single();
+
+  if (error) {
+    console.error('Error creating memory:', error);
+    return null;
+  }
+
+  const memoryData = data as { id: string } | null;
+  return memoryData?.id ?? null;
 } 

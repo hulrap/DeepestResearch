@@ -6,7 +6,7 @@ export async function createClient(isServiceRole = false) {
 
   const supabaseAnonKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!;
   const supabaseServiceRoleKey = process.env.SUPABASE_SERVICE_ROLE_KEY!;
-
+  
   const supabaseKey = isServiceRole ? supabaseServiceRoleKey : supabaseAnonKey;
 
   return createServerClient(
@@ -46,7 +46,7 @@ export async function createClient(isServiceRole = false) {
       }
     },
   );
-}
+};
 
 // Helper function to safely execute database operations with proper error handling
 export async function safeDbOperation<T>(
@@ -87,7 +87,7 @@ export async function safeDbOperation<T>(
 
 // Helper function to initialize user data on first login/signup
 export async function initializeUserData(userId: string) {
-  const supabase = await createClient(true); // Use service role for initialization
+  const supabase = await createClient(); // Use anon key for initialization
   
   try {
     // Check if user configuration already exists

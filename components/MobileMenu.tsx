@@ -23,6 +23,7 @@ export function MobileMenu({ user, userProfile, homeText, manifestText, dashboar
   const menuRef = useRef<HTMLDivElement>(null);
   const buttonRef = useRef<HTMLButtonElement>(null);
   const tAccessibility = useTranslations('accessibility');
+  const tNav = useTranslations('navigation');
 
   // Ensure component is mounted before running client-side code
   useEffect(() => {
@@ -145,98 +146,38 @@ export function MobileMenu({ user, userProfile, homeText, manifestText, dashboar
           <div className="absolute inset-0 animate-metallic-shine pointer-events-none rounded-sm"></div>
           
           <div className="relative z-10 p-4 space-y-3">
-            {user ? (
-              // Logged in user menu
-              <>
-                <div className="border-b border-gray-700/30 pb-3 mb-3">
-                  <p className="text-purple-400 text-sm font-medium truncate">
-                    {userProfile?.username || user.email?.split('@')[0] || 'User'}
-                  </p>
-                </div>
-                
-                {/* Home Link */}
-                <Link 
-                  href="/" 
-                  className="mobile-menu-item block w-full text-left px-4 py-3 text-white hover:text-purple-300 hover:bg-purple-400/10 rounded-sm transition-colors"
-                  onClick={closeMenu}
-                >
-                  {homeText}
-                </Link>
-                
-                {/* Manifest Link */}
-                <Link 
-                  href="/manifest" 
-                  className="mobile-menu-item block w-full text-left px-4 py-3 text-white hover:text-purple-300 hover:bg-purple-400/10 rounded-sm transition-colors"
-                  onClick={closeMenu}
-                >
-                  {manifestText}
-                </Link>
-                
-                {/* Dashboard Link */}
-                <Link 
-                  href="/protected" 
-                  className="dashboard-btn mobile-menu-item block w-full text-left px-4 py-3 text-white hover:text-purple-300 hover:bg-purple-400/10 rounded-sm transition-colors"
-                  onClick={closeMenu}
-                >
-                  <span className="btn-text">{dashboardText}</span>
-                </Link>
-                
-                {/* AI Agents Link */}
-                <Link 
-                  href="/dashboard" 
-                  className="agents-btn mobile-menu-item block w-full text-left px-4 py-3 text-white hover:text-purple-300 hover:bg-purple-400/10 rounded-sm transition-colors"
-                  onClick={closeMenu}
-                >
-                  <span className="btn-text">AI Agents</span>
-                </Link>
-                
-                {/* Logout Button */}
-                <div className="mobile-menu-item px-4 py-1 border-t border-gray-700/30 pt-3">
-                  <div onClick={closeMenu}>
-                    <LogoutButton />
+            <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+              <Link
+                href="/dashboard"
+                className="hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+                onClick={() => setIsOpen(false)}
+              >
+                {tNav('dashboard')}
+              </Link>
+              
+              <Link
+                href="/settings"
+                className="hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+                onClick={() => setIsOpen(false)}
+              >
+                {tNav('settings')}
+              </Link>
+              
+              {user ? (
+                <div className="border-t border-gray-700 pt-4">
+                  <div className="flex items-center px-5">
+                    <div className="ml-3">
+                      <div className="text-base font-medium leading-none text-white">
+                        {user.email ?? 'User'}
+                      </div>
+                      <div className="text-sm font-medium leading-none text-gray-400">
+                        {user.user_metadata?.full_name ?? user.email ?? 'User'}
+                      </div>
+                    </div>
                   </div>
                 </div>
-              </>
-            ) : (
-              // Guest user menu
-              <>
-                {/* Home Link */}
-                <Link 
-                  href="/" 
-                  className="mobile-menu-item block w-full text-left px-4 py-3 text-white hover:text-purple-300 hover:bg-purple-400/10 rounded-sm transition-colors"
-                  onClick={closeMenu}
-                >
-                  {homeText}
-                </Link>
-                
-                {/* Manifest Link */}
-                <Link 
-                  href="/manifest" 
-                  className="mobile-menu-item block w-full text-left px-4 py-3 text-white hover:text-purple-300 hover:bg-purple-400/10 rounded-sm transition-colors"
-                  onClick={closeMenu}
-                >
-                  {manifestText}
-                </Link>
-                
-                {/* Sign In Link */}
-                <Link 
-                  href="/auth/login" 
-                  className="mobile-menu-item block w-full text-left px-4 py-3 text-white hover:text-purple-300 hover:bg-purple-400/10 rounded-sm transition-colors border-t border-gray-700/30"
-                  onClick={closeMenu}
-                >
-                  {signInText}
-                </Link>
-                
-                {/* Sign Up Link */}
-                <Link 
-                  href="/auth/sign-up" 
-                  className="mobile-menu-item block w-full text-left px-4 py-3 text-purple-400 hover:text-purple-300 hover:bg-purple-400/10 rounded-sm transition-colors font-medium"
-                  onClick={closeMenu}
-                >
-                  {signUpText}
-                </Link>
-              </>
-            )}
+              ) : null}
+            </div>
           </div>
         </div>
       </div>

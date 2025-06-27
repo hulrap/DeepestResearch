@@ -66,7 +66,7 @@ export function ClientAuthGuard({
           
           // Handle login
           if (event === 'SIGNED_IN' && !requireAuth) {
-            router.refresh();
+            void router.refresh();
           }
         }
       }

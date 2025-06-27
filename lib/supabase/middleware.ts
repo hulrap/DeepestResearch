@@ -21,17 +21,21 @@ export async function updateSession(request: NextRequest) {
           return request.cookies.getAll();
         },
         setAll(cookiesToSet) {
-          cookiesToSet.forEach(({ name, value }) =>
-            request.cookies.set(name, value),
-          );
-          supabaseResponse = NextResponse.next({
-            request,
+          cookiesToSet.forEach(({ name, value, options }) => {
+            request.cookies.set(name, value);
+            supabaseResponse.cookies.set({
+              name,
+              value,
+              ...options,
+            });
           });
-          cookiesToSet.forEach(({ name, value, options }) =>
-            supabaseResponse.cookies.set(name, value, options),
-          );
         },
       },
+      global: {
+        headers: {
+          'x-application-name': process.env.NEXT_PUBLIC_APP_NAME ?? 'deepest-research'
+        }
+      }
     },
   );
 
@@ -229,11 +233,23 @@ export async function updateSession(request: NextRequest) {
   supabaseResponse.headers.set('X-Frame-Options', 'DENY');
   supabaseResponse.headers.set('X-Content-Type-Options', 'nosniff');
   supabaseResponse.headers.set('Referrer-Policy', 'strict-origin-when-cross-origin');
+  supabaseResponse.headers.set('X-XSS-Protection', '1; mode=block');
+  supabaseResponse.headers.set(
+    'Permissions-Policy',
+    'camera=(), microphone=(), geolocation=()'
+  );
   
   // Add user context headers for logged-in users (useful for debugging)
   if (user && !authError) {
     supabaseResponse.headers.set('X-User-Id', user.id);
     supabaseResponse.headers.set('X-User-Email', user.email || 'unknown');
+  }
+
+  // Cache control for static assets
+  if (pathname.startsWith('/_next/static/')) {
+    supabaseResponse.headers.set('Cache-Control', 'public, max-age=31536000, immutable');
+  } else if (pathname.startsWith('/api/')) {
+    supabaseResponse.headers.set('Cache-Control', 'no-store, no-cache, must-revalidate');
   }
 
   // IMPORTANT: You *must* return the supabaseResponse object as it is.

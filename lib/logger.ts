@@ -13,7 +13,7 @@ import {
 
 // Create the base logger instance
 const logger = pino({
-  level: process.env.LOG_LEVEL || 'info',
+  level: process.env.LOG_LEVEL ?? 'info',
   formatters: {
     level: (label) => {
       return { level: label.toUpperCase() };
@@ -36,15 +36,13 @@ export const createRequestContext = (req: NextRequest, additionalData?: BaseLogD
   const url = req.url;
   const method = req.method;
   const userAgent = req.headers.get('user-agent');
-  const ip = req.headers.get('x-forwarded-for') || req.headers.get('x-real-ip') || 'unknown';
+  const ip = req.headers.get('x-forwarded-for') ?? req.headers.get('x-real-ip') ?? 'unknown';
   
   return {
-    request: {
-      method,
-      url,
-      userAgent,
-      ip,
-    },
+    method,
+    url,
+    userAgent,
+    ip,
     ...additionalData,
   };
 };
@@ -56,9 +54,15 @@ export const apiLogger = {
   },
   
   error: (req: NextRequest, message: string, error?: Error | LoggableError, data?: BaseLogData) => {
-    const errorData = error instanceof Error 
-      ? { error: { message: error.message, stack: error.stack, name: error.name } }
-      : { error };
+    const errorData: BaseLogData = error instanceof Error 
+      ? { 
+          error: { 
+            message: error.message, 
+            stack: error.stack, 
+            name: error.name 
+          } as Record<string, unknown>
+        }
+      : error ? { error: error as unknown as Record<string, unknown> } : {};
     
     logger.error(createRequestContext(req, { ...errorData, ...data }), message);
   },

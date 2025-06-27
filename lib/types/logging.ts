@@ -134,7 +134,7 @@ export interface NavigationData extends BaseLogData {
 export interface FormData extends BaseLogData {
   formName: string;
   success: boolean;
-  fields?: string[];
+  fields?: string;
   validationErrors?: Record<string, string>;
   submissionTime?: number;
 }

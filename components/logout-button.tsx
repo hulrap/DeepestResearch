@@ -72,24 +72,30 @@ export function LogoutButton() {
 
   return (
     <div className="flex flex-col items-center gap-2">
-      <Button 
-        onClick={logout}
-        disabled={isLoggingOut}
-        variant="outline"
-        className="border-purple-800/50 text-purple-400 hover:bg-purple-800/20 hover:text-purple-300 hover:border-purple-400 transition-all duration-200 i18n-button disabled:opacity-50 disabled:cursor-not-allowed"
-      >
-        {isLoggingOut ? (
-          <div className="flex items-center gap-2">
-            <div className="relative w-4 h-4 flex items-center justify-center">
-              <div className="triangle-loader-outer w-4 h-4 border-l-[8px] border-r-[8px] border-b-[16px] border-b-purple-800/50 absolute"></div>
-              <div className="triangle-loader-inner w-3 h-3 border-l-[6px] border-r-[6px] border-b-[12px] border-b-purple-800/50 absolute top-[1px] left-[1px]"></div>
+      <form action={logout}>
+        <Button
+          type="submit"
+          variant={"outline"}
+          onClick={(e) => {
+            e.preventDefault();
+            void logout();
+          }}
+          disabled={isLoggingOut}
+          className="border-purple-800/50 text-purple-400 hover:bg-purple-800/20 hover:text-purple-300 hover:border-purple-400 transition-all duration-200 i18n-button disabled:opacity-50 disabled:cursor-not-allowed"
+        >
+          {isLoggingOut ? (
+            <div className="flex items-center gap-2">
+              <div className="relative w-4 h-4 flex items-center justify-center">
+                <div className="triangle-loader-outer w-4 h-4 border-l-[8px] border-r-[8px] border-b-[16px] border-b-purple-800/50 absolute"></div>
+                <div className="triangle-loader-inner w-3 h-3 border-l-[6px] border-r-[6px] border-b-[12px] border-b-purple-800/50 absolute top-[1px] left-[1px]"></div>
+              </div>
+              <span>{tAuth('signingOut')}</span>
             </div>
-            <span>{tAuth('signingOut')}</span>
-          </div>
-        ) : (
-          t('signOut')
-        )}
-      </Button>
+          ) : (
+            t('signOut')
+          )}
+        </Button>
+      </form>
       
       {error && (
         <div className="text-red-400 text-xs text-center max-w-xs">

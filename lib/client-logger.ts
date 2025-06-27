@@ -13,38 +13,38 @@ import {
 
 // Client-side logger for React components
 export const clientLogger = {
-  info: (message: string, extra?: ClientLogData) => {
-    if (process.env.NODE_ENV === 'development') {
-      console.log(`[INFO] ${message}`, extra || '');
+  info: (message: string, data?: Record<string, unknown>) => {
+    if (typeof window !== 'undefined' && process.env.NODE_ENV === 'development') {
+      console.log(`[CLIENT] ${message}`, data ?? {});
     }
     Sentry.addBreadcrumb({
       message,
       level: 'info',
-      data: extra,
+      data: data,
     });
   },
 
-  warn: (message: string, extra?: ClientLogData) => {
-    if (process.env.NODE_ENV === 'development') {
-      console.warn(`[WARN] ${message}`, extra || '');
+  warn: (message: string, data?: Record<string, unknown>) => {
+    if (typeof window !== 'undefined' && process.env.NODE_ENV === 'development') {
+      console.warn(`[CLIENT WARNING] ${message}`, data ?? {});
     }
     Sentry.addBreadcrumb({
       message,
       level: 'warning',
-      data: extra,
+      data: data,
     });
     Sentry.captureMessage(message, 'warning');
   },
 
-  error: (message: string, error?: Error | LoggableError, extra?: ClientLogData) => {
-    if (process.env.NODE_ENV === 'development') {
-      console.error(`[ERROR] ${message}`, error || '', extra || '');
+  error: (message: string, error?: Error | unknown, data?: Record<string, unknown>) => {
+    if (typeof window !== 'undefined') {
+      console.error(`[CLIENT ERROR] ${message}`, error ?? 'Unknown error', data ?? {});
     }
     
     Sentry.withScope((scope) => {
-      if (extra) {
-        Object.keys(extra).forEach(key => {
-          scope.setExtra(key, extra[key]);
+      if (data) {
+        Object.keys(data).forEach(key => {
+          scope.setExtra(key, data[key]);
         });
       }
       
@@ -56,15 +56,35 @@ export const clientLogger = {
     });
   },
 
-  debug: (message: string, extra?: ClientLogData) => {
-    if (process.env.NODE_ENV === 'development') {
-      console.debug(`[DEBUG] ${message}`, extra || '');
+  debug: (message: string, data?: Record<string, unknown>) => {
+    if (typeof window !== 'undefined' && process.env.NODE_ENV === 'development') {
+      console.debug(`[CLIENT DEBUG] ${message}`, data ?? {});
     }
     Sentry.addBreadcrumb({
       message,
       level: 'debug',
-      data: extra,
+      data: data,
     });
+  },
+
+  // Component lifecycle logging
+  componentMount: (componentName: string, props?: Record<string, unknown>) => {
+    if (typeof window !== 'undefined' && process.env.NODE_ENV === 'development') {
+      console.log(`[COMPONENT] ${componentName} mounted`, props ?? {});
+    }
+  },
+
+  componentUnmount: (componentName: string) => {
+    if (typeof window !== 'undefined' && process.env.NODE_ENV === 'development') {
+      console.log(`[COMPONENT] ${componentName} unmounted`);
+    }
+  },
+
+  // User action logging
+  userAction: (action: string, context?: string, data?: Record<string, unknown>) => {
+    if (typeof window !== 'undefined' && process.env.NODE_ENV === 'development') {
+      console.log(`[USER ACTION] ${action}${context ? ` in ${context}` : ''}`, data ?? {});
+    }
   },
 };
 

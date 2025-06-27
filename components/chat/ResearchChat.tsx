@@ -117,7 +117,7 @@ export function ResearchChat() {
     if (!userConfiguration) return true;
     
     const totalCost = messages.reduce((sum, msg) => 
-      sum + (msg.usage?.total_cost_usd || 0), 0
+      sum + (msg.usage?.total_cost_usd ?? 0), 0
     );
     
     return totalCost < userConfiguration.effective_daily_cost_limit;
@@ -169,62 +169,57 @@ export function ResearchChat() {
         throw new Error('Failed to get response');
       }
 
-      const reader = response.body?.getReader();
+      if (!response.body) {
+        throw new Error('No response body');
+      }
+
+      const reader = response.body.getReader();
       const decoder = new TextDecoder();
+      let buffer = '';
 
-      if (reader) {
-        while (true) {
-          const { done, value } = await reader.read();
-          if (done) break;
+      while (true) {
+        const { value, done } = await reader.read();
+        if (done) break;
 
-          const chunk = decoder.decode(value);
-          const lines = chunk.split('\n');
+        buffer += decoder.decode(value, { stream: true });
+        const lines = buffer.split('\n');
+        buffer = lines.pop() ?? '';
 
-          for (const line of lines) {
-            if (line.startsWith('data: ')) {
-              const data = line.slice(6);
-              if (data === '[DONE]') {
-                await refreshAll(); // Refresh usage data
-                break;
+        for (const line of lines) {
+          if (line.startsWith('data: ')) {
+            try {
+              const data = JSON.parse(line.slice(6));
+              
+              if (typeof data?.type === 'string' && typeof data?.content === 'string') {
+                setMessages(prev => prev.map(msg => 
+                  msg.id === assistantMessage.id 
+                    ? { ...msg, content: msg.content + data.content }
+                    : msg
+                ));
+              } else if (typeof data?.type === 'string' && data.type === 'step' && typeof data?.step === 'object') {
+                // Handle step updates - could add step state here if needed
+              } else if (typeof data?.type === 'string' && data.type === 'usage' && typeof data?.usage === 'object') {
+                setMessages(prev => prev.map(msg => 
+                  msg.id === assistantMessage.id 
+                    ? { ...msg, usage: data.usage as UsageMetrics }
+                    : msg
+                ));
               }
-              try {
-                const parsed = JSON.parse(data);
-                
-                if (parsed.type === 'content' && parsed.content) {
-                  // Handle content updates
-                  setMessages(prev => 
-                    prev.map(msg => 
-                      msg.id === assistantMessage.id 
-                        ? { ...msg, content: msg.content + parsed.content }
-                        : msg
-                    )
-                  );
-                } else if (parsed.type === 'usage' && parsed.usage) {
-                  // Handle usage data with new format
-                  setMessages(prev => 
-                    prev.map(msg => 
-                      msg.id === assistantMessage.id 
-                        ? { ...msg, usage: parsed.usage }
-                        : msg
-                    )
-                  );
-                }
-              } catch {
-                // Ignore parsing errors for malformed chunks
-              }
+            } catch (error) {
+              console.error('Error parsing streaming data:', error);
             }
           }
         }
       }
+
+      void refreshAll();
     } catch (error) {
       console.error('Error:', error);
-      setMessages(prev => 
-        prev.map(msg => 
-          msg.id === assistantMessage.id 
-            ? { ...msg, content: 'Sorry, there was an error processing your request. Please check your API keys and try again.' }
-            : msg
-        )
-      );
+      setMessages(prev => prev.map(msg => 
+        msg.id === assistantMessage.id 
+          ? { ...msg, content: 'Sorry, there was an error processing your request.' }
+          : msg
+      ));
     } finally {
       setIsLoading(false);
     }

@@ -9,6 +9,55 @@ type SupabaseClient = Awaited<ReturnType<typeof createClient>>;
 // IMPORTANT! Set the runtime to edge
 export const runtime = 'edge';
 
+// Database row types
+interface UserConfig {
+  user_id: string;
+  effective_daily_cost_limit: number;
+  [key: string]: unknown;
+}
+
+interface UsageLimits {
+  user_id: string;
+  current_daily_usage: number;
+  [key: string]: unknown;
+}
+
+interface UserAPIKey {
+  id: string;
+  user_id: string;
+  provider_id: string;
+  ai_providers: {
+    name: string;
+    display_name: string;
+    base_url: string;
+    auth_type: string;
+  };
+  key_name: string;
+  key_hash: string;
+  custom_rate_limits: Record<string, unknown> | null;
+  daily_usage_limit: number | null;
+  monthly_usage_limit: number | null;
+  is_active: boolean;
+  is_verified: boolean;
+  verification_attempts: number;
+  last_verification_at: string | null;
+  last_used_at: string | null;
+  usage_count: number;
+  total_cost_usd: number;
+  total_tokens: number;
+  expires_at: string | null;
+  auto_rotate_enabled: boolean;
+  usage_alerts_enabled: boolean;
+  created_at: string;
+  updated_at: string;
+}
+
+interface AIModel {
+  id: string;
+  provider_id: string;
+  [key: string]: unknown;
+}
+
 interface UsageMetrics {
   total_cost_usd: number;
   total_input_tokens: number;
@@ -49,24 +98,30 @@ export async function POST(req: Request) {
       return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
     }
 
-    const { prompt, session_id, template_id } = await req.json();
+    const body = await req.json();
+    const prompt = typeof body?.prompt === 'string' ? body.prompt : '';
+    const session_id = typeof body?.session_id === 'string' ? body.session_id : null;
+    const template_id = typeof body?.template_id === 'string' ? body.template_id : null;
 
-    if (!prompt?.trim()) {
+    if (!prompt.trim()) {
       return NextResponse.json({ error: 'Prompt is required' }, { status: 400 });
     }
 
     // Load user configuration and limits
-    const { data: userConfig } = await supabase
+    const { data: userConfigData } = await supabase
       .from('user_configuration')
       .select('*')
       .eq('user_id', user.id)
       .single();
 
-    const { data: usageLimits } = await supabase
+    const { data: usageLimitsData } = await supabase
       .from('user_usage_limits')
       .select('*')
       .eq('user_id', user.id)
       .single();
+
+    const userConfig = userConfigData as UserConfig | null;
+    const usageLimits = usageLimitsData as UsageLimits | null;
 
     // Check daily limits before proceeding
     if (usageLimits && userConfig) {
@@ -83,7 +138,7 @@ export async function POST(req: Request) {
     }
 
     // Get user's AI provider configurations and API keys
-    const { data: userAPIKeys } = await supabase
+    const { data: userAPIKeysData } = await supabase
       .from('user_api_keys')
       .select(`
         *,
@@ -98,7 +153,9 @@ export async function POST(req: Request) {
       .eq('is_active', true)
       .eq('is_verified', true);
 
-    if (!userAPIKeys || userAPIKeys.length === 0) {
+    const userAPIKeys = (userAPIKeysData as UserAPIKey[] | null) ?? [];
+
+    if (userAPIKeys.length === 0) {
       return NextResponse.json({ 
         error: 'No verified API keys found. Please add your AI provider API keys in settings.'
       }, { status: 400 });
@@ -106,21 +163,23 @@ export async function POST(req: Request) {
 
     // Get available models for the user's providers
     const providerIds = userAPIKeys.map(key => key.provider_id);
-    const { data: availableModels } = await supabase
+    const { data: availableModelsData } = await supabase
       .from('ai_models')
       .select('*')
       .in('provider_id', providerIds)
       .eq('is_active', true)
       .eq('is_deprecated', false);
 
-    if (!availableModels || availableModels.length === 0) {
+    const availableModels = (availableModelsData as AIModel[] | null) ?? [];
+
+    if (availableModels.length === 0) {
       return NextResponse.json({ 
         error: 'No available AI models found for your configured providers.'
       }, { status: 400 });
     }
 
     // Create or update workflow session
-    const workflowSessionId = session_id || `session_${Date.now()}_${user.id}`;
+    const workflowSessionId = session_id ?? `session_${Date.now()}_${user.id}`;
     const totalSteps = 5; // Define workflow steps
     
     const { error: sessionError } = await supabase
@@ -128,7 +187,7 @@ export async function POST(req: Request) {
       .upsert({
         id: workflowSessionId,
         user_id: user.id,
-        template_id: template_id || null,
+        template_id: template_id,
         title: `Research: ${prompt.slice(0, 100)}...`,
         description: 'Multi-agent deep research workflow',
         status: 'running',
@@ -146,7 +205,7 @@ export async function POST(req: Request) {
         metadata: { 
           api_version: '2024.1',
           workflow_type: 'deep_research',
-          user_agent: req.headers.get('user-agent') || 'unknown'
+          user_agent: req.headers.get('user-agent') ?? 'unknown'
         }
       })
       .select()
@@ -205,17 +264,17 @@ export async function POST(req: Request) {
             });
 
             const geminiResult = await geminiModel.generateContent(prompt);
-            const geminiResponse = await geminiResult.response;
+            const geminiResponse = geminiResult.response;
             primaryResearch = geminiResponse.text();
             const latency = Date.now() - startTime;
 
             // Track Gemini usage
             const geminiUsage = geminiResponse.usageMetadata;
             if (geminiUsage) {
-              const cost = calculateCost('google', 'gemini-1.5-flash', geminiUsage.promptTokenCount || 0, geminiUsage.candidatesTokenCount || 0);
+              const cost = calculateCost('google', 'gemini-1.5-flash', geminiUsage.promptTokenCount ?? 0, geminiUsage.candidatesTokenCount ?? 0);
               updateUsageMetrics(totalUsage, 'google', 'gemini-1.5-flash', {
-                input_tokens: geminiUsage.promptTokenCount || 0,
-                output_tokens: geminiUsage.candidatesTokenCount || 0,
+                input_tokens: geminiUsage.promptTokenCount ?? 0,
+                output_tokens: geminiUsage.candidatesTokenCount ?? 0,
                 cost,
                 requests: 1,
                 latency
@@ -258,7 +317,7 @@ export async function POST(req: Request) {
                 openaiUsageData = chunk.usage;
               }
               
-              const content = chunk.choices[0]?.delta?.content || '';
+              const content = chunk.choices[0]?.delta?.content ?? '';
               if (content) {
                 const data = encoder.encode(`data: ${JSON.stringify({ 
                   type: 'content',
@@ -272,10 +331,10 @@ export async function POST(req: Request) {
 
             // Track OpenAI usage
             if (openaiUsageData) {
-              const cost = calculateCost('openai', 'gpt-4-turbo', openaiUsageData.prompt_tokens || 0, openaiUsageData.completion_tokens || 0);
+              const cost = calculateCost('openai', 'gpt-4-turbo', openaiUsageData.prompt_tokens ?? 0, openaiUsageData.completion_tokens ?? 0);
               updateUsageMetrics(totalUsage, 'openai', 'gpt-4-turbo', {
-                input_tokens: openaiUsageData.prompt_tokens || 0,
-                output_tokens: openaiUsageData.completion_tokens || 0,
+                input_tokens: openaiUsageData.prompt_tokens ?? 0,
+                output_tokens: openaiUsageData.completion_tokens ?? 0,
                 cost,
                 requests: 1,
                 latency
@@ -368,17 +427,20 @@ export async function POST(req: Request) {
 }
 
 // Helper functions
-async function sendStep(controller: ReadableStreamDefaultController, encoder: TextEncoder, step: WorkflowStep) {
-  const data = encoder.encode(`data: ${JSON.stringify({ 
-    type: 'step',
-    step: {
-      number: step.number,
-      name: step.name,
-      status: step.status,
-      description: step.description
-    }
-  })}\n\n`);
-  controller.enqueue(data);
+function sendStep(controller: ReadableStreamDefaultController, encoder: TextEncoder, step: WorkflowStep): Promise<void> {
+  return new Promise((resolve) => {
+    const data = encoder.encode(`data: ${JSON.stringify({ 
+      type: 'step',
+      step: {
+        number: step.number,
+        name: step.name,
+        status: step.status,
+        description: step.description
+      }
+    })}\n\n`);
+    controller.enqueue(data);
+    resolve();
+  });
 }
 
 async function updateWorkflowProgress(supabase: SupabaseClient, sessionId: string, currentStep: number, progressPercentage: number) {

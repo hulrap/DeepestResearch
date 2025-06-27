@@ -141,12 +141,16 @@ export function LoginForm({
                   <p className="text-sm text-red-400">{error}</p>
                 </div>
               )}
-              <Button 
-                type="submit" 
-                className="w-full h-12 text-lg font-semibold bg-gradient-to-r from-purple-800 to-purple-900 hover:from-purple-900 hover:to-purple-950 text-white border-0 rounded-sm shadow-lg hover:shadow-purple-800/25 transition-all duration-200 disabled:opacity-60 disabled:cursor-not-allowed disabled:hover:from-purple-800 disabled:hover:to-purple-900 active:scale-95" 
-                disabled={isLoading || !email.trim() || !password.trim()}
+              <Button
+                type="submit"
+                className="w-full bg-purple-600 hover:bg-purple-700"
+                disabled={isLoading}
+                onClick={(e) => {
+                  e.preventDefault();
+                  void handleLogin(e);
+                }}
               >
-                {t('signInButton')}
+                {isLoading ? t('signingIn') : t('signIn')}
               </Button>
             </div>
           </form>

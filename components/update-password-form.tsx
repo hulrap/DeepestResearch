@@ -74,8 +74,16 @@ export function UpdatePasswordForm({
                 />
               </div>
               {error && <p className="text-sm text-red-500">{error}</p>}
-              <Button type="submit" className="w-full" disabled={isLoading}>
-                {isLoading ? t('saving') : t('saveNewPassword')}
+              <Button
+                type="submit"
+                className="w-full bg-purple-600 hover:bg-purple-700"
+                disabled={isLoading}
+                onClick={(e) => {
+                  e.preventDefault();
+                  void handleForgotPassword(e);
+                }}
+              >
+                {isLoading ? t('updating') : t('updatePassword')}
               </Button>
             </div>
           </form>

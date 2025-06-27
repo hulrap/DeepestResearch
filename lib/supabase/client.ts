@@ -14,7 +14,7 @@ export function createClient() {
       },
       global: {
         headers: {
-          'X-Client-Info': 'deepest-research-web-app'
+          'X-Client-Info': process.env.NEXT_PUBLIC_APP_NAME ?? 'deepest-research-web-app'
         }
       },
       db: {

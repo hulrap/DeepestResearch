@@ -5,6 +5,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
+    "lint:types": "tsc --noEmit",
+    "lint:all": "npm run lint && npm run lint:types",
     "postinstall": "patch-package",
     "sync-stripe": "node sync-stripe-pricing.js"
   },

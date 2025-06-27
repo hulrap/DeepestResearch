@@ -2,14 +2,33 @@
 // Provides real-time spending limits and cost controls
 
 import { createClient } from '@/lib/supabase/server';
+import { SupabaseClient } from '@supabase/supabase-js';
 
 export interface UsageLimits {
+  user_id: string;
+  current_daily_usage: number;
+  current_monthly_usage: number;
   daily_limit_usd: number;
   monthly_limit_usd: number;
   hard_stop_enabled: boolean;
   warning_threshold: number; // Percentage (0.8 = 80%)
   notification_enabled: boolean;
   auto_pause_workflows: boolean;
+  last_reset_date: string;
+  created_at: string;
+  updated_at: string;
+}
+
+interface UsageSummary {
+  id: string;
+  user_id: string;
+  period_type: string;
+  period_start: string;
+  period_end: string;
+  total_cost_usd: number;
+  total_requests: number;
+  total_tokens: number;
+  [key: string]: unknown;
 }
 
 export interface UsageStats {
@@ -148,4 +167,21 @@ export class UsageMonitor {
       auto_pause_workflows: true
     };
   }
+}
+
+export async function getUserUsageData(supabase: SupabaseClient, userId: string) {
+  const { data, error } = await supabase
+    .from('usage_summaries')
+    .select('*')
+    .eq('user_id', userId)
+    .order('period_start', { ascending: false })
+    .limit(30);
+
+  if (error) {
+    console.error('Error fetching usage data:', error);
+    return null;
+  }
+
+  const usageData = data as UsageSummary[] | null;
+  return usageData ?? [];
 } 
