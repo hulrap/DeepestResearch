@@ -181,6 +181,15 @@ export function MobileMenu({ user, userProfile, homeText, manifestText, dashboar
                   <span className="btn-text">{dashboardText}</span>
                 </Link>
                 
+                {/* AI Agents Link */}
+                <Link 
+                  href="/dashboard" 
+                  className="agents-btn mobile-menu-item block w-full text-left px-4 py-3 text-white hover:text-purple-300 hover:bg-purple-400/10 rounded-sm transition-colors"
+                  onClick={closeMenu}
+                >
+                  <span className="btn-text">AI Agents</span>
+                </Link>
+                
                 {/* Logout Button */}
                 <div className="mobile-menu-item px-4 py-1 border-t border-gray-700/30 pt-3">
                   <div onClick={closeMenu}>

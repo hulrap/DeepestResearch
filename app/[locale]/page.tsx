@@ -185,6 +185,13 @@ function UserHeader({ user, userProfile, tNav, tHome }: {
         {tNav('manifest')}
       </NavigationButton>
       <NavigationButton 
+        href="/dashboard"
+        variant="outline"
+        className="agents-btn border-blue-800 text-blue-400 hover:bg-blue-800 hover:text-white i18n-button rounded-sm"
+      >
+        <span className="btn-text">{tNav('agents')}</span>
+      </NavigationButton>
+      <NavigationButton 
         href="/protected"
         variant="outline"
         className="dashboard-btn border-blue-800 text-blue-400 hover:bg-blue-800 hover:text-white i18n-button rounded-sm"
