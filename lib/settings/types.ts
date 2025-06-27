@@ -1,114 +1,5 @@
-// Dynamic Settings Type System
-// This allows adding new settings without breaking existing code
-
-export type SettingType = 
-  | 'text' 
-  | 'textarea' 
-  | 'select' 
-  | 'multiselect' 
-  | 'searchable' 
-  | 'language' 
-  | 'country' 
-  | 'city' 
-  | 'tags'
-  | 'checkbox'
-  | 'radio';
-
-export interface SettingOption {
-  readonly value: string;
-  readonly label: string;
-  readonly flag?: string; // For countries/languages
-  readonly description?: string;
-}
-
-export interface SettingDefinition {
-  readonly key: string;
-  readonly type: SettingType;
-  readonly label: string;
-  readonly description?: string;
-  readonly placeholder?: string;
-  readonly required?: boolean;
-  readonly maxLength?: number;
-  readonly options?: readonly SettingOption[];
-  readonly searchable?: boolean;
-  readonly category: SettingCategory;
-  readonly icon?: string;
-}
-
-export type SettingCategory = 
-  | 'personal'
-  | 'professional'
-  | 'location'
-  | 'preferences'
-  | 'contact'
-  | 'participation'
-  | 'account';
-
-export type ExperienceLevel = 
-  | 'intern'
-  | 'entry'
-  | 'mid'
-  | 'senior'
-  | 'lead'
-  | 'executive';
-
-export type ParticipationRole = 
-  | 'member'
-  | 'expert'
-  | 'activist'
-  | 'supporter';
-
-export interface UserPreferences {
-  // Personal Information
-  bio?: string;
-  website?: string;
-  contact_comment?: string;
-  professional_comment?: string;
-  
-  // Professional Information
-  profession?: string;
-  organization?: string;
-  experience_level?: ExperienceLevel;
-  skills?: string[];
-  
-  // Location
-  country?: string;
-  city?: string;
-  region?: string;
-  
-  // Preferences
-  language?: string;
-  timezone?: string;
-  
-  // Social Links
-  social_links?: Record<string, string>;
-  
-  // Custom fields for future expansion
-  [key: string]: unknown;
-}
-
-export interface ConsentData {
-  direct_contact: boolean;
-  newsletter: boolean;
-  timestamps: {
-    direct_contact?: {
-      consent_given: boolean;
-      timestamp: string;
-    };
-    newsletter?: {
-      consent_given: boolean;
-      timestamp: string;
-    };
-  };
-}
-
-export interface FieldChangeLimit {
-  can_change: boolean;
-  error_message?: string;
-  daily_changes: number;
-  total_changes: number;
-  last_change?: string;
-}
+// AI Platform User Settings Types
+// Aligned with database-setup.sql schema
 
 export interface UserProfile {
   readonly id: string;
@@ -116,75 +7,127 @@ export interface UserProfile {
   readonly username?: string;
   readonly first_name?: string;
   readonly last_name?: string;
-  readonly full_name?: string;
   readonly avatar_url?: string;
-  readonly phone?: string;
-  readonly participation_role?: ParticipationRole[];
-  readonly organization_representative?: boolean;
-  readonly preferences: UserPreferences;
   readonly created_at: string;
   readonly updated_at: string;
-  readonly direct_contact_consent?: boolean;
-  readonly newsletter_consent?: boolean;
-  readonly consent_timestamps?: Record<string, unknown>;
 }
 
-export interface SettingField {
-  readonly key: keyof UserPreferences;
-  readonly category: SettingCategory;
-  readonly type: 'text' | 'textarea' | 'select' | 'multiselect' | 'switch';
-  readonly required?: boolean;
-  readonly maxLength?: number;
-  readonly options?: readonly string[];
-  readonly searchable?: boolean;
+export interface AIProvider {
+  readonly id: string;
+  readonly name: string;
+  readonly display_name: string;
+  readonly base_url: string;
+  readonly auth_type: string;
+  readonly is_active: boolean;
+  readonly rate_limits?: {
+    requests_per_minute?: number;
+    tokens_per_minute?: number;
+  };
 }
 
-export interface SettingUpdatePayload {
-  readonly key: string;
-  readonly value: unknown;
+export interface AIModel {
+  readonly id: string;
+  readonly provider_id: string;
+  readonly model_id: string;
+  readonly display_name: string;
+  readonly description?: string;
+  readonly capabilities: string[];
+  readonly pricing?: {
+    input_cost_per_1k?: number;
+    output_cost_per_1k?: number;
+  };
+  readonly context_window?: number;
+  readonly max_output_tokens?: number;
+  readonly is_active: boolean;
+  readonly performance_score?: number;
+  readonly speed_score?: number;
+  readonly cost_efficiency?: number;
+  readonly best_use_cases?: string[];
 }
 
-export type SettingsRegistry = Record<string, SettingDefinition>;
+export interface UserAPIKey {
+  readonly id: string;
+  readonly user_id: string;
+  readonly provider_id: string;
+  readonly provider_name: string;
+  readonly provider_display_name: string;
+  readonly key_name?: string;
+  readonly is_active: boolean;
+  readonly created_at: string;
+  readonly updated_at: string;
+}
 
-// All supported languages
-export type SupportedLanguage = 
-  | 'en' | 'de' | 'fr' | 'es' | 'it' | 'pt' 
-  | 'nl' | 'pl' | 'ru' | 'ja' | 'ko' | 'zh' 
-  | 'ar' | 'hi';
+export interface UsageLimits {
+  readonly id: string;
+  readonly user_id: string;
+  readonly daily_limit_usd: number;
+  readonly monthly_limit_usd: number;
+  readonly hard_stop_enabled: boolean;
+  readonly warning_threshold: number;
+  readonly reset_day: number;
+  readonly created_at: string;
+  readonly updated_at: string;
+}
 
-// Settings form data
-export interface SettingsFormData {
-  readonly personal: {
-    readonly username: string;
-    readonly first_name: string;
-    readonly last_name: string;
-    readonly bio: string;
-    readonly website: string;
-  };
-  readonly contact: {
-    readonly phone: string;
-    readonly contact_comment: string;
-    readonly direct_contact_consent: boolean;
-    readonly newsletter_consent: boolean;
-  };
-  readonly professional: {
-    readonly profession: string;
-    readonly organization: string;
-    readonly experience_level: ExperienceLevel;
-    readonly skills: readonly string[];
-    readonly professional_comment: string;
-    readonly organization_representative: boolean;
-  };
-  readonly participation: {
-    readonly roles: ParticipationRole[];
-  };
-  readonly location: {
-    readonly country: string;
-    readonly city: string;
-    readonly region: string;
-  };
-  readonly preferences: {
-    readonly language: SupportedLanguage;
-    readonly timezone: string;
-  };
+export interface UsageSummary {
+  readonly date: string;
+  readonly total_requests: number;
+  readonly total_tokens: number;
+  readonly total_cost_usd: number;
+  readonly provider_breakdown?: Record<string, unknown>;
+  readonly model_breakdown?: Record<string, unknown>;
+}
+
+export interface StripeCustomer {
+  readonly id: string;
+  readonly user_id: string;
+  readonly stripe_customer_id: string;
+  readonly email?: string;
+}
+
+export interface StripeSubscription {
+  readonly id: string;
+  readonly user_id: string;
+  readonly customer_id: string;
+  readonly price_id: string;
+  readonly status: string;
+  readonly current_period_start?: string;
+  readonly current_period_end?: string;
+  readonly product_name?: string;
+}
+
+export interface StripePrice {
+  readonly id: string;
+  readonly product_id: string;
+  readonly unit_amount?: number;
+  readonly currency: string;
+  readonly recurring_interval?: string;
+  readonly type: string;
+  readonly active: boolean;
+  readonly product_name?: string;
+  readonly product_description?: string;
+}
+
+// Settings section types
+export type SettingsSection = 'profile' | 'api-keys' | 'usage-limits' | 'billing' | 'account';
+
+export interface ProfileUpdateData {
+  username?: string;
+  first_name?: string;
+  last_name?: string;
+  avatar_url?: string;
+}
+
+export interface APIKeyCreateData {
+  provider_id: string;
+  encrypted_api_key: string;
+  key_name?: string;
+}
+
+export interface UsageLimitsUpdateData {
+  daily_limit_usd?: number;
+  monthly_limit_usd?: number;
+  hard_stop_enabled?: boolean;
+  warning_threshold?: number;
+  reset_day?: number;
 } 

@@ -1,298 +1,76 @@
 'use client';
 
-import { useState, useEffect, useCallback, useOptimistic } from 'react';
+import { useState, useEffect, useCallback } from 'react';
 import { createClient } from '@/lib/supabase/client';
-import type { UserProfile, UserPreferences, SettingUpdatePayload } from './types';
-
-type SettingsSection = 'profile' | 'contact' | 'professional' | 'participation' | 'location' | 'finance' | 'settings';
+import type { 
+  UserProfile, 
+  AIProvider, 
+  UserAPIKey, 
+  UsageLimits, 
+  UsageSummary,
+  StripeSubscription,
+  StripePrice,
+  ProfileUpdateData,
+  APIKeyCreateData,
+  UsageLimitsUpdateData
+} from './types';
 
 interface UseSettingsReturn {
+  // Profile data
   profile: UserProfile | null;
-  preferences: UserPreferences;
   isLoading: boolean;
   error: string | null;
-  updateSetting: (key: string, value: unknown) => Promise<void>;
-  updateMultipleSettings: (updates: Record<string, unknown>) => Promise<void>;
+  
+  // AI Providers and API Keys
+  providers: AIProvider[];
+  userAPIKeys: UserAPIKey[];
+  providersLoading: boolean;
+  
+  // Usage and limits
+  usageLimits: UsageLimits | null;
+  recentUsage: UsageSummary[];
+  usageLoading: boolean;
+  
+  // Billing
+  subscription: StripeSubscription | null;
+  availablePlans: StripePrice[];
+  billingLoading: boolean;
+  
+  // Actions
+  updateProfile: (data: ProfileUpdateData) => Promise<void>;
+  addAPIKey: (data: APIKeyCreateData) => Promise<void>;
+  removeAPIKey: (keyId: string) => Promise<void>;
+  updateUsageLimits: (data: UsageLimitsUpdateData) => Promise<void>;
   refreshProfile: () => Promise<void>;
-  profileCompletion: number;
-  checkSectionCompletion: (section: SettingsSection, profileData?: UserProfile) => Promise<boolean>;
+  refreshAPIKeys: () => Promise<void>;
+  refreshUsageData: () => Promise<void>;
+  refreshBillingData: () => Promise<void>;
 }
 
-export function useSettings(tValidation?: (key: string) => string): UseSettingsReturn {
+export function useSettings(): UseSettingsReturn {
+  // Core state
   const [profile, setProfile] = useState<UserProfile | null>(null);
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
-  const [profileCompletion, setProfileCompletion] = useState(0);
   
-  // Optimistic updates for better UX
-  const [optimisticPreferences, setOptimisticPreferences] = useOptimistic(
-    profile?.preferences || {},
-    (state: UserPreferences, update: SettingUpdatePayload | ((prevState: UserPreferences) => UserPreferences)) => {
-      if (typeof update === 'function') {
-        return update(state);
-      } else {
-        return {
-          ...state,
-          [update.key]: update.value,
-        };
-      }
-    }
-  );
+  // AI providers and API keys
+  const [providers, setProviders] = useState<AIProvider[]>([]);
+  const [userAPIKeys, setUserAPIKeys] = useState<UserAPIKey[]>([]);
+  const [providersLoading, setProvidersLoading] = useState(false);
+  
+  // Usage tracking
+  const [usageLimits, setUsageLimits] = useState<UsageLimits | null>(null);
+  const [recentUsage, setRecentUsage] = useState<UsageSummary[]>([]);
+  const [usageLoading, setUsageLoading] = useState(false);
+  
+  // Billing
+  const [subscription, setSubscription] = useState<StripeSubscription | null>(null);
+  const [availablePlans, setAvailablePlans] = useState<StripePrice[]>([]);
+  const [billingLoading, setBillingLoading] = useState(false);
 
   const supabase = createClient();
 
-  // Check if a specific section is completed using the same logic as profile completion
-  const checkSectionCompletion = useCallback(async (section: SettingsSection, profileData?: UserProfile): Promise<boolean> => {
-    const currentProfile = profileData || profile;
-    if (!currentProfile) return false;
-
-    // Get consent values if needed
-    let directContactConsent = false;
-    let newsletterConsent = false;
-
-    if (section === 'contact') {
-      if (currentProfile.direct_contact_consent !== undefined && currentProfile.newsletter_consent !== undefined) {
-        directContactConsent = currentProfile.direct_contact_consent;
-        newsletterConsent = currentProfile.newsletter_consent;
-      } else {
-        try {
-          const [directContactResult, newsletterResult] = await Promise.all([
-            supabase.rpc('get_current_consent', { user_id: currentProfile.id, consent_type_param: 'direct_contact' }),
-            supabase.rpc('get_current_consent', { user_id: currentProfile.id, consent_type_param: 'newsletter' })
-          ]);
-
-          directContactConsent = !directContactResult.error && directContactResult.data === true;
-          newsletterConsent = !newsletterResult.error && newsletterResult.data === true;
-        } catch {
-          directContactConsent = false;
-          newsletterConsent = false;
-        }
-      }
-    }
-
-    switch (section) {
-      case 'participation':
-        // Criteria 1: At least 1 participation role saved
-        return Boolean(currentProfile.participation_role && Array.isArray(currentProfile.participation_role) && currentProfile.participation_role.length > 0);
-      
-      case 'profile':
-        // Criteria 2, 3, 4, 17: first name, last name, bio, username
-        return Boolean(currentProfile.first_name && currentProfile.last_name && currentProfile.preferences?.bio && currentProfile.username);
-      
-      case 'contact':
-        // Criteria 5, 6, 7, 8: phone, direct consent, newsletter consent, contact comment
-        return Boolean(currentProfile.phone && directContactConsent && newsletterConsent && currentProfile.preferences?.contact_comment);
-      
-      case 'professional':
-        // Criteria 9, 10, 11, 12, 13: profession, experience, organization, skills, professional comment
-        return Boolean(currentProfile.preferences?.profession && 
-                      currentProfile.preferences?.experience_level && 
-                      currentProfile.preferences?.organization && 
-                      currentProfile.preferences?.skills && 
-                      Array.isArray(currentProfile.preferences.skills) && 
-                      currentProfile.preferences.skills.length > 0 && 
-                      currentProfile.preferences?.professional_comment);
-      
-      case 'location':
-        // Criteria 14, 15, 16: country, state, city
-        return Boolean(currentProfile.preferences?.country && currentProfile.preferences?.region && currentProfile.preferences?.city);
-      
-      case 'finance':
-        // Note: This will need to be checked against subscription status in UserSettings
-        // We can't check it here as we don't have access to subscription data
-        return false; // Will be overridden in UserSettings
-      
-      case 'settings':
-        // Basic account setup: username + first name
-        return Boolean(currentProfile.username && currentProfile.first_name);
-      
-      default:
-        return false;
-    }
-  }, [profile, supabase]);
-
-  // Calculate profile completion percentage
-  const calculateProfileCompletion = useCallback(async (profileData: UserProfile): Promise<number> => {
-    let completedFields = 0;
-    let totalFields = 17; // Base fields from profile data
-    
-    // Check if user has made any payment (Stripe customer exists)
-    let hasPayment = false;
-    try {
-      const { data: customerData } = await supabase
-        .from('stripe_customers')
-        .select('stripe_customer_id')
-        .eq('id', profileData.id)
-        .limit(1);
-      
-      hasPayment = Boolean(customerData && customerData.length > 0 && customerData[0].stripe_customer_id);
-    } catch {
-      hasPayment = false;
-    }
-
-    // Criteria 1: At least 1 participation role saved
-    if (profileData.participation_role && Array.isArray(profileData.participation_role) && profileData.participation_role.length > 0) {
-      completedFields++;
-    }
-
-    // Criteria 2: Has a first name
-    if (profileData.first_name) {
-      completedFields++;
-    }
-
-    // Criteria 3: Has a last name
-    if (profileData.last_name) {
-      completedFields++;
-    }
-
-    // Criteria 4: Has a bio
-    if (profileData.preferences?.bio) {
-      completedFields++;
-    }
-
-    // Criteria 5: Has a phone number
-    if (profileData.phone) {
-      completedFields++;
-    }
-
-    // Criteria 6 & 7: Check consent values - use cached values from enhanced profile if available
-    let directContactConsent = false;
-    let newsletterConsent = false;
-
-    if (profileData.direct_contact_consent !== undefined && profileData.newsletter_consent !== undefined) {
-      // Use cached consent values from enhanced profile
-      directContactConsent = profileData.direct_contact_consent;
-      newsletterConsent = profileData.newsletter_consent;
-    } else {
-      // Fallback to API calls only if not available in profile data
-      try {
-        const [directContactResult, newsletterResult] = await Promise.all([
-          supabase.rpc('get_current_consent', { user_id: profileData.id, consent_type_param: 'direct_contact' }),
-          supabase.rpc('get_current_consent', { user_id: profileData.id, consent_type_param: 'newsletter' })
-        ]);
-
-        directContactConsent = !directContactResult.error && directContactResult.data === true;
-        newsletterConsent = !newsletterResult.error && newsletterResult.data === true;
-      } catch {
-        // Default to false if error occurs
-        directContactConsent = false;
-        newsletterConsent = false;
-      }
-    }
-
-    if (directContactConsent) {
-      completedFields++;
-    }
-
-    if (newsletterConsent) {
-      completedFields++;
-    }
-
-    // Criteria 8: Contact Comment
-    if (profileData.preferences?.contact_comment) {
-      completedFields++;
-    }
-
-    // Criteria 9: Has a profession selected
-    if (profileData.preferences?.profession) {
-      completedFields++;
-    }
-
-    // Criteria 10: Has an experience level selected
-    if (profileData.preferences?.experience_level) {
-      completedFields++;
-    }
-
-    // Criteria 11: Has an organization typed in
-    if (profileData.preferences?.organization) {
-      completedFields++;
-    }
-
-    // Criteria 12: Has a skill/ability selected
-    if (profileData.preferences?.skills && Array.isArray(profileData.preferences.skills) && profileData.preferences.skills.length > 0) {
-      completedFields++;
-    }
-
-    // Criteria 13: Has a professional comment
-    if (profileData.preferences?.professional_comment) {
-      completedFields++;
-    }
-
-    // Criteria 14: Has a country (including preset AT)
-    if (profileData.preferences?.country) {
-      completedFields++;
-    }
-
-    // Criteria 15: Has a region/province
-    if (profileData.preferences?.region) {
-      completedFields++;
-    }
-
-    // Criteria 16: Has a city
-    if (profileData.preferences?.city) {
-      completedFields++;
-    }
-    
-    // Criteria 17: Username exists (not necessarily manually changed)
-    if (profileData.username) {
-      completedFields++;
-    }
-
-    // Payment contribution: Add ~20% completion for any payment made
-    // This ensures users can only reach 100% completion if they've contributed financially
-    if (hasPayment) {
-      completedFields += 4; // Add 4 fields for payment contribution (~20% of total)
-      totalFields += 4;     // Adjust total to maintain percentage balance
-    } else {
-      // Without payment, user can only reach ~85% (17/20 = 85%)
-      totalFields = 20;     // Set higher total so max without payment is 17/20 = 85%
-    }
-
-    const completionPercentage = Math.min(Math.round((completedFields / totalFields) * 100), 100);
-    
-    return completionPercentage;
-  }, [supabase]);
-
-  // Validate preferences structure
-  const validatePreferences = useCallback((prefs: Record<string, unknown>, tValidation?: (key: string) => string): string | null => {
-    try {
-      // Validate language if present
-      if (prefs.language && typeof prefs.language === 'string') {
-        const validLanguages = ['en', 'de', 'fr', 'es', 'it', 'pt', 'nl', 'pl', 'ru', 'ja', 'ko', 'zh', 'ar', 'hi'];
-        if (!validLanguages.includes(prefs.language)) {
-          return tValidation ? tValidation('invalidLanguageCode') : 'invalidLanguageCode';
-        }
-      }
-
-      // Validate experience level if present
-      if (prefs.experience_level && typeof prefs.experience_level === 'string') {
-        const validLevels = ['intern', 'entry', 'mid', 'senior', 'lead', 'executive'];
-        if (!validLevels.includes(prefs.experience_level)) {
-          return tValidation ? tValidation('invalidExperienceLevel') : 'invalidExperienceLevel';
-        }
-      }
-
-      // Validate skills array if present
-      if (prefs.skills && !Array.isArray(prefs.skills)) {
-        return tValidation ? tValidation('skillsMustBeArray') : 'skillsMustBeArray';
-      }
-
-      // Validate string lengths
-      if (prefs.bio && typeof prefs.bio === 'string' && prefs.bio.length > 500) {
-        return tValidation ? tValidation('bioTooLong') : 'bioTooLong';
-      }
-
-      if (prefs.website && typeof prefs.website === 'string' && !prefs.website.match(/^https?:\/\/.+\..{2,}$/)) {
-        return tValidation ? tValidation('invalidWebsite') : 'invalidWebsite';
-      }
-
-      return null;
-    } catch {
-      return tValidation ? tValidation('invalidPreferencesStructure') : 'invalidPreferencesStructure';
-    }
-  }, []);
-
-  // Load user profile and preferences
+  // Load user profile
   const loadProfile = useCallback(async () => {
     try {
       setIsLoading(true);
@@ -300,285 +78,395 @@ export function useSettings(tValidation?: (key: string) => string): UseSettingsR
 
       const { data: { user }, error: authError } = await supabase.auth.getUser();
       
-      if (authError) {
+      if (authError || !user) {
         setProfile(null);
-        setProfileCompletion(0);
-        throw new Error(tValidation ? tValidation('authenticationError') : 'authenticationError');
-      }
-
-      if (!user) {
-        setProfile(null);
-        // Ensure profileCompletion is updated when no user is found
-        setProfileCompletion(0); 
         return;
       }
 
-      // Try to use the enhanced profile function first
-      let profileData;
-      try {
-        const { data: enhancedProfile, error: enhancedError } = await supabase
-          .rpc('get_user_profile', { user_uuid: user.id });
-        
-        if (!enhancedError && enhancedProfile && enhancedProfile.length > 0) {
-          profileData = enhancedProfile[0];
-        } else {
-          throw new Error('enhancedProfileFailed');
-        }
-      } catch {
-        // Fallback to direct query
-        const { data, error: profileError } = await supabase
-          .from('profiles')
-          .select('*')
-          .eq('id', user.id)
-          .single();
+      const { data: profileData, error: profileError } = await supabase
+        .from('profiles')
+        .select('*')
+        .eq('id', user.id)
+        .single();
 
-        if (profileError) {
-          if (profileError.code === 'PGRST116' || profileError.code === '42P01') {
-            // Profile doesn't exist, create it
-            const defaultPreferences = {
-              language: 'en',
-              timezone: 'UTC',
-              created_via: 'manual'
-            };
-            
-            const { data: newProfile, error: createError } = await supabase
-              .from('profiles')
-              .insert({
-                id: user.id,
-                email: user.email,
-                preferences: defaultPreferences,
-              })
-              .select()
-              .single();
+      if (profileError) {
+        if (profileError.code === 'PGRST116') {
+          // Profile doesn't exist, create it
+          const { data: newProfile, error: createError } = await supabase
+            .from('profiles')
+            .insert({
+              id: user.id,
+              email: user.email,
+            })
+            .select()
+            .single();
 
-            if (createError) {
-              throw new Error(tValidation ? tValidation('createProfileError') : 'createProfileError');
-            }
-
-            profileData = newProfile;
-          } else {
-            throw new Error(tValidation ? tValidation('loadProfileError') : 'loadProfileError');
+          if (createError) {
+            throw new Error('Failed to create profile');
           }
+
+          setProfile(newProfile);
         } else {
-          profileData = data;
+          throw new Error('Failed to load profile');
         }
-      }
-
-      if (profileData) {
-        // Ensure preferences is an object
-        if (!profileData.preferences || typeof profileData.preferences !== 'object') {
-          profileData.preferences = {};
-        }
-
-        // Validate preferences before setting
-        const validationError = validatePreferences(profileData.preferences || {}, tValidation);
-        if (validationError) {
-          // Don't fail, just log the warning
-        }
-        
+      } else {
         setProfile(profileData);
-        // Calculate and set completion after profile is loaded
-        const completion = await calculateProfileCompletion(profileData);
-        setProfileCompletion(completion);
       }
     } catch (err) {
-      const errorMessage = err instanceof Error ? err.message : (tValidation ? tValidation('unknownError') : 'unknownError');
+      const errorMessage = err instanceof Error ? err.message : 'Unknown error occurred';
       setError(errorMessage);
     } finally {
       setIsLoading(false);
     }
-  }, [supabase, validatePreferences, calculateProfileCompletion, tValidation]);
+  }, [supabase]);
 
-  // Update a single setting with validation
-  const updateSetting = useCallback(
-    async (key: string, value: unknown) => {
-      if (!profile) {
-        throw new Error(tValidation ? tValidation('noProfileLoaded') : 'noProfileLoaded');
+  // Load AI providers
+  const loadProviders = useCallback(async () => {
+    try {
+      setProvidersLoading(true);
+      
+      const { data: providersData, error: providersError } = await supabase
+        .from('ai_providers')
+        .select('*')
+        .eq('is_active', true)
+        .order('display_name');
+
+      if (providersError) {
+        throw new Error('Failed to load AI providers');
       }
 
-      try {
-        setError(null);
-        
-        // Create updated preferences
-        const updatedPreferences = { ...profile.preferences };
-        
-        // Handle field deletion: remove empty strings, null, or undefined values
-        if (value === '' || value === null || value === undefined) {
-          delete updatedPreferences[key];
-        } else {
-          updatedPreferences[key] = value;
-        }
-        
-        // Validate the updated preferences
-        const validationError = validatePreferences(updatedPreferences, tValidation);
-        if (validationError) {
-          throw new Error(tValidation ? tValidation('validationError') : validationError);
-        }
-        
-        // Optimistic update
-        setOptimisticPreferences(prev => {
-          const updated = { ...prev };
-          if (value === '' || value === null || value === undefined) {
-            delete updated[key];
-          } else {
-            updated[key] = value;
-          }
-          return updated;
-        });
+      setProviders(providersData || []);
+    } catch (err) {
+      console.error('Error loading providers:', err);
+    } finally {
+      setProvidersLoading(false);
+    }
+  }, [supabase]);
 
-        const { error: updateError } = await supabase
-          .from('profiles')
-          .update({ 
-            preferences: updatedPreferences,
-            updated_at: new Date().toISOString(),
-          })
-          .eq('id', profile.id);
+  // Load user's API keys
+  const loadAPIKeys = useCallback(async () => {
+    if (!profile?.id) return;
 
-        if (updateError) {
-          throw new Error(tValidation ? tValidation('updateSettingError') : 'updateSettingError');
-        }
+    try {
+      const { data: keysData, error: keysError } = await supabase
+        .from('user_api_keys')
+        .select(`
+          *,
+          ai_providers!inner(
+            name,
+            display_name
+          )
+        `)
+        .eq('user_id', profile.id)
+        .order('created_at', { ascending: false });
 
-        // Update local state with the successful update
-        setProfile(prev => prev ? {
-          ...prev,
-          preferences: updatedPreferences,
+      if (keysError) {
+        throw new Error('Failed to load API keys');
+      }
+
+      // Transform the joined data
+      const transformedKeys: UserAPIKey[] = (keysData || []).map(key => ({
+        id: key.id,
+        user_id: key.user_id,
+        provider_id: key.provider_id,
+        provider_name: key.ai_providers.name,
+        provider_display_name: key.ai_providers.display_name,
+        key_name: key.key_name,
+        is_active: key.is_active,
+        created_at: key.created_at,
+        updated_at: key.updated_at,
+      }));
+
+      setUserAPIKeys(transformedKeys);
+    } catch (err) {
+      console.error('Error loading API keys:', err);
+    }
+  }, [profile?.id, supabase]);
+
+  // Load usage limits and recent usage
+  const loadUsageData = useCallback(async () => {
+    if (!profile?.id) return;
+
+    try {
+      setUsageLoading(true);
+      
+      // Load usage limits
+      const { data: limitsData, error: limitsError } = await supabase
+        .from('user_usage_limits')
+        .select('*')
+        .eq('user_id', profile.id)
+        .single();
+
+      if (limitsError && limitsError.code !== 'PGRST116') {
+        throw new Error('Failed to load usage limits');
+      }
+
+      setUsageLimits(limitsData || null);
+
+      // Load recent usage (last 30 days)
+      const { data: summaryData, error: summaryError } = await supabase
+        .from('daily_usage_summaries')
+        .select('*')
+        .eq('user_id', profile.id)
+        .gte('date', new Date(Date.now() - 30 * 24 * 60 * 60 * 1000).toISOString().split('T')[0])
+        .order('date', { ascending: false });
+
+      if (summaryError) {
+        throw new Error('Failed to load usage summary');
+      }
+
+      setRecentUsage(summaryData || []);
+    } catch (err) {
+      console.error('Error loading usage data:', err);
+    } finally {
+      setUsageLoading(false);
+    }
+  }, [profile?.id, supabase]);
+
+  // Load billing data
+  const loadBillingData = useCallback(async () => {
+    if (!profile?.id) return;
+
+    try {
+      setBillingLoading(true);
+      
+      // Load current subscription
+      const { data: subscriptionData, error: subError } = await supabase
+        .from('stripe_subscriptions')
+        .select(`
+          *,
+          stripe_prices!inner(
+            stripe_products!inner(name)
+          )
+        `)
+        .eq('user_id', profile.id)
+        .in('status', ['active', 'trialing'])
+        .order('created_at', { ascending: false })
+        .limit(1)
+        .maybeSingle();
+
+      if (subError && subError.code !== 'PGRST116') {
+        throw new Error('Failed to load subscription');
+      }
+
+      if (subscriptionData) {
+        const transformedSubscription: StripeSubscription = {
+          ...subscriptionData,
+          product_name: subscriptionData.stripe_prices?.stripe_products?.name || 'Unknown Plan'
+        };
+        setSubscription(transformedSubscription);
+      } else {
+        setSubscription(null);
+      }
+
+      // Load available plans
+      const { data: pricesData, error: pricesError } = await supabase
+        .from('stripe_prices')
+        .select(`
+          *,
+          stripe_products!inner(
+            name,
+            description
+          )
+        `)
+        .eq('active', true)
+        .order('unit_amount', { ascending: true });
+
+      if (pricesError) {
+        throw new Error('Failed to load pricing plans');
+      }
+
+      const transformedPlans: StripePrice[] = (pricesData || []).map(price => ({
+        id: price.id,
+        product_id: price.product_id,
+        unit_amount: price.unit_amount,
+        currency: price.currency,
+        recurring_interval: price.recurring_interval,
+        type: price.type,
+        active: price.active,
+        product_name: price.stripe_products?.name || 'Unknown Plan',
+        product_description: price.stripe_products?.description || ''
+      }));
+
+      setAvailablePlans(transformedPlans);
+    } catch (err) {
+      console.error('Error loading billing data:', err);
+    } finally {
+      setBillingLoading(false);
+    }
+  }, [profile?.id, supabase]);
+
+  // Update profile
+  const updateProfile = useCallback(async (data: ProfileUpdateData) => {
+    if (!profile?.id) {
+      throw new Error('No profile loaded');
+    }
+
+    try {
+      setError(null);
+      
+      const { error: updateError } = await supabase
+        .from('profiles')
+        .update({
+          ...data,
           updated_at: new Date().toISOString(),
-        } : null);
-        
-        // Recalculate completion after successful update
-        if (profile) {
-          const completion = await calculateProfileCompletion({ ...profile, preferences: updatedPreferences });
-          setProfileCompletion(completion);
-        }
+        })
+        .eq('id', profile.id);
 
-      } catch (err) {
-        const errorMessage = err instanceof Error ? err.message : (tValidation ? tValidation('updateSettingFailed') : 'updateSettingFailed');
-        setError(errorMessage);
-        
-        // Revert optimistic update on error
-        await loadProfile();
-      }
-    }, [profile, supabase, validatePreferences, loadProfile, calculateProfileCompletion, setOptimisticPreferences, tValidation]);
-
-  // Update multiple settings at once
-  const updateMultipleSettings = useCallback(
-    async (updates: Record<string, unknown>) => {
-      if (!profile) {
-        throw new Error(tValidation ? tValidation('noProfileLoaded') : 'noProfileLoaded');
+      if (updateError) {
+        throw new Error('Failed to update profile');
       }
 
-      try {
-        setError(null);
-        
-        const newPreferences = { ...profile.preferences };
-        
-        // Handle multiple updates with proper field deletion
-        Object.entries(updates).forEach(([key, value]) => {
-          if (value === '' || value === null || value === undefined) {
-            delete newPreferences[key];
-          } else {
-            newPreferences[key] = value;
-          }
+      // Update local state
+      setProfile(prev => prev ? {
+        ...prev,
+        ...data,
+        updated_at: new Date().toISOString(),
+      } : null);
+
+    } catch (err) {
+      const errorMessage = err instanceof Error ? err.message : 'Failed to update profile';
+      setError(errorMessage);
+      throw err;
+    }
+  }, [profile?.id, supabase]);
+
+  // Add API key
+  const addAPIKey = useCallback(async (data: APIKeyCreateData) => {
+    if (!profile?.id) {
+      throw new Error('No profile loaded');
+    }
+
+    try {
+      setError(null);
+
+      const { error: insertError } = await supabase
+        .from('user_api_keys')
+        .insert({
+          user_id: profile.id,
+          ...data,
         });
 
-        // Validate the updated preferences
-        const validationError = validatePreferences(newPreferences, tValidation);
-        if (validationError) {
-          throw new Error(tValidation ? tValidation('validationError') : validationError);
-        }
+      if (insertError) {
+        throw new Error('Failed to add API key');
+      }
 
-        // Optimistic update for multiple settings
-        setOptimisticPreferences(prev => {
-          const updated = { ...prev };
-          Object.entries(updates).forEach(([key, value]) => {
-            if (value === '' || value === null || value === undefined) {
-              delete updated[key];
-            } else {
-              updated[key] = value;
-            }
-          });
-          return updated;
-        });
+      // Refresh API keys
+      await loadAPIKeys();
 
-        const { error: updateError } = await supabase
-          .from('profiles')
-          .update({ 
-            preferences: newPreferences,
-            updated_at: new Date().toISOString(),
-          })
-          .eq('id', profile.id);
+    } catch (err) {
+      const errorMessage = err instanceof Error ? err.message : 'Failed to add API key';
+      setError(errorMessage);
+      throw err;
+    }
+  }, [profile?.id, supabase, loadAPIKeys]);
 
-        if (updateError) {
-          throw new Error(tValidation ? tValidation('updateMultipleSettingsError') : 'updateMultipleSettingsError');
-        }
+  // Remove API key
+  const removeAPIKey = useCallback(async (keyId: string) => {
+    try {
+      setError(null);
 
-        setProfile(prev => prev ? {
-          ...prev,
-          preferences: newPreferences,
+      const { error: deleteError } = await supabase
+        .from('user_api_keys')
+        .delete()
+        .eq('id', keyId);
+
+      if (deleteError) {
+        throw new Error('Failed to remove API key');
+      }
+
+      // Update local state
+      setUserAPIKeys(prev => prev.filter(key => key.id !== keyId));
+
+    } catch (err) {
+      const errorMessage = err instanceof Error ? err.message : 'Failed to remove API key';
+      setError(errorMessage);
+      throw err;
+    }
+  }, [supabase]);
+
+  // Update usage limits
+  const updateUsageLimits = useCallback(async (data: UsageLimitsUpdateData) => {
+    if (!profile?.id) {
+      throw new Error('No profile loaded');
+    }
+
+    try {
+      setError(null);
+
+      const { data: upsertData, error: upsertError } = await supabase
+        .from('user_usage_limits')
+        .upsert({
+          user_id: profile.id,
+          ...data,
           updated_at: new Date().toISOString(),
-        } : null);
+        })
+        .select()
+        .single();
 
-        // Recalculate completion after successful update
-        if (profile) {
-          const completion = await calculateProfileCompletion({ ...profile, preferences: newPreferences });
-          setProfileCompletion(completion);
-        }
-
-      } catch (err) {
-        const errorMessage = err instanceof Error ? err.message : (tValidation ? tValidation('updateMultipleSettingsFailed') : 'updateMultipleSettingsFailed');
-        setError(errorMessage);
-        
-        // Revert optimistic update on error
-        await loadProfile();
+      if (upsertError) {
+        throw new Error('Failed to update usage limits');
       }
-    }, [profile, supabase, validatePreferences, loadProfile, calculateProfileCompletion, setOptimisticPreferences, tValidation]);
 
-  // Refresh profile data from the database
-  const refreshProfile = useCallback(async () => {
-    await loadProfile();
-  }, [loadProfile]);
+      setUsageLimits(upsertData);
 
-  // Load profile on mount and auth changes
+    } catch (err) {
+      const errorMessage = err instanceof Error ? err.message : 'Failed to update usage limits';
+      setError(errorMessage);
+      throw err;
+    }
+  }, [profile?.id, supabase]);
+
+  // Public refresh functions
+  const refreshProfile = useCallback(() => loadProfile(), [loadProfile]);
+  const refreshAPIKeys = useCallback(() => loadAPIKeys(), [loadAPIKeys]);
+  const refreshUsageData = useCallback(() => loadUsageData(), [loadUsageData]);
+  const refreshBillingData = useCallback(() => loadBillingData(), [loadBillingData]);
+
+  // Initial load
   useEffect(() => {
     loadProfile();
+    loadProviders();
+  }, [loadProfile, loadProviders]);
 
-    const { data: { subscription } } = supabase.auth.onAuthStateChange(
-      // eslint-disable-next-line @typescript-eslint/no-unused-vars
-      (event, _session) => {
-        if (event === 'SIGNED_IN' || event === 'TOKEN_REFRESHED') {
-          loadProfile();
-        } else if (event === 'SIGNED_OUT') {
-          setProfile(null);
-          setIsLoading(false);
-          setError(null);
-          setProfileCompletion(0); // Reset completion on sign out
-        }
-      }
-    );
-
-    return () => subscription.unsubscribe();
-  }, [loadProfile, supabase.auth]);
-
-  // Calculate profile completion (initial and on profile/preferences change)
-  // This useEffect ensures completion is recalculated when profile or preferences change
-  // even if not directly triggered by save.
+  // Load dependent data when profile is loaded
   useEffect(() => {
-    if (profile) {
-      calculateProfileCompletion(profile).then(setProfileCompletion);
-    } else {
-      setProfileCompletion(0);
+    if (profile?.id) {
+      loadAPIKeys();
+      loadUsageData();
+      loadBillingData();
     }
-  }, [profile, calculateProfileCompletion]);
+  }, [profile?.id, loadAPIKeys, loadUsageData, loadBillingData]);
 
   return {
+    // Profile data
     profile,
-    preferences: optimisticPreferences,
     isLoading,
     error,
-    updateSetting,
-    updateMultipleSettings,
+    
+    // AI Providers and API Keys
+    providers,
+    userAPIKeys,
+    providersLoading,
+    
+    // Usage and limits
+    usageLimits,
+    recentUsage,
+    usageLoading,
+    
+    // Billing
+    subscription,
+    availablePlans,
+    billingLoading,
+    
+    // Actions
+    updateProfile,
+    addAPIKey,
+    removeAPIKey,
+    updateUsageLimits,
     refreshProfile,
-    profileCompletion,
-    checkSectionCompletion,
+    refreshAPIKeys,
+    refreshUsageData,
+    refreshBillingData,
   };
 } 
